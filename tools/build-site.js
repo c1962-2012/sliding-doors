@@ -28,7 +28,13 @@ const head = title => `<!doctype html>
 <style>body{margin:0;background:#050a14}[hidden]{display:none!important}</style>
 </head>
 <body>`;
-const tail = `<script>if ("serviceWorker" in navigator) addEventListener("load", () => navigator.serviceWorker.register("sw.js"));</script>
+// quando arriva una versione nuova del service worker la pagina si ricarica una volta, così non resta quella vecchia
+const tail = `<script>if ("serviceWorker" in navigator) {
+  const had = !!navigator.serviceWorker.controller;
+  let done = false;
+  navigator.serviceWorker.addEventListener("controllerchange", () => { if (had && !done) { done = true; location.reload() } });
+  addEventListener("load", () => navigator.serviceWorker.register("sw.js", { updateViaCache: "none" }));
+}</script>
 </body>
 </html>
 `;
@@ -50,21 +56,22 @@ fs.writeFileSync(path.join(out, "manifest.webmanifest"), JSON.stringify({
   ]
 }, null, 2));
 
-// Service worker: pagine e codice dalla cache (si aggiornano a ogni nuova versione), dati prima dalla rete
-// così i risultati sono sempre freschi quando c'è connessione, e dalla cache quando non c'è.
+// Service worker: tutto ciò che sta sul sito (pagine, codice, dati) si prende prima dalla rete, così con la connessione
+// si vede sempre l'ultima versione, e dalla cache quando la rete manca. Librerie e font esterni, che non cambiano, dalla cache.
 const version = new Date().toISOString();
 const shell = ["./", "index.html", "mobile.html", "manifest.webmanifest", ...files, ...fs.readdirSync(assets)];
 fs.writeFileSync(path.join(out, "sw.js"), `const VERSION = ${JSON.stringify(version)}, CACHE = "sd-" + VERSION;
 const SHELL = ${JSON.stringify(shell)};
-const DATA = /\\/(data|cups)\\.js$/;
-self.addEventListener("install", e => { e.waitUntil(caches.open(CACHE).then(c => c.addAll(SHELL)).then(() => self.skipWaiting())) });
+// cache: "reload" scavalca la cache HTTP del browser, che altrimenti potrebbe restituire i file della versione precedente
+self.addEventListener("install", e => { e.waitUntil(caches.open(CACHE).then(c => c.addAll(SHELL.map(u => new Request(u, { cache: "reload" })))).then(() => self.skipWaiting())) });
 self.addEventListener("activate", e => { e.waitUntil(caches.keys().then(ks => Promise.all(ks.filter(k => k !== CACHE).map(k => caches.delete(k)))).then(() => self.clients.claim())) });
 self.addEventListener("fetch", e => {
   const req = e.request;
   if (req.method !== "GET") return;
   const url = new URL(req.url);
-  if (url.origin === location.origin && DATA.test(url.pathname)) {
-    e.respondWith(fetch(req).then(r => { const copy = r.clone(); caches.open(CACHE).then(c => c.put(req, copy)); return r }).catch(() => caches.match(req)));
+  if (url.origin === location.origin) {
+    e.respondWith(fetch(req, { cache: "no-cache" }).then(r => { if (r.ok) { const copy = r.clone(); caches.open(CACHE).then(c => c.put(req, copy)) } return r })
+      .catch(() => caches.match(req, { ignoreSearch: true })));
     return;
   }
   e.respondWith(caches.match(req, { ignoreSearch: true }).then(hit => hit || fetch(req).then(r => {
