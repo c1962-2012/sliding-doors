@@ -141,6 +141,13 @@ footer{color:var(--muted);font-size:12px}
 .comp-pick button[aria-pressed="true"]{background:linear-gradient(180deg,#5fb0ff,#2f7fe0);color:#fff;border-color:transparent;box-shadow:0 10px 24px -10px rgba(77,163,255,.9)}
 .match.grp{background:none;border:1px dashed var(--line-hi)}
 .match.grp .teams{grid-template-columns:minmax(0,1fr)}
+.grp-games{grid-column:1/-1;list-style:none;margin:2px 0 0;padding:0;display:grid;gap:3px;font-size:13px;color:var(--muted)}
+.grp-games li{display:flex;align-items:center;gap:8px;min-width:0}
+.grp-games li>span:last-child{overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
+.grp-games b{color:var(--ink);font-weight:600}
+.grp-games .num{color:var(--ink);font-weight:600;margin:0 2px}
+.res{flex:0 0 auto;width:18px;height:18px;border-radius:5px;display:inline-grid;place-items:center;font-size:11px;font-weight:700;background:rgba(255,255,255,.06)}
+.res.up{background:rgba(46,229,157,.16)} .res.down{background:rgba(255,92,122,.16)}
 .minfo b{color:var(--ink);font-weight:600}
 .minfo .inh{color:var(--accent)}
 .rnd{font-size:11px;letter-spacing:.1em;text-transform:uppercase;color:var(--muted);font-weight:600;padding:8px 2px 2px}

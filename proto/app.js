@@ -724,8 +724,14 @@ function renderKO(real, alt, o){
     const items = [];
     for (const [g, ms] of Object.entries(s.groups)){
       const tab = miniTable(ms);
+      // sotto la posizione in classifica, le partite giocate dalla squadra, in ordine: V/N/P dal suo punto di vista
+      const games = t => ms.filter(m => m.d.includes(t)).map(m => {
+        const mine = m.d[0]===t ? m.g[0] : m.g[1], their = m.d[0]===t ? m.g[1] : m.g[0];
+        const res = mine>their ? ["V","up"] : mine<their ? ["P","down"] : ["N","same"];
+        return `<li><span class="res ${res[1]}">${res[0]}</span><span>${m.d[0]===t ? `<b>${m.d[0]}</b>` : m.d[0]} <span class="num">${m.g[0]}-${m.g[1]}</span> ${m.d[1]===t ? `<b>${m.d[1]}</b>` : m.d[1]}</span></li>`;
+      }).join("");
       tab.forEach((r, pos) => { if (o.isTeam(r.team) && (!team || r.team===team))
-        items.push(`<div class="match grp"><div class="teams"><span><b>${r.team}</b> ${pos+1}ª su ${tab.length}${g!=="L" ? ` nel girone ${g}` : ""}, ${r.pt} punti</span></div><div></div></div>`) });
+        items.push(`<div class="match grp"><div class="teams"><span><b>${r.team}</b> ${pos+1}ª su ${tab.length}${g!=="L" ? ` nel girone ${g}` : ""}, ${r.pt} punti</span></div><div></div><ul class="grp-games">${games(r.team)}</ul></div>`) });
     }
     for (const t of s.ties){
       if (![0,1].some(i => o.isTeam(t.d[i]) && (!team || t.d[i]===team))) continue;
