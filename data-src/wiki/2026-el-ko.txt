@@ -1,0 +1,1182 @@
+{{Short description|Europe premier club football tournament}}
+{{Use dmy dates|date=December 2025}}
+The '''2025–26 UEFA Europa League knockout phase''' began on 19 February with the knockout phase play-offs and ended on 20 May 2026 with the [[2026 UEFA Europa League final|final]] at the [[Beşiktaş Stadium]] in [[Istanbul]], Turkey, to decide the champions of the [[2025–26 UEFA Europa League]].<ref name="schedule">{{cite news |url=https://www.uefa.com/uefaeuropaleague/news/0296-1d21e9c10031-f10e483164b3-1000/ |title=2025/26 Europa League: Teams, dates, draws, format, final |publisher=[[UEFA]] |date=29 January 2026 |access-date=29 January 2026}}</ref> A total of 24 teams competed in the knockout phase, with 16 entering in the play-offs and 8 receiving a [[Bye (sports)|bye]] to the round of 16.<ref name="regulations">{{cite web |url=https://documents.uefa.com/r/Regulations-of-the-UEFA-Europa-League-2025/26-Online |title=Regulations of the UEFA Europa League – 2025/26 Season |publisher=[[UEFA]] |date=27 June 2025 |access-date=27 August 2025 |url-status=live |archive-url=https://web.archive.org/web/20250911174419/https://documents.uefa.com/api/khub/maps/41JEm85lwVGDIdTlZ5mTQQ/attachments/spCQiWS~_GZQVyHIz0zJvg-41JEm85lwVGDIdTlZ5mTQQ/content |archive-date=11 September 2025}}</ref>
+
+Times are [[Central European Time|CET]]/[[Central European Summer Time|CEST]],{{refn|group=note|[[Central European Time|CET]] ([[UTC+01:00|UTC+1]]) for dates up to 28 March 2026 (knockout phase play-offs and round of 16), and [[Central European Summer Time|CEST]] ([[UTC+02:00|UTC+2]]) for dates thereafter (quarter-finals, semi-finals and final).}} as listed by UEFA (local times, if different, are in parentheses).
+
+==Qualified teams==
+The knockout phase involved the top 24 teams that qualified from the [[2025–26 UEFA Europa League league phase|league phase]]. The top 8 teams received a [[Bye (sports)|bye]] to the round of 16, while teams finishing in positions 9 to 24 entered the knockout phase play-offs.
+<div style="display: inline-table; vertical-align: top;">
+{| class="wikitable" style="white-space:nowrap; background-color:#BBF3BB"
+|+ Entering the round of 16 (seeded)
+|-
+! {{Abbr|Pos|Position}}
+! style="width:210px" | Team
+|-
+! 1
+| {{fbaicon|FRA}} [[Olympique Lyonnais|Lyon]]
+|-
+! 2
+| {{fbaicon|ENG}} [[Aston Villa F.C.|Aston Villa]]
+|-
+! 3
+| {{fbaicon|DEN}} [[FC Midtjylland|Midtjylland]]
+|-
+! 4
+| {{fbaicon|ESP}} [[Real Betis]]
+|-
+! 5
+| {{fbaicon|POR}} [[FC Porto|Porto]]
+|-
+! 6
+| {{fbaicon|POR}} [[S.C. Braga|Braga]]
+|-
+! 7
+| {{fbaicon|GER}} [[SC Freiburg]]
+|-
+! 8
+| {{fbaicon|ITA}} [[AS Roma|Roma]]
+|}
+</div>
+<div style="display: inline-table; vertical-align: top;">
+{| class="wikitable" style="white-space:nowrap; background-color:#BBF3FF"
+|+ Entering the play-offs (seeded)
+|-
+! {{Abbr|Pos|Position}}
+! style="width:210px" | Team
+|-
+! 9
+| {{fbaicon|BEL}} [[KRC Genk|Genk]]
+|-
+! 10
+| {{fbaicon|ITA}} [[Bologna FC 1909|Bologna]]
+|-
+! 11
+| {{fbaicon|GER}} [[VfB Stuttgart]]
+|-
+! 12
+| {{fbaicon|HUN}} [[Ferencvárosi TC|Ferencváros]]
+|-
+! 13
+| {{fbaicon|ENG}} [[Nottingham Forest F.C.|Nottingham Forest]]
+|-
+! 14
+| {{fbaicon|CZE}} [[FC Viktoria Plzeň|Viktoria Plzeň]]
+|-
+! 15
+| {{fbaicon|SRB}} [[Red Star Belgrade]]
+|-
+! 16
+| {{fbaicon|ESP}} [[RC Celta de Vigo|Celta Vigo]]
+|}
+</div>
+<div style="display: inline-table; vertical-align: top;">
+{| class="wikitable" style="white-space:nowrap; background-color:#CCF9FF"
+|+ Entering the play-offs (unseeded)
+|-
+! {{Abbr|Pos|Position}}
+! style="width:210px" | Team
+|-
+! 17
+| {{fbaicon|GRE}} [[PAOK FC|PAOK]]
+|-
+! 18
+| {{fbaicon|FRA}} [[Lille OSC|Lille]]
+|-
+! 19
+| {{fbaicon|TUR}} [[Fenerbahçe S.K. (football)|Fenerbahçe]]
+|-
+! 20
+| {{fbaicon|GRE}} [[Panathinaikos F.C.|Panathinaikos]]
+|-
+! 21
+| {{fbaicon|SCO}} [[Celtic F.C.|Celtic]]
+|-
+! 22
+| {{fbaicon|BUL}} [[PFC Ludogorets Razgrad|Ludogorets Razgrad]]
+|-
+! 23
+| {{fbaicon|CRO}} [[GNK Dinamo Zagreb|Dinamo Zagreb]]
+|-
+! 24
+| {{fbaicon|NOR}} [[SK Brann|Brann]]
+|}
+</div>
+
+==Format==
+Each tie in the [[Single-elimination tournament|knockout phase]], apart from the final, was played over [[Two-legged tie|two legs]], with each team playing one leg at home. The team that scored more goals on aggregate over the two legs advanced to the next round. If the aggregate score was level, then 30 minutes of [[Overtime (sports)#Association football|extra time]] were played (the [[away goals rule]] was not applied). If the score was still level at the end of extra time, the winners were decided by a [[Penalty shoot-out (association football)|penalty shoot-out]]. In the final, which was played as a single match, if the score was level at the end of normal time, extra time was played, followed by a penalty shoot-out if the score was still level.<ref name="regulations"/>
+
+===Draw procedure===
+<section begin=Format />
+In the knockout phase, there was no country protection, with teams from the same association able to face each other in any round. Teams could also face opponents they played during the league phase.
+
+The mechanism of the draws for each round was as follows:<ref name="regulations"/>
+*In the draw for the knockout phase play-offs, the eight teams finishing the league phase in positions 9–16 were seeded, and the eight teams finishing the league phase in positions 17–24 were unseeded. The draw was split into four sections based on the predetermined bracket, with the seeded teams in each section drawn against one of their two possible unseeded opponents. The seeded teams hosted the second leg.
+*In the draw for the round of 16, the eight teams finishing the league phase in positions 1–8 were seeded, and the eight winners of the knockout phase play-offs were unseeded. Again, the draw was split into four sections based on the predetermined bracket, with the seeded teams in each section drawn against one of their two possible unseeded opponents. The seeded teams hosted the second leg.
+
+In the quarter-finals and semi-finals, both the exact match pairings and order of legs were predetermined based on the tournament bracket. The teams with the better league phase ranking played the second leg of each round at home if they continued advancing. Should a seeded team have been beaten, the team that eliminated them took over their seeding position. The winner of semi-final 1 was designated as the "home" team for the final (for administrative purposes, as it was played at a neutral venue).<section end=Format />
+
+In the knockout phase, teams from the same or nearby cities were not scheduled to play at home on the same day or on consecutive days, due to logistics and crowd control.<ref name="regulations"/>{{rp|at=Art. 24.02}} To avoid such scheduling conflict, if the two teams were drawn to play at home for the same leg, the home match of the team that had the lower league phase ranking (if in the same competition) or the team playing in lower tier competition (Conference League) was moved from Thursday from a regularly scheduled time to an earlier time slot, to a different day, and/or at an alternative venue without clashing any other competition. However, a fixture reversal only applied if a team qualified to play the second leg at home decided to inform the UEFA administration before the draw to reverse the tie and play the first leg at home and not a second leg at an alternative venue.<ref>{{cite web |title=Principles set by the UEFA Club Competitions Committee for the 2025/26 season – Stadium and City Clashes |url=https://editorial.uefa.com/resources/02a0-1f66531ca666-12390a1116bd-1000/club_competitions_committee_-_principles_for_stadium_city_clashes_2025-26.pdf}}</ref>
+
+===Predetermined pairings===
+The bracket structure for the knockout phase was partially fixed in advance using [[Seeding (sports)|seeding]], with a symmetrical pattern on both sides.<ref name="regulations"/> Teams' positions in the bracket were determined by their final standings in the league phase, ensuring that higher-ranked teams faced lower-ranked opponents in earlier rounds. As a result, certain sets of teams, such as the top two from the league phase, could not meet until the final.
+
+The structure of each side of the bracket can be summarised as follows, with the exact pairings of the play-offs and round of 16 determined by a draw:{{refn|group=note|The draws determined the exact play-off and round of 16 pairings for each side of the bracket, which mirrored each other. For example, if the team in 9th was drawn against 23rd in the play-offs, the team in 10th would be drawn against 24th on the other side of the bracket.}}
+*Knockout phase play-offs
+**Pairing I: 9/10 vs 23/24
+**Pairing II: 11/12 vs 21/22
+**Pairing III: 13/14 vs 19/20
+**Pairing IV: 15/16 vs 17/18
+*Round of 16
+**Pairing A: 1/2 vs Winner IV
+**Pairing B: 3/4 vs Winner III
+**Pairing C: 5/6 vs Winner II
+**Pairing D: 7/8 vs Winner I
+*Quarter-finals
+**Pairing 1: Winner A vs Winner D
+**Pairing 2: Winner B vs Winner C
+*Semi-finals: Winner 1 vs Winner 2
+
+==Schedule==
+The schedule was as follows (all draws were held at the UEFA headquarters in [[Nyon]], Switzerland).<ref name="schedule"/>
+
+{| class="wikitable" style="text-align:center"
+|-
+!Round
+!Draw date
+!First leg
+!Second leg
+|-
+|Knockout phase play-offs
+|30 January 2026
+|19 February 2026
+|26 February 2026
+|-
+|Round of 16
+|27 February 2026
+|12 March 2026
+|19 March 2026
+|-
+|Quarter-finals
+|rowspan="3" {{N/a}}
+|9 April 2026
+|16 April 2026
+|-
+|Semi-finals
+|30 April 2026
+|7 May 2026
+|-
+|Final
+|colspan="2"|20 May 2026 at [[Beşiktaş Stadium]], [[Istanbul]]
+|}
+
+==Bracket==
+<section begin=Bracket />{{24TeamBracket-Info
+<!--Bracket settings-->
+|paramstyle=numbered
+|above=y
+|seeds=y
+|legs=2
+|RD5-legs=1
+|agg-width=40
+|score-width=20
+|aggregate=y
+|nowrap=y
+<!--Headings-->
+|RD1=[[#Knockout phase play-offs|Knockout phase play-offs]]
+|RD2=[[#Round of 16|Round of 16]]
+|RD3=[[#Quarter-finals|Quarter-finals]]
+|RD4=[[#Semi-finals|Semi-finals]]
+|RD5=[[#Final|Final]]
+<!--Knockout phase play-offs-->
+||22|{{fbaicon|BUL}} [[PFC Ludogorets Razgrad|Ludogorets Razgrad]]|2|0|'''2'''|12|{{fbaicon|HUN}} '''[[Ferencvárosi TC|Ferencváros]]'''|1|2|'''3'''
+||20|{{fbaicon|GRE}} '''[[Panathinaikos F.C.|Panathinaikos]]''' {{pso}}|2|1|'''3 (4)'''|14|{{fbaicon|CZE}} [[FC Viktoria Plzeň|Viktoria Plzeň]]|2|1|'''3 (3)'''
+||23|{{fbaicon|CRO}} [[GNK Dinamo Zagreb|Dinamo Zagreb]]|1|3|'''4'''|9|{{fbaicon|BEL}} '''[[KRC Genk|Genk]]''' {{aet}}|3|3|'''6'''
+||17|{{fbaicon|GRE}} [[PAOK FC|PAOK]]|1|0|'''1'''|16|{{fbaicon|ESP}} '''[[RC Celta de Vigo|Celta Vigo]]'''|2|1|'''3'''
+||21|{{fbaicon|SCO}} [[Celtic F.C.|Celtic]]|1|1|'''2'''|11|{{fbaicon|GER}} '''[[VfB Stuttgart]]'''|4|0|'''4'''
+||19|{{fbaicon|TUR}} [[Fenerbahçe S.K. (football)|Fenerbahçe]]|0|2|'''2'''|13|{{fbaicon|ENG}} '''[[Nottingham Forest F.C.|Nottingham Forest]]'''|3|1|'''4'''
+||24|{{fbaicon|NOR}} [[SK Brann|Brann]]|0|0|'''0'''|10|{{fbaicon|ITA}} '''[[Bologna FC 1909|Bologna]]'''|1|1|'''2'''
+||18|{{fbaicon|FRA}} '''[[Lille OSC|Lille]]''' {{aet}}|0|2|'''2'''|15|{{fbaicon|SRB}} [[Red Star Belgrade]]|1|0|'''1'''
+<!--Round of 16-->
+||12|{{fbaicon|HUN}} [[Ferencvárosi TC|Ferencváros]]|2|0|'''2'''|6|{{fbaicon|POR}} '''[[S.C. Braga|Braga]]'''|0|4|'''4'''
+||20|{{fbaicon|GRE}} [[Panathinaikos F.C.|Panathinaikos]]|1|0|'''1'''|4|{{fbaicon|ESP}} '''[[Real Betis]]'''|0|4|'''4'''
+||9 |{{fbaicon|BEL}} [[KRC Genk|Genk]]|1|1|'''2'''|7|{{fbaicon|GER}} '''[[SC Freiburg]]'''|0|5|'''5'''
+||16|{{fbaicon|ESP}} '''[[RC Celta de Vigo|Celta Vigo]]'''|1|2|'''3'''|1|{{fbaicon|FRA}} [[Olympique Lyonnais|Lyon]]|1|0|'''1'''
+||11|{{fbaicon|GER}} [[VfB Stuttgart]]|1|0|'''1'''|5|{{fbaicon|POR}} '''[[FC Porto|Porto]]'''|2|2|'''4'''
+||13|{{fbaicon|ENG}} '''[[Nottingham Forest F.C.|Nottingham Forest]]''' {{pso}}|0|2|'''2 (3)'''|3|{{fbaicon|DEN}} [[FC Midtjylland|Midtjylland]]|1|1|'''2 (0)'''
+||10|{{fbaicon|ITA}} '''[[Bologna FC 1909|Bologna]]''' {{aet}}|1|4|'''5'''|8|{{fbaicon|ITA}} [[AS Roma|Roma]]|1|3|'''4'''
+||18|{{fbaicon|FRA}} [[Lille OSC|Lille]]|0|0|'''0'''|2|{{fbaicon|ENG}} '''[[Aston Villa F.C.|Aston Villa]]'''|1|2|'''3'''
+<!--Quarter-finals-->
+||6|{{fbaicon|POR}} '''[[S.C. Braga|Braga]]'''|1|4|'''5'''|4|{{fbaicon|ESP}} [[Real Betis]]|1|2|'''3'''
+||7 |{{fbaicon|GER}} '''[[SC Freiburg]]'''|3|3|'''6'''|16|{{fbaicon|ESP}} [[RC Celta de Vigo|Celta Vigo]]|0|1|'''1'''
+||5 |{{fbaicon|POR}} [[FC Porto|Porto]]|1|0|'''1'''|13|{{fbaicon|ENG}} '''[[Nottingham Forest F.C.|Nottingham Forest]]'''|1|1|'''2'''
+||10|{{fbaicon|ITA}} [[Bologna FC 1909|Bologna]]|1|0|'''1'''|2|{{fbaicon|ENG}} '''[[Aston Villa F.C.|Aston Villa]]'''|3|4|'''7''' 
+<!--Semi-finals-->
+||6|{{fbaicon|POR}} [[S.C. Braga|Braga]]|2|1|'''3'''|7|{{fbaicon|GER}} '''[[SC Freiburg]]'''|1|3|'''4'''
+||13|{{fbaicon|ENG}} [[Nottingham Forest F.C.|Nottingham Forest]]|1|0|'''1'''|2|{{fbaicon|ENG}} '''[[Aston Villa F.C.|Aston Villa]]'''|0|4|'''4'''
+<!--Final-->
+|20 May – [[Beşiktaş Stadium|Istanbul]]|7|{{fbaicon|GER}} [[SC Freiburg]]|'''0'''|2|{{fbaicon|ENG}} '''[[Aston Villa F.C.|Aston Villa]]'''|'''3'''
+}}<section end=Bracket />
+
+==Knockout phase play-offs==
+<section begin=KPP />
+The draw for the knockout phase play-offs was held on 30 January 2026, 13:00 [[Central European Time|CET]].<ref>{{cite web |url=https://www.uefa.com/uefaeuropaleague/draws/2026/2002101/ |title=UEFA Europa League knockout phase play-off draw: Where is it, when is it, who is involved? |publisher=[[UEFA]] |access-date=29 January 2026}}</ref><section end=KPP />
+
+===Seeding===
+The draw was split into four seeded and four unseeded pots, based on the predetermined pairings for the knockout phase. Teams were allocated based on their final position in the [[2025–26 UEFA Europa League league phase|league phase]]. Teams in positions 9 to 16 were seeded (playing the second legs at home), while teams in positions 17 to 24 were unseeded. The draw began with the unseeded teams, allocating them all to a tie. Once completed, all the seeded teams were drawn into a tie as their opponents.<ref>{{cite web |url=https://editorial.uefa.com/resources/02a1-1fcdca441e9f-c91352c1b774-1000/uel_ko_po_draw_procedure.pdf |title=UEFA Europa League – Draw procedure, Knockout phase play-offs |publisher=[[UEFA]] |date=30 January 2026 |access-date=30 January 2026}}</ref>
+
+{| class="wikitable" style="font-size:85%; white-space:nowrap;"
+|-
+! colspan="2" | 9/10 vs 23/24
+! colspan="2" | 11/12 vs 21/22
+|-
+! style="width:25%" | Seeded
+! style="width:25%" | Unseeded
+! style="width:25%" | Seeded
+! style="width:25%" | Unseeded
+|-
+| {{plainlist|
+*{{fbaicon|BEL}} [[KRC Genk|Genk]]
+*{{fbaicon|ITA}} [[Bologna FC 1909|Bologna]]
+}}
+| {{plainlist|
+*{{fbaicon|CRO}} [[GNK Dinamo Zagreb|Dinamo Zagreb]]
+*{{fbaicon|NOR}} [[SK Brann|Brann]]
+}}
+| {{plainlist|
+*{{fbaicon|GER}} [[VfB Stuttgart]]
+*{{fbaicon|HUN}} [[Ferencvárosi TC|Ferencváros]]
+}}
+| {{plainlist|
+*{{fbaicon|SCO}} [[Celtic F.C.|Celtic]]
+*{{fbaicon|BUL}} [[PFC Ludogorets Razgrad|Ludogorets Razgrad]]
+}}
+|}
+{| class="wikitable" style="font-size:85%; white-space:nowrap;"
+! colspan="2" | 13/14 vs 19/20
+! colspan="2" | 15/16 vs 17/18
+|-
+! style="width:25%" | Seeded
+! style="width:25%" | Unseeded
+! style="width:25%" | Seeded
+! style="width:25%" | Unseeded
+|-
+| {{plainlist|
+*{{fbaicon|ENG}} [[Nottingham Forest F.C.|Nottingham Forest]]
+*{{fbaicon|CZE}} [[FC Viktoria Plzeň|Viktoria Plzeň]]
+}}
+| {{plainlist|
+*{{fbaicon|TUR}} [[Fenerbahçe S.K. (football)|Fenerbahçe]]
+*{{fbaicon|GRE}} [[Panathinaikos F.C.|Panathinaikos]]
+}}
+| {{plainlist|
+*{{fbaicon|SRB}} [[Red Star Belgrade]]
+*{{fbaicon|ESP}} [[RC Celta de Vigo|Celta Vigo]]
+}}
+| {{plainlist|
+*{{fbaicon|GRE}} [[PAOK FC|PAOK]]
+*{{fbaicon|FRA}} [[Lille OSC|Lille]]
+}}
+|}
+
+===Summary===
+<section begin=KPP />
+The first legs were played on 19 February, and the second legs were played on 26 February 2026.<ref>{{cite web |url=https://editorial.uefa.com/resources/02a1-1fce881340c0-472c2144be1b-1000/uefa_-_europa_league_-_2025-26_-_knockout_phase_play-offs_draw_matchday_calendar.pdf |title=2025/26 UEFA Europa League knockout phase play-offs |publisher=[[UEFA]] |date=30 January 2026 |access-date=30 January 2026}}</ref>
+
+{{#invoke:Sports series|main|generate_links=y
+|[[PFC Ludogorets Razgrad|Ludogorets Razgrad]]|BUL|2–3|[[Ferencvárosi TC|Ferencváros]]|HUN|2–1|0–2
+|[[Panathinaikos F.C.|Panathinaikos]]|GRE|3–3 (4–3 p)|[[FC Viktoria Plzeň|Viktoria Plzeň]]|CZE|2–2|1–1 (aet)
+|[[GNK Dinamo Zagreb|Dinamo Zagreb]]|CRO|4–6|[[KRC Genk|Genk]]|BEL|1–3|3–3 (aet)
+|[[PAOK FC|PAOK]]|GRE|1–3|[[RC Celta de Vigo|Celta Vigo]]|ESP|1–2|0–1
+|[[Celtic F.C.|Celtic]]|SCO|2–4|[[VfB Stuttgart]]|GER|1–4|1–0
+|[[Fenerbahçe S.K. (football)|Fenerbahçe]]|TUR|2–4|[[Nottingham Forest F.C.|Nottingham Forest]]|ENG|0–3|2–1
+|[[SK Brann|Brann]]|NOR|0–2|[[Bologna FC 1909|Bologna]]|ITA|0–1|0–1
+|[[Lille OSC|Lille]]|FRA|2–1|[[Red Star Belgrade]]|SRB|0–1|2–0 (aet)
+}}<section end=KPP />
+
+===Matches===
+{{Football box
+|date       = {{Start date|2026|2|19|df=y}}
+|time       = 21:00&nbsp;{{small|(22:00 [[UTC+02:00|UTC+2]])}}
+|team1      = [[PFC Ludogorets Razgrad|Ludogorets Razgrad]] {{fbaicon|BUL}}
+|score      = 2–1
+|team2      = {{fbaicon|HUN}} [[Ferencvárosi TC|Ferencváros]]
+|goals1     =
+*[[Kwadwo Duah|Duah]] {{goal|24}}
+*[[Son (Spanish footballer)|Son]] {{goal|67}}
+|goals2     =
+*[[Bamidele Yusuf|Yusuf]] {{goal|27}}
+|stadium    = [[Huvepharma Arena]], [[Razgrad]]
+|attendance = 3,145<ref>{{cite web |url=https://www.uefa.com/newsfiles/uefacup/2026/2047777_FR.pdf |title=Full Time Summary Knockout phase play-offs 1st leg – Ludogorets Razgrad v Ferencváros |work=[[UEFA]] |publisher=Union of European Football Associations |date=19 February 2026 |access-date=19 February 2026}}</ref>
+|referee    = [[Tobias Stieler]] ([[German Football Association|Germany]])
+|report     = Report<ref>{{cite web |url=https://www.uefa.com/uefaeuropaleague/match/2047777/ |title=Ludogorets Razgrad vs Ferencváros |publisher=UEFA |access-date=19 February 2026}}</ref>
+}}
+{{Football box
+|date       = {{Start date|2026|2|26|df=y}}
+|time       = 18:45
+|team1      = Ferencváros {{fbaicon|HUN}}
+|score      = 2–0
+|team2      = {{fbaicon|BUL}} Ludogorets Razgrad
+|goals1     =
+*[[Gabi Kanichowsky|Kanichowsky]] {{goal|14}}
+*[[Kristoffer Zachariassen|Zachariassen]] {{goal|30}}
+|goals2     =
+|stadium    = [[Ferencváros Stadion]], [[Budapest]]
+|attendance = 17,989<ref>{{cite web |url=https://www.uefa.com/newsfiles/uefacup/2026/2047785_FR.pdf |title=Full Time Summary Knockout phase play-offs 2nd leg – Ferencváros v Ludogorets Razgrad |work=[[UEFA]] |publisher=Union of European Football Associations |date=26 February 2026 |access-date=26 February 2026}}</ref>
+|referee    = [[Chris Kavanagh (referee)|Chris Kavanagh]] ([[The Football Association|England]])
+|report     = Report<ref>{{cite web |url=https://www.uefa.com/uefaeuropaleague/match/2047785/ |title=Ferencváros vs Ludogorets Razgrad |publisher=UEFA |access-date=26 February 2026}}</ref>
+}}
+''Ferencváros won 3–2 on aggregate.''
+----
+{{Football box
+|date       = {{Start date|2026|2|19|df=y}}
+|time       = 21:00&nbsp;{{small|(22:00 [[UTC+02:00|UTC+2]])}}
+|team1      = [[Panathinaikos F.C.|Panathinaikos]] {{fbaicon|GRE}}
+|score      = 2–2
+|team2      = {{fbaicon|CZE}} [[FC Viktoria Plzeň|Viktoria Plzeň]]
+|goals1     =
+*[[Andrews Tetteh|Tetteh]] {{goal|31||61}}
+|goals2     =
+*[[Denis Višinský|Višinský]] {{goal|11}}
+*[[Tomáš Ladra|Ladra]] {{goal|80}}
+|stadium    = [[Olympic Stadium (Athens)|Olympic Stadium]], [[Athens]]
+|attendance = 20,227<ref>{{cite web |url=https://www.uefa.com/newsfiles/uefacup/2026/2047778_FR.pdf |title=Full Time Summary Knockout phase play-offs 1st leg – Panathinaikos v Viktoria Plzeň |work=[[UEFA]] |publisher=Union of European Football Associations |date=19 February 2026 |access-date=19 February 2026}}</ref>
+|referee    = [[Nick Walsh (referee)|Nick Walsh]] ([[Scottish Football Association|Scotland]])
+|report     = Report<ref>{{cite web |url=https://www.uefa.com/uefaeuropaleague/match/2047778/ |title=Panathinaikos vs Viktoria Plzeň |publisher=UEFA |access-date=19 February 2026}}</ref>
+}}
+{{Football box
+|date       = {{Start date|2026|2|26|df=y}}
+|time       = 18:45
+|team1      = Viktoria Plzeň {{fbaicon|CZE}}
+|score      = 1–1
+|aet        = yes
+|team2      = {{fbaicon|GRE}} Panathinaikos
+|goals1     =
+*[[Karel Spáčil|Spáčil]] {{goal|62}}
+|goals2     =
+*[[Andrews Tetteh|Tetteh]] {{goal|9}}
+|stadium    = [[Doosan Arena]], [[Plzeň]]
+|attendance = 11,244<ref>{{cite web |url=https://www.uefa.com/newsfiles/uefacup/2026/2047786_FR.pdf |title=Full Time Summary Knockout phase play-offs 2nd leg – Viktoria Plzeň v Panathinaikos |work=[[UEFA]] |publisher=Union of European Football Associations |date=26 February 2026 |access-date=26 February 2026}}</ref>
+|referee    = [[Donatas Rumšas]] ([[Lithuanian Football Federation|Lithuania]])
+|penalties1 =
+*[[Amar Memić|Memić]] {{penmiss}}
+*[[Patrik Hrošovský|Hrošovský]] {{pengoal}}
+*[[Denis Višinský|Višinský]] {{pengoal}}
+*[[Cheick Souaré|Souaré]] {{penmiss}}
+*[[Matěj Valenta|Valenta]] {{pengoal}}
+|penaltyscore = 3–4
+|penalties2 =
+*{{penmiss}} [[Davide Calabria|Calabria]]
+*{{pengoal}} [[Facundo Pellistri|Pellistri]]
+*{{pengoal}} [[Filip Đuričić|Đuričić]]
+*{{pengoal}} [[Karol Świderski|Świderski]]
+*{{pengoal}} [[Miloš Pantović (footballer, born 2002)|Pantović]]
+|report     = Report<ref>{{cite web |url=https://www.uefa.com/uefaeuropaleague/match/2047786/ |title=Viktoria Plzeň vs Panathinaikos |publisher=UEFA |access-date=26 February 2026}}</ref>
+}}
+''3–3 on aggregate; Panathinaikos won 4–3 on penalties.''
+----
+{{Football box
+|date       = {{Start date|2026|2|19|df=y}}
+|time       = 18:45
+|team1      = [[GNK Dinamo Zagreb|Dinamo Zagreb]] {{fbaicon|CRO}}
+|score      = 1–3
+|team2      = {{fbaicon|BEL}} [[KRC Genk|Genk]]
+|goals1     =
+*[[Dion Drena Beljo|Beljo]] {{goal|44}}
+|goals2     =
+*[[Bryan Heynen|Heynen]] {{goal|15}}
+*[[Zakaria El Ouahdi|El Ouahdi]] {{goal|21||90}}
+|stadium    = [[Stadion Maksimir]], [[Zagreb]]
+|attendance = 10,554<ref>{{cite web |url=https://www.uefa.com/newsfiles/uefacup/2026/2047779_FR.pdf |title=Full Time Summary Knockout phase play-offs 1st leg – Dinamo Zagreb v Genk |work=[[UEFA]] |publisher=Union of European Football Associations |date=19 February 2026 |access-date=19 February 2026}}</ref>
+|referee    = [[Halil Umut Meler]] ([[Turkish Football Federation|Turkey]])
+|report     = Report<ref>{{cite web |url=https://www.uefa.com/uefaeuropaleague/match/2047779/ |title=Dinamo Zagreb vs Genk |publisher=UEFA |access-date=19 February 2026}}</ref>
+}}
+{{Football box
+|date       = {{Start date|2026|2|26|df=y}}
+|time       = 21:00
+|team1      = Genk {{fbaicon|BEL}}
+|score      = 3–3
+|aet        = yes
+|team2      = {{fbaicon|CRO}} Dinamo Zagreb
+|goals1     =
+*[[Yira Sor|Sor]] {{goal|51}}
+*[[Matteo Pérez Vinlöf|Pérez Vinlöf]] {{goal|101|o.g.}}
+*[[Daan Heymans|Heymans]] {{goal|114}}
+|goals2     =
+*[[Monsef Bakrar|Bakrar]] {{goal|45+2}}
+*[[Luka Stojković|Stojković]] {{goal|57|pen.|75}}
+|stadium    = [[Cegeka Arena]], [[Genk]]
+|attendance = 11,225<ref>{{cite web |url=https://www.uefa.com/newsfiles/uefacup/2026/2047787_FR.pdf |title=Full Time Summary Knockout phase play-offs 2nd leg – Genk v Dinamo Zagreb |work=[[UEFA]] |publisher=Union of European Football Associations |date=26 February 2026 |access-date=26 February 2026}}</ref>
+|referee    = [[Felix Zwayer]] ([[German Football Association|Germany]])
+|report     = Report<ref>{{cite web |url=https://www.uefa.com/uefaeuropaleague/match/2047787/ |title=Genk vs Dinamo Zagreb |publisher=UEFA |access-date=26 February 2026}}</ref>
+}}
+''Genk won 6–4 on aggregate.''
+----
+{{Football box
+|date       = {{Start date|2026|2|19|df=y}}
+|time       = 18:45&nbsp;{{small|(19:45 [[UTC+02:00|UTC+2]])}}
+|team1      = [[PAOK FC|PAOK]] {{fbaicon|GRE}}
+|score      = 1–2
+|team2      = {{fbaicon|ESP}} [[RC Celta de Vigo|Celta Vigo]]
+|goals1     =
+*[[Alexander Jeremejeff|Jeremejeff]] {{goal|77}}
+|goals2     =
+*[[Iago Aspas|Aspas]] {{goal|34}}
+*[[Williot Swedberg|Swedberg]] {{goal|43}}
+|stadium    = [[Toumba Stadium]], [[Thessaloniki]]
+|attendance = 20,448<ref>{{cite web |url=https://www.uefa.com/newsfiles/uefacup/2026/2047780_FR.pdf |title=Full Time Summary Knockout phase play-offs 1st leg – PAOK v Celta Vigo |work=[[UEFA]] |publisher=Union of European Football Associations |date=19 February 2026 |access-date=19 February 2026}}</ref>
+|referee    = [[Ivan Kružliak]] ([[Slovak Football Association|Slovakia]])
+|report     = Report<ref>{{cite web |url=https://www.uefa.com/uefaeuropaleague/match/2047780/ |title=PAOK vs Celta Vigo |publisher=UEFA |access-date=19 February 2026}}</ref>
+}}
+{{Football box
+|date       = {{Start date|2026|2|26|df=y}}
+|time       = 21:00
+|team1      = Celta Vigo {{fbaicon|ESP}}
+|score      = 1–0
+|team2      = {{fbaicon|GRE}} PAOK
+|goals1     =
+*[[Williot Swedberg|Swedberg]] {{goal|63}}
+|goals2     =
+|stadium    = [[Balaídos Stadium|Balaídos]], [[Vigo]]
+|attendance = 21,344<ref>{{cite web |url=https://www.uefa.com/newsfiles/uefacup/2026/2047788_FR.pdf |title=Full Time Summary Knockout phase play-offs 2nd leg – Celta Vigo v PAOK |work=[[UEFA]] |publisher=Union of European Football Associations |date=26 February 2026 |access-date=26 February 2026}}</ref>
+|referee    = [[Marco Guida]] ([[Italian Football Federation|Italy]])
+|report     = Report<ref>{{cite web |url=https://www.uefa.com/uefaeuropaleague/match/2047788/ |title=Celta Vigo vs PAOK |publisher=UEFA |access-date=26 February 2026}}</ref>
+}}
+''Celta Vigo won 3–1 on aggregate.''
+----
+{{Football box
+|date       = {{Start date|2026|2|19|df=y}}
+|time       = 21:00&nbsp;{{small|(20:00 [[UTC+00:00|UTC+0]])}}
+|team1      = [[Celtic F.C.|Celtic]] {{fbaicon|SCO}}
+|score      = 1–4
+|team2      = {{fbaicon|GER}} [[VfB Stuttgart]]
+|goals1     =
+*[[Benjamin Nygren|Nygren]] {{goal|21}}
+|goals2     =
+*[[Bilal El Khannouss|El Khannouss]] {{goal|15||28}}
+*[[Jamie Leweling|Leweling]] {{goal|57}}
+*[[Tiago Tomás|Tomás]] {{goal|90+3}}
+|stadium    = [[Celtic Park]], [[Glasgow]]
+|attendance = 52,901<ref>{{cite web |url=https://www.uefa.com/newsfiles/uefacup/2026/2047784_FR.pdf |title=Full Time Summary Knockout phase play-offs 1st leg – Celtic v VfB Stuttgart |work=[[UEFA]] |publisher=Union of European Football Associations |date=19 February 2026 |access-date=19 February 2026}}</ref>
+|referee    = [[Erik Lambrechts]] ([[Royal Belgian Football Association|Belgium]])
+|report     = Report<ref>{{cite web |url=https://www.uefa.com/uefaeuropaleague/match/2047784/ |title=Celtic vs VfB Stuttgart |publisher=UEFA |access-date=19 February 2026}}</ref>
+}}
+{{Football box
+|date       = {{Start date|2026|2|26|df=y}}
+|time       = 18:45
+|team1      = VfB Stuttgart {{fbaicon|GER}}
+|score      = 0–1
+|team2      = {{fbaicon|SCO}} Celtic
+|goals1     =
+|goals2     =
+*[[Luke McCowan|McCowan]] {{goal|1}}
+|stadium    = [[MHPArena]], [[Stuttgart]]
+|attendance = 58,500<ref>{{cite web |url=https://www.uefa.com/newsfiles/uefacup/2026/2047792_FR.pdf |title=Full Time Summary Knockout phase play-offs 2nd leg – VfB Stuttgart v Celtic |work=[[UEFA]] |publisher=Union of European Football Associations |date=26 February 2026 |access-date=26 February 2026}}</ref>
+|referee    = [[Irfan Peljto]] ([[Football Federation of Bosnia and Herzegovina|Bosnia and Herzegovina]])
+|report     = Report<ref>{{cite web |url=https://www.uefa.com/uefaeuropaleague/match/2047792/ |title=VfB Stuttgart vs Celtic |publisher=UEFA |access-date=26 February 2026}}</ref>
+}}
+''VfB Stuttgart won 4–2 on aggregate.''
+----
+{{Football box
+|date       = {{Start date|2026|2|19|df=y}}
+|time       = 18:45&nbsp;{{small|(20:45 [[UTC+03:00|UTC+3]])}}
+|team1      = [[Fenerbahçe S.K. (football)|Fenerbahçe]] {{fbaicon|TUR}}
+|score      = 0–3
+|team2      = {{fbaicon|ENG}} [[Nottingham Forest F.C.|Nottingham Forest]]
+|goals1     =
+|goals2     =
+*[[Murillo (footballer)|Murillo]] {{goal|21}}
+*[[Igor Jesus (footballer, born 2001)|Igor Jesus]] {{goal|43}}
+*[[Morgan Gibbs-White|Gibbs-White]] {{goal|50}}
+|stadium    = [[Şükrü Saracoğlu Stadium]], [[Istanbul]]
+|attendance = 39,840<ref>{{cite web |url=https://www.uefa.com/newsfiles/uefacup/2026/2047783_FR.pdf |title=Full Time Summary Knockout phase play-offs 1st leg – Fenerbahçe v Nottingham Forest |work=[[UEFA]] |publisher=Union of European Football Associations |date=19 February 2026 |access-date=19 February 2026}}</ref>
+|referee    = [[Sandro Schärer]] ([[Swiss Football Association|Switzerland]])
+|report     = Report<ref>{{cite web |url=https://www.uefa.com/uefaeuropaleague/match/2047783/ |title=Fenerbahçe vs Nottingham Forest |publisher=UEFA |access-date=19 February 2026}}</ref>
+}}
+{{Football box
+|date       = {{Start date|2026|2|26|df=y}}
+|time       = 21:00&nbsp;{{small|(20:00 [[UTC+00:00|UTC+0]])}}
+|team1      = Nottingham Forest {{fbaicon|ENG}}
+|score      = 1–2
+|team2      = {{fbaicon|TUR}} Fenerbahçe
+|goals1     =
+*[[Callum Hudson-Odoi|Hudson-Odoi]] {{goal|68}}
+|goals2     =
+*[[Kerem Aktürkoğlu|Aktürkoğlu]] {{goal|22||48|pen.}}
+|stadium    = [[City Ground]], [[West Bridgford]]
+|attendance = 26,883<ref>{{cite web |url=https://www.uefa.com/newsfiles/uefacup/2026/2047791_FR.pdf |title=Full Time Summary Knockout phase play-offs 2nd leg – Nottingham Forest v Fenerbahçe |work=[[UEFA]] |publisher=Union of European Football Associations |date=26 February 2026 |access-date=26 February 2026}}</ref>
+|referee    = [[Maurizio Mariani]] ([[Italian Football Federation|Italy]])
+|report     = Report<ref>{{cite web |url=https://www.uefa.com/uefaeuropaleague/match/2047791/ |title=Nottingham Forest vs Fenerbahçe |publisher=UEFA |access-date=26 February 2026}}</ref>
+}}
+''Nottingham Forest won 4–2 on aggregate.''
+----
+{{Football box
+|date       = {{Start date|2026|2|19|df=y}}
+|time       = 18:45
+|team1      = [[SK Brann|Brann]] {{fbaicon|NOR}}
+|score      = 0–1
+|team2      = {{fbaicon|ITA}} [[Bologna FC 1909|Bologna]]
+|goals1     =
+|goals2     =
+*[[Santiago Castro (footballer, born 2004)|Castro]] {{goal|9}}
+|stadium    = [[Brann Stadion]], [[Bergen]]
+|attendance = 15,680<ref>{{cite web |url=https://www.uefa.com/newsfiles/uefacup/2026/2047782_FR.pdf |title=Full Time Summary Knockout phase play-offs 1st leg – Brann v Bologna |work=[[UEFA]] |publisher=Union of European Football Associations |date=19 February 2026 |access-date=19 February 2026}}</ref>
+|referee    = [[Rade Obrenović]] ([[Football Association of Slovenia|Slovenia]])
+|report     = Report<ref>{{cite web |url=https://www.uefa.com/uefaeuropaleague/match/2047782/ |title=Brann vs Bologna |publisher=UEFA |access-date=19 February 2026}}</ref>
+}}
+{{Football box
+|date       = {{Start date|2026|2|26|df=y}}
+|time       = 21:00
+|team1      = Bologna {{fbaicon|ITA}}
+|score      = 1–0
+|team2      = {{fbaicon|NOR}} Brann
+|goals1     =
+*[[João Mário (footballer, born 2000)|João Mário]] {{goal|56}}
+|goals2     =
+|stadium    = [[Stadio Renato Dall'Ara]], [[Bologna]]
+|attendance = 19,710<ref>{{cite web |url=https://www.uefa.com/newsfiles/uefacup/2026/2047790_FR.pdf |title=Full Time Summary Knockout phase play-offs 2nd leg – Bologna v Brann |work=[[UEFA]] |publisher=Union of European Football Associations |date=26 February 2026 |access-date=26 February 2026}}</ref>
+|referee    = [[Benoît Bastien]] ([[French Football Federation|France]])
+|report     = Report<ref>{{cite web |url=https://www.uefa.com/uefaeuropaleague/match/2047790/ |title=Bologna vs Brann |publisher=UEFA |access-date=26 February 2026}}</ref>
+}}
+''Bologna won 2–0 on aggregate.''
+----
+{{Football box
+|date       = {{Start date|2026|2|19|df=y}}
+|time       = 21:00
+|team1      = [[Lille OSC|Lille]] {{fbaicon|FRA}}
+|score      = 0–1
+|team2      = {{fbaicon|SRB}} [[Red Star Belgrade]]
+|goals1     =
+|goals2     =
+*[[Franklin Tebo Uchenna|Tebo Uchenna]] {{goal|45+1}}
+|stadium    = [[Stade Pierre-Mauroy]], [[Villeneuve-d'Ascq]]
+|attendance = 22,087<ref>{{cite web |url=https://www.uefa.com/newsfiles/uefacup/2026/2047781_FR.pdf |title=Full Time Summary Knockout phase play-offs 1st leg – Lille v Red Star Belgrade |work=[[UEFA]] |publisher=Union of European Football Associations |date=19 February 2026 |access-date=19 February 2026}}</ref>
+|referee    = [[Sven Jablonski]] ([[German Football Association|Germany]])
+|report     = Report<ref>{{cite web |url=https://www.uefa.com/uefaeuropaleague/match/2047781/ |title=Lille vs Red Star Belgrade |publisher=UEFA |access-date=19 February 2026}}</ref>
+}}
+{{Football box
+|date       = {{Start date|2026|2|26|df=y}}
+|time       = 18:45
+|team1      = Red Star Belgrade {{fbaicon|SRB}}
+|score      = 0–2
+|aet        = yes
+|team2      = {{fbaicon|FRA}} Lille
+|goals1     =
+|goals2     =
+*[[Olivier Giroud|Giroud]] {{goal|4}}
+*[[Nathan Ngoy|Ngoy]] {{goal|99}}
+|stadium    = [[Red Star Stadium]], [[Belgrade]]
+|attendance = 46,477<ref>{{cite web |url=https://www.uefa.com/newsfiles/uefacup/2026/2047789_FR.pdf |title=Full Time Summary Knockout phase play-offs 2nd leg – Red Star Belgrade v Lille |work=[[UEFA]] |publisher=Union of European Football Associations |date=26 February 2026 |access-date=26 February 2026}}</ref>
+|referee    = [[Anthony Taylor (referee)|Anthony Taylor]] ([[The Football Association|England]])
+|report     = Report<ref>{{cite web |url=https://www.uefa.com/uefaeuropaleague/match/2047789/ |title=Red Star Belgrade vs Lille |publisher=UEFA |access-date=26 February 2026}}</ref>
+}}
+''Lille won 2–1 on aggregate.''
+
+==Round of 16==
+<section begin=R16 />
+The draw for the round of 16 was held on 27 February 2026, 13:00 [[Central European Time|CET]].<ref>{{cite web |url=https://www.uefa.com/uefaeuropaleague/draws/2026/2002102/ |title=Round of 16 draw |publisher=[[UEFA]] |access-date=27 February 2026}}</ref><section end=R16 />
+
+===Seeding===
+As the bracket was fixed, the draw contained only four seeded pots, based on the predetermined pairings for the knockout phase, with the top-eight teams allocated based on their final position in the [[2025–26 UEFA Europa League league phase|league phase]]. Teams in positions 1 to 8 were seeded (playing the second legs at home), while the bracket positions of the winners of the knockout phase play-offs (unseeded) were predetermined. The top-eight teams were drawn into the bracket against one of their two possible opponents.<ref>{{cite web |url=https://editorial.uefa.com/resources/02a2-20061ba01cdd-56f90a9f2bff-1000/uel_round_of_16_draw_procedure_-_final.pdf |title=UEFA Europa League – Draw procedure, Round of 16 / Quarter-finals / Semi-finals / Final |publisher=[[UEFA]] |date=27 February 2026 |access-date=27 February 2026}}</ref>
+
+{| class="wikitable" style="font-size:85%; white-space:nowrap;"
+|-
+! colspan="2" | 1/2 vs 15/16/17/18
+! colspan="2" | 3/4 vs 13/14/19/20
+|-
+! style="width:25%" | Seeded
+! style="width:25%" | Predetermined
+! style="width:25%" | Seeded
+! style="width:25%" | Predetermined
+|-
+| {{plainlist|
+*{{fbaicon|FRA}} [[Olympique Lyonnais|Lyon]]
+*{{fbaicon|ENG}} [[Aston Villa F.C.|Aston Villa]]
+}}
+| {{plainlist|
+*{{fbaicon|ESP}} [[RC Celta de Vigo|Celta Vigo]]
+*{{fbaicon|FRA}} [[Lille OSC|Lille]]
+}}
+| {{plainlist|
+*{{fbaicon|DEN}} [[FC Midtjylland|Midtjylland]]
+*{{fbaicon|ESP}} [[Real Betis]]
+}}
+| {{plainlist|
+*{{fbaicon|GRE}} [[Panathinaikos F.C.|Panathinaikos]]
+*{{fbaicon|ENG}} [[Nottingham Forest F.C.|Nottingham Forest]]
+}}
+|}
+{| class="wikitable" style="font-size:85%; white-space:nowrap;"
+! colspan="2" | 5/6 vs 11/12/21/22
+! colspan="2" | 7/8 vs 9/10/23/24
+|-
+! style="width:25%" | Seeded
+! style="width:25%" | Predetermined
+! style="width:25%" | Seeded
+! style="width:25%" | Predetermined
+|-
+| {{plainlist|
+*{{fbaicon|POR}} [[FC Porto|Porto]]
+*{{fbaicon|POR}} [[S.C. Braga|Braga]]
+}}
+| {{plainlist|
+*{{fbaicon|HUN}} [[Ferencvárosi TC|Ferencváros]]
+*{{fbaicon|GER}} [[VfB Stuttgart]]
+}}
+| {{plainlist|
+*{{fbaicon|GER}} [[SC Freiburg]]
+*{{fbaicon|ITA}} [[AS Roma|Roma]]
+}}
+| {{plainlist|
+*{{fbaicon|BEL}} [[KRC Genk|Genk]]
+*{{fbaicon|ITA}} [[Bologna FC 1909|Bologna]]
+}}
+|}
+
+===Summary===
+<section begin=R16 />
+The first legs were played on 12 March, and the second legs were played on 18 and 19 March 2026.<ref name="R16 schedule">{{cite web |url=https://editorial.uefa.com/resources/02a2-2006df281acd-551838d018fd-1000/uefa_europa_league_-_2025-26_-_round_of_16_schedule.pdf |title=2025/26 UEFA Europa League knockout phase |publisher=[[UEFA]] |date=27 February 2026 |access-date=27 February 2026}}</ref>
+
+{{#invoke:Sports series|main|generate_links=y
+|[[Ferencvárosi TC|Ferencváros]]|HUN|2–4|[[S.C. Braga|Braga]]|POR|2–0|0–4
+|[[Panathinaikos F.C.|Panathinaikos]]|GRE|1–4|[[Real Betis]]|ESP|1–0|0–4
+|[[KRC Genk|Genk]]|BEL|2–5|[[SC Freiburg]]|GER|1–0|1–5
+|[[RC Celta de Vigo|Celta Vigo]]|ESP|3–1|[[Olympique Lyonnais|Lyon]]|FRA|1–1|2–0
+|[[VfB Stuttgart]]|GER|1–4|[[FC Porto|Porto]]|POR|1–2|0–2
+|[[Nottingham Forest F.C.|Nottingham Forest]]|ENG|2–2 (3–0 p)|[[FC Midtjylland|Midtjylland]]|DEN|0–1|2–1 (aet)
+|[[Bologna FC 1909|Bologna]]|ITA|5–4|[[AS Roma|Roma]]|ITA|1–1|4–3 (aet)
+|[[Lille OSC|Lille]]|FRA|0–3|[[Aston Villa F.C.|Aston Villa]]|ENG|0–1|0–2
+}}<section end=R16 />
+
+===Matches===
+{{Football box
+|date       = {{Start date|2026|3|12|df=y}}
+|time       = 21:00
+|team1      = [[Ferencvárosi TC|Ferencváros]] {{fbaicon|HUN}}
+|score      = 2–0
+|team2      = {{fbaicon|POR}} [[S.C. Braga|Braga]]
+|goals1     =
+*[[Gabi Kanichowsky|Kanichowsky]] {{goal|32}}
+*[[Lenny Joseph|Joseph]] {{goal|69}}
+|goals2     =
+|stadium    = [[Ferencváros Stadion]], [[Budapest]]
+|attendance = 19,859<ref>{{cite web |url=https://www.uefa.com/newsfiles/uefacup/2026/2048119_FR.pdf |title=Full Time Summary Round of 16 1st leg – Ferencváros v Braga |work=[[UEFA]] |publisher=Union of European Football Associations |date=12 March 2026 |access-date=12 March 2026}}</ref>
+|referee    = [[Nick Walsh (referee)|Nick Walsh]] ([[Scottish Football Association|Scotland]])
+|report     = Report<ref>{{cite web |url=https://www.uefa.com/uefaeuropaleague/match/2048119/ |title=Ferencváros vs Braga |publisher=UEFA |access-date=12 March 2026}}</ref>
+}}
+{{Football box
+|date       = {{Start date|2026|3|18|df=y}}
+|time       = 16:30&nbsp;{{small|(15:30 [[UTC+00:00|UTC+0]])}}
+|team1      = Braga {{fbaicon|POR}}
+|score      = 4–0
+|team2      = {{fbaicon|HUN}} Ferencváros
+|goals1     =
+*[[Ricardo Horta|Horta]] {{goal|11||53}}
+*[[Florian Grillitsch|Grillitsch]] {{goal|15}}
+*[[Gabri Martínez|Martínez]] {{goal|34}}
+|goals2     =
+|stadium    = [[Estádio Municipal de Braga|Estádio Municipal]], [[Braga]]
+|attendance = 15,078<ref>{{cite web |url=https://www.uefa.com/newsfiles/uefacup/2026/2048127_FR.pdf |title=Full Time Summary Round of 16 2nd leg – Braga v Ferencváros |work=[[UEFA]] |publisher=Union of European Football Associations |date=19 March 2026 |access-date=19 March 2026}}</ref>
+|referee    = [[Glenn Nyberg]] ([[Swedish Football Association|Sweden]])
+|report     = Report<ref>{{cite web |url=https://www.uefa.com/uefaeuropaleague/match/2048127/ |title=Braga vs Ferencváros |publisher=UEFA |access-date=18 March 2026}}</ref>
+}}
+''Braga won 4–2 on aggregate.''
+----
+{{Football box
+|date       = {{Start date|2026|3|12|df=y}}
+|time       = 18:45&nbsp;{{small|(19:45 [[UTC+02:00|UTC+2]])}}
+|team1      = [[Panathinaikos F.C.|Panathinaikos]] {{fbaicon|GRE}}
+|score      = 1–0
+|team2      = {{fbaicon|ESP}} [[Real Betis]]
+|goals1     =
+*[[Vicente Taborda|Taborda]] {{goal|88|pen.}}
+|goals2     =
+|stadium    = [[Olympic Stadium (Athens)|Olympic Stadium]], [[Athens]]
+|attendance = 27,479<ref>{{cite web |url=https://www.uefa.com/newsfiles/uefacup/2026/2048120_FR.pdf |title=Full Time Summary Round of 16 1st leg – Panathinaikos v Real Betis |work=[[UEFA]] |publisher=Union of European Football Associations |date=12 March 2026 |access-date=12 March 2026}}</ref>
+|referee    = [[Szymon Marciniak]] ([[Polish Football Association|Poland]])
+|report     = Report<ref>{{cite web |url=https://www.uefa.com/uefaeuropaleague/match/2048120/ |title=Panathinaikos vs Real Betis |publisher=UEFA |access-date=12 March 2026}}</ref>
+}}
+{{Football box
+|date       = {{Start date|2026|3|19|df=y}}
+|time       = 21:00
+|team1      = Real Betis {{fbaicon|ESP}}
+|score      = 4–0
+|team2      = {{fbaicon|GRE}} Panathinaikos
+|goals1     =
+*[[Aitor Ruibal|Ruibal]] {{goal|8}}
+*[[Sofyan Amrabat|Amrabat]] {{goal|45+1}}
+*[[Cucho Hernández|Hernández]] {{goal|53}}
+*[[Antony (footballer, born 2000)|Antony]] {{goal|66}}
+|goals2     =
+|stadium    = [[Estadio de La Cartuja|La Cartuja]], [[Seville]]{{refn|group=note|name=Real Betis|Real Betis played their home matches at La Cartuja, Seville, instead of their regular stadium, [[Estadio Benito Villamarín|Benito Villamarín]], Seville, due to renovation works.<ref>{{cite web|access-date=31 December 2024 |date=15 November 2024 |first1=Basilio |language=es |last1=García |title=Demolición, traslado, accesos y regreso en 2027: los planes del Betis con La Cartuja y el Villamarín |url=https://www.eldesmarque.com/futbol/real-betis/20241115/plan-betis-obras-benito-villamarin-traslado-cartuja_300503765.html |work=eldesmarque}}</ref>}}
+|attendance = 60,207<ref>{{cite web |url=https://www.uefa.com/newsfiles/uefacup/2026/2048128_FR.pdf|title=Full Time Summary Round of 16 2nd leg – Real Betis v Panathinaikos|work=[[UEFA]]|publisher=Union of European Football Associations|date=19 March 2026|access-date=20 March 2026}}</ref>
+|referee    = [[Tobias Stieler]] ([[German Football Association|Germany]])
+|report     = Report<ref>{{cite web |url=https://www.uefa.com/uefaeuropaleague/match/2048128/ |title=Real Betis vs Panathinaikos |publisher=UEFA |access-date=19 March 2026}}</ref>
+}}
+''Real Betis won 4–1 on aggregate.''
+----
+{{Football box
+|date       = {{Start date|2026|3|12|df=y}}
+|time       = 21:00
+|team1      = [[KRC Genk|Genk]] {{fbaicon|BEL}}
+|score      = 1–0
+|team2      = {{fbaicon|GER}} [[SC Freiburg]]
+|goals1     =
+*[[Zakaria El Ouahdi|El Ouahdi]] {{goal|24}}
+|goals2     =
+|stadium    = [[Cegeka Arena]], [[Genk]]
+|attendance = 15,550<ref>{{cite web |url=https://www.uefa.com/newsfiles/uefacup/2026/2048121_FR.pdf |title=Full Time Summary Round of 16 1st leg – Genk v SC Freiburg |work=[[UEFA]] |publisher=Union of European Football Associations |date=12 March 2026 |access-date=12 March 2026}}</ref>
+|referee    = [[Chris Kavanagh (referee)|Chris Kavanagh]] ([[The Football Association|England]])
+|report     = Report<ref>{{cite web |url=https://www.uefa.com/uefaeuropaleague/match/2048121/ |title=Genk vs SC Freiburg |publisher=UEFA |access-date=12 March 2026}}</ref>
+}}
+{{Football box
+|date       = {{Start date|2026|3|19|df=y}}
+|time       = 18:45
+|team1      = SC Freiburg {{fbaicon|GER}}
+|score      = 5–1
+|team2      = {{fbaicon|BEL}} Genk
+|goals1     =
+*[[Matthias Ginter|Ginter]] {{goal|19}}
+*[[Igor Matanović|Matanović]] {{goal|25}}
+*[[Vincenzo Grifo|Grifo]] {{goal|53}}
+*[[Yuito Suzuki|Suzuki]] {{goal|57}}
+*[[Maximilian Eggestein|Eggestein]] {{goal|79}}
+|goals2     =
+*[[Matte Smets|Smets]] {{goal|39}}
+|stadium    = [[Europa-Park Stadion]], [[Freiburg im Breisgau]]
+|attendance = 33,000<ref>{{cite web |url=https://www.uefa.com/newsfiles/uefacup/2026/2048129_FR.pdf |title=Full Time Summary Round of 16 2nd leg – SC Freiburg v Genk |work=[[UEFA]] |publisher=Union of European Football Associations |date=19 March 2026 |access-date=20 March 2026}}</ref>
+|referee    = [[Michael Oliver (referee)|Michael Oliver]] ([[The Football Association|England]])
+|report     = Report<ref>{{cite web |url=https://www.uefa.com/uefaeuropaleague/match/2048129/ |title=SC Freiburg vs Genk |publisher=UEFA |access-date=19 March 2026}}</ref>
+}}
+''SC Freiburg won 5–2 on aggregate.''
+----
+{{Football box
+|date       = {{Start date|2026|3|12|df=y}}
+|time       = 21:00
+|team1      = [[RC Celta de Vigo|Celta Vigo]] {{fbaicon|ESP}}
+|score      = 1–1
+|team2      = {{fbaicon|FRA}} [[Olympique Lyonnais|Lyon]]
+|goals1     =
+*[[Javi Rueda|Rueda]] {{goal|25}}
+|goals2     =
+*[[Endrick (footballer, born 2006)|Endrick]] {{goal|87}}
+|stadium    = [[Balaídos Stadium|Balaídos]], [[Vigo]]
+|attendance = 21,673<ref>{{cite web |url=https://www.uefa.com/newsfiles/uefacup/2026/2048122_FR.pdf |title=Full Time Summary Round of 16 1st leg – Celta Vigo v Lyon |work=[[UEFA]] |publisher=Union of European Football Associations |date=12 March 2026 |access-date=12 March 2026}}</ref>
+|referee    = [[Erik Lambrechts]] ([[Royal Belgian Football Association|Belgium]])
+|report     = Report<ref>{{cite web |url=https://www.uefa.com/uefaeuropaleague/match/2048122/ |title=Celta Vigo vs Lyon |publisher=UEFA |access-date=12 March 2026}}</ref>
+}}
+{{Football box
+|date       = {{Start date|2026|3|19|df=y}}
+|time       = 18:45
+|team1      = Lyon {{fbaicon|FRA}}
+|score      = 0–2
+|team2      = {{fbaicon|ESP}} Celta Vigo
+|goals1     =
+|goals2     =
+*[[Javi Rueda|Rueda]] {{goal|61}}
+*[[Ferran Jutglà|Jutglà]] {{goal|90+2}}
+|stadium    = [[Parc Olympique Lyonnais]], [[Décines-Charpieu]]
+|attendance = 41,764<ref>{{cite web |url=https://www.uefa.com/newsfiles/uefacup/2026/2048130_FR.pdf |title=Full Time Summary Round of 16 2nd leg – Lyon v Celta Vigo |work=[[UEFA]] |publisher=Union of European Football Associations |date=19 March 2026 |access-date=20 March 2026}}</ref>
+|referee    = [[Irfan Peljto]] ([[Football Federation of Bosnia and Herzegovina|Bosnia and Herzegovina]])
+|report     = Report<ref>{{cite web |url=https://www.uefa.com/uefaeuropaleague/match/2048130/ |title=Lyon vs Celta Vigo |publisher=UEFA |access-date=19 March 2026}}</ref>
+}}
+''Celta Vigo won 3–1 on aggregate.''
+----
+{{Football box
+|date       = {{Start date|2026|3|12|df=y}}
+|time       = 18:45
+|team1      = [[VfB Stuttgart]] {{fbaicon|GER}}
+|score      = 1–2
+|team2      = {{fbaicon|POR}} [[FC Porto|Porto]]
+|goals1     =
+*[[Deniz Undav|Undav]] {{goal|40}}
+|goals2     =
+*[[Terem Moffi|Moffi]] {{goal|21}}
+*[[Rodrigo Mora (footballer, born 2007)|Mora]] {{goal|27}}
+|stadium    = [[MHPArena]], [[Stuttgart]]
+|attendance = 60,000<ref>{{cite web |url=https://www.uefa.com/newsfiles/uefacup/2026/2048123_FR.pdf |title=Full Time Summary Round of 16 1st leg – VfB Stuttgart v Porto |work=[[UEFA]] |publisher=Union of European Football Associations |date=12 March 2026 |access-date=12 March 2026}}</ref>
+|referee    = [[Donatas Rumšas]] ([[Lithuanian Football Federation|Lithuania]])
+|report     = Report<ref>{{cite web |url=https://www.uefa.com/uefaeuropaleague/match/2048123/ |title=VfB Stuttgart vs Porto |publisher=UEFA |access-date=12 March 2026}}</ref>
+}}
+{{Football box
+|date       = {{Start date|2026|3|19|df=y}}
+|time       = 21:00&nbsp;{{small|(20:00 [[UTC+00:00|UTC+0]])}}
+|team1      = Porto {{fbaicon|POR}}
+|score      = 2–0
+|team2      = {{fbaicon|GER}} VfB Stuttgart
+|goals1     =
+*[[William Gomes]] {{goal|21}}
+*[[Victor Froholdt|Froholdt]] {{goal|72}}
+|goals2     =
+|stadium    = [[Estádio do Dragão]], [[Porto]]
+|attendance = 40,675<ref>{{cite web |url=https://www.uefa.com/newsfiles/uefacup/2026/2048131_FR.pdf |title=Full Time Summary Round of 16 2nd leg – Porto v VfB Stuttgart |work=[[UEFA]] |publisher=Union of European Football Associations |date=19 March 2026 |access-date=20 March 2026}}</ref>
+|referee    = [[Anthony Taylor (referee)|Anthony Taylor]] ([[The Football Association|England]])
+|report     = Report<ref>{{cite web |url=https://www.uefa.com/uefaeuropaleague/match/2048131/ |title=Porto vs VfB Stuttgart |publisher=UEFA |access-date=19 March 2026}}</ref>
+}}
+''Porto won 4–1 on aggregate.''
+----
+{{Football box
+|date       = {{Start date|2026|3|12|df=y}}
+|time       = 21:00&nbsp;{{small|(20:00 [[UTC+00:00|UTC+0]])}}
+|team1      = [[Nottingham Forest F.C.|Nottingham Forest]] {{fbaicon|ENG}}
+|score      = 0–1
+|team2      = {{fbaicon|DEN}} [[FC Midtjylland|Midtjylland]]
+|goals1     =
+|goals2     =
+*[[Cho Gue-sung]] {{goal|80}}
+|stadium    = [[City Ground]], [[West Bridgford]]
+|attendance = 29,502<ref>{{cite web |url=https://www.uefa.com/newsfiles/uefacup/2026/2048124_FR.pdf |title=Full Time Summary Round of 16 1st leg – Nottingham Forest v Midtjylland |work=[[UEFA]] |publisher=Union of European Football Associations |date=12 March 2026 |access-date=12 March 2026}}</ref>
+|referee    = [[Rade Obrenović]] ([[Football Association of Slovenia|Slovenia]])
+|report     = Report<ref>{{cite web |url=https://www.uefa.com/uefaeuropaleague/match/2048124/ |title=Nottingham Forest vs Midtjylland |publisher=UEFA |access-date=12 March 2026}}</ref>
+}}
+{{Football box
+|date       = {{Start date|2026|3|19|df=y}}
+|time       = 18:45
+|team1      = Midtjylland {{fbaicon|DEN}}
+|score      = 1–2
+|aet        = yes
+|team2      = {{fbaicon|ENG}} Nottingham Forest
+|goals1     =
+*[[Martin Erlić|Erlić]] {{goal|69}}
+|goals2     =
+*[[Nicolás Domínguez|Domínguez]] {{goal|41}}
+*[[Ryan Yates|Yates]] {{goal|52}}
+|stadium    = [[MCH Arena]], [[Herning]]
+|attendance = 10,554<ref>{{cite web |url=https://www.uefa.com/newsfiles/uefacup/2026/2048132_FR.pdf |title=Full Time Summary Round of 16 2nd leg – Midtjylland v Nottingham Forest |work=[[UEFA]] |publisher=Union of European Football Associations |date=19 March 2026 |access-date=20 March 2026}}</ref>
+|referee    = [[Felix Zwayer]] ([[German Football Association|Germany]])
+|penalties1 =
+*[[Cho Gue-sung]] {{penmiss}}
+*[[Aral Şimşir|Şimşir]] {{penmiss}}
+*[[Edward Chilufya|Chilufya]] {{penmiss}}
+|penaltyscore = 0–3
+|penalties2 =
+*{{pengoal}} [[Morgan Gibbs-White|Gibbs-White]]
+*{{pengoal}} [[Ibrahim Sangaré (Ivorian footballer)|Sangaré]]
+*{{pengoal}} [[Neco Williams|Williams]]
+|report     = Report<ref>{{cite web |url=https://www.uefa.com/uefaeuropaleague/match/2048132/ |title=Midtjylland vs Nottingham Forest |publisher=UEFA |access-date=19 March 2026}}</ref>
+}}
+''2–2 on aggregate; Nottingham Forest won 3–0 on penalties.''
+----
+{{Football box
+|date       = {{Start date|2026|3|12|df=y}}
+|time       = 18:45
+|team1      = [[Bologna FC 1909|Bologna]] {{fbaicon|ITA}}
+|score      = 1–1
+|team2      = {{fbaicon|ITA}} [[AS Roma|Roma]]
+|goals1     =
+*[[Federico Bernardeschi|Bernardeschi]] {{goal|50}}
+|goals2     =
+*[[Lorenzo Pellegrini|Pellegrini]] {{goal|71}}
+|stadium    = [[Stadio Renato Dall'Ara]], [[Bologna]]
+|attendance = 26,277<ref>{{cite web |url=https://www.uefa.com/newsfiles/uefacup/2026/2048125_FR.pdf |title=Full Time Summary Round of 16 1st leg – Bologna v Roma |work=[[UEFA]] |publisher=Union of European Football Associations |date=12 March 2026 |access-date=12 March 2026}}</ref>
+|referee    = [[Sven Jablonski]] ([[German Football Association|Germany]])
+|report     = Report<ref>{{cite web |url=https://www.uefa.com/uefaeuropaleague/match/2048125/ |title=Bologna vs Roma |publisher=UEFA |access-date=12 March 2026}}</ref>
+}}
+{{Football box
+|date       = {{Start date|2026|3|19|df=y}}
+|time       = 21:00
+|team1      = Roma {{fbaicon|ITA}}
+|score      = 3–4
+|aet        = yes
+|team2      = {{fbaicon|ITA}} Bologna
+|goals1     =
+*[[Evan Ndicka|Ndicka]] {{goal|32}}
+*[[Donyell Malen|Malen]] {{goal|69|pen.}}
+*[[Lorenzo Pellegrini|Pellegrini]] {{goal|80}}
+|goals2     =
+*[[Jonathan Rowe (footballer, born 2003)|Rowe]] {{goal|22}}
+*[[Federico Bernardeschi|Bernardeschi]] {{goal|45+2|pen.}}
+*[[Santiago Castro (footballer, born 2004)|Castro]] {{goal|58}}
+*[[Nicolò Cambiaghi|Cambiaghi]] {{goal|111}}
+|stadium    = [[Stadio Olimpico]], [[Rome]]
+|attendance = 63,908<ref>{{cite web |url=https://www.uefa.com/newsfiles/uefacup/2026/2048133_FR.pdf |title=Full Time Summary Round of 16 2nd leg – Roma v Bologna |work=[[UEFA]] |publisher=Union of European Football Associations |date=19 March 2026 |access-date=20 March 2026}}</ref>
+|referee    = [[István Kovács (referee)|István Kovács]] ([[Romanian Football Federation|Romania]])
+|report     = Report<ref>{{cite web |url=https://www.uefa.com/uefaeuropaleague/match/2048133/ |title=Roma vs Bologna |publisher=UEFA |access-date=19 March 2026}}</ref>
+}}
+''Bologna won 5–4 on aggregate.''
+----
+{{Football box
+|date       = {{Start date|2026|3|12|df=y}}
+|time       = 18:45
+|team1      = [[Lille OSC|Lille]] {{fbaicon|FRA}}
+|score      = 0–1
+|team2      = {{fbaicon|ENG}} [[Aston Villa F.C.|Aston Villa]]
+|goals1     =
+|goals2     =
+*[[Ollie Watkins|Watkins]] {{goal|61}}
+|stadium    = [[Stade Pierre-Mauroy]], [[Villeneuve-d'Ascq]]
+|attendance = 40,187<ref>{{cite web |url=https://www.uefa.com/newsfiles/uefacup/2026/2048126_FR.pdf |title=Full Time Summary Round of 16 1st leg – Lille v Aston Villa |work=[[UEFA]] |publisher=Union of European Football Associations |date=12 March 2026 |access-date=12 March 2026}}</ref>
+|referee    = [[José María Sánchez Martínez]] ([[Royal Spanish Football Federation|Spain]])
+|report     = Report<ref>{{cite web |url=https://www.uefa.com/uefaeuropaleague/match/2048126/ |title=Lille vs Aston Villa |publisher=UEFA |access-date=12 March 2026}}</ref>
+}}
+{{Football box
+|date       = {{Start date|2026|3|19|df=y}}
+|time       = 21:00&nbsp;{{small|(20:00 [[UTC+00:00|UTC+0]])}}
+|team1      = Aston Villa {{fbaicon|ENG}}
+|score      = 2–0
+|team2      = {{fbaicon|FRA}} Lille
+|goals1     =
+*[[John McGinn|McGinn]] {{goal|54}}
+*[[Leon Bailey|Bailey]] {{goal|86}}
+|goals2     =
+|stadium    = [[Villa Park]], [[Birmingham]]
+|attendance = 37,583<ref>{{cite web |url=https://www.uefa.com/newsfiles/uefacup/2026/2048134_FR.pdf |title=Full Time Summary Round of 16 2nd leg – Aston Villa v Lille |work=[[UEFA]] |publisher=Union of European Football Associations |date=19 March 2026 |access-date=20 March 2026}}</ref>
+|referee    = [[Davide Massa]] ([[Italian Football Federation|Italy]])
+|report     = Report<ref>{{cite web |url=https://www.uefa.com/uefaeuropaleague/match/2048134/ |title=Aston Villa vs Lille |publisher=UEFA |access-date=19 March 2026}}</ref>
+}}
+''Aston Villa won 3–0 on aggregate.''
+
+==Quarter-finals==
+
+===Summary===
+<section begin=QF />
+The first legs were played on 8 and 9 April, and the second legs were played on 16 April 2026.<ref name="QF schedule">{{cite web |url=https://editorial.uefa.com/resources/02a3-202faa477370-ba5802b384d9-1000/uefa_-_europa_league_-_2025-26_-_knockout_phase_schedule.pdf |title=2025/26 UEFA Europa League knockout phase: Quarter-finals |publisher=[[UEFA]] |date=19 March 2026 |access-date=20 March 2026}}</ref>
+
+{{#invoke:Sports series|main|generate_links=y
+|[[S.C. Braga|Braga]]|POR|5-3|[[Real Betis]]|ESP|1–1|4-2
+|[[SC Freiburg]]|GER|6–1|[[RC Celta de Vigo|Celta Vigo]]|ESP|3–0|3–1
+|[[FC Porto|Porto]]|POR|1-2|[[Nottingham Forest F.C.|Nottingham Forest]]|ENG|1–1|0-1
+|[[Bologna FC 1909|Bologna]]|ITA|1-7|[[Aston Villa F.C.|Aston Villa]]|ENG|1–3|0-4
+}}<section end=QF />
+
+===Matches===
+{{Football box
+|date       = {{Start date|2026|4|8|df=y}}
+|time       = 18:45&nbsp;{{small|(17:45 [[UTC+01:00|UTC+1]])}}
+|team1      = [[S.C. Braga|Braga]] {{fbaicon|POR}}
+|score      = 1–1
+|team2      = {{fbaicon|ESP}} [[Real Betis]]
+|goals1     =
+*[[Florian Grillitsch|Grillitsch]] {{goal|5}}
+|goals2     =
+*[[Cucho Hernández|Hernández]] {{goal|61|pen.}}
+|stadium    = [[Estádio Municipal de Braga|Estádio Municipal]], [[Braga]]
+|attendance = 20,847<ref>{{cite web |url=https://www.uefa.com/newsfiles/uefacup/2026/2048135_FR.pdf |title=Full Time Summary Quarter-finals 1st leg – Braga v Real Betis |work=[[UEFA]] |publisher=Union of European Football Associations |date=8 April 2026 |access-date=8 April 2026}}</ref>
+|referee    = [[Felix Zwayer]] ([[German Football Association|Germany]])
+|report     = Report<ref>{{cite web |url=https://www.uefa.com/uefaeuropaleague/match/2048135/ |title=Braga vs Real Betis |publisher=UEFA |access-date=8 April 2026}}</ref>
+}}
+{{Football box
+|date       = {{Start date|2026|4|16|df=y}}
+|time       = 21:00
+|team1      = Real Betis {{fbaicon|ESP}}
+|score      = 2–4
+|team2      = {{fbaicon|POR}} Braga
+|goals1     =
+*[[Antony (footballer, born 2000)|Antony]] {{goal|13}}
+*[[Abde Ezzalzouli|Ezzalzouli]] {{goal|26}}
+|goals2     =
+*[[Pau Víctor|Víctor]] {{goal|38}}
+*[[Vitor Carvalho|Carvalho]] {{goal|49}}
+*[[Ricardo Horta|Horta]] {{goal|53|pen.}}
+*[[Jean-Baptiste Gorby|Gorby]] {{goal|74}}
+|stadium    = [[Estadio de La Cartuja|La Cartuja]], [[Seville]]{{refn|group=note|name=Real Betis}}
+|attendance = 66,694<ref>{{cite web |url=https://www.uefa.com/newsfiles/uefacup/2026/2048139_FR.pdf |title=Full Time Summary Quarter-finals 2nd leg – Real Betis v Braga |work=[[UEFA]] |publisher=Union of European Football Associations |date=16 April 2026 |access-date=16 April 2026}}</ref>
+|referee    = [[Davide Massa]] ([[Italian Football Federation|Italy]])
+|report     = Report<ref>{{cite web |url=https://www.uefa.com/uefaeuropaleague/match/2048139/ |title=Real Betis vs Braga |publisher=UEFA |access-date=16 April 2026}}</ref>
+}}
+''Braga won 5–3 on aggregate.''
+----
+{{Football box
+|date       = {{Start date|2026|4|9|df=y}}
+|time       = 21:00
+|team1      = [[SC Freiburg]] {{fbaicon|GER}}
+|score      = 3–0
+|team2      = {{fbaicon|ESP}} [[RC Celta de Vigo|Celta Vigo]]
+|goals1     =
+*[[Vincenzo Grifo|Grifo]] {{goal|10}}
+*[[Jan-Niklas Beste|Beste]] {{goal|32}}
+*[[Matthias Ginter|Ginter]] {{goal|78}}
+|goals2     =
+|stadium    = [[Europa-Park Stadion]], [[Freiburg im Breisgau]]
+|attendance = 32,600<ref>{{cite web |url=https://www.uefa.com/newsfiles/uefacup/2026/2048136_FR.pdf |title=Full Time Summary Quarter-finals 1st leg – SC Freiburg v Celta Vigo |work=[[UEFA]] |publisher=Union of European Football Associations |date=9 April 2026 |access-date=9 April 2026}}</ref>
+|referee    = [[Glenn Nyberg]] ([[Swedish Football Association|Sweden]])
+|report     = Report<ref>{{cite web |url=https://www.uefa.com/uefaeuropaleague/match/2048136/ |title=SC Freiburg vs Celta Vigo |publisher=UEFA |access-date=9 April 2026}}</ref>
+}}
+{{Football box
+|date       = {{Start date|2026|4|16|df=y}}
+|time       = 18:45
+|team1      = Celta Vigo {{fbaicon|ESP}}
+|score      = 1–3
+|team2      = {{fbaicon|GER}} SC Freiburg
+|goals1     =
+*[[Williot Swedberg|Swedberg]] {{goal|90+1}}
+|goals2     =
+*[[Igor Matanović|Matanović]] {{goal|33}}
+*[[Yuito Suzuki|Suzuki]] {{goal|39||50}}
+|stadium    = [[Balaídos Stadium|Balaídos]], [[Vigo]]
+|attendance = 21,981<ref>{{cite web |url=https://www.uefa.com/newsfiles/uefacup/2026/2048140_FR.pdf |title=Full Time Summary Quarter-finals 2nd leg – Celta Vigo v SC Freiburg |work=[[UEFA]] |publisher=Union of European Football Associations |date=16 April 2026 |access-date=16 April 2026}}</ref>
+|referee    = [[Anthony Taylor (referee)|Anthony Taylor]] ([[The Football Association|England]])
+|report     = Report<ref>{{cite web |url=https://www.uefa.com/uefaeuropaleague/match/2048140/ |title=Celta Vigo vs SC Freiburg |publisher=UEFA |access-date=16 April 2026}}</ref>
+}}
+''SC Freiburg won 6–1 on aggregate.''
+----
+{{Football box
+|date       = {{Start date|2026|4|9|df=y}}
+|time       = 21:00&nbsp;{{small|(20:00 [[UTC+01:00|UTC+1]])}}
+|team1      = [[FC Porto|Porto]] {{fbaicon|POR}}
+|score      = 1–1
+|team2      = {{fbaicon|ENG}} [[Nottingham Forest F.C.|Nottingham Forest]]
+|goals1     =
+*[[William Gomes]] {{goal|11}}
+|goals2     =
+*[[Martim Fernandes|Fernandes]] {{goal|13|o.g.}}
+|stadium    = [[Estádio do Dragão]], [[Porto]]
+|attendance = 46,479<ref>{{cite web |url=https://www.uefa.com/newsfiles/uefacup/2026/2048137_FR.pdf |title=Full Time Summary Quarter-finals 1st leg – Porto v Nottingham Forest |work=[[UEFA]] |publisher=Union of European Football Associations |date=9 April 2026 |access-date=9 April 2026}}</ref>
+|referee    = [[Marco Guida]] ([[Italian Football Federation|Italy]])
+|report     = Report<ref>{{cite web |url=https://www.uefa.com/uefaeuropaleague/match/2048137/ |title=Porto vs Nottingham Forest |publisher=UEFA |access-date=9 April 2026}}</ref>
+}}
+{{Football box
+|date       = {{Start date|2026|4|16|df=y}}
+|time       = 21:00&nbsp;{{small|(20:00 [[UTC+01:00|UTC+1]])}}
+|team1      = Nottingham Forest {{fbaicon|ENG}}
+|score      = 1–0
+|team2      = {{fbaicon|POR}} Porto
+|goals1     =
+*[[Morgan Gibbs-White|Gibbs-White]] {{goal|12}}
+|goals2     =
+|stadium    = [[City Ground]], [[West Bridgford]]
+|attendance = 29,560<ref>{{cite web |url=https://www.uefa.com/newsfiles/uefacup/2026/2048141_FR.pdf |title=Full Time Summary Quarter-finals 2nd leg – Nottingham Forest v Porto |work=[[UEFA]] |publisher=Union of European Football Associations |date=16 April 2026 |access-date=16 April 2026}}</ref>
+|referee    = [[Danny Makkelie]] ([[Royal Dutch Football Association|Netherlands]])
+|report     = Report<ref>{{cite web |url=https://www.uefa.com/uefaeuropaleague/match/2048141/ |title=Nottingham Forest vs Porto |publisher=UEFA |access-date=16 April 2026}}</ref>
+}}
+''Nottingham Forest won 2–1 on aggregate.''
+----
+{{Football box
+|date       = {{Start date|2026|4|9|df=y}}
+|time       = 21:00
+|team1      = [[Bologna FC 1909|Bologna]] {{fbaicon|ITA}}
+|score      = 1–3
+|team2      = {{fbaicon|ENG}} [[Aston Villa F.C.|Aston Villa]]
+|goals1     =
+*[[Jonathan Rowe (footballer, born 2003)|Rowe]] {{goal|90}}
+|goals2     =
+*[[Ezri Konsa|Konsa]] {{goal|44}}
+*[[Ollie Watkins|Watkins]] {{goal|51||90+4}}
+|stadium    = [[Stadio Renato Dall'Ara]], [[Bologna]]
+|attendance = 31,142<ref>{{cite web |url=https://www.uefa.com/newsfiles/uefacup/2026/2048138_FR.pdf |title=Full Time Summary Quarter-finals 1st leg – Bologna v Aston Villa |work=[[UEFA]] |publisher=Union of European Football Associations |date=9 April 2026 |access-date=9 April 2026}}</ref>
+|referee    = [[Sandro Schärer]] ([[Swiss Football Association|Switzerland]])
+|report     = Report<ref>{{cite web |url=https://www.uefa.com/uefaeuropaleague/match/2048138/ |title=Bologna vs Aston Villa |publisher=UEFA |access-date=9 April 2026}}</ref>
+}}
+{{Football box
+|date       = {{Start date|2026|4|16|df=y}}
+|time       = 21:00&nbsp;{{small|(20:00 [[UTC+01:00|UTC+1]])}}
+|team1      = Aston Villa {{fbaicon|ENG}}
+|score      = 4–0
+|team2      = {{fbaicon|ITA}} Bologna
+|goals1     =
+*[[Ollie Watkins|Watkins]] {{goal|16}}
+*[[Emiliano Buendía|Buendía]] {{goal|26}}
+*[[Morgan Rogers|Rogers]] {{goal|39}}
+*[[Ezri Konsa|Konsa]] {{goal|89}}
+|goals2     =
+|stadium    = [[Villa Park]], [[Birmingham]]
+|attendance = 41,662<ref>{{cite web |url=https://www.uefa.com/newsfiles/uefacup/2026/2048142_FR.pdf |title=Full Time Summary Quarter-finals 2nd leg – Aston Villa v Bologna |work=[[UEFA]] |publisher=Union of European Football Associations |date=16 April 2026 |access-date=16 April 2026}}</ref>
+|referee    = [[José María Sánchez Martínez]] ([[Royal Spanish Football Federation|Spain]])
+|report     = Report<ref>{{cite web |url=https://www.uefa.com/uefaeuropaleague/match/2048142/ |title=Aston Villa vs Bologna |publisher=UEFA |access-date=16 April 2026}}</ref>
+}}
+''Aston Villa won 7–1 on aggregate.''
+
+==Semi-finals==
+
+===Summary===
+<section begin=SF />
+The first legs were played on 30 April, and the second legs were played on 7 May 2026.
+
+{{#invoke:Sports series|main|generate_links=y
+|[[S.C. Braga|Braga]]|POR|3–4|[[SC Freiburg]]|GER|2–1|1–3
+|[[Nottingham Forest F.C.|Nottingham Forest]]|ENG|1–4|[[Aston Villa F.C.|Aston Villa]]|ENG|1–0|0–4
+}}<section end=SF />
+
+===Matches===
+{{Football box
+|date       = {{Start date|2026|4|30|df=y}}
+|time       = 21:00&nbsp;{{small|(20:00 [[UTC+01:00|UTC+1]])}}
+|team1      = [[S.C. Braga|Braga]] {{fbaicon|POR}}
+|score      = 2–1
+|team2      = {{flagicon|GER}} [[SC Freiburg]]
+|goals1     = 
+*[[Demir Ege Tıknaz|Tıknaz]] {{goal|8}}
+*[[Mario Dorgeles|Dorgeles]] {{goal|90+2}}
+|goals2     = 
+*[[Vincenzo Grifo|Grifo]] {{goal|16}}
+|stadium    = [[Estádio Municipal de Braga|Estádio Municipal]], [[Braga]]
+|attendance = 27,161<ref>{{cite web |url=https://www.uefa.com/newsfiles/uefacup/2026/2048143_FR.pdf |title=Full Time Summary Semi-finals 1st leg – Braga v SC Freiburg |work=[[UEFA]] |publisher=Union of European Football Associations |date=30 April 2026 |access-date=30 April 2026}}</ref>
+|referee    = [[Anthony Taylor (referee)|Anthony Taylor]] ([[The Football Association|England]])
+|report     = Report<ref>{{cite web |url=https://www.uefa.com/uefaeuropaleague/match/2048143/ |title=Braga vs SC Freiburg |publisher=UEFA |access-date=30 April 2026}}</ref>
+}}
+{{Football box
+|date       = {{Start date|2026|5|7|df=y}}
+|time       = 21:00
+|team1      = SC Freiburg {{flagicon|GER}}
+|score      = 3–1
+|team2      = {{fbaicon|POR}} Braga
+|goals1     = 
+*[[Lukas Kübler|Kübler]] {{goal|19||72}}
+*[[Johan Manzambi|Manzambi]] {{goal|41}} 
+|goals2     = 
+*[[Pau Víctor|Víctor]] {{goal|79}}
+|stadium    = [[Europa-Park Stadion]], [[Freiburg im Breisgau]]
+|attendance = 33,700<ref>{{cite web |url=https://www.uefa.com/newsfiles/uefacup/2026/2048145_FR.pdf |title=Full Time Summary Semi-finals 2nd leg – SC Freiburg v Braga |work=[[UEFA]] |publisher=Union of European Football Associations |date=7 May 2026 |access-date=7 May 2026}}</ref>
+|referee    = [[Davide Massa]] ([[Italian Football Federation|Italy]])
+|report     = Report<ref>{{cite web |url=https://www.uefa.com/uefaeuropaleague/match/2048145/ |title=SC Freiburg vs Braga |publisher=UEFA |access-date=16 April 2026}}</ref>
+}}
+''SC Freiburg won 4–3 on aggregate.''
+----
+{{Football box
+|date       = {{Start date|2026|4|30|df=y}}
+|time       = 21:00&nbsp;{{small|(20:00 [[UTC+01:00|UTC+1]])}}
+|team1      = [[Nottingham Forest F.C.|Nottingham Forest]] {{fbaicon|ENG}}
+|score      = 1–0
+|team2      = {{fbaicon|ENG}} [[Aston Villa F.C.|Aston Villa]]
+|goals1     = 
+*[[Chris Wood (footballer, born 1991)|Wood]] {{goal|71|pen.}}
+|goals2     = 
+|stadium    = [[City Ground]], [[West Bridgford]]
+|attendance = 29,790<ref>{{cite web |url=https://www.uefa.com/newsfiles/uefacup/2026/2048144_FR.pdf |title=Full Time Summary Semi-finals 1st leg – Nottingham Forest v Aston Villa |work=[[UEFA]] |publisher=Union of European Football Associations |date=30 April 2026 |access-date=30 April 2026}}</ref>
+|referee    = [[João Pinheiro (referee)|João Pinheiro]] ([[Portuguese Football Federation|Portugal]])
+|report     = Report<ref>{{cite web |url=https://www.uefa.com/uefaeuropaleague/match/2048144/ |title=Nottingham Forest vs Aston Villa |publisher=UEFA |access-date=30 April 2026}}</ref>
+}}
+{{Football box
+|date       = {{Start date|2026|5|7|df=y}}
+|time       = 21:00&nbsp;{{small|(20:00 [[UTC+01:00|UTC+1]])}}
+|team1      = Aston Villa {{fbaicon|ENG}}
+|score      = 4–0
+|team2      = {{fbaicon|ENG}} Nottingham Forest
+|goals1     = 
+* [[Ollie Watkins|Watkins]] {{goal|36}}
+* [[Emiliano Buendía|Buendía]] {{goal|58|pen.}}
+* [[John McGinn|McGinn]] {{goal|77||80}}
+|goals2     = 
+|stadium    = [[Villa Park]], [[Birmingham]]
+|attendance = 43,028<ref>{{cite web |url=https://www.uefa.com/newsfiles/uefacup/2026/2048146_FR.pdf |title=Full Time Summary Semi-finals 2nd leg – Aston Villa v Nottingham Forest |work=[[UEFA]] |publisher=Union of European Football Associations |date=7 May 2026 |access-date=7 May 2026}}</ref>
+|referee    = [[Glenn Nyberg]] ([[Swedish Football Association|Sweden]])
+|report     = Report<ref>{{cite web |url=https://www.uefa.com/uefaeuropaleague/match/2048146/ |title=Aston Villa vs Nottingham Forest |publisher=UEFA |access-date=16 April 2026}}</ref>
+}}
+''Aston Villa won 4–1 on aggregate.''
+
+==Final==
+<section begin=F />
+{{main|2026 UEFA Europa League final}}
+
+The final was played on 20 May 2026 at the [[Beşiktaş Stadium]] in [[Istanbul]]. The winner of semi-final 1 was designated as the "home" team for administrative purposes.
+{{:2026 UEFA Europa League final}}<section end=F />
+
+==Notes==
+{{reflist|group=note}}
+
+==References==
+{{reflist}}
+
+==External links==
+*{{Official website|https://www.uefa.com/uefaeuropaleague/}}
+
+{{UEFA Europa League phases}}
+{{2025–26 in European football (UEFA)}}
+
+{{DEFAULTSORT:Uefa Europa League Knockout Phase 2025-26}}
+[[Category:2025–26 UEFA Europa League|*3]]
+[[Category:February 2026 sports events in Europe]]
+[[Category:March 2026 sports events in Europe]]
+[[Category:April 2026 sports events in Europe]]
+[[Category:May 2026 sports events in Europe]]
+[[Category:UEFA Europa League knockout phases|2025-26]]

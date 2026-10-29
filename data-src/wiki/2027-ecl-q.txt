@@ -1,0 +1,1994 @@
+{{Short description|European football qualifying matches for the 2026–27 UEFA Conference League}}
+{{main|2026–27 UEFA Conference League|2026–27 UEFA Conference League qualifying}}
+{{see also|2026–27 UEFA Conference League qualifying (first and second round matches)}}
+{{Use dmy dates|date=July 2026}}
+
+This page summarises the matches of the '''third qualifying and play-off rounds''' of '''2026–27 UEFA Conference League qualifying'''.<ref>{{cite web |url=https://www.uefa.com/uefaconferenceleague/news/02a6-20e5e911587f-cc10425958b3-1000--conference-league-qualifying-fixtures-results-dates-how-it-/ |title=Conference League qualifying: All the results and how it worked |website=UEFA.com |publisher=Union of European Football Associations |date=27 August 2026 |orig-date=7 July 2026 |access-date=28 August 2026}}</ref>
+
+Times are [[Central European Summer Time|CEST]] ([[UTC+02:00|UTC+2]]), as listed by UEFA (local times, if different, are in parentheses).
+
+==Third qualifying round==
+===Summary===
+<section begin=Q3 />
+The first legs were played on 4, 5 and 6 August, and the second legs were played on 11, 12 and 13 August 2026.
+
+The winners of the ties advanced to the play-off round.
+
+{{#invoke:Sports series|main|caption=Third qualifying round|generate_links=y
+|heading1=Champions Path
+|[[Tre Fiori FC|Tre Fiori]]|SMR|1-9|[[FC Drita|Drita]]|KOS|1–4|0-5
+|[[FK Borac Banja Luka|Borac Banja Luka]]|BIH|2-2 (4-2p)|[[FC Maxline Vitebsk|ML Vitebsk]]|BLR|1–0|1-2 {{aet}}
+|[[Inter Club d'Escaldes]]|AND|6-0|[[FC Flora|Flora]]|EST|2–0|4-0
+|[[Riga FC|Riga]]|LVA|2-1|[[Győri ETO FC|ETO Győr]]|HUN|1–0|1-1
+
+|heading5=Main Path
+|[[FC Inter Turku|Inter Turku]]|FIN|4–3|[[FC Vaduz|Vaduz]]|LIE|2–1|2–2
+|[[FK Žalgiris|Žalgiris]]|LTU|2-9|[[HNK Hajduk Split|Hajduk Split]]|CRO|2–5|0-4
+|[[FK Partizan|Partizan]]|SRB|5–1|[[FC Tobol|Tobol]]|KAZ|3–0|2–1
+|[[Panathinaikos F.C.|Panathinaikos]]|GRE|3–2|[[FC CSKA 1948 Sofia|CSKA 1948]]|BUL|1–1|2–1 {{aet}}
+|[[AFC Ajax|Ajax]]|NED|5-3|[[Shelbourne F.C.|Shelbourne]]|IRL|3–1|2-2
+|[[FK Auda|Auda]]|LVA|1-4|[[FC Dinamo City|Dinamo City]]|ALB|1−0|0-4
+|[[FC Noah|Noah]]|ARM|3−4|[[FC Sion|Sion]]|SUI|2−2|1−2
+|[[S.C. Braga|Braga]]|POR|1-0|[[FC Dinamo Minsk|Dinamo Minsk]]|BLR|1–0|0-0
+|[[Valur (men's football)|Valur]]|ISL|0-7|[[FC Nordsjælland|Nordsjælland]]|DEN|0–2|0-5
+|[[FC Sheriff Tiraspol|Sheriff Tiraspol]]|MDA|2-8|[[FC St. Gallen|St. Gallen]]|SUI|1–3|1-5
+|[[Hapoel Tel Aviv F.C.|Hapoel Tel Aviv]]|ISR|3–2|[[GKS Katowice]]|POL|2–0|1–2
+|[[Beitar Jerusalem F.C.|Beitar Jerusalem]]|ISR|3–3 {{pso|2–4}}|[[FK Austria Wien|Austria Wien]]|AUT|1–2|2–1 {{aet}}
+|[[CFR Cluj]]|ROU|1-7|[[Tromsø IL|Tromsø]]|NOR|0–5|1-2
+|[[FC Dynamo Kyiv|Dynamo Kyiv]]|UKR|1-2|[[Qarabağ FK|Qarabağ]]|AZE|1–0|0-2
+|[[SK Brann|Brann]]|NOR|4–3|[[Apollon Limassol FC|Apollon Limassol]]|CYP|0–1|4–2 {{aet}}
+|[[FC Lugano|Lugano]]|SUI|4-2|[[NSÍ Runavík|NSÍ]]|FRO|2–0|2-2
+|[[Raków Częstochowa]]|POL|1-0|[[Hammarby Fotboll|Hammarby IF]]|SWE|0–0|1-0
+|[[Helsingin Jalkapalloklubi|HJK]]|FIN|1-3|[[Motherwell F.C.|Motherwell]]|SCO|1−1|0-2
+|[[Hibernian F.C.|Hibernian]]|SCO|2-1|[[KF Shkëndija|Shkëndija]]|MKD|2–1|0-0
+|[[IFK Göteborg]]|SWE|1-2|[[KAA Gent|Gent]]|BEL|0–1|1-1
+|[[Paide Linnameeskond]]|EST|1–6|[[SK Rapid Wien|Rapid Wien]]|AUT|1−4|0–2
+|[[Bohemian F.C.|Bohemians]]|IRL|2-5|[[FC Midtjylland|Midtjylland]]|DEN|0–2|2-3
+|[[Debreceni VSC|Debrecen]]|HUN|1–8|[[F.C. Copenhagen|Copenhagen]]|DEN|0–3|1–5
+|[[FK Jablonec|Jablonec]]|CZE|4-1|[[FK RFS|RFS]]|LVA|2−0|2-1
+|[[HNK Rijeka|Rijeka]]|CRO|2–1|[[Ilves (football)|Ilves]]|FIN|1–0|1–1
+|[[FC Twente|Twente]]|NED|9-3|[[FC DAC 1904 Dunajská Streda|DAC Dunajská Streda]]|SVK|6–0|3-3
+
+|note_agg_3=Order of legs reversed after original draw.
+}}<section end=Q3 />
+
+===Champions Path matches===
+{{#invoke:football box|main
+|date       = {{Start date|2026|8|6|df=y}}
+|time       = 21:00
+|team1      = [[Tre Fiori FC|Tre Fiori]] {{fbaicon|SMR}}
+|score      = 1–4
+|team2      = {{fbaicon|KOS}} [[FC Drita|Drita]]
+|goals1     =
+*[[Matteo Prandelli|Prandelli]] {{goal|56}}
+|goals2     =
+*[[Raddy Ovouka|Ovouka]] {{goal|61}}
+*[[Blerim Krasniqi|Bl. Krasniqi]] {{goal|62}}
+*[[Besnik Krasniqi|Be. Krasniqi]] {{goal|82||90+3|pen.}}
+|stadium    = [[San Marino Stadium]], [[Serravalle, San Marino|Serravalle]]
+|attendance = 258<ref>{{UEFA match attendance|2049145|Tre Fiori vs. Drita|date=6 August 2026|access-date=6 August 2026}}</ref>
+|referee    = [[Mikkel Redder]] ([[Danish Football Association|Denmark]])
+|report     = Report<ref>[https://www.uefa.com/uefaconferenceleague/match/2049145 "Tre Fiori vs Drita"]. ''UEFA.com''. Union of European Football Associations. Retrieved 31 July 2026.</ref>
+}}
+{{#invoke:football box|main
+|date       = {{Start date|2026|8|13|df=y}}
+|time       = 20:00
+|team1      = Drita {{fbaicon|KOS}}
+|score      = 5–0
+|team2      = {{fbaicon|SMR}} Tre Fiori
+|goals1     =
+* [[Kemehlo Nguena|Nguena]] {{goal|20}} {{goal|40}}
+* [[Arb Manaj|Manaj]] {{goal|43}} {{goal|60}}
+* [[Mike Arthur (footballer)|Arthur]] {{goal|47}}
+|stadium    = [[Fadil Vokrri Stadium]], [[Pristina]]{{refn|group=note|name=Drita|Drita played their home match at Fadil Vokrri Stadium instead of their regular stadium, [[Gjilan City Stadium]], which did not meet UEFA requirements.}}
+|attendance = 1,822<ref>{{UEFA match attendance|2049175|Drita vs. Tre Fiori|date=13 August 2026|access-date=13 August 2026}}</ref>
+|referee    = [[Don Robertson (referee)|Don Robertson]] ([[Scottish Football Association|Scotland]])
+|report     = Report<ref>[https://www.uefa.com/uefaconferenceleague/match/2049175 "Drita vs Tre Fiori"]. ''UEFA.com''. Union of European Football Associations. Retrieved 31 July 2026.</ref>
+}}
+''Drita won 9–1 on aggregate.''
+----
+{{#invoke:football box|main
+|date       = {{Start date|2026|8|6|df=y}}
+|time       = 20:30
+|team1      = [[FK Borac Banja Luka|Borac Banja Luka]] {{fbaicon|BIH}}
+|score      = 1–0
+|team2      = {{fbaicon|BLR}} [[FC Maxline Vitebsk|ML Vitebsk]]
+|goals1     =
+*[[Stefan Savić (Austrian footballer)|Savić]] {{goal|14}}
+|goals2     =
+|stadium    = [[Banja Luka City Stadium]], [[Banja Luka]]
+|attendance = 8,350<ref>{{UEFA match attendance|2049146|Borac Banja Luka vs. ML Vitebsk|date=6 August 2026|access-date=6 August 2026}}</ref>
+|referee    = [[Joey Kooij]] ([[Royal Dutch Football Association|Netherlands]])
+|report     = Report<ref>[https://www.uefa.com/uefaconferenceleague/match/2049146 "Borac vs ML Vitebsk"]. ''UEFA.com''. Union of European Football Associations. Retrieved 31 July 2026.</ref>
+}}
+{{#invoke:football box|main
+|date       = {{Start date|2026|8|13|df=y}}
+|time       = 19:00
+|team1      = ML Vitebsk {{fbaicon|BLR}}
+|score      = 2–1
+|aet        = yes
+|team2      = {{fbaicon|BIH}} Borac Banja Luka
+|goals1     =
+*[[Denilho Cleonise|Cleonise]] {{goal|45+1}}
+*[[Artem Kontsevoy (footballer, born 1999)|Kontsevoy]] {{goal|120+5}}
+|goals2     =
+*[[Matej Deket|Deket]] {{goal|103}}
+|stadium    = [[Mezőkövesdi Városi Stadion]], [[Mezőkövesd]], Hungary{{refn|group=note|name=Belarus|Due to the country's involvement in the [[Russian invasion of Ukraine]], Belarusian teams were required to play their home matches at neutral venues and [[Behind closed doors (sport)|behind closed doors]] until further notice.<ref>{{cite news |url=https://www.uefa.com/news-media/news/0273-1493944bb9c8-f5773a44dabd-1000/ |title=Belarus teams to play on neutral ground in UEFA competitions |work=[[UEFA]] |publisher=Union of European Football Associations |date=3 March 2022 |access-date=3 March 2022}}</ref>}}
+|attendance = 1<ref>{{UEFA match attendance|2049176|ML Vitebsk vs. Borac Banja Luka|date=13 August 2026|access-date=13 August 2026}}</ref>
+|referee    = [[Andrew Madley]] ([[The Football Association|England]])
+|report     = Report<ref>[https://www.uefa.com/uefaconferenceleague/match/2049176 "ML Vitebsk vs Borac"]. ''UEFA.com''. Union of European Football Associations. Retrieved 31 July 2026.</ref>
+|penaltyscore = 2–4
+|penalties1 =
+*[[Zakhar Volkov|Volkov]] {{pengoal}}
+*[[Artem Kontsevoy (footballer, born 1999)|Kontsevoy]] {{pengoal}}
+*[[Silas Gnaka|Gnaka]] {{penmiss}}
+*[[Kirill Gomanov|Gomanov]] {{penmiss}}
+|penalties2 =
+*{{pengoal}} [[Stojan Vranješ|Vranješ]] 
+*{{pengoal}} [[Amer Hiroš|Hiroš]] 
+*{{pengoal}} [[Matej Deket|Deket]] 
+*{{pengoal}} [[Sebastián Herrera (footballer, born 1995)|Herrera]]
+}}
+''2–2 on aggregate; Borac Banja Luka won 4–2 on penalties.''
+----
+{{#invoke:football box|main
+|date       = {{Start date|2026|8|6|df=y}}
+|time       = 19:00
+|team1      = [[Inter Club d'Escaldes]] {{fbaicon|AND}}
+|score      = 2–0
+|team2      = {{fbaicon|EST}} [[FC Flora|Flora]]
+|goals1     =
+*{{ill|Faysal Chouaib|fr|lt=Chouaib}} {{goal|5}}
+*[[Domi Berlanga|Berlanga]] {{goal|62}}
+|goals2     =
+|stadium    = [[Estadi de la FAF]], [[Andorra la Vella]]
+|attendance = 350<ref>{{UEFA match attendance|2049147|Inter Club d'Escaldes vs. Flora|date=6 August 2026|access-date=6 August 2026}}</ref>
+|referee    = [[Stefan Ebner]] ([[Austrian Football Association|Austria]])
+|report     = Report<ref>[https://www.uefa.com/uefaconferenceleague/match/2049147 "Inter Club d'Escaldes vs Flora Tallinn"]. ''UEFA.com''. Union of European Football Associations. Retrieved 31 July 2026.</ref>
+}}
+{{#invoke:football box|main
+|date       = {{Start date|2026|8|13|df=y}}
+|time       = 18:00 {{small|(19:00 [[UTC+03:00|UTC+3]])}}
+|team1      = Flora {{fbaicon|EST}}
+|score      = 0–4
+|team2      = {{fbaicon|AND}} Inter Club d'Escaldes
+|goals1     =
+|goals2     =
+*[[Pablo Molina|Molina]] {{goal|17}}
+*{{ill|Faysal Chouaib|fr|lt=Chouaib}} {{goal|69||81}}
+*[[Borja Arellano|Arellano]] {{goal|77}}
+|stadium    = [[Lilleküla Stadium]], [[Tallinn]]
+|attendance = 2,283<ref>{{UEFA match attendance|2049177|Flora vs. Inter Club d'Escaldes|date=13 August 2026|access-date=13 August 2026}}</ref>
+|referee    = [[Pavle Ilić]] ([[Football Association of Serbia|Serbia]])
+|report     = Report<ref>[https://www.uefa.com/uefaconferenceleague/match/2049177 "Flora Tallinn vs Inter Club d'Escaldes"]. ''UEFA.com''. Union of European Football Associations. Retrieved 31 July 2026.</ref>
+}}
+''Inter Club d'Escaldes won 6–0 in aggregate.''
+----
+{{#invoke:football box|main
+|date       = {{Start date|2026|8|6|df=y}}
+|time       = 19:00 {{small|(20:00 [[UTC+03:00|UTC+3]])}}
+|team1      = [[Riga FC|Riga]] {{fbaicon|LVA}}
+|score      = 1–0
+|team2      = {{fbaicon|HUN}} [[Győri ETO FC|ETO Győr]]
+|goals1     =
+*[[Bálint Selyem|Selyem]] {{goal|4|o.g.}}
+|goals2     =
+|stadium    = [[Skonto Stadium]], [[Riga]]
+|attendance = 5,194<ref>{{UEFA match attendance|2049148|Riga vs. ETO Győr|date=6 August 2026|access-date=6 August 2026}}</ref>
+|referee    = [[Gal Leibovitz]] ([[Israel Football Association|Israel]])
+|report     = Report<ref>[https://www.uefa.com/uefaconferenceleague/match/2049148 "Riga vs ETO Győr"]. ''UEFA.com''. Union of European Football Associations. Retrieved 31 July 2026.</ref>
+}}
+{{#invoke:football box|main
+|date       = {{Start date|2026|8|13|df=y}}
+|time       = 20:30
+|team1      = ETO Győr {{fbaicon|HUN}}
+|score      = 1–1
+|team2      = {{fbaicon|LVA}} Riga
+|goals1     =
+*[[Željko Gavrić|Gavrić]] {{goal|28|pen.}}
+|goals2     =
+*[[Caio Ferreira (footballer, born 2000)|Caio Ferreira]] {{goal|88}}
+|stadium    = [[ETO Park]], [[Győr]]
+|attendance = 4,242<ref>{{UEFA match attendance|2049178|ETO Győr vs. Riga|date=13 August 2026|access-date=13 August 2026}}</ref> 
+|referee    = [[Oliver Reitala]] ([[Football Association of Finland|Finland]])
+|report     = Report<ref>[https://www.uefa.com/uefaconferenceleague/match/2049178 "ETO Győr vs Riga"]. ''UEFA.com''. Union of European Football Associations. Retrieved 31 July 2026.</ref>
+}}
+''Riga won 2–1 on aggregate.''
+
+===Main Path matches===
+{{#invoke:football box|main
+|date       = {{Start date|2026|8|6|df=y}}
+|time       = 17:00 {{small|(18:00 [[UTC+03:00|UTC+3]])}}
+|team1      = [[FC Inter Turku|Inter Turku]] {{fbaicon|FIN}}
+|score      = 2–1
+|team2      = {{fbaicon|LIE}} [[FC Vaduz|Vaduz]]
+|goals1     =
+*[[Julian Stark|Stark]] {{goal|22|o.g.}}
+*[[Prosper Ahiabu|Ahiabu]] {{goal|68}}
+|goals2     =
+*[[Dejan Sorgić|Sorgić]] {{goal|63}}
+|stadium    = [[Kupittaa Football Stadium]], [[Turku]]
+|attendance = 3,719<ref>{{UEFA match attendance|2049149|Inter Turku vs. Vaduz|date=6 August 2026|access-date=6 August 2026}}</ref>
+|referee    = [[Eric Wattellier]] ([[French Football Federation|France]])
+|report     = Report<ref>[https://www.uefa.com/uefaconferenceleague/match/2049149 "Inter Turku vs Vaduz"]. ''UEFA.com''. Union of European Football Associations. Retrieved 31 July 2026.</ref>
+}}
+{{#invoke:football box|main
+|date       = {{Start date|2026|8|13|df=y}}
+|time       = 19:30
+|team1      = Vaduz {{fbaicon|LIE}}
+|score      = 2–2
+|team2      = {{fbaicon|FIN}} Inter Turku
+|goals1     =
+*[[Denis Simani|Simani]] {{goal|4}}
+*[[Lutfi Dalipi|Dalipi]] {{goal|56}}
+|goals2     =
+*[[Jasse Tuominen|Tuominen]] {{goal|13}}
+*[[Alie Conteh|Conteh]] {{goal|76}}
+|stadium    = [[Rheinpark Stadion]], [[Vaduz]]
+|attendance = 1,359<ref>{{UEFA match attendance|2049179|Vaduz vs. Inter Turku|date=13 August 2026|access-date=13 August 2026}}</ref>
+|referee    = [[Filip Glova]] ([[Slovak Football Association|Slovakia]])
+|report     = Report<ref>[https://www.uefa.com/uefaconferenceleague/match/2049179 "Vaduz vs Inter Turku"]. ''UEFA.com''. Union of European Football Associations. Retrieved 31 July 2026.</ref>
+}}
+''Inter Turku won 4–3 on aggregate.''
+----
+{{#invoke:football box|main
+|date       = {{Start date|2026|8|6|df=y}}
+|time       = 19:00 {{small|(20:00 [[UTC+03:00|UTC+3]])}}
+|team1      = [[FK Žalgiris|Žalgiris]] {{fbaicon|LTU}}
+|score      = 2–5
+|team2      = {{fbaicon|CRO}} [[HNK Hajduk Split|Hajduk Split]]
+|goals1     =
+*[[Nikola Petković (footballer, born 1996)|Petković]] {{goal|34}}
+*[[Marko Capan|Capan]] {{goal|86}}
+|goals2     =
+*[[Michele Šego|Šego]] {{goal|5|pen.|44}}
+*[[Adrion Pajaziti|Pajaziti]] {{goal|55}}
+*[[Dalisson de Almeida|Dalisson]] {{goal|72}}
+*[[Rokas Pukštas|Pukštas]] {{goal|75}}
+|stadium    = [[LFF Stadium]], [[Vilnius]]
+|attendance = 4,975<ref>{{UEFA match attendance|2049150|Žalgiris vs. Hajduk Split|date=6 August 2026|access-date=6 August 2026}}</ref>
+|referee    = [[Marc Nagtegaal]] ([[Royal Dutch Football Association|Netherlands]])
+|report     = Report<ref>[https://www.uefa.com/uefaconferenceleague/match/2049150 "Žalgiris vs Hajduk Split"]. ''UEFA.com''. Union of European Football Associations. Retrieved 31 July 2026.</ref>
+}}
+{{#invoke:football box|main
+|date       = {{Start date|2026|8|13|df=y}}
+|time       = 21:00
+|team1      = Hajduk Split {{fbaicon|CRO}}
+|score      = 4–0
+|team2      = {{fbaicon|LTU}} Žalgiris
+|goals1     =
+*[[Dario Melnjak|Melnjak]] {{goal|54}}
+*[[Adam Huram|Huram]] {{goal|69}}
+*[[Danny Lupano|Lupano]] {{goal|80|o.g.}}
+*[[Michele Šego|Šego]] {{goal|83}}
+|goals2     =
+|stadium    = [[Stadion Poljud]], [[Split, Croatia|Split]]
+|attendance = 20,229<ref>{{UEFA match attendance|2049180|Hajduk Split vs. Žalgiris|date=13 August 2026|access-date=13 August 2026}}</ref>
+|referee    = [[Matthias Jöllenbeck]] ([[German Football Association|Germany]])
+|report     = Report<ref>[https://www.uefa.com/uefaconferenceleague/match/2049180 "Hajduk Split vs Žalgiris"]. ''UEFA.com''. Union of European Football Associations. Retrieved 31 July 2026.</ref>
+}}
+''Hajduk Split won 9–2 on aggregate.''
+
+----
+{{#invoke:football box|main
+|date       = {{Start date|2026|8|6|df=y}}
+|time       = 21:00
+|team1      = [[FK Partizan|Partizan]] {{fbaicon|SRB}}
+|score      = 3–0
+|team2      = {{fbaicon|KAZ}} [[FC Tobol|Tobol]]
+|goals1     =
+*[[Demba Seck|Seck]] {{goal|32}}
+*[[Ibrahim Zubairu|Zubairu]] {{goal|64}}
+*[[Chaka Traorè|Traorè]] {{goal|90+4}}
+|goals2     =
+|stadium    = [[Partizan Stadium]], [[Belgrade]]
+|attendance = 10,367<ref>{{UEFA match attendance|2049151|Partizan vs. Tobol|date=6 August 2026|access-date=6 August 2026}}</ref>
+|referee    = [[Luis Godinho]] ([[Portuguese Football Federation|Portugal]])
+|report     = Report<ref>[https://www.uefa.com/uefaconferenceleague/match/2049151 "Partizan vs Tobol"]. ''UEFA.com''. Union of European Football Associations. Retrieved 31 July 2026.</ref>
+}}
+{{#invoke:football box|main
+|date       = {{Start date|2026|8|13|df=y}}
+|time       = 17:00 {{small|(20:00 [[UTC+05:00|UTC+5]])}}
+|team1      = Tobol {{fbaicon|KAZ}}
+|score      = 1–2
+|team2      = {{fbaicon|SRB}} Partizan
+|goals1     =
+* [[Islam Chesnokov|Chesnokov]] {{goal|7}}
+|goals2     =
+* [[Stefan Mitrović (footballer, born 1990)|Mitrović]] {{goal|47}}
+* [[Chaka Traorè|Traorè]] {{goal|90+2'}}
+|stadium    = [[Kostanay Central Stadium]], [[Kostanay]]
+|attendance = 6,129<ref>{{UEFA match attendance|2049181|Tobol vs. Partizan|date=13 August 2026|access-date=13 August 2026}}</ref>
+|referee    = [[Daniele Chiffi]] ([[Italian Football Federation|Italy]])
+|report     = Report<ref>[https://www.uefa.com/uefaconferenceleague/match/2049181 "Tobol vs Partizan"]. ''UEFA.com''. Union of European Football Associations. Retrieved 31 July 2026.</ref>
+}} 
+''Partizan won 5–1 on aggregate.''
+----
+{{#invoke:football box|main
+|date       = {{Start date|2026|8|5|df=y}}
+|time       = 20:30 {{small|(21:30 [[UTC+03:00|UTC+3]])}}
+|team1      = [[Panathinaikos F.C.|Panathinaikos]] {{fbaicon|GRE}}
+|score      = 1–1
+|team2      = {{fbaicon|BUL}} [[FC CSKA 1948 Sofia|CSKA 1948]]
+|goals1     =
+*[[Adriano Jagušić|Jagušić]] {{goal|21}}
+|goals2     =
+*[[Georgi Rusev (footballer)|Rusev]] {{goal|31}}
+|stadium    = [[Olympic Stadium (Athens)|Olympic Stadium]], [[Athens]]
+|attendance = 17,929<ref>{{UEFA match attendance|2049152|Panathinaikos vs. CSKA 1948|date=5 August 2026|access-date=5 August 2026}}</ref>
+|referee    = [[Matteo Marchetti]] ([[Italian Football Federation|Italy]])
+|report     = Report<ref>[https://www.uefa.com/uefaconferenceleague/match/2049152 "Panathinaikos vs CSKA 1948"]. ''UEFA.com''. Union of European Football Associations. Retrieved 31 July 2026.</ref>
+}}
+{{#invoke:football box|main
+|date       = {{Start date|2026|8|11|df=y}}
+|time       = 19:30 {{small|(20:30 [[UTC+03:00|UTC+3]])}}
+|team1      = CSKA 1948 {{fbaicon|BUL}}
+|score      = 1–2
+|aet        = yes
+|team2      = {{fbaicon|GRE}} Panathinaikos
+|goals1     =
+*[[Lasha Dvali|Dvali]] {{goal|87}}
+|goals2     =
+*[[Levi García|García]] {{goal|60}}
+*[[Cyriel Dessers|Dessers]] {{goal|95}}
+|stadium    = [[Vasil Levski National Stadium]], [[Sofia]]{{refn|group=note|name=CSKA 1948|CSKA 1948 played their third qualifying round home match at Vasil Levski National Stadium in Sofia, rather than at their regular home ground, [[Stadion Bistritsa]] in [[Bistritsa, Sofia|Bistritsa]], which did not fulfil UEFA requirements.}}
+|attendance = 2,654<ref>{{UEFA match attendance|2049182|CSKA 1948 vs. Panathinaikos|date=11 August 2026|access-date=11 August 2026}}</ref>
+|referee    = [[Jasper Vergoote]] ([[Royal Belgian Football Association|Belgium]])
+|report     = Report<ref>[https://www.uefa.com/uefaconferenceleague/match/2049182 "CSKA 1948 vs Panathinaikos"]. ''UEFA.com''. Union of European Football Associations. Retrieved 31 July 2026.</ref>
+}}
+''Panathinaikos won 3–2 on aggregate.''
+----
+{{#invoke:football box|main
+|date       = {{Start date|2026|8|6|df=y}}
+|time       = 20:00
+|team1      = [[AFC Ajax|Ajax]] {{fbaicon|NED}}
+|score      = 3–1
+|team2      = {{fbaicon|IRL}} [[Shelbourne F.C.|Shelbourne]]
+|goals1     =
+*[[Mika Godts|Godts]] {{goal|6|pen.}}
+*[[Owen Wijndal|Wijndal]] {{goal|22}}
+*[[Kasper Dolberg|Dolberg]] {{goal|50}}
+|goals2     =
+*[[Daniel Kelly (footballer, born 1996)|Kelly]] {{goal|84}}
+|stadium    = [[Johan Cruyff Arena]], [[Amsterdam]]
+|attendance = 51,871<ref>{{UEFA match attendance|2049153|Ajax vs. Shelbourne|date=6 August 2026|access-date=6 August 2026}}</ref>
+|referee    = [[Atilla Karaoglan]] ([[Turkish Football Federation|Turkey]])
+|report     = Report<ref>[https://www.uefa.com/uefaconferenceleague/match/2049153 "Ajax vs Shelbourne"]. ''UEFA.com''. Union of European Football Associations. Retrieved 31 July 2026.</ref>
+}}
+{{#invoke:football box|main
+|date       = {{Start date|2026|8|13|df=y}}
+|time       = 20:45 {{small|(19:45 [[UTC+01:00|UTC+1]])}}
+|team1      = Shelbourne {{fbaicon|IRL}}
+|score      = 2–2
+|team2      = {{fbaicon|NED}} Ajax
+|goals1     =
+*[[Rodrigo Freitas (footballer, born 2002)|Freitas]] {{goal|24}}
+*[[Sean Moore (footballer)|Moore]] {{goal|85}}
+|goals2     =
+*[[Julian Brandt|Brandt]] {{goal|20}}
+*[[Anton Gaaei|Gaaei]] {{goal|39}}
+|stadium    = [[Tolka Park]], [[Dublin]]
+|attendance = 4,344<ref>{{UEFA match attendance|2049183|Shelbourne vs. Ajax|date=13 August 2026|access-date=13 August 2026}}</ref>
+|referee    = [[Cláudio Pereira]] ([[Portuguese Football Federation|Portugal]])
+|report     = Report<ref>[https://www.uefa.com/uefaconferenceleague/match/2049183 "Shelbourne vs Ajax"]. ''UEFA.com''. Union of European Football Associations. Retrieved 31 July 2026.</ref>
+}}
+''Ajax won 5–3 on aggregate.''
+----
+{{#invoke:football box|main
+|date       = {{Start date|2026|8|4|df=y}}
+|time       = 18:00 {{small|(19:00 [[UTC+03:00|UTC+3]])}}
+|team1      = [[FK Auda|Auda]] {{fbaicon|LVA}}
+|score      = 1–0
+|team2      = {{fbaicon|ALB}} [[FC Dinamo City|Dinamo City]]
+|goals1     =
+*[[Barthélemy Diedhiou|Diedhiou]] {{goal|68}}
+|goals2     =
+|stadium    = [[Skonto Stadium]], [[Riga]]{{refn|group=note|name=Auda|Auda play their home matches at Skonto Stadium in Riga, rather than at their regular home ground, the Ķekava Stadium in [[Ķekava]], which did not fulfill UEFA requirements.}}
+|attendance = 2,839<ref>{{UEFA match attendance|2049154|Auda vs. Dinamo City|date=4 August 2026|access-date=4 August 2026}}</ref>
+|referee    = [[José Luis Munuera Montero]] ([[Royal Spanish Football Federation|Spain]])
+|report     = Report<ref>[https://www.uefa.com/uefaconferenceleague/match/2049154 "Auda vs Dinamo City"]. ''UEFA.com''. Union of European Football Associations. Retrieved 31 July 2026.</ref>
+}}
+{{#invoke:football box|main
+|date       = {{Start date|2026|8|13|df=y}}
+|time       = 21:00
+|team1      = Dinamo City {{fbaicon|ALB}}
+|score      = 4–0
+|team2      = {{fbaicon|LVA}} Auda
+|goals1     =
+*[[Eridon Qardaku|Qardaku]] {{goal|36}}
+*[[Klevi Qefalija|Qefalija]] {{goal|45}}
+*[[Malomo Ayodeji|Ayodeji]] {{goal|52}}
+*[[David Fadairo|Fadairo]] {{goal|79}}
+|goals2     =
+|stadium    = [[Elbasan Arena]], [[Elbasan]]{{refn|group=note|name=Dinamo City|Dinamo City played their home matches at Elbasan Arena in Elbasan instead of their own stadium, [[Selman Stërmasi Stadium]] in Tirana, which did not fulfil UEFA requirements.}}
+|attendance = 800<ref>{{UEFA match attendance|2049184|Dinamo City vs. Auda|date=13 August 2026|access-date=13 August 2026}}</ref>
+|referee    = [[Christos Vergetis]] ([[Hellenic Football Federation|Greece]])
+|report     = Report<ref>[https://www.uefa.com/uefaconferenceleague/match/2049184 "Dinamo City vs Auda"]. ''UEFA.com''. Union of European Football Associations. Retrieved 31 July 2026.</ref>
+}}
+''Dinamo City won 4–1 on aggregate.''
+----
+{{#invoke:football box|main
+|date       = {{Start date|2026|8|6|df=y}}
+|time       = 18:00 {{small|(20:00 [[UTC+04:00|UTC+4]])}}
+|team1      = [[FC Noah|Noah]] {{fbaicon|ARM}}
+|score      = 2–2
+|team2      = {{fbaicon|SUI}} [[FC Sion|Sion]]
+|goals1     =
+*[[Hélder Ferreira (footballer, born 1997)|Ferreira]] {{goal|5|pen.}}
+*[[Gor Manvelyan|Manvelyan]] {{goal|20}}
+|goals2     =
+*[[Winsley Boteli|Boteli]] {{goal|13}}
+*[[Ilyas Chouaref|Chouaref]] {{goal|57}}
+|stadium    = [[Vahagn Tumasyan Stadium]], [[Abovyan]]
+|attendance = 3,000<ref>{{UEFA match attendance|2049155|Noah vs. Sion|date=6 August 2026|access-date=6 August 2026}}</ref>
+|referee    = [[Matthew De Gabriele]] ([[Malta Football Association|Malta]])
+|report     = Report<ref>[https://www.uefa.com/uefaconferenceleague/match/2049155 "Noah vs Sion"]. ''UEFA.com''. Union of European Football Associations. Retrieved 31 July 2026.</ref>
+}}
+{{#invoke:football box|main
+|date       = {{Start date|2026|8|13|df=y}}
+|time       = 20:15
+|team1      = Sion {{fbaicon|SUI}}
+|score      = 2–1
+|team2      = {{fbaicon|ARM}} Noah
+|goals1     =
+*[[Winsley Boteli|Boteli]] {{goal|54}}
+*[[Batata (footballer, born 2000)|Batata]] {{goal|63}}
+|goals2     =
+*[[Hélder Ferreira (footballer, born 1997)|Ferreira]] {{goal|25|pen.}}
+|stadium    = [[Stade Tourbillon]], [[Sion, Switzerland|Sion]]
+|attendance = 8,150<ref>{{UEFA match attendance|2049185|Sion vs. Noah|date=13 August 2026|access-date=13 August 2026}}</ref> 
+|referee    = [[David Šmajc]] ([[Football Association of Slovenia|Slovenia]])
+|report     = Report<ref>[https://www.uefa.com/uefaconferenceleague/match/2049185 "Sion vs Noah"]. ''UEFA.com''. Union of European Football Associations. Retrieved 31 July 2026.</ref>
+}}
+''Sion won 4–3 on aggregate.''
+----
+{{#invoke:football box|main
+|date       = {{Start date|2026|8|6|df=y}}
+|time       = 20:30 {{small|(19:30 [[UTC+01:00|UTC+1]])}}
+|team1      = [[S.C. Braga|Braga]] {{fbaicon|POR}}
+|score      = 1–0
+|team2      = {{fbaicon|BLR}} [[FC Dinamo Minsk|Dinamo Minsk]]
+|goals1     =
+*[[Ricardo Horta|Horta]] {{goal|45|pen.}}
+|goals2     =
+|stadium    = [[Estádio Municipal de Braga|Estádio Municipal]], [[Braga]]
+|attendance = 14,586<ref>{{UEFA match attendance|2049156|Braga vs. Dinamo Minsk|date=6 August 2026|access-date=6 August 2026}}</ref>
+|referee    = [[Christian-Petru Ciochirca]] ([[Austrian Football Association|Austria]])
+|report     = Report<ref>[https://www.uefa.com/uefaconferenceleague/match/2049156 "Braga vs Dinamo-Minsk"]. ''UEFA.com''. Union of European Football Associations. Retrieved 31 July 2026.</ref>
+}}
+{{#invoke:football box|main
+|date       = {{Start date|2026|8|13|df=y}}
+|time       = 19:00 {{small|(20:00 [[UTC+03:00|UTC+3]])}}
+|team1      = Dinamo Minsk {{fbaicon|BLR}}
+|score      = 0–0
+|team2      = {{fbaicon|POR}} Braga
+|goals1     =
+|goals2     =
+|stadium    = [[Stadion Beroe]], [[Stara Zagora]], Bulgaria{{refn|group=note|name=Belarus}}
+|attendance = 0<ref>{{UEFA match attendance|2049186|Dinamo Minsk vs. Braga|date=13 August 2026|access-date=13 August 2026}}</ref>{{refn|group=note|name=Belarus}}
+|referee    = [[Szabolcs Kovacs]] ([[Romanian Football Federation|Romania]])
+|report     = Report<ref>[https://www.uefa.com/uefaconferenceleague/match/2049186 "Dinamo-Minsk vs Braga"]. ''UEFA.com''. Union of European Football Associations. Retrieved 31 July 2026.</ref>
+}}
+''Braga won 1–0 on aggregate.''
+----
+{{#invoke:football box|main
+|date       = {{Start date|2026|8|6|df=y}}
+|time       = 20:30 {{small|(18:30 [[UTC+00:00|UTC]])}}
+|team1      = [[Valur (men's football)|Valur]] {{fbaicon|ISL}}
+|score      = 0–2
+|team2      = {{fbaicon|DEN}} [[FC Nordsjælland|Nordsjælland]]
+|goals1     =
+|goals2     =
+*[[Villum Berthelsen|Berthelsen]] {{goal|30}}
+*[[Nicklas Røjkjær|Røjkjær]] {{goal|78|pen.}}
+|stadium    = [[Hlíðarendi (stadium)|Hlíðarendi]], [[Reykjavík]]
+|attendance = 568<ref>{{UEFA match attendance|2049157|Valur vs. Nordsjælland|date=6 August 2026|access-date=6 August 2026}}</ref>
+|referee    = [[Gergő Bogár]] ([[Hungarian Football Federation|Hungary]])
+|report     = Report<ref>[https://www.uefa.com/uefaconferenceleague/match/2049157 "Valur vs Nordsjælland"]. ''UEFA.com''. Union of European Football Associations. Retrieved 31 July 2026.</ref>
+}}
+{{#invoke:football box|main
+|date       = {{Start date|2026|8|13|df=y}}
+|time       = 19:00
+|team1      = Nordsjælland {{fbaicon|DEN}}
+|score      = 5–0
+|team2      = {{fbaicon|ISL}} Valur
+|goals1     =
+*[[Hjalte Boe|Boe]] {{goal|5}}
+*[[Villum Berthelsen|Berthelsen]] {{goal|45+3}}
+*[[Markus Walker|Walker]] {{goal|62}}
+*[[Lamine Sadio|Sadio]] {{goal|72}}
+*[[Levy Nene|Nene]] {{goal|74}}
+|goals2     =
+|stadium    = [[Right to Dream Park]], [[Farum]]
+|attendance = 3,289<ref>{{UEFA match attendance|2049187|Nordsjælland vs. Valur|date=13 August 2026|access-date=13 August 2026}}</ref>
+|referee    = [[Edgars Maļcevs]] ([[Latvian Football Federation|Latvia]])
+|report     = Report<ref>[https://www.uefa.com/uefaconferenceleague/match/2049187 "Nordsjælland vs Valur"]. ''UEFA.com''. Union of European Football Associations. Retrieved 31 July 2026.</ref>
+}}
+''Nordsjælland won 7–0 in aggregate.''
+----
+{{#invoke:football box|main
+|date       = {{Start date|2026|8|6|df=y}}
+|time       = 19:00 {{small|(20:00 [[UTC+03:00|UTC+3]])}}
+|team1      = [[FC Sheriff Tiraspol|Sheriff Tiraspol]] {{fbaicon|MDA}}
+|score      = 1–3
+|team2      = {{fbaicon|SUI}} [[FC St. Gallen|St. Gallen]]
+|goals1     =
+*[[Juanca Pineda|Pineda]] {{goal|89}}
+|goals2     =
+*[[Andrin Hunziker|Hunziker]] {{goal|63}}
+*[[Leon Frokaj|Frokaj]] {{goal|70}}
+*[[Christian Witzig|Witzig]] {{goal|90+2}}
+|stadium    = [[Sheriff Arena]], [[Tiraspol]]
+|attendance = 4,889<ref>{{UEFA match attendance|2049158|Sheriff Tiraspol vs. St. Gallen|date=6 August 2026|access-date=6 August 2026}}</ref>
+|referee    = [[Adam Ladebäck]] ([[Swedish Football Association|Sweden]])
+|report     = Report<ref>[https://www.uefa.com/uefaconferenceleague/match/2049158 "Sheriff Tiraspol vs St. Gallen"]. ''UEFA.com''. Union of European Football Associations. Retrieved 31 July 2026.</ref>
+}}
+{{#invoke:football box|main
+|date       = {{Start date|2026|8|13|df=y}}
+|time       = 20:00
+|team1      = St. Gallen {{fbaicon|SUI}}
+|score      = 5–1
+|team2      = {{fbaicon|MDA}} Sheriff Tiraspol
+|goals1     =
+*[[Diego Besio|Besio]] {{goal|1||76}}
+*[[Andrin Hunziker|Hunziker]] {{goal|34||59}}
+*[[Mihailo Stevanović (footballer)|Stevanović]] {{goal|87}}
+|goals2     =
+*[[Danila Forov|Forov]] {{goal|9}}
+|stadium    = [[Sitterstadion]], [[St. Gallen]]
+|attendance = 12,296<ref>{{UEFA match attendance|2049188|St. Gallen vs. Sheriff Tiraspol|date=13 August 2026|access-date=13 August 2026}}</ref>
+|referee    = [[Julian Weinberger]] ([[Austrian Football Association|Austria]])
+|report     = Report<ref>[https://www.uefa.com/uefaconferenceleague/match/2049188 "St. Gallen vs Sheriff Tiraspol"]. ''UEFA.com''. Union of European Football Associations. Retrieved 31 July 2026.</ref>
+}}
+''St. Gallen won 8–2 on aggregate.''
+----
+{{#invoke:football box|main
+|date       = {{Start date|2026|8|6|df=y}}
+|time       = 20:00
+|team1      = [[Hapoel Tel Aviv F.C.|Hapoel Tel Aviv]] {{fbaicon|ISR}}
+|score      = 2–0
+|team2      = {{fbaicon|POL}} [[GKS Katowice]]
+|goals1     =
+*[[Stav Turiel|Turiel]] {{goal|5}}
+*[[Roei Alkukin|Alkukin]] {{goal|18}}
+|goals2     =
+|stadium    = [[Diósgyőri Stadion]], [[Miskolc]], Hungary{{refn|group=note|name=Israel|Due to the [[Gaza war]], Israeli teams were required to play their home matches at neutral venues until further notice.<ref>{{cite news |url=https://www.uefa.com/news-media/news/0286-194079070fc0-ee97b2cd5400-1000/ |title=European Qualifier match between Belgium and Sweden declared abandoned with half-time result confirmed as final |website=[[UEFA]] |publisher=Union of European Football Associations |date=19 October 2023 |access-date=23 November 2023}}</ref>}}
+|attendance = 3,006<ref>{{UEFA match attendance|2049159|Hapoel Tel Aviv vs. GKS Katowice|date=6 August 2026|access-date=6 August 2026}}</ref>
+|referee    = [[Bastien Dechepy]] ([[French Football Federation|France]])
+|report     = Report<ref>[https://www.uefa.com/uefaconferenceleague/match/2049159 "Hapoel Tel Aviv vs GKS Katowice"]. ''UEFA.com''. Union of European Football Associations. Retrieved 31 July 2026.</ref>
+}}
+{{#invoke:football box|main
+|date       = {{Start date|2026|8|12|df=y}}
+|time       = 18:00
+|team1      = GKS Katowice {{fbaicon|POL}}
+|score      = 2–1
+|team2      = {{fbaicon|ISR}} Hapoel Tel Aviv
+|goals1     =
+*[[Ilya Shkurin|Shkurin]] {{goal|83}}
+*[[Arkadiusz Jędrych|Jędrych]] {{goal|90|pen.}}
+|goals2     =
+*[[Stav Turiel|Turiel]] {{goal|23}}
+|stadium    = [[Arena Katowice]], [[Katowice]]
+|attendance = 12,420<ref>{{UEFA match attendance|2049189|GKS Katowice vs. Hapoel Tel Aviv|date=12 August 2026|access-date=12 August 2026}}</ref>
+|referee    = [[Alexandros Tsakalidis]] ([[Hellenic Football Federation|Greece]])
+|report     = Report<ref>[https://www.uefa.com/uefaconferenceleague/match/2049189 "GKS Katowice vs Hapoel Tel Aviv"]. ''UEFA.com''. Union of European Football Associations. Retrieved 31 July 2026.</ref>
+}}
+''Hapoel Tel Aviv won 3–2 on aggregate.''
+----
+{{#invoke:football box|main
+|date       = {{Start date|2026|8|6|df=y}}
+|time       = 19:30 {{small|(20:30 [[UTC+03:00|UTC+3]])}}
+|team1      = [[Beitar Jerusalem F.C.|Beitar Jerusalem]] {{fbaicon|ISR}}
+|score      = 1–2
+|team2      = {{fbaicon|AUT}} [[FK Austria Wien|Austria Wien]]
+|goals1     =
+*[[Noam Muche|Muche]] {{goal|19}}
+|goals2     =
+*[[Vasilije Markovic|Markovic]] {{goal|45}}
+*[[Sanel Šaljić|Šaljić]] {{goal|69}}
+|stadium    = [[Ilie Oană Stadium|Stadionul Ilie Oană]], [[Ploiești]], Romania{{refn|group=note|name=Israel}}
+|attendance = 1,450<ref>{{UEFA match attendance|2049160|Beitar Jerusalem vs. Austria Wien|date=6 August 2026|access-date=6 August 2026}}</ref>
+|referee    = [[Lawrence Visser]] ([[Royal Belgian Football Association|Belgium]])
+|report     = Report<ref>[https://www.uefa.com/uefaconferenceleague/match/2049160 "Beitar Jerusalem vs Austria Wien"]. ''UEFA.com''. Union of European Football Associations. Retrieved 31 July 2026.</ref>
+}}
+{{#invoke:football box|main
+|date       = {{Start date|2026|8|13|df=y}}
+|time       = 20:30
+|team1      = Austria Wien {{fbaicon|AUT}}
+|score      = 1–2
+|aet        = yes
+|team2      = {{fbaicon|ISR}} Beitar Jerusalem
+|goals1     =
+*[[Kelvin Boateng|Boateng]] {{goal|58}}
+|goals2     =
+*[[Omer Atzili|Atzili]] {{goal|33}}
+*[[Johnbosco Kalu|Kalu]] {{goal|56}}
+|stadium    = [[Generali Arena (Vienna)|Generali Arena]], [[Vienna]]
+|attendance = 7,663<ref>{{UEFA match attendance|2049190|Austria Wien vs. Beitar Jerusalem|date=13 August 2026|access-date=13 August 2026}}</ref>
+|referee    = [[Lukasz Kuzma]] ([[Polish Football Association|Poland]])
+|report     = Report<ref>[https://www.uefa.com/uefaconferenceleague/match/2049190 "Austria Wien vs Beitar Jerusalem"]. ''UEFA.com''. Union of European Football Associations. Retrieved 31 July 2026.</ref>
+|penaltyscore = 4–2
+|penalties1 =
+*[[Manfred Fischer|M. Fischer]] {{pengoal}}
+*[[Lee Tae-seok]] {{pengoal}}
+*[[Reinhold Ranftl|Ranftl]] {{pengoal}}
+*[[Vasilije Markovic|Markovic]] {{penmiss}}
+*[[Sanel Šaljić|Šaljić]] {{pengoal}}
+|penalties2 =
+*{{pengoal}} [[Brayan Carabalí|Carabalí]]
+*{{pengoal}} [[Tomer Yosefi|Yosefi]] 
+*{{penmiss}} [[Eugene Ansah|Ansah]]  
+*{{penmiss}} [[Timothy Muzie|Muzie]] 
+}}
+''3–3 on aggregate; Austria Wien won 4–2 on penalties.''
+----
+{{#invoke:football box|main
+|date       = {{Start date|2026|8|6|df=y}}
+|time       = 18:30 {{small|(19:30 [[UTC+03:00|UTC+3]])}}
+|team1      = [[CFR Cluj]] {{fbaicon|ROU}}
+|score      = 0–5
+|team2      = {{fbaicon|NOR}} [[Tromsø IL|Tromsø]]
+|goals1     =
+|goals2     =
+*[[Heine Åsen Larsen|H. Larsen]] {{goal|5||20}}
+*[[Isak Dahlqvist|Dahlqvist]] {{goal|27||61||74}}
+|stadium    = [[Stadionul Dr. Constantin Rădulescu]], [[Cluj-Napoca]]
+|attendance = 6,729<ref>{{UEFA match attendance|2049161|CFR Cluj vs. Tromsø|date=6 August 2026|access-date=6 August 2026}}</ref>
+|referee    = [[Patrik Kolarić]] ([[Croatian Football Federation|Croatia]])
+|report     = Report<ref>[https://www.uefa.com/uefaconferenceleague/match/2049161 "CFR Cluj vs Tromsø"]. ''UEFA.com''. Union of European Football Associations. Retrieved 31 July 2026.</ref>
+}}
+{{#invoke:football box|main
+|date       = {{Start date|2026|8|13|df=y}}
+|time       = 19:00
+|team1      = Tromsø {{fbaicon|NOR}}
+|score      = 2–1
+|team2      = {{fbaicon|ROU}} CFR Cluj
+|goals1     =
+*[[Leon Hien|Hien]] {{goal|6}}
+*[[Isak Vådebu|Vådebu]] {{goal|48}}
+|goals2     =
+*[[Meriton Korenica|Korenica]] {{goal|78}}
+|stadium    = [[Romssa Arena]], [[Tromsø]]
+|attendance = 4,220<ref>{{UEFA match attendance|2049191|Tromsø vs. CFR Cluj|date=13 August 2026|access-date=13 August 2026}}</ref>
+|referee    = [[David Dickinson (referee)|David Dickinson]] ([[Scottish Football Association|Scotland]])
+|report     = Report<ref>[https://www.uefa.com/uefaconferenceleague/match/2049191 "Tromsø 3 vs CFR Cluj"]. ''UEFA.com''. Union of European Football Associations. Retrieved 31 July 2026.</ref>
+}}
+''Tromsø won 7–1 on aggregate.''
+----
+{{#invoke:football box|main
+|date       = {{Start date|2026|8|6|df=y}}
+|time       = 19:00
+|team1      = [[FC Dynamo Kyiv|Dynamo Kyiv]] {{fbaicon|UKR}}
+|score      = 1–0
+|team2      = {{fbaicon|AZE}} [[Qarabağ FK|Qarabağ]]
+|goals1     =
+*[[Matviy Ponomarenko|Ponomarenko]] {{goal|10}}
+|goals2     =
+|stadium    = [[Arena Lublin]], [[Lublin]], Poland{{refn|group=note|name=Ukraine|Due to the [[2022 Russian invasion of Ukraine|Russian invasion of Ukraine]], Ukrainian teams were required to play their home matches at neutral venues until further notice.<ref>{{cite news |url=https://www.uefa.com/news-media/news/0272-148740475a92-1b97baa3e9d7-1000/ |title=Decisions from today's extraordinary UEFA Executive Committee meeting |work=[[UEFA]] |publisher=Union of European Football Associations |date=25 February 2022 |access-date=25 February 2022}}</ref>}}
+|attendance = 4,335<ref>{{UEFA match attendance|2049162|Dynamo Kyiv vs. Qarabağ|date=6 August 2026|access-date=6 August 2026}}</ref>
+|referee    = [[Morten Krogh (referee)|Morten Krogh]] ([[Danish Football Association|Denmark]])
+|report     = Report<ref>[https://www.uefa.com/uefaconferenceleague/match/2049162 "Dynamo Kyiv vs Qarabağ"]. ''UEFA.com''. Union of European Football Associations. Retrieved 31 July 2026.</ref>
+}}
+{{#invoke:football box|main
+|date       = {{Start date|2026|8|13|df=y}}
+|time       = 18:00 {{small|(20:00 [[UTC+04:00|UTC+4]])}}
+|team1      = Qarabağ {{fbaicon|AZE}}
+|score      = 2–0
+|team2      = {{fbaicon|UKR}} Dynamo Kyiv
+|goals1     =
+*[[Jaly Mouaddib|Mouaddib]] {{goal|12}}
+*[[Oleksiy Kashchuk|Kashchuk]] {{goal|69}}
+|goals2     =
+|stadium    = [[Tofiq Bahramov Republican Stadium]], [[Baku]]
+|attendance = 26,449<ref>{{UEFA match attendance|2049192|Qarabağ vs. Dynamo Kyiv|date=13 August 2026|access-date=13 August 2026}}</ref>
+|referee    = [[Stuart Attwell]] ([[The Football Association|England]])
+|report     = Report<ref>[https://www.uefa.com/uefaconferenceleague/match/2049192 "Qarabağ vs Dynamo Kyiv"]. ''UEFA.com''. Union of European Football Associations. Retrieved 31 July 2026.</ref>
+}}
+''Qarabağ won 2–1 on aggregate.''
+----
+{{#invoke:football box|main
+|date       = {{Start date|2026|8|5|df=y}}
+|time       = 19:00
+|team1      = [[SK Brann|Brann]] {{fbaicon|NOR}}
+|score      = 0–1
+|team2      = {{fbaicon|CYP}} [[Apollon Limassol FC|Apollon Limassol]]
+|goals1     =
+|goals2     =
+*[[Alen Ožbolt|Ožbolt]] {{goal|22}}
+|stadium    = [[Brann Stadion]], [[Bergen]]
+|attendance = 12,750<ref>{{UEFA match attendance|2049163|Brann vs. Apollon Limassol|date=5 August 2026|access-date=5 August 2026}}</ref>
+|referee    = [[Damian Kos]] ([[Polish Football Association|Poland]])
+|report     = Report<ref>[https://www.uefa.com/uefaconferenceleague/match/2049163 "Brann vs Apollon Limassol"]. ''UEFA.com''. Union of European Football Associations. Retrieved 31 July 2026.</ref>
+}}
+{{#invoke:football box|main
+|date       = {{Start date|2026|8|11|df=y}}
+|time       = 19:00 {{small|(20:00 [[UTC+03:00|UTC+3]])}}
+|team1      = Apollon Limassol {{fbaicon|CYP}}
+|score      = 2–4
+|aet        = yes
+|team2      = {{fbaicon|NOR}} Brann
+|goals1     =
+*[[Ivan Ljubić|Ljubić]] {{goal|86}}
+*[[Gaétan Weissbeck|Weissbeck]] {{goal|92}}
+|goals2     =
+*[[Kristall Máni Ingason|Ingason]] {{goal|16}}
+*[[Noah Holm|Holm]] {{goal|90+6||95}}
+*[[Kristian Eriksen|Eriksen]] {{goal|105}}
+|stadium    = [[Alphamega Stadium]], [[Limassol]]
+|attendance = 7,253<ref>{{UEFA match attendance|2049193|Apollon Limassol vs. Brann|date=11 August 2026|access-date=11 August 2026}}</ref>
+|referee    = [[Rob Harvey (referee)|Rob Harvey]] ([[Football Association of Ireland|Republic of Ireland]])
+|report     = Report<ref>[https://www.uefa.com/uefaconferenceleague/match/2049193 "Apollon Limassol vs Brann"]. ''UEFA.com''. Union of European Football Associations. Retrieved 31 July 2026.</ref>
+}}
+''Brann won 4–3 on aggregate.''
+----
+{{#invoke:football box|main
+|date       = {{Start date|2026|8|6|df=y}}
+|time       = 20:30
+|team1      = [[FC Lugano|Lugano]] {{fbaicon|SUI}}
+|score      = 2–0
+|team2      = {{fbaicon|FRO}} [[NSÍ Runavík|NSÍ]]
+|goals1     =
+*[[Elias Pihlström|Pihlström]] {{goal|7}}
+*[[Kevin Behrens|Behrens]] {{goal|79}}
+|goals2     =
+|stadium    = [[Cornaredo Stadium|Lugano Arena]], [[Lugano]]
+|attendance = 3,328<ref>{{UEFA match attendance|2049164|Lugano vs. NSÍ|date=6 August 2026|access-date=6 August 2026}}</ref>
+|referee    = [[Viktor Kopiyevskyi]] ([[Football Federation of Ukraine|Ukraine]])
+|report     = Report<ref>[https://www.uefa.com/uefaconferenceleague/match/2049164 "Lugano vs NSÍ"]. ''UEFA.com''. Union of European Football Associations. Retrieved 31 July 2026.</ref>
+}}
+{{#invoke:football box|main
+|date       = {{Start date|2026|8|13|df=y}}
+|time       = 19:30 {{small|(18:30 [[UTC+01:00|UTC+1]])}}
+|team1      = NSÍ {{fbaicon|FRO}}
+|score      = 2–2
+|team2      = {{fbaicon|SUI}} Lugano
+|goals1     =
+*[[Petur Knudsen|P. Knudsen]] {{goal|29}}
+*[[Marius Kryger Lindh|Lindh]] {{goal|61}}
+|goals2     =
+*[[Yanis Cimignani|Cimignani]] {{goal|67}}
+*[[Kevin Behrens|Behrens]] {{goal|80}}
+|stadium    = [[Við Djúpumýrar]], [[Klaksvík]]{{refn|group=note|name=NSÍ|NSÍ played their home matches at Við Djúpumýrar in Klaksvík instead of their own stadium, [[Við Løkin]] in Runavík, which did not fulfil UEFA requirements.}}
+|attendance = 697<ref>{{UEFA match attendance|2049194|NSÍ vs. Lugano|date=13 August 2026|access-date=13 August 2026}}</ref>
+|referee    = [[Rob Hennessy]] ([[Football Association of Ireland|Republic of Ireland]])
+|report     = Report<ref>[https://www.uefa.com/uefaconferenceleague/match/2049194 "NSÍ vs Lugano"]. ''UEFA.com''. Union of European Football Associations. Retrieved 31 July 2026.</ref>
+}}
+''Lugano won 4–2 on aggregate.''
+----
+{{#invoke:football box|main
+|date       = {{Start date|2026|8|6|df=y}}
+|time       = 19:00
+|team1      = [[Raków Częstochowa]] {{fbaicon|POL}}
+|score      = 0–0
+|team2      = {{fbaicon|SWE}} [[Hammarby Fotboll|Hammarby IF]]
+|goals1     =
+|goals2     =
+|stadium    = [[Miejski Stadion Piłkarski Raków]], [[Częstochowa]]
+|attendance = 5,089<ref>{{UEFA match attendance|2049165|Raków Częstochowa vs. Hammarby IF|date=6 August 2026|access-date=6 August 2026}}</ref>
+|referee    = [[Henrik Nalbandyan]] ([[Football Federation of Armenia|Armenia]])
+|report     = Report<ref>[https://www.uefa.com/uefaconferenceleague/match/2049165 "Raków Częstochowa vs Hammarby IF"]. ''UEFA.com''. Union of European Football Associations. Retrieved 31 July 2026.</ref>
+}}
+{{#invoke:football box|main
+|date       = {{Start date|2026|8|13|df=y}}
+|time       = 19:00
+|team1      = Hammarby IF {{fbaicon|SWE}}
+|score      = 0–1
+|team2      = {{fbaicon|POL}} Raków Częstochowa
+|goals1     =
+|goals2     =
+*[[Stratos Svarnas|Svarnas]] {{goal|45+2}}
+|stadium    = [[3Arena (Stockholm)|3Arena]], [[Stockholm]]
+|attendance = 19,719<ref>{{UEFA match attendance|2049195|Hammarby IF vs. Raków Częstochowa|date=13 August 2026|access-date=13 August 2026}}</ref>
+|referee    = [[Luca Pairetto]] ([[Italian Football Federation|Italy]])
+|report     = Report<ref>[https://www.uefa.com/uefaconferenceleague/match/2049195 "Hammarby IF vs Raków Częstochowa"]. ''UEFA.com''. Union of European Football Associations. Retrieved 31 July 2026.</ref>
+}}
+''Raków Częstochowa won 1–0 on aggregate.''
+----
+{{#invoke:football box|main
+|date       = {{Start date|2026|8|6|df=y}}
+|time       = 18:00 {{small|(19:00 [[UTC+03:00|UTC+3]])}}
+|team1      = [[Helsingin Jalkapalloklubi|HJK]] {{fbaicon|FIN}}
+|score      = 1–1
+|team2      = {{fbaicon|SCO}} [[Motherwell F.C.|Motherwell]]
+|goals1     =
+*[[Teemu Pukki|Pukki]] {{goal|71}}
+|goals2     =
+*[[Tawanda Maswanhise|Maswanhise]] {{goal|64|pen.}}
+|stadium    = [[Töölö Football Stadium]], [[Helsinki]]
+|attendance = 7,023<ref>{{UEFA match attendance|2049166|HJK vs. Motherwell|date=6 August 2026|access-date=6 August 2026}}</ref>
+|referee    = [[Dalibor Černý]] ([[Football Association of the Czech Republic|Czech Republic]])
+|report     = Report<ref>[https://www.uefa.com/uefaconferenceleague/match/2049166 "HJK vs Motherwell"]. ''UEFA.com''. Union of European Football Associations. Retrieved 31 July 2026.</ref>
+}}
+{{#invoke:football box|main
+|date       = {{Start date|2026|8|13|df=y}}
+|time       = 20:30 {{small|(19:30 [[UTC+01:00|UTC+1]])}}
+|team1      = Motherwell {{fbaicon|SCO}}
+|score      = 2–0
+|team2      = {{fbaicon|FIN}} HJK
+|goals1     =
+*[[Ibrahim Said (footballer, born 2002)|Said]] {{goal|47||60}}
+|goals2     =
+|stadium    = [[Fir Park]], [[Motherwell]]
+|attendance = 8,185<ref>{{UEFA match attendance|2049196|Motherwell vs. HJK|date=13 August 2026|access-date=13 August 2026}}</ref>
+|referee    = [[Michal Očenáš]] ([[Slovak Football Association|Slovakia]])
+|report     = Report<ref>[https://www.uefa.com/uefaconferenceleague/match/2049196 "Motherwell vs HJK"]. ''UEFA.com''. Union of European Football Associations. Retrieved 31 July 2026.</ref>
+}}
+''Motherwell won 3–1 on aggregate.''
+----
+{{#invoke:football box|main
+|date       = {{Start date|2026|8|6|df=y}}
+|time       = 21:00 {{small|(20:00 [[UTC+01:00|UTC+1]])}}
+|team1      = [[Hibernian F.C.|Hibernian]] {{fbaicon|SCO}}
+|score      = 2–1
+|team2      = {{fbaicon|MKD}} [[KF Shkëndija|Shkëndija]]
+|goals1     =
+*[[Owen Elding|Elding]] {{goal|73}}
+*[[Warren O'Hora|O'Hora]] {{goal|90}}
+|goals2     =
+*[[Marko Gjorgjievski|Gjorgjievski]] {{goal|76}}
+|stadium    = [[Easter Road]], [[Edinburgh]]
+|attendance = 13,132<ref>{{UEFA match attendance|2049167|Hibernian vs. Shkëndija|date=6 August 2026|access-date=6 August 2026}}</ref>
+|referee    = [[Menelaos Antoniou]] ([[Cyprus Football Association|Cyprus]])
+|report     = Report<ref>[https://www.uefa.com/uefaconferenceleague/match/2049167 "Hibernian vs Shkëndija"]. ''UEFA.com''. Union of European Football Associations. Retrieved 31 July 2026.</ref>
+}}
+{{#invoke:football box|main
+|date       = {{Start date|2026|8|13|df=y}}
+|time       = 20:00
+|team1      = Shkëndija {{fbaicon|MKD}}
+|score      = 0–0
+|team2      = {{fbaicon|SCO}} Hibernian
+|goals1     =
+|goals2     =
+|stadium    = [[Toše Proeski Arena]], [[Skopje]]{{refn|group=note|name=Shkëndija|Shkëndija played their home matches at Toše Proeski Arena in Skopje instead of their own stadium, [[Ecolog Arena]] in Tetovo, which did not fulfill UEFA requirements.}}
+|attendance = 7,200<ref>{{UEFA match attendance|2049197|Shkëndija vs. Hibernian|date=13 August 2026|access-date=13 August 2026}}</ref>
+|referee    = [[Bulat Sariyev]] ([[Football Federation of Kazakhstan|Kazakhstan]])
+|report     = Report<ref>[https://www.uefa.com/uefaconferenceleague/match/2049197 "Shkëndija vs Hibernian"]. ''UEFA.com''. Union of European Football Associations. Retrieved 31 July 2026.</ref>
+}}
+''Hibernian won 2–1 on aggregate.''
+----
+{{#invoke:football box|main
+|date       = {{Start date|2026|8|6|df=y}}
+|time       = 19:00
+|team1      = [[IFK Göteborg]] {{fbaicon|SWE}}
+|score      = 0–1
+|team2      = {{fbaicon|BEL}} [[KAA Gent|Gent]]
+|goals1     =
+|goals2     =
+*[[Hyllarion Goore|Goore]] {{goal|45}}
+|stadium    = [[Gamla Ullevi]], [[Gothenburg]]
+|attendance = 15,468<ref>{{UEFA match attendance|2049168|IFK Göteborg vs. Gent|date=6 August 2026|access-date=6 August 2026}}</ref>
+|referee    = [[Antoni Bandić]] ([[Football Federation of Bosnia and Herzegovina|Bosnia and Herzegovina]])
+|report     = Report<ref>[https://www.uefa.com/uefaconferenceleague/match/2049168 "IFK Göteborg vs Gent"]. ''UEFA.com''. Union of European Football Associations. Retrieved 31 July 2026.</ref>
+}}
+{{#invoke:football box|main
+|date       = {{Start date|2026|8|13|df=y}}
+|time       = 20:30
+|team1      = Gent {{fbaicon|BEL}}
+|score      = 1–1
+|team2      = {{fbaicon|SWE}} IFK Göteborg
+|goals1     =
+*[[Matties Volckaert|Volckaert]] {{goal|27}}
+|goals2     =
+*[[Saidou Alioum|Alioum]] {{goal|85}}
+|stadium    = [[Planet Group Arena]], [[Ghent]]
+|attendance = 10,531<ref>{{UEFA match attendance|2049198|Gent vs. IFK Göteborg|date=13 August 2026|access-date=13 August 2026}}</ref>
+|referee    = [[Gustavo Correia]] ([[Portuguese Football Federation|Portugal]])
+|report     = Report<ref>[https://www.uefa.com/uefaconferenceleague/match/2049198 "Gent vs IFK Göteborg"]. ''UEFA.com''. Union of European Football Associations. Retrieved 31 July 2026.</ref>
+}}
+''Gent won 2–1 on aggregate.''
+----
+{{#invoke:football box|main
+|date       = {{Start date|2026|8|6|df=y}}
+|time       = 18:00 {{small|(19:00 [[UTC+03:00|UTC+3]])}}
+|team1      = [[Paide Linnameeskond]] {{fbaicon|EST}}
+|score      = 1–4
+|team2      = {{fbaicon|AUT}} [[SK Rapid Wien|Rapid Wien]]
+|goals1     =
+*[[Daniel Luts|D. Luts]] {{goal|41}}
+|goals2     =
+*[[Bendegúz Bolla|Bolla]] {{goal|5|pen.}}
+*[[Moulaye Haïdara|Haïdara]] {{goal|83||90+4}}
+*[[Petter Nosa Dahl|Dahl]] {{goal|85}}
+|stadium    = [[Lilleküla Stadium]], [[Tallinn]]{{refn|group=note|name=Paide|Starting from the third qualifying round, Paide played their home matches at Lilleküla Stadium in Tallinn, rather than at [[Pärnu Rannastaadion]] in [[Pärnu]], to meet UEFA requirements.}}
+|attendance = 5,569<ref>{{UEFA match attendance|2049169|Paide Linnameeskond vs. Rapid Wien|date=6 August 2026|access-date=6 August 2026}}</ref>
+|referee    = [[Danilo Nikolić (referee)|Danilo Nikolić]] ([[Football Association of Serbia|Serbia]])
+|report     = Report<ref>[https://www.uefa.com/uefaconferenceleague/match/2049169 "Paide Linnameeskond vs Rapid Wien"]. ''UEFA.com''. Union of European Football Associations. Retrieved 31 July 2026.</ref>
+}}
+{{#invoke:football box|main
+|date       = {{Start date|2026|8|12|df=y}}
+|time       = 18:00
+|team1      = Rapid Wien {{fbaicon|AUT}}
+|score      = 2–0
+|team2      = {{fbaicon|EST}} Paide Linnameeskond
+|goals1     =
+*[[Marco Tilio|Tilio]] {{goal|38}}
+*[[Louis Schaub|Schaub]] {{goal|82|pen.}}
+|goals2     =
+|stadium    = [[Allianz Stadion]], [[Vienna]]
+|attendance = 13,705<ref>{{UEFA match attendance|2049199|Rapid Wien vs. Paide Linnameeskond|date=12 August 2026|access-date=12 August 2026}}</ref>
+|referee    = [[Denys Shurman]] ([[Football Federation of Ukraine|Ukraine]])
+|report     = Report<ref>[https://www.uefa.com/uefaconferenceleague/match/2049199 "Rapid Wien vs Paide Linnameeskond"]. ''UEFA.com''. Union of European Football Associations. Retrieved 31 July 2026.</ref>
+}}
+''Rapid Wien won 6–1 on aggregate.''
+----
+{{#invoke:football box|main
+|date       = {{Start date|2026|8|6|df=y}}
+|time       = 20:45 {{small|(19:45 [[UTC+01:00|UTC+1]])}}
+|team1      = [[Bohemian F.C.|Bohemians]] {{fbaicon|IRL}}
+|score      = 0–2
+|team2      = {{fbaicon|DEN}} [[FC Midtjylland|Midtjylland]]
+|goals1     =
+|goals2     =
+*[[Franculino Djú|Djú]] {{goal|28}}
+*[[Valdemar Byskov|Byskov]] {{goal|77}}
+|stadium    = [[Tallaght Stadium]], [[Dublin]]
+|attendance = 6,085<ref>{{UEFA match attendance|2049170|Bohemians vs. Midtjylland|date=6 August 2026|access-date=6 August 2026}}</ref>
+|referee    = [[Rareș Vidican]] ([[Romanian Football Federation|Romania]])
+|report     = Report<ref>[https://www.uefa.com/uefaconferenceleague/match/2049170 "Bohemians vs Midtjylland"]. ''UEFA.com''. Union of European Football Associations. Retrieved 31 July 2026.</ref>
+}}
+{{#invoke:football box|main
+|date       = {{Start date|2026|8|13|df=y}}
+|time       = 19:00
+|team1      = Midtjylland {{fbaicon|DEN}}
+|score      = 3–2
+|team2      = {{fbaicon|IRL}} Bohemians
+|goals1     =
+*[[Franculino Djú|Djú]] {{goal|26|pen.}}
+*[[Sofus Johannesen|Johannesen]] {{goal|47}}
+*[[Stanley Iheanacho|Iheanacho]] {{goal|78}}
+|goals2     =
+*[[Zane Myers|Myers]] {{goal|62}}
+*[[Dayle Rooney|Rooney]] {{goal|88}}
+|stadium    = [[MCH Arena]], [[Herning]]
+|attendance = 8,621<ref>{{UEFA match attendance|2049200|Midtjylland vs. Bohemians|date=13 August 2026|access-date=13 August 2026}}</ref> 
+|referee    = [[Matteo Marcenaro]] ([[Italian Football Federation|Italy]])
+|report     = Report<ref>[https://www.uefa.com/uefaconferenceleague/match/2049200 "Midtjylland vs Bohemians"]. ''UEFA.com''. Union of European Football Associations. Retrieved 31 July 2026.</ref>
+}}
+''Midtjylland won 5–2 on aggregate.''
+----
+{{#invoke:football box|main
+|date       = {{Start date|2026|8|6|df=y}}
+|time       = 19:00
+|team1      = [[Debreceni VSC|Debrecen]] {{fbaicon|HUN}}
+|score      = 0–3
+|team2      = {{fbaicon|DEN}} [[F.C. Copenhagen|Copenhagen]]
+|goals1     =
+|goals2     =
+*[[Gabriel Pereira (footballer, born 2000)|Pereira]] {{goal|21}}
+*[[Robert Silva (footballer)|Robert]] {{goal|35}}
+*[[Andreas Cornelius|Cornelius]] {{goal|90+1}}
+|stadium    = [[Nagyerdei Stadion]], [[Debrecen]]
+|attendance = 6,120<ref>{{UEFA match attendance|2049171|Debrecen vs. Copenhagen|date=6 August 2026|access-date=6 August 2026}}</ref>
+|referee    = [[Enea Jorgji]] ([[Albanian Football Association|Albania]])
+|report     = Report<ref>[https://www.uefa.com/uefaconferenceleague/match/2049171 "Debrecen vs Copenhagen"]. ''UEFA.com''. Union of European Football Associations. Retrieved 31 July 2026.</ref>
+}}
+{{#invoke:football box|main
+|date       = {{Start date|2026|8|12|df=y}}
+|time       = 18:00
+|team1      = Copenhagen {{fbaicon|DEN}}
+|score      = 5–1
+|team2      = {{fbaicon|HUN}} Debrecen
+|goals1     =
+*[[Mohamed Elyounoussi|Elyounoussi]] {{goal|3||58|pen.}}
+*[[Alex Král|Král]] {{goal|76}}
+*[[Andreas Cornelius|Cornelius]] {{goal|78||90+1}}
+|goals2     =
+*[[Balázs Dzsudzsák|Dzsudzsák]] {{goal|48}}
+|stadium    = [[Parken Stadium]], [[Copenhagen]]
+|attendance = 19,235<ref>{{UEFA match attendance|2049201|Copenhagen vs. Debrecen|date=12 August 2026|access-date=12 August 2026}}</ref>
+|referee    = [[Jérémie Pignard]] ([[French Football Federation|France]])
+|report     = Report<ref>[https://www.uefa.com/uefaconferenceleague/match/2049201 "Copenhagen vs Debrecen"]. ''UEFA.com''. Union of European Football Associations. Retrieved 31 July 2026.</ref>
+}}
+''Copenhagen won 8–1 on aggregate.''
+----
+{{#invoke:football box|main
+|date       = {{Start date|2026|8|6|df=y}}
+|time       = 18:00
+|team1      = [[FK Jablonec|Jablonec]] {{fbaicon|CZE}}
+|score      = 2–0
+|team2      = {{fbaicon|LVA}} [[FK RFS|RFS]]
+|goals1     =
+*[[Vakhtang Chanturishvili|Chanturishvili]] {{goal|18}}
+*[[Matěj Polidar|Polidar]] {{goal|52}}
+|goals2     =
+|stadium    = [[Stadion Střelnice]], [[Jablonec nad Nisou]]
+|attendance = 3,911<ref>{{UEFA match attendance|2049172|Jablonec vs. RFS|date=6 August 2026|access-date=6 August 2026}}</ref>
+|referee    = [[Nathan Verboomen]] ([[Royal Belgian Football Association|Belgium]])
+|report     = Report<ref>[https://www.uefa.com/uefaconferenceleague/match/2049172 "Jablonec vs RFS"]. ''UEFA.com''. Union of European Football Associations. Retrieved 31 July 2026.</ref>
+}}
+{{#invoke:football box|main
+|date       = {{Start date|2026|8|13|df=y}}
+|time       = 18:30 {{small|(19:30 [[UTC+03:00|UTC+3]])}}
+|team1      = RFS {{fbaicon|LVA}}
+|score      = 1–2
+|team2      = {{fbaicon|CZE}} Jablonec
+|goals1     =
+*[[Žiga Lipušček|Lipušček]] {{goal|38}}
+|goals2     =
+*[[Richard Sedláček|Sedláček]] {{goal|4}}
+*[[Sebastian Nebyla|Nebyla]] {{goal|22}}
+|stadium    = [[LNK Sporta Parks]], [[Riga]]
+|attendance = 1,674<ref>{{UEFA match attendance|2049202|RFS vs. Jablonec|date=13 August 2026|access-date=13 August 2026}}</ref> 
+|referee    = [[Yigal Frid]] ([[Israel Football Association|Israel]])
+|report     = Report<ref>[https://www.uefa.com/uefaconferenceleague/match/2049202 "RFS vs Jablonec"]. ''UEFA.com''. Union of European Football Associations. Retrieved 31 July 2026.</ref>
+}}
+''Jablonec won 4–1 on aggregate.''
+----
+{{#invoke:football box|main
+|date       = {{Start date|2026|8|6|df=y}}
+|time       = 20:45
+|team1      = [[HNK Rijeka|Rijeka]] {{fbaicon|CRO}}
+|score      = 1–0
+|team2      = {{fbaicon|FIN}} [[Ilves (football)|Ilves]]
+|goals1     =
+*[[Niko Janković|Janković]] {{goal|16}}
+|goals2     =
+|stadium    = [[Stadion Rujevica]], [[Rijeka]]
+|attendance = 5,268<ref>{{UEFA match attendance|2049173|Rijeka vs. Ilves|date=6 August 2026|access-date=6 August 2026}}</ref>
+|referee    = [[Ishmael Barbara]] ([[Malta Football Association|Malta]])
+|report     = Report<ref>[https://www.uefa.com/uefaconferenceleague/match/2049173 "Rijeka vs Ilves"]. ''UEFA.com''. Union of European Football Associations. Retrieved 31 July 2026.</ref>
+}}
+{{#invoke:football box|main
+|date       = {{Start date|2026|8|13|df=y}}
+|time       = 18:00 {{small|(19:00 [[UTC+03:00|UTC+3]])}}
+|team1      = Ilves {{fbaicon|FIN}}
+|score      = 1–1
+|team2      = {{fbaicon|CRO}} Rijeka
+|goals1     =
+*[[Stanislav Baranov|Baranov]] {{goal|64}}
+|goals2     =
+*[[Justas Lasickas|Lasickas]] {{goal|70}}
+|stadium    = [[Tammelan Stadion]], [[Tampere]]
+|attendance = 5,198<ref>{{UEFA match attendance|2049203|Ilves vs. Rijeka|date=13 August 2026|access-date=13 August 2026}}</ref>
+|referee    = [[Genc Nuza]] ([[Football Federation of Kosovo|Kosovo]])
+|report     = Report<ref>[https://www.uefa.com/uefaconferenceleague/match/2049203 "Ilves vs Rijeka"]. ''UEFA.com''. Union of European Football Associations. Retrieved 31 July 2026.</ref>
+}}
+''Rijeka won 2–1 on aggregate.''
+----
+{{#invoke:football box|main
+|date       = {{Start date|2026|8|6|df=y}}
+|time       = 20:00
+|team1      = [[FC Twente|Twente]] {{fbaicon|NED}}
+|score      = 6–0
+|team2      = {{fbaicon|SVK}} [[FC DAC 1904 Dunajská Streda|DAC Dunajská Streda]]
+|goals1     =
+*[[Daan Rots|Rots]] {{goal|7}}
+*[[Marko Pjaca|Pjaca]] {{goal|11}}
+*[[Daouda Weidmann|Weidmann]] {{goal|48}}
+*[[Max Bruns|Bruns]] {{goal|56}}
+*[[Ramiz Zerrouki|Zerrouki]] {{goal|64}}
+*[[Robin Pröpper|Pröpper]] {{goal|78}}
+|goals2     =
+|stadium    = [[De Grolsch Veste]], [[Enschede]]
+|attendance = 24,135<ref>{{UEFA match attendance|2049174|Twente vs. DAC Dunajská Streda|date=6 August 2026|access-date=6 August 2026}}</ref>
+|referee    = [[Sam Barrott]] ([[The Football Association|England]])
+|report     = Report<ref>[https://www.uefa.com/uefaconferenceleague/match/2049174 "Twente vs DAC 1904"]. ''UEFA.com''. Union of European Football Associations. Retrieved 31 July 2026.</ref>
+}}
+{{#invoke:football box|main
+|date       = {{Start date|2026|8|13|df=y}}
+|time       = 19:00
+|team1      = DAC Dunajská Streda {{fbaicon|SVK}}
+|score      = 3–3
+|team2      = {{fbaicon|NED}} Twente
+|goals1     =
+*[[Abdoulaye Gueye (footballer, born 2005)|Gueye]] {{goal|56}}
+*[[Klemen Nemanič|Nemanič]] {{goal|66}}
+*[[Prince Owusu (footballer, born 2006)|Owusu]] {{goal|88}}
+|goals2     =
+*[[Max Bruns|Bruns]] {{goal|7}}
+*[[Marko Pjaca|Pjaca]] {{goal|51||90+3}}
+|stadium    = [[MOL Aréna]], [[Dunajská Streda]]
+|attendance = 3,225<ref>{{UEFA match attendance|2049204|DAC Dunajská Streda vs. Twente|date=13 August 2026|access-date=13 August 2026}}</ref>
+|referee    = [[Florian Badstübner]] ([[German Football Association|Germany]])
+|report     = Report<ref>[https://www.uefa.com/uefaconferenceleague/match/2049204 "DAC 1904 vs Twente"]. ''UEFA.com''. Union of European Football Associations. Retrieved 31 July 2026.</ref>
+}}
+''Twente won 9–3 on aggregate.''
+
+==Play-off round==
+===Summary===
+<section begin=PO />
+The first legs were played on 20 August, and the second legs were played on 26 and 27 August 2026.
+
+The winners of the ties advanced to the [[2026–27 UEFA Conference League league phase|league phase]].
+
+{{#invoke:Sports series|main|caption=Play-off round|generate_links=y
+|heading1=Champions Path
+|[[Knattspyrnufélagið Víkingur|Víkingur Reykjavík]]|ISL|2-6|[[FK Borac Banja Luka|Borac Banja Luka]]|BIH|1−3|1-3
+|[[Shamrock Rovers F.C.|Shamrock Rovers]]|IRL|1−2|[[Kuopion Palloseura|KuPS]]|FIN|1−1|0−1
+|[[FC Drita|Drita]]|KOS|2–2 {{pso|2–4}}|[[Inter Club d'Escaldes]]|AND|2−2|0–0 {{aet}}
+|[[Klaksvíkar Ítróttarfelag|KÍ]]|FRO|1–2|[[Riga FC|Riga]]|LVA|0−0|1–2
+|[[Lincoln Red Imps F.C.|Lincoln Red Imps]]|GIB|3–2|[[Larne F.C.|Larne]]|NIR|0−2|3−0 {{aet}}
+
+|heading6=Main Path
+|[[Motherwell F.C.|Motherwell]]|SCO|2-7|[[SC Freiburg]]|GER|1−3|1-4
+|[[Górnik Zabrze]]|POL|3-7|[[AS Monaco FC|Monaco]]|FRA|2−3|1-4
+|[[FC Inter Turku|Inter Turku]]|FIN|1–4|[[F.C. Copenhagen|Copenhagen]]|DEN|0−0|1–4
+|[[Heart of Midlothian F.C.|Heart of Midlothian]]|SCO|4−4 {{pso|4−3}}|[[SK Rapid Wien|Rapid Wien]]|AUT|2−2|2−2 {{aet}}
+|[[Tromsø IL|Tromsø]]|NOR|0–4|[[Brighton & Hove Albion F.C.|Brighton & Hove Albion]]|ENG|0−0|0–4
+|[[HNK Hajduk Split|Hajduk Split]]|CRO|5-4|[[Raków Częstochowa]]|POL|2−2|3−2 {{aet}}
+|[[Panathinaikos F.C.|Panathinaikos]]|GRE|4-3|[[FC Hradec Králové|Hradec Králové]]|CZE|2–2|2-1 {{aet}}
+|[[KAA Gent|Gent]]|BEL|3-2|[[Hibernian F.C.|Hibernian]]|SCO|0−0|3-2
+|[[PAOK FC|PAOK]]|GRE|3-4|[[SK Brann|Brann]]|NOR|1−1|2-3
+|[[Atalanta BC|Atalanta]]|ITA|1–0|[[Hapoel Tel Aviv F.C.|Hapoel Tel Aviv]]|ISR|0−0|1–0
+|[[FC Midtjylland|Midtjylland]]|DEN|6-1|[[HNK Rijeka|Rijeka]]|CRO|2−0|4-1
+|[[Rangers F.C.|Rangers]]|SCO|1-1 {{pso|3−4}}|[[FK Jablonec|Jablonec]]|CZE|1−0|0-1 {{aet}}
+|[[FC Nordsjælland|Nordsjælland]]|DEN|4–2|[[FC St. Gallen|St. Gallen]]|SUI|1−0|3–2
+|[[FC Dinamo City|Dinamo City]]|ALB|3–5|[[Pafos FC|Pafos]]|CYP|1−1|2–4 {{aet}}
+|[[FC Sion|Sion]]|SUI|5–9|[[AFC Ajax|Ajax]]|NED|2−4|3–5
+|[[S.C. Braga|Braga]]|POR|2-0|[[FK Austria Wien|Austria Wien]]|AUT|2−0|0-0
+|[[FC Twente|Twente]]|NED|4-2|[[Qarabağ FK|Qarabağ]]|AZE|0−1|4-1 {{aet}}
+|[[Getafe CF|Getafe]]|ESP|4-3|[[FK Partizan|Partizan]]|SRB|3−1|1-2
+|[[FC Lugano|Lugano]]|SUI|3−2|[[Maccabi Tel Aviv F.C.|Maccabi Tel Aviv]]|ISR|2−1|1−1
+}}<section end=PO />
+
+===Champions Path matches===
+{{#invoke:football box|main
+|date       = {{Start date|2026|8|20|df=y}}
+|time       = 20:00 {{small|(18:00 [[UTC+00:00|UTC]])}}
+|team1      = [[Knattspyrnufélagið Víkingur|Víkingur Reykjavík]] {{fbaicon|ISL}}
+|score      = 1–3
+|team2      = {{fbaicon|BIH}} [[FK Borac Banja Luka|Borac Banja Luka]]
+|goals1     =
+*[[Gylfi Sigurðsson|Sigurðsson]] {{goal|75|pen.}}
+|goals2     =
+*[[Luka Juričić (footballer)|Juričić]] {{goal|21||86}}
+*[[Miloš Jojić|Jojić]] {{goal|23}}
+|stadium    = [[Víkingsvöllur]], [[Reykjavík]]
+|attendance = 1,108<ref>{{UEFA match attendance|2049246|Víkingur Reykjavík vs. Borac Banja Luka|date=20 August 2026|access-date=21 August 2026}}</ref>
+|referee    = [[Enea Jorgji]] ([[Albanian Football Federation|Albania]])
+|report     = Report<ref>[https://www.uefa.com/uefaconferenceleague/match/2049246 "Víkingur Reykjavík vs Borac Banja Luka"]. ''UEFA.com''. Union of European Football Associations. Retrieved 14 August 2026.</ref>
+}}
+{{#invoke:football box|main
+|date       = {{Start date|2026|8|27|df=y}}
+|time       = 20:30
+|team1      = Borac Banja Luka {{fbaicon|BIH}}
+|score      = 3–1
+|team2      = {{fbaicon|ISL}} Víkingur Reykjavík
+|goals1     =
+*[[Sebastián Herrera (footballer, born 1995)|Herrera]] {{goal|55}}
+*[[Luka Juričić (footballer)|Juričić]] {{goal|67}}
+*[[Pavle Djajić|Djajić]] {{goal|90+4}}
+|goals2     =
+*[[Damir Hrelja|Hrelja]] {{goal|16|o.g.}}
+|stadium    = [[Banja Luka City Stadium]], [[Banja Luka]]
+|attendance = 9,127<ref>{{UEFA match attendance|2049270|Borac Banja Luka vs. Víkingur Reykjavík|date=27 August 2026|access-date=27 August 2026}}</ref>
+|referee    = [[Anastasios Papapetrou]] ([[Hellenic Football Federation|Greece]])
+|report     = Report<ref>[https://www.uefa.com/uefaconferenceleague/match/2049270 "Borac Banja Luka vs Víkingur Reykjavík"]. ''UEFA.com''. Union of European Football Associations. Retrieved 14 August 2026.</ref>
+}}
+''Borac Banja Luka won 6–2 on aggregate.''
+----
+{{#invoke:football box|main
+|date       = {{Start date|2026|8|20|df=y}}
+|time       = 21:00 {{small|(20:00 [[UTC+01:00|UTC+1]])}}
+|team1      = [[Shamrock Rovers F.C.|Shamrock Rovers]] {{fbaicon|IRL}}
+|score      = 1–1
+|team2      = {{fbaicon|FIN}} [[Kuopion Palloseura|KuPS]]
+|goals1     =
+*[[Enda Stevens|Stevens]] {{goal|50}}
+|goals2     =
+*[[Piotr Parzyszek|Parzyszek]] {{goal|85}}
+|stadium    = [[Tallaght Stadium]], [[Dublin]]
+|attendance = 4,522<ref>{{UEFA match attendance|2049247|Shamrock Rovers vs. KuPS|date=20 August 2026|access-date=21 August 2026}}</ref>
+|referee    = [[Morten Krogh (referee)|Morten Krogh]] ([[Danish Football Association|Denmark]])
+|report     = Report<ref>[https://www.uefa.com/uefaconferenceleague/match/2049247 "Shamrock Rovers vs KuPS"]. ''UEFA.com''. Union of European Football Associations. Retrieved 14 August 2026.</ref>
+}}
+{{#invoke:football box|main
+|date       = {{Start date|2026|8|27|df=y}}
+|time       = 17:00 {{small|(18:00 [[UTC+03:00|UTC+3]])}}
+|team1      = KuPS {{fbaicon|FIN}}
+|score      = 1–0
+|team2      = {{fbaicon|IRL}} Shamrock Rovers
+|goals1     =
+*[[Graham Burke|Burke]] {{goal|75|o.g.}}
+|goals2     =
+|stadium    = [[Kuopio Football Stadium]], [[Kuopio]]
+|attendance = 2,768<ref>{{UEFA match attendance|2049271|KuPS vs. Shamrock Rovers|date=27 August 2026|access-date=27 August 2026}}</ref>
+|referee    = [[Patrik Kolarić]] ([[Croatian Football Federation|Croatia]])
+|report     = Report<ref>[https://www.uefa.com/uefaconferenceleague/match/2049271 "KuPS vs Shamrock Rovers"]. ''UEFA.com''. Union of European Football Associations. Retrieved 14 August 2026.</ref>
+}}
+''KuPS won 2–1 on aggregate.''
+----
+{{#invoke:football box|main
+|date       = {{Start date|2026|8|20|df=y}}
+|time       = 20:00
+|team1      = [[FC Drita|Drita]] {{fbaicon|KOS}}
+|score      = 2–2
+|team2      = {{fbaicon|AND}} [[Inter Club d'Escaldes]]
+|goals1     =
+*[[Hajdin Salihu|Salihu]] {{goal|5}}
+*[[Blerim Krasniqi|Bl. Krasniqi]] {{goal|43}}
+|goals2     =
+*[[Domi Berlanga|Berlanga]] {{goal|13}}
+*[[David López (footballer, born 1996)|López]] {{goal|56}}
+|stadium    = [[Fadil Vokrri Stadium]], [[Pristina]]{{refn|group=note|name=Drita|Drita played their home match at Fadil Vokrri Stadium instead of their regular stadium, [[Gjilan City Stadium]], which did not meet UEFA requirements.}}
+|attendance = 2,437<ref>{{UEFA match attendance|2049248|Drita vs. Inter Club d'Escaldes|date=20 August 2026|access-date=21 August 2026}}</ref>
+|referee    = [[Rob Hennessy]] ([[Football Association of Ireland|Ireland]])
+|report     = Report<ref>[https://www.uefa.com/uefaconferenceleague/match/2049248 "Drita vs Inter Club d'Escaldes"]. ''UEFA.com''. Union of European Football Associations. Retrieved 14 August 2026.</ref>
+}}
+{{#invoke:football box|main
+|date       = {{Start date|2026|8|27|df=y}}
+|time       = 19:00
+|team1      = Inter Club d'Escaldes {{fbaicon|AND}}
+|score      = 0–0
+|aet        = yes
+|team2      = {{fbaicon|KOS}} Drita
+|goals1     =
+|goals2     =
+|stadium    = [[Estadi de la FAF]], [[Encamp]]
+|attendance = 1,296<ref>{{UEFA match attendance|2049272|Inter Club d'Escaldes vs. Drita|date=27 August 2026|access-date=27 August 2026}}</ref>
+|referee    = [[Giorgi Kruashvili]] ([[Georgian Football Federation|Georgia]])
+|report     = Report<ref>[https://www.uefa.com/uefaconferenceleague/match/2049272 "Inter Club d'Escaldes vs Drita"]. ''UEFA.com''. Union of European Football Associations. Retrieved 14 August 2026.</ref>
+|penalties1 = 
+*[[Lamine Diaby|Diaby]] {{pengoal}}
+*[[Juan Cámara|Cámara]] {{pengoal}}
+*[[Borja Arellano|Arellano]] {{penmiss}}
+*[[Maurizio Pochettino|Pochettino]] {{pengoal}}
+*{{ill|Faysal Chouaib|fr|lt=Chouaib}} {{pengoal}}
+|penaltyscore = 4–2
+|penalties2 = 
+*{{pengoal}} [[Besnik Krasniqi|Be. Krasniqi]] 
+*{{pengoal}} [[Raddy Ovouka|Ovouka]] 
+*{{penmiss}} [[Kristal Abazaj|Abazaj]] 
+*{{penmiss}} [[Igball Jashari|Jashari]] 
+}}
+''2–2 on aggregate; Inter Club d'Escaldes won 4–2 on penalties.''
+----
+{{#invoke:football box|main
+|date       = {{Start date|2026|8|20|df=y}}
+|time       = 19:30 {{small|(18:30 [[UTC+01:00|UTC+1]])}}
+|team1      = [[Klaksvíkar Ítróttarfelag|KÍ]] {{fbaicon|FRO}}
+|score      = 0–0
+|team2      = {{fbaicon|LVA}} [[Riga FC|Riga]]
+|goals1     =
+|goals2     =
+|stadium    = [[Við Djúpumýrar]], [[Klaksvík]]
+|attendance = 1,001<ref>{{UEFA match attendance|2049249|KÍ vs. Riga|date=20 August 2026|access-date=21 August 2026}}</ref>
+|referee    = [[Sam Barrott]] ([[The Football Association|England]])
+|report     = Report<ref>[https://www.uefa.com/uefaconferenceleague/match/2049249 "KÍ vs Riga"]. ''UEFA.com''. Union of European Football Associations. Retrieved 14 August 2026.</ref>
+}}
+{{#invoke:football box|main
+|date       = {{Start date|2026|8|27|df=y}}
+|time       = 19:00 {{small|(20:00 [[UTC+03:00|UTC+3]])}}
+|team1      = Riga {{fbaicon|LVA}}
+|score      = 2–1
+|team2      = {{fbaicon|FRO}} KÍ
+|goals1     =
+*[[Gastón Tellechea|Tellechea]] {{goal|47|o.g.}}
+*[[Salah-Eddine Oulad M'Hand|Oulad]] {{goal|89}}
+|goals2     =
+*[[Páll Klettskarð|Klettskarð]] {{goal|67}}
+|stadium    = [[Skonto Stadium]], [[Riga]]
+|attendance = 6,339<ref>{{UEFA match attendance|2049273|Riga vs. KÍ|date=27 August 2026|access-date=27 August 2026}}</ref>
+|referee    = [[Allard Lindhout]] ([[Royal Dutch Football Association|Netherlands]])
+|report     = Report<ref>[https://www.uefa.com/uefaconferenceleague/match/2049273 "Riga vs KÍ"]. ''UEFA.com''. Union of European Football Associations. Retrieved 14 August 2026.</ref>
+}}
+''Riga won 2–1 on aggregate.''
+----
+{{#invoke:football box|main
+|date       = {{Start date|2026|8|20|df=y}}
+|time       = 18:00
+|team1      = [[Lincoln Red Imps F.C.|Lincoln Red Imps]] {{fbaicon|GIB}}
+|score      = 0–2
+|team2      = {{fbaicon|NIR}} [[Larne F.C.|Larne]]
+|goals1     =
+|goals2     =
+*[[Paul O'Neill (footballer, born 2000)|O'Neill]] {{goal|85}}
+*[[Kevin O'Hara (footballer)|O'Hara]] {{goal|90+3}}
+|stadium    = [[Europa Sports Park|Europa Point Stadium]], [[Gibraltar]]
+|attendance = 646<ref>{{UEFA match attendance|2049250|Lincoln Red Imps vs. Larne|date=20 August 2026|access-date=21 August 2026}}</ref>
+|referee    = [[Kristo Tohver]] ([[Estonian Football Association|Estonia]])
+|report     = Report<ref>[https://www.uefa.com/uefaconferenceleague/match/2049250 "Lincoln Red Imps vs Larne"]. ''UEFA.com''. Union of European Football Associations. Retrieved 14 August 2026.</ref>
+}}
+{{#invoke:football box|main
+|date       = {{Start date|2026|8|27|df=y}}
+|time       = 21:00 {{small|(20:00 [[UTC+01:00|UTC+1]])}}
+|team1      = Larne {{fbaicon|NIR}}
+|score      = 0–3
+|aet        = yes
+|team2      = {{fbaicon|GIB}} Lincoln Red Imps
+|goals1     =
+|goals2     =
+*[[Kike Gómez|Gómez]] {{goal|82}}
+*[[Manu Toledano|Toledano]] {{goal|85||120+1|pen.}}
+|stadium    = [[Inver Park]], [[Larne]]
+|attendance = 1,808<ref>{{UEFA match attendance|2049274|Larne vs. Lincoln Red Imps|date=27 August 2026|access-date=27 August 2026}}</ref>
+|referee    = [[Radoslav Gidzhenov]] ([[Bulgarian Football Union|Bulgaria]])
+|report     = Report<ref>[https://www.uefa.com/uefaconferenceleague/match/2049274 "Larne vs Lincoln Red Imps"]. ''UEFA.com''. Union of European Football Associations. Retrieved 14 August 2026.</ref>
+}}
+''Lincoln Red Imps won 3–2 on aggregate.''
+
+===Main Path matches===
+{{#invoke:football box|main
+|date       = {{Start date|2026|8|20|df=y}}
+|time       = 20:30 {{small|(19:30 [[UTC+01:00|UTC+1]])}}
+|team1      = [[Motherwell F.C.|Motherwell]] {{fbaicon|SCO}}
+|score      = 1–3
+|team2      = {{fbaicon|GER}} [[SC Freiburg]]
+|goals1     =
+*[[Regan Charles-Cook|Charles-Cook]] {{goal|2}}
+|goals2     =
+*[[Matthias Ginter|Ginter]] {{goal|28||65|pen.}}
+*[[Keisuke Gotō|Goto]] {{goal|90+6}}
+|stadium    = [[Fir Park]], [[Motherwell]]
+|attendance = 8,945<ref>{{UEFA match attendance|2049251|Motherwell vs. SC Freiburg|date=20 August 2026|access-date=20 August 2026}}</ref>
+|referee    = [[Radu Petrescu (referee, born 1982)|Radu Petrescu]] ([[Romanian Football Federation|Romania]])
+|report     = Report<ref>[https://www.uefa.com/uefaconferenceleague/match/2049251 "Motherwell vs SC Freiburg"]. ''UEFA.com''. Union of European Football Associations. Retrieved 14 August 2026.</ref>
+}}
+{{#invoke:football box|main
+|date       = {{Start date|2026|8|27|df=y}}
+|time       = 18:45
+|team1      = SC Freiburg {{fbaicon|GER}}
+|score      = 4–1
+|team2      = {{fbaicon|SCO}} Motherwell
+|goals1     =
+*[[Derry Scherhant|Scherhant]] {{goal|6}}
+*[[Igor Matanović|Matanović]] {{goal|60}}
+*[[Cyriaque Irié|Irié]] {{goal|63}}
+*[[Keisuke Gotō|Goto]] {{goal|85}}
+|goals2     =
+*[[Emmanuel Longelo|Longelo]] {{goal|22}}
+|stadium    = [[Europa-Park Stadion]], [[Freiburg im Breisgau]]
+|attendance = 30,841<ref>{{UEFA match attendance|2049275|SC Freiburg vs. Motherwell|date=27 August 2026|access-date=27 August 2026}}</ref>
+|referee    = [[Andrea Colombo (referee)|Andrea Colombo]] ([[Italian Football Federation|Italy]])
+|report     = Report<ref>[https://www.uefa.com/uefaconferenceleague/match/2049275  "SC Freiburg vs Motherwell"]. ''UEFA.com''. Union of European Football Associations. Retrieved 14 August 2026.</ref>
+}}
+''SC Freiburg won 7–2 on aggregate.''
+----
+{{#invoke:football box|main
+|date       = {{Start date|2026|8|20|df=y}}
+|time       = 20:00
+|team1      = [[Górnik Zabrze]] {{fbaicon|POL}}
+|score      = 2–3
+|team2      = {{fbaicon|FRA}} [[AS Monaco FC|Monaco]]
+|goals1     =
+*[[Erik Prekop|Prekop]] {{goal|53}}
+*[[Sondre Liseth|Liseth]] {{goal|74}}
+|goals2     =
+*[[Mika Biereth|Biereth]] {{goal|9}}
+*[[Lamine Camara|Camara]] {{goal|51}}
+*[[Paris Brunner|Brunner]] {{goal|58}}
+|stadium    = [[Arena Zabrze]], [[Zabrze]]
+|attendance = 23,027<ref>{{UEFA match attendance|2049252|Górnik Zabrze vs. Monaco|date=20 August 2026|access-date=20 August 2026}}</ref>
+|referee    = [[Martin Matoša]] ([[Football Association of Slovenia|Slovenia]])
+|report     = Report<ref>[https://www.uefa.com/uefaconferenceleague/match/2049252 "Górnik Zabrze vs Monaco"]. ''UEFA.com''. Union of European Football Associations. Retrieved 14 August 2026.</ref>
+}}
+{{#invoke:football box|main
+|date       = {{Start date|2026|8|27|df=y}}
+|time       = 18:45
+|team1      = Monaco {{fbaicon|FRA}}
+|score      = 4–1
+|team2      = {{fbaicon|POL}} Górnik Zabrze
+|goals1     =
+*[[Paris Brunner|Brunner]] {{goal|30}}
+*[[Mamadou Coulibaly (footballer, born 2004)|Coulibaly]] {{goal|43}}
+*[[Aleksandr Golovin (footballer)|Golovin]] {{goal|50}}
+*[[Mika Biereth|Biereth]] {{goal|78}}
+|goals2     =
+*[[Janis Antiste|Antiste]] {{goal|83}}
+|stadium    = [[Stade Louis II]], [[Monaco]]
+|attendance = 6,195<ref>{{UEFA match attendance|2049276|Monaco vs. Górnik Zabrze|date=27 August 2026|access-date=27 August 2026}}</ref> 
+|referee    = [[Vasilios Fotias]] ([[Hellenic Football Federation|Greece]])
+|report     = Report<ref>[https://www.uefa.com/uefaconferenceleague/match/2049276 "Monaco vs Górnik Zabrze"]. ''UEFA.com''. Union of European Football Associations. Retrieved 14 August 2026.</ref>
+}}
+''Monaco won 7–3 on aggregate.''
+----
+{{#invoke:football box|main
+|date       = {{Start date|2026|8|20|df=y}}
+|time       = 18:00 {{small|(19:00 [[UTC+03:00|UTC+3]])}}
+|team1      = [[FC Inter Turku|Inter Turku]] {{fbaicon|FIN}}
+|score      = 0–0
+|team2      = {{fbaicon|DEN}} [[F.C. Copenhagen|Copenhagen]]
+|goals1     =
+|goals2     =
+|stadium    = [[Kupittaa Football Stadium]], [[Turku]]
+|attendance = 5,489<ref>{{UEFA match attendance|2049253|Inter Turku vs. Copenhagen|date=20 August 2026|access-date=20 August 2026}}</ref>
+|referee    = [[Goga Kikacheishvili]] ([[Georgian Football Federation|Georgia]])
+|report     = Report<ref>[https://www.uefa.com/uefaconferenceleague/match/2049253 "Inter Turku vs Copenhagen"]. ''UEFA.com''. Union of European Football Associations. Retrieved 14 August 2026.</ref>
+}}
+{{#invoke:football box|main
+|date       = {{Start date|2026|8|27|df=y}}
+|time       = 19:00
+|team1      = Copenhagen {{fbaicon|DEN}}
+|score      = 4–1
+|team2      = {{fbaicon|FIN}} Inter Turku
+|goals1     =
+*[[Gabriel Pereira (footballer, born 2000)|Pereira]] {{goal|41}}
+*[[Mads Emil Madsen|Madsen]] {{goal|49}}
+*[[William Clem|Clem]] {{goal|78}}
+*[[Prosper Ahiabu|Ahiabu]] {{goal|90+3|o.g.}}
+|goals2     =
+*[[Jasse Tuominen|Tuominen]] {{goal|69|pen.}}
+|stadium    = [[Parken Stadium]], [[Copenhagen]]
+|attendance = 18,528<ref>{{UEFA match attendance|2049277|Copenhagen vs. Inter Turku|date=27 August 2026|access-date=27 August 2026}}</ref>
+|referee    = [[Oleksiy Derevinskyi]] ([[Football Federation of Ukraine|Ukraine]])
+|report     = Report<ref>[https://www.uefa.com/uefaconferenceleague/match/2049277 "Copenhagen vs Inter Turku"]. ''UEFA.com''. Union of European Football Associations. Retrieved 14 August 2026.</ref>
+}}
+''Copenhagen won 4–1 on aggregate.''
+----
+{{#invoke:football box|main
+|date       = {{Start date|2026|8|20|df=y}}
+|time       = 20:45 {{small|(19:45 [[UTC+01:00|UTC+1]])}}
+|team1      = [[Heart of Midlothian F.C.|Heart of Midlothian]] {{fbaicon|SCO}}
+|score      = 2–2
+|team2      = {{fbaicon|AUT}} [[SK Rapid Wien|Rapid Wien]]
+|goals1     =
+*[[Serge-Philippe Raux-Yao|Raux-Yao]] {{goal|56|o.g.}}
+*[[James Wilson (footballer, born 2007)|Wilson]] {{goal|62}}
+|goals2     =
+*[[Serge-Philippe Raux-Yao|Raux-Yao]] {{goal|30}}
+*[[Nikolaus Wurmbrand|Wurmbrand]] {{goal|79}}
+|stadium    = [[Tynecastle Park]], [[Edinburgh]]
+|attendance = 18,112<ref>{{UEFA match attendance|2049254|Heart of Midlothian vs. Rapid Wien|date=20 August 2026|access-date=20 August 2026}}</ref>
+|referee    = [[Manfredas Lukjančukas]] ([[Lithuanian Football Federation|Lithuania]])
+|report     = Report<ref>[https://www.uefa.com/uefaconferenceleague/match/2049254 "Heart of Midlothian vs Rapid Wien"]. ''UEFA.com''. Union of European Football Associations. Retrieved 14 August 2026.</ref>
+}}
+{{#invoke:football box|main
+|date       = {{Start date|2026|8|26|df=y}}
+|time       = 18:45
+|team1      = Rapid Wien {{fbaicon|AUT}}
+|score      = 2–2
+|aet        = yes
+|team2      = {{fbaicon|SCO}} Heart of Midlothian
+|goals1     =
+*[[Ercan Kara|Kara]] {{goal|34}}
+*[[Nenad N. Cvetković|Cvetković]] {{goal|119}}
+|goals2     =
+*[[Pierre Landry Kaboré|Kaboré]] {{goal|79}}
+*[[Calvin Miller|Miller]] {{goal|100}}
+|stadium    = [[Allianz Stadion]], [[Vienna]]
+|attendance = 23,975<ref>{{UEFA match attendance|2049278|Rapid Wien vs. Heart of Midlothian|date=26 August 2026|access-date=26 August 2026}}</ref>
+|referee    = [[Elchin Masiyev]] ([[Association of Football Federations of Azerbaijan|Azerbaijan]])
+|report     = Report<ref>[https://www.uefa.com/uefaconferenceleague/match/2049278 "Rapid Wien vs Heart of Midlothian"]. ''UEFA.com''. Union of European Football Associations. Retrieved 14 August 2026.</ref>
+|penalties1 = 
+*[[Ercan Kara|Kara]] {{pengoal}}
+*[[Louis Schaub|Schaub]] {{pengoal}}
+*[[Moulaye Haïdara|Haïdara]] {{penmiss}}
+*[[Yusuf Demir|Demir]] {{pengoal}}
+*[[Marco Tilio|Tilio]] {{penmiss}}
+|penaltyscore = 3–4
+|penalties2 = 
+*{{pengoal}} [[Calvin Miller|Miller]] 
+*{{pengoal}} [[Jordi Altena|Altena]] 
+*{{pengoal}} [[Rogers Mato|Mato]] 
+*{{pengoal}} [[Sabah Kerjota|Kerjota]]
+*{{penmiss}} [[Oisin McEntee|McEntee]] 
+}}
+''4–4 on aggregate; Heart of Midlothian won 4–3 on penalties.''
+----
+{{#invoke:football box|main
+|date       = {{Start date|2026|8|20|df=y}}
+|time       = 19:00
+|team1      = [[Tromsø IL|Tromsø]] {{fbaicon|NOR}}
+|score      = 0–0
+|team2      = {{fbaicon|ENG}} [[Brighton & Hove Albion F.C.|Brighton & Hove Albion]]
+|goals1     =
+|goals2     =
+|stadium    = [[Romssa Arena]], [[Tromsø]]
+|attendance = 6,015<ref>{{UEFA match attendance|2049255|Tromsø vs. Brighton & Hove Albion|date=20 August 2026|access-date=20 August 2026}}</ref>
+|referee    = [[Edgars Maļcevs]] ([[Latvian Football Federation|Latvia]])
+|report     = Report<ref>[https://www.uefa.com/uefaconferenceleague/match/2049255 "Tromsø vs Brighton & Hove Albion"]. ''UEFA.com''. Union of European Football Associations. Retrieved 14 August 2026.</ref>
+}}
+{{#invoke:football box|main
+|date       = {{Start date|2026|8|27|df=y}}
+|time       = 20:30 {{small|(19:30 [[UTC+01:00|UTC+1]])}}
+|team1      = Brighton & Hove Albion {{fbaicon|ENG}}
+|score      = 4–0
+|team2      = {{fbaicon|NOR}} Tromsø
+|goals1     =
+*[[Charalampos Kostoulas|Kostoulas]] {{goal|22}}
+*[[Maxim De Cuyper|De Cuyper]] {{goal|33}}
+*[[Mats Wieffer|Wieffer]] {{goal|38}}
+*[[Olivier Boscagli|Boscagli]] {{goal|86}}
+|goals2     =
+|stadium    = [[Falmer Stadium]], [[Brighton and Hove]]
+|attendance = 23,981<ref>{{UEFA match attendance|2049279|Brighton & Hove Albion vs. Tromsø|date=27 August 2026|access-date=27 August 2026}}</ref>
+|referee    = [[Sander van der Eijk]] ([[Royal Dutch Football Association|Netherlands]])
+|report     = Report<ref>[https://www.uefa.com/uefaconferenceleague/match/2049279 "Brighton & Hove Albion vs Tromsø"]. ''UEFA.com''. Union of European Football Associations. Retrieved 14 August 2026.</ref>
+}}
+''Brighton & Hove Albion won 4–0 on aggregate.''
+----
+{{#invoke:football box|main
+|date       = {{Start date|2026|8|20|df=y}}
+|time       = 21:00
+|team1      = [[HNK Hajduk Split|Hajduk Split]] {{fbaicon|CRO}}
+|score      = 2–2
+|team2      = {{fbaicon|POL}} [[Raków Częstochowa]]
+|goals1     =
+*[[Michele Šego|Šego]] {{goal|21}}
+*[[Dalisson de Almeida|Dalisson]] {{goal|48}}
+|goals2     =
+*[[Mahir Emreli|Emreli]] {{goal|27}}
+*[[Lamine Diaby-Fadiga|Diaby-Fadiga]] {{goal|90+5}}
+|stadium    = [[Stadion Poljud]], [[Split, Croatia|Split]]
+|attendance = 25,362<ref>{{UEFA match attendance|2049256|Hajduk Split vs. Raków Częstochowa|date=20 August 2026|access-date=20 August 2026}}</ref>
+|referee    = [[Michal Očenáš]] ([[Slovak Football Association|Slovakia]])
+|report     = Report<ref>[https://www.uefa.com/uefaconferenceleague/match/2049256 "Hajduk Split vs Raków Częstochowa"]. ''UEFA.com''. Union of European Football Associations. Retrieved 14 August 2026.</ref>
+}}
+{{#invoke:football box|main
+|date       = {{Start date|2026|8|27|df=y}}
+|time       = 19:00
+|team1      = Raków Częstochowa {{fbaicon|POL}}
+|score      = 2–3
+|aet        = yes
+|team2      = {{fbaicon|CRO}} Hajduk Split
+|goals1     =
+*[[Lamine Diaby-Fadiga|Diaby-Fadiga]] {{goal|61|pen.}}
+*[[Mahir Emreli|Emreli]] {{goal|88}}
+|goals2     =
+*[[Ron Raçi|Raçi]] {{goal|1}}
+*[[Michele Šego|Šego]] {{goal|66}}
+*[[Rokas Pukštas|Pukštas]] {{goal|94}}
+|stadium    = [[Miejski Stadion Piłkarski Raków]], [[Częstochowa]]
+|attendance = 5,500<ref>{{UEFA match attendance|2049280|Raków Częstochowa vs. Hajduk Split|date=27 August 2026|access-date=27 August 2026}}</ref>
+|referee    = [[Aliyar Aghayev]] ([[Association of Football Federations of Azerbaijan|Azerbaijan]])
+|report     = Report<ref>[https://www.uefa.com/uefaconferenceleague/match/2049280 "Raków Częstochowa vs Hajduk Split"]. ''UEFA.com''. Union of European Football Associations. Retrieved 14 August 2026.</ref>
+}}
+''Hajduk Split won 5–4 on aggregate.''
+----
+{{#invoke:football box|main
+|date       = {{Start date|2026|8|20|df=y}}
+|time       = 20:30 {{small|(21:30 [[UTC+03:00|UTC+3]])}}
+|team1      = [[Panathinaikos F.C.|Panathinaikos]] {{fbaicon|GRE}}
+|score      = 2–2
+|team2      = {{fbaicon|CZE}} [[FC Hradec Králové|Hradec Králové]]
+|goals1     =
+*[[Andrews Tetteh|Tetteh]] {{goal|55||61}}
+|goals2     =
+*[[Abdullahi Umar|Umar]] {{goal|89||90+6}}
+|stadium    = [[Olympic Stadium (Athens)|Olympic Stadium]], [[Athens]]
+|attendance = 14,647<ref>{{UEFA match attendance|2049257|Panathinaikos vs. Hradec Králové|date=20 August 2026|access-date=20 August 2026}}</ref>
+|referee    = [[Jérôme Brisard]] ([[French Football Federation|France]])
+|report     = Report<ref>[https://www.uefa.com/uefaconferenceleague/match/2049257 "Panathinaikos vs Hradec Králové"]. ''UEFA.com''. Union of European Football Associations. Retrieved 14 August 2026.</ref>
+}}
+{{#invoke:football box|main
+|date       = {{Start date|2026|8|27|df=y}}
+|time       = 19:00
+|team1      = Hradec Králové {{fbaicon|CZE}}
+|score      = 1–2
+|team2      = {{fbaicon|GRE}} Panathinaikos
+|goals1     =
+*[[Vladimír Darida|Darida]]  {{goal|90+2}}
+|goals2     =
+*[[Cyriel Dessers|Dessers]] {{goal|72|120+5|pen}}
+|stadium    = [[Malšovická aréna]], [[Hradec Králové]]
+|attendance = 9,300<ref>{{UEFA match attendance|2049281|Hradec Králové vs. Panathinaikos|date=27 August 2026|access-date=27 August 2026}}</ref>
+|referee    = [[Sascha Stegemann]] ([[German Football Association|Germany]])
+|report     = Report<ref>[https://www.uefa.com/uefaconferenceleague/match/2049281 "Hradec Králové vs Panathinaikos"]. ''UEFA.com''. Union of European Football Associations. Retrieved 14 August 2026.</ref>
+|aet        = yes
+}}
+''Panathinaikos won 4–3 on aggregate.''
+----
+{{#invoke:football box|main
+|date       = {{Start date|2026|8|20|df=y}}
+|time       = 20:30
+|team1      = [[KAA Gent|Gent]] {{fbaicon|BEL}}
+|score      = 0–0
+|team2      = {{fbaicon|SCO}} [[Hibernian F.C.|Hibernian]]
+|goals1     =
+|goals2     =
+|stadium    = [[Planet Group Arena]], [[Ghent]]
+|attendance = 10,557<ref>{{UEFA match attendance|2049258|Gent vs. Hibernian|date=20 August 2026|access-date=20 August 2026}}</ref> 
+|referee    = [[Paweł Raczkowski]] ([[Polish Football Association|Poland]])
+|report     = Report<ref>[https://www.uefa.com/uefaconferenceleague/match/2049258 "Gent vs Hibernian"]. ''UEFA.com''. Union of European Football Associations. Retrieved 14 August 2026.</ref>
+}}
+{{#invoke:football box|main
+|date       = {{Start date|2026|8|27|df=y}}
+|time       = 21:00 {{small|(20:00 [[UTC+01:00|UTC+1]])}}
+|team1      = Hibernian {{fbaicon|SCO}}
+|score      = 2–3
+|team2      = {{fbaicon|BEL}} Gent
+|goals1     =
+*[[Jason Kerr (footballer)|Kerr]] {{goal|56}}
+*[[Felix Passlack|Passlack]] {{goal|77}}
+|goals2     =
+*[[Josué Vergara|Vergara]] {{goal|39}}
+*[[Christian Burgess|Burgess]] {{goal|84}}
+*[[Miguel Chaiwa|Chaiwa]] {{goal|90+1|o.g.}}
+|stadium    = [[Easter Road]], [[Edinburgh]]
+|attendance = 18,997<ref>{{UEFA match attendance|2049282|Hibernian vs. Gent|date=27 August 2026|access-date=27 August 2026}}</ref>
+|referee    = [[Juan Martínez Munuera]] ([[Royal Spanish Football Federation|Spain]])
+|report     = Report<ref>[https://www.uefa.com/uefaconferenceleague/match/2049282 "Hibernian vs Gent"]. ''UEFA.com''. Union of European Football Associations. Retrieved 14 August 2026.</ref>
+}}
+''Gent won 3–2 on aggregate.''
+----
+{{#invoke:football box|main
+|date       = {{Start date|2026|8|20|df=y}}
+|time       = 19:45 {{small|(20:45 [[UTC+03:00|UTC+3]])}}
+|team1      = [[PAOK FC|PAOK]] {{fbaicon|GRE}}
+|score      = 1–1
+|team2      = {{fbaicon|NOR}} [[SK Brann|Brann]]
+|goals1     =
+*[[Abdul Rahman Baba|Baba]] {{goal|80}}
+|goals2     =
+*[[Kristian Eriksen|Eriksen]] {{goal|57}}
+|stadium    = [[Toumba Stadium]], [[Thessaloniki]]
+|attendance = 14,667<ref>{{UEFA match attendance|2049259|PAOK vs. Brann|date=20 August 2026|access-date=20 August 2026}}</ref>
+|referee    = [[Daniel Siebert (referee)|Daniel Siebert]] ([[German Football Association|Germany]])
+|report     = Report<ref>[https://www.uefa.com/uefaconferenceleague/match/2049259 "PAOK vs Brann"]. ''UEFA.com''. Union of European Football Associations. Retrieved 14 August 2026.</ref>
+}}
+{{#invoke:football box|main
+|date       = {{Start date|2026|8|27|df=y}}
+|time       = 19:00
+|team1      = Brann {{fbaicon|NOR}}
+|score      = 3–2
+|team2      = {{fbaicon|GRE}} PAOK
+|goals1     =
+*[[Noah Holm|Holm]] {{goal|45+3}}
+*[[Kristall Máni Ingason|Ingason]] {{goal|56}}
+*[[Niklas Castro|Castro]] {{goal|86|pen.}} 
+|goals2     =
+*[[Cherif Ndiaye|Ndiaye]] {{goal|63}}
+*[[Christos Zafeiris|Zafeiris]] {{goal|68}}
+|stadium    = [[Brann Stadion]], [[Bergen]]
+|attendance = 15,483<ref>{{UEFA match attendance|2049283|Brann vs. PAOK|date=27 August 2026|access-date=27 August 2026}}</ref> 
+|referee    = [[John Brooks (referee)|John Brooks]] ([[The Football Association|England]])
+|report     = Report<ref>[https://www.uefa.com/uefaconferenceleague/match/2049283 "Brann vs PAOK"]. ''UEFA.com''. Union of European Football Associations. Retrieved 14 August 2026.</ref>
+}}
+''Brann won 4–3 on aggregate.''
+----
+{{#invoke:football box|main
+|date       = {{Start date|2026|8|20|df=y}}
+|time       = 20:30
+|team1      = [[Atalanta BC|Atalanta]] {{fbaicon|ITA}}
+|score      = 0–0
+|team2      = {{fbaicon|ISR}} [[Hapoel Tel Aviv F.C.|Hapoel Tel Aviv]]
+|goals1     =
+|goals2     =
+|stadium    = [[Stadio di Bergamo]], [[Bergamo]]
+|attendance = 21,061<ref>{{UEFA match attendance|2049260|Atalanta vs. Hapoel Tel Aviv|date=20 August 2026|access-date=20 August 2026}}</ref>
+|referee    = [[Javier Alberola Rojas]] ([[Royal Spanish Football Federation|Spain]])
+|report     = Report<ref>[https://www.uefa.com/uefaconferenceleague/match/2049260 "Atalanta vs Hapoel Tel Aviv"]. ''UEFA.com''. Union of European Football Associations. Retrieved 14 August 2026.</ref>
+}}
+{{#invoke:football box|main
+|date       = {{Start date|2026|8|27|df=y}}
+|time       = 20:00
+|team1      = Hapoel Tel Aviv {{fbaicon|ISR}}
+|score      = 0–1
+|team2      = {{fbaicon|ITA}} Atalanta
+|goals1     =
+|goals2     =
+*[[Gianluca Scamacca|Scamacca]] {{goal|72}}
+|stadium    = [[Diósgyőri Stadion]], [[Miskolc]], Hungary{{refn|group=note|name=Israel}}
+|attendance = 5,437<ref>{{UEFA match attendance|2049284|Hapoel Tel Aviv vs. Atalanta|date=27 August 2026|access-date=27 August 2026}}</ref>
+|referee    = [[Daniel Schlager]] ([[German Football Association|Germany]])
+|report     = Report<ref>[https://www.uefa.com/uefaconferenceleague/match/2049284 "Hapoel Tel Aviv vs Atalanta"]. ''UEFA.com''. Union of European Football Associations. Retrieved 14 August 2026.</ref>
+}}
+''Atalanta won 1–0 on aggregate.''
+----
+{{#invoke:football box|main
+|date       = {{Start date|2026|8|20|df=y}}
+|time       = 19:00
+|team1      = [[FC Midtjylland|Midtjylland]] {{fbaicon|DEN}}
+|score      = 2–0
+|team2      = {{fbaicon|CRO}} [[HNK Rijeka|Rijeka]]
+|goals1     =
+*[[Cho Gue-sung]] {{goal|20}}
+*[[Sofus Johannesen|Johannesen]] {{goal|48}}
+|goals2     =
+|stadium    = [[MCH Arena]], [[Herning]]
+|attendance = 7,519<ref>{{UEFA match attendance|2049261|Midtjylland vs. Rijeka|date=20 August 2026|access-date=20 August 2026}}</ref> 
+|referee    = [[Balázs Berke (referee)|Balázs Berke]] ([[Hungarian Football Federation|Hungary]])
+|report     = Report<ref>[https://www.uefa.com/uefaconferenceleague/match/2049261 "Midtjylland vs Rijeka"]. ''UEFA.com''. Union of European Football Associations. Retrieved 14 August 2026.</ref>
+}}
+{{#invoke:football box|main
+|date       = {{Start date|2026|8|27|df=y}}
+|time       = 20:45
+|team1      = Rijeka {{fbaicon|CRO}}
+|score      = 1–4
+|team2      = {{fbaicon|DEN}} Midtjylland
+|goals1     =
+*[[Daniel Adu-Adjei|Adu-Adjei]] {{goal|4}}
+|goals2     =
+*[[Stanley Iheanacho|Iheanacho]] {{goal|17}}
+*[[Dario Osorio|Osorio]] {{goal|51}}
+*[[Magnus Jensen (footballer)|Jensen]] {{goal|56}}
+*[[Cho Gue-sung]] {{goal|78}}
+|stadium    = [[Stadion Rujevica]], [[Rijeka]]
+|attendance = 6,352<ref>{{UEFA match attendance|2049285|Rijeka vs. Midtjylland|date=27 August 2026|access-date=27 August 2026}}</ref> 
+|referee    = [[Jasper Vergoote]] ([[Royal Belgian Football Association|Belgium]])
+|report     = Report<ref>[https://www.uefa.com/uefaconferenceleague/match/2049285 "Rijeka vs Midtjylland"]. ''UEFA.com''. Union of European Football Associations. Retrieved 14 August 2026.</ref>
+}}
+''Midtjylland won 6–1 on aggregate.''
+----
+{{#invoke:football box|main
+|date       = {{Start date|2026|8|20|df=y}}
+|time       = 20:45 {{small|(19:45 [[UTC+01:00|UTC+1]])}}
+|team1      = [[Rangers F.C.|Rangers]] {{fbaicon|SCO}}
+|score      = 1–0
+|team2      = {{fbaicon|CZE}} [[FK Jablonec|Jablonec]]
+|goals1     =
+*[[Ryan Naderi|Naderi]] {{goal|50}}
+|goals2     =
+|stadium    = [[Ibrox Stadium]], [[Glasgow]]
+|attendance = 34,701<ref>{{UEFA match attendance|2049262|Rangers vs. Jablonec|date=20 August 2026|access-date=20 August 2026}}</ref> 
+|referee    = [[Marian Barbu]] ([[Romanian Football Federation|Romania]])
+|report     = Report<ref>[https://www.uefa.com/uefaconferenceleague/match/2049262 "Rangers vs Jablonec"]. ''UEFA.com''. Union of European Football Associations. Retrieved 14 August 2026.</ref>
+}}
+{{#invoke:football box|main
+|date       = {{Start date|2026|8|27|df=y}}
+|time       = 18:00
+|team1      = Jablonec {{fbaicon|CZE}}
+|score      = 1–0
+|aet        = yes
+|team2      = {{fbaicon|SCO}} Rangers
+|goals1     =
+*[[Vakhtang Chanturishvili|Chanturishvili]] {{goal|73}}
+|goals2     =
+|stadium    = [[Stadion Střelnice]], [[Jablonec nad Nisou]]
+|attendance = 5,563<ref>{{UEFA match attendance|2049286|Jablonec vs. Rangers|date=27 August 2026|access-date=27 August 2026}}</ref> 
+|referee    = [[Nenad Minaković]] ([[Football Association of Serbia|Serbia]])
+|report     = Report<ref>[https://www.uefa.com/uefaconferenceleague/match/2049286 "Jablonec vs Rangers"]. ''UEFA.com''. Union of European Football Associations. Retrieved 14 August 2026.</ref>
+|penalties1 = 
+*[[Antonín Růsek|Růsek]] {{pengoal}}
+*[[Richard Sedláček|Sedláček]] {{pengoal}}
+*[[Filip Zorvan|Zorvan]] {{penmiss}}
+*[[Nelson Okeke|Okeke]] {{pengoal}}
+*[[Jan Chramosta|Chramosta]] {{pengoal}}
+|penaltyscore = 4–3
+|penalties2 = 
+*{{pengoal}} [[Lawrence Shankland|Shankland]] 
+*{{pengoal}} [[Bojan Miovski|Miovski]] 
+*{{pengoal}} [[Thelo Aasgaard|Aasgaard]] 
+*{{penmiss}} [[Findlay Curtis|Curtis]]
+*{{penmiss}} [[James Penrice|Penrice]] 
+}}
+''1–1 on aggregate; Jablonec won 4–3 on penalties.''
+----
+{{#invoke:football box|main
+|date       = {{Start date|2026|8|20|df=y}}
+|time       = 19:00
+|team1      = [[FC Nordsjælland|Nordsjælland]] {{fbaicon|DEN}}
+|score      = 1–0
+|team2      = {{fbaicon|SUI}} [[FC St. Gallen|St. Gallen]]
+|goals1     =
+*[[Nicklas Røjkjær|Røjkjær]] {{goal|13}}
+|goals2     =
+|stadium    = [[Right to Dream Park]], [[Farum]]
+|attendance = 3,514<ref>{{UEFA match attendance|2049263|Nordsjælland vs. St. Gallen|date=20 August 2026|access-date=20 August 2026}}</ref>
+|referee    = [[Ondřej Berka]] ([[Football Association of the Czech Republic|Czech Republic]])
+|report     = Report<ref>[https://www.uefa.com/uefaconferenceleague/match/2049263 "Nordsjælland vs St. Gallen"]. ''UEFA.com''. Union of European Football Associations. Retrieved 14 August 2026.</ref>
+}}
+{{#invoke:football box|main
+|date       = {{Start date|2026|8|27|df=y}}
+|time       = 20:00
+|team1      = St. Gallen {{fbaicon|SUI}}
+|score      = 2–3
+|team2      = {{fbaicon|DEN}} Nordsjælland
+|goals1     =
+*[[Lukas Görtler|Görtler]] {{goal|21|pen.}}
+*[[Aliou Baldé|Baldé]] {{goal|28}}
+|goals2     =
+*[[Juho Lähteenmäki|Lähteenmäki]] {{goal|14}}
+*[[Prince Amoako Jr.|Amoako]] {{goal|24}}
+*[[Hjalte Boe|Boe]] {{goal|82}}
+|stadium    = [[Sitterstadion]], [[St. Gallen]]
+|attendance = 13,210<ref>{{UEFA match attendance|2049287|St. Gallen vs. Nordsjælland|date=27 August 2026|access-date=27 August 2026}}</ref>
+|referee    = [[Orel Grinfeld]] ([[Israel Football Association|Israel]])
+|report     = Report<ref>[https://www.uefa.com/uefaconferenceleague/match/2049287 "St. Gallen vs Nordsjælland"]. ''UEFA.com''. Union of European Football Associations. Retrieved 14 August 2026.</ref>
+}}
+''Nordsjælland won 4–2 on aggregate.''
+----
+{{#invoke:football box|main
+|date       = {{Start date|2026|8|20|df=y}}
+|time       = 21:00
+|team1      = [[FC Dinamo City|Dinamo City]] {{fbaicon|ALB}}
+|score      = 1–1
+|team2      = {{fbaicon|CYP}} [[Pafos FC|Pafos]]
+|goals1     =
+*[[David Fadairo|Fadairo]] {{goal|78}}
+|goals2     =
+*[[Lelê (footballer, born 1997)|Lelê]] {{goal|83|pen.}}
+|stadium    = [[Elbasan Arena]], [[Elbasan]]{{refn|group=note|name=Dinamo City}}
+|attendance = 1,550<ref>{{UEFA match attendance|2049264|Dinamo City vs. Pafos|date=20 August 2026|access-date=20 August 2026}}</ref> 
+|referee    = [[Lawrence Visser]] ([[Royal Belgian Football Association|Belgium]])
+|report     = Report<ref>[https://www.uefa.com/uefaconferenceleague/match/2049264 "Dinamo City vs Pafos"]. ''UEFA.com''. Union of European Football Associations. Retrieved 14 August 2026.</ref>
+}}
+{{#invoke:football box|main
+|date       = {{Start date|2026|8|27|df=y}}
+|time       = 19:00 {{small|(20:00 [[UTC+03:00|UTC+3]])}}
+|team1      = Pafos {{fbaicon|CYP}}
+|score      = 4–2
+|aet        = yes
+|team2      = {{fbaicon|ALB}} Dinamo City
+|goals1     =
+*[[Ken Sema|Sema]] {{goal|13}}
+*[[Nikolas Ioannou|Ioannou]] {{goal|78}}
+*[[Moumi Ngamaleu|Ngamaleu]] {{goal|116}}
+*[[Anderson Silva (footballer)|Anderson]] {{goal|120+1}}
+|goals2     =
+*[[David Fadairo|Fadairo]] {{goal|8}}
+*[[Ruben Silva-Richards|Silva-Richards]] {{goal|87}}
+|stadium    = [[Alphamega Stadium]], [[Limassol]]{{refn|group=note|name=Pafos|Pafos played their home match at the Alphamega Stadium in Limassol, instead of their regular stadium, the [[Stelios Kyriakides Stadium]], in [[Paphos]], which did not meet UEFA requirements.}}
+|attendance = 4,378<ref>{{UEFA match attendance|2049288|Pafos vs. Dinamo City|date=27 August 2026|access-date=27 August 2026}}</ref> 
+|referee    = [[Martin Matoša]] ([[Football Association of Slovenia|Slovenia]])
+|report     = Report<ref>[https://www.uefa.com/uefaconferenceleague/match/2049288 "Pafos vs Dinamo City"]. ''UEFA.com''. Union of European Football Associations. Retrieved 14 August 2026.</ref>
+}}
+''Pafos won 5–3 on aggregate.''
+----
+{{#invoke:football box|main
+|date       = {{Start date|2026|8|20|df=y}}
+|time       = 20:15
+|team1      = [[FC Sion|Sion]] {{fbaicon|SUI}}
+|score      = 2–4
+|team2      = {{fbaicon|NED}} [[AFC Ajax|Ajax]]
+|goals1     =
+*[[Franck Surdez|Surdez]] {{goal|34}}
+*[[Ilyas Chouaref|Chouaref]] {{goal|71|pen.}}
+|goals2     =
+*[[Julian Brandt|Brandt]] {{goal|53}}
+*[[Marcos Leonardo]] {{goal|60}}
+*[[Tolu Arokodare|Arokodare]] {{goal|74}}
+*[[Davy Klaassen|Klaassen]] {{goal|87}}
+|stadium    = [[Stade Tourbillon]], [[Sion, Switzerland|Sion]]
+|attendance = 9,000<ref>{{UEFA match attendance|2049265|Sion vs. Ajax|date=20 August 2026|access-date=20 August 2026}}</ref>
+|referee    = [[Mohammed Al-Hakim]] ([[Swedish Football Association|Sweden]])
+|report     = Report<ref>[https://www.uefa.com/uefaconferenceleague/match/2049265 "Sion vs Ajax"]. ''UEFA.com''. Union of European Football Associations. Retrieved 14 August 2026.</ref>
+}}
+{{#invoke:football box|main
+|date       = {{Start date|2026|8|27|df=y}}
+|time       = 20:00
+|team1      = Ajax {{fbaicon|NED}}
+|score      = 5–3
+|team2      = {{fbaicon|SUI}} Sion
+|goals1     =
+*[[Youri Baas|Baas]] {{goal|1}}
+*[[Davy Klaassen|Klaassen]] {{goal|39}}
+*[[Tolu Arokodare|Arokodare]] {{goal|45+1||51}}
+*[[Oliver Edvardsen|Edvardsen]] {{goal|55}}
+|goals2     =
+*[[Winsley Boteli|Boteli]] {{goal|19||36||90+1}}
+|stadium    = [[Johan Cruyff Arena]], [[Amsterdam]]
+|attendance = 50,685<ref>{{UEFA match attendance|2049289|Ajax vs. Sion|date=27 August 2026|access-date=27 August 2026}}</ref> 
+|referee    = [[Julian Weinberger]] ([[Austrian Football Association|Austria]])
+|report     = Report<ref>[https://www.uefa.com/uefaconferenceleague/match/2049289 "Ajax vs Sion"]. ''UEFA.com''. Union of European Football Associations. Retrieved 14 August 2026.</ref>
+}}
+''Ajax won 9–5 on aggregate.''
+----
+{{#invoke:football box|main
+|date       = {{Start date|2026|8|20|df=y}}
+|time       = 21:00 {{small|(20:00 [[UTC+01:00|UTC+1]])}}
+|team1      = [[S.C. Braga|Braga]] {{fbaicon|POR}}
+|score      = 2–0
+|team2      = {{fbaicon|AUT}} [[FK Austria Wien|Austria Wien]]
+|goals1     =
+*[[Pau Víctor|Víctor]] {{goal|25|pen.}}
+*[[Diego Rodrigues|Rodrigues]] {{goal|88}}
+|goals2     =
+|stadium    = [[Estádio Municipal de Braga|Estádio Municipal]], [[Braga]]
+|attendance = 14,293<ref>{{UEFA match attendance|2049266|Braga vs. Austria Wien|date=20 August 2026|access-date=20 August 2026}}</ref> 
+|referee    = [[Ishmael Barbara]] ([[Malta Football Association|Malta]])
+|report     = Report<ref>[https://www.uefa.com/uefaconferenceleague/match/2049266 "Braga vs Austria Wien"]. ''UEFA.com''. Union of European Football Associations. Retrieved 14 August 2026.</ref>
+}}
+{{#invoke:football box|main
+|date       = {{Start date|2026|8|27|df=y}}
+|time       = 20:30
+|team1      = Austria Wien {{fbaicon|AUT}}
+|score      = 0–0
+|team2      = {{fbaicon|POR}} Braga
+|goals1     =
+|goals2     =
+|stadium    = [[Generali Arena (Vienna)|Generali Arena]], [[Vienna]]
+|attendance = 9,702<ref>{{UEFA match attendance|2049290|Austria Wien vs. Braga|date=27 August 2026|access-date=27 August 2026}}</ref> 
+|referee    = [[Nikola Dabanović]] ([[Football Association of Montenegro|Montenegro]])
+|report     = Report<ref>[https://www.uefa.com/uefaconferenceleague/match/2049290 "Austria Wien vs Braga"]. ''UEFA.com''. Union of European Football Associations. Retrieved 14 August 2026.</ref>
+}}
+''Braga won 2–0 on aggregate.''
+----
+{{#invoke:football box|main
+|date       = {{Start date|2026|8|20|df=y}}
+|time       = 20:00
+|team1      = [[FC Twente|Twente]] {{fbaicon|NED}}
+|score      = 0–1
+|team2      = {{fbaicon|AZE}} [[Qarabağ FK|Qarabağ]]
+|goals1     =
+|goals2     =
+*[[Kady Borges|Kady]] {{goal|52}}
+|stadium    = [[De Grolsch Veste]], [[Enschede]]
+|attendance = 25,250<ref>{{UEFA match attendance|2049267|Twente vs. Qarabağ|date=20 August 2026|access-date=20 August 2026}}</ref> 
+|referee    = [[Juxhin Xhaja]] ([[Albanian Football Association|Albania]])
+|report     = Report<ref>[https://www.uefa.com/uefaconferenceleague/match/2049267 "Twente vs Qarabağ"]. ''UEFA.com''. Union of European Football Associations. Retrieved 14 August 2026.</ref>
+}}
+{{#invoke:football box|main
+|date       = {{Start date|2026|8|27|df=y}}
+|time       = 18:00 {{small|(20:00 [[UTC+04:00|UTC+4]])}}
+|team1      = Qarabağ {{fbaicon|AZE}}
+|score      = 1–4
+|aet        = yes
+|team2      = {{fbaicon|NED}} Twente
+|goals1     =
+*[[Kady Borges|Kady]] {{goal|59}}
+|goals2     =
+*[[Marko Pjaca|Pjaca]] {{goal|79}}
+*[[Max Bruns|Bruns]] {{goal|90+2}}
+*[[Wout Weghorst|Weghorst]] {{goal|94}}
+*[[Younes Taha|Taha]] {{goal|114}}
+|stadium    = [[Tofiq Bahramov Republican Stadium]], [[Baku]]
+|attendance = 28,869<ref>{{UEFA match attendance|2049291|Qarabağ vs. Twente|date=27 August 2026|access-date=27 August 2026}}</ref> 
+|referee    = [[Rohit Saggi]] ([[Norwegian Football Federation|Norway]])
+|report     = Report<ref>[https://www.uefa.com/uefaconferenceleague/match/2049291 "Qarabağ vs Twente"]. ''UEFA.com''. Union of European Football Associations. Retrieved 14 August 2026.</ref>
+}}
+''Twente won 4–2 on aggregate.''
+----
+{{#invoke:football box|main
+|date       = {{Start date|2026|8|20|df=y}}
+|time       = 21:00
+|team1      = [[Getafe CF|Getafe]] {{fbaicon|ESP}}
+|score      = 3–1
+|team2      = {{fbaicon|SRB}} [[FK Partizan|Partizan]]
+|goals1     =
+*[[Enes Ünal|Ünal]] {{goal|10}}
+*[[Andrés García (footballer, born 2003)|García]] {{goal|87}}
+*[[Johan Mojica|Mojica]] {{goal|90}}
+|goals2     =
+*[[Demba Seck|Seck]] {{goal|43}}
+|stadium    = [[Estadio Coliseum|Coliseum]], [[Getafe]]
+|attendance = 4,968<ref>{{UEFA match attendance|2049268|Getafe vs. Partizan|date=20 August 2026|access-date=20 August 2026}}</ref>
+|referee    = [[Andris Treimanis]] ([[Latvian Football Federation|Latvia]])
+|report     = Report<ref>[https://www.uefa.com/uefaconferenceleague/match/2049268 "Getafe vs Partizan"]. ''UEFA.com''. Union of European Football Associations. Retrieved 14 August 2026.</ref>
+}}
+{{#invoke:football box|main
+|date       = {{Start date|2026|8|27|df=y}}
+|time       = 21:00
+|team1      = Partizan {{fbaicon|SRB}}
+|score      = 2–1
+|team2      = {{fbaicon|ESP}} Getafe
+|goals1     =
+*[[Jeh (footballer)|Jeh]] {{goal|53}}
+*[[Erik Kojzek|Kojzek]] {{goal|76}}
+|goals2     =
+*[[Enes Ünal|Ünal]] {{goal|70}}
+|stadium    = [[Partizan Stadium]], [[Belgrade]]
+|attendance = 28,247<ref>{{UEFA match attendance|2049292|Partizan vs. Getafe|date=27 August 2026|access-date=27 August 2026}}</ref>
+|referee    = [[Urs Schnyder]] ([[Swiss Football Association|Switzerland]])
+|report     = Report<ref>[https://www.uefa.com/uefaconferenceleague/match/2049292 "Partizan vs Getafe"]. ''UEFA.com''. Union of European Football Associations. Retrieved 14 August 2026.</ref>
+}}
+''Getafe won 4–3 on aggregate.''
+----
+{{#invoke:football box|main
+|date       = {{Start date|2026|8|20|df=y}}
+|time       = 20:30
+|team1      = [[FC Lugano|Lugano]] {{fbaicon|SUI}}
+|score      = 2–1
+|team2      = {{fbaicon|ISR}} [[Maccabi Tel Aviv F.C.|Maccabi Tel Aviv]]
+|goals1     =
+*[[Kevin Behrens|Behrens]] {{goal|30}}
+*[[Anto Grgić|Grgić]] {{goal|54|pen.}}
+|goals2     =
+*[[Ido Shahar|Shahar]] {{goal|47}}
+|stadium    = [[Cornaredo Stadium|Lugano Arena]], [[Lugano]]
+|attendance = 3,435<ref>{{UEFA match attendance|2049269|Lugano vs. Maccabi Tel Aviv|date=20 August 2026|access-date=20 August 2026}}</ref>
+|referee    = [[Miloš Milanović (referee)|Miloš Milanović]] ([[Football Association of Serbia|Serbia]])
+|report     = Report<ref>[https://www.uefa.com/uefaconferenceleague/match/2049269 "Lugano vs Maccabi Tel Aviv"]. ''UEFA.com''. Union of European Football Associations. Retrieved 14 August 2026.</ref>
+}}
+{{#invoke:football box|main
+|date       = {{Start date|2026|8|27|df=y}}
+|time       = 18:00 {{small|(20:00 [[UTC+04:00|UTC+4]])}}
+|team1      = Maccabi Tel Aviv {{fbaicon|ISR}}
+|score      = 1–1
+|team2      = {{fbaicon|SUI}} Lugano
+|goals1     =
+*[[Dor Peretz|Peretz]] {{goal|69|pen.}}
+|goals2     =
+*[[Dereck Moncada|Moncada]] {{goal|79}}
+|stadium    = [[Adjarabet Arena]], [[Batumi]], Georgia{{refn|group=note|name=Israel}}
+|attendance = 816<ref>{{UEFA match attendance|2049293|Maccabi Tel Aviv vs. Lugano|date=27 August 2026|access-date=27 August 2026}}</ref>
+|referee    = [[Jérémie Pignard]] ([[French Football Federation|France]])
+|report     = Report<ref>[https://www.uefa.com/uefaconferenceleague/match/2049293 "Maccabi Tel Aviv vs Lugano"]. ''UEFA.com''. Union of European Football Associations. Retrieved 14 August 2026.</ref>
+}}
+''Lugano won 3–2 on aggregate.''
+
+==Notes==
+{{reflist|group=note}}
+
+==References==
+{{reflist}}
+
+==External links==
+*{{Official website|https://www.uefa.com/uefaconferenceleague/}}
+
+{{UEFA Conference League phases}}
+{{2026–27 in European football (UEFA)}}
+
+{{DEFAULTSORT:UEFA Conference League qualifying R3+PO, 2026-27}}
+[[Category:2026–27 UEFA Conference League|*1.2]]
+[[Category:UEFA Conference League qualifying rounds|Matches 2026-27 2]]

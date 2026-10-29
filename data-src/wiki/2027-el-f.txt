@@ -1,0 +1,134 @@
+{{Short description|Football match}}
+{{EngvarB|date=May 2024}}
+{{Use dmy dates|date=May 2024}}
+{{Infobox football match
+| title              = 2027 UEFA Europa League final
+| image              = Waldstadion match Eintracht Frankfurt - Wolfsburg 2023-24.jpg
+| image_size         = 275
+| caption            = The [[Waldstadion (Frankfurt)|Frankfurt Arena]] in [[Frankfurt]] will host the final.
+| event              = [[2026–27 UEFA Europa League]]
+| team1              =
+| team1association   = <!--{{fbaicon||size=30px}}-->
+| team1score         =
+| team2              =
+| team2association   = <!--{{fbaicon||size=30px}}-->
+| team2score         =
+| details            =
+| date               = {{Start date|2027|5|26|df=y}}
+| stadium            = [[Waldstadion (Frankfurt)|Frankfurt Arena]]
+| city               = [[Frankfurt]]
+| man_of_the_match1a =
+| referee            =
+| attendance         =
+| weather            =
+| previous           = [[2026 UEFA Europa League final|2026]]
+| next               = ''[[2028 UEFA Europa League final|2028]]''
+}}
+The '''2027 UEFA Europa League final''' will be the final match of the [[2026–27 UEFA Europa League]], the 56th season of Europe's secondary club [[association football|football]] tournament organised by [[UEFA]], and the 18th season since it was renamed from the UEFA Cup to the [[UEFA Europa League]]. It will be played at the [[Waldstadion (Frankfurt)|FrankFurt Arena]] in [[Frankfurt]], Germany,<ref name="appointment"/> on 26 May 2027.<ref name="invitation to bid"/>
+
+The winners will earn the right to play against the winners of the [[2026–27 UEFA Champions League]] in the [[2027 UEFA Super Cup]]. The winners will also qualify to enter the league phase of the [[2027–28 UEFA Champions League]], unless they have already qualified for the Champions League through their league performance (in which case the access list will be rebalanced).
+
+==Venue==
+
+===Host selection===
+On 17 May 2023, UEFA opened the bidding process for the final, which was held in parallel with that of the [[2026 UEFA Europa League final|2026 final]]. Interested bidders could bid for either one or both of the finals. Additionally, bidding associations could only be appointed one UEFA final in a given year. The proposed venues had to include natural grass and be ranked as a [[UEFA stadium categories|UEFA category four stadium]], with a gross capacity of 40,000 to 60,000 preferred. The bidding timeline was as follows:<ref name="invitation to bid">{{cite magazine |url=https://editorial.uefa.com/resources/0281-18125a4a50d7-237b59952ab8-1000/20230517_circular_2023_24_en.zip |title=Invitation to bid to host the UEFA Champions League Finals 2026 & 2027, UEFA Europa League Finals 2026 & 2027, UEFA Europa Conference League Finals 2026 & 2027 and UEFA Women's Champions League Finals 2026 & 2027 |magazine=UEFA Circular Letter |publisher=[[UEFA|Union of European Football Associations]] |number=24/2023 |date=17 May 2023 |access-date=22 May 2024}}</ref>
+
+*17 May 2023: Applications formally invited
+*17 July 2023: Closing date for registering intention to bid
+*26 July 2023: Bid requirements made available to bidders
+*15 November 2023: Submission of preliminary bid dossier
+*21 February 2024: Submission of final bid dossier
+*22 May 2024: Appointment of host
+
+UEFA announced on 18 July 2023 that four associations had expressed interest in hosting the 2026 and 2027 finals during the first bidding process.<ref>{{cite web |url=https://www.uefa.com/news-media/news/0283-1885294a1bdd-b1bd50a82ae1-1000/ |title=Nine national associations interested in hosting UEFA club competition finals in 2026 and 2027 |publisher=[[UEFA]] |date=18 July 2023 |access-date=16 September 2025}}</ref>
+
+{| class="wikitable sortable"
+|+{{nowrap|Bidding associations for 2026 and 2027 UEFA Europa League finals}}
+|-
+! Association !! Stadium !! City !! Capacity !! Notes
+|- style="background-color:#CCFFCC"
+| {{fba|GER}} || [[Waldstadion (Frankfurt)|Frankfurt Arena]] || [[Frankfurt]] || 53,800 || Association also bid for [[2026 UEFA Conference League final|2026]] or [[2027 UEFA Conference League final|2027]] Conference League and [[2026 UEFA Women's Champions League final|2026]] or [[2027 UEFA Women's Champions League final|2027]] Women's Champions League finals (with different venues)<br>[[Merkur Spiel-Arena]] in [[Düsseldorf]], [[Arena AufSchalke]] in [[Gelsenkirchen]], [[Red Bull Arena (Leipzig)|Red Bull Arena]] in [[Leipzig]] or [[MHPArena]] in [[Stuttgart]] were also included as possible venues prior to official bid submission
+|-
+| {{fba|ROU}} || [[Arena Națională]] || [[Bucharest]] || 55,634 ||
+|-
+| {{fba|SCO}} || [[Hampden Park]] || [[Glasgow]] || 51,866 || Stadium also bid for [[2026 UEFA Conference League final|2026]] or [[2027 UEFA Conference League final|2027]] Conference League and [[2026 UEFA Women's Champions League final|2026]] or [[2027 UEFA Women's Champions League final|2027]] Women's Champions League finals
+|-
+| {{fba|TUR}} || [[Beşiktaş Stadium]] || [[Istanbul]] || 42,684 || Stadium also bid for [[2026 UEFA Conference League final|2026]] or [[2027 UEFA Conference League final|2027]] Conference League finals<br>[[Rams Park]] or [[Şükrü Saracoğlu Stadium]] (both also in Istanbul) were also included as possible venues prior to official bid submission<br>Stadium appointed as host of [[2026 UEFA Europa League final|2026 Europa League final]] and [[2027 UEFA Conference League final|2027 Conference League final]]
+|}
+
+The Waldstadion was selected as the venue by the UEFA Executive Committee during their meeting in [[Dublin]], Republic of Ireland, on 22 May 2024.<ref>{{cite news |url=https://www.uefa.com/news-media/news/028d-1ae8aa44ce66-a816fdadf1dc-1000/ |title=UEFA Executive Committee to meet in Dublin |publisher=Union of European Football Associations |date=17 May 2024 |access-date=22 May 2024}}</ref><ref name="appointment">{{cite web |url=https://www.uefa.com/news-media/news/028d-1af2f49f754f-b64e255ef0ae-1000/ |title=Budapest to host UEFA Champions League Final 2026 |publisher=Union of European Football Associations |date=22 May 2024 |access-date=22 May 2024}}</ref>
+
+==Match==
+
+===Details===
+The winner of semi-final 1 will be designated as the "home" team for administrative purposes.
+
+<onlyinclude>{{Football box
+|date       = {{Start date|2027|5|26|df=y}}
+|time       = {{CEST|21:00}}
+|team1      = Winner SF1 {{fbaicon|}}
+|score      =
+|team2      = {{fbaicon|}} Winner SF2
+|goals1     =
+|goals2     =
+|stadium    = [[Waldstadion (Frankfurt)|Frankfurt Arena]], [[Frankfurt]]
+|attendance =
+|referee    =
+|report     =
+}}</onlyinclude>
+
+{| width=100% style="font-size:90%"
+|<!--
+'''Man of the Match:'''
+<br />
+
+'''[[Assistant referee (association football)|Assistant referees]]:'''
+<br />
+<br />
+<br />'''[[Assistant referee (association football)#Fourth official|Fourth official]]:'''
+<br />
+<br />'''[[Assistant referee (association football)#Reserve assistant referee|Reserve assistant referee]]:'''
+<br />
+<br />'''[[Video assistant referee]]:'''
+<br />
+<br />'''[[Video assistant referee#Assistant video assistant referee|Assistant video assistant referee]]:'''
+<br />
+<br />'''[[Video assistant referee#Assistant video assistant referee|Support video assistant referee]]:'''
+<br />-->
+|style="width:60%; vertical-align:top;"|
+{{Match rules
+|ref               =
+|extra time        = y
+|penalties         = y
+|named subs        = 12
+|additional sub ET = y
+|subs allowed      = 5
+|sub opportunities = y
+}}
+|}
+
+==See also==
+*[[2027 UEFA Champions League final]]
+*[[2027 UEFA Conference League final]]
+*[[2027 UEFA Women's Champions League final]]
+<!--*[[2027 UEFA Women's Europa Cup final]]
+*[[2027 UEFA Super Cup]]-->
+
+==References==
+{{reflist}}
+
+==External links==
+*{{Official website|https://www.uefa.com/uefaeuropaleague/}}
+
+{{UEFA Europa League seasons}}
+{{2026–27 in European football (UEFA)}}
+
+{{DEFAULTSORT:Uefa Europa League final 2027}}
+[[Category:UEFA Europa League finals|2027]]
+[[Category:2026–27 UEFA Europa League|Final]]
+[[Category:Scheduled association football competitions]]
+[[Category:May 2027 sports events in Europe]]
+[[Category:Football finals in Germany]]
+[[Category:2020s in Frankfurt]]
+[[Category:Football competitions in Frankfurt]]
+[[Category:2026–27 in German football]]

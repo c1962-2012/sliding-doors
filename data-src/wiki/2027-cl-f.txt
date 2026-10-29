@@ -1,0 +1,159 @@
+{{Short description|Football match in Madrid, Spain}}
+{{EngvarB|date=May 2024}}
+{{Use dmy dates|date=May 2024}}
+{{Infobox football match
+| title = 2027 UEFA Champions League final
+| image = Final Score - Atleti vs Real Madrid.png
+| image_size = 275
+| caption = The [[Metropolitano Stadium]] in [[Madrid]] will host the final.
+| event = [[2026–27 UEFA Champions League]]
+| team1 = 
+| team1association = <!--{{fbaicon||size=30px}}-->
+| team1score = 
+| team2 = 
+| team2association = <!--{{fbaicon||size=30px}}-->
+| team2score = 
+| details = 
+| date = {{Start date|2027|6|5|df=y}}
+| stadium = [[Metropolitano Stadium|Estadio Metropolitano]]
+| city = [[Madrid]]
+| man_of_the_match1a = 
+| referee = 
+| attendance = 
+| weather = 
+| previous = [[2026 UEFA Champions League final|2026]]
+| next = ''[[2028 UEFA Champions League final|2028]]''
+}}
+The '''2027 UEFA Champions League final''' will be the final match of the [[2026–27 UEFA Champions League]], the 72nd season of Europe's premier club [[association football|football]] tournament organised by [[UEFA]], and the 35th season since it was renamed from the [[European Champion Clubs' Cup]] to the [[UEFA Champions League]]. It will be played at the [[Metropolitano Stadium|Estadio Metropolitano]] in [[Madrid]], Spain, on 5 June 2027.<ref name="invitation to bid"/>
+
+The winners will earn the right to play against the winners of the [[2026–27 UEFA Europa League]] in the [[2027 UEFA Super Cup]], compete in the final of the 2027 FIFA Intercontinental Cup, and qualify for the [[2029 FIFA Club World Cup]]. The winners will also qualify to enter the league phase of the [[2027–28 UEFA Champions League]], unless they have already qualified for the Champions League through their league performance (in which case the access list will be rebalanced).
+
+{{TOC limit}}
+
+==Venue==
+
+===Host selection===
+
+====First bidding process====
+On 17 May 2023, UEFA opened the bidding process for the 2027 final, which was held in parallel with that of the [[2026 UEFA Champions League final|2026 final]]. Interested bidders could bid for either one or both of the finals. Additionally, bidding associations could only be appointed one UEFA final in a given year. The proposed venues had to include natural grass and be ranked as a [[UEFA stadium categories|UEFA category four stadium]], with a gross capacity of at least 70,000 preferred. The first bidding timeline was as follows:<ref name="first invitation">{{cite magazine |url=https://editorial.uefa.com/resources/0281-18125a4a50d7-237b59952ab8-1000/20230517_circular_2023_24_en.zip |title=Invitation to bid to host the UEFA Champions League Finals 2026 & 2027, UEFA Europa League Finals 2026 & 2027, UEFA Europa Conference League Finals 2026 & 2027 and UEFA Women's Champions League Finals 2026 & 2027 |magazine=UEFA Circular Letter |publisher=[[UEFA|Union of European Football Associations]] |number=24/2023 |date=17 May 2023 |access-date=22 May 2024}}</ref>
+
+*17 May 2023: Applications formally invited
+*17 July 2023: Closing date for registering intention to bid
+*26 July 2023: Bid requirements made available to bidders
+*15 November 2023: Submission of preliminary bid dossier
+*21 February 2024: Submission of final bid dossier
+*22 May 2024: Appointment of host
+
+UEFA announced on 18 July 2023 that three associations had expressed interest in hosting the 2026 and 2027 finals during the first bidding process.<ref>{{cite web |url=https://www.uefa.com/news-media/news/0283-1885294a1bdd-b1bd50a82ae1-1000/ |title=Nine national associations interested in hosting UEFA club competition finals in 2026 and 2027 |publisher=[[UEFA]] |date=18 July 2023 |access-date=16 September 2025}}</ref>
+
+{| class="wikitable sortable"
+|+{{nowrap|Bidding associations for 2026 and 2027 UEFA Champions League finals during the first bidding process}}
+|-
+! Association !! Stadium !! City !! Capacity !! Notes
+|-
+| {{fba|HUN}} || [[Puskás Aréna]] || [[Budapest]] || 67,215 || Stadium appointed as host of [[2026 UEFA Champions League final|2026 Champions League final]]
+|-
+| {{fba|ITA}} || [[San Siro]] || [[Milan]] || 75,817 ||
+|}
+
+The UEFA Executive Committee suspended the decision on the host appointment during their meeting in [[Dublin]], Republic of Ireland, on 22 May 2024.<ref>{{cite news |url=https://www.uefa.com/news-media/news/028d-1ae8aa44ce66-a816fdadf1dc-1000/ |title=UEFA Executive Committee to meet in Dublin |publisher=Union of European Football Associations |date=17 May 2024 |access-date=22 May 2024}}</ref> This delay allowed the [[Italian Football Federation]] to submit additional information on the refurbishment plans for the [[San Siro]] in [[Milan]].<ref>{{cite web |url=https://www.uefa.com/news-media/news/028d-1af2f49f754f-b64e255ef0ae-1000/ |title=Budapest to host UEFA Champions League Final 2026 |publisher=Union of European Football Associations |date=22 May 2024 |access-date=22 May 2024}}</ref> At the subsequent Executive Committee meeting in [[Prague]], Czech Republic, on 24 September 2024, the San Siro was not selected to host the final. This decision was made because the municipality of Milan could not guarantee that refurbishment works would not affect the stadium and its surroundings during the final. Consequently, UEFA opted to open a new bidding process for the final.<ref>{{cite web |url=https://www.uefa.com/news-media/news/0291-1beea4cfea92-dec68c558e5a-1000/ |title=UEFA women's football strategy 2024–30 approved |publisher=Union of European Football Associations |date=24 September 2024 |access-date=24 September 2024}}</ref>
+
+====Second bidding process====
+A second bidding process was opened on 30 September 2024 with the same venue requirements, though associations that already were appointed to host a final in 2027 could not bid. The bidding timeline was as follows:<ref name="invitation to bid">{{cite magazine |url=https://editorial.uefa.com/resources/0291-1bfaaf033c77-beae29689392-1000/20240930_circular_2024_52_en.zip |title=Invitation to bid to host the UEFA Champions League Final 2027 and the UEFA Women's Champions League Final 2027 |magazine=UEFA Circular Letter |publisher=[[UEFA|Union of European Football Associations]] |number=52/2024 |date=30 September 2024 |access-date=11 September 2025}}</ref>
+
+*30 September 2024: Applications formally invited
+*21 October 2024: Closing date for registering intention to bid
+*24 October 2024: Bid requirements made available to bidders
+*15 January 2025: Submission of preliminary bid dossier
+*19 March 2025: Submission of final bid dossier
+*11 September 2025: Appointment of host
+
+UEFA announced on 23 October 2024 that two associations had expressed interest in hosting the 2027 final during the second bidding process.<ref>{{cite web |url=https://www.uefa.com/news-media/news/0292-1c2898820925-c1e4486991f3-1000/ |title=Six national associations interested in hosting 2027 UEFA Champions League and UEFA Women's Champions League finals |publisher=[[UEFA]] |date=23 October 2024 |access-date=26 October 2024}}</ref>
+
+{| class="wikitable sortable"
+|+{{nowrap|Bidding associations for 2027 UEFA Champions League final during the second bidding process}}
+|-
+! Association !! Stadium !! City !! Capacity !! Notes
+|-
+| {{fba|AZE}} || [[Baku Olympic Stadium|Olympic Stadium]] || [[Baku]] || 69,870 ||
+|- style="background-color:#CCFFCC"
+| {{fba|ESP}} || [[Metropolitano Stadium|Estadio Metropolitano]] || [[Madrid]] || 70,692 || Association also bid for [[2027 UEFA Women's Champions League final|2027 Women's Champions League final]] (with different venue)
+|}
+
+The UEFA Executive Committee was originally to appoint the host during their meeting in [[Bilbao]], Spain, on 21 May 2025, but it was postponed "for operational reasons" until September 2025.<ref>{{cite web |url=https://www.uefa.com/news-media/news/0299-1dc2e4f2986b-6cdf0488c711-1000/ |title=UEFA Executive Committee to meet in Bilbao |publisher=[[UEFA]] |date=15 May 2025 |access-date=11 September 2025}}</ref> The Estadio Metropolitano was selected as the venue by the UEFA Executive Committee during their meeting in [[Tirana]], Albania, on 11 September 2025.<ref>{{cite web |url=https://www.uefa.com/news-media/news/029d-1eb2cecb8955-8fa1e427770d-1000/ |title=Estadio Metropolitano to host 2027 UEFA Champions League final |publisher=[[UEFA]] |date=11 September 2025 |access-date=11 September 2025}}</ref> This will be the second time the Metropolitano will be hosting the final since having previously done so in [[2019 UEFA Champions League final|2019]].
+
+==Match==
+
+===Details===
+The winner of semi-final 1 will be designated as the "home" team for administrative purposes.
+
+<onlyinclude>{{Football box
+|date       = {{Start date|2027|6|5|df=y}}
+|time       = {{CEST|18:00}}
+|team1      = Winner SF1 {{fbaicon|}}
+|score      = 
+|team2      = {{fbaicon|}} Winner SF2
+|goals1     = 
+|goals2     = 
+|stadium    = [[Metropolitano Stadium|Estadio Metropolitano]], [[Madrid]]
+|attendance = 
+|referee    = 
+|report     =
+}}</onlyinclude>
+
+{| width=100% style="font-size:90%"
+|<!--
+'''Man of the Match:'''
+<br />
+
+'''[[Assistant referee (association football)|Assistant referees]]:'''
+<br />
+<br />
+<br />'''[[Assistant referee (association football)#Fourth official|Fourth official]]:'''
+<br />
+<br />'''[[Assistant referee (association football)#Reserve assistant referee|Reserve assistant referee]]:'''
+<br />
+<br />'''[[Video assistant referee]]:'''
+<br />
+<br />'''[[Video assistant referee#Assistant video assistant referee|Assistant video assistant referee]]:'''
+<br />
+<br />'''[[Video assistant referee#Assistant video assistant referee|Support video assistant referee]]:'''
+<br />-->
+|style="width:60%; vertical-align:top;"|
+{{Match rules
+|ref               =
+|extra time        = 30
+|penalties         = after 120 mins
+|named subs        = 12
+|additional sub ET = y
+|subs allowed      = 5
+|sub opportunities = y
+}}
+|}
+
+==See also==
+*[[2027 UEFA Europa League final]]
+*[[2027 UEFA Conference League final]]
+*[[2027 UEFA Women's Champions League final]]
+<!--*[[2027 UEFA Women's Europa Cup final]]
+*[[2027 UEFA Super Cup]]-->
+
+==References==
+{{reflist}}
+
+==External links==
+*{{Official website|https://www.uefa.com/uefachampionsleague/}}
+* [https://www.stadiumsofeurope.com/tournaments/champions-league-final/ Interactive map of UEFA Champions League 2027-2030 finals venues and hosting stadium bids]
+
+{{UEFA Champions League seasons}}
+{{2026–27 in European football (UEFA)}}
+
+{{DEFAULTSORT:Uefa Champions League final 2027}}
+[[Category:UEFA Champions League finals|2027]]
+[[Category:2026–27 UEFA Champions League|Final]]
+[[Category:Scheduled association football competitions]]
+[[Category:June 2027 sports events in Europe]]
+[[Category:Football matches in Spain]]
+[[Category:2027 in Madrid]]
+[[Category:Football matches in Madrid]]
+[[Category:2026–27 in Spanish football]]

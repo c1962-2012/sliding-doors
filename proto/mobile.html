@@ -1,0 +1,167 @@
+<title>Sliding Doors Tascabile</title>
+<meta name="claude:viewport-fit-sides" content="cover">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@600;800&family=IBM+Plex+Sans:wght@400;500;600&family=IBM+Plex+Mono:wght@500;600&display=swap">
+<link rel="stylesheet" href="app.css">
+<script>window.SD_MODE = "mobile";</script>
+
+<div class="wrap">
+  <header>
+    <div class="brand">
+      <h1>Sliding <span>Doors</span><br>Serie A</h1>
+      <p class="by">un'app di <span class="owner">ciuffa62</span></p>
+      <p>Cambia un risultato del passato e guarda come si riscrive la storia: campionato, Coppa Italia e il cammino delle italiane in Europa.</p>
+    </div>
+    <div class="controls">
+      <label class="season-pick"><span>Stagione</span><select id="season"></select></label>
+      <button class="ghost" id="reset">Ripristina la storia</button>
+      <span class="updated" id="updated"></span>
+    </div>
+  </header>
+
+  <nav class="tabs" id="tabs" aria-label="Competizione">
+    <button data-view="a" aria-pressed="true">Serie A</button>
+    <button data-view="cup" aria-pressed="false">Coppa Italia</button>
+    <button data-view="eu" aria-pressed="false">Italiane in Europa</button>
+    <button data-view="sc" aria-pressed="false">Marcatori e rigori</button>
+  </nav>
+
+  <section class="stage" aria-label="Podio dei due universi">
+    <div class="stage-canvas" id="stage3d" style="--stage-h:270px"></div>
+    <div class="stage-ui">
+      <div class="stage-title" id="stageTitle">Serie A</div>
+      <div class="face" id="stageFace" role="group" aria-label="Quale universo guardare">
+        <button data-face="real" aria-pressed="true">Realtà</button>
+        <button data-face="alt" aria-pressed="false">Tuo universo</button>
+      </div>
+    </div>
+    <div class="stage-hint">Scorri col dito per girare</div>
+  </section>
+
+  <div id="view-a" class="view">
+  <section class="verdict" id="verdict" aria-live="polite"></section>
+
+  <div class="grid">
+    <div class="col">
+      <section class="panel">
+        <h2 id="momentsTitle">Momenti chiave</h2>
+        <p class="sub" id="momentsSub">Partite che hanno deciso la stagione. Clicca per riscriverle.</p>
+        <div class="moments" id="moments"></div>
+      </section>
+      <section class="panel">
+        <h2>La schedina</h2>
+        <p class="sub" id="listSub">Tutte le partite. Usa 1 X 2 o le frecce per cambiare il punteggio.</p>
+        <div class="list-mode" id="listMode" role="group" aria-label="Quali partite mostrare" hidden>
+          <button data-mode="played" aria-pressed="true">Risultati</button>
+          <button data-mode="next" aria-pressed="false">Prossime partite</button>
+        </div>
+        <div class="filters">
+          <select id="fTeam" aria-label="Filtra per squadra"></select>
+          <select id="fRound" aria-label="Filtra per giornata o mese"></select>
+        </div>
+        <div class="list" id="list"></div>
+      </section>
+    </div>
+
+    <div class="col">
+      <section class="panel">
+        <h2>Corsa allo scudetto</h2>
+        <p class="sub">Punti dopo ogni partita giocata. Tratteggio: come è andata davvero. Linea piena: il tuo universo.</p>
+        <div class="chips" id="chips"></div>
+        <div class="chart-wrap"><svg id="chart" viewBox="0 0 800 340" width="100%" role="img" aria-label="Punti per giornata"></svg></div>
+        <div class="legend">
+          <span><svg width="26" height="4"><line x1="0" y1="2" x2="26" y2="2" stroke="currentColor" stroke-width="1.5" stroke-dasharray="4 3"/></svg>Storia reale</span>
+          <span><svg width="26" height="4"><line x1="0" y1="2" x2="26" y2="2" stroke="currentColor" stroke-width="3"/></svg>Universo parallelo</span>
+        </div>
+      </section>
+      <section class="panel sim" id="simPanel" hidden>
+        <h2>Simulatore di fine stagione</h2>
+        <p class="sub">Le partite che mancano giocate migliaia di volte, con la forza di ogni squadra ricavata dai gol fatti e subiti finora. I tuoi pronostici restano fissi.</p>
+        <div id="simBody"></div>
+      </section>
+      <section class="panel">
+        <h2>Classifica finale</h2>
+        <p class="sub">Ordinata sul tuo universo. Δ = posizioni guadagnate o perse rispetto alla realtà.</p>
+                <div class="table-wrap"><table id="table"></table></div>
+        <div class="zones" id="zones"></div>
+      </section>
+      <section class="panel">
+        <h2>Le tue modifiche</h2>
+        <div class="edits" id="edits"></div>
+      </section>
+    </div>
+  </div>
+  </div>
+
+  <div id="view-cup" class="view" hidden>
+    <section class="verdict" id="cupVerdict" aria-live="polite"></section>
+    <div class="grid">
+      <div class="col">
+        <section class="panel">
+          <h2>Le sfide</h2>
+          <p class="sub">Dagli ottavi alla finale. Premi Ribalta per far passare l'altra squadra: chi passa prende il posto dell'eliminata ed eredita i suoi risultati successivi.</p>
+          <div class="filters"><select id="cupTeam" aria-label="Filtra per squadra"></select></div>
+          <div class="list" id="cupList"></div>
+        </section>
+      </div>
+      <div class="col">
+        <section class="panel">
+          <h2>Fin dove arrivano</h2>
+          <p class="sub">Il turno raggiunto da ogni squadra. Δ = turni guadagnati o persi rispetto alla realtà.</p>
+          <div class="table-wrap"><table id="cupTable"></table></div>
+        </section>
+        <section class="panel">
+          <h2>Le tue modifiche</h2>
+          <div class="edits" id="cupEdits"></div>
+        </section>
+      </div>
+    </div>
+  </div>
+
+  <div id="view-eu" class="view" hidden>
+    <section class="verdict" id="euVerdict" aria-live="polite"></section>
+    <div class="comp-pick" id="compPick" role="group" aria-label="Coppa"></div>
+    <div class="grid">
+      <div class="col">
+        <section class="panel">
+          <h2>Le sfide delle italiane</h2>
+          <p class="sub">Tutti i turni giocati dalle italiane, in ordine. Premi Ribalta per far passare l'altra squadra: chi passa prende il posto dell'eliminata ed eredita i suoi risultati successivi.</p>
+          <div class="filters"><select id="euTeam" aria-label="Filtra per squadra"></select></div>
+          <div class="list" id="euList"></div>
+        </section>
+      </div>
+      <div class="col">
+        <section class="panel">
+          <h2>Fin dove arrivano</h2>
+          <p class="sub">Il turno raggiunto da ogni italiana. Δ = turni guadagnati o persi rispetto alla realtà.</p>
+          <div class="table-wrap"><table id="euTable"></table></div>
+        </section>
+        <section class="panel">
+          <h2>Le tue modifiche</h2>
+          <div class="edits" id="euEdits"></div>
+        </section>
+      </div>
+    </div>
+  </div>
+
+  <div id="view-sc" class="view" hidden>
+    <section class="panel">
+      <h2>Cosa c'è in questi numeri</h2>
+      <p class="sub" style="margin:0">Gol e rigori trasformati dalle partite di Coppa Italia (dagli ottavi alla finale) e delle coppe europee, presi dagli archivi RSSSF e, per le coppe europee dal 2025/26, dai tabellini di Wikipedia. I rigori sbagliati non sono registrati. Gli assist non esistono nelle fonti gratuite. I marcatori europei ci sono fino al 2008/09 e di nuovo dal 2025/26. Ogni tabella indica quante partite con gol hanno i marcatori completi.</p>
+    </section>
+    <div class="sc-grid" id="scSeason"></div>
+    <section class="panel">
+      <h2>Dal 2000 a oggi</h2>
+      <p class="sub">Somma di tutte le stagioni disponibili. Un giocatore compare una volta per ogni squadra con cui ha segnato.</p>
+      <div class="sc-grid" id="scAll"></div>
+    </section>
+  </div>
+
+  <footer>Serie A dal 2000/01 al 2025/26: football-data.co.uk. Coppa Italia e coppe europee: RSSSF (Rec.Sport.Soccer Statistics Foundation); coppe europee dal 2025/26, stagione in corso compresa: Wikipedia. Le classifiche contano solo i risultati del campo: penalizzazioni e titoli revocati non sono inclusi. Spareggi su punti, scontri diretti, differenza reti, gol fatti. Prototipo non ufficiale, nessun legame con Lega Serie A o i club.<br>Ideata e realizzata da <span class="owner">ciuffa62</span> · © 2026 ciuffa62, tutti i diritti riservati.</footer>
+</div>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+<script src="data.js"></script>
+<script src="cups.js"></script>
+<script src="app.js"></script>
+<script src="stage3d.js"></script>

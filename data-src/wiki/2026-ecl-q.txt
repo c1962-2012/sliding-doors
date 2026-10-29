@@ -1,0 +1,1954 @@
+{{Short description|European football competition}}
+{{main|2025–26 UEFA Conference League|2025–26 UEFA Conference League qualifying}}
+{{see also|2025–26 UEFA Conference League qualifying (first and second round matches)}}
+{{Use dmy dates|date=July 2025}}
+This page summarises the matches of the '''third qualifying and play-off rounds''' of '''2025–26 UEFA Conference League qualifying'''.<ref>{{cite web |url=https://www.uefa.com/uefaconferenceleague/news/029b-1e43ed1cf056-ea20f3f23ef3-1000/ |title=Conference League qualifying: Fixtures, dates, how it works |website=UEFA.com |publisher=Union of European Football Associations |date=21 July 2025 |access-date=22 July 2025}}</ref>
+
+Times are [[Central European Summer Time|CEST]] ([[UTC+02:00|UTC+2]]), as listed by UEFA (local times, if different, are in parentheses).
+
+==Third qualifying round==
+
+===Summary===
+<section begin=Q3 />
+The first legs were played on 5 and 7 August, and the second legs were played on 13 and 14 August 2025.
+
+{{#invoke:Sports series|main|caption=Third qualifying round|generate_links=y
+|heading1=Champions Path
+|[[NK Olimpija Ljubljana|Olimpija Ljubljana]]|SLO|4–2|[[KF Egnatia Rrogozhinë|Egnatia]]|ALB|0–0|4–2 (aet)
+|[[FC Milsami Orhei|Milsami Orhei]]|MDA|3–5|[[AC Virtus|Virtus]]|SMR|3–2|0–3
+|[[FC Differdange 03|Differdange 03]]|LUX|5–4|[[FCI Levadia Tallinn|FCI Levadia]]|EST|2–3|3–1 (aet)
+|[[Víkingur Gøta]]|FRO|2–3|[[Linfield F.C.|Linfield]]|NIR|2–1|0–2
+|heading5=Main Path
+|[[SK Rapid Wien|Rapid Wien]]|AUT|4–4 (5–4 p)|[[Dundee United F.C.|Dundee United]]|SCO|2–2|2–2 (aet)
+|[[AC Sparta Prague|Sparta Prague]]|CZE|6–2|[[FC Ararat-Armenia|Ararat-Armenia]]|ARM|4–1|2–1
+|[[AZ Alkmaar|AZ]]|NED|4–0|[[FC Vaduz|Vaduz]]|LIE|3–0|1–0
+|[[FC Lugano|Lugano]]|SUI|4–7|[[NK Celje|Celje]]|SLO|0–5|4–2
+|[[Klaksvíkar Ítróttarfelag|KÍ]]|FRO|2–2 (4–5 p)|[[FC Neman Grodno|Neman Grodno]]|BLR|2–0|0–2 (aet)
+|[[Riga FC|Riga]]|LVA|4–3|[[Beitar Jerusalem F.C.|Beitar Jerusalem]]|ISR|3–0|1–3
+|[[Knattspyrnufélagið Víkingur|Víkingur Reykjavík]]|ISL|3–4|[[Brøndby IF|Brøndby]]|DEN|3–0|0–4
+|[[HNK Hajduk Split|Hajduk Split]]|CRO|3–4|[[FC Dinamo City|Dinamo City]]|ALB|2–1|1–3 (aet)
+|[[R.S.C. Anderlecht|Anderlecht]]|BEL|4–1|[[FC Sheriff Tiraspol|Sheriff Tiraspol]]|MDA|3–0|1–1
+|[[FC Lausanne-Sport|Lausanne-Sport]]|SUI|5–1|[[FC Astana|Astana]]|KAZ|3–1|2–0
+|[[Larne F.C.|Larne]]|NIR|0–3|[[C.D. Santa Clara|Santa Clara]]|POR|0–3|0–0
+|[[Aris Limassol FC|Aris Limassol]]|CYP|3–5|[[AEK Athens F.C.|AEK Athens]]|GRE|2–2|1–3 (aet)
+|[[Viking FK|Viking]]|NOR|2–4|[[İstanbul Başakşehir F.K.|İstanbul Başakşehir]]|TUR|1–3|1–1
+|[[Araz-Naxçıvan PFK|Araz-Naxçıvan]]|AZE|0–9|[[AC Omonia|Omonia]]|CYP|0–4|0–5
+|[[FC Ballkani|Ballkani]]|KOS|1–4|[[Shamrock Rovers F.C.|Shamrock Rovers]]|IRL|1–0|0–4
+|[[Raków Częstochowa]]|POL|2–1|[[Maccabi Haifa F.C.|Maccabi Haifa]]|ISR|0–1|2–0
+|[[AIK Fotboll|AIK]]|SWE|2–3|[[Győri ETO FC|Győri ETO]]|HUN|2–1|0–2
+|[[CS Universitatea Craiova|Universitatea Craiova]]|ROU|6–4|[[FC Spartak Trnava|Spartak Trnava]]|SVK|3–0|3–4 (aet)
+|[[FC Polissya Zhytomyr|Polissya Zhytomyr]]|UKR|4–2|[[Paksi FC|Paks]]|HUN|3–0|1–2
+|[[PFC Levski Sofia|Levski Sofia]]|BUL|3–0|[[Sabah FC (Azerbaijan)|Sabah]]|AZE|1–0|2–0
+|[[Silkeborg IF|Silkeborg]]|DEN|2–3|[[Jagiellonia Białystok]]|POL|0–1|2–2
+|[[FK Partizan|Partizan]]|SRB|3–4|[[Hibernian F.C.|Hibernian]]|SCO|0–2|3–2  (aet)
+|[[FC Baník Ostrava|Baník Ostrava]]|CZE|5–4|[[FK Austria Wien|Austria Wien]]|AUT|4–3|1–1
+|[[Rosenborg BK|Rosenborg]]|NOR|1–0|[[Hammarby Fotboll|Hammarby IF]]|SWE|0–0|1–0
+|[[St Patrick's Athletic F.C.|St Patrick's Athletic]]|IRL|3–7|[[Beşiktaş J.K.|Beşiktaş]]|TUR|1–4|2–3
+|[[FK Kauno Žalgiris|Kauno Žalgiris]]|LTU|0–3|[[FC Arda Kardzhali|Arda]]|BUL|0–1|0–2
+}}<section end=Q3 />
+
+===Champions Path matches===
+{{#invoke:Football box|main
+|date       = {{Start date|2025|8|7|df=y}}
+|time       = 20:00
+|team1      = [[NK Olimpija Ljubljana|Olimpija Ljubljana]] {{fbaicon|SLO}}
+|score      = 0–0
+|team2      = {{fbaicon|ALB}} [[KF Egnatia Rrogozhinë|Egnatia]]
+|goals1     =
+|goals2     =
+|stadium    = [[Stožice Stadium]], [[Ljubljana]]
+|attendance = 3,596<ref>{{UEFA match attendance|2045749|Olimpija Ljubljana vs. Egnatia|date=7 August 2025|access-date=7 August 2025}}</ref>
+|referee    = [[John Beaton]] ([[Scottish Football Association|Scotland]])
+|report     = Report<ref>{{cite web |url=https://www.uefa.com/uefaconferenceleague/match/2045749/ |title=Olimpija Ljubljana vs Egnatia |website=UEFA.com |publisher=Union of European Football Associations |access-date=1 August 2025}}</ref>
+}}
+{{#invoke:Football box|main
+|date       = {{Start date|2025|8|14|df=y}}
+|time       = 21:00
+|team1      = Egnatia {{fbaicon|ALB}}
+|score      = 2–4
+|aet        = yes
+|team2      = {{fbaicon|SLO}} Olimpija Ljubljana
+|goals1     =
+*[[Regi Lushkja|Lushkja]] {{goal|6||86}}
+|goals2     =
+*[[Veljko Jelenković|Jelenković]] {{goal|32}}
+*[[Antonio Marin (footballer, born 2001)|Marin]] {{goal|79}}
+*[[Ivan Durdov|Durdov]] {{goal|99}}
+*[[Álex Blanco (footballer, born 1998)|Blanco]] {{goal|107}}
+|stadium    = [[Egnatia Arena]], [[Rrogozhinë]]
+|attendance = 4,500<ref>{{UEFA match attendance|2045779|Egnatia vs. Olimpija Ljubljana|date=14 August 2025|access-date=14 August 2025}}</ref>
+|referee    = [[Urs Schnyder]] ([[Swiss Football Association|Switzerland]])
+|report     = Report<ref>{{cite web |url=https://www.uefa.com/uefaconferenceleague/match/2045779/ |title=Egnatia vs Olimpija Ljubljana |website=UEFA.com |publisher=Union of European Football Associations |access-date=1 August 2025}}</ref>
+}}
+''Olimpija Ljubljana won 4–2 on aggregate.''
+----
+{{#invoke:Football box|main
+|date       = {{Start date|2025|8|7|df=y}}
+|time       = 18:00 {{small|(19:00 [[UTC+03:00|UTC+3]])}}
+|team1      = [[FC Milsami Orhei|Milsami Orhei]] {{fbaicon|MDA}}
+|score      = 3–2
+|team2      = {{fbaicon|SMR}} [[AC Virtus|Virtus]]
+|goals1     =
+*[[Christopher Nwaeze|Nwaeze]] {{goal|31}}
+*[[Nabil Khali|Khali]] {{goal|61}}
+*[[Ime Ndon|Ndon]] {{goal|89}}
+|goals2     =
+*[[Stefano Scappini|Scappini]] {{goal|51||73|pen.}}
+|stadium    = [[Zimbru Stadium]], [[Chișinău]]{{refn|group=note|name=Milsami|Milsami Orhei played their home match at Zimbru Stadium in Chișinău, instead of their regular stadium, [[CSR Orhei]], in [[Orhei]], which did not meet UEFA requirements.}}
+|attendance = 4,693<ref>{{UEFA match attendance|2045750|Milsami Orhei vs. Virtus|date=7 August 2025|access-date=7 August 2025}}</ref>
+|referee    = [[Edgars Maļcevs]] ([[Latvian Football Federation|Latvia]])
+|report     = Report<ref>{{cite web |url=https://www.uefa.com/uefaconferenceleague/match/2045750/ |title=Milsami Orhei vs Virtus |website=UEFA.com |publisher=Union of European Football Associations |access-date=1 August 2025}}</ref>
+}}
+{{#invoke:Football box|main
+|date       = {{Start date|2025|8|14|df=y}}
+|time       = 21:00
+|team1      = Virtus {{fbaicon|SMR}}
+|score      = 3–0
+|team2      = {{fbaicon|MDA}} Milsami Orhei
+|goals1     =
+*[[Stefano Scappini|Scappini]] {{goal|58}}
+*[[Ivan Buonocunto|Buonocunto]] {{goal|65||79|pen.}}
+|goals2     =
+|stadium    = [[San Marino Stadium]], [[Serravalle, San Marino|Serravalle]]
+|attendance = 322<ref>{{UEFA match attendance|2045780|Virtus vs. Milsami Orhei|date=14 August 2025|access-date=14 August 2025}}</ref>
+|referee    = [[Damian Kos]] ([[Polish Football Association|Poland]])
+|report     = Report<ref>{{cite web |url=https://www.uefa.com/uefaconferenceleague/match/2045780/ |title=Virtus vs Milsami Orhei |website=UEFA.com |publisher=Union of European Football Associations |access-date=1 August 2025}}</ref>
+}}
+''Virtus won 5–3 on aggregate.''
+----
+{{#invoke:Football box|main
+|date       = {{Start date|2025|8|7|df=y}}
+|time       = 20:00
+|team1      = [[FC Differdange 03|Differdange 03]] {{fbaicon|LUX}}
+|score      = 2–3
+|team2      = {{fbaicon|EST}} [[FCI Levadia Tallinn|FCI Levadia]]
+|goals1     =
+*[[Samir Hadji|Hadji]] {{goal|17||60}}
+|goals2     =
+*[[Richie Musaba|Musaba]] {{goal|14||52}}
+*[[Mihkel Ainsalu|Ainsalu]] {{goal|20}}
+|stadium    = [[Stade Municipal de la Ville de Differdange]], [[Differdange]]
+|attendance = 1,637<ref>{{UEFA match attendance|2045751|Differdange 03 vs. FCI Levadia|date=7 August 2025|access-date=7 August 2025}}</ref>
+|referee    = [[Alessandro Dudic]] ([[Swiss Football Association|Switzerland]])
+|report     = Report<ref>{{cite web |url=https://www.uefa.com/uefaconferenceleague/match/2045751/ |title=Differdange 03 vs FCI Levadia |website=UEFA.com |publisher=Union of European Football Associations |access-date=1 August 2025}}</ref>
+}}
+{{#invoke:Football box|main
+|date       = {{Start date|2025|8|14|df=y}}
+|time       = 18:30 {{small|(19:30 [[UTC+03:00|UTC+3]])}}
+|team1      = FCI Levadia {{fbaicon|EST}}
+|score      = 1–3
+|aet        = yes
+|team2      = {{fbaicon|LUX}} Differdange 03
+|goals1     =
+*[[Bubacarr Tambedou|Tambedou]] {{goal|92}}
+|goals2     =
+*{{ill|Andreas Buch|lt=Buch|fr}} {{goal|89||105+2}}
+*[[Samir Hadji|Hadji]] {{goal|119|pen.}}
+|stadium    = [[Lilleküla Stadium]], [[Tallinn]]
+|attendance = 4,063<ref>{{UEFA match attendance|2045781|FCI Levadia vs. Differdange 03|date=14 August 2025|access-date=14 August 2025}}</ref>
+|referee    = [[Antoni Bandić]] ([[Football Federation of Bosnia and Herzegovina|Bosnia and Herzegovina]])
+|report     = Report<ref>{{cite web |url=https://www.uefa.com/uefaconferenceleague/match/2045781/ |title=FCI Levadia vs Differdange 03 |website=UEFA.com |publisher=Union of European Football Associations |access-date=1 August 2025}}</ref>
+}}
+''Differdange 03 won 5–4 on aggregate.''
+----
+{{#invoke:Football box|main
+|date       = {{Start date|2025|8|7|df=y}}
+|time       = 20:00 {{small|(19:00 [[UTC+01:00|UTC+1]])}}
+|team1      = [[Víkingur Gøta]] {{fbaicon|FRO}}
+|score      = 2–1
+|team2      = {{fbaicon|NIR}} [[Linfield F.C.|Linfield]]
+|goals1     =
+*[[Ben Hall (footballer, born 1997)|Hall]] {{goal|3|o.g.}}
+*[[Ingi Jonhardsson|Jonhardsson]] {{goal|56}}
+|goals2     =
+*[[Matthew Fitzpatrick (footballer)|Fitzpatrick]] {{goal|9}}
+|stadium    = [[Tórsvøllur]], [[Tórshavn]]{{refn|group=note|name=Víkingur|Víkingur Gøta played their home match at Tórsvøllur in Tórshavn, instead of their regular stadium, [[Sarpugerði]], in [[Norðragøta]], which did not meet UEFA requirements.}}
+|attendance = 565<ref>{{UEFA match attendance|2045752|Víkingur Gøta vs. Linfield|date=7 August 2025|access-date=7 August 2025}}</ref>
+|referee    = [[Luka Bilbija]] ([[Football Federation of Bosnia and Herzegovina|Bosnia and Herzegovina]])
+|report     = Report<ref>{{cite web |url=https://www.uefa.com/uefaconferenceleague/match/2045752/ |title=Víkingur vs Linfield |website=UEFA.com |publisher=Union of European Football Associations |access-date=1 August 2025}}</ref>
+}}
+{{#invoke:Football box|main
+|date       = {{Start date|2025|8|14|df=y}}
+|time       = 20:45 {{small|(19:45 [[UTC+01:00|UTC+1]])}}
+|team1      = Linfield {{fbaicon|NIR}}
+|score      = 2–0
+|team2      = {{fbaicon|FRO}} Víkingur Gøta
+|goals1     =
+*[[Kieran Offord|Offord]] {{goal|22}}
+*{{ill|Ari Olsen|lt=Olsen|da}} {{goal|38|o.g.}}
+|goals2     =
+|stadium    = [[Windsor Park]], [[Belfast]]
+|attendance = 3,434<ref>{{UEFA match attendance|2045782|Linfield vs. Víkingur Gøta|date=14 August 2025|access-date=14 August 2025}}</ref>
+|referee    = [[Marek Radina]] ([[Football Association of the Czech Republic|Czech Republic]])
+|report     = Report<ref>{{cite web |url=https://www.uefa.com/uefaconferenceleague/match/2045782/ |title=Linfield vs Víkingur |website=UEFA.com |publisher=Union of European Football Associations |access-date=1 August 2025}}</ref>
+}}
+''Linfield won 3–2 on aggregate.''
+
+===Main Path matches===
+{{#invoke:Football box|main
+|date       = {{Start date|2025|8|7|df=y}}
+|time       = 21:00
+|team1      = [[SK Rapid Wien|Rapid Wien]] {{fbaicon|AUT}}
+|score      = 2–2
+|team2      = {{fbaicon|SCO}} [[Dundee United F.C.|Dundee United]]
+|goals1     =
+*[[Petter Nosa Dahl|Dahl]] {{goal|27}}
+*[[Matthias Seidl|Seidl]] {{goal|44}}
+|goals2     =
+*[[Max Watters|Watters]] {{goal|33}}
+*[[Zac Sapsford|Sapsford]] {{goal|75}}
+|stadium    = [[Allianz Stadion]], [[Vienna]]
+|attendance = 18,930<ref>{{UEFA match attendance|2045753|Rapid Wien vs. Dundee United|date=7 August 2025|access-date=7 August 2025}}</ref>
+|referee    = [[Luís Godinho]] ([[Portuguese Football Federation|Portugal]])
+|report     = Report<ref>{{cite web |url=https://www.uefa.com/uefaconferenceleague/match/2045753/ |title=Rapid Wien vs Dundee United |website=UEFA.com |publisher=Union of European Football Associations |access-date=1 August 2025}}</ref>
+}}
+{{#invoke:Football box|main
+|date       = {{Start date|2025|8|14|df=y}}
+|time       = 20:45 {{small|(19:45 [[UTC+01:00|UTC+1]])}}
+|team1      = Dundee United {{fbaicon|SCO}}
+|score      = 2–2
+|aet        = yes
+|team2      = {{fbaicon|AUT}} Rapid Wien
+|goals1     =
+*[[Max Watters|Watters]] {{goal|25||42|pen.}}
+|goals2     =
+*[[Janis Antiste|Antiste]] {{goal|63}}
+*[[Ercan Kara|Kara]] {{goal|78}}
+|stadium    = [[Tannadice Park]], [[Dundee]]
+|attendance = 12,336<ref>{{UEFA match attendance|2045783|Dundee United vs. Rapid Wien|date=14 August 2025|access-date=14 August 2025}}</ref>
+|referee    = [[Anastasios Sidiropoulos|Tasos Sidiropoulos]] ([[Hellenic Football Federation|Greece]])
+|penalties1 =
+*[[Amar Fatah|Fatah]] {{penmiss}}
+*[[Will Ferry|Ferry]] {{pengoal}}
+*[[Bert Esselink|Esselink]] {{pengoal}}
+*[[Vicko Ševelj|Ševelj]] {{pengoal}}
+*[[Krisztián Keresztes|Keresztes]] {{pengoal}}
+|penaltyscore = 4–5
+|penalties2 =
+*{{pengoal}} [[Ercan Kara|Kara]]
+*{{pengoal}} [[Claudy Mbuyi|Mbuyi]]
+*{{pengoal}} [[Andrija Radulović (footballer)|Radulović]]
+*{{pengoal}} [[Serge-Philippe Raux-Yao|Raux-Yao]]
+*{{pengoal}} [[Bendegúz Bolla|Bolla]]
+|report     = Report<ref>{{cite web |url=https://www.uefa.com/uefaconferenceleague/match/2045783/ |title=Dundee United vs Rapid Wien |website=UEFA.com |publisher=Union of European Football Associations |access-date=1 August 2025}}</ref>
+}}
+''4–4 on aggregate; Rapid Wien won 5–4 on penalties.''
+----
+{{#invoke:Football box|main
+|date       = {{Start date|2025|8|7|df=y}}
+|time       = 20:00
+|team1      = [[AC Sparta Prague|Sparta Prague]] {{fbaicon|CZE}}
+|score      = 4–1
+|team2      = {{fbaicon|ARM}} [[FC Ararat-Armenia|Ararat-Armenia]]
+|goals1     =
+*[[Lukáš Haraslín|Haraslín]] {{goal|25}}
+*[[Kaan Kairinen|Kairinen]] {{goal|33}}
+*[[Jan Kuchta|Kuchta]] {{goal|60}}
+*[[Veljko Birmančević|Birmančević]] {{goal|80|pen.}}
+|goals2     =
+*[[Juan Balanta|Balanta]] {{goal|7}}
+|stadium    = [[Stadion Letná]], [[Prague]]
+|attendance = 17,316<ref>{{UEFA match attendance|2045754|Sparta Prague vs. Ararat-Armenia|date=7 August 2025|access-date=7 August 2025}}</ref>
+|referee    = [[Matthew MacDermid]] ([[Scottish Football Association|Scotland]])
+|report     = Report<ref>{{cite web |url=https://www.uefa.com/uefaconferenceleague/match/2045754/ |title=Sparta Prague vs Ararat-Armenia |website=UEFA.com |publisher=Union of European Football Associations |access-date=1 August 2025}}</ref>
+}}
+{{#invoke:Football box|main
+|date       = {{Start date|2025|8|14|df=y}}
+|time       = 18:00 {{small|(20:00 [[UTC+04:00|UTC+4]])}}
+|team1      = Ararat-Armenia {{fbaicon|ARM}}
+|score      = 1–2
+|team2      = {{fbaicon|CZE}} Sparta Prague
+|goals1     =
+*[[Juan Balanta|Balanta]] {{goal|31|pen.}}
+|goals2     =
+*[[Albion Rrahmani|Rrahmani]] {{goal|23}}
+*[[Ermal Krasniqi|Krasniqi]] {{goal|90+1}}
+|stadium    = [[Yerevan Football Academy Stadium]], [[Yerevan]]
+|attendance = 1,300<ref>{{UEFA match attendance|2045784|Ararat-Armenia vs. Sparta Prague|date=14 August 2025|access-date=14 August 2025}}</ref>
+|referee    = [[Jovan Kacevski]] ([[Football Federation of Macedonia|North Macedonia]])
+|report     = Report<ref>{{cite web |url=https://www.uefa.com/uefaconferenceleague/match/2045784/ |title=Ararat-Armenia vs Sparta Prague |website=UEFA.com |publisher=Union of European Football Associations |access-date=1 August 2025}}</ref>
+}}
+''Sparta Prague won 6–2 on aggregate.''
+----
+{{#invoke:Football box|main
+|date       = {{Start date|2025|8|7|df=y}}
+|time       = 20:00
+|team1      = [[AZ Alkmaar|AZ]] {{fbaicon|NED}}
+|score      = 3–0
+|team2      = {{fbaicon|LIE}} [[FC Vaduz|Vaduz]]
+|goals1     =
+*[[Troy Parrott|Parrott]] {{goal|29||74}}
+*[[Mexx Meerdink|Meerdink]] {{goal|80}}
+|goals2     =
+|stadium    = [[AFAS Stadion]], [[Alkmaar]]
+|attendance = 11,476<ref>{{UEFA match attendance|2045755|AZ vs. Vaduz|date=7 August 2025|access-date=7 August 2025}}</ref>
+|referee    = [[Bastien Dechepy]] ([[French Football Federation|France]])
+|report     = Report<ref>{{cite web |url=https://www.uefa.com/uefaconferenceleague/match/2045755/ |title=AZ vs Vaduz |website=UEFA.com |publisher=Union of European Football Associations |access-date=1 August 2025}}</ref>
+}}
+{{#invoke:Football box|main
+|date       = {{Start date|2025|8|14|df=y}}
+|time       = 19:30
+|team1      = Vaduz {{fbaicon|LIE}}
+|score      = 0–1
+|team2      = {{fbaicon|NED}} AZ
+|goals1     =
+|goals2     =
+*[[Troy Parrott|Parrott]] {{goal|88}}
+|stadium    = [[Rheinpark Stadion]], [[Vaduz]]
+|attendance = 1,530<ref>{{UEFA match attendance|2045785|Vaduz vs. AZ|date=14 August 2025|access-date=14 August 2025}}</ref>
+|referee    = [[Snir Levy]] ([[Israel Football Association|Israel]])
+|report     = Report<ref>{{cite web |url=https://www.uefa.com/uefaconferenceleague/match/2045785/ |title=Vaduz vs AZ |website=UEFA.com |publisher=Union of European Football Associations |access-date=1 August 2025}}</ref>
+}}
+''AZ won 4–0 on aggregate.''
+----
+{{#invoke:Football box|main
+|date       = {{Start date|2025|8|7|df=y}}
+|time       = 20:30
+|team1      = [[FC Lugano|Lugano]] {{fbaicon|SUI}}
+|score      = 0–5
+|team2      = {{fbaicon|SVN}} [[NK Celje|Celje]]
+|goals1     =
+|goals2     =
+*[[Danijel Šturm|Šturm]] {{goal|35}}
+*[[Franko Kovačević|Kovačević]] {{goal|44|pen.|84|pen.}}
+*[[Mark Zabukovnik|Zabukovnik]] {{goal|59}}
+*[[Mario Kvesić|Kvesić]] {{goal|89}}
+|stadium    = [[Stockhorn Arena]], [[Thun]]{{refn|group=note|name=Lugano|Lugano played their home match at the Stockhorn Arena, in Thun, instead of their regular stadium, the [[Cornaredo Stadium]], in [[Lugano]], due to renovation works.<ref>{{cite news |title=Beginning of demolition of the old FC Lugano football stadium |url=https://www.cruzyortiz.com/beginning-of-demolition-of-the-old-fc-lugano-football-stadium/ |access-date=21 July 2025 |work=Cruz y Ortiz Arquitectos |date=25 July 2023}}</ref>}}
+|attendance = 623<ref>{{UEFA match attendance|2045756|Lugano vs. Celje|date=7 August 2025|access-date=7 August 2025}}</ref>
+|referee    = [[Sander van der Eijk]] ([[Royal Dutch Football Association|Netherlands]])
+|report     = Report<ref>{{cite web |url=https://www.uefa.com/uefaconferenceleague/match/2045756/ |title=Lugano vs Celje |website=UEFA.com |publisher=Union of European Football Associations |access-date=1 August 2025}}</ref>
+}}
+{{#invoke:Football box|main
+|date       = {{Start date|2025|8|14|df=y}}
+|time       = 20:00
+|team1      = Celje {{fbaicon|SVN}}
+|score      = 2–4
+|team2      = {{fbaicon|SUI}} Lugano
+|goals1     =
+*[[Franko Kovačević|Kovačević]] {{goal|22}}
+*[[Mario Kvesić|Kvesić]] {{goal|67}}
+|goals2     =
+*[[Anto Grgić|Grgić]] {{goal|13|pen.}}
+*[[Antonios Papadopoulos (footballer)|Papadopoulos]] {{goal|69}}
+*[[Renato Steffen|Steffen]] {{goal|81}}
+*[[Ezgjan Alioski|Alioski]] {{goal|85|pen.}}
+|stadium    = [[Stadion Z'dežele]], [[Celje]]
+|attendance = 4,262<ref>{{UEFA match attendance|2045786|Celje vs. Lugano|date=14 August 2025|access-date=14 August 2025}}</ref>
+|referee    = [[Juan Martínez Munuera]] ([[Royal Spanish Football Federation|Spain]])
+|report     = Report<ref>{{cite web |url=https://www.uefa.com/uefaconferenceleague/match/2045786/ |title=Celje vs Lugano |website=UEFA.com |publisher=Union of European Football Associations |access-date=1 August 2025}}</ref>
+}}
+''Celje won 7–4 on aggregate.''
+----
+{{#invoke:Football box|main
+|date       = {{Start date|2025|8|5|df=y}}
+|time       = 20:45 {{small|(19:45 [[UTC+01:00|UTC+1]])}}
+|team1      = [[Klaksvíkar Ítróttarfelag|KÍ]] {{fbaicon|FRO}}
+|score      = 2–0
+|team2      = {{fbaicon|BLR}} [[FC Neman Grodno|Neman Grodno]]
+|goals1     =
+*[[René Joensen|Joensen]] {{goal|26}}
+*[[Páll Klettskarð|Klettskarð]] {{goal|45+1}}
+|goals2     =
+|stadium    = [[Tórsvøllur]], [[Tórshavn]]{{refn|group=note|name=KÍ|KÍ played their home match at Tórsvøllur in Tórshavn, instead of their regular stadium, [[Við Djúpumýrar]], in [[Klaksvík]], which did not meet UEFA requirements.}}
+|attendance = 2,281<ref>{{UEFA match attendance|2045757|KÍ vs. Neman Grodno|date=5 August 2025|access-date=5 August 2025}}</ref>
+|referee    = [[Cláudio Pereira (referee)|Cláudio Pereira]] ([[Portuguese Football Federation|Portugal]])
+|report     = Report<ref>{{cite web |url=https://www.uefa.com/uefaconferenceleague/match/2045757/ |title=KÍ vs Neman Grodno |website=UEFA.com |publisher=Union of European Football Associations |access-date=1 August 2025}}</ref>
+}}
+{{#invoke:Football box|main
+|date       = {{Start date|2025|8|14|df=y}}
+|time       = 20:00
+|team1      = Neman Grodno {{fbaicon|BLR}}
+|score      = 2–0
+|aet        = yes
+|team2      = {{fbaicon|FRO}} KÍ
+|goals1     =
+*[[Gulzhigit Borubaev|Borubaev]] {{goal|80}}
+*[[Yuriy Pantya|Pantya]] {{goal|84}}
+|goals2     =
+|stadium    = [[Szent Gellért Fórum]], [[Szeged]], Hungary{{refn|group=note|name=Belarus}}
+|attendance = 0<ref>{{UEFA match attendance|2045787|Neman Grodno vs. KÍ|date=14 August 2025|access-date=14 August 2025}}</ref>{{refn|group=note|name=Belarus|Due to the country's involvement in the [[Russian invasion of Ukraine]], Belarusian teams were required to play their home matches at neutral venues and [[Behind closed doors (sport)|behind closed doors]] until further notice.<ref>{{cite news |url=https://www.uefa.com/news-media/news/0273-1493944bb9c8-f5773a44dabd-1000/ |title=Belarus teams to play on neutral ground in UEFA competitions |work=[[UEFA]] |publisher=Union of European Football Associations |date=3 March 2022 |access-date=3 March 2022}}</ref>}}
+|referee    = [[Don Robertson (referee)|Don Robertson]] ([[Scottish Football Association|Scotland]])
+|penalties1 =
+*[[Yegor Parkhomenko|Parkhomenko]] {{pengoal}}
+*[[Yuri Klochkov|Klochkov]] {{pengoal}}
+*[[Yahor Zubovich|Zubovich]] {{pengoal}}
+*[[Maksim Kravtsov|Kravtsov]] {{pengoal}}
+*[[Valon Ahmedi|Ahmedi]] {{pengoal}}
+|penaltyscore = 5–4
+|penalties2 =
+*{{pengoal}} [[Árni Frederiksberg|Frederiksberg]]
+*{{penmiss}} [[Patrik Johannesen|P. Johannesen]]
+*{{pengoal}} [[Jákup Andreasen|J. Andreasen]]
+*{{pengoal}} [[Daniel Johansen (footballer)|Johansen]]
+*{{pengoal}} [[Gilli Rólantsson|Rólantsson]]
+|report     = Report<ref>{{cite web |url=https://www.uefa.com/uefaconferenceleague/match/2045787/ |title=Neman Grodno vs KÍ |website=UEFA.com |publisher=Union of European Football Associations |access-date=1 August 2025}}</ref>
+}}
+''2–2 on aggregate; Neman Grodno won 5–4 on penalties.''
+----
+{{#invoke:Football box|main
+|date       = {{Start date|2025|8|7|df=y}}
+|time       = 19:00 {{small|(20:00 [[UTC+03:00|UTC+3]])}}
+|team1      = [[Riga FC|Riga]] {{fbaicon|LVA}}
+|score      = 3–0
+|team2      = {{fbaicon|ISR}} [[Beitar Jerusalem F.C.|Beitar Jerusalem]]
+|goals1     =
+*[[Reginaldo Ramires|Ramires]] {{goal|47||63}}
+*[[Baba Musah|Musah]] {{goal|69}}
+|goals2     =
+|stadium    = [[Skonto Stadium]], [[Riga]]
+|attendance = 5,122<ref>{{UEFA match attendance|2045758|Riga vs. Beitar Jerusalem|date=7 August 2025|access-date=7 August 2025}}</ref>
+|referee    = [[Lionel Tschudi]] ([[Swiss Football Association|Switzerland]])
+|report     = Report<ref>{{cite web |url=https://www.uefa.com/uefaconferenceleague/match/2045758/ |title=Riga vs Beitar Jerusalem |website=UEFA.com |publisher=Union of European Football Associations |access-date=1 August 2025}}</ref>
+}}
+{{#invoke:Football box|main
+|date       = {{Start date|2025|8|14|df=y}}
+|time       = 19:30 {{small|(20:30 [[UTC+03:00|UTC+3]])}}
+|team1      = Beitar Jerusalem {{fbaicon|ISR}}
+|score      = 3–1
+|team2      = {{fbaicon|LVA}} Riga
+|goals1     =
+*[[Omer Atzili|Atzili]] {{goal|6}}
+*[[Timothy Muzie|Muzie]] {{goal|24}}
+*[[Ayi Silva Kangani|Kangani]] {{goal|90+4}}
+|goals2     =
+*[[Anthony Contreras|Contreras]] {{goal|86}}
+|stadium    = [[Ilie Oană Stadium]], [[Ploiești]], Romania{{refn|group=note|name=Israel|Due to the [[Gaza war]], Israeli teams were required to play their home matches at neutral venues until further notice.<ref>{{cite news |url=https://www.uefa.com/news-media/news/0286-194079070fc0-ee97b2cd5400-1000/ |title=European Qualifier match between Belgium and Sweden declared abandoned with half-time result confirmed as final |website=[[UEFA]] |publisher=Union of European Football Associations |date=19 October 2023 |access-date=23 November 2023}}</ref>}}
+|attendance = 752<ref>{{UEFA match attendance|2045788|Beitar Jerusalem vs. Riga|date=14 August 2025|access-date=14 August 2025}}</ref>
+|referee    = [[Paweł Raczkowski]] ([[Polish Football Association|Poland]])
+|report     = Report<ref>{{cite web |url=https://www.uefa.com/uefaconferenceleague/match/2045788/ |title=Beitar Jerusalem vs Riga |website=UEFA.com |publisher=Union of European Football Associations |access-date=1 August 2025}}</ref>
+}}
+''Riga won 4–3 on aggregate.''
+----
+{{#invoke:Football box|main
+|date       = {{Start date|2025|8|7|df=y}}
+|time       = 20:45 {{small|(18:45 [[UTC+00:00|UTC±0]])}}
+|team1      = [[Knattspyrnufélagið Víkingur|Víkingur Reykjavík]] {{fbaicon|ISL}}
+|score      = 3–0
+|team2      = {{fbaicon|DEN}} [[Brøndby IF|Brøndby]]
+|goals1     =
+*[[Nikolaj Hansen (footballer, born 1993)|Hansen]] {{goal|45}}
+*[[Oliver Ekroth|Ekroth]] {{goal|47}}
+*[[Viktor Örlygur Andrason|Andrason]] {{goal|83}}
+|goals2     =
+|stadium    = [[Víkingsvöllur]], [[Reykjavík]]
+|attendance = 1,200<ref>{{UEFA match attendance|2045759|Víkingur Reykjavík vs. Brøndby|date=7 August 2025|access-date=7 August 2025}}</ref>
+|referee    = [[Atilla Karaoğlan]] ([[Turkish Football Federation|Turkey]])
+|report     = Report<ref>{{cite web |url=https://www.uefa.com/uefaconferenceleague/match/2045759/ |title=Víkingur Reykjavík vs Brøndby |website=UEFA.com |publisher=Union of European Football Associations |access-date=1 August 2025}}</ref>
+}}
+{{#invoke:Football box|main
+|date       = {{Start date|2025|8|14|df=y}}
+|time       = 19:30
+|team1      = Brøndby {{fbaicon|DEN}}
+|score      = 4–0
+|team2      = {{fbaicon|ISL}} Víkingur Reykjavík
+|goals1     =
+*[[Nicolai Vallys|Vallys]] {{goal|45+2||52}}
+*[[Filip Bundgaard|Bundgaard]] {{goal|57||71}}
+|goals2     =
+|stadium    = [[Brøndby Stadium]], [[Brøndbyvester]]
+|attendance = 17,329<ref>{{UEFA match attendance|2045789|Brøndby vs. Víkingur Reykjavík|date=14 August 2025|access-date=14 August 2025}}</ref>
+|referee    = [[Guillermo Cuadra Fernández]] ([[Royal Spanish Football Federation|Spain]])
+|report     = Report<ref>{{cite web |url=https://www.uefa.com/uefaconferenceleague/match/2045789/ |title=Brøndby vs Víkingur Reykjavík |website=UEFA.com |publisher=Union of European Football Associations |access-date=1 August 2025}}</ref>
+}}
+''Brøndby won 4–3 on aggregate.''
+----
+{{#invoke:Football box|main
+|date       = {{Start date|2025|8|7|df=y}}
+|time       = 21:00
+|team1      = [[HNK Hajduk Split|Hajduk Split]] {{fbaicon|CRO}}
+|score      = 2–1
+|team2      = {{fbaicon|ALB}} [[FC Dinamo City|Dinamo City]]
+|goals1     =
+*[[Bruno Durdov|Durdov]] {{goal|49}}
+*[[Abdoulie Sanyang|Sanyang]] {{goal|63}}
+|goals2     =
+*[[Dejvi Bregu|Bregu]] {{goal|37}}
+|stadium    = [[Stadion Poljud]], [[Split, Croatia|Split]]
+|attendance = 31,652<ref>{{UEFA match attendance|2045760|Hajduk Split vs. Dinamo City|date=7 August 2025|access-date=7 August 2025}}</ref>
+|referee    = [[Sayat Karabayev]] ([[Kazakhstan Football Federation|Kazakhstan]])
+|report     = Report<ref>{{cite web |url=https://www.uefa.com/uefaconferenceleague/match/2045760/ |title=Hajduk Split vs Dinamo City |website=UEFA.com |publisher=Union of European Football Associations |access-date=1 August 2025}}</ref>
+}}
+{{#invoke:Football box|main
+|date       = {{Start date|2025|8|14|df=y}}
+|time       = 20:45
+|team1      = Dinamo City {{fbaicon|ALB}}
+|score      = 3–1
+|aet        = yes
+|team2      = {{fbaicon|CRO}} Hajduk Split
+|goals1     =
+*[[Baton Zabërgja|Zabërgja]] {{goal|14}}
+*[[Eridon Qardaku|Qardaku]] {{goal|109}}
+*[[Hekuran Berisha|H. Berisha]] {{goal|111}}
+|goals2     =
+*[[Fran Karačić|Karačić]] {{goal|99}}
+|stadium    = [[Arena Kombëtare]], [[Tirana]]
+|attendance = 5,227<ref>{{UEFA match attendance|2045790|Dinamo City vs. Hajduk Split|date=14 August 2025|access-date=14 August 2025}}</ref>
+|referee    = [[Denys Shurman]] ([[Ukrainian Association of Football|Ukraine]])
+|report     = Report<ref>{{cite web |url=https://www.uefa.com/uefaconferenceleague/match/2045790/ |title=Dinamo City vs Hajduk Split |website=UEFA.com |publisher=Union of European Football Associations |access-date=1 August 2025}}</ref>
+}}
+''Dinamo City won 4–3 on aggregate.''
+----
+{{#invoke:Football box|main
+|date       = {{Start date|2025|8|7|df=y}}
+|time       = 20:00
+|team1      = [[R.S.C. Anderlecht|Anderlecht]] {{fbaicon|BEL}}
+|score      = 3–0
+|team2      = {{fbaicon|MDA}} [[FC Sheriff Tiraspol|Sheriff Tiraspol]]
+|goals1     =
+*[[Nilson Angulo|Angulo]] {{goal|17}}
+*[[Kasper Dolberg|Dolberg]] {{goal|48}}
+*[[Yari Verschaeren|Verschaeren]] {{goal|81}}
+|goals2     =
+|stadium    = [[Constant Vanden Stock Stadium]], [[Brussels]]
+|attendance = 14,124<ref>{{UEFA match attendance|2045761|Anderlecht vs. Sheriff Tiraspol|date=7 August 2025|access-date=7 August 2025}}</ref>
+|referee    = [[Nenad Minaković]] ([[Football Association of Serbia|Serbia]])
+|report     = Report<ref>{{cite web |url=https://www.uefa.com/uefaconferenceleague/match/2045761/ |title=Anderlecht vs Sheriff Tiraspol |website=UEFA.com |publisher=Union of European Football Associations |access-date=1 August 2025}}</ref>
+}}
+{{#invoke:Football box|main
+|date       = {{Start date|2025|8|14|df=y}}
+|time       = 19:00 {{small|(20:00 [[UTC+03:00|UTC+3]])}}
+|team1      = Sheriff Tiraspol {{fbaicon|MDA}}
+|score      = 1–1
+|team2      = {{fbaicon|BEL}} Anderlecht
+|goals1     =
+*[[Elijah Odede|Odede]] {{goal|81}}
+|goals2     =
+*[[Nathan Saliba|Saliba]] {{goal|72}}
+|stadium    = [[Zimbru Stadium]], [[Chișinău]]{{refn|group=note|name=Sheriff Tiraspol|Sheriff Tiraspol played their third qualifying round home match at the Zimbru Stadium in Chișinău, instead of their regular stadium, the [[Sheriff Arena]], in [[Tiraspol]], due to the Belgian government's travel advisory concerning [[Transnistria]].}}
+|attendance = 4,123<ref>{{UEFA match attendance|2045791|Sheriff Tiraspol vs. Anderlecht|date=14 August 2025|access-date=14 August 2025}}</ref>
+|referee    = [[Halil Umut Meler]] ([[Turkish Football Federation|Turkey]])
+|report     = Report<ref>{{cite web |url=https://www.uefa.com/uefaconferenceleague/match/2045791/ |title=Sheriff Tiraspol vs Anderlecht |website=UEFA.com |publisher=Union of European Football Associations |access-date=1 August 2025}}</ref>
+}}
+''Anderlecht won 4–1 on aggregate.''
+----
+{{#invoke:Football box|main
+|date       = {{Start date|2025|8|7|df=y}}
+|time       = 20:15
+|team1      = [[FC Lausanne-Sport|Lausanne-Sport]] {{fbaicon|SUI}}
+|score      = 3–1
+|team2      = {{fbaicon|KAZ}} [[FC Astana|Astana]]
+|goals1     =
+*[[Jamie Roche|Roche]] {{goal|24}}
+*[[Kaly Sène|Sène]] {{goal|43}}
+*[[Alban Ajdini|Ajdini]] {{goal|72}}
+|goals2     =
+*[[Ivan Bašić|Bašić]] {{goal|90}}
+|stadium    = [[Stade de la Tuilière]], [[Lausanne]]
+|attendance = 9,008<ref>{{UEFA match attendance|2045762|Lausanne-Sport vs. Astana|date=7 August 2025|access-date=7 August 2025}}</ref>
+|referee    = [[Łukasz Kuzma]] ([[Polish Football Association|Poland]])
+|report     = Report<ref>{{cite web |url=https://www.uefa.com/uefaconferenceleague/match/2045762/ |title=Lausanne-Sport vs Astana |website=UEFA.com |publisher=Union of European Football Associations |access-date=1 August 2025}}</ref>
+}}
+{{#invoke:Football box|main
+|date       = {{Start date|2025|8|14|df=y}}
+|time       = 16:00 {{small|(19:00 [[UTC+05:00|UTC+5]])}}
+|team1      = Astana {{fbaicon|KAZ}}
+|score      = 0–2
+|team2      = {{fbaicon|SUI}} Lausanne-Sport
+|goals1     =
+|goals2     =
+*[[Beyatt Lekweiry|Lekweiry]] {{goal|48}}
+*[[Gaoussou Diakité|Diakité]] {{goal|66}}
+|stadium    = [[Astana Arena]], [[Astana]]
+|attendance = 27,985<ref>{{UEFA match attendance|2045792|Astana vs. Lausanne-Sport|date=14 August 2025|access-date=14 August 2025}}</ref>
+|referee    = [[Martin Matoša]] ([[Football Association of Slovenia|Slovenia]])
+|report     = Report<ref>{{cite web |url=https://www.uefa.com/uefaconferenceleague/match/2045792/ |title=Astana vs Lausanne-Sport |website=UEFA.com |publisher=Union of European Football Associations |access-date=1 August 2025}}</ref>
+}}
+''Lausanne-Sport won 5–1 on aggregate.''
+----
+{{#invoke:Football box|main
+|date       = {{Start date|2025|8|7|df=y}}
+|time       = 21:00 {{small|(20:00 [[UTC+01:00|UTC+1]])}}
+|team1      = [[Larne F.C.|Larne]] {{fbaicon|NIR}}
+|score      = 0–3
+|team2      = {{fbaicon|POR}} [[C.D. Santa Clara|Santa Clara]]
+|goals1     =
+|goals2     =
+*[[Wendel Silva|Wendel]] {{goal|26}}
+*[[Gabriel Silva (footballer, born March 2002)|Silva]] {{goal|33||36}}
+|stadium    = [[Ballymena Showgrounds]], [[Ballymena]]{{refn|group=note|name=Larne|Larne played their home matches at Ballymena Showgrounds in Ballymena, as their own stadium, [[Inver Park]], failed a UEFA pitch inspection.<ref>{{cite web | url=https://www.bbc.co.uk/sport/articles/cr4n15d4wwqo | title=Inver Park: Larne's home ground unable to host European games in 2025–26 | date=25 April 2025 }}</ref>}}
+|attendance = 1,139<ref>{{UEFA match attendance|2045763|Larne vs. Santa Clara|date=7 August 2025|access-date=7 August 2025}}</ref>
+|referee    = [[Adam Ladebäck]] ([[Swedish Football Association|Sweden]])
+|report     = Report<ref>{{cite web |url=https://www.uefa.com/uefaconferenceleague/match/2045763/ |title=Larne vs Santa Clara |website=UEFA.com |publisher=Union of European Football Associations |access-date=1 August 2025}}</ref>
+}}
+{{#invoke:Football box|main
+|date       = {{Start date|2025|8|14|df=y}}
+|time       = 21:00 {{small|(19:00 [[UTC+00:00|UTC±0]])}}
+|team1      = Santa Clara {{fbaicon|POR}}
+|score      = 0–0
+|team2      = {{fbaicon|NIR}} Larne
+|goals1     =
+|goals2     =
+|stadium    = [[Estádio de São Miguel (Ponta Delgada)|Estádio de São Miguel]], [[Ponta Delgada]]
+|attendance = 4,008<ref>{{UEFA match attendance|2045793|Santa Clara vs. Larne|date=14 August 2025|access-date=14 August 2025}}</ref>
+|referee    = [[Jakob Alexander Sundberg]] ([[Danish Football Association|Denmark]])
+|report     = Report<ref>{{cite web |url=https://www.uefa.com/uefaconferenceleague/match/2045793/ |title=Santa Clara vs Larne |website=UEFA.com |publisher=Union of European Football Associations |access-date=1 August 2025}}</ref>
+}}
+''Santa Clara won 3–0 on aggregate.''
+----
+{{#invoke:Football box|main
+|date       = {{Start date|2025|8|7|df=y}}
+|time       = 18:00 {{small|(19:00 [[UTC+03:00|UTC+3]])}}
+|team1      = [[Aris Limassol FC|Aris Limassol]] {{fbaicon|CYP}}
+|score      = 2–2
+|team2      = {{fbaicon|GRE}} [[AEK Athens F.C.|AEK Athens]]
+|goals1     =
+*[[Andronikos Kakoullis|Kakoullis]] {{goal|18}}
+*[[Connor Goldson|Goldson]] {{goal|31}}
+|goals2     =
+*[[Roberto Pereyra|Pereyra]] {{goal|9}}
+*[[Filipe Relvas|Relvas]] {{goal|14}}
+|stadium    = [[Alphamega Stadium]], [[Limassol]]
+|attendance = 5,921<ref>{{UEFA match attendance|2045764|Aris Limassol vs. AEK Athens|date=7 August 2025|access-date=7 August 2025}}</ref>
+|referee    = [[Goga Kikacheishvili]] ([[Georgian Football Federation|Georgia]])
+|report     = Report<ref>{{cite web |url=https://www.uefa.com/uefaconferenceleague/match/2045764/ |title=Aris Limassol vs AEK Athens |website=UEFA.com |publisher=Union of European Football Associations |access-date=1 August 2025}}</ref>
+}}
+{{#invoke:Football box|main
+|date       = {{Start date|2025|8|14|df=y}}
+|time       = 20:00 {{small|(21:00 [[UTC+03:00|UTC+3]])}}
+|team1      = AEK Athens {{fbaicon|GRE}}
+|score      = 3–1
+|aet        = yes
+|team2      = {{fbaicon|CYP}} Aris Limassol
+|goals1     =
+*[[Răzvan Marin|Marin]] {{goal|51|pen.}}
+*[[Dereck Kutesa|Kutesa]] {{goal|104}}
+*[[Luka Jović|Jović]] {{goal|109}}
+|goals2     =
+*[[Giorgi Kvilitaia|Kvilitaia]] {{goal|62|pen.}}
+|stadium    = [[Agia Sophia Stadium]], [[Athens]]
+|attendance = 15,221<ref>{{UEFA match attendance|2045794|AEK Athens vs. Aris Limassol|date=14 August 2025|access-date=14 August 2025}}</ref>
+|referee    = [[Allard Lindhout]] ([[Royal Dutch Football Association|Netherlands]])
+|report     = Report<ref>{{cite web |url=https://www.uefa.com/uefaconferenceleague/match/2045794/ |title=AEK Athens vs Aris Limassol |website=UEFA.com |publisher=Union of European Football Associations |access-date=1 August 2025}}</ref>
+}}
+''AEK Athens won 5–3 on aggregate.''
+----
+{{#invoke:Football box|main
+|date       = {{Start date|2025|8|7|df=y}}
+|time       = 19:00
+|team1      = [[Viking FK|Viking]] {{fbaicon|NOR}}
+|score      = 1–3
+|team2      = {{fbaicon|TUR}} [[İstanbul Başakşehir F.K.|İstanbul Başakşehir]]
+|goals1     =
+*[[Sander Svendsen|Svendsen]] {{goal|2}}
+|goals2     =
+*[[Deniz Türüç|Türüç]] {{goal|60}}
+*[[Christopher Opéri|Opéri]] {{goal|79}}
+*[[Davie Selke|Selke]] {{goal|90+4}}
+|stadium    = [[Viking Stadion]], [[Stavanger]]
+|attendance = 11,652<ref>{{UEFA match attendance|2045765|Viking vs. İstanbul Başakşehir|date=7 August 2025|access-date=7 August 2025}}</ref>
+|referee    = [[Miguel Nogueira]] ([[Portuguese Football Federation|Portugal]])
+|report     = Report<ref>{{cite web |url=https://www.uefa.com/uefaconferenceleague/match/2045765/ |title=Viking vs İstanbul Başakşehir |website=UEFA.com |publisher=Union of European Football Associations |access-date=1 August 2025}}</ref>
+}}
+{{#invoke:Football box|main
+|date       = {{Start date|2025|8|13|df=y}}
+|time       = 18:00 {{small|(19:00 [[UTC+03:00|UTC+3]])}}
+|team1      = İstanbul Başakşehir {{fbaicon|TUR}}
+|score      = 1–1
+|team2      = {{fbaicon|NOR}} Viking
+|goals1     =
+*[[Davie Selke|Selke]] {{goal|40}}
+|goals2     =
+*[[Onur Bulut|Bulut]] {{goal|34|o.g.}}
+|stadium    = [[Başakşehir Fatih Terim Stadium]], [[Istanbul]]
+|attendance = 6,763<ref>{{UEFA match attendance|2045795|İstanbul Başakşehir vs. Viking|date=13 August 2025|access-date=13 August 2025}}</ref>
+|referee    = [[Miloš Milanović (referee)|Miloš Milanović]] ([[Football Association of Serbia|Serbia]])
+|report     = Report<ref>{{cite web |url=https://www.uefa.com/uefaconferenceleague/match/2045795/ |title=İstanbul Başakşehir vs Viking |website=UEFA.com |publisher=Union of European Football Associations |access-date=1 August 2025}}</ref>
+}}
+''İstanbul Başakşehir won 4–2 on aggregate.''
+----
+{{#invoke:Football box|main
+|date       = {{Start date|2025|8|7|df=y}}
+|time       = 18:00 {{small|(20:00 [[UTC+04:00|UTC+4]])}}
+|team1      = [[Araz-Naxçıvan PFK|Araz-Naxçıvan]] {{fbaicon|AZE}}
+|score      = 0–4
+|team2      = {{fbaicon|CYP}} [[AC Omonia|Omonia]]
+|goals1     =
+|goals2     =
+*[[Loizos Loizou|Loizou]] {{goal|13||22}}
+*[[Ewandro]] {{goal|55}}
+*[[Stevan Jovetić|Jovetić]] {{goal|58}}
+|stadium    = [[Dalga Arena]], [[Baku]]{{refn|group=note|name=Araz|Araz-Naxçıvan played their home match at the Dalga Arena in Baku, instead of their regular stadium, the [[Nakhchivan City Stadium]], in [[Nakhchivan (city)|Nakhchivan]], which did not meet UEFA requirements.}}
+|attendance = 4,200<ref>{{UEFA match attendance|2045766|Araz-Naxçıvan vs. Omonia|date=7 August 2025|access-date=7 August 2025}}</ref>
+|referee    = [[Ondřej Berka]] ([[Football Association of the Czech Republic|Czech Republic]])
+|report     = Report<ref>{{cite web |url=https://www.uefa.com/uefaconferenceleague/match/2045766/ |title=Araz-Naxçıvan vs Omonia |website=UEFA.com |publisher=Union of European Football Associations |access-date=1 August 2025}}</ref>
+}}
+{{#invoke:Football box|main
+|date       = {{Start date|2025|8|14|df=y}}
+|time       = 19:00 {{small|(20:00 [[UTC+03:00|UTC+3]])}}
+|team1      = Omonia {{fbaicon|CYP}}
+|score      = 5–0
+|team2      = {{fbaicon|AZE}} Araz-Naxçıvan
+|goals1     =
+*[[Willy Semedo|Semedo]] {{goal|9}}
+*[[Stevan Jovetić|Jovetić]] {{goal|23}}
+*[[Ewandro]] {{goal|30||45+4}}
+*[[Mateusz Musiałowski|Musiałowski]] {{goal|79}}
+|goals2     =
+|stadium    = [[GSP Stadium]], [[Nicosia]]
+|attendance = 6,523<ref>{{UEFA match attendance|2045796|Omonia vs. Araz-Naxçıvan|date=14 August 2025|access-date=14 August 2025}}</ref>
+|referee    = [[Jakob Kehlet]] ([[Danish Football Association|Denmark]])
+|report     = Report<ref>{{cite web |url=https://www.uefa.com/uefaconferenceleague/match/2045796/ |title=Omonia vs Araz-Naxçıvan |website=UEFA.com |publisher=Union of European Football Associations |access-date=1 August 2025}}</ref>
+}}
+''Omonia won 9–0 on aggregate.''
+----
+{{#invoke:Football box|main
+|date       = {{Start date|2025|8|7|df=y}}
+|time       = 20:30
+|team1      = [[FC Ballkani|Ballkani]] {{fbaicon|KOS}}
+|score      = 1–0
+|team2      = {{fbaicon|IRL}} [[Shamrock Rovers F.C.|Shamrock Rovers]]
+|goals1     =
+*[[Sunday Adetunji|Adetunji]] {{goal|56}}
+|goals2     =
+|stadium    = [[Fadil Vokrri Stadium]], [[Pristina]]{{refn|group=note|name=Ballkani|Ballkani played their home match at the Fadil Vokrri Stadium in Pristina, instead of their regular stadium, the [[Suva Reka City Stadium]], in [[Suva Reka]], which did not meet UEFA requirements.}}
+|attendance = 2,236<ref>{{UEFA match attendance|2045767|Ballkani vs. Shamrock Rovers|date=7 August 2025|access-date=7 August 2025}}</ref>
+|referee    = [[Dmytro Panchyshyn]] ([[Ukrainian Association of Football|Ukraine]])
+|report     = Report<ref>{{cite web |url=https://www.uefa.com/uefaconferenceleague/match/2045767/ |title=Ballkani vs Shamrock Rovers |website=UEFA.com |publisher=Union of European Football Associations |access-date=1 August 2025}}</ref>
+}}
+{{#invoke:Football box|main
+|date       = {{Start date|2025|8|14|df=y}}
+|time       = 21:00 {{small|(20:00 [[UTC+01:00|UTC+1]])}}
+|team1      = Shamrock Rovers {{fbaicon|IRL}}
+|score      = 4–0
+|team2      = {{fbaicon|KOS}} Ballkani
+|goals1     =
+*[[Rory Gaffney|Gaffney]] {{goal|45+1||48}}
+*[[Josh Honohan|J. Honohan]] {{goal|55}}
+*[[Graham Burke|Burke]] {{goal|67}}
+|goals2     =
+|stadium    = [[Tallaght Stadium]], [[Dublin]]
+|attendance = 6,419<ref>{{UEFA match attendance|2045797|Shamrock Rovers vs. Ballkani|date=14 August 2025|access-date=14 August 2025}}</ref>
+|referee    = [[Mohammad Al-Emara]] ([[Football Association of Finland|Finland]])
+|report     = Report<ref>{{cite web |url=https://www.uefa.com/uefaconferenceleague/match/2045797/ |title=Shamrock Rovers vs Ballkani  |website=UEFA.com |publisher=Union of European Football Associations |access-date=1 August 2025}}</ref>
+}}
+''Shamrock Rovers won 4–1 on aggregate.''
+----
+{{#invoke:Football box|main
+|date       = {{Start date|2025|8|7|df=y}}
+|time       = 21:00
+|team1      = [[Raków Częstochowa]] {{fbaicon|POL}}
+|score      = 0–1
+|team2      = {{fbaicon|ISR}} [[Maccabi Haifa F.C.|Maccabi Haifa]]
+|goals1     =
+|goals2     =
+*[[Ethan Azoulay|Azoulay]] {{goal|61}}
+|stadium    = [[Miejski Stadion Piłkarski Raków]], [[Częstochowa]]
+|attendance = 5,302<ref>{{UEFA match attendance|2045768|Raków Częstochowa vs. Maccabi Haifa|date=7 August 2025|access-date=7 August 2025}}</ref>
+|referee    = [[Rob Harvey (referee)|Rob Harvey]] ([[Football Association of Ireland|Republic of Ireland]])
+|report     = Report<ref>{{cite web |url=https://www.uefa.com/uefaconferenceleague/match/2045768/ |title=Raków Częstochowa vs Maccabi Haifa |website=UEFA.com |publisher=Union of European Football Associations |access-date=1 August 2025}}</ref>
+}}
+{{#invoke:Football box|main
+|date       = {{Start date|2025|8|14|df=y}}
+|time       = 20:00
+|team1      = Maccabi Haifa {{fbaicon|ISR}}
+|score      = 0–2
+|team2      = {{fbaicon|POL}} Raków Częstochowa
+|goals1     =
+|goals2     =
+*[[Péter Baráth|Baráth]] {{goal|45+1}}
+*[[Lamine Diaby-Fadiga|Diaby-Fadiga]] {{goal|76|pen.}}
+|stadium    = [[Nagyerdei Stadion]], [[Debrecen]], Hungary{{refn|group=note|name=Israel}}
+|attendance = 665<ref>{{UEFA match attendance|2045798|Maccabi Haifa vs. Raków Częstochowa|date=14 August 2025|access-date=14 August 2025}}</ref>
+|referee    = [[Jérôme Brisard]] ([[French Football Federation|France]])
+|report     = Report<ref>{{cite web |url=https://www.uefa.com/uefaconferenceleague/match/2045798/ |title=Maccabi Haifa vs Raków Częstochowa |website=UEFA.com |publisher=Union of European Football Associations |access-date=1 August 2025}}</ref>
+}}
+''Raków Częstochowa won 2–1 on aggregate.''
+----
+{{#invoke:Football box|main
+|date       = {{Start date|2025|8|7|df=y}}
+|time       = 19:00
+|team1      = [[AIK Fotboll|AIK]] {{fbaicon|SWE}}
+|score      = 2–1
+|team2      = {{fbaicon|HUN}} [[Győri ETO FC|Győri ETO]]
+|goals1     =
+*[[Dino Beširović|Beširović]] {{goal|7}}
+*[[Bersant Celina|Celina]] {{goal|21}}
+|goals2     =
+*[[Milán Vitális|Vitális]] {{goal|79}}
+|stadium    = [[Nationalarenan|Strawberry Arena]], [[Stockholm]]
+|attendance = 17,842<ref>{{UEFA match attendance|2045769|AIK vs. Győri ETO|date=7 August 2025|access-date=7 August 2025}}</ref>
+|referee    = [[Daniel Schlager]] ([[German Football Association|Germany]])
+|report     = Report<ref>{{cite web |url=https://www.uefa.com/uefaconferenceleague/match/2045769/ |title=AIK vs Győri ETO |website=UEFA.com |publisher=Union of European Football Associations |access-date=1 August 2025}}</ref>
+}}
+{{#invoke:Football box|main
+|date       = {{Start date|2025|8|14|df=y}}
+|time       = 19:00
+|team1      = Győri ETO {{fbaicon|HUN}}
+|score      = 2–0
+|team2      = {{fbaicon|SWE}} AIK
+|goals1     =
+*[[Željko Gavrić|Gavrić]] {{goal|34}}
+*[[Áron Csongvai|Csongvai]] {{goal|60|o.g.}}
+|goals2     =
+|stadium    = [[ETO Park]], [[Győr]]
+|attendance = 6,991<ref>{{UEFA match attendance|2045799|Győri ETO vs. AIK|date=14 August 2025|access-date=14 August 2025}}</ref>
+|referee    = [[Lawrence Visser]] ([[Royal Belgian Football Association|Belgium]])
+|report     = Report<ref>{{cite web |url=https://www.uefa.com/uefaconferenceleague/match/2045799/ |title=Győri ETO vs AIK |website=UEFA.com |publisher=Union of European Football Associations |access-date=1 August 2025}}</ref>
+}}
+''Győri ETO won 3–2 on aggregate.''
+----
+{{#invoke:Football box|main
+|date       = {{Start date|2025|8|7|df=y}}
+|time       = 20:30 {{small|(21:30 [[UTC+03:00|UTC+3]])}}
+|team1      = [[CS Universitatea Craiova|Universitatea Craiova]] {{fbaicon|ROU}}
+|score      = 3–0
+|team2      = {{fbaicon|SVK}} [[FC Spartak Trnava|Spartak Trnava]]
+|goals1     =
+*[[Ștefan Baiaram|Baiaram]] {{goal|51}}
+*[[Assad Al Hamlawi|Al Hamlawi]] {{goal|54}}
+*[[Carlos Mora (footballer)|Mora]] {{goal|81}}
+|goals2     =
+|stadium    = [[Ion Oblemenco Stadium]], [[Craiova]]
+|attendance = 22,664<ref>{{UEFA match attendance|2045770|Universitatea Craiova vs. Spartak Trnava|date=7 August 2025|access-date=7 August 2025}}</ref>
+|referee    = [[Joonas Jaanovits]] ([[Estonian Football Association|Estonia]])
+|report     = Report<ref>{{cite web |url=https://www.uefa.com/uefaconferenceleague/match/2045770/ |title=Universitatea Craiova vs Spartak Trnava |website=UEFA.com |publisher=Union of European Football Associations |access-date=1 August 2025}}</ref>
+}}
+{{#invoke:Football box|main
+|date       = {{Start date|2025|8|14|df=y}}
+|time       = 20:30
+|team1      = Spartak Trnava {{fbaicon|SVK}}
+|score      = 4–3
+|aet        = yes
+|team2      = {{fbaicon|ROU}} Universitatea Craiova
+|goals1     =
+*[[Miloš Kratochvíl|Kratochvíl]] {{goal|36}}
+*[[Patrick Nwadike|Nwadike]] {{goal|63}}
+*[[Philip Azango|Azango]] {{goal|68}}
+*[[Timotej Kudlička|Kudlička]] {{goal|80}}
+|goals2     =
+*[[Ștefan Baiaram|Baiaram]] {{goal|32}}
+*[[Tudor Băluță|Băluță]] {{goal|101}}
+*[[Steven Nsimba|Nsimba]] {{goal|117}}
+|stadium    = [[Anton Malatinský Stadium]], [[Trnava]]
+|attendance = 9,337<ref>{{UEFA match attendance|2045800|Spartak Trnava vs. Universitatea Craiova|date=14 August 2025|access-date=14 August 2025}}</ref>
+|referee    = [[Stuart Attwell]] ([[The Football Association|England]])
+|report     = Report<ref>{{cite web |url=https://www.uefa.com/uefaconferenceleague/match/2045800/ |title=Spartak Trnava vs Universitatea Craiova |website=UEFA.com |publisher=Union of European Football Associations |access-date=1 August 2025}}</ref>
+}}
+''Universitatea Craiova won 6–4 on aggregate.''
+----
+{{#invoke:Football box|main
+|date       = {{Start date|2025|8|7|df=y}}
+|time       = 20:00
+|team1      = [[FC Polissya Zhytomyr|Polissya Zhytomyr]] {{fbaicon|UKR}}
+|score      = 3–0
+|team2      = {{fbaicon|HUN}} [[Paksi FC|Paks]]
+|goals1     =
+*[[Oleksandr Andriyevskyi|Andriyevskyi]] {{goal|41}}
+*[[Danylo Beskorovaynyi|Beskorovaynyi]] {{goal|45+1}}
+*[[Bohdan Lyednyev|Lyednyev]] {{goal|59}}
+|goals2     =
+|stadium    = [[Futbal Tatran Arena]], [[Prešov]], Slovakia{{refn|group=note|name=Ukraine|Due to the [[2022 Russian invasion of Ukraine|Russian invasion of Ukraine]], Ukrainian teams were required to play their home matches at neutral venues until further notice.<ref>{{cite news |url=https://www.uefa.com/news-media/news/0272-148740475a92-1b97baa3e9d7-1000/ |title=Decisions from today's extraordinary UEFA Executive Committee meeting |work=[[UEFA]] |publisher=Union of European Football Associations |date=25 February 2022 |access-date=25 February 2022}}</ref>}}
+|attendance = 1,203<ref>{{UEFA match attendance|2045771|Polissya Zhytomyr vs. Paks|date=7 August 2025|access-date=7 August 2025}}</ref>
+|referee    = [[Joakim Östling]] ([[Swedish Football Association|Sweden]])
+|report     = Report<ref>{{cite web |url=https://www.uefa.com/uefaconferenceleague/match/2045771/ |title=Polissya Zhytomyr vs Paks |website=UEFA.com |publisher=Union of European Football Associations |access-date=1 August 2025}}</ref>
+}}
+{{#invoke:Football box|main
+|date       = {{Start date|2025|8|14|df=y}}
+|time       = 19:00
+|team1      = Paks {{fbaicon|HUN}}
+|score      = 2–1
+|team2      = {{fbaicon|UKR}} Polissya Zhytomyr
+|goals1     =
+*[[János Szabó (footballer, born 1989)|Szabó]] {{goal|39}}
+*[[Barna Tóth|Tóth]] {{goal|49}}
+|goals2     =
+*[[Talles Costa|Talles]] {{goal|90+6}}
+|stadium    = [[Fehérvári úti Stadion]], [[Paks]]
+|attendance = 1,812<ref>{{UEFA match attendance|2045801|Paks vs. Polissya Zhytomyr|date=14 August 2025|access-date=14 August 2025}}</ref>
+|referee    = [[Daniel Schlager]] ([[German Football Association|Germany]])
+|report     = Report<ref>{{cite web |url=https://www.uefa.com/uefaconferenceleague/match/2045801/ |title=Paks vs Polissya Zhytomyr |website=UEFA.com |publisher=Union of European Football Associations |access-date=1 August 2025}}</ref>
+}}
+''Polissya Zhytomyr won 4–2 on aggregate.''
+----
+{{#invoke:Football box|main
+|date       = {{Start date|2025|8|7|df=y}}
+|time       = 20:00 {{small|(21:00 [[UTC+03:00|UTC+3]])}}
+|team1      = [[PFC Levski Sofia|Levski Sofia]] {{fbaicon|BUL}}
+|score      = 1–0
+|team2      = {{fbaicon|AZE}} [[Sabah FC (Azerbaijan)|Sabah]]
+|goals1     =
+*[[Borislav Rupanov|Rupanov]] {{goal|90+8}}
+|goals2     =
+|stadium    = [[Stadion Georgi Asparuhov]], [[Sofia]]
+|attendance = 16,163<ref>{{UEFA match attendance|2045772|Levski Sofia vs. Sabah|date=7 August 2025|access-date=7 August 2025}}</ref>
+|referee    = [[Duje Strukan]] ([[Croatian Football Federation|Croatia]])
+|report     = Report<ref>{{cite web |url=https://www.uefa.com/uefaconferenceleague/match/2045772/ |title=Levski Sofia vs Sabah |website=UEFA.com |publisher=Union of European Football Associations |access-date=1 August 2025}}</ref>
+}}
+{{#invoke:Football box|main
+|date       = {{Start date|2025|8|14|df=y}}
+|time       = 18:00 {{small|(20:00 [[UTC+04:00|UTC+4]])}}
+|team1      = Sabah {{fbaicon|AZE}}
+|score      = 0–2
+|team2      = {{fbaicon|BUL}} Levski Sofia
+|goals1     =
+|goals2     =
+*[[Radoslav Kirilov|Kirilov]] {{goal|40}}
+*[[Mazire Soula|Soula]] {{goal|87}}
+|stadium    = [[Bank Respublika Arena]], [[Masazir]]
+|attendance = 6,606<ref>{{UEFA match attendance|2045802|Sabah vs. Levski Sofia|date=14 August 2025|access-date=14 August 2025}}</ref>
+|referee    = [[Mykola Balakin]] ([[Ukrainian Association of Football|Ukraine]])
+|report     = Report<ref>{{cite web |url=https://www.uefa.com/uefaconferenceleague/match/2045802/ |title=Sabah vs Levski Sofia |website=UEFA.com |publisher=Union of European Football Associations |access-date=1 August 2025}}</ref>
+}}
+''Levski Sofia won 3–0 on aggregate.''
+----
+{{#invoke:Football box|main
+|date       = {{Start date|2025|8|7|df=y}}
+|time       = 19:00
+|team1      = [[Silkeborg IF|Silkeborg]] {{fbaicon|DEN}}
+|score      = 0–1
+|team2      = {{fbaicon|POL}} [[Jagiellonia Białystok]]
+|goals1     =
+|goals2     =
+*[[Bernardo Vital|Vital]] {{goal|15}}
+|stadium    = [[JYSK Park]], [[Silkeborg]]
+|attendance = 4,289<ref>{{UEFA match attendance|2045773|Silkeborg vs. Jagiellonia Białystok|date=7 August 2025|access-date=7 August 2025}}</ref>
+|referee    = [[Jamie Robinson (referee)|Jamie Robinson]] ([[Irish Football Association|Northern Ireland]])
+|report     = Report<ref>{{cite web |url=https://www.uefa.com/uefaconferenceleague/match/2045773/ |title=Silkeborg vs Jagiellonia Białystok |website=UEFA.com |publisher=Union of European Football Associations |access-date=1 August 2025}}</ref>
+}}
+{{#invoke:Football box|main
+|date       = {{Start date|2025|8|14|df=y}}
+|time       = 20:15
+|team1      = Jagiellonia Białystok {{fbaicon|POL}}
+|score      = 2–2
+|team2      = {{fbaicon|DEN}} Silkeborg
+|goals1     =
+*[[Jesús Imaz|Imaz]] {{goal|29||35}}
+|goals2     =
+*[[Sofus Berger|Berger]] {{goal|87}}
+*[[Jens Martin Gammelby|Gammelby]] {{goal|90+5}}
+|stadium    = [[Stadion Miejski (Białystok)|Stadion Miejski]], [[Białystok]]
+|attendance = 17,369<ref>{{UEFA match attendance|2045803|Jagiellonia Białystok vs. Silkeborg|date=14 August 2025|access-date=14 August 2025}}</ref>
+|referee    = [[Eric Wattellier]] ([[French Football Federation|France]])
+|report     = Report<ref>{{cite web |url=https://www.uefa.com/uefaconferenceleague/match/2045803/ |title=Jagiellonia Białystok vs Silkeborg |website=UEFA.com |publisher=Union of European Football Associations |access-date=1 August 2025}}</ref>
+}}
+''Jagiellonia Białystok won 3–2 on aggregate.''
+----
+{{#invoke:Football box|main
+|date       = {{Start date|2025|8|7|df=y}}
+|time       = 21:00
+|team1      = [[FK Partizan|Partizan]] {{fbaicon|SRB}}
+|score      = 0–2
+|team2      = {{fbaicon|SCO}} [[Hibernian F.C.|Hibernian]]
+|goals1     =
+|goals2     =
+*[[Martin Boyle|Boyle]] {{goal|40||70|pen.}}
+|stadium    = [[Partizan Stadium]], [[Belgrade]]
+|attendance = 26,342<ref>{{UEFA match attendance|2045774|Partizan vs. Hibernian|date=7 August 2025|access-date=7 August 2025}}</ref>
+|referee    = [[Philip Farrugia]] ([[Malta Football Association|Malta]])
+|report     = Report<ref>{{cite web |url=https://www.uefa.com/uefaconferenceleague/match/2045774/ |title=Partizan vs Hibernian |website=UEFA.com |publisher=Union of European Football Associations |access-date=1 August 2025}}</ref>
+}}
+{{#invoke:Football box|main
+|date       = {{Start date|2025|8|14|df=y}}
+|time       = 21:00 {{small|(20:00 [[UTC+01:00|UTC+1]])}}
+|team1      = Hibernian {{fbaicon|SCO}}
+|score      = 2–3
+|aet        = yes
+|team2      = {{fbaicon|SRB}} Partizan
+|goals1     =
+*[[Kieron Bowie|Bowie]] {{goal|60}}
+*[[Chris Cadden|C. Cadden]] {{goal|100}}
+|goals2     =
+*[[Milan Vukotić|Vukotić]] {{goal|17}}
+*[[Jovan Milošević|J. Milošević]] {{goal|44}}
+*[[Andrej Kostić|A. Kostić]] {{goal|90+6}}
+|stadium    = [[Easter Road]], [[Edinburgh]]
+|attendance = 19,377<ref>{{UEFA match attendance|2045804|Hibernian vs. Partizan|date=14 August 2025|access-date=14 August 2025}}</ref>
+|referee    = [[Radoslav Gidzhenov]] ([[Bulgarian Football Union|Bulgaria]])
+|report     = Report<ref>{{cite web |url=https://www.uefa.com/uefaconferenceleague/match/2045804/ |title=Hibernian vs Partizan |website=UEFA.com |publisher=Union of European Football Associations |access-date=1 August 2025}}</ref>
+}}
+''Hibernian won 4–3 on aggregate.''
+----
+{{#invoke:Football box|main
+|date       = {{Start date|2025|8|7|df=y}}
+|time       = 18:30
+|team1      = [[FC Baník Ostrava|Baník Ostrava]] {{fbaicon|CZE}}
+|score      = 4–3
+|team2      = {{fbaicon|AUT}} [[FK Austria Wien|Austria Wien]]
+|goals1     =
+*[[Michal Kohút|Kohút]] {{goal|36}}
+*[[David Buchta|Buchta]] {{goal|45}}
+*[[Daniel Holzer|Holzer]] {{goal|49}}
+*[[Erik Prekop|Prekop]] {{goal|82}}
+|goals2     =
+*[[Maurice Malone|Malone]] {{goal|4}}
+*[[Dominik Fitz|Fitz]] {{goal|67}}
+*[[Manprit Sarkaria|Sarkaria]] {{goal|79}}
+|stadium    = [[Městský stadion (Ostrava)|Městský stadion]], [[Ostrava]]
+|attendance = 12,567<ref>{{UEFA match attendance|2045775|Baník Ostrava vs. Austria Wien|date=7 August 2025|access-date=7 August 2025}}</ref>
+|referee    = [[Mohammed Al-Hakim]] ([[Swedish Football Association|Sweden]])
+|report     = Report<ref>{{cite web |url=https://www.uefa.com/uefaconferenceleague/match/2045775/ |title=Baník Ostrava vs Austria Wien |website=UEFA.com |publisher=Union of European Football Associations |access-date=1 August 2025}}</ref>
+}}
+{{#invoke:Football box|main
+|date       = {{Start date|2025|8|14|df=y}}
+|time       = 21:00
+|team1      = Austria Wien {{fbaicon|AUT}}
+|score      = 1–1
+|team2      = {{fbaicon|CZE}} Baník Ostrava
+|goals1     =
+*[[Philipp Wiesinger|Wiesinger]] {{goal|67}}
+|goals2     =
+*[[Erik Prekop|Prekop]] {{goal|45+1|pen.}}
+|stadium    = [[Franz Horr Stadium]], [[Vienna]]
+|attendance = 10,022<ref>{{UEFA match attendance|2045805|Austria Wien vs. Baník Ostrava|date=14 August 2025|access-date=14 August 2025}}</ref>
+|referee    = [[Juxhin Xhaja]] ([[Albanian Football Federation|Albania]])
+|report     = Report<ref>{{cite web |url=https://www.uefa.com/uefaconferenceleague/match/2045805/ |title=Austria Wien vs Baník Ostrava |website=UEFA.com |publisher=Union of European Football Associations |access-date=1 August 2025}}</ref>
+}}
+''Baník Ostrava won 5–4 on aggregate.''
+----
+{{#invoke:Football box|main
+|date       = {{Start date|2025|8|7|df=y}}
+|time       = 18:00
+|team1      = [[Rosenborg BK|Rosenborg]] {{fbaicon|NOR}}
+|score      = 0–0
+|team2      = {{fbaicon|SWE}} [[Hammarby Fotboll|Hammarby IF]]
+|goals1     =
+|goals2     =
+|stadium    = [[Lerkendal Stadion]], [[Trondheim]]
+|attendance = 16,077<ref>{{UEFA match attendance|2045776|Rosenborg vs. Hammarby IF|date=7 August 2025|access-date=7 August 2025}}</ref>
+|referee    = [[Zorbay Küçük]] ([[Turkish Football Federation|Turkey]])
+|report     = Report<ref>{{cite web |url=https://www.uefa.com/uefaconferenceleague/match/2045776/ |title=Rosenborg vs Hammarby IF |website=UEFA.com |publisher=Union of European Football Associations |access-date=1 August 2025}}</ref>
+}}
+{{#invoke:Football box|main
+|date       = {{Start date|2025|8|14|df=y}}
+|time       = 19:00
+|team1      = Hammarby IF {{fbaicon|SWE}}
+|score      = 0–1
+|team2      = {{fbaicon|NOR}} Rosenborg
+|goals1     =
+|goals2     =
+*[[Dino Islamović|Islamović]] {{goal|59}}
+|stadium    = [[3Arena (Stockholm)|3Arena]], [[Stockholm]]
+|attendance = 25,915<ref>{{UEFA match attendance|2045806|Hammarby IF vs. Rosenborg|date=14 August 2025|access-date=14 August 2025}}</ref>
+|referee    = [[Vassilis Fotias]] ([[Hellenic Football Federation|Greece]])
+|report     = Report<ref>{{cite web |url=https://www.uefa.com/uefaconferenceleague/match/2045806/ |title=Hammarby IF vs Rosenborg |website=UEFA.com |publisher=Union of European Football Associations |access-date=1 August 2025}}</ref>
+}}
+''Rosenborg won 1–0 on aggregate.''
+----
+{{#invoke:Football box|main
+|date       = {{Start date|2025|8|7|df=y}}
+|time       = 20:45 {{small|(19:45 [[UTC+01:00|UTC+1]])}}
+|team1      = [[St Patrick's Athletic F.C.|St Patrick's Athletic]] {{fbaicon|IRL}}
+|score      = 1–4
+|team2      = {{fbaicon|TUR}} [[Beşiktaş J.K.|Beşiktaş]]
+|goals1     =
+*[[Simon Power (footballer)|Power]] {{goal|49}}
+|goals2     =
+*[[João Mário (footballer, born January 1993)|João Mário]] {{goal|8}}
+*[[Tammy Abraham|Abraham]] {{goal|14||23||43|pen.}}
+|stadium    = [[Tallaght Stadium]], [[Dublin]]{{refn|group=note|name=StPatrick's|St Patrick's Athletic played their third round home match at Tallaght Stadium, instead of their regular stadium, [[Richmond Park (football ground)|Richmond Park]], which did not meet UEFA requirements.}}
+|attendance = 7,821<ref>{{UEFA match attendance|2045777|St Patrick's Athletic vs. Beşiktaş|date=7 August 2025|access-date=7 August 2025}}</ref>
+|referee    = [[David Šmajc]] ([[Football Association of Slovenia|Slovenia]])
+|report     = Report<ref>{{cite web |url=https://www.uefa.com/uefaconferenceleague/match/2045777/ |title=St Patrick's Athletic vs Beşiktaş |website=UEFA.com |publisher=Union of European Football Associations |access-date=1 August 2025}}</ref>
+}}
+{{#invoke:Football box|main
+|date       = {{Start date|2025|8|14|df=y}}
+|time       = 20:00 {{small|(21:00 [[UTC+03:00|UTC+3]])}}
+|team1      = Beşiktaş {{fbaicon|TUR}}
+|score      = 3–2
+|team2      = {{fbaicon|IRL}} St Patrick's Athletic
+|goals1     =
+*[[Demir Ege Tıknaz|Tıknaz]] {{goal|43}}
+*[[Tammy Abraham|Abraham]] {{goal|49}}
+*[[João Mário (footballer, born January 1993)|João Mário]] {{goal|79}}
+|goals2     =
+*[[Conor Carty|Carty]] {{goal|3|pen.}}
+*[[Ryan McLaughlin|McLaughlin]] {{goal|34}}
+|stadium    = [[Beşiktaş Stadium]], [[Istanbul]]
+|attendance = 20,456<ref>{{UEFA match attendance|2045807|Beşiktaş vs. St Patrick's Athletic|date=14 August 2025|access-date=14 August 2025}}</ref>
+|referee    = [[António Nobre (referee)|António Nobre]] ([[Portuguese Football Federation|Portugal]])
+|report     = Report<ref>{{cite web |url=https://www.uefa.com/uefaconferenceleague/match/2045807/ |title=Beşiktaş vs St Patrick's Athletic |website=UEFA.com |publisher=Union of European Football Associations |access-date=1 August 2025}}</ref>
+}}
+''Beşiktaş won 7–3 on aggregate.''
+----
+{{#invoke:Football box|main
+|date       = {{Start date|2025|8|7|df=y}}
+|time       = 18:00 {{small|(19:00 [[UTC+03:00|UTC+3]])}}
+|team1      = [[FK Kauno Žalgiris|Kauno Žalgiris]] {{fbaicon|LTU}}
+|score      = 0–1
+|team2      = {{fbaicon|BUL}} [[FC Arda Kardzhali|Arda]]
+|goals1     =
+|goals2     =
+*[[Antonio Vutov|Vutov]] {{goal|53}}
+|stadium    = [[Darius and Girėnas Stadium]], [[Kaunas]]
+|attendance = 7,562<ref>{{UEFA match attendance|2045778|Kauno Žalgiris vs. Arda|date=7 August 2025|access-date=7 August 2025}}</ref>
+|referee    = [[Jérémy Muller]] ([[Luxembourg Football Federation|Luxembourg]])
+|report     = Report<ref>{{cite web |url=https://www.uefa.com/uefaconferenceleague/match/2045778/ |title=Kauno Žalgiris vs Arda |website=UEFA.com |publisher=Union of European Football Associations |access-date=1 August 2025}}</ref>
+}}
+{{#invoke:Football box|main
+|date       = {{Start date|2025|8|14|df=y}}
+|time       = 19:30 {{small|(20:30 [[UTC+03:00|UTC+3]])}}
+|team1      = Arda {{fbaicon|BUL}}
+|score      = 2–0
+|team2      = {{fbaicon|LTU}} Kauno Žalgiris
+|goals1     =
+*[[Dimitar Velkovski|Velkovski]] {{goal|8}}
+*[[Svetoslav Kovachev|Kovachev]] {{goal|12}}
+|goals2     =
+|stadium    = [[Arena Arda]], [[Kardzhali]]
+|attendance = 4,840<ref>{{UEFA match attendance|2045808|Arda vs. Kauno Žalgiris|date=14 August 2025|access-date=14 August 2025}}</ref>
+|referee    = [[Ante Čulina]] ([[Croatian Football Federation|Croatia]])
+|report     = Report<ref>{{cite web |url=https://www.uefa.com/uefaconferenceleague/match/2045808/ |title=Arda vs Kauno Žalgiris |website=UEFA.com |publisher=Union of European Football Associations |access-date=1 August 2025}}</ref>
+}}
+''Arda won 3–0 on aggregate.''
+
+==Play-off round==
+
+===Summary===
+<section begin=PO />
+The first legs were played on 21 August, and the second legs were played on 27 and 28 August 2025.
+
+{{#invoke:Sports series|main|generate_links=y|caption=Play-off round|heading1=Champions Path|heading6=Main Path
+|[[Hamrun Spartans F.C.|Hamrun Spartans]]|MLT|3—2|[[FK RFS|RFS]]|LAT|1—0|2—2
+|[[Shelbourne F.C.|Shelbourne]]|IRL|5–1|[[Linfield F.C.|Linfield]]|NIR|3—1|2–0
+|[[Breiðablik (men's football)|Breiðablik]]|ISL|5–2|[[AC Virtus|Virtus]]|SMR|2—1|3–1
+|[[FC Drita|Drita]]|KOS|3—1|[[FC Differdange 03|Differdange 03]]|LUX|2—1|1—0
+|[[NK Olimpija Ljubljana|Olimpija Ljubljana]]|SLO|3–7|[[FC Noah|Noah]]|ARM|1—4|2–3
+|[[RC Strasbourg Alsace|Strasbourg]]|FRA|3—2|[[Brøndby IF|Brøndby]]|DEN|0—0|3—2
+|[[Jagiellonia Białystok]]|POL|4–1|[[FC Dinamo City|Dinamo City]]|ALB|3—0|1–1
+|[[FC Shakhtar Donetsk|Shakhtar Donetsk]]|UKR|3–2|[[Servette FC|Servette]]|SUI|1—1|2–1 (aet)
+|[[R.S.C. Anderlecht|Anderlecht]]|BEL|1—3|[[AEK Athens F.C.|AEK Athens]]|GRE|1—1|0—2
+|[[İstanbul Başakşehir F.K.|İstanbul Başakşehir]]|TUR|2–5|[[CS Universitatea Craiova|Universitatea Craiova]]|ROU|1—2|1–3
+|[[Crystal Palace F.C.|Crystal Palace]]|ENG|1–0|[[Fredrikstad FK|Fredrikstad]]|NOR|1—0|0–0
+|[[NK Celje|Celje]]|SVN|3—0|[[FC Baník Ostrava|Baník Ostrava]]|CZE|1—0|2—0
+|[[Raków Częstochowa]]|POL|3—1|[[FC Arda Kardzhali|Arda]]|BUL|1—0|2—1
+|[[Hibernian F.C.|Hibernian]]|SCO|4–5|[[Legia Warsaw]]|POL|1—2|3–3 (aet)
+|[[PFC Levski Sofia|Levski Sofia]]|BUL|1–6|[[AZ Alkmaar|AZ]]|NED|0—2|1–4
+|[[FC Polissya Zhytomyr|Polissya Zhytomyr]]|UKR|2–6|[[ACF Fiorentina|Fiorentina]]|ITA|0—3|2–3
+|[[Győri ETO FC|Győri ETO]]|HUN|2–3|[[SK Rapid Wien|Rapid Wien]]|AUT|2–1|0–2
+|[[FC Neman Grodno|Neman Grodno]]|BLR|0—5|[[Rayo Vallecano]]|ESP|0—1|0—4
+|[[FC Lausanne-Sport|Lausanne-Sport]]|SUI|2–1|[[Beşiktaş J.K.|Beşiktaş]]|TUR|1—1|1–0
+|[[C.D. Santa Clara|Santa Clara]]|POR|1–2|[[Shamrock Rovers F.C.|Shamrock Rovers]]|IRL|1—2|0–0
+|[[Rosenborg BK|Rosenborg]]|NOR|3–5|[[1. FSV Mainz 05|Mainz 05]]|GER|2–1|1–4
+|[[AC Sparta Prague|Sparta Prague]]|CZE|2–1|[[Riga FC|Riga]]|LVA|2—0|0–1
+|[[BK Häcken]]|SWE|7–3|[[CFR Cluj]]|ROU|7–2|0–1
+|[[Wolfsberger AC]]|AUT|2–2 (4–5 p)|[[AC Omonia|Omonia]]|CYP|2–1|0–1 (aet)
+}}<section end=PO />
+
+===Champions Path matches===
+{{#invoke:Football box|main
+|date       = {{Start date|2025|8|21|df=y}}
+|time       = 19:00
+|team1      = [[Hamrun Spartans F.C.|Hamrun Spartans]] {{fbaicon|MLT}}
+|score      = 1–0
+|team2      = {{fbaicon|LVA}} [[FK RFS|RFS]]
+|goals1     =
+*[[Saliou Thioune|Thioune]] {{goal|55}}
+|goals2     =
+|stadium    = [[National Stadium, Ta' Qali|National Stadium]], [[Ta' Qali]]{{refn|group=note|name=Hamrun|Hamrun Spartans played their play-off round home match at the National Stadium in Ta' Qali, instead of their regular stadium, the [[Victor Tedesco Stadium]] in [[Hamrun]], which did not meet [[UEFA]] requirements.}}
+|attendance = 1,401<ref>{{UEFA match attendance|2045849|Hamrun Spartans vs. RFS|date=21 August 2025|access-date=21 August 2025}}</ref>
+|referee    = [[Ashot Ghaltakhchyan]] ([[Football Federation of Armenia|Armenia]])
+|report     = Report<ref>{{cite web |url=https://www.uefa.com/uefaconferenceleague/match/2045849/ |title=Hamrun Spartans vs RFS |website=UEFA.com |publisher=Union of European Football Associations |access-date=15 August 2025}}</ref>
+}}
+{{#invoke:Football box|main
+|date       = {{Start date|2025|8|28|df=y}}
+|time       = 19:00 {{small|(20:00 [[UTC+03:00|UTC+3]])}}
+|team1      = RFS {{fbaicon|LVA}}
+|score      = 2–2
+|team2      = {{fbaicon|MLT}} Hamrun Spartans
+|goals1     =
+*[[Stefan Panić|Panić]] {{goal|17|pen.}}
+*[[Darko Lemajić|Lemajić]] {{goal|87}}
+|goals2     =
+*[[Saliou Thioune|Thioune]] {{goal|12}}
+*[[Vincenzo Polito (footballer)|Polito]] {{goal|67}}
+|stadium    = [[LNK Sporta Parks]], [[Riga]]
+|attendance = 1,674<ref>{{UEFA match attendance|2045873|RFS vs. Hamrun Spartans|date=28 August 2025|access-date=28 August 2025}}</ref>
+|referee    = [[Horațiu Feșnic]] ([[Romanian Football Federation|Romania]])
+|report     = Report<ref>{{cite web |url=https://www.uefa.com/uefaconferenceleague/match/2045873/ |title=RFS vs Hamrun Spartans |website=UEFA.com |publisher=Union of European Football Associations |access-date=15 August 2025}}</ref>
+}}
+''Hamrun Spartans won 3–2 on aggregate.''
+----
+{{#invoke:Football box|main
+|date       = {{Start date|2025|8|21|df=y}}
+|time       = 20:45 {{small|(19:45 [[UTC+01:00|UTC+1]])}}
+|team1      = [[Shelbourne F.C.|Shelbourne]] {{fbaicon|IRL}}
+|score      = 3–1
+|team2      = {{fbaicon|NIR}} [[Linfield F.C.|Linfield]]
+|goals1     =
+*[[Harry Wood (footballer, born 2002)|Wood]] {{goal|45+1|pen}}
+*[[Mipo Odubeko|Odubeko]] {{goal|46}}
+*[[Evan Caffrey|Caffrey]] {{goal|78}}
+|goals2     =
+*[[Kieran Offord|Offord]] {{goal|53}}
+|stadium    = [[Tolka Park]], [[Dublin]]
+|attendance = 3,655<ref>{{UEFA match attendance|2045850|Shelbourne vs. Linfield|date=21 August 2025|access-date=21 August 2025}}</ref>
+|referee    = [[Vassilis Fotias]] ([[Hellenic Football Federation|Greece]])
+|report     = Report<ref>{{cite web |url=https://www.uefa.com/uefaconferenceleague/match/2045850/ |title=Shelbourne vs Linfield |website=UEFA.com |publisher=Union of European Football Associations |access-date=15 August 2025}}</ref>
+}}
+{{#invoke:Football box|main
+|date       = {{Start date|2025|8|28|df=y}}
+|time       = 20:45 {{small|(19:45 [[UTC+01:00|UTC+1]])}}
+|team1      = Linfield {{fbaicon|NIR}}
+|score      = 0–2
+|team2      = {{fbaicon|IRL}} Shelbourne
+|goals1     =
+|goals2     =
+*[[Harry Wood (footballer, born 2002)|Wood]] {{goal|23}}
+*[[Ali Coote|Coote]] {{goal|30}}
+|stadium    = [[Windsor Park]], [[Belfast]]
+|attendance = 5,200<ref>{{UEFA match attendance|2045874|Linfield vs. Shelbourne|date=28 August 2025|access-date=28 August 2025}}</ref>
+|referee    = [[Julian Weinberger]] ([[Austrian Football Association|Austria]])
+|report     = Report<ref>{{cite web |url=https://www.uefa.com/uefaconferenceleague/match/2045874/ |title=Linfield vs Shelbourne |website=UEFA.com |publisher=Union of European Football Associations |access-date=15 August 2025}}</ref>
+}}
+''Shelbourne won 5–1 on aggregate.''
+----
+{{#invoke:Football box|main
+|date       = {{Start date|2025|8|21|df=y}}
+|time       = 20:00 {{small|(18:00 [[UTC+00:00|UTC±0]])}}
+|team1      = [[Breiðablik (men's football)|Breiðablik]] {{fbaicon|ISL}}
+|score      = 2–1
+|team2      = {{fbaicon|SMR}} [[AC Virtus|Virtus]]
+|goals1     =
+*[[Valgeir Valgeirsson|Valgeirsson]] {{goal|31}}
+*[[Tobias Thomsen|Thomsen]] {{goal|55|pen}}
+|goals2     =
+*[[Stefano Scappini|Scappini]] {{goal|11|pen}}
+|stadium    = [[Kópavogsvöllur]], [[Kópavogur]]
+|attendance = 1,164<ref>{{UEFA match attendance|2045851|Breiðablik vs. Virtus|date=21 August 2025|access-date=21 August 2025}}</ref>
+|referee    = [[Mikkel Redder]] ([[Danish Football Association|Denmark]])
+|report     = Report<ref>{{cite web |url=https://www.uefa.com/uefaconferenceleague/match/2045851/ |title=Breiðablik vs Virtus |website=UEFA.com |publisher=Union of European Football Associations |access-date=15 August 2025}}</ref>
+}}
+{{#invoke:Football box|main
+|date       = {{Start date|2025|8|28|df=y}}
+|time       = 21:00
+|team1      = Virtus {{fbaicon|SMR}}
+|score      = 1–3
+|team2      = {{fbaicon|ISL}} Breiðablik
+|goals1     =
+*[[Abdoul Aziz Niang|Niang]] {{goal|41}}
+|goals2     =
+*[[Kristófer Kristinsson|Kristinsson]] {{goal|17}}
+*[[Davíð Ingvarsson|Ingvarsson]] {{goal|59}}
+*[[Tobias Thomsen|Thomsen]] {{goal|77}}
+|stadium    = [[San Marino Stadium]], [[Serravalle (San Marino)|Serravalle]]
+|attendance = 1,124<ref>{{UEFA match attendance|2045875|Virtus vs. Breiðablik|date=28 August 2025|access-date=28 August 2025}}</ref>
+|referee    = [[Mykola Balakin]] ([[Ukrainian Association of Football|Ukraine]])
+|report     = Report<ref>{{cite web |url=https://www.uefa.com/uefaconferenceleague/match/2045875/ |title=Virtus vs Breiðablik |website=UEFA.com |publisher=Union of European Football Associations |access-date=15 August 2025}}</ref>
+}}
+''Breiðablik won 5–2 on aggregate.''
+----
+{{#invoke:Football box|main
+|date       = {{Start date|2025|8|21|df=y}}
+|time       = 20:00
+|team1      = [[FC Drita|Drita]] {{fbaicon|KOS}}
+|score      = 2–1
+|team2      = {{fbaicon|LUX}} [[FC Differdange 03|Differdange 03]]
+|goals1     =
+*[[Albert Dabiqaj|Dabiqaj]] {{goal|30}}
+*[[Besnik Krasniqi|Be. Krasniqi]] {{goal|80|pen.}}
+|goals2     =
+*[[Andreas Buch|Buch]] {{goal|65}}
+|stadium    = [[Fadil Vokrri Stadium]], [[Pristina]]{{refn|group=note|name=Drita|Drita played their home match at the Fadil Vokrri Stadium in Pristina, instead of their regular stadium, the [[Gjilan City Stadium]], in [[Gjilan]], due to renovation works.<ref>{{cite web |title=Over 12 million euros will be invested in the Gjilan stadium |url=https://www.koha.net/en/futboll/mbi-12-milione-euro-do-te-investohen-ne-stadiumin-e-gjilanit |website=koha.net |date=20 May 2025}}</ref>}}
+|attendance = 2,930<ref>{{UEFA match attendance|2045852|Drita vs. Differdange 03|date=21 August 2025|access-date=21 August 2025}}</ref>
+|referee    = [[Mohammed Al-Hakim]] ([[Swedish Football Association|Sweden]])
+|report     = Report<ref>{{cite web |url=https://www.uefa.com/uefaconferenceleague/match/2045852/ |title=Drita vs Differdange 03 |website=UEFA.com |publisher=Union of European Football Associations |access-date=15 August 2025}}</ref>
+}}
+{{#invoke:Football box|main
+|date       = {{Start date|2025|8|28|df=y}}
+|time       = 20:00
+|team1      = Differdange 03 {{fbaicon|LUX}}
+|score      = 0–1
+|team2      = {{fbaicon|KOS}} Drita
+|goals1     =
+|goals2     =
+*[[Besnik Krasniqi|Be. Krasniqi]] {{goal|62|pen.}}
+|stadium    = [[Stade Municipal de la Ville de Differdange]], [[Differdange]]
+|attendance = 1,910<ref>{{UEFA match attendance|2045876|Differdange 03 vs. Drita|date=28 August 2025|access-date=28 August 2025}}</ref>
+|referee    = [[Andrea Colombo (referee)|Andrea Colombo]] ([[Italian Football Federation|Italy]])
+|report     = Report<ref>{{cite web |url=https://www.uefa.com/uefaconferenceleague/match/2045876/ |title=Differdange 03 vs Drita |website=UEFA.com |publisher=Union of European Football Associations |access-date=15 August 2025}}</ref>
+}}
+''Drita won 3–1 on aggregate.''
+----
+{{#invoke:Football box|main
+|date       = {{Start date|2025|8|21|df=y}}
+|time       = 20:00
+|team1      = [[NK Olimpija Ljubljana|Olimpija Ljubljana]] {{fbaicon|SVN}}
+|score      = 1–4
+|team2      = {{fbaicon|ARM}} [[FC Noah|Noah]]
+|goals1     =
+*[[Ivan Durdov|Durdov]] {{goal|56}}
+|goals2     =
+*[[Marin Jakoliš|Jakoliš]] {{goal|36}}
+*[[Imran Oulad Omar|Oulad Omar]] {{goal|39||52|pen.|64}}
+|stadium    = [[Stožice Stadium]], [[Ljubljana]]
+|attendance = 3,937<ref>{{UEFA match attendance|2045853|Olimpija Ljubljana vs. Noah|date=21 August 2025|access-date=21 August 2025}}</ref>
+|referee    = [[Allard Lindhout]] ([[Royal Dutch Football Association|Netherlands]])
+|report     = Report<ref>{{cite web |url=https://www.uefa.com/uefaconferenceleague/match/2045853/ |title=Olimpija Ljubljana vs Noah |website=UEFA.com |publisher=Union of European Football Associations |access-date=15 August 2025}}</ref>
+}}
+{{#invoke:Football box|main
+|date       = {{Start date|2025|8|28|df=y}}
+|time       = 18:00 {{small|(20:00 [[UTC+04:00|UTC+4]])}}
+|team1      = Noah {{fbaicon|ARM}}
+|score      = 3–2
+|team2      = {{fbaicon|SVN}} Olimpija Ljubljana
+|goals1     =
+*[[Hélder Ferreira (footballer, born 1997)|Ferreira]] {{goal|17}}
+*[[Matheus Aiás|Aiás]] {{goal|20}}
+*[[Hovhannes Harutyunyan|Harutyunyan]] {{goal|77}}
+|goals2     =
+*[[Antonio Marin (footballer, born 2001)|Marin]] {{goal|56|pen.}}
+*[[Ivan Durdov|Durdov]] {{goal|76}}
+|stadium    = [[Vahagn Tumasyan Stadium|Abovyan City Stadium]], [[Abovyan]]
+|attendance = 2,900<ref>{{UEFA match attendance|2045877|Noah vs. Olimpija Ljubljana|date=28 August 2025|access-date=28 August 2025}}</ref>
+|referee    = [[Andris Treimanis]] ([[Latvian Football Federation|Latvia]])
+|report     = Report<ref>{{cite web |url=https://www.uefa.com/uefaconferenceleague/match/2045877/ |title=Noah vs Olimpija Ljubljana |website=UEFA.com |publisher=Union of European Football Associations |access-date=15 August 2025}}</ref>
+}}
+''Noah won 7–3 on aggregate.''
+
+===Main Path matches===
+{{#invoke:Football box|main
+|date       = {{Start date|2025|8|21|df=y}}
+|time       = 20:00
+|team1      = [[RC Strasbourg Alsace|Strasbourg]] {{fbaicon|FRA}}
+|score      = 0–0
+|team2      = {{fbaicon|DEN}} [[Brøndby IF|Brøndby]]
+|goals1     =
+|goals2     =
+|stadium    = [[Stade de la Meinau]], [[Strasbourg]]
+|attendance = 22,080<ref>{{UEFA match attendance|2045854|Strasbourg vs. Brøndby|date=21 August 2025|access-date=21 August 2025}}</ref>
+|referee    = [[Genc Nuza]] ([[Football Federation of Kosovo|Kosovo]])
+|report     = Report<ref>{{cite web |url=https://www.uefa.com/uefaconferenceleague/match/2045854/ |title=Strasbourg vs Brøndby |website=UEFA.com |publisher=Union of European Football Associations |access-date=15 August 2025}}</ref>
+}}
+{{#invoke:Football box|main
+|date       = {{Start date|2025|8|28|df=y}}
+|time       = 20:00
+|team1      = Brøndby {{fbaicon|DEN}}
+|score      = 2–3
+|team2      = {{fbaicon|FRA}} Strasbourg
+|goals1     =
+*[[Daniel Wass|Wass]] {{goal|45}}
+*[[Michael Gregoritsch|Gregoritsch]] {{goal|86}}
+|goals2     =
+*[[Emanuel Emegha|Emegha]] {{goal|15||66}}
+*[[Ismaël Doukouré|Doukouré]] {{goal|40}}
+|stadium    = [[Brøndby Stadium]], [[Brøndbyvester]]
+|attendance = 23,930<ref>{{UEFA match attendance|2045878|Brøndby vs. Strasbourg|date=28 August 2025|access-date=28 August 2025}}</ref>
+|referee    = [[Nenad Minaković]] ([[Football Association of Serbia|Serbia]])
+|report     = Report<ref>{{cite web |url=https://www.uefa.com/uefaconferenceleague/match/2045878/ |title=Brøndby vs Strasbourg |website=UEFA.com |publisher=Union of European Football Associations |access-date=15 August 2025}}</ref>
+}}
+''Strasbourg won 3–2 on aggregate.''
+----
+{{#invoke:Football box|main
+|date       = {{Start date|2025|8|21|df=y}}
+|time       = 20:15
+|team1      = [[Jagiellonia Białystok]] {{fbaicon|POL}}
+|score      = 3–0
+|team2      = {{fbaicon|ALB}} [[FC Dinamo City|Dinamo City]]
+|goals1     =
+*[[Jesús Imaz|Imaz]] {{goal|12}}
+*[[Afimico Pululu|Pululu]] {{goal|34}}
+*[[Norbert Wojtuszek|Wojtuszek]] {{goal|50}}
+|goals2     =
+|stadium    = [[Stadion Miejski (Białystok)|Stadion Miejski]], [[Białystok]]
+|attendance = 17,450<ref>{{UEFA match attendance|2045855|Jagiellonia Białystok vs. Dinamo City|date=21 August 2025|access-date=21 August 2025}}</ref>
+|referee    = [[Marian Alexandru Barbu]] ([[Romanian Football Federation|Romania]])
+|report     = Report<ref>{{cite web |url=https://www.uefa.com/uefaconferenceleague/match/2045855/ |title=Jagiellonia Białystok vs Dinamo City |website=UEFA.com |publisher=Union of European Football Associations |access-date=15 August 2025}}</ref>
+}}
+{{#invoke:Football box|main
+|date       = {{Start date|2025|8|28|df=y}}
+|time       = 20:45
+|team1      = Dinamo City {{fbaicon|ALB}}
+|score      = 1–1
+|team2      = {{fbaicon|POL}} Jagiellonia Białystok
+|goals1     =
+*[[Dejvi Bregu|Bregu]] {{goal|68}}
+|goals2     =
+*[[Dimitris Rallis|Rallis]] {{goal|79}}
+|stadium    = [[Arena Kombëtare]], [[Tirana]]
+|attendance = 2,644<ref>{{UEFA match attendance|2045879|Dinamo City vs. Jagiellonia Białystok|date=28 August 2025|access-date=28 August 2025}}</ref>
+|referee    = [[Goga Kikacheishvili]] ([[Georgian Football Federation|Georgia]])
+|report     = Report<ref>{{cite web |url=https://www.uefa.com/uefaconferenceleague/match/2045879/ |title=Dinamo City vs Jagiellonia Białystok |website=UEFA.com |publisher=Union of European Football Associations |access-date=15 August 2025}}</ref>
+}}
+''Jagiellonia Białystok won 4–1 on aggregate.''
+----
+{{#invoke:Football box|main
+|date       = {{Start date|2025|8|21|df=y}}
+|time       = 20:00
+|team1      = [[FC Shakhtar Donetsk|Shakhtar Donetsk]] {{fbaicon|UKR}}
+|score      = 1–1
+|team2      = {{fbaicon|SUI}} [[Servette FC|Servette]]
+|goals1     =
+*[[Valeriy Bondar|Bondar]] {{goal|72}}
+|goals2     =
+*[[Lamine Fomba|Fomba]] {{goal|8}}
+|stadium    = [[Henryk Reyman Municipal Stadium]], [[Kraków]], Poland{{refn|group=note|name=Ukraine}}
+|attendance = 8,392<ref>{{UEFA match attendance|2045856|Shakhtar Donetsk vs. Servette|date=21 August 2025|access-date=21 August 2025}}</ref>
+|referee    = [[Nicholas Walsh (referee)|Nick Walsh]] ([[Scottish Football Association|Scotland]])
+|report     = Report<ref>{{cite web |url=https://www.uefa.com/uefaconferenceleague/match/2045856/ |title=Shakhtar Donetsk vs Servette |website=UEFA.com |publisher=Union of European Football Associations |access-date=15 August 2025}}</ref>
+}}
+{{#invoke:Football box|main
+|date       = {{Start date|2025|8|28|df=y}}
+|time       = 21:00
+|team1      = Servette {{fbaicon|SUI}}
+|score      = 1–2
+|aet        = yes
+|team2      = {{fbaicon|UKR}} Shakhtar Donetsk
+|goals1     =
+*[[Lilian Njoh|Njoh]] {{goal|53}}
+|goals2     =
+*[[Kevin (footballer, born 2003)|Kevin]] {{goal|70|pen.}}
+*[[Kauã Elias|Elias]] {{goal|113}}
+|stadium    = [[Stade de Genève]], [[Geneva]]
+|attendance = 13,224<ref>{{UEFA match attendance|2045880|Servette vs. Shakhtar Donetsk|date=28 August 2025|access-date=28 August 2025}}</ref>
+|referee    = [[Guillermo Cuadra Fernández]] ([[Royal Spanish Football Federation|Spain]])
+|report     = Report<ref>{{cite web |url=https://www.uefa.com/uefaconferenceleague/match/2045880/ |title=Servette vs Shakhtar Donetsk |website=UEFA.com |publisher=Union of European Football Associations |access-date=15 August 2025}}</ref>
+}}
+''Shakhtar Donetsk won 3–2 on aggregate.''
+----
+{{#invoke:Football box|main
+|date       = {{Start date|2025|8|21|df=y}}
+|time       = 20:00
+|team1      = [[R.S.C. Anderlecht|Anderlecht]] {{fbaicon|BEL}}
+|score      = 1–1
+|team2      = {{fbaicon|GRE}} [[AEK Athens F.C.|AEK Athens]]
+|goals1     =
+*[[Kasper Dolberg|Dolberg]] {{goal|21}}
+|goals2     =
+*[[Niclas Eliasson|Eliasson]] {{goal|75}}
+|stadium    = [[Constant Vanden Stock Stadium]], [[Brussels]]
+|attendance = 13,466<ref>{{UEFA match attendance|2045857|Anderlecht vs. AEK Athens|date=21 August 2025|access-date=21 August 2025}}</ref>
+|referee    = [[Jérôme Brisard]] ([[French Football Federation|France]])
+|report     = Report<ref>{{cite web |url=https://www.uefa.com/uefaconferenceleague/match/2045857/ |title=Anderlecht vs AEK Athens |website=UEFA.com |publisher=Union of European Football Associations |access-date=15 August 2025}}</ref>
+}}
+{{#invoke:Football box|main
+|date       = {{Start date|2025|8|28|df=y}}
+|time       = 20:00 {{small|(21:00 [[UTC+03:00|UTC+3]])}}
+|team1      = AEK Athens {{fbaicon|GRE}}
+|score      = 2–0
+|team2      = {{fbaicon|BEL}} Anderlecht
+|goals1     =
+*[[Aboubakary Koïta|Koïta]] {{goal|36}}
+*[[Dereck Kutesa|Kutesa]] {{goal|48}}
+|goals2     =
+|stadium    = [[Agia Sophia Stadium]], [[Athens]]
+|attendance = 25,891<ref>{{UEFA match attendance|2045881|AEK Athens vs. Anderlecht|date=28 August 2025|access-date=28 August 2025}}</ref>
+|referee    = [[Rohit Saggi]] ([[Norwegian Football Federation|Norway]])
+|report     = Report<ref>{{cite web |url=https://www.uefa.com/uefaconferenceleague/match/2045881/ |title=AEK Athens vs Anderlecht |website=UEFA.com |publisher=Union of European Football Associations |access-date=15 August 2025}}</ref>
+}}
+''AEK Athens won 3–1 on aggregate.''
+----
+{{#invoke:Football box|main
+|date       = {{Start date|2025|8|21|df=y}}
+|time       = 19:45 {{small|(20:45 [[UTC+03:00|UTC+3]])}}
+|team1      = [[İstanbul Başakşehir F.K.|İstanbul Başakşehir]] {{fbaicon|TUR}}
+|score      = 1–2
+|team2      = {{fbaicon|ROU}} [[CS Universitatea Craiova|Universitatea Craiova]]
+|goals1     =
+*[[Festy Ebosele|Ebosele]] {{goal|87}}
+|goals2     =
+*[[Alexandru Cicâldău|Cicâldău]] {{goal|45+2}}
+*[[Carlos Mora (footballer)|Mora]] {{goal|61}}
+|stadium    = [[Başakşehir Fatih Terim Stadium]], [[Istanbul]]
+|attendance = 7,230<ref>{{UEFA match attendance|2045858|İstanbul Başakşehir vs. Universitatea Craiova|date=21 August 2025|access-date=21 August 2025}}</ref>
+|referee    = [[Juxhin Xhaja]] ([[Albanian Football Federation|Albania]])
+|report     = Report<ref>{{cite web |url=https://www.uefa.com/uefaconferenceleague/match/2045858/ |title=İstanbul Başakşehir vs Universitatea Craiova |website=UEFA.com |publisher=Union of European Football Associations |access-date=15 August 2025}}</ref>
+}}
+{{#invoke:Football box|main
+|date       = {{Start date|2025|8|28|df=y}}
+|time       = 19:30 {{small|(20:30 [[UTC+03:00|UTC+3]])}}
+|team1      = Universitatea Craiova {{fbaicon|ROU}}
+|score      = 3–1
+|team2      = {{fbaicon|TUR}} İstanbul Başakşehir
+|goals1     =
+*[[Alexandru Cicâldău|Cicâldău]] {{goal|9}}
+*[[Ștefan Baiaram|Baiaram]] {{goal|27}}
+*[[Steven Nsimba|Nsimba]] {{goal|81}}
+|goals2     =
+*[[Davie Selke|Selke]] {{goal|7}}
+|stadium    = [[Ion Oblemenco Stadium]], [[Craiova]]
+|attendance = 27,884<ref>{{UEFA match attendance|2045882|Universitatea Craiova vs. İstanbul Başakşehir|date=28 August 2025|access-date=28 August 2025}}</ref>
+|referee    = [[Daniel Schlager]] ([[German Football Association|Germany]])
+|report     = Report<ref>{{cite web |url=https://www.uefa.com/uefaconferenceleague/match/2045882/ |title=Universitatea Craiova vs İstanbul Başakşehir |website=UEFA.com |publisher=Union of European Football Associations |access-date=15 August 2025}}</ref>
+}}
+''Universitatea Craiova won 5–2 on aggregate.''
+----
+{{#invoke:Football box|main
+|date       = {{Start date|2025|8|21|df=y}}
+|time       = 21:00 {{small|(20:00 [[UTC+01:00|UTC+1]])}}
+|team1      = [[Crystal Palace F.C.|Crystal Palace]] {{fbaicon|ENG}}
+|score      = 1–0
+|team2      = {{fbaicon|NOR}} [[Fredrikstad FK|Fredrikstad]]
+|goals1     =
+*[[Jean-Philippe Mateta|Mateta]] {{goal|54}}
+|goals2     =
+|stadium    = [[Selhurst Park]], [[London]]
+|attendance = 23,013<ref>{{UEFA match attendance|2045859|Crystal Palace vs. Fredrikstad|date=21 August 2025|access-date=21 August 2025}}</ref>
+|referee    = [[Anastasios Papapetrou]] ([[Hellenic Football Federation|Greece]])
+|report     = Report<ref>{{cite web |url=https://www.uefa.com/uefaconferenceleague/match/2045859/ |title=Crystal Palace vs Fredrikstad |website=UEFA.com |publisher=Union of European Football Associations |access-date=15 August 2025}}</ref>
+}}
+{{#invoke:Football box|main
+|date       = {{Start date|2025|8|28|df=y}}
+|time       = 18:00
+|team1      = Fredrikstad {{fbaicon|NOR}}
+|score      = 0–0
+|team2      = {{fbaicon|ENG}} Crystal Palace
+|goals1     =
+|goals2     =
+|stadium    = [[Fredrikstad Stadion]], [[Fredrikstad]]
+|attendance = 10,016<ref>{{UEFA match attendance|2045883|Fredrikstad vs. Crystal Palace|date=28 August 2025|access-date=28 August 2025}}</ref>
+|referee    = [[Kristo Tohver]] ([[Estonian Football Association|Estonia]])
+|report     = Report<ref>{{cite web |url=https://www.uefa.com/uefaconferenceleague/match/2045883/ |title=Fredrikstad vs Crystal Palace |website=UEFA.com |publisher=Union of European Football Associations |access-date=15 August 2025}}</ref>
+}}
+''Crystal Palace won 1–0 on aggregate.''
+----
+{{#invoke:Football box|main
+|date       = {{Start date|2025|8|21|df=y}}
+|time       = 20:00
+|team1      = [[NK Celje|Celje]] {{fbaicon|SVN}}
+|score      = 1–0
+|team2      = {{fbaicon|CZE}} [[FC Baník Ostrava|Baník Ostrava]]
+|goals1     =
+*[[Matej Chalus|Chalus]] {{goal|8|o.g.}}
+|goals2     =
+|stadium    = [[Stadion Z'dežele]], [[Celje]]
+|attendance = 5,327<ref>{{UEFA match attendance|2045860|Celje vs. Baník Ostrava|date=21 August 2025|access-date=21 August 2025}}</ref>
+|referee    = [[Elchin Masiyev]] ([[Association of Football Federations of Azerbaijan|Azerbaijan]])
+|report     = Report<ref>{{cite web |url=https://www.uefa.com/uefaconferenceleague/match/2045860/ |title=Celje vs Baník Ostrava |website=UEFA.com |publisher=Union of European Football Associations |access-date=15 August 2025}}</ref>
+}}
+{{#invoke:Football box|main
+|date       = {{Start date|2025|8|28|df=y}}
+|time       = 20:00
+|team1      = Baník Ostrava {{fbaicon|CZE}}
+|score      = 0–2
+|team2      = {{fbaicon|SVN}} Celje
+|goals1     =
+|goals2     =
+*[[Nikita Iosifov|Iosifov]] {{goal|10}}
+*[[Žan Karničnik|Karničnik]] {{goal|21}}
+|stadium    = [[Městský stadion (Ostrava)|Městský stadion]], [[Ostrava]]
+|attendance = 14,286<ref>{{UEFA match attendance|2045884|Baník Ostrava vs. Celje|date=28 August 2025|access-date=28 August 2025}}</ref>
+|referee    = [[Anastasios Sidiropoulos|Tasos Sidiropoulos]] ([[Hellenic Football Federation|Greece]])
+|report     = Report<ref>{{cite web |url=https://www.uefa.com/uefaconferenceleague/match/2045884/ |title=Baník Ostrava vs Celje |website=UEFA.com |publisher=Union of European Football Associations |access-date=15 August 2025}}</ref>
+}}
+''Celje won 3–0 on aggregate.''
+----
+{{#invoke:Football box|main
+|date       = {{Start date|2025|8|21|df=y}}
+|time       = 21:00
+|team1      = [[Raków Częstochowa]] {{fbaicon|POL}}
+|score      = 1–0
+|team2      = {{fbaicon|BUL}} [[FC Arda Kardzhali|Arda]]
+|goals1     =
+*[[Tomasz Pieńko|Pieńko]] {{goal|28}}
+|goals2     =
+|stadium    = [[Miejski Stadion Piłkarski Raków]], [[Częstochowa]]
+|attendance = 5,500<ref>{{UEFA match attendance|2045861|Raków Częstochowa vs. Arda|date=21 August 2025|access-date=21 August 2025}}</ref>
+|referee    = [[Michal Očenáš]] ([[Slovak Football Association|Slovakia]])
+|report     = Report<ref>{{cite web |url=https://www.uefa.com/uefaconferenceleague/match/2045861/ |title=Raków Częstochowa vs Arda |website=UEFA.com |publisher=Union of European Football Associations |access-date=15 August 2025}}</ref>
+}}
+{{#invoke:Football box|main
+|date       = {{Start date|2025|8|28|df=y}}
+|time       = 20:00 {{small|(21:00 [[UTC+03:00|UTC+3]])}}
+|team1      = Arda {{fbaicon|BUL}}
+|score      = 1–2
+|team2      = {{fbaicon|POL}} Raków Częstochowa
+|goals1     =
+*[[Antonio Vutov|Vutov]] {{goal|59|pen.}}
+|goals2     =
+*[[Péter Baráth|Baráth]] {{goal|2}}
+*[[Ivi (footballer)|Ivi]] {{goal|90+3}}
+|stadium    = [[Arena Arda]], [[Kardzhali]]
+|attendance = 4,450<ref>{{UEFA match attendance|2045885|Arda vs. Raków Częstochowa|date=28 August 2025|access-date=28 August 2025}}</ref>
+|referee    = [[Igor Pajač]] ([[Croatian Football Federation|Croatia]])
+|report     = Report<ref>{{cite web |url=https://www.uefa.com/uefaconferenceleague/match/c/ |title=Arda vs Raków Częstochowa |website=UEFA.com |publisher=Union of European Football Associations |access-date=15 August 2025}}</ref>
+}}
+
+''Raków Częstochowa won 3–1 on aggregate.''
+----
+{{#invoke:Football box|main
+|date       = {{Start date|2025|8|21|df=y}}
+|time       = 21:00 {{small|(20:00 [[UTC+01:00|UTC+1]])}}
+|team1      = [[Hibernian F.C.|Hibernian]] {{fbaicon|SCO}}
+|score      = 1–2
+|team2      = {{fbaicon|POL}} [[Legia Warsaw]]
+|goals1     =
+*[[Josh Mulligan|Mulligan]] {{goal|87}}
+|goals2     =
+*[[Jean-Pierre Nsame|Nsame]] {{goal|35|pen}}
+*[[Paweł Wszołek|Wszołek]] {{goal|45+3}}
+|stadium    = [[Easter Road]], [[Edinburgh]]
+|attendance = 18,958<ref>{{UEFA match attendance|2045862|Hibernian vs. Legia Warsaw|date=21 August 2025|access-date=21 August 2025}}</ref>
+|referee    = [[Mohammad Al-Emara]] ([[Football Association of Finland|Finland]])
+|report     = Report<ref>{{cite web |url=https://www.uefa.com/uefaconferenceleague/match/2045862/ |title=Hibernian vs Legia Warsaw |website=UEFA.com |publisher=Union of European Football Associations |access-date=15 August 2025}}</ref>
+}}
+{{#invoke:Football box|main
+|date       = {{Start date|2025|8|28|df=y}}
+|time       = 21:00
+|team1      = Legia Warsaw {{fbaicon|POL}}
+|score      = 3–3
+|aet        = yes
+|team2      = {{fbaicon|SCO}} Hibernian
+|goals1     =
+*[[Vahan Bichakhchyan|Bichakhchyan]] {{goal|13}}
+*[[Juergen Elitim|Elitim]] {{goal|90+3}}
+*[[Mileta Rajović|Rajović]] {{goal|98}}
+|goals2     =
+*[[Rocky Bushiri|Bushiri]] {{goal|50}}
+*[[Martin Boyle|Boyle]] {{goal|59}}
+*[[Miguel Chaiwa|Chaiwa]] {{goal|61}}
+|stadium    = [[Polish Army Stadium]], [[Warsaw]]
+|attendance = 27,659<ref>{{UEFA match attendance|2045886|Legia Warsaw vs. Hibernian|date=28 August 2025|access-date=28 August 2025}}</ref>
+|referee    = [[Lawrence Visser]] ([[Royal Belgian Football Association|Belgium]])
+|report     = Report<ref>{{cite web |url=https://www.uefa.com/uefaconferenceleague/match/2045886/ |title=Legia Warsaw vs Hibernian |website=UEFA.com |publisher=Union of European Football Associations |access-date=15 August 2025}}</ref>
+}}
+''Legia Warsaw won 5–4 on aggregate.''
+----
+{{#invoke:Football box|main
+|date       = {{Start date|2025|8|21|df=y}}
+|time       = 20:00 {{small|(21:00 [[UTC+03:00|UTC+3]])}}
+|team1      = [[PFC Levski Sofia|Levski Sofia]] {{fbaicon|BUL}}
+|score      = 0–2
+|team2      = {{fbaicon|NED}} [[AZ Alkmaar|AZ]]
+|goals1     =
+|goals2     =
+*[[Ibrahim Sadiq|Sadiq]] {{goal|56}}
+*[[Troy Parrott|Parrott]] {{goal|62}}
+|stadium    = [[Vasil Levski National Stadium]], [[Sofia]]{{refn|group=note|name=Levski|Levski Sofia played their play-off round home match at the Vasil Levski National Stadium in Sofia, instead of their regular stadium, [[Stadion Georgi Asparuhov]] in Sofia.}}
+|attendance = 29,930<ref>{{UEFA match attendance|2045863|Levski Sofia vs. AZ|date=21 August 2025|access-date=21 August 2025}}</ref>
+|referee    = [[Tamás Bognár]] ([[Hungarian Football Federation|Hungary]])
+|report     = Report<ref>{{cite web |url=https://www.uefa.com/uefaconferenceleague/match/2045863/ |title=Levski Sofia vs AZ |website=UEFA.com |publisher=Union of European Football Associations |access-date=15 August 2025}}</ref>
+}}
+{{#invoke:Football box|main
+|date       = {{Start date|2025|8|28|df=y}}
+|time       = 19:30
+|team1      = AZ {{fbaicon|NED}}
+|score      = 4–1
+|team2      = {{fbaicon|BUL}} Levski Sofia
+|goals1     =
+*[[Ibrahim Sadiq|Sadiq]] {{goal|3||45+1}}
+*[[Mexx Meerdink|Meerdink]] {{goal|6}}
+*[[Lequincio Zeefuik|Zeefuik]] {{goal|86}}
+|goals2     =
+*[[Everton Bala|Everton]] {{goal|47}}
+|stadium    = [[AFAS Stadion]], [[Alkmaar]]
+|attendance = 12,612<ref>{{UEFA match attendance|2045887|AZ vs. Levski Sofia|date=28 August 2025|access-date=28 August 2025}}</ref>
+|referee    = [[Damian Sylwestrzak]] ([[Polish Football Association|Poland]])
+|report     = Report<ref>{{cite web |url=https://www.uefa.com/uefaconferenceleague/match/2045887/ |title=AZ vs Levski Sofia |website=UEFA.com |publisher=Union of European Football Associations |access-date=15 August 2025}}</ref>
+}}
+''AZ won 6–1 on aggregate.''
+----
+{{#invoke:Football box|main
+|date       = {{Start date|2025|8|21|df=y}}
+|time       = 20:00
+|team1      = [[FC Polissya Zhytomyr|Polissya Zhytomyr]] {{fbaicon|UKR}}
+|score      = 0–3
+|team2      = {{fbaicon|ITA}} [[ACF Fiorentina|Fiorentina]]
+|goals1     =
+|goals2     =
+*[[Oleh Kudryk|Kudryk]] {{goal|8|o.g.}}
+*[[Robin Gosens|Gosens]] {{goal|32}}
+*[[Albert Guðmundsson (footballer, born 1997)|Guðmundsson]] {{goal|69}}
+|stadium    = [[Futbal Tatran Arena]], [[Prešov]], Slovakia{{refn|group=note|name=Ukraine}}
+|attendance = 6,173<ref>{{UEFA match attendance|2045864|Polissya Zhytomyr vs. Fiorentina|date=21 August 2025|access-date=21 August 2025}}</ref>
+|referee    = [[Aliyar Aghayev]] ([[Association of Football Federations of Azerbaijan|Azerbaijan]])
+|report     = Report<ref>{{cite web |url=https://www.uefa.com/uefaconferenceleague/match/2045864/ |title=Polissya Zhytomyr vs Fiorentina |website=UEFA.com |publisher=Union of European Football Associations |access-date=15 August 2025}}</ref>
+}}
+{{#invoke:Football box|main
+|date       = {{Start date|2025|8|28|df=y}}
+|time       = 20:00
+|team1      = Fiorentina {{fbaicon|ITA}}
+|score      = 3–2
+|team2      = {{fbaicon|UKR}} Polissya Zhytomyr
+|goals1     =
+*[[Dodô (footballer, born 1992)|Dodô]] {{goal|79}}
+*[[Luca Ranieri|Ranieri]] {{goal|86}}
+*[[Edin Džeko|Džeko]] {{goal|89}}
+|goals2     =
+*[[Oleksandr Nazarenko|Nazarenko]] {{goal|2}}
+*[[Oleksandr Andriyevskyi|Andriyevskyi]] {{goal|14}}
+|stadium    = [[Mapei Stadium – Città del Tricolore]], [[Reggio Emilia]]{{refn|group=note|name=Fiorentina|Fiorentina will play their play-off round home match at the Mapei Stadium – Città del Tricolore in Reggio Emilia, instead of their regular stadium, [[Stadio Artemio Franchi]] in [[Florence]], due to renovation works.<ref>{{cite news |title=Official: Fiorentina’s Conference League play-off home tie moved |url=https://football-italia.net/official-fiorentina-conference-league-play-off/ |access-date=15 August 2025 |date=8 August 2023}}</ref>}}
+|attendance = 5,033<ref>{{UEFA match attendance|2045888|Fiorentina vs. Polissya Zhytomyr|date=28 August 2025|access-date=28 August 2025}}</ref>
+|referee    = [[Ricardo de Burgos Bengoetxea]] ([[Royal Spanish Football Federation|Spain]])
+|report     = Report<ref>{{cite web |url=https://www.uefa.com/uefaconferenceleague/match/2045888/ |title=Fiorentina vs Polissya Zhytomyr |website=UEFA.com |publisher=Union of European Football Associations |access-date=15 August 2025}}</ref>
+}}
+''Fiorentina won 6–2 on aggregate.''
+----
+{{#invoke:Football box|main
+|date       = {{Start date|2025|8|21|df=y}}
+|time       = 19:00
+|team1      = [[Győri ETO FC|Győri ETO]] {{fbaicon|HUN}}
+|score      = 2–1
+|team2      = {{fbaicon|AUT}} [[SK Rapid Wien|Rapid Wien]]
+|goals1     =
+*[[Željko Gavrić|Gavrić]] {{goal|46||82}}
+|goals2     =
+*[[Nikolaus Wurmbrand|Wurmbrand]] {{goal|61}}
+|stadium    = [[ETO Park]], [[Győr]]
+|attendance = 8,055<ref>{{UEFA match attendance|2045865|Győri ETO vs. Rapid Wien|date=21 August 2025|access-date=21 August 2025}}</ref>
+|referee    = [[Igor Stojchevski]] ([[Football Federation of Macedonia|North Macedonia]])
+|report     = Report<ref>{{cite web |url=https://www.uefa.com/uefaconferenceleague/match/2045865/ |title=Győri ETO vs Rapid Wien |website=UEFA.com |publisher=Union of European Football Associations |access-date=15 August 2025}}</ref>
+}}
+{{#invoke:Football box|main
+|date       = {{Start date|2025|8|28|df=y}}
+|time       = 19:00
+|team1      = Rapid Wien {{fbaicon|AUT}}
+|score      = 2–0
+|team2      = {{fbaicon|HUN}} Győri ETO
+|goals1     =
+*[[Claudy Mbuyi|Mbuyi]] {{goal|7||81}}
+|goals2     =
+|stadium    = [[Allianz Stadion]], [[Vienna]]
+|attendance = 22,250<ref>{{UEFA match attendance|2045889|Rapid Wien vs. Győri ETO|date=28 August 2025|access-date=28 August 2025}}</ref>
+|referee    = [[Manfredas Lukjančukas]] ([[Lithuanian Football Federation|Lithuania]])
+|report     = Report<ref>{{cite web |url=https://www.uefa.com/uefaconferenceleague/match/2045889/ |title=Rapid Wien vs Győri ETO |website=UEFA.com |publisher=Union of European Football Associations |access-date=15 August 2025}}</ref>
+}}
+''Rapid Wien won 3–2 in aggregate.''
+----
+{{#invoke:Football box|main
+|date       = {{Start date|2025|8|21|df=y}}
+|time       = 20:00
+|team1      = [[FC Neman Grodno|Neman Grodno]] {{fbaicon|BLR}}
+|score      = 0–1
+|team2      = {{fbaicon|ESP}} [[Rayo Vallecano]]
+|goals1     =
+|goals2     =
+*[[Álvaro García (footballer, born 1992)|García]] {{goal|77}}
+|stadium    = [[Szent Gellért Fórum]], [[Szeged]], Hungary{{refn|group=note|name=Belarus}}
+|attendance = 0<ref>{{UEFA match attendance|2045866|Neman Grodno vs. Rayo Vallecano|date=21 August 2025|access-date=21 August 2025}}</ref>{{refn|group=note|name=Belarus}}
+|referee    = [[Arda Kardeşler]] ([[Turkish Football Federation|Turkey]])
+|report     = Report<ref>{{cite web |url=https://www.uefa.com/uefaconferenceleague/match/2045866/ |title=Neman Grodno vs Rayo Vallecano |website=UEFA.com |publisher=Union of European Football Associations |access-date=15 August 2025}}</ref>
+}}
+{{#invoke:Football box|main
+|date       = {{Start date|2025|8|28|df=y}}
+|time       = 20:00
+|team1      = Rayo Vallecano {{fbaicon|ESP}}
+|score      = 4–0
+|team2      = {{fbaicon|BLR}} Neman Grodno
+|goals1     =
+*[[Álvaro García (footballer, born 1992)|García]] {{goal|64||89}}
+*[[Sergio Camello|Camello]] {{goal|66}}
+*[[Jorge de Frutos|De Frutos]] {{goal|80}}
+|goals2     =
+|stadium    = [[Vallecas Stadium|Campo de Fútbol de Vallecas]], [[Madrid]]
+|attendance = 12,404<ref>{{UEFA match attendance|2045890|Rayo Vallecano vs. Neman Grodno|date=28 August 2025|access-date=28 August 2025}}</ref>
+|referee    = [[Jérémie Pignard]] ([[French Football Federation|France]])
+|report     = Report<ref>{{cite web |url=https://www.uefa.com/uefaconferenceleague/match/2045890/ |title=Rayo Vallecano vs Neman Grodno |website=UEFA.com |publisher=Union of European Football Associations |access-date=15 August 2025}}</ref>
+}}
+''Rayo Vallecano won 5–0 on aggregate.''
+----
+{{#invoke:Football box|main
+|date       = {{Start date|2025|8|21|df=y}}
+|time       = 20:15
+|team1      = [[FC Lausanne-Sport|Lausanne-Sport]] {{fbaicon|SUI}}
+|score      = 1–1
+|team2      = {{fbaicon|TUR}} [[Beşiktaş J.K.|Beşiktaş]]
+|goals1     =
+*[[Bryan Okoh|Okoh]] {{goal|83}}
+|goals2     =
+*[[Milot Rashica|Rashica]] {{goal|45}}
+|stadium    = [[Stade de la Tuilière]], [[Lausanne]]
+|attendance = 11,931<ref>{{UEFA match attendance|2045867|Lausanne-Sport vs. Beşiktaş|date=21 August 2025|access-date=21 August 2025}}</ref>
+|referee    = [[Sigurd Kringstad]] ([[Norwegian Football Federation|Norway]])
+|report     = Report<ref>{{cite web |url=https://www.uefa.com/uefaconferenceleague/match/2045867/ |title=Lausanne-Sport vs Beşiktaş |website=UEFA.com |publisher=Union of European Football Associations |access-date=15 August 2025}}</ref>
+}}
+{{#invoke:Football box|main
+|date       = {{Start date|2025|8|28|df=y}}
+|time       = 19:00 {{small|(20:00 [[UTC+03:00|UTC+3]])}}
+|team1      = Beşiktaş {{fbaicon|TUR}}
+|score      = 0–1
+|team2      = {{fbaicon|SUI}} Lausanne-Sport
+|goals1     =
+|goals2     =
+*[[Nathan Butler-Oyedeji|Butler-Oyedeji]] {{goal|45+1}}
+|stadium    = [[Beşiktaş Stadium]], [[Istanbul]]
+|attendance = 27,031<ref>{{UEFA match attendance|2045891|Beşiktaş vs. Lausanne-Sport|date=28 August 2025|access-date=28 August 2025}}</ref>
+|referee    = [[Jakob Kehlet]] ([[Danish Football Association|Denmark]])
+|report     = Report<ref>{{cite web |url=https://www.uefa.com/uefaconferenceleague/match/2045891/ |title=Beşiktaş vs Lausanne-Sport |website=UEFA.com |publisher=Union of European Football Associations |access-date=15 August 2025}}</ref>
+}}
+''Lausanne-Sport won 2–1 on aggregate.''
+----
+{{#invoke:Football box|main
+|date       = {{Start date|2025|8|21|df=y}}
+|time       = 21:00 {{small|(19:00 [[UTC+00:00|UTC±0]])}}
+|team1      = [[C.D. Santa Clara|Santa Clara]] {{fbaicon|POR}}
+|score      = 1–2
+|team2      = {{fbaicon|IRL}} [[Shamrock Rovers F.C.|Shamrock Rovers]]
+|goals1     =
+*[[Vinícius Lopes (footballer, born 1999)|Lopes]] {{goal|20}}
+|goals2     =
+*[[Danny Grant (footballer)|Grant]] {{goal|43}}
+*[[Danny Mandroiu|Mandroiu]] {{goal|66}}
+|stadium    = [[Estádio de São Miguel (Ponta Delgada)|Estádio de São Miguel]], [[Ponta Delgada]]
+|attendance = 3,632<ref>{{UEFA match attendance|2045868|Santa Clara vs. Shamrock Rovers|date=21 August 2025|access-date=21 August 2025}}</ref>
+|referee    = [[Stefan Ebner]] ([[Austrian Football Association|Austria]])
+|report     = Report<ref>{{cite web |url=https://www.uefa.com/uefaconferenceleague/match/2045868/ |title=Santa Clara vs Shamrock Rovers |website=UEFA.com |publisher=Union of European Football Associations |access-date=15 August 2025}}</ref>
+}}
+{{#invoke:Football box|main
+|date       = {{Start date|2025|8|28|df=y}}
+|time       = 21:00 {{small|(20:00 [[UTC+01:00|UTC+1]])}}
+|team1      = Shamrock Rovers {{fbaicon|IRL}}
+|score      = 0–0
+|team2      = {{fbaicon|POR}} Santa Clara
+|goals1     =
+|goals2     =
+|stadium    = [[Tallaght Stadium]], [[Dublin]]
+|attendance = 8,223<ref>{{UEFA match attendance|2045892|Shamrock Rovers vs. Santa Clara|date=28 August 2025|access-date=28 August 2025}}</ref>
+|referee    = [[Matej Jug]] ([[Football Association of Slovenia|Slovenia]])
+|report     = Report<ref>{{cite web |url=https://www.uefa.com/uefaconferenceleague/match/2045892/ |title=Shamrock Rovers vs Santa Clara |website=UEFA.com |publisher=Union of European Football Associations |access-date=15 August 2025}}</ref>
+}}
+''Shamrock Rovers won 2–1 on aggregate.''
+----
+{{#invoke:Football box|main
+|date       = {{Start date|2025|8|21|df=y}}
+|time       = 18:00
+|team1      = [[Rosenborg BK|Rosenborg]] {{fbaicon|NOR}}
+|score      = 2–1
+|team2      = {{fbaicon|GER}} [[1. FSV Mainz 05|Mainz 05]]
+|goals1     =
+*[[Dino Islamović|Islamović]] {{goal|43|pen.}}
+*[[Ole Sæter|Sæter]] {{goal|90}}
+|goals2     =
+*[[Nadiem Amiri|Amiri]] {{goal|26}}
+|stadium    = [[Lerkendal Stadion]], [[Trondheim]]
+|attendance = 18,293<ref>{{UEFA match attendance|2045869|Rosenborg vs. Mainz 05|date=21 August 2025|access-date=21 August 2025}}</ref>
+|referee    = [[Oleksii Derevinskyi]] ([[Ukrainian Association of Football|Ukraine]])
+|report     = Report<ref>{{cite web |url=https://www.uefa.com/uefaconferenceleague/match/2045869/ |title=Rosenborg vs Mainz 05 |website=UEFA.com |publisher=Union of European Football Associations |access-date=15 August 2025}}</ref>
+}}
+{{#invoke:Football box|main
+|date       = {{Start date|2025|8|28|df=y}}
+|time       = 21:00
+|team1      = Mainz 05 {{fbaicon|GER}}
+|score      = 4–1
+|team2      = {{fbaicon|NOR}} Rosenborg
+|goals1     =
+*[[Stefan Bell|Bell]] {{goal|28}}
+*[[Jaesung Lee|Lee]] {{goal|43}}
+*[[Nelson Weiper|Weiper]] {{goal|44}}
+*[[Nadiem Amiri|Amiri]] {{goal|58}}
+|goals2     =
+*[[Dino Islamović|Islamović]] {{goal|34}}
+|stadium    = [[Mewa Arena]], [[Mainz]]
+|attendance = 30,000<ref>{{UEFA match attendance|2045893|Mainz 05 vs. Rosenborg|date=28 August 2025|access-date=28 August 2025}}</ref>
+|referee    = [[Sander van der Eijk]] ([[Royal Dutch Football Association|Netherlands]])
+|report     = Report<ref>{{cite web |url=https://www.uefa.com/uefaconferenceleague/match/2045893/ |title=Mainz 05 vs Rosenborg |website=UEFA.com |publisher=Union of European Football Associations |access-date=15 August 2025}}</ref>
+}}
+''Mainz 05 won 5–3 on aggregate.''
+----
+{{#invoke:Football box|main
+|date       = {{Start date|2025|8|21|df=y}}
+|time       = 20:00
+|team1      = [[AC Sparta Prague|Sparta Prague]] {{fbaicon|CZE}}
+|score      = 2–0
+|team2      = {{fbaicon|LVA}} [[Riga FC|Riga]]
+|goals1     =
+*[[Jan Kuchta|Kuchta]] {{goal|22}}
+*[[Albion Rrahmani|Rrahmani]] {{goal|90}}
+|goals2     =
+|stadium    = [[Stadion Letná]], [[Prague]]
+|attendance = 17,168<ref>{{UEFA match attendance|2045870|Sparta Prague vs. Riga|date=21 August 2025|access-date=21 August 2025}}</ref>
+|referee    = [[Enea Jorgji]] ([[Albanian Football Federation|Albania]])
+|report     = Report<ref>{{cite web |url=https://www.uefa.com/uefaconferenceleague/match/2045870/ |title=Sparta Prague vs Riga |website=UEFA.com |publisher=Union of European Football Associations |access-date=15 August 2025}}</ref>
+}}
+{{#invoke:Football box|main
+|date       = {{Start date|2025|8|27|df=y}}
+|time       = 18:45 {{small|(19:45 [[UTC+03:00|UTC+3]])}}
+|team1      = Riga {{fbaicon|LVA}}
+|score      = 1–0
+|team2      = {{fbaicon|CZE}} Sparta Prague
+|goals1     =
+*[[Iago Siqueira|Siqueira]] {{goal|68}}
+|goals2     =
+|stadium    = [[Skonto Stadium]], [[Riga]]
+|attendance = 5,633<ref>{{UEFA match attendance|2045894|Riga vs. Sparta Prague|date=27 August 2025|access-date=27 August 2025}}</ref>
+|referee    = [[Willy Delajod]] ([[French Football Federation|France]])
+|report     = Report<ref>{{cite web |url=https://www.uefa.com/uefaconferenceleague/match/2045894/ |title=Riga vs Sparta Prague |website=UEFA.com |publisher=Union of European Football Associations |access-date=15 August 2025}}</ref>
+}}
+''Sparta Prague won 2–1 on aggregate.''
+----
+{{#invoke:Football box|main
+|date       = {{Start date|2025|8|21|df=y}}
+|time       = 19:00
+|team1      = [[BK Häcken]] {{fbaicon|SWE}}
+|score      = 7–2
+|team2      = {{fbaicon|ROU}} [[CFR Cluj]]
+|goals1     =
+*[[Simon Gustafson|Gustafson]] {{goal|2||35}}
+*[[Silas Andersen|Andersen]] {{goal|18}}
+*[[Adrian Svanbäck|Svanbäck]] {{goal|24}}
+*[[Isak Brusberg|Brusberg]] {{goal|49}}
+*[[John Dembe|Dembe]] {{goal|61||70}}
+|goals2     =
+*[[Meriton Korenica|Korenica]] {{goal|38}}
+*[[Andrei Cordea|Cordea]] {{goal|50}}
+|stadium    = [[Bravida Arena]], [[Gothenburg]]
+|attendance = 3,173<ref>{{UEFA match attendance|2045871|BK Häcken vs. CFR Cluj|date=21 August 2025|access-date=21 August 2025}}</ref>
+|referee    = [[Lukas Fähndrich]] ([[Swiss Football Association|Switzerland]])
+|report     = Report<ref>{{cite web |url=https://www.uefa.com/uefaconferenceleague/match/2045871/ |title=BK Häcken vs CFR Cluj |website=UEFA.com |publisher=Union of European Football Associations |access-date=15 August 2025}}</ref>
+}}
+{{#invoke:Football box|main
+|date       = {{Start date|2025|8|28|df=y}}
+|time       = 19:30 {{small|(20:30 [[UTC+03:00|UTC+3]])}}
+|team1      = CFR Cluj {{fbaicon|ROU}}
+|score      = 1–0
+|team2      = {{fbaicon|SWE}} BK Häcken
+|goals1     =
+*[[Adrian Păun|Păun]] {{goal|48}}
+|goals2     =
+|stadium    = [[Dr. Constantin Rădulescu Stadium]], [[Cluj-Napoca]]
+|attendance = 3,321<ref>{{UEFA match attendance|2045895|CFR Cluj vs. BK Häcken|date=28 August 2025|access-date=28 August 2025}}</ref>
+|referee    = [[Sebastian Gishamer]] ([[Austrian Football Association|Austria]])
+|report     = Report<ref>{{cite web |url=https://www.uefa.com/uefaconferenceleague/match/2045895/ |title=CFR Cluj vs BK Häcken |website=UEFA.com |publisher=Union of European Football Associations |access-date=15 August 2025}}</ref>
+}}
+''BK Häcken won 7–3 on aggregate.''
+----
+{{#invoke:Football box|main
+|date       = {{Start date|2025|8|21|df=y}}
+|time       = 19:00
+|team1      = [[Wolfsberger AC]] {{fbaicon|AUT}}
+|score      = 2–1
+|team2      = {{fbaicon|CYP}} [[AC Omonia|Omonia]]
+|goals1     =
+*[[Chibuike Nwaiwu|Nwaiwu]] {{goal|30}}
+*[[Dejan Zukić|Zukić]] {{goal|88}}
+|goals2     =
+*[[Senou Coulibaly|Coulibaly]] {{goal|16}}
+|stadium    = [[Wörthersee Stadion]], [[Klagenfurt]]{{refn|group=note|name=Wolfsberg|Wolfsberger AC played their home matches at the Wörthersee Stadion, in Klagenfurt, instead of their regular venue, the [[Lavanttal-Arena]], in [[Wolfsberg, Carinthia|Wolfsberg]], which did not meet UEFA requirements.}}
+|attendance = 3,154<ref>{{UEFA match attendance|2045872|Wolfsberger AC vs. Omonia|date=21 August 2025|access-date=21 August 2025}}</ref>
+|referee    = [[António Nobre (referee)|António Nobre]] ([[Portuguese Football Federation|Portugal]])
+|report     = Report<ref>{{cite web |url=https://www.uefa.com/uefaconferenceleague/match/2045872/ |title=Wolfsberger AC vs Omonia |website=UEFA.com |publisher=Union of European Football Associations |access-date=15 August 2025}}</ref>
+}}
+{{#invoke:Football box|main
+|date       = {{Start date|2025|8|28|df=y}}
+|time       = 18:00 {{small|(19:00 [[UTC+03:00|UTC+3]])}}
+|team1      = Omonia {{fbaicon|CYP}}
+|score      = 1–0
+|aet        = yes
+|team2      = {{fbaicon|AUT}} Wolfsberger AC
+|goals1     =
+*[[Willy Semedo|Semedo]] {{goal|39}}
+|goals2     =
+|stadium    = [[GSP Stadium]], [[Nicosia]]
+|attendance = 14,582<ref>{{UEFA match attendance|2045896|Omonia vs. Wolfsberger AC|date=28 August 2025|access-date=28 August 2025}}</ref>
+|referee    = [[Daniele Chiffi]] ([[Italian Football Federation|Italy]])
+|penalties1 =
+*[[Mariusz Stępiński|Stępiński]] {{pengoal}}
+*[[Senou Coulibaly|Coulibaly]] {{pengoal}}
+*[[Novica Eraković|Eraković]] {{pengoal}}
+*[[Anastasios Chatzigiovanis|Chatzigiovanis]] {{pengoal}}
+*[[Ioannis Kousoulos|Kousoulos]] {{pengoal}}
+|penaltyscore = 5–4
+|penalties2 =
+*{{pengoal}} [[Dejan Zukić|Zukić]]
+*{{pengoal}} [[Alessandro Schöpf|Schöpf]]
+*{{penmiss}} [[Markus Pink|Pink]]
+*{{pengoal}} [[Dominik Baumgartner|Baumgartner]]
+*{{pengoal}} [[Angelo Gattermayer|Gattermayer]]
+|report     = Report<ref>{{cite web |url=https://www.uefa.com/uefaconferenceleague/match/2045896/ |title=Omonia vs Wolfsberger AC |website=UEFA.com |publisher=Union of European Football Associations |access-date=15 August 2025}}</ref>
+}}
+''2–2 on aggregate; Omonia won 5–4 on penalties.''
+
+==Notes==
+{{reflist|group=note}}
+
+==References==
+{{reflist}}
+
+==External links==
+*{{Official website|https://www.uefa.com/uefaconferenceleague/}}
+
+{{UEFA Conference League phases}}
+{{2025–26 in European football (UEFA)}}
+
+{{DEFAULTSORT:2025-26 Uefa Conference League qualifying}}
+[[Category:2025–26 UEFA Conference League|*1.2]]
+[[Category:UEFA Conference League qualifying rounds|Matches 2025-26 2]]
