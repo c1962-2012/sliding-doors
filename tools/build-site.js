@@ -33,7 +33,12 @@ const tail = `<script>if ("serviceWorker" in navigator) {
   const had = !!navigator.serviceWorker.controller;
   let done = false;
   navigator.serviceWorker.addEventListener("controllerchange", () => { if (had && !done) { done = true; location.reload() } });
-  addEventListener("load", () => navigator.serviceWorker.register("sw.js", { updateViaCache: "none" }));
+  // l'app installata resta spesso aperta in sottofondo: si cerca la versione nuova ogni volta che torna in primo piano e ogni 5 minuti
+  addEventListener("load", () => navigator.serviceWorker.register("sw.js", { updateViaCache: "none" }).then(reg => {
+    const check = () => reg.update().catch(() => {});
+    document.addEventListener("visibilitychange", () => { if (!document.hidden) check() });
+    setInterval(check, 300000);
+  }));
 }</script>
 </body>
 </html>
