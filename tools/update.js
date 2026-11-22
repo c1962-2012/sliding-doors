@@ -52,6 +52,28 @@ const hash = f => fs.existsSync(f) ? crypto.createHash("sha1").update(fs.readFil
   global.window = {};
   eval(fs.readFileSync(path.join(proto, "data.js"), "utf8"));
   const cur = window.SERIE_A[Object.keys(window.SERIE_A).sort().pop()];
+
+  // football-data.co.uk carica i risultati con giorni di ritardo: le partite già finite che mancano si prendono da ESPN (ultimi 21 giorni)
+  const NOMI = { "AC Milan": "Milan", "Internazionale": "Inter", "AS Roma": "Roma", "Hellas Verona": "Verona" };
+  const ymd = d => d.toISOString().slice(0, 10).replace(/-/g, "");
+  let daEspn = 0;
+  for (let n = 0; n <= 21; n++) {
+    let ev = [];
+    try {
+      const r = await fetch("https://site.api.espn.com/apis/site/v2/sports/soccer/ita.1/scoreboard?dates=" + ymd(new Date(Date.now() - n * 864e5)));
+      if (r.ok) ev = (await r.json()).events || [];
+    } catch { }
+    for (const e of ev) {
+      if (e.status.type.state !== "post" || !e.status.type.completed) continue;
+      const c = e.competitions[0].competitors, H = c.find(x => x.homeAway === "home"), A = c.find(x => x.homeAway === "away");
+      if (!H || !A) continue;
+      const m = cur.find(x => x[1] === (NOMI[H.team.displayName] || H.team.displayName) && x[2] === (NOMI[A.team.displayName] || A.team.displayName));
+      // anche la data: il calendario a volte ha quella vecchia di una partita spostata
+      if (m && m[3] === null) { m[3] = +H.score; m[4] = +A.score; m[0] = new Date(e.date).toLocaleDateString("sv-SE", { timeZone: "Europe/Rome" }); daEspn++ }
+    }
+  }
+  if (daEspn) fs.writeFileSync(path.join(proto, "data.js"), "window.SERIE_A=" + JSON.stringify(window.SERIE_A) + ";");
+  got.espn = daEspn;
   const played = cur.filter(m => m[3] !== null);
   const after = [hash(path.join(proto, "data.js")), hash(path.join(proto, "cups.js"))];
   console.log(JSON.stringify({

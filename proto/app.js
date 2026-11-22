@@ -869,13 +869,18 @@ showView({ "#coppa":"cup", "#europa":"eu", "#marcatori":"sc" }[location.hash] ||
         if (st === "pre") continue;
         if (e.__c) continue;
         const m = rows.find(x => x[1] === h && x[2] === a);
-        if (m && (m[3] !== hs || m[4] !== as)){ m[3] = hs; m[4] = as; changed = true }
+        if (m && (m[3] !== hs || m[4] !== as)){ m[3] = hs; m[4] = as; m[0] = new Date(e.date).toLocaleDateString("sv-SE", { timeZone: "Europe/Rome" }); changed = true }
       }
       const prossime = ev.filter(e => e.status.type.state === "pre").map(e => new Date(e.date)).sort((x,y) => x-y);
       const quando = prossime[0] ? " Prossima partita alle " + prossime[0].toLocaleTimeString("it-IT",{hour:"2-digit",minute:"2-digit"}) + "." : "";
       bar.innerHTML = righe.length ? `<span class="tag"><i class="dot"></i>LIVE</span>${righe.join("")}` : `<span style="color:var(--muted,#8a97ab)">Nessuna partita in corso ora.${quando} Controllo automatico attivo.</span>`;
       bar.hidden = false; sposta(righe.length > 0);
-      if (changed){ delete CACHE[CURRENT]; if (season === CURRENT) render() }
+      if (changed){
+        delete CACHE[CURRENT]; if (season === CURRENT) render();
+        // la scritta "aggiornata alle partite del..." segue anche i risultati arrivati in diretta
+        const ultima = rows.filter(m => m[3] !== null).map(m => m[0]).sort().pop();
+        if (up && ultima) up.textContent = `Serie A aggiornata alle partite del ${fmtDate(ultima)}`;
+      }
     } catch(e){ next = 60000; bar.hidden = false; bar.innerHTML = `<span style="color:#ffb347">Live non raggiungibile (${e && e.message || e}). Riprovo tra poco.</span>` }
     clearTimeout(timer); timer = setTimeout(live, next);
   }
