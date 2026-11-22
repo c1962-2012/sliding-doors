@@ -810,3 +810,75 @@ setSeason(CURRENT);
   if (up && lastPlayed) up.textContent = `Serie A aggiornata alle partite del ${fmtDate(lastPlayed)}`;
 }
 showView({ "#coppa":"cup", "#europa":"eu", "#marcatori":"sc" }[location.hash] || "a");
+
+// ---- Risultati in tempo reale (ESPN, senza chiave) ----
+// Durante le partite il punteggio della stagione in corso si aggiorna da solo: classifica, lista e Sliding Doors si ricalcolano.
+{
+  const NOMI = { "AC Milan":"Milan", "Internazionale":"Inter", "AS Roma":"Roma" };
+  const nome = n => NOMI[n] || n;
+  const COMPETIZIONI = [{ slug:"ita.coppa_italia", sigla:"Coppa Italia", tutte:true }, { slug:"uefa.champions", sigla:"Champions" },
+    { slug:"uefa.europa", sigla:"Europa League" }, { slug:"uefa.europa.conf", sigla:"Conference" }];
+  const ITA = new Set(Object.values(SERIE_A).flat().flatMap(m => [m[1], m[2]]));
+  const bar = document.createElement("div");
+  bar.id = "liveBar"; bar.hidden = true;
+  const st = document.createElement("style");
+  st.textContent = "#liveBar{margin:8px 0;padding:8px 12px;border-radius:10px;background:rgba(255,255,255,.06);font-size:13px}@keyframes sdPulse{0%,100%{opacity:1;transform:scale(1)}50%{opacity:.35;transform:scale(.8)}}" +
+    "#liveBar.on{position:fixed;top:0;left:0;right:0;z-index:9999;margin:0;padding:10px 14px;background:linear-gradient(90deg,#b3121f,#e5283a);color:#fff;border:0;border-bottom:2px solid #fff3;box-shadow:0 4px 18px rgba(0,0,0,.55);font-size:16px;display:flex;flex-wrap:wrap;gap:6px 12px;align-items:center;justify-content:center}" +
+    "#liveBar .tag{font-weight:800;letter-spacing:.08em;display:inline-flex;align-items:center;gap:7px}" +
+    "#liveBar .dot{width:10px;height:10px;border-radius:50%;background:#fff;animation:sdPulse 1.1s infinite}" +
+    "@keyframes sdBlink{0%,49%{background:#0b0f1a;color:#fff;box-shadow:0 0 0 2px #fff}50%,100%{background:#ffe100;color:#111;box-shadow:0 0 16px 3px #ffe100}}" +
+    "#liveBar .m{background:#0b0f1a;border-radius:14px;padding:5px 14px;font-size:17px;display:inline-flex;flex-direction:column;align-items:center;animation:sdBlink 1.2s steps(1) infinite}" +
+    "#liveBar .gol{display:flex;flex-wrap:wrap;gap:2px 10px;justify-content:center;font-size:13px;margin-top:2px}" +
+    "#liveBar .g.t{opacity:.85}" +
+    "#liveBar .m em{font-style:normal;font-size:11px;letter-spacing:.08em;text-transform:uppercase;opacity:.9;margin-bottom:1px}" +
+    "#liveBar .m small{font-size:13px;opacity:.9;margin-left:6px}";
+  document.head.appendChild(st);
+  const up = $("updated");
+  if (up) up.parentNode.insertBefore(bar, up.nextSibling);
+  const sposta = on => { bar.classList.toggle("on", on); document.body.style.paddingTop = on ? bar.offsetHeight + "px" : "" };
+  let timer = null, passati = null;
+  async function live(){
+    let next = 300000;
+    try {
+      const ymd = d => d.getFullYear() + String(d.getMonth()+1).padStart(2,"0") + String(d.getDate()).padStart(2,"0");
+      const day = n => fetch("https://site.api.espn.com/apis/site/v2/sports/soccer/ita.1/scoreboard?dates=" + ymd(new Date(Date.now() - n*864e5)), { cache: "no-store" }).then(r => r.json()).then(j => j.events || []);
+      // i 7 giorni precedenti si scaricano una volta sola (recuperano i risultati che i dati fissi non hanno ancora); oggi a ogni controllo
+      passati ||= Promise.all([1,2,3,4,5,6,7].map(n => day(n).catch(() => []))).then(x => x.flat());
+      const ev = [...await passati, ...await day(0)];
+      // le altre competizioni dell'app: Coppa Italia (tutte le partite) ed Europa (solo con una squadra italiana)
+      const altre = await Promise.all(COMPETIZIONI.map(c => fetch("https://site.api.espn.com/apis/site/v2/sports/soccer/" + c.slug + "/scoreboard", { cache: "no-store" })
+        .then(r => r.json()).then(j => (j.events || []).filter(e => c.tutte || e.competitions[0].competitors.some(x => ITA.has(nome(x.team.displayName)))).map(e => (e.__c = c.sigla, e))).catch(() => [])));
+      ev.push(...altre.flat());
+      const rows = SERIE_A[CURRENT];
+      let changed = false, righe = [];
+      for (const e of ev){
+        const c = e.competitions[0].competitors, st = e.status.type.state;
+        const H = c.find(x => x.homeAway === "home"), A = c.find(x => x.homeAway === "away");
+        if (!H || !A) continue;
+        const h = nome(H.team.displayName), a = nome(A.team.displayName);
+        const hs = +H.score, as = +A.score;
+        if (st === "in"){ next = 30000; {
+          const gol = (e.competitions[0].details || []).filter(d => d.scoringPlay).map(d => {
+            const p = (d.athletesInvolved || [])[0], cogn = p ? (p.shortName || p.displayName).replace(/^[A-Z].s*/, "") : "?";
+            const sq = d.team && d.team.id === H.team.id ? "c" : "t";
+            return `<span class="g ${sq}">⚽ ${cogn} ${d.clock.displayValue}${d.penaltyKick ? " (rig.)" : ""}${d.ownGoal ? " (aut.)" : ""}</span>`;
+          }).join("");
+          righe.push(`<span class="m">${e.__c ? `<em>${e.__c}</em>` : ""}<span class="top"><b>${h} ${hs}-${as} ${a}</b><small>${e.status.displayClock}</small></span>${gol ? `<span class="gol">${gol}</span>` : ""}</span>`);
+        } }
+        else if (st === "pre" && next > 60000 && new Date(e.date) - Date.now() < 900000) next = 60000;
+        if (st === "pre") continue;
+        if (e.__c) continue;
+        const m = rows.find(x => x[1] === h && x[2] === a);
+        if (m && (m[3] !== hs || m[4] !== as)){ m[3] = hs; m[4] = as; changed = true }
+      }
+      const prossime = ev.filter(e => e.status.type.state === "pre").map(e => new Date(e.date)).sort((x,y) => x-y);
+      const quando = prossime[0] ? " Prossima partita alle " + prossime[0].toLocaleTimeString("it-IT",{hour:"2-digit",minute:"2-digit"}) + "." : "";
+      bar.innerHTML = righe.length ? `<span class="tag"><i class="dot"></i>LIVE</span>${righe.join("")}` : `<span style="color:var(--muted,#8a97ab)">Nessuna partita in corso ora.${quando} Controllo automatico attivo.</span>`;
+      bar.hidden = false; sposta(righe.length > 0);
+      if (changed){ delete CACHE[CURRENT]; if (season === CURRENT) render() }
+    } catch(e){ next = 60000; bar.hidden = false; bar.innerHTML = `<span style="color:#ffb347">Live non raggiungibile (${e && e.message || e}). Riprovo tra poco.</span>` }
+    clearTimeout(timer); timer = setTimeout(live, next);
+  }
+  live();
+  document.addEventListener("visibilitychange", () => { if (!document.hidden) live() });
+}

@@ -628,7 +628,7 @@ The top eight ranked teams receive a bye directly to the round of 16. Teams rank
 |section=Table
 |show_limit=5
 |class_rules=[[2026–27 UEFA Europa League league phase#Tiebreakers|League phase tiebreakers]]
-|source=UEFA<ref>{{cite web |url=https://www.uefa.com/uefaeuropaleague/standings/ |title=League phase table |publisher=[[UEFA]] |access-date=15 October 2026}}</ref>
+|source=UEFA<ref>{{cite web |url=https://www.uefa.com/uefaeuropaleague/standings/ |title=League phase table |publisher=[[UEFA]] |access-date=5 November 2026}}</ref>
 
 <!--Automatically generate standings-->
 |auto_generate_standings=y
@@ -655,7 +655,7 @@ The top eight ranked teams receive a bye directly to the round of 16. Teams rank
 |teamwidth=200
 
 <!--Default order of teams when tied-->
-|default_order=<!--DO NOT CHANGE, THIS DOESN'T DETERMINE THE ACTUAL RANKING-->AND, AAR, AZ, LEV, BEN, BES, BOU, CEJ, CEL, CLT, CRY, DIN, FER, HBS, JAG, JUV, LPO, LSO, LIL, LYO, MAR, MIL, NEC, OFI, OLY, OMO, RSO, SAL, REN, SLA, STU, SUN, TOR, HOF, USG, PLZ
+|default_order=<!--DO NOT CHANGE, THIS DOESN'T DETERMINE THE ACTUAL RANKING-->AND, AAR, AZ, LEV, BEN, BES, BOU, CEJ, CEL, CLT, CRY, DIN, FER, HBS, JAG, JUV, LPO, LSO, LIL, LYO, MAR, MIL, NEC, OFI, OLY, OMO, RSO, SAL, REN, SPA, STU, SUN, TOR, HOF, USG, PLZ
 
 <!--Team definitions-->
 |name_AND ={{fbaicon|BEL}} [[RSC Anderlecht|Anderlecht]]
@@ -687,7 +687,7 @@ The top eight ranked teams receive a bye directly to the round of 16. Teams rank
 |name_RSO ={{fbaicon|ESP}} [[Real Sociedad]]
 |name_SAL ={{fbaicon|AUT}} [[FC Red Bull Salzburg|Red Bull Salzburg]]
 |name_REN ={{fbaicon|FRA}} [[Stade Rennais FC|Rennes]]
-|name_SLA ={{fbaicon|CZE}} [[AC Sparta Prague|Sparta Prague]]
+|name_SPA ={{fbaicon|CZE}} [[AC Sparta Prague|Sparta Prague]]
 |name_STU ={{fbaicon|AUT}} [[SK Sturm Graz|Sturm Graz]]
 |name_SUN ={{fbaicon|ENG}} [[Sunderland A.F.C.|Sunderland]]
 |name_TOR ={{fbaicon|POR}} [[S.C.U. Torreense|Torreense]]
@@ -700,28 +700,28 @@ The top eight ranked teams receive a bye directly to the round of 16. Teams rank
 |block1_title=Results by Pot 1 team
 |block1=LEV, BEN, JUV, MIL, LYO, AZ, OLY, RSO, MAR
 |block2_title=Results by Pot 2 team
-|block2=FER, PLZ, USG, DIN, SAL, CLT, SLA, REN, AND
+|block2=FER, PLZ, USG, DIN, SAL, CLT, SPA, REN, AND
 |block3_title=Results by Pot 3 team
 |block3=STU, LPO, CRY, BOU, SUN, CEJ, JAG, OMO, CEL
 |block4_title=Results by Pot 4 team
 |block4=HOF, BES, TOR, HBS, NEC, OFI, LIL, LSO, AAR
 
 <!--Fixtures by matchday-->
-|round1_matches=AAR_SLA, OMO_CEL, MIL_BEN, LEV_CEJ, HBS_DIN, OLY_JAG, AND_LYO, STU_REN, SUN_AZ, OFI_HOF, LSO_SAL, BES_MAR, CLT_FER, CRY_LPO, PLZ_USG, JUV_NEC, LIL_TOR, RSO_BOU
-|round2_matches=SLA_LIL, AZ_HBS, SAL_MIL, LPO_LEV, CEJ_OMO, LYO_CRY, USG_RSO, TOR_SUN, BOU_STU, FER_PLZ, DIN_AND, JAG_AAR, NEC_LSO, MAR_OLY, CEL_JUV, BEN_CLT, REN_OFI, HOF_BES
-|round3_matches=AAR_AZ, FER_TOR, DIN_NEC, JUV_REN, LPO_SUN, OFI_LEV, USG_HBS, STU_MAR, BOU_MIL, BES_CRY, CLT_CEL, PLZ_LSO, JAG_AND, LIL_RSO, CEJ_SAL, OLY_SLA, OMO_BEN, HOF_LYO
-|round4_matches=MIL_FER, SLA_BOU, CRY_HOF, LIL_PLZ, NEC_OMO, LSO_JAG, RSO_LYO, AND_SAL, REN_OLY, AZ_JUV, LEV_MAR, CLT_BES, HBS_OFI, CEL_USG, TOR_AAR, STU_CEJ, BEN_LPO, SUN_DIN
-|round5_matches=BES_HBS, SAL_AAR, PLZ_BEN, DIN_LEV, OLY_MIL, MAR_LSO, USG_LPO, CEL_BOU, SLA_AZ, CRY_RSO, FER_CEJ, JUV_OMO, NEC_REN, OFI_AND, LYO_LIL, TOR_CLT, SUN_JAG, HOF_STU
-|round6_matches=AZ_STU, AAR_NEC, HBS_JUV, JAG_CRY, MAR_CEL, OMO_CLT, AND_HOF, REN_DIN, MIL_SUN, BOU_PLZ, LEV_BES, SAL_SLA, LPO_FER, CEJ_OLY, LYO_USG, LSO_LIL, RSO_TOR, BEN_OFI
-|round7_matches=BES_USG, AAR_CEJ, FER_JUV, JAG_LYO, LIL_BOU, NEC_BEN, OLY_HOF, RSO_PLZ, STU_OFI, AZ_DIN, LEV_SAL, CLT_MAR, CRY_SLA, HBS_CEL, LPO_TOR, LSO_MIL, AND_SUN, REN_OMO
-|round8_matches=MIL_AAR, SLA_REN, BOU_HBS, SAL_CRY, PLZ_JAG, DIN_STU, JUV_RSO, CEJ_NEC, OFI_LPO, MAR_AND, LYO_LEV, OMO_BES, USG_CLT, CEL_LIL, TOR_OLY, BEN_AZ, SUN_LSO, HOF_FER
+|round1_matches=AAR_SPA, OMO_CEL, MIL_BEN, LEV_CEJ, HBS_DIN, OLY_JAG, AND_LYO, STU_REN, SUN_AZ, OFI_HOF, LSO_SAL, BES_MAR, CLT_FER, CRY_LPO, PLZ_USG, JUV_NEC, LIL_TOR, RSO_BOU
+|round2_matches=SPA_LIL, AZ_HBS, SAL_MIL, LPO_LEV, CEJ_OMO, LYO_CRY, USG_RSO, TOR_SUN, BOU_STU, FER_PLZ, DIN_AND, JAG_AAR, NEC_LSO, MAR_OLY, CEL_JUV, BEN_CLT, REN_OFI, HOF_BES
+|round3_matches=AAR_AZ, FER_TOR, DIN_NEC, JUV_REN, LPO_SUN, OFI_LEV, USG_HBS, STU_MAR, BOU_MIL, BES_CRY, CLT_CEL, PLZ_LSO, JAG_AND, LIL_RSO, CEJ_SAL, OLY_SPA, OMO_BEN, HOF_LYO
+|round4_matches=REN_OLY, MIL_FER, SPA_BOU, CRY_HOF, LIL_PLZ, NEC_OMO, LSO_JAG, RSO_LYO, AND_SAL, AZ_JUV, LEV_MAR, CLT_BES, HBS_OFI, CEL_USG, TOR_AAR, STU_CEJ, BEN_LPO, SUN_DIN
+|round5_matches=BES_HBS, SAL_AAR, PLZ_BEN, DIN_LEV, OLY_MIL, MAR_LSO, USG_LPO, CEL_BOU, SPA_AZ, CRY_RSO, FER_CEJ, JUV_OMO, NEC_REN, OFI_AND, LYO_LIL, TOR_CLT, SUN_JAG, HOF_STU
+|round6_matches=AZ_STU, AAR_NEC, HBS_JUV, JAG_CRY, MAR_CEL, OMO_CLT, AND_HOF, REN_DIN, MIL_SUN, BOU_PLZ, LEV_BES, SAL_SPA, LPO_FER, CEJ_OLY, LYO_USG, LSO_LIL, RSO_TOR, BEN_OFI
+|round7_matches=BES_USG, AAR_CEJ, FER_JUV, JAG_LYO, LIL_BOU, NEC_BEN, OLY_HOF, RSO_PLZ, STU_OFI, AZ_DIN, LEV_SAL, CLT_MAR, CRY_SPA, HBS_CEL, LPO_TOR, LSO_MIL, AND_SUN, REN_OMO
+|round8_matches=MIL_AAR, SPA_REN, BOU_HBS, SAL_CRY, PLZ_JAG, DIN_STU, JUV_RSO, CEJ_NEC, OFI_LPO, MAR_AND, LYO_LEV, OMO_BES, USG_CLT, CEL_LIL, TOR_OLY, BEN_AZ, SUN_LSO, HOF_FER
 
 <!--Update date-->
-|update=22 October 2026 
+|update=5 November 2026 
 
 <!--Results: the scores determine the record and ranking of teams in the standings-->
 <!--Matchday 1-->
-|match_AAR_SLA=1–4
+|match_AAR_SPA=1–4
 |match_OMO_CEL=1–0
 |match_MIL_BEN=0–2
 |match_LEV_CEJ=2–0
@@ -741,7 +741,7 @@ The top eight ranked teams receive a bye directly to the round of 16. Teams rank
 |match_RSO_BOU=1–2
 
 <!--Matchday 2-->
-|match_SLA_LIL=1–1
+|match_SPA_LIL=1–1
 |match_AZ_HBS= 2–1
 |match_SAL_MIL=0–4
 |match_LPO_LEV=0–4
@@ -776,29 +776,29 @@ The top eight ranked teams receive a bye directly to the round of 16. Teams rank
 |match_JAG_AND=0–3
 |match_LIL_RSO=0–6
 |match_CEJ_SAL=2–2
-|match_OLY_SLA=1–0
+|match_OLY_SPA=1–0
 |match_OMO_BEN=1–4
 |match_HOF_LYO=3–0
 
 <!--Matchday 4-->
-|match_MIL_FER={{small|5 Nov}}
-|match_SLA_BOU={{small|5 Nov}}
-|match_CRY_HOF={{small|5 Nov}}
-|match_LIL_PLZ={{small|5 Nov}}
-|match_NEC_OMO={{small|5 Nov}}
-|match_LSO_JAG={{small|5 Nov}}
-|match_RSO_LYO={{small|5 Nov}}
-|match_AND_SAL={{small|5 Nov}}
-|match_REN_OLY={{small|5 Nov}}
-|match_AZ_JUV= {{small|5 Nov}}
-|match_LEV_MAR={{small|5 Nov}}
-|match_CLT_BES={{small|5 Nov}}
-|match_HBS_OFI={{small|5 Nov}}
-|match_CEL_USG={{small|5 Nov}}
-|match_TOR_AAR={{small|5 Nov}}
-|match_STU_CEJ={{small|5 Nov}}
-|match_BEN_LPO={{small|5 Nov}}
-|match_SUN_DIN={{small|5 Nov}}
+|match_MIL_FER=0–2
+|match_SPA_BOU=1–3
+|match_CRY_HOF=1–1
+|match_LIL_PLZ=0–1
+|match_NEC_OMO=3–1
+|match_LSO_JAG=1–0
+|match_RSO_LYO=1–1
+|match_AND_SAL=2–0
+|match_REN_OLY=0–0
+|match_AZ_JUV=1–2
+|match_LEV_MAR=0–1
+|match_CLT_BES=3–2
+|match_HBS_OFI=0–2
+|match_CEL_USG=1–2
+|match_TOR_AAR=3–2
+|match_STU_CEJ=2–3
+|match_BEN_LPO=3–1
+|match_SUN_DIN=0–2
 
 <!--Matchday 5-->
 |match_BES_HBS={{small|26 Nov}}
@@ -809,7 +809,7 @@ The top eight ranked teams receive a bye directly to the round of 16. Teams rank
 |match_MAR_LSO={{small|26 Nov}}
 |match_USG_LPO={{small|26 Nov}}
 |match_CEL_BOU={{small|26 Nov}}
-|match_SLA_AZ= {{small|26 Nov}}
+|match_SPA_AZ= {{small|26 Nov}}
 |match_CRY_RSO={{small|26 Nov}}
 |match_FER_CEJ={{small|26 Nov}}
 |match_JUV_OMO={{small|26 Nov}}
@@ -832,7 +832,7 @@ The top eight ranked teams receive a bye directly to the round of 16. Teams rank
 |match_MIL_SUN={{small|10 Dec}}
 |match_BOU_PLZ={{small|10 Dec}}
 |match_LEV_BES={{small|10 Dec}}
-|match_SAL_SLA={{small|10 Dec}}
+|match_SAL_SPA={{small|10 Dec}}
 |match_LPO_FER={{small|10 Dec}}
 |match_CEJ_OLY={{small|10 Dec}}
 |match_LYO_USG={{small|10 Dec}}
@@ -853,7 +853,7 @@ The top eight ranked teams receive a bye directly to the round of 16. Teams rank
 |match_AZ_DIN= {{small|21 Jan}}
 |match_LEV_SAL={{small|21 Jan}}
 |match_CLT_MAR={{small|21 Jan}}
-|match_CRY_SLA={{small|21 Jan}}
+|match_CRY_SPA={{small|21 Jan}}
 |match_HBS_CEL={{small|21 Jan}}
 |match_LPO_TOR={{small|21 Jan}}
 |match_LSO_MIL={{small|21 Jan}}
@@ -862,7 +862,7 @@ The top eight ranked teams receive a bye directly to the round of 16. Teams rank
 
 <!--Matchday 8-->
 |match_MIL_AAR={{small|28 Jan}}
-|match_SLA_REN={{small|28 Jan}}
+|match_SPA_REN={{small|28 Jan}}
 |match_BOU_HBS={{small|28 Jan}}
 |match_SAL_CRY={{small|28 Jan}}
 |match_PLZ_JAG={{small|28 Jan}}
@@ -1806,267 +1806,309 @@ Times are [[Central European Time|CET]] or [[Central European Summer Time|CEST]]
 
 ===Matchday 4===
 {{#invoke:Football box|main
+|date       = {{Start date|2026|11|4|df=y}}
+|time       = 16:30{{refn|group=note|The Rennes v Olympiacos match, originally scheduled for 5 November 2026, 18:45 CET, was rescheduled to the day before, 16:30 CET, as French authorities were unable to guarantee the safety and security conditions required due to planned strikes and protests in France on that day.<ref>{{cite web|url=https://www.uefa.com/uefaeuropaleague/news/02aa-21ed9f2ed2e9-6a5898dc1fb4-1000--change-of-date-and-kick-off-time-for-rennes-vs-olympiacos/|title=Change of date and kick-off time for Rennes vs Olympiacos|publisher=[[UEFA]]|date=27 October 2026|access-date=2 November 2026}}</ref>}}
+|team1      = [[Stade Rennais FC|Rennes]] {{fbaicon|FRA}}
+|score      = 0–0
+|team2      = {{fbaicon|GRE}} [[Olympiacos F.C.|Olympiacos]]
+|goals1     =
+|goals2     =
+|stadium    = [[Roazhon Park]], [[Rennes]]
+|attendance = 27,276<ref>{{cite web |url=https://www.uefa.com/newsfiles/uefacup/2027/2050118_FR.pdf |title=Full Time Summary Matchday 4 – Rennes v Olympiacos |work=[[UEFA]] |publisher=Union of European Football Associations |date=4 November 2026 |access-date=5 November 2026}}</ref>
+|referee    = [[Igor Pajač]] ([[Croatian Football Federation|Croatia]])
+|report     = Report<ref>{{cite web |url=https://www.uefa.com/uefaeuropaleague/match/2050118/ |title=Rennes vs. Olympiacos |publisher=UEFA |access-date=4 November 2026}}</ref>
+}}
+----
+{{#invoke:Football box|main
 |date       = {{Start date|2026|11|5|df=y}}
 |time       = 18:45
 |team1      = [[AC Milan|Milan]] {{fbaicon|ITA}}
-|score      =
+|score      = 0–2
 |team2      = {{fbaicon|HUN}} [[Ferencvárosi TC|Ferencváros]]
 |goals1     =
 |goals2     =
+*[[Lenny Joseph|Joseph]] {{goal|52||66}}
 |stadium    = [[San Siro]], [[Milan]]
-|attendance =
-|referee    =
-|report     = Report<ref>{{cite web |url=https://www.uefa.com/uefaeuropaleague/match/2050113/ |title=Milan vs. Ferencváros |publisher=UEFA |access-date=29 August 2026}}</ref>
+|attendance = 49,372<ref>{{cite web |url=https://www.uefa.com/newsfiles/uefacup/2027/2050113_FR.pdf |title=Full Time Summary Matchday 4 – Milan v Ferencváros |work=[[UEFA]] |publisher=Union of European Football Associations |date=5 November 2026 |access-date=5 November 2026}}</ref>
+|referee    = [[Urs Schnyder]] ([[Swiss Football Association|Switzerland]])
+|report     = Report<ref>{{cite web |url=https://www.uefa.com/uefaeuropaleague/match/2050113/ |title=Milan vs. Ferencváros |publisher=UEFA |access-date=5 November 2026}}</ref>
 }}
 ----
 {{#invoke:Football box|main
 |date       = {{Start date|2026|11|5|df=y}}
 |time       = 18:45
 |team1      = [[AC Sparta Prague|Sparta Prague]] {{fbaicon|CZE}}
-|score      =
+|score      = 1–3
 |team2      = {{fbaicon|ENG}} [[AFC Bournemouth|Bournemouth]]
 |goals1     =
+*[[Ebrima Singhateh|Singhateh]] {{goal|35}}
 |goals2     =
+*[[Tyler Adams|Adams]] {{goal|57}}
+*[[Evanilson (footballer, born 1999)|Evanilson]] {{goal|81}}
+*[[Rayan (footballer, born 2006)|Rayan]] {{goal|90}}
 |stadium    = [[Stadion Letná]], [[Prague]]
-|attendance =
-|referee    =
-|report     = Report<ref>{{cite web |url=https://www.uefa.com/uefaeuropaleague/match/2050117/ |title=Sparta Praha vs. Bournemouth |publisher=UEFA |access-date=29 August 2026}}</ref>
+|attendance = 17,377<ref>{{cite web |url=https://www.uefa.com/newsfiles/uefacup/2027/2050117_FR.pdf |title=Full Time Summary Matchday 4 – Sparta Prague v Bournemouth |work=[[UEFA]] |publisher=Union of European Football Associations |date=5 November 2026 |access-date=5 November 2026}}</ref>
+|referee    = [[Erik Lambrechts]] ([[Royal Belgian Football Association|Belgium]])
+|report     = Report<ref>{{cite web |url=https://www.uefa.com/uefaeuropaleague/match/2050117/ |title=Sparta Praha vs. Bournemouth |publisher=UEFA |access-date=5 November 2026}}</ref>
 }}
 ----
 {{#invoke:Football box|main
 |date       = {{Start date|2026|11|5|df=y}}
 |time       = 18:45&nbsp;{{small|(17:45 [[UTC+00:00|UTC+0]])}}
 |team1      = [[Crystal Palace F.C.|Crystal Palace]] {{fbaicon|ENG}}
-|score      =
+|score      = 1–1
 |team2      = {{fbaicon|GER}} [[TSG 1899 Hoffenheim|TSG Hoffenheim]]
 |goals1     =
+*[[Daichi Kamada|Kamada]] {{goal|90+1}}
 |goals2     =
+*[[Alexander Prass|Prass]] {{goal|7}}
 |stadium    = [[Selhurst Park]], [[London]]
-|attendance =
-|referee    =
-|report     = Report<ref>{{cite web |url=https://www.uefa.com/uefaeuropaleague/match/2050121/ |title=Crystal Palace vs. Hoffenheim |publisher=UEFA |access-date=29 August 2026}}</ref>
+|attendance = 18,741<ref>{{cite web |url=https://www.uefa.com/newsfiles/uefacup/2027/2050121_FR.pdf |title=Full Time Summary Matchday 4 – Crystal Palace v TSG Hoffenheim |work=[[UEFA]] |publisher=Union of European Football Associations |date=5 November 2026 |access-date=5 November 2026}}</ref>
+|referee    = [[Horațiu Feşnic]] ([[Romanian Football Federation|Romania]])
+|report     = Report<ref>{{cite web |url=https://www.uefa.com/uefaeuropaleague/match/2050121/ |title=Crystal Palace vs. Hoffenheim |publisher=UEFA |access-date=5 November 2026}}</ref>
 }}
 ----
 {{#invoke:Football box|main
 |date       = {{Start date|2026|11|5|df=y}}
 |time       = 18:45
 |team1      = [[Lillestrøm SK|Lillestrøm]] {{fbaicon|NOR}}
-|score      =
+|score      = 0–1
 |team2      = {{fbaicon|CZE}} [[FC Viktoria Plzeň|Viktoria Plzeň]]
 |goals1     =
 |goals2     =
+*[[Prince Kwabena Adu|Adu]] {{goal|10}}
 |stadium    = [[Åråsen Stadion]], [[Lillestrøm]]
-|attendance =
-|referee    =
-|report     = Report<ref>{{cite web |url=https://www.uefa.com/uefaeuropaleague/match/2050127/ |title=Lillestrøm vs. Viktoria Plzeň |publisher=UEFA |access-date=29 August 2026}}</ref>
+|attendance = 6,461<ref>{{cite web |url=https://www.uefa.com/newsfiles/uefacup/2027/2050127_FR.pdf |title=Full Time Summary Matchday 4 – Lillestrøm v Viktoria Plzeň |work=[[UEFA]] |publisher=Union of European Football Associations |date=5 November 2026 |access-date=5 November 2026}}</ref>
+|referee    = [[Radoslav Gidzhenov]] ([[Bulgarian Football Union|Bulgaria]])
+|report     = Report<ref>{{cite web |url=https://www.uefa.com/uefaeuropaleague/match/2050127/ |title=Lillestrøm vs. Viktoria Plzeň |publisher=UEFA |access-date=5 November 2026}}</ref>
 }}
 ----
 {{#invoke:Football box|main
 |date       = {{Start date|2026|11|5|df=y}}
 |time       = 18:45
 |team1      = [[NEC Nijmegen|NEC]] {{fbaicon|NED}}
-|score      =
+|score      = 3–1
 |team2      = {{fbaicon|CYP}} [[AC Omonia|Omonia]]
 |goals1     =
+*[[Bryan Linssen|Linssen]] {{goal|50||76}}
+*[[Clement Bischoff|Bischoff]] {{goal|74}}
 |goals2     =
+*[[Loïs Diony|Diony]] {{goal|23}}
 |stadium    = [[Goffertstadion]], [[Nijmegen]]
-|attendance =
-|referee    =
-|report     = Report<ref>{{cite web |url=https://www.uefa.com/uefaeuropaleague/match/2050126/ |title=N.E.C. vs. Omonia |publisher=UEFA |access-date=29 August 2026}}</ref>
+|attendance = 11,442<ref>{{cite web |url=https://www.uefa.com/newsfiles/uefacup/2027/2050126_FR.pdf |title=Full Time Summary Matchday 4 – NEC v Omonia |work=[[UEFA]] |publisher=Union of European Football Associations |date=5 November 2026 |access-date=5 November 2026}}</ref>
+|referee    = [[Goga Kikacheishvili]] ([[Georgian Football Federation|Georgia]])
+|report     = Report<ref>{{cite web |url=https://www.uefa.com/uefaeuropaleague/match/2050126/ |title=N.E.C. vs. Omonia |publisher=UEFA |access-date=5 November 2026}}</ref>
 }}
 ----
 {{#invoke:Football box|main
 |date       = {{Start date|2026|11|5|df=y}}
 |time       = 18:45&nbsp;{{small|(19:45 [[UTC+02:00|UTC+2]])}}
 |team1      = [[PFC Levski Sofia|Levski Sofia]] {{fbaicon|BUL}}
-|score      =
+|score      = 1–0
 |team2      = {{fbaicon|POL}} [[Jagiellonia Białystok]]
 |goals1     =
+*[[Stivan Stoyanchov|Stoyanchov]] {{goal|83}}
 |goals2     =
 |stadium    = [[Vasil Levski National Stadium]], [[Sofia]]{{refn|group=note|name=Levski Sofia}}
-|attendance =
-|referee    =
-|report     = Report<ref>{{cite web |url=https://www.uefa.com/uefaeuropaleague/match/2050128/ |title=Levski Sofia vs. Jagiellonia |publisher=UEFA |access-date=29 August 2026}}</ref>
+|attendance = 23,301<ref>{{cite web |url=https://www.uefa.com/newsfiles/uefacup/2027/2050128_FR.pdf |title=Full Time Summary Matchday 4 – Levski Sofia v Jagiellonia Białystok |work=[[UEFA]] |publisher=Union of European Football Associations |date=5 November 2026 |access-date=5 November 2026}}</ref>
+|referee    = [[Enea Jorgji]] ([[Albanian Football Association|Albania]])
+|report     = Report<ref>{{cite web |url=https://www.uefa.com/uefaeuropaleague/match/2050128/ |title=Levski Sofia vs. Jagiellonia |publisher=UEFA |access-date=5 November 2026}}</ref>
 }}
 ----
 {{#invoke:Football box|main
 |date       = {{Start date|2026|11|5|df=y}}
 |time       = 18:45
 |team1      = [[Real Sociedad]] {{fbaicon|ESP}}
-|score      =
+|score      = 1–1
 |team2      = {{fbaicon|FRA}} [[Olympique Lyonnais|Lyon]]
 |goals1     =
+*[[Orri Óskarsson|Óskarsson]] {{goal|28}}
 |goals2     =
+*[[Corentin Tolisso|Tolisso]] {{goal|54}}
 |stadium    = [[Anoeta Stadium|Anoeta]], [[San Sebastián]]
-|attendance =
-|referee    =
-|report     = Report<ref>{{cite web |url=https://www.uefa.com/uefaeuropaleague/match/2050115/ |title=Real Sociedad vs. Lyon |publisher=UEFA |access-date=29 August 2026}}</ref>
+|attendance = 30,878<ref>{{cite web |url=https://www.uefa.com/newsfiles/uefacup/2027/2050115_FR.pdf |title=Full Time Summary Matchday 4 – Real Sociedad v Lyon |work=[[UEFA]] |publisher=Union of European Football Associations |date=5 November 2026 |access-date=6 November 2026}}</ref>
+|referee    = [[Anastasios Papapetrou]] ([[Hellenic Football Federation|Greece]])
+|report     = Report<ref>{{cite web |url=https://www.uefa.com/uefaeuropaleague/match/2050115/ |title=Real Sociedad vs. Lyon |publisher=UEFA |access-date=5 November 2026}}</ref>
 }}
 ----
 {{#invoke:Football box|main
 |date       = {{Start date|2026|11|5|df=y}}
 |time       = 18:45
 |team1      = [[RSC Anderlecht|Anderlecht]] {{fbaicon|BEL}}
-|score      =
+|score      = 2–0
 |team2      = {{fbaicon|AUT}} [[FC Red Bull Salzburg|Red Bull Salzburg]]
 |goals1     =
+*[[Ludwig Augustinsson|Augustinsson]] {{goal|20}}
+*[[Marten Winkler|Winkler]] {{goal|90}}
 |goals2     =
 |stadium    = [[Constant Vanden Stock Stadium]], [[Brussels]]
-|attendance =
-|referee    =
-|report     = Report<ref>{{cite web |url=https://www.uefa.com/uefaeuropaleague/match/2050119/ |title=Anderlecht vs. Salzburg |publisher=UEFA |access-date=29 August 2026}}</ref>
-}}
-----
-{{#invoke:Football box|main
-|date       = {{Start date|2026|11|5|df=y}}
-|time       = 18:45
-|team1      = [[Stade Rennais FC|Rennes]] {{fbaicon|FRA}}
-|score      =
-|team2      = {{fbaicon|GRE}} [[Olympiacos F.C.|Olympiacos]]
-|goals1     =
-|goals2     =
-|stadium    = [[Roazhon Park]], [[Rennes]]
-|attendance =
-|referee    =
-|report     = Report<ref>{{cite web |url=https://www.uefa.com/uefaeuropaleague/match/2050118/ |title=Rennes vs. Olympiacos |publisher=UEFA |access-date=29 August 2026}}</ref>
+|attendance = 14,690<ref>{{cite web |url=https://www.uefa.com/newsfiles/uefacup/2027/2050119_FR.pdf |title=Full Time Summary Matchday 4 – Anderlecht v Red Bull Salzburg |work=[[UEFA]] |publisher=Union of European Football Associations |date=5 November 2026 |access-date=6 November 2026}}</ref>
+|referee    = [[Elchin Masiyev]] ([[Association of Football Federations of Azerbaijan|Azerbaijan]])
+|report     = Report<ref>{{cite web |url=https://www.uefa.com/uefaeuropaleague/match/2050119/ |title=Anderlecht vs. Salzburg |publisher=UEFA |access-date=5 November 2026}}</ref>
 }}
 ----
 {{#invoke:Football box|main
 |date       = {{Start date|2026|11|5|df=y}}
 |time       = 21:00
 |team1      = [[AZ Alkmaar|AZ]] {{fbaicon|NED}}
-|score      =
+|score      = 1–2
 |team2      = {{fbaicon|ITA}} [[Juventus FC|Juventus]]
 |goals1     =
+*[[Mexx Meerdink|Meerdink]] {{goal|88}}
 |goals2     =
+*[[Teun Koopmeiners|Koopmeiners]] {{goal|19}}
+*[[Randal Kolo Muani|Kolo Muani]] {{goal|37}}
 |stadium    = [[AFAS Stadion]], [[Alkmaar]]
-|attendance =
-|referee    =
-|report     = Report<ref>{{cite web |url=https://www.uefa.com/uefaeuropaleague/match/2050114/ |title=AZ Alkmaar vs. Juventus |publisher=UEFA |access-date=29 August 2026}}</ref>
+|attendance = 18,954<ref>{{cite web |url=https://www.uefa.com/newsfiles/uefacup/2027/2050114_FR.pdf |title=Full Time Summary Matchday 4 – AZ v Juventus |work=[[UEFA]] |publisher=Union of European Football Associations |date=5 November 2026 |access-date=5 November 2026}}</ref>
+|referee    = [[Damian Sylwestrzak]] ([[Polish Football Association|Poland]])
+|report     = Report<ref>{{cite web |url=https://www.uefa.com/uefaeuropaleague/match/2050114/ |title=AZ Alkmaar vs. Juventus |publisher=UEFA |access-date=5 November 2026}}</ref>
 }}
 ----
 {{#invoke:Football box|main
 |date       = {{Start date|2026|11|5|df=y}}
 |time       = 21:00
 |team1      = [[Bayer 04 Leverkusen|Bayer Leverkusen]] {{fbaicon|GER}}
-|score      =
+|score      = 0–1
 |team2      = {{fbaicon|FRA}} [[Olympique de Marseille|Marseille]]
 |goals1     =
 |goals2     =
+*[[Amine Gouiri|Gouiri]] {{goal|77}}
 |stadium    = [[BayArena]], [[Leverkusen]]
-|attendance =
-|referee    =
-|report     = Report<ref>{{cite web |url=https://www.uefa.com/uefaeuropaleague/match/2050111/ |title=Leverkusen vs. Marseille |publisher=UEFA |access-date=29 August 2026}}</ref>
+|attendance = 28,758<ref>{{cite web |url=https://www.uefa.com/newsfiles/uefacup/2027/2050111_FR.pdf |title=Full Time Summary Matchday 4 – Bayer Leverkusen v Marseille |work=[[UEFA]] |publisher=Union of European Football Associations |date=5 November 2026 |access-date=5 November 2026}}</ref>
+|referee    = [[Orel Grinfeld]] ([[Israel Football Association|Israel]])
+|report     = Report<ref>{{cite web |url=https://www.uefa.com/uefaeuropaleague/match/2050111/ |title=Leverkusen vs. Marseille |publisher=UEFA |access-date=5 November 2026}}</ref>
 }}
 ----
 {{#invoke:Football box|main
 |date       = {{Start date|2026|11|5|df=y}}
 |time       = 21:00&nbsp;{{small|(20:00 [[UTC+00:00|UTC+0]])}}
 |team1      = [[Celtic F.C.|Celtic]] {{fbaicon|SCO}}
-|score      =
+|score      = 3–2
 |team2      = {{fbaicon|TUR}} [[Beşiktaş J.K.|Beşiktaş]]
 |goals1     =
+*[[Callum Osmand|Osmand]] {{goal|62}}
+*[[Camilo Durán|Durán]] {{goal|78||87}}
 |goals2     =
+*[[Junior Olaitan|Olaitan]] {{goal|54}}
+*[[Orkun Kökçü|Kökçü]] {{goal|86}}
 |stadium    = [[Celtic Park]], [[Glasgow]]
-|attendance =
-|referee    =
-|report     = Report<ref>{{cite web |url=https://www.uefa.com/uefaeuropaleague/match/2050116/ |title=Celtic vs. Beşiktaş |publisher=UEFA |access-date=29 August 2026}}</ref>
+|attendance = 44,394<ref>{{cite web |url=https://www.uefa.com/newsfiles/uefacup/2027/2050116_FR.pdf |title=Full Time Summary Matchday 4 – Celtic v Beşiktaş |work=[[UEFA]] |publisher=Union of European Football Associations |date=5 November 2026 |access-date=5 November 2026}}</ref>
+|referee    = [[Sascha Stegemann]] ([[German Football Association|Germany]])
+|report     = Report<ref>{{cite web |url=https://www.uefa.com/uefaeuropaleague/match/2050116/ |title=Celtic vs. Beşiktaş |publisher=UEFA |access-date=5 November 2026}}</ref>
 }}
 ----
 {{#invoke:Football box|main
 |date       = {{Start date|2026|11|5|df=y}}
 |time       = 21:00&nbsp;{{small|(22:00 [[UTC+02:00|UTC+2]])}}
 |team1      = [[Hapoel Be'er Sheva F.C.|Hapoel Be'er Sheva]] {{fbaicon|ISR}}
-|score      =
+|score      = 0–2
 |team2      = {{fbaicon|GRE}} [[OFI Crete F.C.|OFI]]
 |goals1     =
 |goals2     =
+*[[Achilleas Poungouras|Poungouras]] {{goal|45+2}}
+*[[Taxiarchis Fountas|Fountas]] {{goal|56}}
 |stadium    = [[Rapid-Giulești Stadium]], [[Bucharest]], Romania{{refn|group=note|name=Israel}}
-|attendance =
-|referee    =
-|report     = Report<ref>{{cite web |url=https://www.uefa.com/uefaeuropaleague/match/2050125/ |title=H. Beer-Sheva vs. OFI Crete |publisher=UEFA |access-date=29 August 2026}}</ref>
+|attendance = 1,371<ref>{{cite web |url=https://www.uefa.com/newsfiles/uefacup/2027/2050125_FR.pdf |title=Full Time Summary Matchday 4 – Hapoel Be'er Sheva v OFI |work=[[UEFA]] |publisher=Union of European Football Associations |date=5 November 2026 |access-date=5 November 2026}}</ref>
+|referee    = [[Edgars Maļcevs]] ([[Latvian Football Federation|Latvia]])
+|report     = Report<ref>{{cite web |url=https://www.uefa.com/uefaeuropaleague/match/2050125/ |title=H. Beer-Sheva vs. OFI Crete |publisher=UEFA |access-date=5 November 2026}}</ref>
 }}
 ----
 {{#invoke:Football box|main
 |date       = {{Start date|2026|11|5|df=y}}
 |time       = 21:00
 |team1      = [[RC Celta de Vigo|Celta Vigo]] {{fbaicon|ESP}}
-|score      =
+|score      = 1–2
 |team2      = {{fbaicon|BEL}} [[Royale Union Saint-Gilloise|Union Saint-Gilloise]]
 |goals1     =
+*[[Pablo Durán|Durán]] {{goal|11}}
 |goals2     =
+*[[Besfort Zeneli|Zeneli]] {{goal|35||49}}
 |stadium    = [[Balaídos Stadium|Balaídos]], [[Vigo]]
-|attendance =
-|referee    =
-|report     = Report<ref>{{cite web |url=https://www.uefa.com/uefaeuropaleague/match/2050123/ |title=Celta vs. Union SG |publisher=UEFA |access-date=29 August 2026}}</ref>
+|attendance = 19,661<ref>{{cite web |url=https://www.uefa.com/newsfiles/uefacup/2027/2050123_FR.pdf |title=Full Time Summary Matchday 4 – Celta Vigo v Union Saint-Gilloise |work=[[UEFA]] |publisher=Union of European Football Associations |date=5 November 2026 |access-date=5 November 2026}}</ref>
+|referee    = [[Aliyar Aghayev]] ([[Association of Football Federations of Azerbaijan|Azerbaijan]])
+|report     = Report<ref>{{cite web |url=https://www.uefa.com/uefaeuropaleague/match/2050123/ |title=Celta vs. Union SG |publisher=UEFA |access-date=5 November 2026}}</ref>
 }}
 ----
 {{#invoke:Football box|main
 |date       = {{Start date|2026|11|5|df=y}}
 |time       = 21:00&nbsp;{{small|(20:00 [[UTC+00:00|UTC+0]])}}
 |team1      = [[S.C.U. Torreense|Torreense]] {{fbaicon|POR}}
-|score      =
+|score      = 3–2
 |team2      = {{fbaicon|ARM}} [[FC Ararat-Armenia|Ararat-Armenia]]
 |goals1     =
+*[[Jorge Aguirre (footballer, born 2000)|Aguirre]] {{goal|13}}
+*[[Javi Vázquez (footballer, born 2000)|Vázquez]] {{goal|90+3}}
+*[[Musa Drammeh|Drammeh]] {{goal|90+5}}
 |goals2     =
+*[[Karen Muradyan|Muradyan]] {{goal|41}}
+*[[Bruno Wilson|Wilson]] {{goal|58}}
 |stadium    = [[Estádio Dr. Magalhães Pessoa]], [[Leiria]]{{refn|group=note|name=Torreense}}
-|attendance =
-|referee    =
-|report     = Report<ref>{{cite web |url=https://www.uefa.com/uefaeuropaleague/match/2050124/ |title=Torreense vs. Ararat-Armenia |publisher=UEFA |access-date=29 August 2026}}</ref>
+|attendance = 1,679<ref>{{cite web |url=https://www.uefa.com/newsfiles/uefacup/2027/2050124_FR.pdf |title=Full Time Summary Matchday 4 – Torreense v Ararat-Armenia |work=[[UEFA]] |publisher=Union of European Football Associations |date=5 November 2026 |access-date=5 November 2026}}</ref>
+|referee    = [[Miloš Milanović (referee)|Miloš Milanović]] ([[Football Association of Serbia|Serbia]])
+|report     = Report<ref>{{cite web |url=https://www.uefa.com/uefaeuropaleague/match/2050124/ |title=Torreense vs. Ararat-Armenia |publisher=UEFA |access-date=5 November 2026}}</ref>
 }}
 ----
 {{#invoke:Football box|main
 |date       = {{Start date|2026|11|5|df=y}}
 |time       = 21:00
 |team1      = [[SK Sturm Graz|Sturm Graz]] {{fbaicon|AUT}}
-|score      =
+|score      = 2–3
 |team2      = {{fbaicon|SVN}} [[NK Celje|Celje]]
 |goals1     =
+*[[Oumar Diakité|Diakité]] {{goal|40||90+3}}
 |goals2     =
+*[[Svit Sešlar|Sešlar]] {{goal|29||73}}
+*[[Benjamin Verbič|Verbič]] {{goal|45}}
 |stadium    = [[Liebenauer Stadium]], [[Graz]]
-|attendance =
-|referee    =
-|report     = Report<ref>{{cite web |url=https://www.uefa.com/uefaeuropaleague/match/2050120/ |title=Sturm Graz vs. Celje |publisher=UEFA |access-date=29 August 2026}}</ref>
+|attendance = 12,977<ref>{{cite web |url=https://www.uefa.com/newsfiles/uefacup/2027/2050120_FR.pdf |title=Full Time Summary Matchday 4 – Sturm Graz v Celje |work=[[UEFA]] |publisher=Union of European Football Associations |date=5 November 2026 |access-date=5 November 2026}}</ref>
+|referee    = [[Giorgi Kruashvili]] ([[Georgian Football Federation|Georgia]])
+|report     = Report<ref>{{cite web |url=https://www.uefa.com/uefaeuropaleague/match/2050120/ |title=Sturm Graz vs. Celje |publisher=UEFA |access-date=5 November 2026}}</ref>
 }}
 ----
 {{#invoke:Football box|main
 |date       = {{Start date|2026|11|5|df=y}}
 |time       = 21:00&nbsp;{{small|(20:00 [[UTC+00:00|UTC+0]])}}
 |team1      = [[S.L. Benfica|Benfica]] {{fbaicon|POR}}
-|score      =
+|score      = 3–1
 |team2      = {{fbaicon|POL}} [[Lech Poznań]]
 |goals1     =
+*[[Rafa Silva|R. Silva]] {{goal|6}}
+*[[Gianluca Prestianni|Prestianni]] {{goal|67}}
+*[[Heorhiy Sudakov|Sudakov]] {{goal|90}}
 |goals2     =
+*[[Leo Bengtsson|Bengtsson]] {{goal|72}}
 |stadium    = [[Estádio da Luz]], [[Lisbon]]
-|attendance =
-|referee    =
-|report     = Report<ref>{{cite web |url=https://www.uefa.com/uefaeuropaleague/match/2050112/ |title=Benfica vs. Lech Poznań |publisher=UEFA |access-date=29 August 2026}}</ref>
+|attendance = 53,851<ref>{{cite web |url=https://www.uefa.com/newsfiles/uefacup/2027/2050112_FR.pdf |title=Full Time Summary Matchday 4 – Benfica v Lech Poznań |work=[[UEFA]] |publisher=Union of European Football Associations |date=5 November 2026 |access-date=5 November 2026}}</ref>
+|referee    = [[Martin Matoša]] ([[Football Association of Slovenia|Slovenia]])
+|report     = Report<ref>{{cite web |url=https://www.uefa.com/uefaeuropaleague/match/2050112/ |title=Benfica vs. Lech Poznań |publisher=UEFA |access-date=5 November 2026}}</ref>
 }}
 ----
 {{#invoke:Football box|main
 |date       = {{Start date|2026|11|5|df=y}}
 |time       = 21:00&nbsp;{{small|(20:00 [[UTC+00:00|UTC+0]])}}
 |team1      = [[Sunderland A.F.C.|Sunderland]] {{fbaicon|ENG}}
-|score      =
+|score      = 0–2
 |team2      = {{fbaicon|CRO}} [[GNK Dinamo Zagreb|Dinamo Zagreb]]
 |goals1     =
 |goals2     =
+*[[Luka Stojković|Stojković]] {{goal|22}}
+*[[Dion Drena Beljo|Beljo]] {{goal|39}}
 |stadium    = [[Stadium of Light]], [[Sunderland]]
-|attendance =
-|referee    =
-|report     = Report<ref>{{cite web |url=https://www.uefa.com/uefaeuropaleague/match/2050122/ |title=Sunderland vs. GNK Dinamo |publisher=UEFA |access-date=29 August 2026}}</ref>
+|attendance = 44,269<ref>{{cite web |url=https://www.uefa.com/newsfiles/uefacup/2027/2050122_FR.pdf |title=Full Time Summary Matchday 4 – Sunderland v Dinamo Zagreb |work=[[UEFA]] |publisher=Union of European Football Associations |date=5 November 2026 |access-date=5 November 2026}}</ref>
+|referee    = [[Andrea Colombo (referee)|Andrea Colombo]] ([[Italian Football Federation|Italy]])
+|report     = Report<ref>{{cite web |url=https://www.uefa.com/uefaeuropaleague/match/2050122/ |title=Sunderland vs. GNK Dinamo |publisher=UEFA |access-date=5 November 2026}}</ref>
 }}
 
 ===Matchday 5===
 {{#invoke:Football box|main
 |date       = {{Start date|2026|11|26|df=y}}
-|time       = 18:45&nbsp;{{small|(20:45 [[UTC+03:00|UTC+3]])}}
+|time       = 18:45&nbsp;{{small|(21:45 [[UTC+04:00|UTC+4]])}}
 |team1      = [[Beşiktaş J.K.|Beşiktaş]] {{fbaicon|TUR}}
 |score      =
 |team2      = {{fbaicon|ISR}} [[Hapoel Be'er Sheva F.C.|Hapoel Be'er Sheva]]
 |goals1     =
 |goals2     =
-|stadium    = [[Beşiktaş Stadium]], [[Istanbul]]
+|stadium    = [[Batumi Arena]], [[Batumi]], Georgia{{refn|group=note|Beşiktaş will play their home match against Hapoel Be'er Sheva at Batumi Arena, Batumi, instead of their regular stadium, [[Beşiktaş Stadium]], [[Istanbul]], due to security concerns.<ref>{{Cite web |title=Change of venue for Beşiktaş vs Hapoel Beer-Sheva |url=https://www.uefa.com/uefaeuropaleague/news/02aa-21f3c412413d-15f310f161f8-1000--change-of-venue-for-besiktas-vs-hapoel-beer-sheva/ |access-date=6 November 2026 |website=uefa.com}}</ref>}}
 |attendance =
 |referee    =
 |report     = Report<ref>{{cite web |url=https://www.uefa.com/uefaeuropaleague/match/2050143/ |title=Beşiktaş vs. H. Beer-Sheva |publisher=UEFA |access-date=29 August 2026}}</ref>

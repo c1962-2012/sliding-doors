@@ -561,7 +561,7 @@ The draw for the league phase pairings was held at the [[Grimaldi Forum]] in [[M
 |section=Table
 |show_limit=5
 |class_rules=[[2026–27 UEFA Conference League league phase#Tiebreakers|League phase tiebreakers]]
-|source=UEFA<ref>{{cite web |url=https://www.uefa.com/uefaconferenceleague/standings/ |title=League phase table |publisher=[[UEFA]] |access-date=15 October 2026}}</ref>
+|source=UEFA<ref>{{cite web |url=https://www.uefa.com/uefaconferenceleague/standings/ |title=League phase table |publisher=[[UEFA]] |access-date=5 November 2026}}</ref>
 
 <!--Automatically generate standings-->
 |auto_generate_standings=y
@@ -652,7 +652,7 @@ The draw for the league phase pairings was held at the [[Grimaldi Forum]] in [[M
 |round6_matches=AJX_GET, MON_LRI, ATA_MJA, LUG_STR, MID_HAJ, NOR_KUPS, TWE_KAI, BOR_RIG, CZV_TRA, JAB_IBE, KZG_FRE, ICE_AGF, GNT_SKB, PAF_HEA, PAN_BHA, CSO_THU, BRA_EGN, UCR_COP
 
 <!--Update date-->
-|update=22 October 2026 
+|update=5 November 2026 
 
 <!--Results: the scores determine the record and ranking of teams in the standings-->
 <!--Matchday 1-->
@@ -696,24 +696,24 @@ The draw for the league phase pairings was held at the [[Grimaldi Forum]] in [[M
 |match_BRA_GNT=2–0
 
 <!--Matchday 3-->
-|match_AGF_BRA={{small|5 Nov}}
-|match_ATA_KAI={{small|5 Nov}}
-|match_MID_AJX={{small|5 Nov}}
-|match_THU_HEA={{small|5 Nov}}
-|match_CZV_ICE={{small|5 Nov}}
-|match_KUPS_GNT={{small|5 Nov}}
-|match_LRI_HAJ={{small|5 Nov}}
-|match_MJA_BOR={{small|5 Nov}}
-|match_TRA_FRE={{small|5 Nov}}
-|match_MON_NOR={{small|5 Nov}}
-|match_COP_IBE={{small|5 Nov}}
-|match_LUG_KZG={{small|5 Nov}}
-|match_TWE_PAF={{small|5 Nov}}
-|match_GET_BHA={{small|5 Nov}}
-|match_STR_SKB={{small|5 Nov}}
-|match_PAN_CSO={{small|5 Nov}}
-|match_RIG_JAB={{small|5 Nov}}
-|match_UCR_EGN={{small|5 Nov}}
+|match_AGF_BRA=0–0
+|match_ATA_KAI=1–1
+|match_MID_AJX=1–6
+|match_THU_HEA=3–1
+|match_CZV_ICE=2–1
+|match_KUPS_GNT=0–0
+|match_LRI_HAJ=1–0
+|match_MJA_BOR=2–0
+|match_TRA_FRE=0–1
+|match_MON_NOR=2–0
+|match_COP_IBE=2–1
+|match_LUG_KZG=3–0
+|match_TWE_PAF=3–1
+|match_GET_BHA=0–1
+|match_STR_SKB=1–1
+|match_PAN_CSO=2–1
+|match_RIG_JAB=1–1
+|match_UCR_EGN=2–0
 
 <!--Matchday 4-->
 |match_KAI_MJA={{small|26 Nov}}
@@ -1184,7 +1184,7 @@ Times are [[Central European Time|CET]] or [[Central European Summer Time|CEST]]
 |goals1     =
 *[[Renan Oliveira (footballer, born 1997)|Oliveira]] {{goal|11}}
 |goals2     =
-*[[Niklas Castro|Casteo]] {{goal|7|pen.}}
+*[[Niklas Castro|Castro]] {{goal|7|pen.}}
 *[[Noah Holm|Holm]] {{goal|25||40||85}}
 |stadium    = [[Darius and Girėnas Stadium]], [[Kaunas]]
 |attendance = 4,383<ref>{{cite web |url=https://www.uefa.com/newsfiles/uefaeuropaconferenceleague/2027/2050343_FR.pdf |title=Full Time Summary Matchday 2 – Kauno Žalgiris v Brann |work=[[UEFA]] |publisher=Union of European Football Associations |date=22 October 2026 |access-date=22 October 2026}}</ref>
@@ -1396,252 +1396,293 @@ Times are [[Central European Time|CET]] or [[Central European Summer Time|CEST]]
 |date       = {{Start date|2026|11|5|df=y}}
 |time       = 18:45
 |team1      = [[Aarhus Gymnastikforening|AGF]] {{fbaicon|DEN}}
-|score      =
+|score      = 0−0
 |team2      = {{fbaicon|POR}} [[S.C. Braga|Braga]]
 |goals1     =
 |goals2     =
 |stadium    = [[Randers Stadium]], [[Randers]]{{refn|group=note|name=AGF}}
-|attendance =
-|referee    =
-|report     = Report<ref>{{cite web |url=https://www.uefa.com/uefaconferenceleague/match/2050360/ |title=Aarhus vs. Braga |publisher=UEFA |access-date=29 August 2026}}</ref>
+|attendance = 7,301<ref>{{cite web |url=https://www.uefa.com/newsfiles/uefaeuropaconferenceleague/2027/2050360_FR.pdf |title=Full Time Summary Matchday 3 – AGF v Braga |work=[[UEFA]] |publisher=Union of European Football Associations |date=5 November 2026 |access-date=5 November 2026}}</ref>
+|referee    = [[Florian Badstübner]] ([[German Football Association|Germany]])
+|report     = Report<ref>{{cite web |url=https://www.uefa.com/uefaconferenceleague/match/2050360/ |title=Aarhus vs. Braga |publisher=UEFA |access-date=5 November 2026}}</ref>
 }}
 ----
 {{#invoke:Football box|main
 |date       = {{Start date|2026|11|5|df=y}}
 |time       = 18:45
 |team1      = [[Atalanta BC|Atalanta]] {{fbaicon|ITA}}
-|score      =
+|score      = 1−1
 |team2      = {{fbaicon|KAZ}} [[FC Kairat|Kairat]]
 |goals1     =
+*[[Nikola Krstović|Krstović]] {{goal|82}}
 |goals2     =
+*[[Marc Gual|Gual]] {{goal|53}}
 |stadium    = [[Stadio di Bergamo]], [[Bergamo]]
-|attendance =
-|referee    =
-|report     = Report<ref>{{cite web |url=https://www.uefa.com/uefaconferenceleague/match/2050345/ |title=Atalanta vs. Kairat Almaty |publisher=UEFA |access-date=29 August 2026}}</ref>
+|attendance = 18,218<ref>{{cite web |url=https://www.uefa.com/newsfiles/uefaeuropaconferenceleague/2027/2050345_FR.pdf |title=Full Time Summary Matchday 3 – Atalanta v Kairat |work=[[UEFA]] |publisher=Union of European Football Associations |date=5 November 2026 |access-date=5 November 2026}}</ref>
+|referee    = [[Julian Weinberger]] ([[Austrian Football Association|Austria]])
+|report     = Report<ref>{{cite web |url=https://www.uefa.com/uefaconferenceleague/match/2050345/ |title=Atalanta vs. Kairat Almaty |publisher=UEFA |access-date=5 November 2026}}</ref>
 }}
 ----
 {{#invoke:Football box|main
 |date       = {{Start date|2026|11|5|df=y}}
 |time       = 18:45
 |team1      = [[FC Midtjylland|Midtjylland]] {{fbaicon|DEN}}
-|score      =
+|score      = 1−6
 |team2      = {{fbaicon|NED}} [[AFC Ajax|Ajax]]
 |goals1     =
+*[[Friday Etim|Etim]] {{goal|28}}
 |goals2     =
+*[[Tolu Arokodare|Arokodare]] {{goal|9||52}}
+*[[Owen Wijndal|Wijndal]] {{goal|59}}
+*[[Davy Klaassen|Klaassen]] {{goal|67}}
+*[[Oscar Gloukh|Gloukh]] {{goal|74}}
+*[[Marcos Leonardo]] {{goal|82}}
 |stadium    = [[MCH Arena]], [[Herning]]
-|attendance =
-|referee    =
-|report     = Report<ref>{{cite web |url=https://www.uefa.com/uefaconferenceleague/match/2050348/ |title=Midtjylland vs. Ajax |publisher=UEFA |access-date=29 August 2026}}</ref>
+|attendance = 11,068<ref>{{cite web |url=https://www.uefa.com/newsfiles/uefaeuropaconferenceleague/2027/2050348_FR.pdf |title=Full Time Summary Matchday 3 – Midtjylland v Ajax |work=[[UEFA]] |publisher=Union of European Football Associations |date=5 November 2026 |access-date=5 November 2026}}</ref>
+|referee    = [[Paweł Raczkowski]] ([[Polish Football Association|Poland]])
+|report     = Report<ref>{{cite web |url=https://www.uefa.com/uefaconferenceleague/match/2050348/ |title=Midtjylland vs. Ajax |publisher=UEFA |access-date=5 November 2026}}</ref>
 }}
 ----
 {{#invoke:Football box|main
 |date       = {{Start date|2026|11|5|df=y}}
 |time       = 18:45
 |team1      = [[FC Thun|Thun]] {{fbaicon|SUI}}
-|score      =
+|score      = 3−1
 |team2      = {{fbaicon|SCO}} [[Heart of Midlothian F.C.|Heart of Midlothian]]
 |goals1     =
+*[[Jamie McCart|McCart]] {{goal|22|o.g.}}
+*[[Brighton Labeau|Labeau]] {{goal|34}}
+*[[Furkan Dursun|Dursun]] {{goal|56}}
 |goals2     =
+*[[Stuart Findlay|Findlay]] {{goal|82}}
 |stadium    = [[Stockhorn Arena]], [[Thun]]
-|attendance =
-|referee    =
-|report     = Report<ref>{{cite web |url=https://www.uefa.com/uefaconferenceleague/match/2050361/ |title=Thun vs. Hearts |publisher=UEFA |access-date=29 August 2026}}</ref>
+|attendance = 8,765<ref>{{cite web |url=https://www.uefa.com/newsfiles/uefaeuropaconferenceleague/2027/2050361_FR.pdf |title=Full Time Summary Matchday 3 – Thun v Heart of Midlothian |work=[[UEFA]] |publisher=Union of European Football Associations |date=5 November 2026 |access-date=5 November 2026}}</ref>
+|referee    = [[Kyriakos Athanasiou]] ([[Cyprus Football Association|Cyprus]])
+|report     = Report<ref>{{cite web |url=https://www.uefa.com/uefaconferenceleague/match/2050361/ |title=Thun vs. Hearts |publisher=UEFA |access-date=5 November 2026}}</ref>
 }}
 ----
 {{#invoke:Football box|main
 |date       = {{Start date|2026|11|5|df=y}}
 |time       = 18:45
 |team1      = [[Red Star Belgrade]] {{fbaicon|SRB}}
-|score      =
+|score      = 2−1
 |team2      = {{fbaicon|AND}} [[Inter Club d'Escaldes]]
 |goals1     =
+*[[Vladimir Lučić (footballer)|Lučić]] {{goal|80}}
+*[[Javi Díaz|Díaz]] {{goal|90+2|o.g.}}
 |goals2     =
+*[[Borja Arellano|Arellano]] {{goal|62}}
 |stadium    = [[Red Star Stadium]], [[Belgrade]]
-|attendance =
-|referee    =
-|report     = Report<ref>{{cite web |url=https://www.uefa.com/uefaconferenceleague/match/2050349/ |title=Crvena Zvezda vs. Inter Escaldes |publisher=UEFA |access-date=29 August 2026}}</ref>
+|attendance = 12,681<ref>{{cite web |url=https://www.uefa.com/newsfiles/uefaeuropaconferenceleague/2027/2050349_FR.pdf |title=Full Time Summary Matchday 3 – Red Star Belgrade v Inter Club d'Escaldes |work=[[UEFA]] |publisher=Union of European Football Associations |date=5 November 2026 |access-date=5 November 2026}}</ref>
+|referee    = [[Henrik Nalbandyan]] ([[Football Federation of Armenia|Armenia]])
+|report     = Report<ref>{{cite web |url=https://www.uefa.com/uefaconferenceleague/match/2050349/ |title=Crvena Zvezda vs. Inter Escaldes |publisher=UEFA |access-date=5 November 2026}}</ref>
 }}
 ----
 {{#invoke:Football box|main
 |date       = {{Start date|2026|11|5|df=y}}
 |time       = 18:45&nbsp;{{small|(19:45 [[UTC+02:00|UTC+2]])}}
 |team1      = [[Kuopion Palloseura|KuPS]] {{fbaicon|FIN}}
-|score      =
+|score      = 0−0
 |team2      = {{fbaicon|BEL}} [[KAA Gent|Gent]]
 |goals1     =
 |goals2     =
 |stadium    = [[Tammelan Stadion]], [[Tampere]]{{refn|group=note|name=KuPS}}
-|attendance =
-|referee    =
-|report     = Report<ref>{{cite web |url=https://www.uefa.com/uefaconferenceleague/match/2050353/ |title=KuPS Kuopio vs. Gent |publisher=UEFA |access-date=29 August 2026}}</ref>
+|attendance = 2,127<ref>{{cite web |url=https://www.uefa.com/newsfiles/uefaeuropaconferenceleague/2027/2050353_FR.pdf |title=Full Time Summary Matchday 3 – KuPS v Gent |work=[[UEFA]] |publisher=Union of European Football Associations |date=5 November 2026 |access-date=5 November 2026}}</ref>
+|referee    = [[Rob Harvey (referee)|Rob Harvey]] ([[Football Association of Ireland|Republic of Ireland]])
+|report     = Report<ref>{{cite web |url=https://www.uefa.com/uefaconferenceleague/match/2050353/ |title=KuPS Kuopio vs. Gent |publisher=UEFA |access-date=5 November 2026}}</ref>
 }}
 ----
 {{#invoke:Football box|main
 |date       = {{Start date|2026|11|5|df=y}}
 |time       = 18:45
 |team1      = [[Lincoln Red Imps F.C.|Lincoln Red Imps]] {{fbaicon|GIB}}
-|score      =
+|score      = 1−0
 |team2      = {{fbaicon|CRO}} [[HNK Hajduk Split|Hajduk Split]]
 |goals1     =
+*[[Dennis Hadžikadunić|Hadžikadunić]] {{goal|89|o.g.}}
 |goals2     =
 |stadium    = [[Europa Sports Park]], [[Gibraltar]]{{refn|group=note|name=Lincoln Red Imps}}
-|attendance =
-|referee    =
-|report     = Report<ref>{{cite web |url=https://www.uefa.com/uefaconferenceleague/match/2050355/ |title=L. Red Imps vs. Hajduk Split |publisher=UEFA |access-date=29 August 2026}}</ref>
+|attendance = 1,309<ref>{{cite web |url=https://www.uefa.com/newsfiles/uefaeuropaconferenceleague/2027/2050355_FR.pdf |title=Full Time Summary Matchday 3 – Lincoln Red Imps v Hajduk Split |work=[[UEFA]] |publisher=Union of European Football Associations |date=5 November 2026 |access-date=5 November 2026}}</ref>
+|referee    = [[Patryk Gryckiewicz]] ([[Polish Football Association|Poland]])
+|report     = Report<ref>{{cite web |url=https://www.uefa.com/uefaconferenceleague/match/2050355/ |title=L. Red Imps vs. Hajduk Split |publisher=UEFA |access-date=5 November 2026}}</ref>
 }}
 ----
 {{#invoke:Football box|main
 |date       = {{Start date|2026|11|5|df=y}}
 |time       = 18:45
 |team1      = [[Mjällby AIF]] {{fbaicon|SWE}}
-|score      =
+|score      = 2−0
 |team2      = {{fbaicon|BIH}} [[FK Borac Banja Luka|Borac Banja Luka]]
 |goals1     =
+*[[Jacob Bergström|Bergström]] {{goal|54}}
+*[[Mads Enggård|Enggård]] {{goal|88}}
 |goals2     =
 |stadium    = [[Olympia (Helsingborg)|Olympia]], [[Helsingborg]]{{refn|group=note|name=Mjällby AIF}}
-|attendance =
-|referee    =
-|report     = Report<ref>{{cite web |url=https://www.uefa.com/uefaconferenceleague/match/2050362/ |title=Mjällby vs. Borac |publisher=UEFA |access-date=29 August 2026}}</ref>
+|attendance = 3,229<ref>{{cite web |url=https://www.uefa.com/newsfiles/uefaeuropaconferenceleague/2027/2050362_FR.pdf |title=Full Time Summary Matchday 3 – Mjällby AIF v Borac Banja Luka |work=[[UEFA]] |publisher=Union of European Football Associations |date=5 November 2026 |access-date=5 November 2026}}</ref>
+|referee    = [[Gal Laibuvitz]] ([[Israel Football Association|Israel]])
+|report     = Report<ref>{{cite web |url=https://www.uefa.com/uefaconferenceleague/match/2050362/ |title=Mjällby vs. Borac |publisher=UEFA |access-date=5 November 2026}}</ref>
 }}
 ----
 {{#invoke:Football box|main
 |date       = {{Start date|2026|11|5|df=y}}
 |time       = 18:45&nbsp;{{small|(20:45 [[UTC+03:00|UTC+3]])}}
 |team1      = [[Trabzonspor]] {{fbaicon|TUR}}
-|score      =
+|score      = 0−1
 |team2      = {{fbaicon|GER}} [[SC Freiburg]]
 |goals1     =
 |goals2     =
+*[[Lukas Kübler|Kübler]] {{goal|14}}
 |stadium    = [[Şenol Güneş Sports Complex]], [[Trabzon]]
-|attendance =
-|referee    =
-|report     = Report<ref>{{cite web |url=https://www.uefa.com/uefaconferenceleague/match/2050357/ |title=Trabzonspor vs. Freiburg |publisher=UEFA |access-date=29 August 2026}}</ref>
+|attendance = 26,830<ref>{{cite web |url=https://www.uefa.com/newsfiles/uefaeuropaconferenceleague/2027/2050357_FR.pdf |title=Full Time Summary Matchday 3 – Trabzonspor v SC Freiburg |work=[[UEFA]] |publisher=Union of European Football Associations |date=5 November 2026 |access-date=5 November 2026}}</ref>
+|referee    = [[Kristo Tohver]] ([[Estonian Football Association|Estonia]])
+|report     = Report<ref>{{cite web |url=https://www.uefa.com/uefaconferenceleague/match/2050357/ |title=Trabzonspor vs. Freiburg |publisher=UEFA |access-date=5 November 2026}}</ref>
 }}
 ----
 {{#invoke:Football box|main
 |date       = {{Start date|2026|11|5|df=y}}
 |time       = 21:00
 |team1      = [[AS Monaco FC|Monaco]] {{fbaicon|FRA}}
-|score      =
+|score      = 2–0
 |team2      = {{fbaicon|DEN}} [[FC Nordsjælland|Nordsjælland]]
 |goals1     =
+*[[Mathys Detourbet|Detourbet]] {{goal|33}}
+*[[Matthis Abline|Abline]] {{goal|90+1}}
 |goals2     =
 |stadium    = [[Stade Louis II]], [[Monaco]]
-|attendance =
-|referee    =
-|report     = Report<ref>{{cite web |url=https://www.uefa.com/uefaconferenceleague/match/2050346/ |title=Monaco vs. Nordsjælland |publisher=UEFA |access-date=29 August 2026}}</ref>
+|attendance = 3,425<ref>{{cite web |url=https://www.uefa.com/newsfiles/uefaeuropaconferenceleague/2027/2050346_FR.pdf |title=Full Time Summary Matchday 3 – Monaco v Nordsjælland |work=[[UEFA]] |publisher=Union of European Football Associations |date=5 November 2026 |access-date=5 November 2026}}</ref>
+|referee    = [[Antoni Bandić]] ([[Football Federation of Bosnia and Herzegovina|Bosnia and Herzegovina]])
+|report     = Report<ref>{{cite web |url=https://www.uefa.com/uefaconferenceleague/match/2050346/ |title=Monaco vs. Nordsjælland |publisher=UEFA |access-date=5 November 2026}}</ref>
 }}
 ----
 {{#invoke:Football box|main
 |date       = {{Start date|2026|11|5|df=y}}
 |time       = 21:00
 |team1      = [[F.C. Copenhagen|Copenhagen]] {{fbaicon|DEN}}
-|score      =
+|score      = 2–1
 |team2      = {{fbaicon|GEO}} [[FC Iberia 1999|Iberia 1999]]
 |goals1     =
+*[[Mohamed Elyounoussi|Elyounoussi]] {{goal|19|pen.}}
+*[[Vahid Selimović|Selimović]] {{goal|22|o.g.}}
 |goals2     =
+*[[Amirani Dzagania|Dzagania]] {{goal|30}}
 |stadium    = [[Parken Stadium]], [[Copenhagen]]
-|attendance =
-|referee    =
-|report     = Report<ref>{{cite web |url=https://www.uefa.com/uefaconferenceleague/match/2050347/ |title=Copenhagen vs. Iberia Tbilisi |publisher=UEFA |access-date=29 August 2026}}</ref>
+|attendance = 18,660<ref>{{cite web |url=https://www.uefa.com/newsfiles/uefaeuropaconferenceleague/2027/2050347_FR.pdf |title=Full Time Summary Matchday 3 – Copenhagen v Iberia 1999 |work=[[UEFA]] |publisher=Union of European Football Associations |date=5 November 2026 |access-date=5 November 2026}}</ref>
+|referee    = [[Rob Hennessy]] ([[Football Association of Ireland|Republic of Ireland]])
+|report     = Report<ref>{{cite web |url=https://www.uefa.com/uefaconferenceleague/match/2050347/ |title=Copenhagen vs. Iberia Tbilisi |publisher=UEFA |access-date=5 November 2026}}</ref>
 }}
 ----
 {{#invoke:Football box|main
 |date       = {{Start date|2026|11|5|df=y}}
 |time       = 21:00
 |team1      = [[FC Lugano|Lugano]] {{fbaicon|SUI}}
-|score      =
+|score      = 3–0
 |team2      = {{fbaicon|LTU}} [[FK Kauno Žalgiris|Kauno Žalgiris]]
 |goals1     =
+*[[Yanis Cimignani|Cimignani]] {{goal|11}}
+*[[Ezgjan Alioski|Alioski]] {{goal|24}}
+*[[Daniel Dos Santos (footballer)|Dos Santos]] {{goal|32}}
 |goals2     =
 |stadium    = {{ill|AIL Arena|it||nl}}, [[Lugano]]
-|attendance =
-|referee    =
-|report     = Report<ref>{{cite web |url=https://www.uefa.com/uefaconferenceleague/match/2050351/ |title=Lugano vs. Kauno Žalgiris |publisher=UEFA |access-date=29 August 2026}}</ref>
+|attendance = 5,429<ref>{{cite web |url=https://www.uefa.com/newsfiles/uefaeuropaconferenceleague/2027/2050351_FR.pdf |title=Full Time Summary Matchday 3 – Lugano v Kauno Žalgiris |work=[[UEFA]] |publisher=Union of European Football Associations |date=5 November 2026 |access-date=5 November 2026}}</ref>
+|referee    = [[Yigal Frid]] ([[Israel Football Association|Israel]])
+|report     = Report<ref>{{cite web |url=https://www.uefa.com/uefaconferenceleague/match/2050351/ |title=Lugano vs. Kauno Žalgiris |publisher=UEFA |access-date=5 November 2026}}</ref>
 }}
 ----
 {{#invoke:Football box|main
 |date       = {{Start date|2026|11|5|df=y}}
 |time       = 21:00
 |team1      = [[FC Twente|Twente]] {{fbaicon|NED}}
-|score      =
+|score      = 3–1
 |team2      = {{fbaicon|CYP}} [[Pafos FC|Pafos]]
 |goals1     =
+*[[Ruud Nijstad|Nijstad]] {{goal|62}}
+*[[Sondre Ørjasæter|Ørjasæter]] {{goal|76}}
+*[[Daouda Weidmann|Weidmann]] {{goal|82}}
 |goals2     =
+*[[Lelê (footballer, born 1997)|Lelê]] {{goal|40}}
 |stadium    = [[De Grolsch Veste]], [[Enschede]]
-|attendance =
-|referee    =
-|report     = Report<ref>{{cite web |url=https://www.uefa.com/uefaconferenceleague/match/2050354/ |title=Twente vs. Pafos |publisher=UEFA |access-date=29 August 2026}}</ref>
+|attendance = 28,500<ref>{{cite web |url=https://www.uefa.com/newsfiles/uefaeuropaconferenceleague/2027/2050354_FR.pdf |title=Full Time Summary Matchday 3 – Twente v Pafos |work=[[UEFA]] |publisher=Union of European Football Associations |date=5 November 2026 |access-date=5 November 2026}}</ref>
+|referee    = [[Michal Očenáš]] ([[Slovak Football Association|Slovakia]])
+|report     = Report<ref>{{cite web |url=https://www.uefa.com/uefaconferenceleague/match/2050354/ |title=Twente vs. Pafos |publisher=UEFA |access-date=5 November 2026}}</ref>
 }}
 ----
 {{#invoke:Football box|main
 |date       = {{Start date|2026|11|5|df=y}}
 |time       = 21:00
 |team1      = [[Getafe CF|Getafe]] {{fbaicon|ESP}}
-|score      =
+|score      = 0–1
 |team2      = {{fbaicon|ENG}} [[Brighton & Hove Albion F.C.|Brighton & Hove Albion]]
 |goals1     =
 |goals2     =
+*[[Malick Yalcouyé|Yalcouyé]] {{goal|64}}
 |stadium    = [[Estadio Coliseum|Coliseum]], [[Getafe]]
-|attendance =
-|referee    =
-|report     = Report<ref>{{cite web |url=https://www.uefa.com/uefaconferenceleague/match/2050352/ |title=Getafe vs. Brighton |publisher=UEFA |access-date=29 August 2026}}</ref>
+|attendance = 8,007<ref>{{cite web |url=https://www.uefa.com/newsfiles/uefaeuropaconferenceleague/2027/2050352_FR.pdf |title=Full Time Summary Matchday 3 – Getafe v Brighton & Hove Albion |work=[[UEFA]] |publisher=Union of European Football Associations |date=5 November 2026 |access-date=5 November 2026}}</ref>
+|referee    = [[Filip Glova]] ([[Slovak Football Association|Slovakia]])
+|report     = Report<ref>{{cite web |url=https://www.uefa.com/uefaconferenceleague/match/2050352/ |title=Getafe vs. Brighton |publisher=UEFA |access-date=5 November 2026}}</ref>
 }}
 ----
 {{#invoke:Football box|main
 |date       = {{Start date|2026|11|5|df=y}}
 |time       = 21:00
 |team1      = [[Sint-Truidense VV|Sint-Truiden]] {{fbaicon|BEL}}
-|score      =
+|score      = 1–1 
 |team2      = {{fbaicon|NOR}} [[SK Brann|Brann]]
 |goals1     =
+*[[Nelson Ishiwatari|Ishiwatari]] {{goal|48}}
 |goals2     =
+*[[Ulrik Mathisen|Mathisen]] {{goal|79}}
 |stadium    = [[Stayen]], [[Sint-Truiden]]
-|attendance =
-|referee    =
-|report     = Report<ref>{{cite web |url=https://www.uefa.com/uefaconferenceleague/match/2050356/ |title=Sint-Truidense vs. Brann |publisher=UEFA |access-date=29 August 2026}}</ref>
+|attendance = 6,415<ref>{{cite web |url=https://www.uefa.com/newsfiles/uefaeuropaconferenceleague/2027/2050356_FR.pdf |title=Full Time Summary Matchday 3 – Sint-Truiden v Brann |work=[[UEFA]] |publisher=Union of European Football Associations |date=5 November 2026 |access-date=5 November 2026}}</ref>
+|referee    = [[Oliver Reitala]] ([[Football Association of Finland|Finland]])
+|report     = Report<ref>{{cite web |url=https://www.uefa.com/uefaconferenceleague/match/2050356/ |title=Sint-Truidense vs. Brann |publisher=UEFA |access-date=5 November 2026}}</ref>
 }}
 ----
 {{#invoke:Football box|main
 |date       = {{Start date|2026|11|5|df=y}}
 |time       = 21:00&nbsp;{{small|(22:00 [[UTC+02:00|UTC+2]])}}
 |team1      = [[Panathinaikos F.C.|Panathinaikos]] {{fbaicon|GRE}}
-|score      =
+|score      = 2–1
 |team2      = {{fbaicon|BUL}} [[PFC CSKA Sofia|CSKA Sofia]]
 |goals1     =
+*[[Davide Calabria|Calabria]] {{goal|41}}
+*[[Vicente Taborda|Taborda]] {{goal|68}}
 |goals2     =
+*[[Dinis Almeida|Almeida]] {{goal|44}}
 |stadium    = [[Olympic Stadium (Athens)|Olympic Stadium]], [[Athens]]
-|attendance =
-|referee    =
-|report     = Report<ref>{{cite web |url=https://www.uefa.com/uefaconferenceleague/match/2050350/ |title=Panathinaikos vs. CSKA Sofia |publisher=UEFA |access-date=29 August 2026}}</ref>
+|attendance = 20,505<ref>{{cite web |url=https://www.uefa.com/newsfiles/uefaeuropaconferenceleague/2027/2050350_FR.pdf |title=Full Time Summary Matchday 3 – Panathinaikos v CSKA Sofia |work=[[UEFA]] |publisher=Union of European Football Associations |date=5 November 2026 |access-date=5 November 2026}}</ref>
+|referee    = [[Mohammed Al-Hakim]] ([[Swedish Football Association|Sweden]])
+|report     = Report<ref>{{cite web |url=https://www.uefa.com/uefaconferenceleague/match/2050350/ |title=Panathinaikos vs. CSKA Sofia |publisher=UEFA |access-date=5 November 2026}}</ref>
 }}
 ----
 {{#invoke:Football box|main
 |date       = {{Start date|2026|11|5|df=y}}
 |time       = 21:00&nbsp;{{small|(22:00 [[UTC+02:00|UTC+2]])}}
 |team1      = [[Riga FC|Riga]] {{fbaicon|LVA}}
-|score      =
+|score      = 1–1
 |team2      = {{fbaicon|CZE}} [[FK Jablonec|Jablonec]]
 |goals1     =
+*[[Reginaldo Ramires|Ramires]] {{goal|35|pen.}}
 |goals2     =
+*[[Sebastian Nebyla|Nebyla]] {{goal|49}}
 |stadium    = [[Skonto Stadium]], [[Riga]]
-|attendance =
-|referee    =
-|report     = Report<ref>{{cite web |url=https://www.uefa.com/uefaconferenceleague/match/2050359/ |title=Riga vs. Jablonec |publisher=UEFA |access-date=29 August 2026}}</ref>
+|attendance = 4,152<ref>{{cite web |url=https://www.uefa.com/newsfiles/uefaeuropaconferenceleague/2027/2050359_FR.pdf |title=Full Time Summary Matchday 3 – Riga v Jablonec |work=[[UEFA]] |publisher=Union of European Football Associations |date=5 November 2026 |access-date=5 November 2026}}</ref>
+|referee    = [[Viktor Kopiyevskyi]] ([[Football Federation of Ukraine|Ukraine]])
+|report     = Report<ref>{{cite web |url=https://www.uefa.com/uefaconferenceleague/match/2050359/ |title=Riga vs. Jablonec |publisher=UEFA |access-date=5 November 2026}}</ref>
 }}
 ----
 {{#invoke:Football box|main
 |date       = {{Start date|2026|11|5|df=y}}
 |time       = 21:00&nbsp;{{small|(22:00 [[UTC+02:00|UTC+2]])}}
 |team1      = [[CS Universitatea Craiova|Universitatea Craiova]] {{fbaicon|ROU}}
-|score      =
+|score      = 2–0
 |team2      = {{fbaicon|ALB}} [[KF Egnatia|Egnatia]]
 |goals1     =
+*[[Alexandru Cicâldău|Cicâldău]] {{goal|24}}
+*[[Nicusor Bancu|Bancu]] {{goal|32}}
 |goals2     =
 |stadium    = [[Ion Oblemenco Stadium]], [[Craiova]]
-|attendance =
-|referee    =
-|report     = Report<ref>{{cite web |url=https://www.uefa.com/uefaconferenceleague/match/2050358/ |title=U. Craiova vs. Egnatia |publisher=UEFA |access-date=29 August 2026}}</ref>
+|attendance = 14,515<ref>{{cite web |url=https://www.uefa.com/newsfiles/uefaeuropaconferenceleague/2027/2050358_FR.pdf |title=Full Time Summary Matchday 3 – Universitatea Craiova v Egnatia |work=[[UEFA]] |publisher=Union of European Football Associations |date=5 November 2026 |access-date=5 November 2026}}</ref>
+|referee    = [[Don Robertson (referee)|Don Robertson]] ([[Scottish Football Association|Scotland]])
+|report     = Report<ref>{{cite web |url=https://www.uefa.com/uefaconferenceleague/match/2050358/ |title=U. Craiova vs. Egnatia |publisher=UEFA |access-date=5 November 2026}}</ref>
 }}
 
 ===Matchday 4===

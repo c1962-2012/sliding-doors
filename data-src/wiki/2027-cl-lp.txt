@@ -1592,252 +1592,314 @@ Times are [[Central European Time|CET]] or [[Central European Summer Time|CEST]]
 |date       = {{Start date|2026|11|3|df=y}}
 |time       = 18:45&nbsp;{{small|(17:45 [[UTC+00:00|UTC+0]])}}
 |team1      = [[FC Shakhtar Donetsk|Shakhtar Donetsk]] {{fbaicon|UKR}}
-|score      =
+|score      = 0–1
 |team2      = {{fbaicon|POR}} [[Sporting CP]]
 |goals1     =
 |goals2     =
+*[[Issa Doumbia (footballer)|Doumbia]] {{goal|59}}
 |stadium    = [[Stamford Bridge (stadium)|Stamford Bridge]], [[London]], England{{refn|group=note|name=Ukraine}}
-|attendance = <!-- <ref>{{cite web |url=https://www.uefa.com/newsfiles/UCL/2027/2049613_FR.pdf |title=Full Time Summary Matchday 4 – Shakhtar Donetsk v Sporting CP |work=[[UEFA]] |publisher=Union of European Football Associations |date=3 November 2026 |access-date=3 November 2026}}</ref> -->
-|referee    =
-|report     = Report<ref>{{cite web |url=https://www.uefa.com/uefachampionsleague/match/2049613/ |title=Shakhtar vs. Sporting CP |publisher=UEFA |access-date=29 August 2026}}</ref>
+|attendance = 28,260<ref>{{cite web |url=https://www.uefa.com/newsfiles/UCL/2027/2049613_FR.pdf |title=Full Time Summary Matchday 4 – Shakhtar Donetsk v Sporting CP |work=[[UEFA]] |publisher=Union of European Football Associations |date=3 November 2026 |access-date=3 November 2026}}</ref>
+|referee    = [[Ivan Kružliak]] ([[Slovak Football Association|Slovakia]])
+|report     = Report<ref>{{cite web |url=https://www.uefa.com/uefachampionsleague/match/2049613/ |title=Shakhtar vs. Sporting CP |publisher=UEFA |access-date=3 November 2026}}</ref>
 }}
 ----
 {{#invoke:Football box|main
 |date       = {{Start date|2026|11|3|df=y}}
 |time       = 18:45&nbsp;{{small|(20:45 [[UTC+03:00|UTC+3]])}}
 |team1      = [[Galatasaray S.K. (football)|Galatasaray]] {{fbaicon|TUR}}
-|score      =
+|score      = 2–0
 |team2      = {{fbaicon|GER}} [[VfB Stuttgart]]
 |goals1     =
+*[[Aleksey Batrakov|Batrakov]] {{goal|12||15}}
 |goals2     =
 |stadium    = [[Rams Park]], [[Istanbul]]
-|attendance = <!-- <ref>{{cite web |url=https://www.uefa.com/newsfiles/UCL/2027/2049614_FR.pdf |title=Full Time Summary Matchday 4 – Galatasaray v VfB Stuttgart |work=[[UEFA]] |publisher=Union of European Football Associations |date=3 November 2026 |access-date=3 November 2026}}</ref> -->
-|referee    =
-|report     = Report<ref>{{cite web |url=https://www.uefa.com/uefachampionsleague/match/2049614/ |title=Galatasaray vs. Stuttgart |publisher=UEFA |access-date=29 August 2026}}</ref>
+|attendance = 45,162<ref>{{cite web |url=https://www.uefa.com/newsfiles/UCL/2027/2049614_FR.pdf |title=Full Time Summary Matchday 4 – Galatasaray v VfB Stuttgart |work=[[UEFA]] |publisher=Union of European Football Associations |date=3 November 2026 |access-date=3 November 2026}}</ref>
+|referee    = [[Chris Kavanagh (referee)|Chris Kavanagh]] ([[The Football Association|England]])
+|report     = Report<ref>{{cite web |url=https://www.uefa.com/uefachampionsleague/match/2049614/ |title=Galatasaray vs. Stuttgart |publisher=UEFA |access-date=3 November 2026}}</ref>
 }}
 ----
 {{#invoke:Football box|main
 |date       = {{Start date|2026|11|3|df=y}}
 |time       = 21:00
 |team1      = [[Atlético Madrid]] {{fbaicon|ESP}}
-|score      =
+|score      = 0–2
 |team2      = {{fbaicon|GER}} [[FC Bayern Munich|Bayern Munich]]
 |goals1     =
 |goals2     =
+*[[Lennart Karl|Karl]] {{goal|54}}
+*[[Konrad Laimer|Laimer]] {{goal|74}}
 |stadium    = [[Metropolitano Stadium]], [[Madrid]]
-|attendance = <!-- <ref>{{cite web |url=https://www.uefa.com/newsfiles/UCL/2027/2049608_FR.pdf |title=Full Time Summary Matchday 4 – Atlético Madrid v Bayern Munich |work=[[UEFA]] |publisher=Union of European Football Associations |date=3 November 2026 |access-date=3 November 2026}}</ref> -->
-|referee    =
-|report     = Report<ref>{{cite web |url=https://www.uefa.com/uefachampionsleague/match/2049608/ |title=Atleti vs. Bayern München |publisher=UEFA |access-date=29 August 2026}}</ref>
+|attendance = 69,821<ref>{{cite web |url=https://www.uefa.com/newsfiles/UCL/2027/2049608_FR.pdf |title=Full Time Summary Matchday 4 – Atlético Madrid v Bayern Munich |work=[[UEFA]] |publisher=Union of European Football Associations |date=3 November 2026 |access-date=3 November 2026}}</ref>
+|referee    = [[François Letexier]] ([[French Football Federation|France]])
+|report     = Report<ref>{{cite web |url=https://www.uefa.com/uefachampionsleague/match/2049608/ |title=Atleti vs. Bayern München |publisher=UEFA |access-date=3 November 2026}}</ref>
 }}
 ----
 {{#invoke:Football box|main
 |date       = {{Start date|2026|11|3|df=y}}
 |time       = 21:00
 |team1      = [[FC Barcelona|Barcelona]] {{fbaicon|ESP}}
-|score      =
+|score      = 3–0
 |team2      = {{fbaicon|ENG}} [[Aston Villa F.C.|Aston Villa]]
 |goals1     =
+*[[Lamine Yamal|Yamal]] {{goal|7}}
+*[[Raphinha]] {{goal|52||64}}
 |goals2     =
 |stadium    = [[Camp Nou]], [[Barcelona]]
-|attendance = <!-- <ref>{{cite web |url=https://www.uefa.com/newsfiles/UCL/2027/2049607_FR.pdf |title=Full Time Summary Matchday 4 – Barcelona v Aston Villa |work=[[UEFA]] |publisher=Union of European Football Associations |date=3 November 2026 |access-date=3 November 2026}}</ref> -->
-|referee    =
-|report     = Report<ref>{{cite web |url=https://www.uefa.com/uefachampionsleague/match/2049607/ |title=Barcelona vs. Aston Villa |publisher=UEFA |access-date=29 August 2026}}</ref>
+|attendance = 52,662<ref>{{cite web |url=https://www.uefa.com/newsfiles/UCL/2027/2049607_FR.pdf |title=Full Time Summary Matchday 4 – Barcelona v Aston Villa |work=[[UEFA]] |publisher=Union of European Football Associations |date=3 November 2026 |access-date=3 November 2026}}</ref>
+|referee    = [[Davide Massa]] ([[Italian Football Federation|Italy]])
+|report     = Report<ref>{{cite web |url=https://www.uefa.com/uefachampionsleague/match/2049607/ |title=Barcelona vs. Aston Villa |publisher=UEFA |access-date=3 November 2026}}</ref>
 }}
 ----
 {{#invoke:Football box|main
 |date       = {{Start date|2026|11|3|df=y}}
 |time       = 21:00
 |team1      = [[Feyenoord]] {{fbaicon|NED}}
-|score      =
+|score      = 0–3
 |team2      = {{fbaicon|ITA}} [[Inter Milan]]
 |goals1     =
 |goals2     =
+*[[Yann Aurel Bisseck|Bisseck]] {{goal|8}}
+*[[Pio Esposito|Esposito]] {{goal|34}}
+*[[Piotr Zieliński|Zieliński]] {{goal|54}}
 |stadium    = [[De Kuip]], [[Rotterdam]]
-|attendance = <!-- <ref>{{cite web |url=https://www.uefa.com/newsfiles/UCL/2027/2049610_FR.pdf |title=Full Time Summary Matchday 4 – Feyenoord v Inter Milan |work=[[UEFA]] |publisher=Union of European Football Associations |date=3 November 2026 |access-date=3 November 2026}}</ref> -->
-|referee    =
-|report     = Report<ref>{{cite web |url=https://www.uefa.com/uefachampionsleague/match/2049610/ |title=Feyenoord vs. Inter |publisher=UEFA |access-date=29 August 2026}}</ref>
+|attendance = 43,649<ref>{{cite web |url=https://www.uefa.com/newsfiles/UCL/2027/2049610_FR.pdf |title=Full Time Summary Matchday 4 – Feyenoord v Inter Milan |work=[[UEFA]] |publisher=Union of European Football Associations |date=3 November 2026 |access-date=3 November 2026}}</ref>
+|referee    = [[Glenn Nyberg]] ([[Swedish Football Association|Sweden]])
+|report     = Report<ref>{{cite web |url=https://www.uefa.com/uefachampionsleague/match/2049610/ |title=Feyenoord vs. Inter |publisher=UEFA |access-date=3 November 2026}}</ref>
 }}
 ----
 {{#invoke:Football box|main
 |date       = {{Start date|2026|11|3|df=y}}
 |time       = 21:00
 |team1      = [[FK Bodø/Glimt|Bodø/Glimt]] {{fbaicon|NOR}}
-|score      =
+|score      = 0–0
 |team2      = {{fbaicon|FRA}} [[Lille OSC|Lille]]
 |goals1     =
 |goals2     =
 |stadium    = [[Aspmyra Stadion]], [[Bodø (town)|Bodø]]
-|attendance = <!-- <ref>{{cite web |url=https://www.uefa.com/newsfiles/UCL/2027/2049611_FR.pdf |title=Full Time Summary Matchday 4 – Bodø/Glimt v Lille |work=[[UEFA]] |publisher=Union of European Football Associations |date=3 November 2026 |access-date=3 November 2026}}</ref> -->
-|referee    =
-|report     = Report<ref>{{cite web |url=https://www.uefa.com/uefachampionsleague/match/2049611/ |title=Bodø/Glimt vs. Lille |publisher=UEFA |access-date=29 August 2026}}</ref>
+|attendance = 7,737<ref>{{cite web |url=https://www.uefa.com/newsfiles/UCL/2027/2049611_FR.pdf |title=Full Time Summary Matchday 4 – Bodø/Glimt v Lille |work=[[UEFA]] |publisher=Union of European Football Associations |date=3 November 2026 |access-date=3 November 2026}}</ref>
+|referee    = [[João Pinheiro (referee)|João Pinheiro]] ([[Portuguese Football Federation|Portugal]])
+|report     = Report<ref>{{cite web |url=https://www.uefa.com/uefachampionsleague/match/2049611/ |title=Bodø/Glimt vs. Lille |publisher=UEFA |access-date=3 November 2026}}</ref>
 }}
 ----
 {{#invoke:Football box|main
 |date       = {{Start date|2026|11|3|df=y}}
 |time       = 21:00
 |team1      = [[LASK]] {{fbaicon|AUT}}
-|score      =
+|score      = 4–0
 |team2      = {{fbaicon|SVK}} [[ŠK Slovan Bratislava|Slovan Bratislava]]
 |goals1     =
+*[[Kasper Jørgensen (footballer)|Jørgensen]] {{goal|19||37}}
+*[[Robert Ljubičić|Ljubičić]] {{goal|44}}
+*[[Samuel Adeniran|Adeniran]] {{goal|48}}
 |goals2     =
 |stadium    = [[Raiffeisen Arena (Linz)|Raiffeisen Arena]], [[Linz]]
-|attendance = <!-- <ref>{{cite web |url=https://www.uefa.com/newsfiles/UCL/2027/2049615_FR.pdf |title=Full Time Summary Matchday 4 – LASK v Slovan Bratislava |work=[[UEFA]] |publisher=Union of European Football Associations |date=3 November 2026 |access-date=3 November 2026}}</ref> -->
-|referee    =
-|report     = Report<ref>{{cite web |url=https://www.uefa.com/uefachampionsleague/match/2049615/ |title=LASK vs. S. Bratislava |publisher=UEFA |access-date=29 August 2026}}</ref>
+|attendance = 17,246<ref>{{cite web |url=https://www.uefa.com/newsfiles/UCL/2027/2049615_FR.pdf |title=Full Time Summary Matchday 4 – LASK v Slovan Bratislava |work=[[UEFA]] |publisher=Union of European Football Associations |date=3 November 2026 |access-date=3 November 2026}}</ref>
+|referee    = [[Donatas Rumšas]] ([[Lithuanian Football Federation|Lithuania]])
+|report     = Report<ref>{{cite web |url=https://www.uefa.com/uefachampionsleague/match/2049615/ |title=LASK vs. S. Bratislava |publisher=UEFA |access-date=3 November 2026}}</ref>
 }}
 ----
 {{#invoke:Football box|main
 |date       = {{Start date|2026|11|3|df=y}}
 |time       = 21:00&nbsp;{{small|(20:00 [[UTC+00:00|UTC+0]])}}
 |team1      = [[Manchester United F.C.|Manchester United]] {{fbaicon|ENG}}
-|score      =
+|score      = 3–2
 |team2      = {{fbaicon|ITA}} [[AS Roma|Roma]]
 |goals1     =
+*[[Bruno Fernandes|Fernandes]] {{goal|58|pen.}}
+*[[Matheus Cunha|Cunha]] {{goal|83||86}}
 |goals2     =
+*[[Matías Soulé|Soulé]] {{goal|11}}
+*[[Donyell Malen|Malen]] {{goal|18|pen.}}
 |stadium    = [[Old Trafford]], [[Manchester]]
-|attendance = <!-- <ref>{{cite web |url=https://www.uefa.com/newsfiles/UCL/2027/2049609_FR.pdf |title=Full Time Summary Matchday 4 – Manchester United v Roma |work=[[UEFA]] |publisher=Union of European Football Associations |date=3 November 2026 |access-date=3 November 2026}}</ref> -->
-|referee    =
-|report     = Report<ref>{{cite web |url=https://www.uefa.com/uefachampionsleague/match/2049609/ |title=Man Utd vs. Roma |publisher=UEFA |access-date=29 August 2026}}</ref>
+|attendance = 73,747<ref>{{cite web |url=https://www.uefa.com/newsfiles/UCL/2027/2049609_FR.pdf |title=Full Time Summary Matchday 4 – Manchester United v Roma |work=[[UEFA]] |publisher=Union of European Football Associations |date=3 November 2026 |access-date=3 November 2026}}</ref>
+|referee    = [[Jesús Gil Manzano]] ([[Royal Spanish Football Federation|Spain]])
+|report     = Report<ref>{{cite web |url=https://www.uefa.com/uefachampionsleague/match/2049609/ |title=Man Utd vs. Roma |publisher=UEFA |access-date=3 November 2026}}</ref>
 }}
 ----
 {{#invoke:Football box|main
 |date       = {{Start date|2026|11|3|df=y}}
 |time       = 21:00
 |team1      = [[Villarreal CF|Villarreal]] {{fbaicon|ESP}}
-|score      =
+|score      = 0–6
 |team2      = {{fbaicon|FRA}} [[Paris Saint-Germain FC|Paris Saint-Germain]]
 |goals1     =
 |goals2     =
+*[[João Neves|Neves]] {{goal|9}}
+*[[Désiré Doué|Doué]] {{goal|12}}
+*[[Senny Mayulu|Mayulu]] {{goal|13}}
+*[[Fabián Ruiz|Fabián]] {{goal|17||50}}
+*[[David Boly|Boly]] {{goal|78}}
 |stadium    = [[Estadio de la Cerámica]], [[Villarreal]]
-|attendance = <!-- <ref>{{cite web |url=https://www.uefa.com/newsfiles/UCL/2027/2049612_FR.pdf |title=Full Time Summary Matchday 4 – Villarreal v Paris Saint-Germain |work=[[UEFA]] |publisher=Union of European Football Associations |date=3 November 2026 |access-date=3 November 2026}}</ref> -->
-|referee    =
-|report     = Report<ref>{{cite web |url=https://www.uefa.com/uefachampionsleague/match/2049612/ |title=Villarreal vs. Paris |publisher=UEFA |access-date=29 August 2026}}</ref>
+|attendance = 20,036<ref>{{cite web |url=https://www.uefa.com/newsfiles/UCL/2027/2049612_FR.pdf |title=Full Time Summary Matchday 4 – Villarreal v Paris Saint-Germain |work=[[UEFA]] |publisher=Union of European Football Associations |date=3 November 2026 |access-date=3 November 2026}}</ref>
+|referee    = [[Felix Zwayer]] ([[German Football Association|Germany]])
+|report     = Report<ref>{{cite web |url=https://www.uefa.com/uefachampionsleague/match/2049612/ |title=Villarreal vs. Paris |publisher=UEFA |access-date=3 November 2026}}</ref>
 }}
 ----
 {{#invoke:Football box|main
 |date       = {{Start date|2026|11|4|df=y}}
 |time       = 18:45&nbsp;{{small|(19:45 [[UTC+02:00|UTC+2]])}}
 |team1      = [[AEK Athens F.C.|AEK Athens]] {{fbaicon|GRE}}
-|score      =
+|score      = 2–3
 |team2      = {{fbaicon|ESP}} [[Real Madrid CF|Real Madrid]]
 |goals1     =
+*[[Aboubakary Koïta|Koïta]] {{goal|12}}
+*[[Stavros Pilios|Pilios]] {{goal|75}}
 |goals2     =
+*[[Jude Bellingham|Bellingham]] {{goal|32}}
+*[[Kylian Mbappé|Mbappé]] {{goal|78}}
+*[[Federico Valverde|Valverde]] {{goal|90+2}}
 |stadium    = [[Agia Sophia Stadium]], [[Athens]]
-|attendance = <!-- <ref>{{cite web |url=https://www.uefa.com/newsfiles/UCL/2027/2049622_FR.pdf |title=Full Time Summary Matchday 4 – AEK Athens v Real Madrid |work=[[UEFA]] |publisher=Union of European Football Associations |date=4 November 2026 |access-date=4 November 2026}}</ref> -->
-|referee    =
-|report     = Report<ref>{{cite web |url=https://www.uefa.com/uefachampionsleague/match/2049622/ |title=AEK Athens vs. Real Madrid |publisher=UEFA |access-date=29 August 2026}}</ref>
+|attendance = 30,368<ref>{{cite web |url=https://www.uefa.com/newsfiles/UCL/2027/2049622_FR.pdf |title=Full Time Summary Matchday 4 – AEK Athens v Real Madrid |work=[[UEFA]] |publisher=Union of European Football Associations |date=4 November 2026 |access-date=4 November 2026}}</ref>
+|referee    = [[Maurizio Mariani]] ([[Italian Football Federation|Italy]])
+|report     = Report<ref>{{cite web |url=https://www.uefa.com/uefachampionsleague/match/2049622/ |title=AEK Athens vs. Real Madrid |publisher=UEFA |access-date=4 November 2026}}</ref>
 }}
 ----
 {{#invoke:Football box|main
 |date       = {{Start date|2026|11|4|df=y}}
 |time       = 18:45&nbsp;{{small|(20:45 [[UTC+03:00|UTC+3]])}}
 |team1      = [[Fenerbahçe S.K. (football)|Fenerbahçe]] {{fbaicon|TUR}}
-|score      =
+|score      = 3–2
 |team2      = {{fbaicon|ENG}} [[Liverpool F.C.|Liverpool]]
 |goals1     =
+*[[Mason Greenwood|Greenwood]] {{goal|29}}
+*[[Archie Brown (footballer)|Brown]] {{goal|73}}
+*[[Vedat Muriqi|Muriqi]] {{goal|79}}
 |goals2     =
+*[[Trey Nyoni|Nyoni]] {{goal|25}}
+*[[Alexander Isak|Isak]] {{goal|69}}
 |stadium    = [[Şükrü Saracoğlu Stadium]], [[Istanbul]]
-|attendance = <!-- <ref>{{cite web |url=https://www.uefa.com/newsfiles/UCL/2027/2049620_FR.pdf |title=Full Time Summary Matchday 4 – Fenerbahçe v Liverpool |work=[[UEFA]] |publisher=Union of European Football Associations |date=4 November 2026 |access-date=4 November 2026}}</ref> -->
-|referee    =
-|report     = Report<ref>{{cite web |url=https://www.uefa.com/uefachampionsleague/match/2049620/ |title=Fenerbahçe vs. Liverpool |publisher=UEFA |access-date=29 August 2026}}</ref>
+|attendance = 39,536<ref>{{cite web |url=https://www.uefa.com/newsfiles/UCL/2027/2049620_FR.pdf |title=Full Time Summary Matchday 4 – Fenerbahçe v Liverpool |work=[[UEFA]] |publisher=Union of European Football Associations |date=4 November 2026 |access-date=4 November 2026}}</ref>
+|referee    = [[Clément Turpin]] ([[French Football Federation|France]])
+|report     = Report<ref>{{cite web |url=https://www.uefa.com/uefachampionsleague/match/2049620/ |title=Fenerbahçe vs. Liverpool |publisher=UEFA |access-date=4 November 2026}}</ref>
 }}
 ----
 {{#invoke:Football box|main
 |date       = {{Start date|2026|11|4|df=y}}
 |time       = 21:00
 |team1      = [[Borussia Dortmund]] {{fbaicon|GER}}
-|score      =
+|score      = 2–1
 |team2      = {{fbaicon|ESP}} [[Real Betis]]
 |goals1     =
+*[[Fábio Silva (footballer, born 2002)|Silva]] {{goal|49}}
+*[[Konstantinos Karetsas|Karetsas]] {{goal|72}}
 |goals2     =
+*[[Aitor Ruibal|Ruibal]] {{goal|67}}
 |stadium    = [[Westfalenstadion]], [[Dortmund]]
-|attendance = <!-- <ref>{{cite web |url=https://www.uefa.com/newsfiles/UCL/2027/2049616_FR.pdf |title=Full Time Summary Matchday 4 – Borussia Dortmund v Real Betis |work=[[UEFA]] |publisher=Union of European Football Associations |date=4 November 2026 |access-date=4 November 2026}}</ref> -->
-|referee    =
-|report     = Report<ref>{{cite web |url=https://www.uefa.com/uefachampionsleague/match/2049616/ |title=B. Dortmund vs. Real Betis |publisher=UEFA |access-date=29 August 2026}}</ref>
+|attendance = 81,365<ref>{{cite web |url=https://www.uefa.com/newsfiles/UCL/2027/2049616_FR.pdf |title=Full Time Summary Matchday 4 – Borussia Dortmund v Real Betis |work=[[UEFA]] |publisher=Union of European Football Associations |date=4 November 2026 |access-date=4 November 2026}}</ref>
+|referee    = [[Serdar Gözübüyük]] ([[Royal Dutch Football Association|Netherlands]])
+|report     = Report<ref>{{cite web |url=https://www.uefa.com/uefachampionsleague/match/2049616/ |title=B. Dortmund vs. Real Betis |publisher=UEFA |access-date=4 November 2026}}</ref>
 }}
 ----
 {{#invoke:Football box|main
 |date       = {{Start date|2026|11|4|df=y}}
 |time       = 21:00&nbsp;{{small|(20:00 [[UTC+00:00|UTC+0]])}}
 |team1      = [[FC Porto|Porto]] {{fbaicon|POR}}
-|score      =
+|score      = 4–1
 |team2      = {{fbaicon|ITA}} [[SSC Napoli|Napoli]]
 |goals1     =
+*[[Jan Bednarek|Bednarek]] {{goal|11}}
+*[[Gabri Veiga|Veiga]] {{goal|71}}
+*[[Jakub Kiwior|Kiwior]] {{goal|80}}
+*[[Samu Aghehowa|Aghehowa]] {{goal|90|pen.}}
 |goals2     =
+*[[Scott McTominay|McTominay]] {{goal|43}}
 |stadium    = [[Estádio do Dragão]], [[Porto]]
-|attendance = <!-- <ref>{{cite web |url=https://www.uefa.com/newsfiles/UCL/2027/2049617_FR.pdf |title=Full Time Summary Matchday 4 – Porto v Napoli |work=[[UEFA]] |publisher=Union of European Football Associations |date=4 November 2026 |access-date=4 November 2026}}</ref> -->
-|referee    =
-|report     = Report<ref>{{cite web |url=https://www.uefa.com/uefachampionsleague/match/2049617/ |title=Porto vs. Napoli |publisher=UEFA |access-date=29 August 2026}}</ref>
+|attendance = 49,190<ref>{{cite web |url=https://www.uefa.com/newsfiles/UCL/2027/2049617_FR.pdf |title=Full Time Summary Matchday 4 – Porto v Napoli |work=[[UEFA]] |publisher=Union of European Football Associations |date=4 November 2026 |access-date=4 November 2026}}</ref>
+|referee    = [[Michael Oliver (referee)|Michael Oliver]] ([[The Football Association|England]])
+|report     = Report<ref>{{cite web |url=https://www.uefa.com/uefachampionsleague/match/2049617/ |title=Porto vs. Napoli |publisher=UEFA |access-date=4 November 2026}}</ref>
 }}
 ----
 {{#invoke:Football box|main
 |date       = {{Start date|2026|11|4|df=y}}
 |time       = 21:00
 |team1      = [[PSV Eindhoven]] {{fbaicon|NED}}
-|score      =
+|score      = 1–2
 |team2      = {{fbaicon|BEL}} [[Club Brugge KV|Club Brugge]]
 |goals1     =
+*[[Kodai Sano (footballer)|Sano]] {{goal|54}}
 |goals2     =
+*[[Nicolò Tresoldi|Tresoldi]] {{goal|25}}
+*[[Carlos Forbs|Forbs]] {{goal|65}}
 |stadium    = [[Philips Stadion]], [[Eindhoven]]
-|attendance = <!-- <ref>{{cite web |url=https://www.uefa.com/newsfiles/UCL/2027/2049618_FR.pdf |title=Full Time Summary Matchday 4 – PSV Eindhoven v Club Brugge |work=[[UEFA]] |publisher=Union of European Football Associations |date=4 November 2026 |access-date=4 November 2026}}</ref> -->
-|referee    =
-|report     = Report<ref>{{cite web |url=https://www.uefa.com/uefachampionsleague/match/2049618/ |title=PSV vs. Club Brugge |publisher=UEFA |access-date=29 August 2026}}</ref>
+|attendance = 34,900<ref>{{cite web |url=https://www.uefa.com/newsfiles/UCL/2027/2049618_FR.pdf |title=Full Time Summary Matchday 4 – PSV Eindhoven v Club Brugge |work=[[UEFA]] |publisher=Union of European Football Associations |date=4 November 2026 |access-date=4 November 2026}}</ref>
+|referee    = [[Irfan Peljto]] ([[Football Federation of Bosnia and Herzegovina|Bosnia and Herzegovina]])
+|report     = Report<ref>{{cite web |url=https://www.uefa.com/uefachampionsleague/match/2049618/ |title=PSV vs. Club Brugge |publisher=UEFA |access-date=4 November 2026}}</ref>
 }}
 ----
 {{#invoke:Football box|main
 |date       = {{Start date|2026|11|4|df=y}}
 |time       = 21:00
 |team1      = [[RB Leipzig]] {{fbaicon|GER}}
-|score      =
+|score      = 2–3
 |team2      = {{fbaicon|ENG}} [[Manchester City F.C.|Manchester City]]
 |goals1     =
+*[[Ridle Baku|Baku]] {{goal|49}}
+*[[Antonio Nusa|Nusa]] {{goal|61}}
 |goals2     =
+*[[Castello Lukeba|Lukeba]] {{goal|37|o.g.}}
+*[[Enzo Fernández|Fernández]] {{goal|58}}
+*[[Erling Haaland|Haaland]] {{goal|78}}
 |stadium    = [[Red Bull Arena (Leipzig)|Red Bull Arena]], [[Leipzig]]
-|attendance = <!-- <ref>{{cite web |url=https://www.uefa.com/newsfiles/UCL/2027/2049619_FR.pdf |title=Full Time Summary Matchday 4 – RB Leipzig v Manchester City |work=[[UEFA]] |publisher=Union of European Football Associations |date=4 November 2026 |access-date=4 November 2026}}</ref> -->
-|referee    =
-|report     = Report<ref>{{cite web |url=https://www.uefa.com/uefachampionsleague/match/2049619/ |title=Leipzig vs. Man City |publisher=UEFA |access-date=29 August 2026}}</ref>
+|attendance = 45,228<ref>{{cite web |url=https://www.uefa.com/newsfiles/UCL/2027/2049619_FR.pdf |title=Full Time Summary Matchday 4 – RB Leipzig v Manchester City |work=[[UEFA]] |publisher=Union of European Football Associations |date=4 November 2026 |access-date=4 November 2026}}</ref>
+|referee    = [[Marco Guida]] ([[Italian Football Federation|Italy]])
+|report     = Report<ref>{{cite web |url=https://www.uefa.com/uefachampionsleague/match/2049619/ |title=Leipzig vs. Man City |publisher=UEFA |access-date=4 November 2026}}</ref>
 }}
 ----
 {{#invoke:Football box|main
 |date       = {{Start date|2026|11|4|df=y}}
 |time       = 21:00
 |team1      = [[RC Lens|Lens]] {{fbaicon|FRA}}
-|score      =
+|score      = 1–9
 |team2      = {{fbaicon|ITA}} [[Como 1907|Como]]
 |goals1     =
+*[[Ruben Aguilar|Aguilar]] {{goal|65}}
 |goals2     =
+*[[Anastasios Douvikas|Douvikas]] {{goal|7||32||57}}
+*[[Nico Paz|Paz]] {{goal|40}}
+*[[Lucas Da Cunha|Da Cunha]] {{goal|47}}
+*[[Marc-Oliver Kempf|Kempf]] {{goal|53}}
+*[[Mattia Liberali|Liberali]] {{goal|62}}
+*[[Martin Baturina|Baturina]] {{goal|69}}
+*[[Matteo Papaccioli|Papaccioli]] {{goal|90+1}}
 |stadium    = [[Stade Bollaert-Delelis]], [[Lens, Pas-de-Calais|Lens]]
-|attendance = <!-- <ref>{{cite web |url=https://www.uefa.com/newsfiles/UCL/2027/2049623_FR.pdf |title=Full Time Summary Matchday 4 – Lens v Como |work=[[UEFA]] |publisher=Union of European Football Associations |date=4 November 2026 |access-date=4 November 2026}}</ref> -->
-|referee    =
-|report     = Report<ref>{{cite web |url=https://www.uefa.com/uefachampionsleague/match/2049623/ |title=Lens vs. Como |publisher=UEFA |access-date=29 August 2026}}</ref>
+|attendance = 37,417<ref>{{cite web |url=https://www.uefa.com/newsfiles/UCL/2027/2049623_FR.pdf |title=Full Time Summary Matchday 4 – Lens v Como |work=[[UEFA]] |publisher=Union of European Football Associations |date=4 November 2026 |access-date=4 November 2026}}</ref>
+|referee    = [[Rohit Saggi]] ([[Norwegian Football Federation|Norway]])
+|report     = Report<ref>{{cite web |url=https://www.uefa.com/uefachampionsleague/match/2049623/ |title=Lens vs. Como |publisher=UEFA |access-date=4 November 2026}}</ref>
 }}
 ----
 {{#invoke:Football box|main
 |date       = {{Start date|2026|11|4|df=y}}
 |time       = 21:00
 |team1      = [[SK Slavia Prague|Slavia Prague]] {{fbaicon|CZE}}
-|score      =
+|score      = 1–2
 |team2      = {{fbaicon|ENG}} [[Arsenal F.C.|Arsenal]]
 |goals1     =
+*[[Wiktor Nowak|Nowak]] {{goal|90}}
 |goals2     =
+*[[Noni Madueke|Madueke]] {{goal|9}}
+*[[Viktor Gyökeres|Gyökeres]] {{goal|38}}
 |stadium    = [[Fortuna Arena]], [[Prague]]
-|attendance = <!-- <ref>{{cite web |url=https://www.uefa.com/newsfiles/UCL/2027/2049621_FR.pdf |title=Full Time Summary Matchday 4 – Slavia Prague v Arsenal |work=[[UEFA]] |publisher=Union of European Football Associations |date=4 November 2026 |access-date=4 November 2026}}</ref> -->
-|referee    =
-|report     = Report<ref>{{cite web |url=https://www.uefa.com/uefachampionsleague/match/2049621/ |title=Slavia Praha vs. Arsenal |publisher=UEFA |access-date=29 August 2026}}</ref>
+|attendance = 19,308<ref>{{cite web |url=https://www.uefa.com/newsfiles/UCL/2027/2049621_FR.pdf |title=Full Time Summary Matchday 4 – Slavia Prague v Arsenal |work=[[UEFA]] |publisher=Union of European Football Associations |date=4 November 2026 |access-date=4 November 2026}}</ref>
+|referee    = [[Tobias Stieler]] ([[German Football Association|Germany]])
+|report     = Report<ref>{{cite web |url=https://www.uefa.com/uefachampionsleague/match/2049621/ |title=Slavia Praha vs. Arsenal |publisher=UEFA |access-date=4 November 2026}}</ref>
 }}
 ----
 {{#invoke:Football box|main
 |date       = {{Start date|2026|11|4|df=y}}
 |time       = 21:00
 |team1      = [[Viking FK|Viking]] {{fbaicon|NOR}}
-|score      =
+|score      = 4–1
 |team2      = {{fbaicon|AZE}} [[Sabah FK (Azerbaijan)|Sabah]]
 |goals1     =
+*[[Erik Botheim|Botheim]] {{goal|27||90+4}}
+*[[Zlatko Tripić|Tripić]] {{goal|69}}
+*[[Henrik Falchener|Falchener]] {{goal|81}}
 |goals2     =
+*[[Orphé Mbina|Mbina]] {{goal|11}}
 |stadium    = [[Viking Stadion]], [[Stavanger]]
-|attendance = <!-- <ref>{{cite web |url=https://www.uefa.com/newsfiles/UCL/2027/2049624_FR.pdf |title=Full Time Summary Matchday 5 – Viking v Sabah |work=[[UEFA]] |publisher=Union of European Football Associations |date=4 November 2026 |access-date=4 November 2026}}</ref> -->
-|referee    =
-|report     = Report<ref>{{cite web |url=https://www.uefa.com/uefachampionsleague/match/2049624/ |title=Viking vs. Sabah |publisher=UEFA |access-date=29 August 2026}}</ref>
+|attendance = 15,012<ref>{{cite web |url=https://www.uefa.com/newsfiles/UCL/2027/2049624_FR.pdf |title=Full Time Summary Matchday 5 – Viking v Sabah |work=[[UEFA]] |publisher=Union of European Football Associations |date=4 November 2026 |access-date=4 November 2026}}</ref>
+|referee    = [[Sander van der Eijk]] ([[Royal Dutch Football Association|Netherlands]])
+|report     = Report<ref>{{cite web |url=https://www.uefa.com/uefachampionsleague/match/2049624/ |title=Viking vs. Sabah |publisher=UEFA |access-date=4 November 2026}}</ref>
 }}
 
 ===Matchday 5===
@@ -1851,7 +1913,7 @@ Times are [[Central European Time|CET]] or [[Central European Summer Time|CEST]]
 |goals2     =
 |stadium    = [[Aspmyra Stadion]], [[Bodø (town)|Bodø]]
 |attendance = <!-- <ref>{{cite web |url=https://www.uefa.com/newsfiles/UCL/2027/2049629_FR.pdf |title=Full Time Summary Matchday 5 – Bodø/Glimt v LASK |work=[[UEFA]] |publisher=Union of European Football Associations |date=24 November 2026 |access-date=24 November 2026}}</ref> -->
-|referee    =
+|referee    = [[Halil Umut Meler]] ([[Turkish Football Federation|Turkey]])
 |report     = Report<ref>{{cite web |url=https://www.uefa.com/uefachampionsleague/match/2049629/ |title=Bodø/Glimt vs. LASK |publisher=UEFA |access-date=29 August 2026}}</ref>
 }}
 ----
@@ -1865,7 +1927,7 @@ Times are [[Central European Time|CET]] or [[Central European Summer Time|CEST]]
 |goals2     =
 |stadium    = [[Rams Park]], [[Istanbul]]
 |attendance = <!-- <ref>{{cite web |url=https://www.uefa.com/newsfiles/UCL/2027/2049631_FR.pdf |title=Full Time Summary Matchday 5 – Galatasaray v Aston Villa |work=[[UEFA]] |publisher=Union of European Football Associations |date=24 November 2026 |access-date=24 November 2026}}</ref> -->
-|referee    =
+|referee    = [[Daniel Siebert (referee)|Daniel Siebert]] ([[German Football Association|Germany]])
 |report     = Report<ref>{{cite web |url=https://www.uefa.com/uefachampionsleague/match/2049631/ |title=Galatasaray vs. Aston Villa |publisher=UEFA |access-date=29 August 2026}}</ref>
 }}
 ----
@@ -1879,7 +1941,7 @@ Times are [[Central European Time|CET]] or [[Central European Summer Time|CEST]]
 |goals2     =
 |stadium    = [[Emirates Stadium]], [[London]]
 |attendance = <!-- <ref>{{cite web |url=https://www.uefa.com/newsfiles/UCL/2027/2049627_FR.pdf |title=Full Time Summary Matchday 5 – Arsenal v Borussia Dortmund |work=[[UEFA]] |publisher=Union of European Football Associations |date=24 November 2026 |access-date=24 November 2026}}</ref> -->
-|referee    =
+|referee    = [[Maurizio Mariani]] ([[Italian Football Federation|Italy]])
 |report     = Report<ref>{{cite web |url=https://www.uefa.com/uefachampionsleague/match/2049627/ |title=Arsenal vs. B. Dortmund |publisher=UEFA |access-date=29 August 2026}}</ref>
 }}
 ----
@@ -1893,7 +1955,7 @@ Times are [[Central European Time|CET]] or [[Central European Summer Time|CEST]]
 |goals2     =
 |stadium    = [[Stadio Giuseppe Sinigaglia]], [[Como]]
 |attendance = <!-- <ref>{{cite web |url=https://www.uefa.com/newsfiles/UCL/2027/2049633_FR.pdf |title=Full Time Summary Matchday 5 – Como v AEK Athens |work=[[UEFA]] |publisher=Union of European Football Associations |date=24 November 2026 |access-date=24 November 2026}}</ref> -->
-|referee    =
+|referee    = [[Javier Alberola Rojas]] ([[Royal Spanish Football Federation|Spain]])
 |report     = Report<ref>{{cite web |url=https://www.uefa.com/uefachampionsleague/match/2049633/ |title=Como vs. AEK Athens |publisher=UEFA |access-date=29 August 2026}}</ref>
 }}
 ----
@@ -1907,7 +1969,7 @@ Times are [[Central European Time|CET]] or [[Central European Summer Time|CEST]]
 |goals2     =
 |stadium    = [[De Kuip]], [[Rotterdam]]
 |attendance = <!-- <ref>{{cite web |url=https://www.uefa.com/newsfiles/UCL/2027/2049628_FR.pdf |title=Full Time Summary Matchday 5 – Feyenoord v Porto |work=[[UEFA]] |publisher=Union of European Football Associations |date=24 November 2026 |access-date=24 November 2026}}</ref> -->
-|referee    =
+|referee    = [[Irfan Peljto]] ([[Football Federation of Bosnia and Herzegovina|Bosnia and Herzegovina]])
 |report     = Report<ref>{{cite web |url=https://www.uefa.com/uefachampionsleague/match/2049628/ |title=Feyenoord vs. Porto |publisher=UEFA |access-date=29 August 2026}}</ref>
 }}
 ----
@@ -1921,7 +1983,7 @@ Times are [[Central European Time|CET]] or [[Central European Summer Time|CEST]]
 |goals2     =
 |stadium    = [[Etihad Stadium]], [[Manchester]]
 |attendance = <!-- <ref>{{cite web |url=https://www.uefa.com/newsfiles/UCL/2027/2049626_FR.pdf |title=Full Time Summary Matchday 5 – Manchester City v Napoli |work=[[UEFA]] |publisher=Union of European Football Associations |date=24 November 2026 |access-date=24 November 2026}}</ref> -->
-|referee    =
+|referee    = [[István Kovács (referee)|István Kovács]] ([[Romanian Football Federation|Romania]])
 |report     = Report<ref>{{cite web |url=https://www.uefa.com/uefachampionsleague/match/2049626/ |title=Man City vs. Napoli |publisher=UEFA |access-date=29 August 2026}}</ref>
 }}
 ----
@@ -1935,7 +1997,7 @@ Times are [[Central European Time|CET]] or [[Central European Summer Time|CEST]]
 |goals2     =
 |stadium    = [[Red Bull Arena (Leipzig)|Red Bull Arena]], [[Leipzig]]
 |attendance = <!-- <ref>{{cite web |url=https://www.uefa.com/newsfiles/UCL/2027/2049630_FR.pdf |title=Full Time Summary Matchday 5 – RB Leipzig v Lens |work=[[UEFA]] |publisher=Union of European Football Associations |date=24 November 2026 |access-date=24 November 2026}}</ref> -->
-|referee    =
+|referee    = [[Ivan Kružliak]] ([[Slovak Football Association|Slovakia]])
 |report     = Report<ref>{{cite web |url=https://www.uefa.com/uefachampionsleague/match/2049630/ |title=Leipzig vs. Lens |publisher=UEFA |access-date=29 August 2026}}</ref>
 }}
 ----
@@ -1949,7 +2011,7 @@ Times are [[Central European Time|CET]] or [[Central European Summer Time|CEST]]
 |goals2     =
 |stadium    = [[Bernabéu (stadium)|Bernabéu]], [[Madrid]]
 |attendance = <!-- <ref>{{cite web |url=https://www.uefa.com/newsfiles/UCL/2027/2049625_FR.pdf |title=Full Time Summary Matchday 5 – Real Madrid v PSV Eindhoven |work=[[UEFA]] |publisher=Union of European Football Associations |date=24 November 2026 |access-date=24 November 2026}}</ref> -->
-|referee    =
+|referee    = [[Espen Eskås]] ([[Norwegian Football Federation|Norway]])
 |report     = Report<ref>{{cite web |url=https://www.uefa.com/uefachampionsleague/match/2049625/ |title=Real Madrid vs. PSV |publisher=UEFA |access-date=29 August 2026}}</ref>
 }}
 ----
@@ -1963,7 +2025,7 @@ Times are [[Central European Time|CET]] or [[Central European Summer Time|CEST]]
 |goals2     =
 |stadium    = [[Tehelné pole]], [[Bratislava]]
 |attendance = <!-- <ref>{{cite web |url=https://www.uefa.com/newsfiles/UCL/2027/2049632_FR.pdf |title=Full Time Summary Matchday 5 – Slovan Bratislava v Real Betis |work=[[UEFA]] |publisher=Union of European Football Associations |date=24 November 2026 |access-date=24 November 2026}}</ref> -->
-|referee    =
+|referee    = [[Jérôme Brisard]] ([[French Football Federation|France]])
 |report     = Report<ref>{{cite web |url=https://www.uefa.com/uefachampionsleague/match/2049632/ |title=S. Bratislava vs. Real Betis |publisher=UEFA |access-date=29 August 2026}}</ref>
 }}
 ----
