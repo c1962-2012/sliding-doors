@@ -179,6 +179,14 @@ function render(){
   renderChart();
 
   // Classifica
+  // a campionato in corso la classifica non è quella finale: si dice fino a quale giorno arriva
+  {
+    const rows = SERIE_A[season], giocate = rows.filter(m => m[3] !== null);
+    const t = $("tableTitle");
+    if (t) t.textContent = giocate.length < rows.length && giocate.length
+      ? `Classifica al ${fmtDate(giocate.map(m => m[0]).sort().pop())} · campionato in corso`
+      : "Classifica finale";
+  }
   $("table").innerHTML = `<thead><tr><th>#</th><th>Squadra</th><th>G</th><th title="Gol fatti">GF</th><th title="Gol subiti">GS</th><th title="Differenza reti">DR</th><th>Pt reali</th><th>Pt</th><th>Δ</th></tr></thead><tbody>` +
     alt.map((r,i) => {
       const dpos = realPos[r.team] - (i+1), dpt = r.pt - realPt[r.team];
