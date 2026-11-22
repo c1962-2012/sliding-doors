@@ -74,11 +74,16 @@ const hash = f => fs.existsSync(f) ? crypto.createHash("sha1").update(fs.readFil
   }
   if (daEspn) fs.writeFileSync(path.join(proto, "data.js"), "window.SERIE_A=" + JSON.stringify(window.SERIE_A) + ";");
   got.espn = daEspn;
+
+  // Marcatori di Serie A da ESPN: le stagioni finite restano in cache, quella in corso si riscarica ogni volta
+  const marc = await require("./marcatori-a.js").aggiorna(window.SERIE_A, [season]);
+  const marcCambiati = marc.cambiato;
+  got.marcatoriA = marc.esito[season] || "in cache";
   const played = cur.filter(m => m[3] !== null);
   const after = [hash(path.join(proto, "data.js")), hash(path.join(proto, "cups.js"))];
   console.log(JSON.stringify({
     season, scaricati: got, giocate: played.length, daGiocare: cur.length - played.length,
     ultimaGiocata: played.map(m => m[0]).sort().pop(),
-    changed: after[0] !== before[0] || after[1] !== before[1], log
+    changed: after[0] !== before[0] || after[1] !== before[1] || marcCambiati, log
   }));
 })().catch(e => { console.error("ERRORE aggiornamento:", e.message); process.exit(1) });

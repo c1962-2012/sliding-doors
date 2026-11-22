@@ -159,10 +159,7 @@ function render(){
     msg = parts.join(" ");
   }
   if (NOTES[season]) msg += ` <em>Nota: ${NOTES[season]}</em>`;
-  $("verdict").innerHTML = `
-    <div><div class="lab">${live ? "In testa oggi, realtà" : "Primo sul campo, realtà"}</div><div class="big">${rc}</div></div>
-    <div class="${changed?"changed":""}"><div class="lab">${live ? "In testa nel tuo universo" : "Primo nel tuo universo"}</div><div class="big">${ac}</div></div>
-    <div class="msg">${msg}</div>`;
+  $("verdict").innerHTML = `<div class="msg">${msg}</div>`;
   $("zones").innerHTML = `<span><i style="background:var(--s2)"></i>Zona Champions (${CL} posti)</span><span><i style="background:var(--bad)"></i>Retrocessione (${REL})</span><span>A pari punti: classifica avulsa (punti e differenza reti negli scontri diretti), poi differenza reti e gol fatti in generale.</span>`;
 
   // Momenti
@@ -653,7 +650,13 @@ function sumScorers(lists){
 function renderScorers(){
   const M = COPPE.marcatori, S = season.replace("-","/");
   const cup = M.coppa[season], eu = M.europa[season] || {};
-  let h = `<section class="panel"><h2>Coppa Italia ${S}</h2>${covBadge(cup && cup.cov)}
+  // Serie A: marcatori da ESPN, per tutte le stagioni dell'app; quella in corso si aggiorna anche durante le partite
+  const A = (window.MARCATORI_A || {})[season];
+  let h = A ? `<section class="panel"><h2>Serie A ${S} · capocannonieri</h2>${covBadge(A.cov)}
+    <p class="sub">${A.aggiornato ? `Aggiornata al ${new Date(A.aggiornato).toLocaleString("it-IT", { day:"numeric", month:"short", hour:"2-digit", minute:"2-digit" })}${A.live ? ", con i gol delle partite in corso" : ""}.` : "Stagione completa."} Gli autogol non contano.</p>
+    <h3>Marcatori</h3>${scorerTable(A.sc.slice(0,20))}
+    <h3>Rigori trasformati</h3>${penTable(A.pens, false)}</section>` : "";
+  h += `<section class="panel"><h2>Coppa Italia ${S}</h2>${covBadge(cup && cup.cov)}
     <h3>Marcatori, dagli ottavi</h3>${cup ? scorerTable(cup.sc.slice(0,15)) : ""}
     <h3>Rigori trasformati</h3>${cup ? penTable(cup.pens, false) : ""}</section>`;
   const comps = COPPE.europa[season] || {};
@@ -676,7 +679,11 @@ function renderScorers(){
     for (const v of Object.values(M.coppa)) for (const [t,[f,a]] of Object.entries(v.pens)) { const x = cupPens[t] ||= [0,0]; x[0]+=f; x[1]+=a }
     for (const v of Object.values(M.europa)) for (const c of Object.values(v)) for (const [t,[f,a]] of Object.entries(c.pens)) { const x = euPens[t] ||= [0,0]; x[0]+=f; x[1]+=a }
     const euYears = Object.entries(M.europa).filter(([s,v]) => Object.values(v).some(c => c.cov[0] && c.cov[0]/c.cov[1] >= .5)).map(([s]) => s);
-    $("scAll").innerHTML = `
+    const MA = window.MARCATORI_A || {}, aYears = Object.keys(MA).sort();
+    const aLists = aYears.map(s => Object.assign((MA[s].base || MA[s]).sc.slice(), { season:s }));
+    $("scAll").innerHTML = (aYears.length ? `
+      <div><h3>Serie A</h3><span class="cov">stagioni ${aYears[0].replace("-","/")} – ${aYears[aYears.length-1].replace("-","/")}</span>
+        ${scorerTable(sumScorers(aLists).slice(0,20), { seasons:true })}</div>` : "") + `
       <div><h3>Coppa Italia, dagli ottavi</h3>${scorerTable(sumScorers(cupLists).slice(0,20), { seasons:true })}
         <h3>Rigori in Coppa Italia</h3>${penTable(cupPens, true)}</div>
       <div><h3>Italiane in Europa</h3><span class="cov part">stagioni con marcatori: ${euYears[0].replace("-","/")} – ${euYears[euYears.length-1].replace("-","/")}, alcune parziali</span>
@@ -845,6 +852,77 @@ showView({ "#coppa":"cup", "#europa":"eu", "#marcatori":"sc" }[location.hash] ||
   if (up) up.parentNode.insertBefore(bar, up.nextSibling);
   const sposta = on => { bar.classList.toggle("on", on); document.body.style.paddingTop = on ? bar.offsetHeight + "px" : "" };
   let timer = null, passati = null;
+
+  // ---- Segnale sonoro del gol ----
+  // il browser fa suonare una pagina solo dopo un tocco o un clic: al primo tocco si prepara l'audio
+  let audio = null, suonoOn = true, sbloccato = false;
+  try { suonoOn = localStorage.getItem("sd-suono-gol") !== "0" } catch(e){}
+  const preparaAudio = () => {
+    try { audio ||= new (window.AudioContext || window.webkitAudioContext)(); if (audio.state === "suspended") audio.resume() } catch(e){}
+  };
+  // il primo tocco o clic in qualsiasi punto sblocca l'audio: il pulsantino passa da "Attiva l'audio" a "Suono gol attivo"
+  const tocco = () => {
+    preparaAudio();
+    if (!sbloccato){ sbloccato = true; const p = bar.querySelector("[data-suono]"); if (p) p.outerHTML = pulsanteSuono() }
+  };
+  ["pointerdown", "keydown", "touchstart"].forEach(t => addEventListener(t, tocco, { passive: true }));
+  function suonoGol(){
+    if (!suonoOn) return;
+    preparaAudio();
+    if (!audio) return;
+    const t0 = audio.currentTime + 0.05, out = audio.createGain();
+    out.gain.value = 0.55; out.connect(audio.destination);
+    // tromba da stadio: tre squilli che salgono
+    [[0, 392, .22], [.26, 523, .22], [.52, 659, .7]].forEach(([dt, f, dur]) => {
+      const o = audio.createOscillator(), g = audio.createGain();
+      o.type = "sawtooth"; o.frequency.value = f;
+      g.gain.setValueAtTime(0, t0 + dt); g.gain.linearRampToValueAtTime(.35, t0 + dt + .03);
+      g.gain.setValueAtTime(.35, t0 + dt + dur - .06); g.gain.linearRampToValueAtTime(0, t0 + dt + dur);
+      o.connect(g); g.connect(out); o.start(t0 + dt); o.stop(t0 + dt + dur + .02);
+    });
+    // boato del pubblico: rumore filtrato che cresce e si spegne
+    const len = 2.6, buf = audio.createBuffer(1, audio.sampleRate * len, audio.sampleRate), d = buf.getChannelData(0);
+    for (let i = 0; i < d.length; i++) d[i] = Math.random() * 2 - 1;
+    const n = audio.createBufferSource(), f = audio.createBiquadFilter(), g = audio.createGain();
+    n.buffer = buf; f.type = "bandpass"; f.frequency.value = 900; f.Q.value = .6;
+    g.gain.setValueAtTime(0, t0 + .3); g.gain.linearRampToValueAtTime(.5, t0 + 1); g.gain.linearRampToValueAtTime(0, t0 + .3 + len);
+    n.connect(f); f.connect(g); g.connect(out); n.start(t0 + .3); n.stop(t0 + .3 + len);
+    try { navigator.vibrate && navigator.vibrate([250, 120, 250, 120, 500]) } catch(e){}
+  }
+  // voce che dice chi ha segnato: audio registrati in voci/<Squadra>.mp3 ("Gooooool! Gol della Roma!");
+  // se per una squadra non c'è, si usa voci/_gol.mp3 ("Gooooool!"); se manca anche quello restano tromba e boato
+  function voce(squadre){
+    if (!suonoOn || !squadre.length) return;
+    const [prima, ...altre] = squadre;
+    const suona = (src, poi) => { const a = new Audio(src); a.onended = poi; a.onerror = () => src.endsWith("_gol.mp3") ? poi() : suona("voci/_gol.mp3", poi); a.play().catch(() => poi()) };
+    suona("voci/" + encodeURIComponent(prima) + ".mp3", () => voce(altre));
+  }
+  // scritta GOL! grande per qualche secondo, con la partita e il nuovo punteggio
+  const flash = document.createElement("div");
+  flash.id = "golFlash"; flash.hidden = true;
+  st.textContent += "#golFlash{position:fixed;left:50%;top:22%;transform:translateX(-50%);z-index:10000;background:#ffe100;color:#111;border-radius:18px;padding:14px 26px;font:800 34px/1.1 'Big Shoulders Display',sans-serif;letter-spacing:.04em;text-align:center;box-shadow:0 10px 40px rgba(0,0,0,.6);animation:sdGol .5s ease-out}" +
+    "#golFlash small{display:block;font:600 17px 'IBM Plex Sans',sans-serif;letter-spacing:0;margin-top:4px}@keyframes sdGol{from{transform:translateX(-50%) scale(.4);opacity:0}to{transform:translateX(-50%) scale(1);opacity:1}}" +
+    "#liveBar .snd{background:none;border:1px solid currentColor;color:inherit;border-radius:999px;padding:3px 10px;font-size:13px;cursor:pointer;opacity:.85}";
+  document.body.appendChild(flash);
+  let flashTimer = null;
+  function annunciaGol(chi){
+    flash.innerHTML = `⚽ GOL!<small>${chi.map(x => x.testo).join("<br>")}</small>`;
+    flash.hidden = false; clearTimeout(flashTimer); flashTimer = setTimeout(() => flash.hidden = true, 7000);
+    suonoGol();
+    // la voce parte dopo gli squilli di tromba
+    setTimeout(() => voce(chi.flatMap(x => x.squadre || [])), 1300);
+  }
+  window.SD_provaGol = () => annunciaGol([{ testo: "Prova: Roma 2-1 Lazio", squadre: ["Roma"] }]);
+  // pulsantino nella barra: finché il browser non ha avuto un tocco l'audio è bloccato, e lo si dice
+  const pulsanteSuono = () => `<button class="snd" type="button" data-suono title="Suono e voce quando una squadra segna">${!suonoOn ? "🔕 Suono gol spento" : sbloccato ? "🔔 Suono gol attivo" : "🔊 Attiva l'audio"}</button>`;
+  bar.addEventListener("click", e => {
+    if (!e.target.closest("[data-suono]")) return;
+    suonoOn = !suonoOn;
+    try { localStorage.setItem("sd-suono-gol", suonoOn ? "1" : "0") } catch(err){}
+    e.target.closest("[data-suono]").outerHTML = pulsanteSuono();
+    if (suonoOn) suonoGol();
+  });
+  const golVisti = new Map(); // id partita -> gol totali già visti
   async function live(){
     let next = 300000;
     try {
@@ -858,13 +936,24 @@ showView({ "#coppa":"cup", "#europa":"eu", "#marcatori":"sc" }[location.hash] ||
         .then(r => r.json()).then(j => (j.events || []).filter(e => c.tutte || e.competitions[0].competitors.some(x => ITA.has(nome(x.team.displayName)))).map(e => (e.__c = c.sigla, e))).catch(() => [])));
       ev.push(...altre.flat());
       const rows = SERIE_A[CURRENT];
-      let changed = false, righe = [];
+      let changed = false, righe = [], nuoviGol = [];
       for (const e of ev){
         const c = e.competitions[0].competitors, st = e.status.type.state;
         const H = c.find(x => x.homeAway === "home"), A = c.find(x => x.homeAway === "away");
         if (!H || !A) continue;
         const h = nome(H.team.displayName), a = nome(A.team.displayName);
         const hs = +H.score, as = +A.score;
+        // gol nuovo: il totale di una partita in corso è salito dall'ultimo controllo (al primo controllo si prende nota e basta)
+        if (st === "in" || st === "post"){
+          const prima = golVisti.get(e.id);
+          if (st === "in" && prima && hs + as > prima[0] + prima[1]){
+            // chi ha segnato: la squadra il cui punteggio è salito (se entrambe, tutte e due)
+            const chi = [hs > prima[0] && h, as > prima[1] && a].filter(Boolean);
+            nuoviGol.push({ testo: `${e.__c ? e.__c + " · " : ""}${h} ${hs}-${as} ${a}`,
+              squadre: chi });
+          }
+          golVisti.set(e.id, [hs, as]);
+        }
         if (st === "in"){ next = 30000; {
           const gol = (e.competitions[0].details || []).filter(d => d.scoringPlay).map(d => {
             const p = (d.athletesInvolved || [])[0], cogn = p ? (p.shortName || p.displayName).replace(/^[A-Z].s*/, "") : "?";
@@ -881,8 +970,38 @@ showView({ "#coppa":"cup", "#europa":"eu", "#marcatori":"sc" }[location.hash] ||
       }
       const prossime = ev.filter(e => e.status.type.state === "pre").map(e => new Date(e.date)).sort((x,y) => x-y);
       const quando = prossime[0] ? " Prossima partita alle " + prossime[0].toLocaleTimeString("it-IT",{hour:"2-digit",minute:"2-digit"}) + "." : "";
-      bar.innerHTML = righe.length ? `<span class="tag"><i class="dot"></i>LIVE</span>${righe.join("")}` : `<span style="color:var(--muted,#8a97ab)">Nessuna partita in corso ora.${quando} Controllo automatico attivo.</span>`;
+      bar.innerHTML = righe.length ? `<span class="tag"><i class="dot"></i>LIVE</span>${righe.join("")}${pulsanteSuono()}` : `<span style="color:var(--muted,#8a97ab)">Nessuna partita in corso ora.${quando} Controllo automatico attivo.</span> ${pulsanteSuono()}`;
+      if (nuoviGol.length) annunciaGol(nuoviGol);
       bar.hidden = false; sposta(righe.length > 0);
+      // marcatori di Serie A: si aggiungono i gol delle partite (finite o in corso) che il file dei marcatori non ha ancora
+      const MA = (window.MARCATORI_A || {})[CURRENT];
+      if (MA){
+        MA.base ||= { sc: MA.sc.map(r => r.slice()), pens: JSON.parse(JSON.stringify(MA.pens)), cov: MA.cov.slice(), aggiornato: MA.aggiornato };
+        const sc = MA.base.sc.map(r => r.slice()), pens = JSON.parse(JSON.stringify(MA.base.pens)), cov = MA.base.cov.slice(), noti = new Set(MA.ids);
+        let nuovi = 0, inCorso = false;
+        for (const e of ev){
+          if (e.__c || noti.has(e.id) || e.status.type.state === "pre") continue;
+          const c = e.competitions[0].competitors, H = c.find(x => x.homeAway === "home"), A2 = c.find(x => x.homeAway === "away");
+          if (!H || !A2) continue;
+          nuovi++; if (e.status.type.state === "in") inCorso = true;
+          if (e.status.type.state === "post"){ cov[0]++; cov[1]++ }
+          for (const d of (e.competitions[0].details || []).filter(d => d.scoringPlay)){
+            const sq = d.team && d.team.id === H.team.id ? H : A2, team = nome(sq.team.displayName), contro = nome((sq === H ? A2 : H).team.displayName);
+            if (d.penaltyKick){ (pens[team] ||= [0,0])[0]++; (pens[contro] ||= [0,0])[1]++ }
+            const p = (d.athletesInvolved || [])[0];
+            if (!p || d.ownGoal) continue;
+            let r = sc.find(x => x[0] === p.displayName && x[1] === team);
+            if (!r) sc.push(r = [p.displayName, team, 0, 0]);
+            r[2]++; if (d.penaltyKick) r[3]++;
+          }
+        }
+        sc.sort((a,b) => b[2]-a[2] || a[3]-b[3] || a[0].localeCompare(b[0]));
+        const firma = JSON.stringify([sc.slice(0,20), pens, cov]);
+        if (firma !== MA.firma){
+          Object.assign(MA, { sc, pens, cov, live: inCorso, aggiornato: nuovi ? new Date().toISOString() : MA.base.aggiornato, firma });
+          if (season === CURRENT) renderScorers();
+        }
+      }
       if (changed){
         delete CACHE[CURRENT]; if (season === CURRENT) render();
         // la scritta "aggiornata alle partite del..." segue anche i risultati arrivati in diretta
