@@ -890,11 +890,19 @@ showView({ "#coppa":"cup", "#europa":"eu", "#marcatori":"sc" }[location.hash] ||
     try { navigator.vibrate && navigator.vibrate([250, 120, 250, 120, 500]) } catch(e){}
   }
   // voce che dice chi ha segnato: audio registrati in voci/<Squadra>.mp3 ("Gooooool! Gol della Roma!");
-  // se per una squadra non c'è, si usa voci/_gol.mp3 ("Gooooool!"); se manca anche quello restano tromba e boato
+  // se per una squadra non c'è, si usa voci/_gol.mp3 ("Gooooool!"); se manca anche quello, il primo secondo
+  // dell'audio della Roma, che è proprio "Gooooool!" detto da Elena (il nome della squadra arriva dopo una pausa)
   function voce(squadre){
     if (!suonoOn || !squadre.length) return;
     const [prima, ...altre] = squadre;
-    const suona = (src, poi) => { const a = new Audio(src); a.onended = poi; a.onerror = () => src.endsWith("_gol.mp3") ? poi() : suona("voci/_gol.mp3", poi); a.play().catch(() => poi()) };
+    const suona = (src, poi, fine) => {
+      const a = new Audio(src); let fatto = false;
+      const avanti = () => { if (!fatto){ fatto = true; poi() } };
+      a.onended = avanti;
+      a.onerror = () => src.endsWith("_gol.mp3") ? suona("voci/Roma.mp3", avanti, 1.15) : src.endsWith("Roma.mp3") && fine ? avanti() : suona("voci/_gol.mp3", avanti);
+      if (fine) a.onplaying = () => setTimeout(() => { a.pause(); avanti() }, fine * 1000);
+      a.play().catch(avanti);
+    };
     suona("voci/" + encodeURIComponent(prima) + ".mp3", () => voce(altre));
   }
   // scritta GOL! grande per qualche secondo, con la partita e il nuovo punteggio
@@ -912,7 +920,7 @@ showView({ "#coppa":"cup", "#europa":"eu", "#marcatori":"sc" }[location.hash] ||
     // la voce parte dopo gli squilli di tromba
     setTimeout(() => voce(chi.flatMap(x => x.squadre || [])), 1300);
   }
-  window.SD_provaGol = () => annunciaGol([{ testo: "Prova: Roma 2-1 Lazio", squadre: ["Roma"] }]);
+  window.SD_provaGol = (t = "Roma") => annunciaGol([{ testo: `Prova: gol ${t}`, squadre: [t] }]);
   // pulsantino nella barra: finché il browser non ha avuto un tocco l'audio è bloccato, e lo si dice
   const pulsanteSuono = () => `<button class="snd" type="button" data-suono title="Suono e voce quando una squadra segna">${!suonoOn ? "🔕 Suono gol spento" : sbloccato ? "🔔 Suono gol attivo" : "🔊 Attiva l'audio"}</button>`;
   bar.addEventListener("click", e => {
