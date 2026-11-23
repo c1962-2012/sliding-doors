@@ -1126,12 +1126,20 @@ $("table").addEventListener("click", e => { const b = e.target.closest("[data-te
 (function () {
   const st = document.createElement("style");
   st.textContent = ".prec-btn{border:1px solid var(--line-hi);background:rgba(255,255,255,.05);border-radius:999px;padding:3px 10px;font-size:12px;font-weight:600;color:var(--ink);white-space:nowrap}" +
-    ".prec-btn:hover{border-color:var(--gold)}" +
-    "#sdPop .h2h{display:grid;grid-template-columns:1fr 1fr 1fr;gap:8px;text-align:center;margin-top:12px}" +
-    "#sdPop .h2h div{border-radius:12px;padding:10px 4px;background:rgba(255,255,255,.05)}#sdPop .h2h b{display:block;font-family:var(--f-display);font-size:34px;line-height:1.1}" +
-    "#sdPop .h2h .c b{color:#4d9bff}#sdPop .h2h .o b{color:#ff8c4a}#sdPop .h2h small{color:var(--muted);font-size:12px}" +
-    "#sdPop .h2bar{display:flex;height:10px;border-radius:6px;overflow:hidden;margin-top:10px}#sdPop .h2bar span:nth-child(1){background:#4d9bff}#sdPop .h2bar span:nth-child(2){background:#6b7385}#sdPop .h2bar span:nth-child(3){background:#ff8c4a}" +
-    "#sdPop .r.vc{border-left:3px solid #4d9bff}#sdPop .r.vo{border-left:3px solid #ff8c4a}#sdPop .r.pa{border-left:3px solid #6b7385}";
+    ".prec-btn:hover,.prec-btn[aria-expanded=true]{border-color:var(--gold)}" +
+    ".prec-box{margin:6px 0 4px;padding:12px 14px 14px;border-radius:14px;border:1px solid var(--line-hi);background:var(--paper-solid);grid-column:1/-1;text-align:left;white-space:normal;font-weight:400;color:var(--ink)}" +
+    ".prec-box .tit{font-family:var(--f-display);font-size:18px;letter-spacing:.05em;text-transform:uppercase;margin:0}.prec-box .sub{color:var(--muted);margin:2px 0 0;font-size:13px}" +
+    ".prec-box h3{font-family:var(--f-display);font-size:15px;letter-spacing:.06em;text-transform:uppercase;color:var(--muted);margin:14px 0 6px}.prec-box .big{margin:10px 0 0}" +
+    ".prec-box .stag{display:grid;gap:4px;max-height:340px;overflow:auto;padding-right:4px}" +
+    ".prec-box .srow{display:grid;grid-template-columns:62px 1fr;gap:8px;align-items:start;padding:6px 8px;border-radius:9px;background:rgba(255,255,255,.04);font-size:13.5px}" +
+    ".prec-box .sk{color:var(--muted);font-family:var(--f-mono);font-size:12px;padding-top:2px}.prec-box .sp{display:grid;gap:3px}" +
+    ".prec-box .sp span{padding-left:7px;border-left:3px solid #6b7385}.prec-box .sp span.vc{border-color:#4d9bff}.prec-box .sp span.vo{border-color:#ff8c4a}" +
+    ".prec-box .rows{display:grid;gap:5px}.prec-box .r{display:flex;justify-content:space-between;gap:10px;padding:7px 10px;border-radius:10px;background:rgba(255,255,255,.04);font-size:14px}.prec-box .r small{color:var(--muted)}" +
+    ".prec-box .h2h{display:grid;grid-template-columns:1fr 1fr 1fr;gap:8px;text-align:center;margin-top:12px}" +
+    ".prec-box .h2h div{border-radius:12px;padding:10px 4px;background:rgba(255,255,255,.05)}.prec-box .h2h b{display:block;font-family:var(--f-display);font-size:34px;line-height:1.1}" +
+    ".prec-box .h2h .c b{color:#4d9bff}.prec-box .h2h .o b{color:#ff8c4a}.prec-box .h2h small{color:var(--muted);font-size:12px}" +
+    ".prec-box .h2bar{display:flex;height:10px;border-radius:6px;overflow:hidden;margin-top:10px}.prec-box .h2bar span:nth-child(1){background:#4d9bff}.prec-box .h2bar span:nth-child(2){background:#6b7385}.prec-box .h2bar span:nth-child(3){background:#ff8c4a}" +
+    ".prec-box .r.vc{border-left:3px solid #4d9bff}.prec-box .r.vo{border-left:3px solid #ff8c4a}.prec-box .r.pa{border-left:3px solid #6b7385}";
   document.head.appendChild(st);
 })();
 function precedenti(h, a){
@@ -1140,7 +1148,7 @@ function precedenti(h, a){
     if (m[3] !== null && m[3] !== undefined && ((m[1] === h && m[2] === a) || (m[1] === a && m[2] === h))) tutte.push({ s, d: m[0], c: m[1], o: m[2], gc: m[3], go: m[4] });
   tutte.sort((x, y) => y.d.localeCompare(x.d));
   const stag = s => s.replace("-", "/");
-  if (!tutte.length){ pop.open(`<h2>Precedenti</h2><p class="big">${kit(h)}${h} – ${kit(a)}${a}</p><p class="sub" style="margin-top:12px">Dal 2000 a oggi non si sono mai incontrate in Serie A.</p>`); return }
+  if (!tutte.length){ return (`<div class="prec-box"><p class="tit">⚔ Precedenti</p><p class="sub">Dal 2000 a oggi non si sono mai incontrate in Serie A.</p></div>`) }
   // dal punto di vista di h
   const gH = p => p.c === h ? p.gc : p.go, gA = p => p.c === h ? p.go : p.gc;
   const vh = tutte.filter(p => gH(p) > gA(p)), va = tutte.filter(p => gH(p) < gA(p)), px = tutte.filter(p => gH(p) === gA(p));
@@ -1148,25 +1156,29 @@ function precedenti(h, a){
   const inCasa = tutte.filter(p => p.c === h), icV = inCasa.filter(p => p.gc > p.go).length, icN = inCasa.filter(p => p.gc === p.go).length, icP = inCasa.length - icV - icN;
   const larga = arr => arr.slice().sort((x, y) => Math.abs(y.gc - y.go) - Math.abs(x.gc - x.go) || (y.gc + y.go) - (x.gc + x.go))[0];
   const ris = p => `${p.c} <b class="num">${p.gc}-${p.go}</b> ${p.o}`;
-  const riga = p => `<div class="r ${gH(p) > gA(p) ? "vc" : gH(p) < gA(p) ? "vo" : "pa"}"><span>${ris(p)}</span><span class="num"><small>${fmtDate(p.d)} · ${stag(p.s)}</small></span></div>`;
+  const riga = p => `<div class="r ${gH(p) > gA(p) ? "vc" : gH(p) < gA(p) ? "vo" : "pa"}"><span>${ris(p)}</span><span class="num"><small>${stag(p.s)}</small></span></div>`;
   const n = tutte.length, pc = x => x / n * 100;
   const fH = vh[0], fA = va[0], lH = vh.length && larga(vh), lA = va.length && larga(va);
   const serie = (() => { let k = 0; const e0 = Math.sign(gH(tutte[0]) - gA(tutte[0])); for (const p of tutte){ if (Math.sign(gH(p) - gA(p)) !== e0) break; k++ } return k >= 3 ? (e0 > 0 ? `${h} ha vinto le ultime ${k}` : e0 < 0 ? `${a} ha vinto le ultime ${k}` : `le ultime ${k} sono finite in pareggio`) : "" })();
-  pop.open(`<h2>Precedenti</h2><p class="big">${kit(h)}<b>${h}</b> – ${kit(a)}<b>${a}</b></p>
-    <p class="sub">${n} partite in Serie A dal 2000 a oggi · gol ${golH}-${golA}</p>
-    <div class="h2h"><div class="c"><b>${vh.length}</b><small>vittorie ${h}</small></div><div><b>${px.length}</b><small>pareggi</small></div><div class="o"><b>${va.length}</b><small>vittorie ${a}</small></div></div>
-    <div class="h2bar"><span style="flex:${pc(vh.length)}"></span><span style="flex:${pc(px.length)}"></span><span style="flex:${pc(va.length)}"></span></div>
+  return (`<div class="prec-box"><p class="tit">⚔ Precedenti</p>
+    <p class="sub">${n} partite in Serie A dalla stagione 2000/01 · bordo <b style="color:#4d9bff">blu</b> vince ${h}, <b style="color:#ff8c4a">arancio</b> vince ${a}, grigio pareggio</p>
+    <div class="h2h"><div class="c"><b>${vh.length}</b><small>vinte ${h}</small></div><div><b>${px.length}</b><small>pareggi</small></div><div class="o"><b>${va.length}</b><small>vinte ${a}</small></div></div>
     ${serie ? `<p class="big" style="font-size:15px">🔥 ${serie}</p>` : ""}
-    ${inCasa.length ? `<h3>Quando gioca in casa ${h}</h3><p class="sub" style="color:var(--ink)">${inCasa.length} partite: <b>${icV}</b> vittorie ${h}, <b>${icN}</b> pareggi, <b>${icP}</b> vittorie ${a}</p>` : ""}
-    <h3>Ultime ${Math.min(5, n)} sfide</h3><div class="rows">${tutte.slice(0, 5).map(riga).join("")}</div>
-    <h3>Da ricordare</h3><div class="rows">
-      ${lH ? `<div class="r vc"><span>Vittoria più larga ${h}: ${ris(lH)}</span><span class="num"><small>${stag(lH.s)}</small></span></div>` : ""}
-      ${lA ? `<div class="r vo"><span>Vittoria più larga ${a}: ${ris(lA)}</span><span class="num"><small>${stag(lA.s)}</small></span></div>` : ""}
-      ${fH ? `<div class="r"><span>Ultima vittoria ${h}</span><span class="num"><small>${fmtDate(fH.d)}</small></span></div>` : `<div class="r"><span>${h} non l'ha mai battuta</span></div>`}
-      ${fA ? `<div class="r"><span>Ultima vittoria ${a}</span><span class="num"><small>${fmtDate(fA.d)}</small></span></div>` : `<div class="r"><span>${a} non l'ha mai battuta</span></div>`}
-    </div>`);
+    <h3>Tutte le sfide, stagione per stagione</h3><div class="stag">${(() => {
+      const per = {}; for (const p of tutte) (per[p.s] ||= []).push(p);
+      return Object.keys(per).sort().reverse().map(k => `<div class="srow"><span class="sk">${stag(k)}</span><span class="sp">${per[k].slice().reverse().map(p => `<span class="${gH(p) > gA(p) ? "vc" : gH(p) < gA(p) ? "vo" : "pa"}">${p.c} <b>${p.gc}-${p.go}</b> ${p.o}</span>`).join("")}</span></div>`).join("");
+    })()}</div></div>`);
 }
-document.addEventListener("click", e => { const b = e.target.closest("[data-prec]"); if (!b) return; e.stopPropagation(); const [h, a] = b.dataset.prec.split("|"); precedenti(h, a) }, true);
+document.addEventListener("click", e => {
+  const b = e.target.closest("[data-prec]"); if (!b) return;
+  e.stopPropagation();
+  // i precedenti si aprono sotto la partita, e si richiudono toccando di nuovo il pulsante
+  const riga = b.closest(".match, .sch-row, .r") || b.parentElement, dopo = riga.nextElementSibling;
+  if (dopo && dopo.classList.contains("prec-box")){ dopo.remove(); b.setAttribute("aria-expanded", "false"); b.textContent = "⚔ Precedenti"; return }
+  const [h, a] = b.dataset.prec.split("|");
+  riga.insertAdjacentHTML("afterend", precedenti(h, a));
+  b.setAttribute("aria-expanded", "true"); b.textContent = "✕ Chiudi precedenti";
+}, true);
 
 // ---------------- Le mie schedine e quelle degli amici ----------------
 // Ognuno prepara la schedina di una giornata intera (1, X, 2, anche doppie e triple) e la firma con il suo nome.
