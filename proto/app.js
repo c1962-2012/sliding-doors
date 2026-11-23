@@ -290,14 +290,14 @@ function upcomingBig(){
 function ytLinks(h, a, gh, ga, data, stagione = season){
   const v = (window.VIDEO_A || {})[`${stagione}|${h}|${a}`] || [], url = id => "https://www.youtube.com/watch?v=" + id;
   // v = [highlights, intervista della squadra di casa, intervista della squadra ospite]
-  return (v[0] ? `<a class="yt" href="${url(v[0])}" target="_blank" rel="noopener">▶ Highlights</a>` : "") +
+  return (v[0] ? `<a class="yt" href="${v[0]}" target="_blank" rel="noopener">${/sky.it/.test(v[0]) ? "▶ Highlights Sky" : "▶ Highlights"}</a>` : "") +
     (v[1] ? `<a class="yt int" href="${url(v[1])}" target="_blank" rel="noopener" title="Intervista ${h}">🎙 ${h}</a>` : "") +
     (v[2] ? `<a class="yt int" href="${url(v[2])}" target="_blank" rel="noopener" title="Intervista ${a}">🎙 ${a}</a>` : "");
 }
 // partite di coppa già giocate dalle squadre di Serie A in questa stagione, con i loro video (video-a.js)
 function videoCoppa(p){
   const v = (window.VIDEO_A || {})["C|" + p[2]] || [], url = id => "https://www.youtube.com/watch?v=" + id;
-  return v[0] ? `<a class="yt" href="${url(v[0])}" target="_blank" rel="noopener">▶ Highlights</a>` : "";   // per le coppe solo gli highlights
+  return v[0] ? `<a class="yt" href="${v[0]}" target="_blank" rel="noopener">${/sky.it/.test(v[0]) ? "▶ Highlights Sky" : "▶ Highlights"}</a>` : "";   // per le coppe solo gli highlights
 }
 const rigaCoppa = p => `<div class="vid-r"><div><b>${p[4]} ${p[6]}-${p[7]} ${p[5]}</b><small>${p[0]} · ${fmtDate(p[3])}</small></div><div class="ytrow">${videoCoppa(p) || "<small>video non ancora disponibili</small>"}</div></div>`;
 function renderVideoCoppe(){

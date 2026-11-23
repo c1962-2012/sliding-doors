@@ -64,10 +64,24 @@ function adatto(v, h, a, gh, ga, giorniPartita, stagioneTag) {
   const vicino = eta !== null && eta <= giorniPartita + 1 && eta >= giorniPartita - (giorniPartita > 60 ? 45 : giorniPartita > 20 ? 10 : 4);
   return vicino || stagioneTag.some(s => v.t.includes(s));
 }
+// Highlights SOLO in italiano: niente canali o titoli stranieri (inglese, tedesco, spagnolo…).
+// Vanno bene: i canali ufficiali dei club (commento in italiano), le TV italiane (DAZN Italia, Sky Sport, Mediaset, Rai…)
+// e i video con il titolo in italiano.
+const STRANIERI_CANALI = /espn|fu(ss|ß)ball|deutschland|españa|espana|bein|tnt|cbs|sky sports|fox|onefootball|uefa|goal|bleacher|433|brasil|portugal|france|arabia/i;
+const PAROLE_STRANIERE = new Set(["the", "and", "on", "at", "scores", "score", "sends", "through", "extend", "extends", "wins", "win", "double", "hero", "shines", "steamroll", "home", "upset", "huge", "absolute", "scenes", "still", "top", "problem", "early", "scare", "fight", "off", "saves", "crucial", "penalty", "first", "success", "seven", "minutes", "goals", "crazy", "game", "eight", "go", "goes", "late", "secure", "secures", "nights", "like", "these", "comes", "down", "penalties", "strong", "haul", "steal", "it", "is", "of", "for", "from", "with", "all", "extended", "comeback", "stun", "stuns", "earn", "earns", "draw", "victory", "brace",
+  "und", "der", "die", "das", "gegen", "spieltag", "zusammenfassung", "dank", "ballert", "einfach", "weiter", "zu", "stark", "resumen", "goles", "golea", "contra", "melhores", "momentos", "buts"]);
+const PAROLE_ITALIANE = new Set(["gli", "il", "lo", "la", "le", "della", "del", "dei", "di", "fa", "che", "allo", "alla", "sul", "per", "con", "gol", "sintesi", "rete", "giornata", "doppietta", "tripletta", "rimonta", "vittoria", "pareggio", "colpo", "capolavoro", "partita"]);
+const CANALI_ITALIANI = /dazn italia|sky sport$|sky sport italia|sportmediaset|mediaset|rai sport|prime video sport|sportitalia|tv8/i;
+function inItaliano(v) {
+  const w = parole(v.t);
+  return !STRANIERI_CANALI.test(v.c) && !w.some(x => PAROLE_STRANIERE.has(x));
+}
 function scegliHighlights(lista, h, a, gh, ga, gp, tag) {
-  const ok = lista.filter(v => /highlight|sintesi|gol e highlights|resumen/i.test(v.t) && adatto(v, h, a, gh, ga, gp, tag));
-  const peso = v => (v.c === "Serie A" ? 0 : haSquadra(v.c, h) || haSquadra(v.c, a) ? 1 : /dazn|sky/i.test(v.c) ? 2 : 3);
-  return ok.sort((x, y) => peso(x) - peso(y))[0] || null;
+  const ok = lista.filter(v => /highlight|sintesi|gol e highlights/i.test(v.t) && inItaliano(v) && adatto(v, h, a, gh, ga, gp, tag));
+  const italiano = v => parole(v.t).some(x => PAROLE_ITALIANE.has(x));
+  // prima i canali ufficiali dei club e le TV italiane, poi il canale Serie A con titolo italiano, poi gli altri con titolo italiano
+  const peso = v => ufficiale(v.c, h) || ufficiale(v.c, a) || CANALI_ITALIANI.test(v.c) ? 0 : v.c === "Serie A" && italiano(v) ? 1 : italiano(v) ? 2 : 9;
+  return ok.filter(v => peso(v) < 9).sort((x, y) => peso(x) - peso(y))[0] || null;
 }
 function candidatiIntervista(lista, h, a, gh, ga, gp, tag) {
   // solo interviste del DOPO partita: niente conferenze della vigilia; se il titolo non dice "post"/"dopo" deve essere uscito dal giorno della partita in poi
@@ -123,14 +137,16 @@ function diChi(v, h, a, allenatori) {
 // cerca highlights e intervista che mancano a una partita; restituisce [ricerche fatte, video trovati]
 async function cercaPartita(c, h, a, gh, ga, gp, tag, comp, anno) {
   let cercate = 0, trovate = 0;
-  if (!c.hl) {
-    const l = await cerca(`${h} ${a} ${gh}-${ga} highlights ${comp}`); cercate++;
+  // highlights in italiano: si provano più ricerche finché se ne trova uno
+  for (const q of c.sky ? [] : [`${h} ${a} ${gh}-${ga} highlights ${comp}`, `${h} ${a} ${gh}-${ga} sintesi gol`, `${h} ${a} highlights ${h} ufficiale`]) {   // solo se Sky non ha la partita
+    if (c.hl) break;
+    const l = await cerca(q); cercate++;
     const v = l && scegliHighlights(l, h, a, gh, ga, gp, tag);
     if (v) { c.hl = v.id; c.hlT = v.t; trovate++ }
   }
   // interviste del dopo partita di TUTTE E DUE le squadre (solo campionato: per le coppe bastano gli highlights).
   // Si provano più ricerche finché si trova l'intervista di ciascuna squadra.
-  if (comp.startsWith("Serie A")) {
+  if (comp.startsWith("Serie A") && !process.env.SOLO_HL) {
     const allenatori = cacheGlobale._allenatori ||= {}, visti = [];
     const prova = l => { impara(l, h, a, allenatori); for (const v of candidatiIntervista(l, h, a, gh, ga, gp, tag)) { if (!visti.some(x => x.id === v.id)) visti.push(v) } };
     const assegna = () => { for (const v of visti) { const chi = diChi(v, h, a, allenatori); if (chi === h && !c.intH) { c.intH = v.id; c.intHT = v.t; trovate++ } if (chi === a && !c.intA) { c.intA = v.id; c.intAT = v.t; trovate++ } } };
@@ -181,35 +197,69 @@ async function partiteCoppa(righe, anno) {
   return Object.values(giorni).flat().filter(p => p[3] >= anno + "-07-15" && !visti.has(p[2]) && visti.add(p[2])).sort((x, y) => x[3].localeCompare(y[3]));
 }
 
+// ---- highlights di Sky Sport (sport.sky.it): "Parma-Roma 1-5: gol e highlights", in italiano ----
+// Si leggono gli elenchi dei video di Sky per campionato e coppe; quelli già letti restano in data-src/sky.json.
+const SKY = ["serie-a", "champions-league", "europa-league", "conference-league", "coppa-italia"];
+async function videoSky(dal) {
+  const file = path.join(root, "data-src", "sky.json"), noti = fs.existsSync(file) ? JSON.parse(fs.readFileSync(file, "utf8")) : {};
+  const recente = new Date(Date.now() - 3 * 864e5).toISOString().slice(0, 10);
+  for (const sez of SKY) {
+    for (let p = 1; p < 400; p++) {
+      let cards = null;
+      try { const r = await fetch(`https://sport.sky.it/calcio/${sez}/video/article-list.articlelist.${p}.json`, { headers: { "User-Agent": "Mozilla/5.0" } }); if (r.ok) cards = ((await r.json()).cardList || []).flat() } catch { }
+      if (!cards || !cards.length) break;
+      let nuovi = 0, vecchi = 0;
+      for (const c of cards) {
+        const m = (c.url || "").match(/\/video\/(\d{4})\/(\d\d)\/(\d\d)\//); if (!m) continue;
+        const d = `${m[1]}-${m[2]}-${m[3]}`;
+        if (d < dal) vecchi++;
+        if (!noti[c.url]) { noti[c.url] = [c.title || "", d]; nuovi++ }
+      }
+      // si va indietro finché si arriva all'inizio della stagione o a video già letti (e non recenti)
+      if (vecchi === cards.length) break;
+      if (!nuovi && cards.every(c => ((c.url || "").match(/\/video\/(\d{4}\/\d\d\/\d\d)/) || [, "0"])[1].replace(/\//g, "-") < recente)) break;
+    }
+  }
+  fs.writeFileSync(file, JSON.stringify(noti));
+  return Object.entries(noti).map(([url, [titolo, data]]) => ({ url, titolo, data }));
+}
+// il video "gol e highlights" di Sky di quella partita: squadre giuste, risultato giusto, pubblicato nei giorni della partita
+function highlightsSky(sky, h, a, gh, ga, data) {
+  const fine = new Date(Date.parse(data) + 4 * 864e5).toISOString().slice(0, 10), inizio = new Date(Date.parse(data) - 864e5).toISOString().slice(0, 10);
+  const ok = sky.filter(v => /gol.{0,4}highlights|highlights/i.test(v.titolo) && v.data >= inizio && v.data <= fine && haSquadra(v.titolo, h) && haSquadra(v.titolo, a)
+    && [...v.titolo.matchAll(/(\d{1,2})\s*-\s*(\d{1,2})/g)].some(x => +x[1] === gh && +x[2] === ga || +x[1] === ga && +x[2] === gh));
+  return ok.sort((x, y) => x.data.localeCompare(y.data))[0] || null;
+}
+
 let cacheGlobale = {};
 async function aggiorna(SERIE_A, stagioni) {
   const cache = cacheGlobale = fs.existsSync(cacheFile) ? JSON.parse(fs.readFileSync(cacheFile, "utf8")) : {};
   let cercate = 0, trovate = 0;
-  for (const s of stagioni) {
-    const [y1, y2] = s.split("-"), tag = [`${y1}/${y2}`, `${y1}-${y2}`, `${y1}/20${y2}`, `${y1}-20${y2}`];
-    const giocate = (SERIE_A[s] || []).filter(m => m[3] !== null);
-    for (const [data, h, a, gh, ga] of giocate) {
-      const k = `${s}|${h}|${a}`, c = cache[k] ||= {};
-      const gp = Math.round((Date.now() - Date.parse(data + "T20:00:00Z")) / 864e5);
-      // si ricerca finché manca qualcosa, ma non per sempre: le partite vecchie si provano una volta sola
-      if (c.hl && c.intH && c.intA) continue;
-      if (c.provata && (gp > 14 || Date.now() - c.provata < (gp <= 2 ? 50 * 6e4 : 6 * 36e5))) continue;
-      const n = await cercaPartita(c, h, a, gh, ga, gp, tag, `Serie A ${y1}/${y2}`, y1); cercate += n[0]; trovate += n[1];
-    }
-  }
-  // partite di coppa delle squadre di Serie A (Coppa Italia, Champions, Europa, Conference, Supercoppa)
   const stagione = stagioni[stagioni.length - 1], [y1, y2] = stagione.split("-"), tag = [`${y1}/${y2}`, `${y1}-${y2}`, `${y1}/20${y2}`, `${y1}-20${y2}`];
   const coppe = await partiteCoppa(SERIE_A[stagione] || [], +y1);
+  // 1) highlights di Sky Sport Italia, quando Sky ha la partita
+  const sky = await videoSky(`${y1}-07-15`);
+  for (const s of stagioni) for (const [data, h, a, gh, ga] of (SERIE_A[s] || []).filter(m => m[3] !== null)) { const v = highlightsSky(sky, h, a, gh, ga, data), c = cache[`${s}|${h}|${a}`] ||= {}; c.sky = v ? v.url : null }
+  for (const p of coppe) { const v = highlightsSky(sky, p[4], p[5], p[6], p[7], p[3]), c = cache["C|" + p[2]] ||= {}; c.sky = v ? v.url : null }
+  // 2) per le altre partite: YouTube, solo video in italiano; interviste delle due squadre per il campionato
+  const prova = (c, gp) => !(c.provata && (gp > 14 || Date.now() - c.provata < (gp <= 2 ? 50 * 6e4 : 6 * 36e5)));
+  for (const s of stagioni) {
+    const [z1, z2] = s.split("-"), tg = [`${z1}/${z2}`, `${z1}-${z2}`, `${z1}/20${z2}`, `${z1}-20${z2}`];
+    for (const [data, h, a, gh, ga] of (SERIE_A[s] || []).filter(m => m[3] !== null)) {
+      const c = cache[`${s}|${h}|${a}`], gp = Math.round((Date.now() - Date.parse(data + "T20:00:00Z")) / 864e5);
+      if ((c.sky || c.hl) && c.intH && c.intA || !prova(c, gp)) continue;
+      const n = await cercaPartita(c, h, a, gh, ga, gp, tg, `Serie A ${z1}/${z2}`, z1); cercate += n[0]; trovate += n[1];
+    }
+  }
   for (const p of coppe) {
-    const [comp, , id, data, h, a, gh, ga] = p, c = cache["C|" + id] ||= {};
-    const gp = Math.round((Date.now() - Date.parse(data + "T20:00:00Z")) / 864e5);
-    if (c.hl || c.provata && (gp > 14 || Date.now() - c.provata < (gp <= 2 ? 50 * 6e4 : 6 * 36e5))) continue;
+    const [comp, , id, data, h, a, gh, ga] = p, c = cache["C|" + id], gp = Math.round((Date.now() - Date.parse(data + "T20:00:00Z")) / 864e5);
+    if (c.sky || c.hl || !prova(c, gp)) continue;
     const n = await cercaPartita(c, h, a, gh, ga, gp, tag, comp, y1); cercate += n[0]; trovate += n[1];
   }
   fs.writeFileSync(cacheFile, JSON.stringify(cache));
-  const video = {};
-  // [highlights, intervista squadra di casa, intervista squadra ospite]; per le coppe solo gli highlights
-  for (const [k, c] of Object.entries(cache)) if (!k.startsWith("_") && (c.hl || c.intH || c.intA)) video[k] = k.startsWith("C|") ? [c.hl || ""] : [c.hl || "", c.intH || "", c.intA || ""];
+  const video = {}, yt = id => id ? "https://www.youtube.com/watch?v=" + id : "";
+  // [highlights (Sky o YouTube in italiano), intervista squadra di casa, intervista squadra ospite]; per le coppe solo gli highlights
+  for (const [k, c] of Object.entries(cache)) if (!k.startsWith("_") && (c.sky || c.hl || c.intH || c.intA)) { const hl = c.sky || yt(c.hl); video[k] = k.startsWith("C|") ? [hl] : [hl, c.intH || "", c.intA || ""] }
   const testo = "window.VIDEO_A=" + JSON.stringify(video) + ";window.COPPE_GIOCATE=" + JSON.stringify(coppe) + ";";
   const cambiato = !fs.existsSync(out) || fs.readFileSync(out, "utf8") !== testo;
   if (cambiato) fs.writeFileSync(out, testo);
