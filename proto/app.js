@@ -1071,7 +1071,7 @@ function schedaSquadra(t){
   const giocate = ms.filter(m => (m[2] === t || m[3] === t) && m[4] !== null).sort((a, b) => b[1].localeCompare(a[1]));
   const esito = m => { const casa = m[2] === t, f = casa ? m[4] : m[5], s = casa ? m[5] : m[4]; return f > s ? "V" : f < s ? "P" : "N" };
   const ultime = giocate.slice(0, 5);
-  const prossime = ms.filter(m => (m[2] === t || m[3] === t) && m[4] === null).sort((a, b) => a[1].localeCompare(b[1])).slice(0, 3);
+  const prossime = ms.filter(m => (m[2] === t || m[3] === t) && m[4] === null).sort((a, b) => a[1].localeCompare(b[1])).slice(0, 5);
   const A = (window.MARCATORI_A || {})[season], marc = A ? (A.sc || []).filter(x => x[1] === t).slice(0, 5) : [];
   const riga = m => `<div class="r"><span>${m[2] === t ? `<b>${m[2]}</b> – ${m[3]}` : `${m[2]} – <b>${m[3]}</b>`}</span><span class="num">${m[4] === null ? (m[7] ? `ore ${m[7]}` : "") : `${m[4]}-${m[5]}`} <small>${fmtDate(m[1])}</small></span></div>`;
   pop.open(`<h2>${kit(t)}${t}</h2><p class="sub">Stagione ${S}</p>
