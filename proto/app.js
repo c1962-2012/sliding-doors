@@ -1164,9 +1164,12 @@ $("table").addEventListener("click", e => { const b = e.target.closest("[data-te
   }
   const colonneTesto = (vs, sep) => { const d = vs.filter(s => s.length === 2).length, t = vs.filter(s => s.length === 3).length;
     return d || t ? `${sep}${[d && `${d} doppi${d === 1 ? "a" : "e"}`, t && `${t} tripl${t === 1 ? "a" : "e"}`].filter(Boolean).join(", ")} · ${2 ** d * 3 ** t} colonne` : "" };
+  // regola della schedina: al massimo 1 tripla e 2 doppie, tutte le altre partite con un segno solo
+  const troppe = ps => ps.filter(x => x.length === 3).length > MAX_TRIPLE || ps.filter(x => x.length === 2).length > MAX_DOPPIE;
   function aggiornaSalva(){
     const tot = partiteGiornata(+$("schRound").value).length, ps = Object.values(bozza).filter(p => p.s).map(p => p.s), manca = tot - ps.length;
     $("schSave").disabled = manca > 0;
+    $("schSave").classList.toggle("troppe", troppe(ps));
     const extra = colonneTesto(ps, " · ");
     $("schSave").textContent = manca > 0 ? `${manca === 1 ? "Manca 1 pronostico" : `Mancano ${manca} pronostici`} su ${tot}${extra}` : `💾 Salva schedina (${tot} partite${extra})`;
   }
@@ -1177,11 +1180,7 @@ $("table").addEventListener("click", e => { const b = e.target.closest("[data-te
     // ogni casella si accende e si spegne da sola: una = fisso, due = doppia, tre = tripla
     const segnate = new Set(p.s || ""); segnate.has(b.dataset.s) ? segnate.delete(b.dataset.s) : segnate.add(b.dataset.s);
     const nuovo = ["1", "X", "2"].filter(x => segnate.has(x)).join("") || null;
-    // regola della schedina: al massimo 1 tripla e 2 doppie, tutte le altre partite con un segno solo
-    const altre = Object.values(bozza).filter(q => q !== p && q.s).map(q => q.s.length);
-    const doppie = altre.filter(n => n === 2).length + (nuovo && nuovo.length === 2 ? 1 : 0), triple = altre.filter(n => n === 3).length + (nuovo && nuovo.length === 3 ? 1 : 0);
-    if (triple > MAX_TRIPLE || doppie > MAX_DOPPIE){ avvisa(`Puoi giocare al massimo ${MAX_TRIPLE} tripla e ${MAX_DOPPIE} doppie: le altre partite con un segno solo`); return }
-    p.s = nuovo;
+    p.s = nuovo;   // nessun blocco mentre si scelgono le caselle: la regola si controlla al salvataggio
     b.parentNode.querySelectorAll("button").forEach(x => x.setAttribute("aria-pressed", !!(p.s && p.s.includes(x.dataset.s))));
     aggiornaSalva();
   });
@@ -1190,6 +1189,7 @@ $("table").addEventListener("click", e => { const b = e.target.closest("[data-te
     if (!f.nome){ const n = $("schNome"); n.classList.add("no"); n.focus(); n.scrollIntoView({ block: "center" }); avvisa("Scrivi prima il tuo nome per firmare la schedina"); return }
     const r = +$("schRound").value, pron = Object.fromEntries(Object.entries(bozza).filter(([, p]) => p.s).map(([k, p]) => [k, { s: p.s }]));
     if (Object.keys(pron).length < partiteGiornata(r).length) return;
+    if (troppe(Object.values(pron).map(p => p.s))){ avvisa(`Puoi giocare al massimo ${MAX_TRIPLE} tripla e ${MAX_DOPPIE} doppie: le altre partite con un segno solo`); return }
     const l = leggi();
     l.unshift({ id: Date.now().toString(36) + Math.random().toString(36).slice(2, 6), mia: true, nome: f.nome, avatar: f.avatar, creata: new Date().toISOString(), stagione: CURRENT, giornata: r, pron });
     if (!scrivi(l)){ alert("Non riesco a salvare: questo browser non permette di salvare dati (forse sei in navigazione in incognito)."); return }
