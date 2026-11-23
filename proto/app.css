@@ -225,3 +225,4 @@ a.yt.int{background:rgba(255,255,255,.08);color:var(--ink);border:1px solid var(
 a.yt:hover{filter:brightness(1.15)}
 .vid-panel{margin:0 0 24px}.vid-list{display:grid;gap:6px;max-height:420px;overflow:auto}.vid-r{display:flex;justify-content:space-between;align-items:center;gap:10px;flex-wrap:wrap;padding:8px 10px;border-radius:10px;background:rgba(255,255,255,.04)}
 .vid-r small{display:block;color:var(--muted);font-size:12px}.vid-r .ytrow{margin:0}
+.owner-stats{display:inline-block;margin-top:10px;padding:6px 14px;border-radius:999px;border:1px solid var(--line-hi);color:var(--muted);text-decoration:none;font-size:12px}.owner-stats:hover{color:var(--ink);border-color:var(--gold)}
