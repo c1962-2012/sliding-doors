@@ -285,6 +285,29 @@ function upcomingBig(){
   }).join("");
 }
 
+// Collegamenti a YouTube: ogni partita giocata porta al SUO video di highlights e alla SUA intervista,
+// trovati e controllati uno per uno (video-a.js). Se il video di una partita non c'è ancora, il pulsante non compare.
+function ytLinks(h, a, gh, ga, data, stagione = season){
+  const v = (window.VIDEO_A || {})[`${stagione}|${h}|${a}`] || [], url = id => "https://www.youtube.com/watch?v=" + id;
+  // v = [highlights, intervista della squadra di casa, intervista della squadra ospite]
+  return (v[0] ? `<a class="yt" href="${url(v[0])}" target="_blank" rel="noopener">▶ Highlights</a>` : "") +
+    (v[1] ? `<a class="yt int" href="${url(v[1])}" target="_blank" rel="noopener" title="Intervista ${h}">🎙 ${h}</a>` : "") +
+    (v[2] ? `<a class="yt int" href="${url(v[2])}" target="_blank" rel="noopener" title="Intervista ${a}">🎙 ${a}</a>` : "");
+}
+// partite di coppa già giocate dalle squadre di Serie A in questa stagione, con i loro video (video-a.js)
+function videoCoppa(p){
+  const v = (window.VIDEO_A || {})["C|" + p[2]] || [], url = id => "https://www.youtube.com/watch?v=" + id;
+  return v[0] ? `<a class="yt" href="${url(v[0])}" target="_blank" rel="noopener">▶ Highlights</a>` : "";   // per le coppe solo gli highlights
+}
+const rigaCoppa = p => `<div class="vid-r"><div><b>${p[4]} ${p[6]}-${p[7]} ${p[5]}</b><small>${p[0]} · ${fmtDate(p[3])}</small></div><div class="ytrow">${videoCoppa(p) || "<small>video non ancora disponibili</small>"}</div></div>`;
+function renderVideoCoppe(){
+  for (const [id, comps, titolo] of [["cupVideo", ["Coppa Italia", "Supercoppa"], "Coppa Italia e Supercoppa"], ["euVideo", ["Champions League", "Europa League", "Conference League"], "le coppe europee"]]){
+    const el = $(id); if (!el) continue;
+    const ps = season === CURRENT ? (window.COPPE_GIOCATE || []).filter(p => comps.includes(p[0])).slice().reverse() : [];
+    el.hidden = !ps.length;
+    el.innerHTML = ps.length ? `<h2>🎬 Highlights</h2><p class="sub">Le partite di ${titolo} giocate quest'anno dalle squadre di Serie A, ognuna con il suo video. Si aggiungono da sole dopo ogni partita.</p><div class="vid-list">${ps.map(rigaCoppa).join("")}</div>` : "";
+  }
+}
 function renderList(){
   const team = $("fTeam").value, round = $("fRound").value;
   // Risultati: dall'ultima giocata in giù. Prossime partite: dalla più vicina in avanti.
@@ -308,6 +331,7 @@ function renderList(){
         </span><span class="a">${m[3]}</span></div>
       <div class="x12">${["1","X","2"].map(x=>`<button data-x="${x}" class="${res===x?"on":""}" aria-label="Segno ${x}">${x}</button>`).join("")}</div>
       <div class="minfo"><span>${m[6] ? `${m[6]}ª giornata · ` : ""}${fmtDate(m[1])}${m[4] === null && m[7] ? ` · <b>ore ${m[7]}</b>` : ""}${big[i] ? ` <span class="badge">${big[i]}</span>` : ""}</span><span class="orig">${note}</span></div>
+      ${m[4] !== null && ytLinks(m[2], m[3], m[4], m[5], m[1]) ? `<div class="ytrow">${ytLinks(m[2], m[3], m[4], m[5], m[1])}</div>` : ""}
     </div>`;
   }).join("") || `<p class="empty">Nessuna partita con questi filtri.</p>`;
   if (flashIdx!==null){ const el = $("list").querySelector(`[data-i="${flashIdx}"]`); el && el.scrollIntoView({block:"nearest"}); flashIdx = null }
@@ -315,28 +339,40 @@ function renderList(){
 
 function renderChart(){
   const real = pointsSeries(withScores(false)), alt = pointsSeries(withScores(true));
-  // l'asse copre sempre la stagione intera: in una stagione in corso le linee si fermano all'ultima partita giocata
-  const W=800,H=340,L=40,R=96,T=14,B=30, last = nRounds()-1;
+  // l'asse delle giornate copre sempre il campionato intero (38 giornate con 20 squadre);
+  // l'asse dei punti arriva al tetto: il massimo che le squadre scelte possono ancora fare vincendo tutte le partite che restano
+  const W=800,H=900,L=34,R=150,T=18,B=34, giornate = nRounds(), last = giornate-1;
   const end = s => s && s.length ? s[s.length-1] : 0;
-  const max = Math.max(...chartTeams.flatMap(t => [end(real[t]), end(alt[t])]), 10);
-  const yMax = Math.ceil(max/10)*10;
+  // la scala dei punti sale fino al massimo possibile a fine campionato: 38 giornate × 3 = 114 punti
+  const yMax = giornate*3, passo = 2;
   const x = k => L + (k/last)*(W-L-R), y = v => T + (1 - v/yMax)*(H-T-B);
   let s = "";
-  for (let v=0; v<=yMax; v+=10) s += `<line x1="${L}" x2="${W-R}" y1="${y(v)}" y2="${y(v)}" stroke="var(--line)" stroke-width="1"/><text x="${L-8}" y="${y(v)+4}" text-anchor="end">${v}</text>`;
-  [0,.25,.5,.75,1].map(f => Math.round(f*last)).forEach(k => s += `<text x="${x(k)}" y="${H-10}" text-anchor="middle">${k+1}ª</text>`);
+  // griglia dei punti: una riga per ogni punto, il numero su ogni riga (o ogni 2 se i punti sono tanti)
+  for (let v=0; v<=yMax; v++) s += `<line x1="${L}" x2="${W-R}" y1="${y(v)}" y2="${y(v)}" stroke="var(--line)" stroke-width="${v%10?0.4:1.1}" opacity="${v%10?.3:1}"/>` + (v%passo && v!==yMax ? "" : `<text x="${L-6}" y="${y(v)+4}" text-anchor="end" style="font-size:${v%10?10:13}px;${v%10?"opacity:.75":"font-weight:800"}">${v}</text>`);
+  // tutte le giornate: una tacca ciascuna, il numero su tutte (in evidenza ogni 5)
+  for (let k=0; k<=last; k++){
+    const g = k+1, forte = g===1 || g%5===0 || g===giornate;
+    s += `<line x1="${x(k)}" x2="${x(k)}" y1="${H-B}" y2="${H-B+(forte?6:3)}" stroke="var(--muted)" stroke-width="1"/>`;
+    s += `<text x="${x(k)}" y="${H-B+18}" text-anchor="middle" style="font-size:${forte?11:8.5}px;${forte?"font-weight:700":"opacity:.75"}">${g}</text>`;
+  }
+  s += `<text x="${(L+W-R)/2}" y="${H-2}" text-anchor="middle" style="font-size:10px;opacity:.7">giornata</text>`;
+  // dove siamo arrivati: linea verticale sull'ultima giornata giocata
+  const giocate = Math.max(0, ...chartTeams.map(t => (real[t]||[]).length));
+  if (giocate && giocate < giornate) s += `<line x1="${x(giocate-1)}" x2="${x(giocate-1)}" y1="${T}" y2="${H-B}" stroke="#ff3b4e" stroke-width="1.5" stroke-dasharray="3 3" opacity=".9"/><text x="${x(giocate-1)+4}" y="${T+10}" style="fill:#ff3b4e;font-size:12px;font-weight:700">${giocate}ª giornata</text>`;
   const path = arr => (arr||[]).map((v,k) => `${k?"L":"M"}${x(k).toFixed(1)},${y(v).toFixed(1)}`).join("");
   chartTeams.forEach(t => {
-    const c = teamColor(t);
+    const c = teamColor(t), n = (alt[t]||[]).length;
     s += `<path d="${path(real[t])}" fill="none" stroke="${c}" stroke-width="1.5" stroke-dasharray="4 3" opacity=".55"/>`;
     s += `<path d="${path(alt[t])}" fill="none" stroke="${c}" stroke-width="2.6" stroke-linejoin="round"/>`;
   });
-  // Etichette finali senza sovrapposizioni, dopo l'ultimo punto di ogni linea
-  const labels = chartTeams.map(t => { const k = Math.max(0, (alt[t]||[]).length-1); return { t, k, v:end(alt[t]), yy:y(end(alt[t])) } }).sort((a,b)=>a.yy-b.yy);
-  for (let i=1;i<labels.length;i++) if (labels[i].yy - labels[i-1].yy < 14) labels[i].yy = labels[i-1].yy + 14;
-  labels.forEach(l => {
+  // etichette senza sovrapposizioni: punti di oggi dopo l'ultimo punto della linea, tetto in fondo al grafico
+  const spazia = ls => { ls.sort((a,b)=>a.yy-b.yy); for (let i=1;i<ls.length;i++) if (ls[i].yy - ls[i-1].yy < 14) ls[i].yy = ls[i-1].yy + 14; return ls };
+  spazia(chartTeams.map(t => { const k = Math.max(0, (alt[t]||[]).length-1); return { t, k, v:end(alt[t]), yy:y(end(alt[t])) } })).forEach(l => {
     s += `<circle cx="${x(l.k)}" cy="${y(l.v)}" r="3.5" fill="${teamColor(l.t)}"/>`;
-    s += `<text x="${x(l.k)+10}" y="${l.yy+4}" style="fill:${teamColor(l.t)};font-weight:600">${l.t} ${l.v}</text>`;
+    s += `<text x="${x(l.k)+8}" y="${l.yy+4}" style="fill:${teamColor(l.t)};font-weight:700">${l.t} ${l.v}</text>`;
   });
+  // tetto: i punti che ogni squadra può ancora raggiungere vincendo tutte le partite che restano (riquadro in alto a destra)
+  s += `<line x1="${L}" x2="${W-R}" y1="${y(yMax)}" y2="${y(yMax)}" stroke="var(--gold)" stroke-width="1.2" stroke-dasharray="6 4"/><text x="${W-R+8}" y="${y(yMax)+4}" style="fill:var(--gold);font-size:12px;font-weight:700">tetto ${yMax} punti</text>`;
   $("chart").innerHTML = s;
 
   const final = table(withScores(true));
@@ -812,6 +848,7 @@ document.addEventListener("click", e => {
 function showView(v){
   ["a","cup","eu","sc","sch","form"].forEach(x => $("view-"+x).hidden = x!==v);
   if (v === "form" && window.SD_formRender) SD_formRender();
+  if (v === "cup" || v === "eu") renderVideoCoppe();
   if (v === "sch" && window.SD_schedineRender) SD_schedineRender();
   currentView = v;
   publish3D();
@@ -1074,12 +1111,13 @@ function schedaSquadra(t){
   const ultime = giocate.slice(0, 5);
   const prossime = ms.filter(m => (m[2] === t || m[3] === t) && m[4] === null).sort((a, b) => a[1].localeCompare(b[1])).slice(0, 5);
   const A = (window.MARCATORI_A || {})[season], marc = A ? (A.sc || []).filter(x => x[1] === t).slice(0, 5) : [];
-  const riga = m => `<div class="r"><span>${m[2] === t ? `<b>${m[2]}</b> – ${m[3]}` : `${m[2]} – <b>${m[3]}</b>`}</span><span class="num">${m[4] === null ? (m[7] ? `ore ${m[7]}` : "") : `${m[4]}-${m[5]}`} <small>${fmtDate(m[1])}</small></span></div>`;
+  const riga = m => `<div class="r"><span>${m[2] === t ? `<b>${m[2]}</b> – ${m[3]}` : `${m[2]} – <b>${m[3]}</b>`}</span><span class="num">${m[4] === null ? (m[7] ? `ore ${m[7]}` : "") : `${m[4]}-${m[5]}`} <small>${fmtDate(m[1])}</small></span>${m[4] !== null && ytLinks(m[2], m[3], m[4], m[5], m[1]) ? `<span class="ytrow">${ytLinks(m[2], m[3], m[4], m[5], m[1])}</span>` : ""}</div>`;
   pop.open(`<h2>${kit(t)}${t}</h2><p class="sub">Stagione ${S}</p>
     ${r ? `<p class="big"><b>${pos + 1}º posto</b> · ${r.pt} punti · ${r.w} vinte, ${r.d} pari, ${r.l} perse · gol ${r.gf}-${r.gs}</p>` : ""}
     ${ultime.length ? `<h3>Ultime ${ultime.length} partite</h3><div class="form">${ultime.slice().reverse().map(m => `<span class="f ${esito(m)}" title="${m[2]} ${m[4]}-${m[5]} ${m[3]}">${esito(m)}</span>`).join("")}</div>
       <div class="rows" style="margin-top:8px">${ultime.map(riga).join("")}</div>` : ""}
     ${prossime.length ? `<h3>Prossime partite</h3><div class="rows">${prossime.map(riga).join("")}</div>` : ""}
+    ${(() => { const cp = season === CURRENT ? (window.COPPE_GIOCATE || []).filter(p => p[4] === t || p[5] === t).slice(-5).reverse() : []; return cp.length ? `<h3>Coppe</h3><div class="vid-list">${cp.map(rigaCoppa).join("")}</div>` : "" })()}
     ${marc.length ? `<h3>Marcatori</h3><div class="rows">${marc.map(x => `<div class="r"><span>${x[0]}</span><span class="num"><b>${x[2]}</b> gol${x[3] ? ` <small>(${x[3]} rig.)</small>` : ""}</span></div>`).join("")}</div>` : ""}`);
 }
 $("table").addEventListener("click", e => { const b = e.target.closest("[data-team]"); if (b) schedaSquadra(b.dataset.team) });
@@ -1383,7 +1421,8 @@ $("table").addEventListener("click", e => { const b = e.target.closest("[data-te
   const KEY = "sd-formazioni", KEY_INF = "sd-infortunati", KEY_UFF = "sd-ufficiali";
   const leggiK = (k, d) => { try { return JSON.parse(localStorage.getItem(k)) || d } catch(e){ return d } };
   const scriviK = (k, v) => { try { localStorage.setItem(k, JSON.stringify(v)); return true } catch(e){ return false } };
-  const leggi = () => leggiK(KEY, []), scrivi = l => scriviK(KEY, l);
+  // le formazioni salvate con la prima versione (solo campionato) si completano con i dati della partita
+  const leggi = () => leggiK(KEY, []).map(f => { if (f.mid) return f; const m = trova(f.stagione, f.k); return m ? { ...daSerieA(m), ...f } : null }).filter(Boolean), scrivi = l => scriviK(KEY, l);
   const MODULI = ["4-3-3", "4-2-3-1", "4-3-2-1", "4-4-2", "4-3-1-2", "3-5-2", "3-4-2-1", "3-4-3"];   // i più usati in Serie A
   const NOME_RUOLO = { P: "Portiere", D: "Difensore", C: "Centrocampista", A: "Attaccante" };
   const cognome = n => { const p = String(n).split(" "); return p.length > 1 ? p.slice(1).join(" ") : n };
@@ -1392,13 +1431,13 @@ $("table").addEventListener("click", e => { const b = e.target.closest("[data-te
     ".frm-team button[aria-pressed=true]{background:var(--accent);border-color:var(--accent);color:#fff}" +
     ".frm-lab{color:var(--muted);font-size:13px;margin:4px 0 6px}.frm-mod{display:grid;grid-template-columns:repeat(auto-fill,minmax(72px,1fr));gap:6px;margin-bottom:4px}" +
     ".frm-mod button{border:1px solid var(--line-hi);background:transparent;border-radius:10px;padding:8px 4px;font-weight:700;font-family:var(--f-mono)}.frm-mod button[aria-pressed=true]{background:var(--gold);border-color:var(--gold);color:#071018}" +
-    ".frm-pitch{position:relative;aspect-ratio:3/4;border-radius:16px;margin:12px 0;overflow:hidden;border:2px solid rgba(255,255,255,.25);" +
+    ".frm-pitch{position:relative;aspect-ratio:3/5;border-radius:16px;margin:12px 0;overflow:hidden;border:2px solid rgba(255,255,255,.25);" +
     "background:repeating-linear-gradient(180deg,#1f7a3d 0 10%,#23863f 10% 20%)}" +
     ".frm-pitch:before{content:'';position:absolute;left:50%;top:0;width:36%;height:14%;transform:translateX(-50%);border:2px solid rgba(255,255,255,.35);border-top:0}" +
     ".frm-pitch:after{content:'';position:absolute;left:50%;bottom:0;width:36%;height:14%;transform:translateX(-50%);border:2px solid rgba(255,255,255,.35);border-bottom:0}" +
     ".frm-pitch .mid{position:absolute;left:0;right:0;top:50%;border-top:2px solid rgba(255,255,255,.35)}.frm-pitch .cc{position:absolute;left:50%;top:50%;width:24%;aspect-ratio:1;border:2px solid rgba(255,255,255,.35);border-radius:50%;transform:translate(-50%,-50%)}" +
-    ".frm-slot{all:unset;cursor:pointer;position:absolute;transform:translate(-50%,-50%);display:grid;justify-items:center;gap:3px;width:22%;z-index:1}" +
-    ".frm-slot .m{width:42px;height:42px;border-radius:50%;display:grid;place-items:center;font-weight:800;font-size:15px;color:#fff;background:var(--k1,#3a4a66);border:3px solid var(--k2,#fff);box-shadow:0 4px 10px rgba(0,0,0,.4)}" +
+    ".frm-slot{all:unset;cursor:pointer;position:absolute;transform:translate(-50%,-50%);display:grid;justify-items:center;gap:2px;width:21%;z-index:1}" +
+    ".frm-slot .m{width:36px;height:36px;border-radius:50%;display:grid;place-items:center;font-weight:800;font-size:15px;color:#fff;background:var(--k1,#3a4a66);border:3px solid var(--k2,#fff);box-shadow:0 4px 10px rgba(0,0,0,.4)}" +
     ".frm-slot.vuoto .m{background:rgba(0,0,0,.25);border:2px dashed rgba(255,255,255,.7);font-size:20px}" +
     ".frm-slot .n{font-size:12px;font-weight:700;color:#fff;text-shadow:0 1px 3px #000;text-align:center;line-height:1.1;max-width:100%;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}" +
     ".frm-slot:focus-visible .m{outline:3px solid var(--gold)}" +
@@ -1409,20 +1448,35 @@ $("table").addEventListener("click", e => { const b = e.target.closest("[data-te
     ".frm-pick .p>button:first-child:hover{background:rgba(255,255,255,.1)}.frm-pick .p>button[disabled]{opacity:.45;cursor:not-allowed}" +
     ".frm-pick .num{font-family:var(--f-mono);color:var(--muted);min-width:22px;text-align:right}.frm-pick .tag{font-size:12px;color:var(--muted)}" +
     ".frm-pick .inf{border:1px solid var(--line);background:transparent;border-radius:10px;padding:7px 9px;font-size:16px;opacity:.55}.frm-pick .inf[aria-pressed=true]{opacity:1;border-color:var(--bad);background:rgba(255,77,109,.15)}" +
+    ".frm-giri{display:flex;flex-wrap:wrap;gap:5px;margin:0 0 12px}.frm-giri button{border:1px solid var(--line-hi);background:transparent;border-radius:9px;padding:6px 8px;min-width:40px;font-weight:700;font-size:13px}.frm-giri button[aria-pressed=true]{background:var(--gold);border-color:var(--gold);color:#071018}" +
+    ".frm-scelta{display:grid;gap:2px;padding:10px 12px;border-radius:12px;background:rgba(34,224,139,.12);border:1px solid var(--good);margin:0 0 12px;font-size:15px}.frm-scelta small{color:var(--muted);font-size:12px}" +
+    ".frm-scegli{border:2px solid var(--gold);border-radius:16px;padding:12px;margin:0 0 14px;background:rgba(255,207,74,.06)}.frm-big{font-family:var(--f-display);font-weight:800;font-size:18px;text-transform:uppercase;letter-spacing:.02em;margin:2px 0 8px}" +
+    ".frm-nav{display:grid;grid-template-columns:48px minmax(0,1fr) 48px;gap:6px;margin-bottom:12px}.frm-nav button{border:1px solid var(--line-hi);background:rgba(255,255,255,.06);border-radius:12px;font-size:18px;color:var(--ink)}.frm-nav button:disabled{opacity:.3}" +
+    "#formGiro{width:100%;max-width:100%;min-width:0;text-overflow:ellipsis;height:48px;font-size:16px;font-weight:700;border:2px solid var(--accent);border-radius:12px;padding:0 10px;background:var(--bg2);color:var(--ink)}" +
+    ".frm-partite{display:grid;grid-template-columns:repeat(auto-fill,minmax(150px,1fr));gap:6px;margin:0 0 10px}.frm-partite button{border:1px solid var(--line-hi);background:transparent;border-radius:10px;padding:8px;display:grid;gap:3px;text-align:left;font-size:13px;font-weight:700}" +
+    ".frm-partite button .sq{display:flex;align-items:center;gap:6px}.frm-partite button small{font-weight:400;color:var(--muted)}.frm-partite button[aria-pressed=true]{background:var(--accent);border-color:var(--accent);color:#fff}.frm-partite button[aria-pressed=true] small{color:#ffe}#view-form .panel{min-width:0;overflow:hidden}" +
+    ".frm-nome{position:absolute;left:8px;display:flex;align-items:center;gap:6px;font-weight:800;font-size:12px;color:#fff;background:rgba(0,0,0,.45);padding:3px 8px;border-radius:999px;z-index:2}.frm-nome.me{bottom:8px}.frm-nome.avv{top:8px}" +
+    "#formModulo{display:block}.frm-modrow{margin-bottom:8px}.frm-modt{display:flex;align-items:center;gap:6px;font-weight:700;font-size:13px;margin:2px 0 4px}.frm-infot{display:flex;align-items:center;gap:6px;margin-top:6px}" +
+    ".frm-chiusa{padding:12px 14px;border-radius:12px;border:1px solid var(--bad);background:rgba(255,77,109,.12);font-weight:600;margin:0 0 6px}" +
     ".frm-xi{display:grid;grid-template-columns:1fr 1fr;gap:2px 12px;font-size:14px;margin-top:6px}.frm-xi span{padding:3px 0;border-top:1px solid var(--line)}";
   document.head.appendChild(st);
 
-  // ---- partite e squadre ----
+  // ---- partite e squadre: Serie A dal calendario, coppe dagli abbinamenti già decisi (rose-a.js) ----
   const righe = () => SERIE_A[CURRENT] || [];
   // ora d'inizio in ora italiana -> istante (gestisce ora legale e solare)
   const offRoma = d => { const u = new Date(d + "T12:00:00Z"); return Math.round((new Date(u.toLocaleString("en-US", { timeZone: "Europe/Rome" })) - new Date(u.toLocaleString("en-US", { timeZone: "UTC" }))) / 36e5) };
   const inizio = m => Date.parse(`${m[0]}T${m[6] || "15:00"}:00+0${offRoma(m[0])}:00`);
-  const chiave = m => m[1] + "|" + m[2];
-  const trova = (stag, k) => (SERIE_A[stag] || []).find(m => chiave(m) === k);
-  const aperte = () => righe().filter(m => m[3] === null && inizio(m) > Date.now()).sort((a, b) => inizio(a) - inizio(b)).slice(0, 30);
+  const trova = (stag, k) => (SERIE_A[stag] || []).find(m => m[1] + "|" + m[2] === k);
+  const giornoRoma = t => new Date(t).toLocaleDateString("sv-SE", { timeZone: "Europe/Rome" });
+  const oraRoma = t => new Date(t).toLocaleTimeString("it-IT", { timeZone: "Europe/Rome", hour: "2-digit", minute: "2-digit" });
+  // una partita, di campionato o di coppa: { mid, comp, casa, ospite, t0, data, ora, slug, eid }
+  const daSerieA = m => ({ mid: "A|" + m[1] + "|" + m[2], g: m[5], comp: "Serie A", casa: m[1], ospite: m[2], t0: inizio(m), data: m[0], ora: m[6] || "", slug: "ita.1", eid: "" });
+  const daCoppa = x => { const t0 = Date.parse(x[3]); return { mid: "C|" + x[2], comp: x[0], casa: x[4], ospite: x[5], t0, data: giornoRoma(t0), ora: oraRoma(t0), slug: x[1], eid: x[2] } };
+  const prossime = () => [...righe().filter(m => m[3] === null).map(daSerieA), ...(R.coppe || []).map(daCoppa)].filter(p => p.t0 > Date.now()).sort((a, b) => a.t0 - b.t0);
   const rosa = t => (R.squadre[t] || {}).rosa || [];
-  const squal = t => new Map(((R.squadre[t] || {}).squal || []).map(x => [x[0], x[1]]));
-  const diff = t => new Map(((R.squadre[t] || {}).diff || []).map(x => [x[0], x[1]]));
+  // le squalifiche calcolate valgono solo per il campionato: in coppa contano i cartellini di coppa
+  const squal = (t, comp) => new Map(comp === "Serie A" ? ((R.squadre[t] || {}).squal || []).map(x => [x[0], x[1]]) : []);
+  const diff = (t, comp) => new Map(comp === "Serie A" ? ((R.squadre[t] || {}).diff || []).map(x => [x[0], x[1]]) : []);
   const infortunati = t => new Set([...((R.squadre[t] || {}).inf || []), ...(leggiK(KEY_INF, {})[t] || [])]);
   const segnaInf = (t, n) => { const all = leggiK(KEY_INF, {}), s = new Set(all[t] || []); s.has(n) ? s.delete(n) : s.add(n); all[t] = [...s]; scriviK(KEY_INF, all) };
   // posizioni sul campo: portiere in basso, poi le linee del modulo verso l'attacco
@@ -1435,10 +1489,19 @@ $("table").addEventListener("click", e => { const b = e.target.closest("[data-te
     return out;
   }
 
-  let bozza = { t: null, k: null, modulo: "4-3-3", xi: Array(11).fill(null) };
+  // la formazione si fa per tutte e due le squadre della partita: la tua ("me") in basso, l'avversaria ("avv") in alto.
+  // Se dell'avversaria non c'è la rosa (squadre straniere nelle coppe) si fa solo la tua.
+  const vuoto = () => Array(11).fill(null);
+  let bozza = { t: null, mid: null, me: { modulo: "4-3-3", xi: vuoto() }, avv: { modulo: "4-3-3", xi: vuoto() } };
   const squadraBozza = () => bozza.t;
+  const partitaBozza = () => prossime().find(p => p.mid === bozza.mid) || null;
+  const compBozza = () => (partitaBozza() || {}).comp || "Serie A";
+  const avversaria = () => { const p = partitaBozza(); return p ? (p.casa === bozza.t ? p.ospite : p.casa) : null };
+  const squadraDi = s => s === "me" ? bozza.t : avversaria();
+  const conAvv = () => rosa(avversaria() || "").length > 0;
+  const azzera = () => { bozza.me = { ...bozza.me, xi: vuoto() }; bozza.avv = { ...bozza.avv, xi: vuoto() } };
   const squadre = () => [...new Set(righe().flatMap(m => [m[1], m[2]]))].sort();
-  const partiteDi = t => aperte().filter(m => m[1] === t || m[2] === t).slice(0, 5);
+  const partiteDi = t => prossime().filter(p => p.casa === t || p.ospite === t).slice(0, 8);
 
   function disegnaFirma(){
     const f = C.firma();
@@ -1447,76 +1510,126 @@ $("table").addEventListener("click", e => { const b = e.target.closest("[data-te
   }
   $("formFirma").addEventListener("input", e => { if (e.target.id === "formNome"){ C.salvaFirma({ ...C.firma(), nome: e.target.value.trim() }); e.target.classList.remove("no") } });
 
+  // la partita si sceglie liberamente: tutte le giornate di Serie A ancora da giocare e tutte le partite di coppa già decise
+  const giro = p => p.comp === "Serie A" ? "A|" + p.g : "C|" + p.comp;
+  function giri(ps){
+    const out = new Map();
+    for (const p of ps){ const k = giro(p); if (!out.has(k)) out.set(k, []); out.get(k).push(p) }
+    return [...out].sort((x, y) => (x[0][0] === "C") - (y[0][0] === "C") || x[1][0].t0 - y[1][0].t0).map(([k, l]) => {
+      const d1 = fmtDate(l[0].data), d2 = fmtDate(l[l.length - 1].data);
+      return { k, l, nome: k[0] === "A" ? `⚽ ${l[0].g}ª giornata Serie A` : `🏆 ${l[0].comp} (${l.length} partit${l.length === 1 ? "a" : "e"})` };
+    });
+  }
   function disegnaNuova(){
-    const sel = $("formMatch"), tutte = squadre().filter(t => partiteDi(t).length);
-    if (!tutte.length){ sel.innerHTML = ""; $("formTeam").innerHTML = ""; $("formPitch").innerHTML = ""; $("formInfo").innerHTML = `<p class="empty">Non ci sono partite da giocare.</p>`; $("formSave").disabled = true; return }
-    if (!tutte.includes(bozza.t)) bozza = { ...bozza, t: tutte[0], k: null, xi: Array(11).fill(null) };
-    const ms = partiteDi(bozza.t);
-    if (!ms.some(m => chiave(m) === bozza.k)) bozza.k = chiave(ms[0]);
-    $("formTeam").innerHTML = tutte.map(t => `<button type="button" data-t="${t}" aria-pressed="${bozza.t === t}">${kit(t)}${t}</button>`).join("");
-    sel.innerHTML = ms.map(m => `<option value="${chiave(m)}" ${chiave(m) === bozza.k ? "selected" : ""}>${m[1] === bozza.t ? `in casa contro ${m[2]}` : `in trasferta contro ${m[1]}`} · ${fmtDate(m[0])}${m[6] ? ` ore ${m[6]}` : ""}</option>`).join("");
-    $("formModulo").innerHTML = MODULI.map(x => `<button type="button" data-mod="${x}" aria-pressed="${x === bozza.modulo}">${x}</button>`).join("");
-    disegnaCampo();
+    const ps = prossime();
+    if (!ps.length){ $("formGiro").innerHTML = ""; $("formMatch").innerHTML = ""; $("formPitch").innerHTML = ""; $("formInfo").innerHTML = `<p class="empty">Non ci sono partite da giocare.</p>`; $("formSave").disabled = true; return }
+    const gs = giri(ps), scelta = ps.find(p => p.mid === bozza.mid);
+    if (scelta && !bozza.giro) bozza.giro = giro(scelta);
+    if (!gs.some(g => g.k === bozza.giro)) bozza.giro = gs[0].k;
+    const lista = gs.find(g => g.k === bozza.giro).l;
+    if (!lista.some(p => p.mid === bozza.mid)){ bozza.mid = lista[0].mid; azzera() }
+    bozza.t = partitaBozza().casa;   // in basso la squadra di casa, in alto quella in trasferta
+    const pos = gs.findIndex(g => g.k === bozza.giro); $("formPrev").disabled = pos <= 0; $("formNext").disabled = pos >= gs.length - 1;
+    // tutte le giornate e le coppe anche come pulsanti: si salta direttamente a quella che si vuole
+    $("formGiri").innerHTML = gs.map(g => `<button type="button" data-giro="${g.k}" aria-pressed="${g.k === bozza.giro}" title="${g.nome}">${g.k[0] === "A" ? g.l[0].g + "ª" : "🏆 " + g.l[0].comp.replace(" League", "")}</button>`).join("");
+    $("formGiro").innerHTML = gs.map(g => `<option value="${g.k}" ${g.k === bozza.giro ? "selected" : ""}>${g.nome}</option>`).join("");
+    $("formMatch").innerHTML = lista.map(p => `<button type="button" data-mid="${p.mid}" aria-pressed="${p.mid === bozza.mid}"><span class="sq">${kit(p.casa)}${C.esc(p.casa)}</span><span class="sq">${kit(p.ospite)}${C.esc(p.ospite)}</span><small>${fmtDate(p.data)}${p.ora ? ` · ore ${p.ora}` : ""}</small></button>`).join("");
+    disegnaModuli(); disegnaCampo(); controllaBozza();
   }
+  function disegnaModuli(){
+    const riga = s => `<div class="frm-modrow"><div class="frm-modt">${kit(squadraDi(s))}${C.esc(squadraDi(s))}</div><div class="frm-mod">${MODULI.map(x => `<button type="button" data-s="${s}" data-mod="${x}" aria-pressed="${x === bozza[s].modulo}">${x}</button>`).join("")}</div></div>`;
+    const p = partitaBozza();
+    $("formModulo").innerHTML = (p ? `<div class="frm-scelta">✅ Stai facendo: <b>${C.esc(p.casa)} – ${C.esc(p.ospite)}</b><small>${p.comp} · ${fmtDate(p.data)}${p.ora ? ` ore ${p.ora}` : ""}</small></div><div class="frm-big">👉 3. Scegli i moduli</div>` : "") + riga("me") + (conAvv() ? riga("avv") : `<p class="frm-info">La rosa di ${C.esc(avversaria() || "")} non è disponibile: fai solo la formazione di ${C.esc(bozza.t)}.</p>`);
+  }
+  // se per la partita scelta le ufficiali sono già uscite la formazione non si può più fare
+  let chiusa = null;   // mid della partita chiusa
+  async function controllaBozza(){
+    const p = partitaBozza(); if (!p) return;
+    const u = await scaricaUfficiali(p);
+    const ora = partitaBozza();   // nel frattempo si può aver cambiato partita
+    if (u && ora && ora.mid === p.mid && chiusa !== p.mid){ chiusa = p.mid; disegnaCampo() }
+  }
+  const bloccata = () => { const p = partitaBozza(); return !p || chiusa === p.mid || !!leggiK(KEY_UFF, {})[p.mid] };
+  // posizione sul campo intero: la tua squadra nella metà bassa, l'avversaria in quella alta (a specchio)
+  const postiCampo = s => posti(bozza[s].modulo).map(p => { const y = 50 + p.y / 2; return { ...p, y: s === "me" ? y : 100 - y } });
   function disegnaCampo(){
-    const t = squadraBozza(), [k1, k2] = clubPalette(t), num = new Map(rosa(t).map(p => [p[0], p[2]]));
-    $("formPitch").innerHTML = `<div class="mid"></div><div class="cc"></div>` + posti(bozza.modulo).map((p, i) => {
-      const n = bozza.xi[i];
-      return `<button type="button" class="frm-slot ${n ? "" : "vuoto"}" data-i="${i}" style="left:${p.x}%;top:${p.y}%;--k1:${k1};--k2:${k2}" aria-label="${n ? C.esc(n) : "Scegli " + NOME_RUOLO[p.r].toLowerCase()}">
-        <span class="m">${n ? (num.get(n) ?? "•") : "+"}</span><span class="n">${n ? C.esc(cognome(n)) : p.r}</span></button>`;
-    }).join("");
-    const sq = squal(t), df = diff(t), inf = infortunati(t);
+    const comp = compBozza(), lati = conAvv() ? ["me", "avv"] : ["me"];
+    $("formPitch").innerHTML = `<div class="mid"></div><div class="cc"></div>` + lati.map(s => {
+      const t = squadraDi(s), [k1, k2] = clubPalette(t), num = new Map(rosa(t).map(p => [p[0], p[2]]));
+      return postiCampo(s).map((p, i) => {
+        const n = bozza[s].xi[i];
+        return `<button type="button" class="frm-slot ${n ? "" : "vuoto"}" data-s="${s}" data-i="${i}" style="left:${p.x}%;top:${p.y}%;--k1:${k1};--k2:${k2}" aria-label="${C.esc(t)}: ${n ? C.esc(n) : "scegli " + NOME_RUOLO[p.r].toLowerCase()}">
+          <span class="m">${n ? (num.get(n) ?? "•") : "+"}</span><span class="n">${n ? C.esc(cognome(n)) : p.r}</span></button>`;
+      }).join("");
+    }).join("") + lati.map(s => `<span class="frm-nome ${s}">${kit(squadraDi(s))}${C.esc(squadraDi(s))}</span>`).join("");
     const elenco = (titolo, xs) => xs.length ? `<div>${titolo}: <b>${xs.map(C.esc).join(", ")}</b></div>` : "";
-    $("formInfo").innerHTML = rosa(t).length ? `<div class="frm-info">${elenco("🟥 Squalificati", [...sq.keys()]) || "<div>🟥 Nessuno squalificato</div>"}${elenco("🟨 Diffidati", [...df.keys()])}${elenco("🚑 Infortunati (segnati da te)", [...inf])}
-      <div>Tocca un cerchio sul campo per scegliere il giocatore. Nella lista puoi segnare gli infortunati con 🚑.</div></div>` : `<p class="empty">La rosa di ${t} non è disponibile.</p>`;
-    const manca = bozza.xi.filter(x => !x).length;
-    $("formSave").disabled = manca > 0;
-    $("formSave").textContent = manca ? `Mancano ${manca} giocator${manca === 1 ? "e" : "i"} su 11` : `💾 Salva formazione (${bozza.modulo})`;
+    const info = s => { const t = squadraDi(s), sq = squal(t, comp), df = diff(t, comp), inf = infortunati(t);
+      return `<div class="frm-infot">${kit(t)}<b>${C.esc(t)}</b></div>` + (comp === "Serie A" ? (elenco("🟥 Squalificati", [...sq.keys()]) || "<div>🟥 Nessuno squalificato</div>") + elenco("🟨 Diffidati", [...df.keys()]) : "") + elenco("🚑 Infortunati (segnati da te)", [...inf]) };
+    $("formInfo").innerHTML = rosa(bozza.t).length ? `<div class="frm-info">${comp !== "Serie A" ? `<div>🏆 Partita di ${comp}: le squalifiche di campionato qui non contano. Se qualcuno è squalificato in coppa, segnalo con 🚑.</div>` : ""}${lati.map(info).join("")}
+      <div>Tocca un cerchio sul campo per scegliere il giocatore: in basso ${C.esc(bozza.t)}${conAvv() ? `, in alto ${C.esc(avversaria())}` : ""}. Nella lista puoi segnare gli infortunati con 🚑.</div></div>` : `<p class="empty">La rosa di ${bozza.t} non è disponibile.</p>`;
+    $("formPitch").style.opacity = bloccata() ? ".4" : "";
+    if (bloccata()){
+      $("formInfo").innerHTML = `<p class="frm-chiusa">🔒 Le formazioni ufficiali di questa partita sono già uscite: la formazione non si può più fare. Scegli un'altra partita.</p>`;
+      $("formSave").disabled = true; $("formSave").textContent = "🔒 Formazioni ufficiali già uscite"; return;
+    }
+    const mancaMe = bozza.me.xi.filter(x => !x).length, mancaAvv = conAvv() ? bozza.avv.xi.filter(x => !x).length : 0;
+    $("formSave").disabled = mancaMe + mancaAvv > 0;
+    $("formSave").textContent = mancaMe + mancaAvv ? `Mancano ${[mancaMe && `${mancaMe} di ${bozza.t}`, mancaAvv && `${mancaAvv} di ${avversaria()}`].filter(Boolean).join(" e ")}`
+      : `💾 Salva formazion${conAvv() ? "i" : "e"} (${bozza.t} ${bozza.me.modulo}${conAvv() ? ` · ${avversaria()} ${bozza.avv.modulo}` : ""})`;
   }
-  $("formMatch").addEventListener("change", e => { bozza.k = e.target.value; disegnaNuova() });   // stessa squadra: i giocatori scelti restano
-  $("formTeam").addEventListener("click", e => { const b = e.target.closest("[data-t]"); if (!b || b.dataset.t === bozza.t) return; bozza = { ...bozza, t: b.dataset.t, k: null, xi: Array(11).fill(null) }; disegnaNuova() });
-  $("formModulo").addEventListener("click", e => { const b = e.target.closest("[data-mod]"); if (!b) return; bozza.modulo = b.dataset.mod; $("formModulo").querySelectorAll("button").forEach(x => x.setAttribute("aria-pressed", x === b)); disegnaCampo() });
-  $("formPitch").addEventListener("click", e => { const s = e.target.closest("[data-i]"); if (s) scegli(+s.dataset.i) });
+  const sposta = d => { const gs = giri(prossime()), i = gs.findIndex(g => g.k === bozza.giro) + d; if (gs[i]){ bozza.giro = gs[i].k; bozza.mid = null; disegnaNuova() } };
+  $("formGiri").addEventListener("click", e => { const b = e.target.closest("[data-giro]"); if (b){ bozza.giro = b.dataset.giro; bozza.mid = null; disegnaNuova() } });
+  $("formPrev").addEventListener("click", () => sposta(-1));
+  $("formNext").addEventListener("click", () => sposta(1));
+  $("formGiro").addEventListener("change", e => { bozza.giro = e.target.value; bozza.mid = null; disegnaNuova() });
+  $("formMatch").addEventListener("click", e => { const b = e.target.closest("[data-mid]"); if (!b) return; if (b.dataset.mid !== bozza.mid){ bozza.mid = b.dataset.mid; azzera(); disegnaNuova() }
+    $("formModulo").scrollIntoView({ behavior: "smooth", block: "start" }) });   // si va subito alla formazione della partita scelta
+  $("formModulo").addEventListener("click", e => { const b = e.target.closest("[data-mod]"); if (!b) return; bozza[b.dataset.s].modulo = b.dataset.mod; disegnaModuli(); disegnaCampo() });
+  $("formPitch").addEventListener("click", e => { const s = e.target.closest("[data-i]"); if (s && !bloccata()) scegli(s.dataset.s, +s.dataset.i) });
 
   // ---- scelta del giocatore per un posto ----
-  function scegli(i){
-    const t = squadraBozza(), ruolo = posti(bozza.modulo)[i].r;
+  function scegli(s, i){
+    const t = squadraDi(s), comp = compBozza(), ruolo = posti(bozza[s].modulo)[i].r, xi = bozza[s].xi;
     const disegna = () => {
-      const sq = squal(t), df = diff(t), inf = infortunati(t);
+      const sq = squal(t, comp), df = diff(t, comp), inf = infortunati(t);
       const riga = p => {
-        const [n, , num] = p, no = sq.has(n) || inf.has(n), dove = bozza.xi.indexOf(n);
+        const [n, , num] = p, no = sq.has(n) || inf.has(n), dove = xi.indexOf(n);
         const tag = [sq.has(n) && `🟥 squalificato (${sq.get(n)})`, inf.has(n) && "🚑 infortunato", df.has(n) && `🟨 diffidato (${df.get(n)} gialli)`, dove >= 0 && dove !== i && "già in campo"].filter(Boolean).join(" · ");
         return `<div class="p"><button type="button" data-n="${C.esc(n)}" ${no ? "disabled" : ""}><span class="num">${num ?? ""}</span><span>${C.esc(n)}${tag ? `<br><span class="tag">${tag}</span>` : ""}</span></button>
           <button type="button" class="inf" data-inf="${C.esc(n)}" aria-pressed="${inf.has(n)}" title="Segna o togli infortunato">🚑</button></div>`;
       };
       const gruppi = ["P", "D", "C", "A"].sort((a, b) => (b === ruolo) - (a === ruolo));
-      return `<h2>${kit(t)}${NOME_RUOLO[ruolo]}</h2><p class="sub">Scegli chi gioca in questo posto. 🚑 segna un infortunato: non si potrà schierare.</p>
-        ${bozza.xi[i] ? `<div class="sch-acts" style="justify-content:flex-start"><button type="button" class="sch-btn" data-togli="1">Lascia vuoto questo posto</button></div>` : ""}
+      return `<h2>${kit(t)}${C.esc(t)}: ${NOME_RUOLO[ruolo].toLowerCase()}</h2><p class="sub">Scegli chi gioca in questo posto. 🚑 segna un infortunato: non si potrà schierare.</p>
+        ${xi[i] ? `<div class="sch-acts" style="justify-content:flex-start"><button type="button" class="sch-btn" data-togli="1">Lascia vuoto questo posto</button></div>` : ""}
         <div class="frm-pick">${gruppi.map(g => { const ps = rosa(t).filter(p => p[1] === g); return ps.length ? `<div class="g">${({ P: "Portieri", D: "Difensori", C: "Centrocampisti", A: "Attaccanti" })[g]}</div>${ps.map(riga).join("")}` : "" }).join("")}</div>`;
     };
     const box = pop.open(disegna());
     const ridisegna = () => { box.querySelector(".box").innerHTML = `<button class="x" type="button" aria-label="Chiudi">✕</button>` + disegna() };
     box.querySelector(".box").addEventListener("click", e => {
       const inf = e.target.closest("[data-inf]");
-      if (inf){ segnaInf(t, inf.dataset.inf); const j = bozza.xi.indexOf(inf.dataset.inf); if (j >= 0 && infortunati(t).has(inf.dataset.inf)) bozza.xi[j] = null; ridisegna(); disegnaCampo(); return }
-      if (e.target.closest("[data-togli]")){ bozza.xi[i] = null; pop.close(); disegnaCampo(); return }
+      if (inf){ segnaInf(t, inf.dataset.inf); const j = xi.indexOf(inf.dataset.inf); if (j >= 0 && infortunati(t).has(inf.dataset.inf)) xi[j] = null; ridisegna(); disegnaCampo(); return }
+      if (e.target.closest("[data-togli]")){ xi[i] = null; pop.close(); disegnaCampo(); return }
       const b = e.target.closest("[data-n]"); if (!b || b.disabled) return;
-      const n = b.dataset.n, prima = bozza.xi.indexOf(n);
-      if (prima >= 0) bozza.xi[prima] = bozza.xi[i];   // se era già in campo, i due si scambiano il posto
-      bozza.xi[i] = n; pop.close(); disegnaCampo();
+      const n = b.dataset.n, prima = xi.indexOf(n);
+      if (prima >= 0) xi[prima] = xi[i];   // se era già in campo, i due si scambiano il posto
+      xi[i] = n; pop.close(); disegnaCampo();
     });
   }
 
-  $("formSave").addEventListener("click", () => {
+  $("formSave").addEventListener("click", async () => {
     const f = C.firma();
     if (!f.nome){ const n = $("formNome"); n.classList.add("no"); n.focus(); n.scrollIntoView({ block: "center" }); C.avvisa("Scrivi prima il tuo nome per firmare la formazione"); return }
-    if (bozza.xi.some(x => !x)) return;
-    const m = trova(CURRENT, bozza.k);
-    if (!m || inizio(m) <= Date.now()){ C.avvisa("La partita è già iniziata"); return }
+    if (bozza.me.xi.some(x => !x) || conAvv() && bozza.avv.xi.some(x => !x)) return;
+    const p = partitaBozza();
+    if (!p){ C.avvisa("La partita è già iniziata"); return }
+    if (await scaricaUfficiali(p)){ chiusa = p.mid; disegnaCampo(); C.avvisa("Troppo tardi: le formazioni ufficiali sono già uscite"); return }
     const l = leggi();
-    l.unshift({ id: Date.now().toString(36) + Math.random().toString(36).slice(2, 6), mia: true, nome: f.nome, creata: new Date().toISOString(), stagione: CURRENT, k: bozza.k, lato: m[1] === bozza.t ? "h" : "a", modulo: bozza.modulo, xi: bozza.xi.slice() });
+    l.unshift({ id: Date.now().toString(36) + Math.random().toString(36).slice(2, 6), mia: true, nome: f.nome, creata: new Date().toISOString(), stagione: CURRENT,
+      mid: p.mid, comp: p.comp, casa: p.casa, ospite: p.ospite, t0: p.t0, data: p.data, ora: p.ora, slug: p.slug, eid: p.eid,
+      lato: p.casa === bozza.t ? "h" : "a", modulo: bozza.me.modulo, xi: bozza.me.xi.slice(),
+      avv: conAvv() ? { modulo: bozza.avv.modulo, xi: bozza.avv.xi.slice() } : null });
     if (!scrivi(l)){ alert("Non riesco a salvare: questo browser non permette di salvare dati (forse sei in navigazione in incognito)."); return }
-    bozza = { ...bozza, xi: Array(11).fill(null) }; disegnaCampo(); disegnaElenchi();
+    azzera(); disegnaCampo(); disegnaElenchi();
     C.avvisa("Formazione salvata. Ora mandala agli amici!");
     $("formList").scrollIntoView({ behavior: "smooth", block: "start" });
   });
@@ -1525,58 +1638,78 @@ $("table").addEventListener("click", e => { const b = e.target.closest("[data-te
   const norm = s => s.normalize("NFD").replace(/[̀-ͯ]/g, "").toLowerCase().replace(/[^a-z]/g, "");
   const NOMI = { "AC Milan": "Milan", "Internazionale": "Inter", "AS Roma": "Roma", "Hellas Verona": "Verona" };
   const uguale = (espn, t) => { const a = norm(NOMI[espn] || espn), b = norm(t); return a === b || a.includes(b) || b.includes(a) };
+  const API = slug => "https://site.api.espn.com/apis/site/v2/sports/soccer/" + slug + "/";
+  // formazioni ufficiali di una partita: { h, a, visto } oppure null se non sono ancora uscite.
+  // "visto" è il momento in cui l'app le ha trovate: le formazioni fatte dopo non valgono.
+  async function scaricaUfficiali(f){
+    const uff = leggiK(KEY_UFF, {});
+    if (uff[f.mid]) return uff[f.mid];
+    if (Date.now() < f.t0 - 90 * 60e3) return null;   // prima di un'ora e mezza dall'inizio non escono mai
+    const dati = await (async () => {
+        let eid = f.eid;
+        if (!eid){   // campionato: l'id ESPN si trova nelle partite del giorno
+          const j = await fetch(API(f.slug) + "scoreboard?dates=" + f.data.replace(/-/g, ""), { cache: "no-store" }).then(r => r.json()).catch(() => null);
+          const ev = j && (j.events || []).find(e => { const c = e.competitions[0].competitors, H = c.find(z => z.homeAway === "home"), A = c.find(z => z.homeAway === "away"); return H && A && uguale(H.team.displayName, f.casa) && uguale(A.team.displayName, f.ospite) });
+          eid = ev && ev.id;
+        }
+        if (!eid) return null;
+        const s = await fetch(API(f.slug) + "summary?event=" + eid, { cache: "no-store" }).then(r => r.json()).catch(() => null);
+        const dati = {};
+        for (const r of (s && s.rosters) || []) { const xi = (r.roster || []).filter(p => p.starter).map(p => p.athlete.displayName); if (xi.length === 11) dati[r.homeAway === "home" ? "h" : "a"] = { modulo: r.formation || "", xi } }
+        return dati.h || dati.a ? { ...dati, visto: Date.now() } : null;
+    })();
+    if (!dati) return null;
+    const tutte = leggiK(KEY_UFF, {}); tutte[f.mid] = dati; scriviK(KEY_UFF, tutte);
+    return dati;
+  }
   let cercando = false;
   async function cercaUfficiali(){
     if (cercando) return; cercando = true;
     try {
-      const uff = leggiK(KEY_UFF, {}), l = leggi();
-      const daCercare = [...new Set(l.map(f => f.stagione + "§" + f.k))].filter(x => !uff[x]).map(x => { const [s, k] = x.split("§"); return [x, trova(s, k)] })
-        .filter(([, m]) => m && Date.now() > inizio(m) - 90 * 60e3 && Date.now() < inizio(m) + 4 * 864e5);
+      const uff = leggiK(KEY_UFF, {}), visti = new Set();
       let nuove = 0;
-      for (const [x, m] of daCercare) {
-        const j = await fetch("https://site.api.espn.com/apis/site/v2/sports/soccer/ita.1/scoreboard?dates=" + m[0].replace(/-/g, ""), { cache: "no-store" }).then(r => r.json()).catch(() => null);
-        const ev = j && (j.events || []).find(e => { const c = e.competitions[0].competitors, H = c.find(z => z.homeAway === "home"), A = c.find(z => z.homeAway === "away"); return H && A && uguale(H.team.displayName, m[1]) && uguale(A.team.displayName, m[2]) });
-        if (!ev) continue;
-        const s = await fetch("https://site.api.espn.com/apis/site/v2/sports/soccer/ita.1/summary?event=" + ev.id, { cache: "no-store" }).then(r => r.json()).catch(() => null);
-        const rs = (s && s.rosters) || [], dati = {};
-        for (const r of rs) { const xi = (r.roster || []).filter(p => p.starter).map(p => p.athlete.displayName); if (xi.length === 11) dati[r.homeAway === "home" ? "h" : "a"] = { modulo: r.formation || "", xi } }
-        if (dati.h && dati.a){ uff[x] = dati; nuove++ }
-      }
-      if (nuove){ scriviK(KEY_UFF, uff); disegnaElenchi() }
+      for (const f of leggi()) if (!uff[f.mid] && !visti.has(f.mid) && Date.now() > f.t0 - 90 * 60e3 && Date.now() < f.t0 + 4 * 864e5){ visti.add(f.mid); if (await scaricaUfficiali(f)) nuove++ }
+      if (nuove) disegnaElenchi();
+      controllaBozza();
     } finally { cercando = false }
   }
   setInterval(() => { if (currentView === "form") cercaUfficiali() }, 5 * 60e3);
 
+  // titolari indovinati: della tua squadra e, se l'hai fatta, anche dell'avversaria
   function controlla(f){
-    const u = (leggiK(KEY_UFF, {})[f.stagione + "§" + f.k] || {})[f.lato];
-    if (!u) return { u: null, ok: 0 };
-    const vere = new Set(u.xi.map(norm));
-    return { u, ok: f.xi.filter(n => vere.has(norm(n))).length };
+    const tutte = leggiK(KEY_UFF, {})[f.mid] || {}, u = tutte[f.lato], ua = f.avv ? tutte[f.lato === "h" ? "a" : "h"] : null, tot = f.avv ? 22 : 11;
+    if (!u && !ua) return { u: null, ua: null, ok: 0, tot };
+    const conta = (mie, vere) => { const s = new Set(vere.xi.map(norm)); return mie.filter(n => s.has(norm(n))).length };
+    const tardi = Date.parse(f.creata) > Math.min(tutte.visto || Infinity, f.t0);
+    return { u: u || ua, uMe: u, ua, tardi, tot, ok: tardi ? 0 : (u ? conta(f.xi, u) : 0) + (ua ? conta(f.avv.xi, ua) : 0) };
   }
-  const titoloF = f => { const m = trova(f.stagione, f.k), [h, a] = f.k.split("|"), t = f.lato === "h" ? h : a; return { m, t, contro: f.lato === "h" ? a : h, quando: m ? `${fmtDate(m[0])}${m[6] ? ` ore ${m[6]}` : ""}` : "" } };
-  const xiHtml = (f, c) => `<div class="frm-xi">${f.xi.map(n => `<span>${c.u ? (new Set(c.u.xi.map(norm)).has(norm(n)) ? "✅ " : "❌ ") : ""}${C.esc(n)}</span>`).join("")}</div>
-    ${c.u ? `<details><summary>Formazione ufficiale ${C.esc(c.u.modulo)}</summary><div class="frm-xi">${c.u.xi.map(n => `<span>${f.xi.map(norm).includes(norm(n)) ? "✅ " : "➕ "}${C.esc(n)}</span>`).join("")}</div></details>` : ""}`;
+  const titoloF = f => ({ t: f.lato === "h" ? f.casa : f.ospite, contro: f.lato === "h" ? f.ospite : f.casa, comp: f.comp, quando: `${f.comp !== "Serie A" ? f.comp + " · " : ""}${fmtDate(f.data)}${f.ora ? ` ore ${f.ora}` : ""}` });
+  const modF = f => f.modulo + (f.avv ? " · " + f.avv.modulo : "");
+  const xiHtml = (f, c) => { const T = titoloF(f);
+    const sez = (nome, mod, xi, u) => `<div class="frm-infot">${kit(nome)}<b>${C.esc(nome)}</b> <span class="meta">${mod}</span></div><div class="frm-xi">${xi.map(n => `<span>${u ? (new Set(u.xi.map(norm)).has(norm(n)) ? "✅ " : "❌ ") : ""}${C.esc(n)}</span>`).join("")}</div>
+      ${u ? `<details><summary>Formazione ufficiale ${C.esc(u.modulo)}</summary><div class="frm-xi">${u.xi.map(n => `<span>${xi.map(norm).includes(norm(n)) ? "✅ " : "➕ "}${C.esc(n)}</span>`).join("")}</div></details>` : ""}`;
+    return sez(T.t, f.modulo, f.xi, c.uMe) + (f.avv ? sez(T.contro, f.avv.modulo, f.avv.xi, c.ua) : "") };
   const quandoF = f => new Date(f.creata).toLocaleString("it-IT", { day: "numeric", month: "short", hour: "2-digit", minute: "2-digit" });
 
   function disegnaElenchi(){
     const l = leggi(), mie = l.filter(f => f.mia !== false);
     $("formList").innerHTML = mie.length ? mie.map(f => {
       const c = controlla(f), T = titoloF(f);
-      return `<article class="sch-card"><header><div><h3>${kit(T.t)}${T.t}</h3>
-        <div class="meta">contro ${T.contro} · ${T.quando} · ${f.modulo} · fatta il ${quandoF(f)}</div></div>
-        <div class="punti">${c.u ? `${c.ok}/11` : "–"}</div></header>
-        <div class="meta">${c.u ? `Hai indovinato ${c.ok} titolari su 11` : "In attesa della formazione ufficiale (esce circa un'ora prima)"}</div>
+      return `<article class="sch-card"><header><div><h3>${kit(T.t)}${C.esc(T.t)}${f.avv ? ` – ${C.esc(T.contro)}` : ""}</h3>
+        <div class="meta">${f.avv ? "" : `contro ${C.esc(T.contro)} · `}${T.quando} · ${modF(f)} · fatta il ${quandoF(f)}</div></div>
+        <div class="punti">${c.u ? `${c.ok}/${c.tot}` : "–"}</div></header>
+        <div class="meta">${c.u ? `Hai indovinato ${c.ok} titolari su ${c.tot}` : "In attesa della formazione ufficiale (esce circa un'ora prima)"}</div>
         <div class="sch-acts"><button class="sch-btn send" type="button" data-send="${f.id}">📤 Manda agli amici</button><button class="sch-btn" type="button" data-del="${f.id}">Elimina</button></div>${xiHtml(f, c)}</article>`;
     }).join("") : `<p class="empty">Non hai ancora formazioni. Preparane una qui accanto.</p>`;
 
-    const gruppi = [...new Set(l.filter(f => f.mia === false).map(f => f.stagione + "§" + f.k + "§" + f.lato))];
+    const gruppi = [...new Set(l.filter(f => f.mia === false).map(f => f.mid + "§" + f.lato))];
     $("formGroup").innerHTML = gruppi.length ? gruppi.map(g => {
-      const [s, k, lato] = g.split("§"), tutte = l.filter(f => f.stagione === s && f.k === k && f.lato === lato);
-      const cl = tutte.map(f => ({ f, c: controlla(f) })).sort((x, y) => y.c.ok - x.c.ok || x.f.nome.localeCompare(y.f.nome));
+      const [mid, lato] = g.split("§"), tutte = l.filter(f => f.mid === mid && f.lato === lato);
+      const cl = tutte.map(f => ({ f, c: controlla(f) })).sort((x, y) => !!x.c.tardi - !!y.c.tardi || y.c.ok - x.c.ok || x.f.nome.localeCompare(y.f.nome));
       const T = titoloF(tutte[0]), pronta = cl[0] && cl[0].c.u, med = i => ["🥇", "🥈", "🥉"][i] || `${i + 1}º`;
-      return `<article class="sch-card"><header><div><h3>${kit(T.t)}${T.t}</h3><div class="meta">contro ${T.contro} · ${T.quando} · ${cl.length} formazion${cl.length === 1 ? "e" : "i"} · ${pronta ? "ufficiali uscite" : "ufficiali non ancora uscite"}</div></div></header>
-        <div class="sch-rank">${cl.map((x, i) => `<div class="p ${x.f.mia !== false ? "me" : ""}"><span>${pronta ? med(i) : "·"}</span><span>${C.esc(x.f.nome)}${x.f.mia !== false ? " (tu)" : ""} <span class="meta">${x.f.modulo}</span></span><span class="pt">${pronta ? `${x.c.ok}/11` : "–"}</span></div>`).join("")}</div>
-        ${cl.filter(x => x.f.mia === false).map(x => `<details><summary>${C.esc(x.f.nome)} · ${x.f.modulo} · fatta il ${quandoF(x.f)}</summary>${xiHtml(x.f, x.c)}
+      return `<article class="sch-card"><header><div><h3>${kit(T.t)}${C.esc(T.t)}</h3><div class="meta">contro ${C.esc(T.contro)} · ${T.quando} · ${cl.length} formazion${cl.length === 1 ? "e" : "i"} · ${pronta ? "ufficiali uscite" : "ufficiali non ancora uscite"}</div></div></header>
+        <div class="sch-rank">${cl.map((x, i) => `<div class="p ${x.f.mia !== false ? "me" : ""}"><span>${pronta && !x.c.tardi ? med(i) : "·"}</span><span>${C.esc(x.f.nome)}${x.f.mia !== false ? " (tu)" : ""} <span class="meta">${modF(x.f)}</span></span><span class="pt">${x.c.tardi ? "<small>fatta dopo le ufficiali</small>" : pronta ? `${x.c.ok}/${x.c.tot}` : "–"}</span></div>`).join("")}</div>
+        ${cl.filter(x => x.f.mia === false).map(x => `<details><summary>${C.esc(x.f.nome)} · ${modF(x.f)} · fatta il ${quandoF(x.f)}</summary>${xiHtml(x.f, x.c)}
           <div class="sch-acts"><button class="sch-btn" type="button" data-del="${x.f.id}">Togli dal gruppo</button></div></details>`).join("")}</article>`;
     }).join("") : `<p class="empty">Qui arrivano le formazioni dei tuoi amici: quando ti mandano il link, toccalo e la loro formazione compare qui, con la classifica di chi indovina più titolari.</p>`;
   }
@@ -1587,9 +1720,9 @@ $("table").addEventListener("click", e => { const b = e.target.closest("[data-te
     const g = c.getContext("2d"), D = '"Big Shoulders Display", Impact, sans-serif', B = '"IBM Plex Sans", "Segoe UI", sans-serif';
     try { await Promise.all([document.fonts.load('800 80px "Big Shoulders Display"'), document.fonts.load('600 40px "IBM Plex Sans"')]) } catch(e){}
     const bg = g.createLinearGradient(0, 0, 0, H); bg.addColorStop(0, "#0b1424"); bg.addColorStop(1, "#050a14"); g.fillStyle = bg; g.fillRect(0, 0, W, H);
-    g.textBaseline = "top"; g.font = `800 76px ${D}`; g.fillStyle = "#eef3ff"; g.fillText("LA MIA FORMAZIONE", 60, 44);
-    g.font = `800 60px ${D}`; g.fillStyle = "#ff4d6d"; g.fillText(`${T.t.toUpperCase()}  ${f.modulo}`, 60, 130);
-    g.font = `500 30px ${B}`; g.fillStyle = "#93a4c3"; g.fillText(`contro ${T.contro} · ${T.quando}`, 62, 206);
+    g.textBaseline = "top"; g.font = `800 76px ${D}`; g.fillStyle = "#eef3ff"; g.fillText(f.avv ? "LE MIE FORMAZIONI" : "LA MIA FORMAZIONE", 60, 44);
+    g.font = `800 60px ${D}`; g.fillStyle = "#ff4d6d"; g.fillText(f.avv ? `${T.t.toUpperCase()} – ${T.contro.toUpperCase()}` : `${T.t.toUpperCase()}  ${f.modulo}`, 60, 130);
+    g.font = `500 30px ${B}`; g.fillStyle = "#93a4c3"; g.fillText(f.avv ? `${T.quando} · ${T.t} ${f.modulo}, ${T.contro} ${f.avv.modulo}` : `contro ${T.contro} · ${T.quando}`, 62, 206);
     g.font = `600 36px ${B}`; g.fillStyle = "#ffcf4a"; g.fillText(f.nome || "", 62, 252);
     // campo
     const X = 60, Y = 320, PW = W - 120, PH = 980;
@@ -1598,34 +1731,52 @@ $("table").addEventListener("click", e => { const b = e.target.closest("[data-te
     g.beginPath(); g.moveTo(X, Y + PH / 2); g.lineTo(X + PW, Y + PH / 2); g.stroke();
     g.beginPath(); g.arc(X + PW / 2, Y + PH / 2, 110, 0, Math.PI * 2); g.stroke();
     g.strokeRect(X + PW * .32, Y, PW * .36, PH * .14); g.strokeRect(X + PW * .32, Y + PH * .86, PW * .36, PH * .14);
-    const [k1, k2] = clubPalette(T.t), num = new Map(rosa(T.t).map(p => [p[0], p[2]]));
-    posti(f.modulo).forEach((p, i) => {
-      const cx = X + PW * p.x / 100, cy = Y + PH * p.y / 100, n = f.xi[i];
-      g.beginPath(); g.arc(cx, cy, 44, 0, Math.PI * 2); g.fillStyle = k1; g.fill(); g.lineWidth = 7; g.strokeStyle = k2; g.stroke();
-      g.textAlign = "center"; g.textBaseline = "middle"; g.font = `800 38px ${D}`; g.fillStyle = "#fff"; g.fillText(String(num.get(n) ?? ""), cx, cy + 2);
-      g.textBaseline = "top"; g.font = `700 28px ${B}`; g.lineWidth = 6; g.strokeStyle = "rgba(0,0,0,.6)";
-      const nome = cognome(n || ""); g.strokeText(nome, cx, cy + 52); g.fillStyle = "#fff"; g.fillText(nome, cx, cy + 52); g.textAlign = "left";
+    // la tua squadra in basso; l'avversaria, se l'hai fatta, in alto a specchio
+    const lati = [[T.t, f.modulo, f.xi, false], ...(f.avv ? [[T.contro, f.avv.modulo, f.avv.xi, true]] : [])];
+    for (const [team, mod, xi, alto] of lati){
+    const [k1, k2] = clubPalette(team), num = new Map(rosa(team).map(p => [p[0], p[2]])), R0 = f.avv ? 36 : 44;
+    posti(mod).forEach((p, i) => {
+      const yy = f.avv ? (alto ? 50 - p.y / 2 : 50 + p.y / 2) : p.y;
+      const cx = X + PW * p.x / 100, cy = Y + PH * yy / 100, n = xi[i];
+      g.beginPath(); g.arc(cx, cy, R0, 0, Math.PI * 2); g.fillStyle = k1; g.fill(); g.lineWidth = 7; g.strokeStyle = k2; g.stroke();
+      g.textAlign = "center"; g.textBaseline = "middle"; g.font = `800 ${f.avv ? 32 : 38}px ${D}`; g.fillStyle = "#fff"; g.fillText(String(num.get(n) ?? ""), cx, cy + 2);
+      g.textBaseline = "top"; g.font = `700 ${f.avv ? 24 : 28}px ${B}`; g.lineWidth = 6; g.strokeStyle = "rgba(0,0,0,.6)";
+      const nome = cognome(n || ""); g.strokeText(nome, cx, cy + R0 + 6); g.fillStyle = "#fff"; g.fillText(nome, cx, cy + R0 + 6); g.textAlign = "left";
     });
+    }
     g.textAlign = "center"; g.textBaseline = "top";
     g.font = `600 34px ${B}`; g.fillStyle = "#eef3ff"; g.fillText("Sfidami su Sliding Doors Serie A", W / 2, H - 160);
     g.font = `600 32px ${B}`; g.fillStyle = "#ff4d6d"; g.fillText("c1962-2012.github.io/sliding-doors", W / 2, H - 106);
     g.font = `500 26px ${B}`; g.fillStyle = "#93a4c3"; g.fillText("un'app di ciuffa62", W / 2, H - 56);
     return new Promise(res => c.toBlob(res, "image/png"));
   }
-  const link = f => C.BASE + "#f=" + C.b64(["1", f.stagione, f.k, f.lato, f.modulo, f.nome, f.creata.slice(0, 16), f.id, f.xi.join("|")].join("~"));
+  const CAMPI = ["stagione", "mid", "comp", "casa", "ospite", "data", "ora", "slug", "eid", "t0", "lato", "modulo", "nome", "creata", "id"];
+  const link = f => C.BASE + "#f=" + C.b64(["3", ...CAMPI.map(k => k === "creata" ? f.creata.slice(0, 16) : f[k]), f.xi.join("|"), f.avv ? f.avv.modulo : "", f.avv ? f.avv.xi.join("|") : ""].join("~"));
   async function manda(f){
-    const T = titoloF(f), testo = `La mia formazione del ${T.t} contro ${T.contro} (${f.modulo}). Aggiungila e sfidami su Sliding Doors Serie A: ${link(f)}`;
+    const T = titoloF(f), testo = `${f.avv ? `Le mie formazioni di ${T.t} – ${T.contro}` : `La mia formazione del ${T.t} contro ${T.contro}`}${f.comp !== "Serie A" ? " in " + f.comp : ""} (${f.modulo}). Aggiungila e sfidami su Sliding Doors Serie A: ${link(f)}`;
     C.condividi({ blob: await immagine(f), testo, nomeFile: `formazione-${T.t}-${(f.nome || "").replace(/[^\w]+/g, "-")}.png`, titolo: "La mia formazione", h2: "Manda la formazione", sub: "L'immagine arriva agli amici insieme al link: toccandolo, la tua formazione entra nel loro gruppo." });
   }
   function importa(cod){
     try {
-      const [v, stagione, k, lato, modulo, nome, creata, id, xi] = C.deb64(cod).split("~"), lista = (xi || "").split("|");
-      if (v !== "1" || !trova(stagione, k) || !/^[ha]$/.test(lato) || lista.length !== 11 || !MODULI.includes(modulo)) return "Link della formazione non valido";
-      const l = leggi(), gia = l.find(f => f.id === id);
-      if (gia) return gia.mia !== false ? "Questa è una tua formazione" : `La formazione di ${nome} c'è già`;
-      l.push({ id, mia: false, nome: nome.slice(0, 20), creata: creata + ":00Z", stagione, k, lato, modulo, xi: lista.map(x => x.slice(0, 60)) });
+      const parti = C.deb64(cod).split("~"), v = parti[0];
+      let f;
+      if (v === "1"){   // link della prima versione: solo campionato
+        const [, stagione, k, lato, modulo, nome, creata, id, xi] = parti, m = trova(stagione, k);
+        if (!m) return "Link della formazione non valido";
+        f = { ...daSerieA(m), stagione, lato, modulo, nome, creata, id, xi };
+      } else if (v === "2" && parti.length === CAMPI.length + 2 || v === "3" && parti.length === CAMPI.length + 4){
+        f = Object.fromEntries(CAMPI.map((k, i) => [k, parti[i + 1]])); f.xi = parti[CAMPI.length + 1]; f.t0 = +f.t0;
+        const am = parti[CAMPI.length + 2], ax = (parti[CAMPI.length + 3] || "").split("|");
+        f.avv = v === "3" && am ? { modulo: am, xi: ax.map(x => x.slice(0, 60)) } : null;
+        if (f.avv && (ax.length !== 11 || !/^\d(-\d){2,3}$/.test(am))) return "Link della formazione non valido";
+      } else return "Link della formazione non valido";
+      const lista = (f.xi || "").split("|");
+      if (!/^[ha]$/.test(f.lato) || lista.length !== 11 || !/^\d(-\d){2,3}$/.test(f.modulo) || !f.t0) return "Link della formazione non valido";
+      const l = leggi(), gia = l.find(x => x.id === f.id);
+      if (gia) return gia.mia !== false ? "Questa è una tua formazione" : `La formazione di ${f.nome} c'è già`;
+      l.push({ ...f, mia: false, nome: f.nome.slice(0, 20), creata: f.creata + ":00Z", xi: lista.map(x => x.slice(0, 60)) });
       scrivi(l);
-      return `✅ Aggiunta la formazione di ${nome.slice(0, 20)}`;
+      return `✅ Aggiunta la formazione di ${f.nome.slice(0, 20)}`;
     } catch(e){ return "Link della formazione non valido" }
   }
   const azioni = e => {
@@ -1646,6 +1797,22 @@ $("table").addEventListener("click", e => { const b = e.target.closest("[data-te
     setTimeout(() => $("formGroup").scrollIntoView({ behavior: "smooth", block: "start" }), 300);
     return true;
   };
+  // solo nell anteprima sul computer: #prova-chiusa finge che siano uscite le ufficiali della prossima partita della Roma, per vedere il blocco
+  if (/^localhost$|^127./.test(location.hostname) && location.hash === "#prova-chiusa"){
+    const p = partiteDi("Roma")[0], uff = leggiK(KEY_UFF, {});
+    uff[p.mid] = { [p.casa === "Roma" ? "h" : "a"]: { modulo: "3-4-2-1", xi: rosa("Roma").slice(0, 11).map(x => x[0]) }, visto: Date.now() };
+    scriviK(KEY_UFF, uff); bozza.mid = p.mid; bozza.giro = null;
+    history.replaceState(null, "", location.pathname + location.search + "#formazione"); showView("form");
+    setTimeout(() => $("formInfo").scrollIntoView({ block: "center" }), 400);
+  }
+  // solo nell anteprima sul computer: #prova-due riempie Roma – Monza con le due formazioni, per vedere il campo completo
+  if (/^localhost$|^127./.test(location.hostname) && location.hash === "#prova-due"){
+    const p = partiteDi("Roma").find(x => x.comp === "Serie A"), primi = (t, mod) => { const r = rosa(t), out = []; posti(mod).forEach(s => { const g = r.find(x => x[1] === s.r && !out.includes(x[0])) || r.find(x => !out.includes(x[0])); out.push(g[0]) }); return out };
+    bozza.mid = p.mid; bozza.giro = null; bozza.me = { modulo: "3-4-2-1", xi: primi("Roma", "3-4-2-1") };
+    const avv = p.casa === "Roma" ? p.ospite : p.casa; bozza.avv = { modulo: "4-3-3", xi: primi(avv, "4-3-3") };
+    history.replaceState(null, "", location.pathname + location.search + "#formazione"); showView("form");
+    setTimeout(() => $("formPitch").scrollIntoView({ block: "start" }), 500);
+  }
   addEventListener("hashchange", daLink);
-  if (!daLink() && currentView === "form") SD_formRender();
+  if (!daLink() && currentView === "form"){ SD_formRender(); if (location.hash === "#formazione") [400, 1500, 3000].forEach(ms => setTimeout(() => { if (scrollY < 4000) document.querySelector(".frm-scegli").scrollIntoView({ block: "start" }) }, ms)) }
 }

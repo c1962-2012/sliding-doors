@@ -1,11 +1,10 @@
 // Palco 3D. Un podio su un prato illuminato: da un lato la realtà, dall'altro il tuo universo.
 // Quando cambi la storia il prato ruota verso il tuo universo; si gira anche trascinando.
-// Su PC c'è in più la classifica della Serie A a colonne. Senza WebGL si vede un podio disegnato in CSS.
+// Senza WebGL si vede un podio disegnato in CSS.
 (function () {
   const PC = (window.SD_MODE || "pc") === "pc";
   const REDUCE = matchMedia("(prefers-reduced-motion: reduce)").matches;
   const stageHost = document.getElementById("stage3d");
-  const boardHost = document.getElementById("board3d");
   const hasGL = (() => { try { const c = document.createElement("canvas"); return !!(window.THREE && (c.getContext("webgl2") || c.getContext("webgl"))) } catch (e) { return false } })();
   const DISPLAY = '"Big Shoulders Display", Impact, "Arial Narrow", sans-serif';
 
@@ -230,84 +229,11 @@
     };
   }
 
-  // ---------- classifica 3D (solo PC) ----------
-  function makeBoard(host) {
-    const renderer = new THREE.WebGLRenderer({ antialias: true, alpha: true });
-    renderer.setPixelRatio(Math.min(devicePixelRatio || 1, 2));
-    if (THREE.sRGBEncoding) renderer.outputEncoding = THREE.sRGBEncoding;
-    renderer.toneMapping = THREE.ACESFilmicToneMapping;
-    host.appendChild(renderer.domElement);
-    const scene = new THREE.Scene(), camera = new THREE.PerspectiveCamera(34, 1, 0.1, 100);
-    scene.add(new THREE.HemisphereLight(0xaaccff, 0x0b2a18, 0.8));
-    const key = new THREE.DirectionalLight(0xffffff, 1.1); key.position.set(4, 8, 6); scene.add(key);
-    const group = new THREE.Group(); scene.add(group);
-    const base = new THREE.Mesh(new THREE.BoxGeometry(12.4, 0.12, 2.2), new THREE.MeshStandardMaterial({ color: 0x0f6a3c, roughness: 0.9 }));
-    base.position.y = -0.06; group.add(base);
-    const cols = [];
-    let angle = -0.35, drag = null, running = false, visible = true;
-    const el = renderer.domElement;
-    el.addEventListener("pointerdown", e => { drag = { x: e.clientX, a: angle }; el.setPointerCapture(e.pointerId); wake() });
-    el.addEventListener("pointermove", e => { if (drag) { angle = Math.max(-1.1, Math.min(1.1, drag.a + (e.clientX - drag.x) * 0.008)); wake() } });
-    el.addEventListener("pointerup", () => drag = null);
-
-    function sprite(txt, color) {
-      const tex = textCanvas(256, 128, (g, w, h) => {
-        g.textAlign = "center"; g.fillStyle = color; g.font = `800 64px ${DISPLAY}`;
-        g.shadowColor = "rgba(0,0,0,.9)"; g.shadowBlur = 8; g.fillText(txt, w / 2, 84);
-      });
-      const s = new THREE.Sprite(new THREE.SpriteMaterial({ map: tex, transparent: true, depthWrite: false }));
-      s.scale.set(0.9, 0.45, 1);
-      return s;
-    }
-    function resize() {
-      const w = host.clientWidth || 700, h = host.clientHeight || 300;
-      renderer.setSize(w, h, false); camera.aspect = w / h;
-      const far = Math.max(1, 2.2 / camera.aspect);
-      camera.position.set(0, 4.2, 11.5 * far); camera.lookAt(0, 1.6, 0);
-      camera.updateProjectionMatrix(); wake();
-    }
-    new ResizeObserver(resize).observe(host);
-    watchVisible(host, v => { visible = v; if (v) wake() });
-
-    function frame() {
-      group.rotation.y += (angle - group.rotation.y) * 0.15;
-      let moving = Math.abs(angle - group.rotation.y) > 0.001 || drag;
-      cols.forEach(c => { const d = c.target - c.mesh.scale.y; if (Math.abs(d) > 0.002) { c.mesh.scale.y += d * (REDUCE ? 1 : 0.12); moving = true } c.mesh.position.y = c.mesh.scale.y / 2; c.label.position.y = c.mesh.scale.y + 0.35 });
-      renderer.render(scene, camera);
-      running = visible && moving;
-      if (running) requestAnimationFrame(frame);
-    }
-    function wake() { if (!running && visible) { running = true; requestAnimationFrame(frame) } }
-
-    return {
-      update(rows) {
-        cols.forEach(c => { group.remove(c.mesh, c.ghost, c.label); c.label.material.map.dispose() });
-        cols.length = 0;
-        const max = Math.max(1, ...rows.map(r => Math.max(r.alt, r.real))), S = 3.6 / max, n = rows.length, step = 12 / n;
-        rows.forEach((r, k) => {
-          const [c1] = window.clubColors(r.team), x = -6 + step / 2 + k * step;
-          const mesh = new THREE.Mesh(new THREE.BoxGeometry(step * 0.72, 1, 0.8), new THREE.MeshStandardMaterial({ color: c1, roughness: 0.35, metalness: 0.2, emissive: new THREE.Color(c1), emissiveIntensity: 0.12 }));
-          mesh.position.x = x; mesh.scale.y = 0.001;
-          const gh = Math.max(0.001, r.real * S);
-          const ghost = new THREE.LineSegments(new THREE.EdgesGeometry(new THREE.BoxGeometry(step * 0.8, gh, 0.86)), new THREE.LineBasicMaterial({ color: 0xffffff, transparent: true, opacity: 0.28 }));
-          ghost.position.set(x, gh / 2, 0);
-          const label = sprite(`${r.team.slice(0, 3).toUpperCase()} ${r.alt}`, r.alt !== r.real ? "#ffcf4a" : "#ffffff");
-          label.position.x = x;
-          group.add(mesh, ghost, label);
-          cols.push({ mesh, ghost, label, target: Math.max(0.001, r.alt * S) });
-        });
-        resize();
-      }
-    };
-  }
-
   // ---------- collegamento con l'app ----------
   const faceUI = document.getElementById("stageFace");
   const titleUI = document.getElementById("stageTitle");
-  let podium = null, board = null;
+  let podium = null;
   if (hasGL && stageHost) { try { podium = makePodium(stageHost) } catch (e) { podium = null } }
-  if (hasGL && PC && boardHost) { try { board = makeBoard(boardHost) } catch (e) { board = null } }
-  if (!board && boardHost && boardHost.closest(".board")) boardHost.closest(".board").hidden = true;
 
   function markFace(f) { if (faceUI) faceUI.querySelectorAll("button").forEach(b => b.setAttribute("aria-pressed", b.dataset.face === f)) }
   if (podium) podium.onFace(markFace);
@@ -320,7 +246,6 @@
     if (!st) return;
     if (titleUI) titleUI.innerHTML = `${st.title}<small>${st.sub}</small>`;
     if (podium) podium.update(st); else { cssPodium(st); markFace(st.changed ? "alt" : "real") }
-    if (board && st.board) board.update(st.board);
   }
   window.addEventListener("sd:state", e => apply(e.detail));
   if (document.fonts && document.fonts.ready) document.fonts.ready.then(() => apply(window.SD_STATE));

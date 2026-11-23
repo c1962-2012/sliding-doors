@@ -88,11 +88,14 @@ const hash = f => fs.existsSync(f) ? crypto.createHash("sha1").update(fs.readFil
   // rose delle squadre con squalificati e diffidati (dai cartellini appena scaricati), per "La mia formazione"
   const rose = await require("./rose-a.js").aggiorna(window.SERIE_A);
   got.rose = rose.esito;
+  // video di YouTube (highlights e interviste) delle partite appena giocate
+  const video = await require("./video-a.js").aggiorna(window.SERIE_A, [season]).catch(e => ({ cambiato: false, errore: e.message }));
+  got.video = video.trovate ?? video.errore;
   const played = cur.filter(m => m[3] !== null);
   const after = [hash(path.join(proto, "data.js")), hash(path.join(proto, "cups.js"))];
   console.log(JSON.stringify({
     season, scaricati: got, giocate: played.length, daGiocare: cur.length - played.length,
     ultimaGiocata: played.map(m => m[0]).sort().pop(),
-    changed: after[0] !== before[0] || after[1] !== before[1] || marcCambiati || rose.cambiato, log
+    changed: after[0] !== before[0] || after[1] !== before[1] || marcCambiati || rose.cambiato || video.cambiato, log
   }));
 })().catch(e => { console.error("ERRORE aggiornamento:", e.message); process.exit(1) });

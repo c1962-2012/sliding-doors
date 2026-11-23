@@ -2039,7 +2039,7 @@ Times are [[Central European Time|CET]] or [[Central European Summer Time|CEST]]
 |goals2     =
 |stadium    =[[Baku Olympic Stadium|Olympic Stadium]], [[Baku]]{{refn|group=note|name=Sabah}}
 |attendance = <!-- <ref>{{cite web |url=https://www.uefa.com/newsfiles/UCL/2027/2049642_FR.pdf |title=Full Time Summary Matchday 5 – Sabah v Barcelona |work=[[UEFA]] |publisher=Union of European Football Associations |date=25 November 2026 |access-date=25 November 2026}}</ref> -->
-|referee    =
+|referee    = [[Nick Walsh (referee)|Nick Walsh]] ([[Scottish Football Association|Scotland]])
 |report     = Report<ref>{{cite web |url=https://www.uefa.com/uefachampionsleague/match/2049642/ |title=Sabah vs. Barcelona |publisher=UEFA |access-date=29 August 2026}}</ref>
 }}
 ----
@@ -2053,7 +2053,7 @@ Times are [[Central European Time|CET]] or [[Central European Summer Time|CEST]]
 |goals2     =
 |stadium    = [[Fortuna Arena]], [[Prague]]
 |attendance = <!-- <ref>{{cite web |url=https://www.uefa.com/newsfiles/UCL/2027/2049641_FR.pdf |title=Full Time Summary Matchday 5 – Slavia Prague v Villarreal |work=[[UEFA]] |publisher=Union of European Football Associations |date=25 November 2026 |access-date=25 November 2026}}</ref> -->
-|referee    =
+|referee    = [[Rade Obrenović]] ([[Football Association of Slovenia|Slovenia]])
 |report     = Report<ref>{{cite web |url=https://www.uefa.com/uefachampionsleague/match/2049641/ |title=Slavia Praha vs. Villarreal |publisher=UEFA |access-date=29 August 2026}}</ref>
 }}
 ----
@@ -2067,7 +2067,7 @@ Times are [[Central European Time|CET]] or [[Central European Summer Time|CEST]]
 |goals2     =
 |stadium    = [[Metropolitano Stadium]], [[Madrid]]
 |attendance = <!-- <ref>{{cite web |url=https://www.uefa.com/newsfiles/UCL/2027/2049636_FR.pdf |title=Full Time Summary Matchday 5 – Atlético Madrid v Viking |work=[[UEFA]] |publisher=Union of European Football Associations |date=25 November 2026 |access-date=25 November 2026}}</ref> -->
-|referee    =
+|referee    = [[Erik Lambrechts]] ([[Royal Belgian Football Association|Belgium]])
 |report     = Report<ref>{{cite web |url=https://www.uefa.com/uefachampionsleague/match/2049636/ |title=Atleti vs. Viking |publisher=UEFA |access-date=29 August 2026}}</ref>
 }}
 ----
@@ -2081,7 +2081,7 @@ Times are [[Central European Time|CET]] or [[Central European Summer Time|CEST]]
 |goals2     =
 |stadium    = [[Jan Breydel Stadium]], [[Bruges]]
 |attendance = <!-- <ref>{{cite web |url=https://www.uefa.com/newsfiles/UCL/2027/2049638_FR.pdf |title=Full Time Summary Matchday 5 – Club Brugge v Liverpool |work=[[UEFA]] |publisher=Union of European Football Associations |date=25 November 2026 |access-date=25 November 2026}}</ref> -->
-|referee    =
+|referee    = [[Alejandro Hernández Hernández]] ([[Royal Spanish Football Federation|Spain]])
 |report     = Report<ref>{{cite web |url=https://www.uefa.com/uefachampionsleague/match/2049638/ |title=Club Brugge vs. Liverpool |publisher=UEFA |access-date=29 August 2026}}</ref>
 }}
 ----
@@ -2095,7 +2095,7 @@ Times are [[Central European Time|CET]] or [[Central European Summer Time|CEST]]
 |goals2     =
 |stadium    = [[San Siro]], [[Milan]]
 |attendance = <!-- <ref>{{cite web |url=https://www.uefa.com/newsfiles/UCL/2027/2049635_FR.pdf |title=Full Time Summary Matchday 5 – Inter Milan v VfB Stuttgart |work=[[UEFA]] |publisher=Union of European Football Associations |date=25 November 2026 |access-date=25 November 2026}}</ref> -->
-|referee    =
+|referee    = [[François Letexier]] ([[French Football Federation|France]])
 |report     = Report<ref>{{cite web |url=https://www.uefa.com/uefachampionsleague/match/2049635/ |title=Inter vs. Stuttgart |publisher=UEFA |access-date=29 August 2026}}</ref>
 }}
 ----
@@ -2109,7 +2109,7 @@ Times are [[Central European Time|CET]] or [[Central European Summer Time|CEST]]
 |goals2     =
 |stadium    = [[Stamford Bridge (stadium)|Stamford Bridge]], [[London]], England{{refn|group=note|name=Ukraine}}
 |attendance = <!-- <ref>{{cite web |url=https://www.uefa.com/newsfiles/UCL/2027/2049640_FR.pdf |title=Full Time Summary Matchday 5 – Shakhtar Donetsk v Fenerbahçe |work=[[UEFA]] |publisher=Union of European Football Associations |date=25 November 2026 |access-date=25 November 2026}}</ref> -->
-|referee    =
+|referee    = [[Michael Oliver (referee)|Michael Oliver]] ([[The Football Association|England]])
 |report     = Report<ref>{{cite web |url=https://www.uefa.com/uefachampionsleague/match/2049640/ |title=Shakhtar vs. Fenerbahçe |publisher=UEFA |access-date=29 August 2026}}</ref>
 }}
 ----
@@ -2123,7 +2123,7 @@ Times are [[Central European Time|CET]] or [[Central European Summer Time|CEST]]
 |goals2     =
 |stadium    = [[Stade Pierre-Mauroy]], [[Villeneuve-d'Ascq]]
 |attendance = <!-- <ref>{{cite web |url=https://www.uefa.com/newsfiles/UCL/2027/2049639_FR.pdf |title=Full Time Summary Matchday 5 – Lille v Bayern Munich |work=[[UEFA]] |publisher=Union of European Football Associations |date=25 November 2026 |access-date=25 November 2026}}</ref> -->
-|referee    =
+|referee    = [[Marco Guida]] ([[Italian Football Federation|Italy]])
 |report     = Report<ref>{{cite web |url=https://www.uefa.com/uefachampionsleague/match/2049639/ |title=Lille vs. Bayern München |publisher=UEFA |access-date=29 August 2026}}</ref>
 }}
 ----
@@ -2137,7 +2137,7 @@ Times are [[Central European Time|CET]] or [[Central European Summer Time|CEST]]
 |goals2     =
 |stadium    = [[Parc des Princes]], [[Paris]]
 |attendance = <!-- <ref>{{cite web |url=https://www.uefa.com/newsfiles/UCL/2027/2049634_FR.pdf |title=Full Time Summary Matchday 5 – Paris Saint-Germain v Roma |work=[[UEFA]] |publisher=Union of European Football Associations |date=25 November 2026 |access-date=25 November 2026}}</ref> -->
-|referee    =
+|referee    = [[Glenn Nyberg]] ([[Swedish Football Association|Sweden]])
 |report     = Report<ref>{{cite web |url=https://www.uefa.com/uefachampionsleague/match/2049634/ |title=Paris vs. Roma |publisher=UEFA |access-date=29 August 2026}}</ref>
 }}
 ----
@@ -2151,7 +2151,7 @@ Times are [[Central European Time|CET]] or [[Central European Summer Time|CEST]]
 |goals2     =
 |stadium    = [[Estádio José Alvalade]], [[Lisbon]]
 |attendance = <!-- <ref>{{cite web |url=https://www.uefa.com/newsfiles/UCL/2027/2049637_FR.pdf |title=Full Time Summary Matchday 6 – Sporting CP v Manchester United |work=[[UEFA]] |publisher=Union of European Football Associations |date=25 November 2026 |access-date=25 November 2026}}</ref> -->
-|referee    =
+|referee    = [[Szymon Marciniak]] ([[Polish Football Association|Poland]])
 |report     = Report<ref>{{cite web |url=https://www.uefa.com/uefachampionsleague/match/2049637/ |title=Sporting CP vs. Man Utd |publisher=UEFA |access-date=29 August 2026}}</ref>
 }}
 

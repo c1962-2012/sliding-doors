@@ -53,6 +53,39 @@ function cartellini(partite, squadre) {
   return esito;
 }
 
+// Partite di coppa già decise (calendario o sorteggio) delle squadre di Serie A, nei prossimi 60 giorni:
+// [competizione, sigla ESPN, id partita ESPN, data e ora (UTC), casa, ospite]
+const COPPE = [["Coppa Italia", "ita.coppa_italia"], ["Champions League", "uefa.champions"], ["Europa League", "uefa.europa"], ["Conference League", "uefa.europa.conf"], ["Supercoppa", "ita.super_cup"]];
+const ESATTI = { "AC Milan": "Milan", "Internazionale": "Inter", "AS Roma": "Roma", "Hellas Verona": "Verona" };
+const esterne = new Map();   // nome ESPN -> [sigla coppa, id squadra]
+async function partiteCoppe(squadre) {
+  const norm = s => s.normalize("NFD").replace(/[̀-ͯ]/g, "").toLowerCase().replace(/[^a-z]/g, "");
+  const perNorm = new Map([...squadre].map(s => [norm(s), s]));
+  // nelle coppe ci sono squadre straniere con nomi simili (Inter Turku…): solo corrispondenze esatte
+  const italiana = n => ESATTI[n] && squadre.has(ESATTI[n]) ? ESATTI[n] : perNorm.get(norm(n)) || null;
+  const giorni = [];
+  for (let i = 0; i <= 60; i++) giorni.push(new Date(Date.now() + i * 864e5).toISOString().slice(0, 10).replace(/-/g, ""));
+  const out = [], visti = new Set(); esterne.clear();
+  for (const [nome, slug] of COPPE) {
+    for (let i = 0; i < giorni.length; i += 10) {
+      const blocco = await Promise.all(giorni.slice(i, i + 10).map(g => json(API.replace("ita.1", slug) + "scoreboard?dates=" + g)));
+      for (const j of blocco) for (const e of (j && j.events) || []) {
+        if (visti.has(e.id) || e.status.type.state !== "pre") continue;
+        const c = e.competitions[0].competitors, H = c.find(x => x.homeAway === "home"), A = c.find(x => x.homeAway === "away");
+        if (!H || !A) continue;
+        const h = italiana(H.team.displayName), a = italiana(A.team.displayName);
+        if (!h && !a) continue;
+        visti.add(e.id);
+        out.push([nome, slug, e.id, e.date, h || H.team.displayName, a || A.team.displayName]);
+        // squadre di fuori dalla Serie A (straniere, Serie B): servirà la loro rosa per fare anche la loro formazione
+        if (!h) esterne.set(H.team.displayName, [slug, H.team.id]);
+        if (!a) esterne.set(A.team.displayName, [slug, A.team.id]);
+      }
+    }
+  }
+  return out.sort((x, y) => x[3].localeCompare(y[3]));
+}
+
 async function aggiorna(SERIE_A) {
   const stagione = Object.keys(SERIE_A).sort().pop();
   const squadre = new Set(SERIE_A[stagione].flatMap(m => [m[1], m[2]]));
@@ -78,8 +111,17 @@ async function aggiorna(SERIE_A) {
   }
   if (Object.keys(rose).length < squadre.size / 2) return { cambiato: false, esito: "rose incomplete, tenute quelle di prima" };
   const sorted = Object.fromEntries(Object.keys(rose).sort().map(k => [k, rose[k]]));
+  const coppe = await partiteCoppe(squadre);
+  // rose delle avversarie di coppa (solo giocatori: squalifiche e diffide valgono per la Serie A)
+  for (const [nome, [slug, id]] of esterne) {
+    const r = await json(API.replace("ita.1", slug) + "teams/" + id + "/roster");
+    if (!r || !r.athletes || !r.athletes.length) continue;
+    const ordineRuolo = { P: 0, D: 1, C: 2, A: 3 };
+    sorted[nome] = { rosa: r.athletes.map(p => [p.displayName, RUOLO[p.position && p.position.abbreviation] || "C", p.jersey ? +p.jersey : null])
+      .sort((x, y) => ordineRuolo[x[1]] - ordineRuolo[y[1]] || (x[2] ?? 99) - (y[2] ?? 99)), squal: [], diff: [], inf: [], coppa: 1 };
+  }
   const prima = fs.existsSync(out) ? fs.readFileSync(out, "utf8").replace(/"aggiornato":"[^"]*",?/g, "") : "";
-  const testo = "window.ROSE_A=" + JSON.stringify({ stagione, aggiornato: new Date().toISOString(), squadre: sorted }) + ";";
+  const testo = "window.ROSE_A=" + JSON.stringify({ stagione, aggiornato: new Date().toISOString(), squadre: sorted, coppe }) + ";";
   const cambiato = testo.replace(/"aggiornato":"[^"]*",?/g, "") !== prima;
   if (cambiato) fs.writeFileSync(out, testo);
   return { cambiato, esito: Object.keys(rose).length + " squadre" };

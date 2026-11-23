@@ -1,10 +1,9 @@
-# Aggiorna i dati e pubblica l'app su GitHub Pages: due volte al giorno, a ogni modifica e a mano dalla scheda Actions.
+# Aggiorna i dati e pubblica l'app su GitHub Pages: ogni ora (così highlights e interviste arrivano subito dopo ogni partita), a ogni modifica e a mano dalla scheda Actions.
 name: Aggiorna e pubblica
 
 on:
   schedule:
-    - cron: "0 7 * * *"
-    - cron: "30 22 * * *"
+    - cron: "20 * * * *"
   push:
     branches: [main]
   workflow_dispatch:
@@ -29,6 +28,14 @@ jobs:
       - uses: actions/setup-node@v4
         with:
           node-version: 22
+      # i video già trovati e le partite di coppa già scaricate restano da un aggiornamento all'altro
+      - uses: actions/cache@v4
+        with:
+          path: |
+            data-src/youtube.json
+            data-src/espn-coppe.json
+          key: dati-${{ github.run_id }}
+          restore-keys: dati-
       # se una fonte non risponde si pubblicano comunque gli ultimi dati presenti nel repository
       - name: Aggiorna i dati
         run: node tools/update.js

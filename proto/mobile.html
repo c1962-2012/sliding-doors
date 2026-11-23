@@ -68,9 +68,9 @@
     <div class="col">
       <section class="panel">
         <h2>Corsa allo scudetto</h2>
-        <p class="sub">Punti dopo ogni partita giocata. Tratteggio: come è andata davvero. Linea piena: il tuo universo.</p>
+        <p class="sub">Punti dopo ogni giornata, su tutte le 38 del campionato. Tratteggio: come è andata davvero. Linea piena: il tuo universo. I punti salgono fino al tetto di 114 (38 vittorie su 38).</p>
         <div class="chips" id="chips"></div>
-        <div class="chart-wrap"><svg id="chart" viewBox="0 0 800 340" width="100%" role="img" aria-label="Punti per giornata"></svg></div>
+        <div class="chart-wrap"><svg id="chart" viewBox="0 0 800 900" width="100%" role="img" aria-label="Punti per giornata"></svg></div>
         <div class="legend">
           <span><svg width="26" height="4"><line x1="0" y1="2" x2="26" y2="2" stroke="currentColor" stroke-width="1.5" stroke-dasharray="4 3"/></svg>Storia reale</span>
           <span><svg width="26" height="4"><line x1="0" y1="2" x2="26" y2="2" stroke="currentColor" stroke-width="3"/></svg>Universo parallelo</span>
@@ -97,6 +97,7 @@
 
   <div id="view-cup" class="view" hidden>
     <section class="verdict" id="cupVerdict" aria-live="polite"></section>
+    <section class="panel vid-panel" id="cupVideo" hidden></section>
     <div class="grid">
       <div class="col">
         <section class="panel">
@@ -122,6 +123,7 @@
 
   <div id="view-eu" class="view" hidden>
     <section class="verdict" id="euVerdict" aria-live="polite"></section>
+    <section class="panel vid-panel" id="euVideo" hidden></section>
     <div class="comp-pick" id="compPick" role="group" aria-label="Coppa"></div>
     <div class="grid">
       <div class="col">
@@ -191,13 +193,16 @@
       <div class="col">
         <section class="panel">
           <h2>La mia formazione</h2>
-          <p class="sub">Prima che escano le ufficiali, scegli il modulo e gli 11 titolari. Gli squalificati li segna l'app dai cartellini; gli infortunati li segni tu. Quando escono le ufficiali (circa un'ora prima) l'app ti dice quanti ne hai indovinati.</p>
+          <p class="sub">Scegli la partita che vuoi, di campionato o di coppa, e prima che escano le ufficiali metti moduli e titolari di tutte e due le squadre. Gli squalificati li segna l'app dai cartellini; gli infortunati li segni tu. Quando escono le ufficiali (circa un'ora prima) l'app ti dice quanti ne hai indovinati.</p>
           <div class="sch-firma" id="formFirma"></div>
-          <div class="frm-lab">1. La squadra</div>
-          <div class="frm-team" id="formTeam" role="group" aria-label="Squadra"></div>
-          <div class="frm-lab">2. La partita</div>
-          <div class="filters"><select id="formMatch" aria-label="Partita"></select></div>
-          <div class="frm-lab">3. Il modulo</div>
+          <div class="frm-scegli">
+            <div class="frm-big">👉 1. Scegli la giornata (tocca il numero) o la coppa</div>
+            <div class="frm-nav"><button type="button" id="formPrev" aria-label="Giornata prima">◀</button><select id="formGiro" aria-label="Giornata o coppa"></select><button type="button" id="formNext" aria-label="Giornata dopo">▶</button></div>
+            <div class="frm-giri" id="formGiri" role="group" aria-label="Tutte le giornate e le coppe"></div>
+            <div class="frm-big">👉 2. Tocca la partita che vuoi</div>
+          <div class="frm-partite" id="formMatch" role="group" aria-label="Partita"></div>
+          </div>
+          
           <div class="frm-mod" id="formModulo" role="group" aria-label="Modulo"></div>
           <div class="frm-pitch" id="formPitch"></div>
           <div id="formInfo"></div>
@@ -227,5 +232,6 @@
 <script src="cups.js"></script>
 <script src="marcatori-a.js"></script>
 <script src="rose-a.js"></script>
+<script src="video-a.js"></script>
 <script src="app.js"></script>
 <script src="stage3d.js"></script>

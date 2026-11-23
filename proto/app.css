@@ -213,6 +213,15 @@ footer{color:var(--muted);font-size:12px}
 .podium-css .cup{font-size:30px;filter:drop-shadow(0 0 10px rgba(255,207,74,.8))}
 
 .board{margin:4px 0 14px;border-radius:14px;overflow:hidden;border:1px solid var(--line);background:radial-gradient(80% 100% at 50% 0%, rgba(77,163,255,.18), transparent 70%), #050b16}
-.board .stage-canvas{--stage-h:300px}
+.board .stage-canvas{--stage-h:560px}
 
 @media (prefers-reduced-motion:reduce){.match.flash{animation:none}.verdict.flipping{animation:none}}
+
+/* collegamenti YouTube (highlights e interviste) */
+.ytrow{grid-column:1/-1;display:flex;gap:6px;flex-wrap:wrap;margin-top:4px}
+#sdPop .r{flex-wrap:wrap}#sdPop .r .ytrow{flex-basis:100%;margin-top:2px}
+a.yt{display:inline-flex;align-items:center;gap:4px;padding:3px 10px;border-radius:999px;background:#ff0033;color:#fff;font-size:12px;font-weight:700;text-decoration:none}
+a.yt.int{background:rgba(255,255,255,.08);color:var(--ink);border:1px solid var(--line-hi)}
+a.yt:hover{filter:brightness(1.15)}
+.vid-panel{margin:0 0 24px}.vid-list{display:grid;gap:6px;max-height:420px;overflow:auto}.vid-r{display:flex;justify-content:space-between;align-items:center;gap:10px;flex-wrap:wrap;padding:8px 10px;border-radius:10px;background:rgba(255,255,255,.04)}
+.vid-r small{display:block;color:var(--muted);font-size:12px}.vid-r .ytrow{margin:0}
