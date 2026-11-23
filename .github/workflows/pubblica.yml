@@ -34,8 +34,9 @@ jobs:
           path: |
             data-src/youtube.json
             data-src/espn-coppe.json
-          key: dati-${{ github.run_id }}
-          restore-keys: dati-
+            data-src/sky.json
+          key: dati3-${{ github.run_id }}
+          restore-keys: dati3-
       # se una fonte non risponde si pubblicano comunque gli ultimi dati presenti nel repository
       - name: Aggiorna i dati
         run: node tools/update.js
