@@ -46,5 +46,12 @@ jobs:
       - uses: actions/upload-pages-artifact@v3
         with:
           path: site
+      # a volte GitHub Pages rifiuta il primo invio: si riprova da solo dopo un minuto
       - id: deploy
+        uses: actions/deploy-pages@v4
+        continue-on-error: true
+      - if: steps.deploy.outcome == 'failure'
+        run: sleep 60
+      - id: deploy2
+        if: steps.deploy.outcome == 'failure'
         uses: actions/deploy-pages@v4
