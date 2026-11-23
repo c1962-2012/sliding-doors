@@ -27,6 +27,17 @@ const head = title => `<!doctype html>
 <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
 <meta name="apple-mobile-web-app-title" content="Sliding Doors">
 <title>${title}</title>
+<!-- anteprima quando il link si condivide su WhatsApp, Instagram, Facebook, Telegram -->
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Sliding Doors Serie A">
+<meta property="og:title" content="Sliding Doors Serie A">
+<meta property="og:description" content="Cambia un risultato e riscrivi la storia della Serie A. Risultati live, classifica, cannonieri. Un'app di ciuffa62.">
+<meta property="og:url" content="https://c1962-2012.github.io/sliding-doors/">
+<meta property="og:image" content="https://c1962-2012.github.io/sliding-doors/og.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:locale" content="it_IT">
+<meta name="twitter:card" content="summary_large_image">
 <style>body{margin:0;background:#050a14}[hidden]{display:none!important}</style>
 </head>
 <body>`;
@@ -46,7 +57,7 @@ const tail = `<script>if ("serviceWorker" in navigator) {
 </html>
 `;
 // la pagina PC manda i telefoni alla versione leggera
-const toMobile = `<script>if (matchMedia("(max-width: 700px) and (pointer: coarse)").matches && !/[?&]pc\\b/.test(location.search)) location.replace("mobile.html");</script>\n`;
+const toMobile = `<script>if (matchMedia("(max-width: 700px) and (pointer: coarse)").matches && !/[?&]pc\\b/.test(location.search)) location.replace("mobile.html" + location.hash);</script>\n`;
 for (const [src, title, extra] of [["index.html", "Sliding Doors Serie A", toMobile], ["mobile.html", "Sliding Doors Serie A", ""]]) {
   const body = fs.readFileSync(path.join(proto, src), "utf8").replace(/<title>.*?<\/title>\n?/, "");
   fs.writeFileSync(path.join(out, src), head(title) + "\n" + extra + body + tail);
