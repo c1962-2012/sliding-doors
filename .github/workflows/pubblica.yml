@@ -37,6 +37,12 @@ jobs:
             data-src/sky.json
           key: dati3-${{ github.run_id }}
           restore-keys: dati3-
+      # i minuti dei giocatori delle partite già finite (una partita si scarica una volta sola)
+      - uses: actions/cache@v4
+        with:
+          path: data-src/minuti.json
+          key: minuti-${{ github.run_id }}
+          restore-keys: minuti-
       # se una fonte non risponde si pubblicano comunque gli ultimi dati presenti nel repository
       - name: Aggiorna i dati
         run: node tools/update.js

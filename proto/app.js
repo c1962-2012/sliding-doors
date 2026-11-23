@@ -1118,7 +1118,34 @@ function schedaSquadra(t){
       <div class="rows" style="margin-top:8px">${ultime.map(riga).join("")}</div>` : ""}
     ${prossime.length ? `<h3>Prossime partite</h3><div class="rows">${prossime.map(m => riga(m).replace(/<\/div>$/, ` <button type="button" class="prec-btn" data-prec="${m[2]}|${m[3]}">⚔ Precedenti</button></div>`)).join("")}</div>` : ""}
     ${(() => { const cp = season === CURRENT ? (window.COPPE_GIOCATE || []).filter(p => p[4] === t || p[5] === t).slice(-5).reverse() : []; return cp.length ? `<h3>Coppe</h3><div class="vid-list">${cp.map(rigaCoppa).join("")}</div>` : "" })()}
-    ${marc.length ? `<h3>Marcatori</h3><div class="rows">${marc.map(x => `<div class="r"><span>${x[0]}</span><span class="num"><b>${x[2]}</b> gol${x[3] ? ` <small>(${x[3]} rig.)</small>` : ""}</span></div>`).join("")}</div>` : ""}`);
+    ${marc.length ? `<h3>Marcatori</h3><div class="rows">${marc.map(x => `<div class="r"><span>${x[0]}</span><span class="num"><b>${x[2]}</b> gol${x[3] ? ` <small>(${x[3]} rig.)</small>` : ""}</span></div>`).join("")}</div>` : ""}
+    ${minutiSquadra(t, giocate.length)}`);
+}
+
+// ---------------- Minuti giocati da ogni giocatore (solo stagione in corso) ----------------
+(function () {
+  const st = document.createElement("style");
+  st.textContent = ".min-list{display:grid;gap:4px;max-height:420px;overflow:auto;padding-right:4px}" +
+    ".min-r{display:grid;grid-template-columns:minmax(0,1fr) auto;gap:2px 10px;padding:6px 10px;border-radius:10px;background:rgba(255,255,255,.04);font-size:14px}" +
+    ".min-r .n{overflow:hidden;text-overflow:ellipsis;white-space:nowrap}.min-r .m{font-family:var(--f-mono);font-weight:700;text-align:right}" +
+    ".min-r .bar{grid-column:1/-1;height:5px;border-radius:3px;background:rgba(255,255,255,.08);overflow:hidden}.min-r .bar i{display:block;height:100%;background:var(--good)}" +
+    ".min-r .d{grid-column:1/-1;color:var(--muted);font-size:12px}.min-r.zero{opacity:.55}" +
+    ".min-note{color:var(--muted);font-size:12px;margin:0 0 8px}";
+  document.head.appendChild(st);
+})();
+function minutiSquadra(t, partite){
+  const M = window.MINUTI_A;
+  if (!M || M.stagione !== season || !M.squadre[t]) return "";
+  const lista = M.squadre[t].slice(), visti = new Set(lista.map(x => x[0]));
+  // anche chi è in rosa ma non ha mai giocato, con 0 minuti
+  const rosa = window.ROSE_A && ROSE_A.squadre && ROSE_A.squadre[t] ? ROSE_A.squadre[t].rosa : [];
+  for (const [nome] of rosa) if (!visti.has(nome)) lista.push([nome, 0, 0, 0, 0]);
+  const max = Math.max(partite * 90, 1);
+  const riga = ([nome, min, pres, tit, sub]) => `<div class="min-r${min ? "" : " zero"}"><span class="n">${String(nome).replace(/[&<>"]/g, c => ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;" }[c]))}</span><span class="m">${min}'</span>
+    <span class="bar"><i style="width:${Math.min(100, min / max * 100).toFixed(1)}%"></i></span>
+    <span class="d">${pres ? `${pres} ${pres === 1 ? "presenza" : "presenze"} · ${tit} da titolare${sub ? ` · ${sub} dalla panchina` : ""}` : "mai in campo"}</span></div>`;
+  return `<h3>Giocatori · minuti giocati</h3><p class="min-note">Serie A ${season.replace("-", "/")}, ${partite} partite giocate (massimo ${partite * 90}'). Il recupero non si conta.</p>
+    <div class="min-list">${lista.map(riga).join("")}</div>`;
 }
 $("table").addEventListener("click", e => { const b = e.target.closest("[data-team]"); if (b) schedaSquadra(b.dataset.team) });
 

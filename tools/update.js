@@ -88,6 +88,9 @@ const hash = f => fs.existsSync(f) ? crypto.createHash("sha1").update(fs.readFil
   // rose delle squadre con squalificati e diffidati (dai cartellini appena scaricati), per "La mia formazione"
   const rose = await require("./rose-a.js").aggiorna(window.SERIE_A);
   got.rose = rose.esito;
+  // minuti giocati da ogni giocatore nella stagione in corso, per la scheda della squadra
+  const minuti = await require("./minuti-a.js").aggiorna(window.SERIE_A).catch(e => ({ cambiato: false, esito: e.message }));
+  got.minuti = minuti.esito;
   // video di YouTube (highlights e interviste) delle partite appena giocate
   const video = await require("./video-a.js").aggiorna(window.SERIE_A, [season]).catch(e => ({ cambiato: false, errore: e.message }));
   got.video = video.trovate ?? video.errore;
@@ -96,6 +99,6 @@ const hash = f => fs.existsSync(f) ? crypto.createHash("sha1").update(fs.readFil
   console.log(JSON.stringify({
     season, scaricati: got, giocate: played.length, daGiocare: cur.length - played.length,
     ultimaGiocata: played.map(m => m[0]).sort().pop(),
-    changed: after[0] !== before[0] || after[1] !== before[1] || marcCambiati || rose.cambiato || video.cambiato, log
+    changed: after[0] !== before[0] || after[1] !== before[1] || marcCambiati || rose.cambiato || minuti.cambiato || video.cambiato, log
   }));
 })().catch(e => { console.error("ERRORE aggiornamento:", e.message); process.exit(1) });
