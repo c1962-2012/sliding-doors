@@ -35,7 +35,7 @@ if (fs.existsSync(cal)) {
     [h, a].forEach(t => { if (!data[last].some(m => m[1] === t)) unknown.add(t) });
     const played = byPair.get(h + "|" + a);
     if (played) played[5] = r;            // il risultato resta quello di football-data, si aggiunge la giornata
-    else data[last].push([f.date, h, a, null, null, r]);
+    else data[last].push([f.date, h, a, null, null, r, f.time || null]); // orario d'inizio, ora italiana, se già fissato
   }
   if (unknown.size) console.log("ATTENZIONE nomi non riconosciuti:", [...unknown].join(", "));
 } else if (fs.existsSync(path.join(dir, "fixtures.csv"))) {

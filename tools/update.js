@@ -53,27 +53,33 @@ const hash = f => fs.existsSync(f) ? crypto.createHash("sha1").update(fs.readFil
   eval(fs.readFileSync(path.join(proto, "data.js"), "utf8"));
   const cur = window.SERIE_A[Object.keys(window.SERIE_A).sort().pop()];
 
-  // football-data.co.uk carica i risultati con giorni di ritardo: le partite già finite che mancano si prendono da ESPN (ultimi 21 giorni)
+  // football-data.co.uk carica i risultati con giorni di ritardo: le partite già finite che mancano si prendono da ESPN (ultimi 21 giorni);
+  // per le prossime 2 settimane ESPN dà anche giorno e orario d'inizio confermati (ora italiana)
   const NOMI = { "AC Milan": "Milan", "Internazionale": "Inter", "AS Roma": "Roma", "Hellas Verona": "Verona" };
   const ymd = d => d.toISOString().slice(0, 10).replace(/-/g, "");
-  let daEspn = 0;
-  for (let n = 0; n <= 21; n++) {
+  let daEspn = 0, orari = 0;
+  for (let n = -14; n <= 21; n++) {
     let ev = [];
     try {
       const r = await fetch("https://site.api.espn.com/apis/site/v2/sports/soccer/ita.1/scoreboard?dates=" + ymd(new Date(Date.now() - n * 864e5)));
       if (r.ok) ev = (await r.json()).events || [];
     } catch { }
     for (const e of ev) {
-      if (e.status.type.state !== "post" || !e.status.type.completed) continue;
       const c = e.competitions[0].competitors, H = c.find(x => x.homeAway === "home"), A = c.find(x => x.homeAway === "away");
       if (!H || !A) continue;
       const m = cur.find(x => x[1] === (NOMI[H.team.displayName] || H.team.displayName) && x[2] === (NOMI[A.team.displayName] || A.team.displayName));
+      if (m && m[3] === null && e.status.type.state === "pre" && e.competitions[0].timeValid !== false) {
+        const quando = new Date(e.date), giorno = quando.toLocaleDateString("sv-SE", { timeZone: "Europe/Rome" });
+        const ora = quando.toLocaleTimeString("it-IT", { timeZone: "Europe/Rome", hour: "2-digit", minute: "2-digit" });
+        if (m[0] !== giorno || m[6] !== ora) { m[0] = giorno; m[6] = ora; orari++ }
+      }
+      if (e.status.type.state !== "post" || !e.status.type.completed) continue;
       // anche la data: il calendario a volte ha quella vecchia di una partita spostata
       if (m && m[3] === null) { m[3] = +H.score; m[4] = +A.score; m[0] = new Date(e.date).toLocaleDateString("sv-SE", { timeZone: "Europe/Rome" }); daEspn++ }
     }
   }
-  if (daEspn) fs.writeFileSync(path.join(proto, "data.js"), "window.SERIE_A=" + JSON.stringify(window.SERIE_A) + ";");
-  got.espn = daEspn;
+  if (daEspn || orari) fs.writeFileSync(path.join(proto, "data.js"), "window.SERIE_A=" + JSON.stringify(window.SERIE_A) + ";");
+  got.espn = daEspn; got.orariEspn = orari;
 
   // Marcatori di Serie A da ESPN: le stagioni finite restano in cache, quella in corso si riscarica ogni volta
   const marc = await require("./marcatori-a.js").aggiorna(window.SERIE_A, [season]);

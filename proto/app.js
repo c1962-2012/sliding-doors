@@ -64,7 +64,7 @@ function nRounds(){ return 2*(nTeams()-1) }
 // I file non hanno la giornata (e i rinvii la rendono ambigua): si lavora per data, raggruppando per mese
 // La stagione in corso ha anche il numero di giornata (dal calendario ufficiale): lì si filtra per giornata.
 function buildSeason(raw){
-  return raw.slice().sort((x,y) => x[0].localeCompare(y[0])).map(([d,h,a,g1,g2,r]) => [d.slice(0,7),d,h,a,g1,g2,r||null]);
+  return raw.slice().sort((x,y) => x[0].localeCompare(y[0])).map(([d,h,a,g1,g2,r,t]) => [d.slice(0,7),d,h,a,g1,g2,r||null,t||null]);
 }
 function hasRounds(){ return matches().every(m => m[6]) }
 function roundKey(m){ return hasRounds() ? String(m[6]) : m[0] }
@@ -281,7 +281,7 @@ function upcomingBig(){
     const s = overrides[i];
     return `<button class="moment ${s?"on":""}" data-big="${i}">
       <span class="q">${kit(m[2])}${m[2]} – ${kit(m[3])}${m[3]}</span>
-      <span class="meta"><span class="badge">${b}</span> ${m[6] ? m[6]+"ª giornata · " : ""}${fmtDate(m[1])}${s ? ` · tuo pronostico <b>${s[0]}-${s[1]}</b>` : ""}</span></button>`;
+      <span class="meta"><span class="badge">${b}</span> ${m[6] ? m[6]+"ª giornata · " : ""}${fmtDate(m[1])}${m[7] ? ` · ore ${m[7]}` : ""}${s ? ` · tuo pronostico <b>${s[0]}-${s[1]}</b>` : ""}</span></button>`;
   }).join("");
 }
 
@@ -307,7 +307,7 @@ function renderList(){
           <span class="step"><button data-d="1,1" aria-label="Gol in più ${m[3]}">▲</button><button data-d="1,-1" aria-label="Gol in meno ${m[3]}">▼</button></span>
         </span><span class="a">${m[3]}</span></div>
       <div class="x12">${["1","X","2"].map(x=>`<button data-x="${x}" class="${res===x?"on":""}" aria-label="Segno ${x}">${x}</button>`).join("")}</div>
-      <div class="minfo"><span>${m[6] ? `${m[6]}ª giornata · ` : ""}${fmtDate(m[1])}${big[i] ? ` <span class="badge">${big[i]}</span>` : ""}</span><span class="orig">${note}</span></div>
+      <div class="minfo"><span>${m[6] ? `${m[6]}ª giornata · ` : ""}${fmtDate(m[1])}${m[4] === null && m[7] ? ` · <b>ore ${m[7]}</b>` : ""}${big[i] ? ` <span class="badge">${big[i]}</span>` : ""}</span><span class="orig">${note}</span></div>
     </div>`;
   }).join("") || `<p class="empty">Nessuna partita con questi filtri.</p>`;
   if (flashIdx!==null){ const el = $("list").querySelector(`[data-i="${flashIdx}"]`); el && el.scrollIntoView({block:"nearest"}); flashIdx = null }
