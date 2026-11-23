@@ -189,7 +189,7 @@ function render(){
       const dpos = realPos[r.team] - (i+1), dpt = r.pt - realPt[r.team];
       const cls = i<CL ? "cl" : i>=alt.length-REL ? "rel" : "";
       const arrow = dpos>0 ? `<span class="up">▲${dpos}</span>` : dpos<0 ? `<span class="down">▼${-dpos}</span>` : `<span class="same">–</span>`;
-      return `<tr class="${cls}"><td>${i+1}</td><td class="t">${kit(r.team)}${r.team}</td><td>${r.g}</td><td>${r.gf}</td><td>${r.gs}</td><td>${r.gf-r.gs>0?"+":""}${r.gf-r.gs}</td>
+      return `<tr class="${cls}"><td>${i+1}</td><td class="t"><button class="team-link" type="button" data-team="${r.team}">${kit(r.team)}${r.team}</button></td><td>${r.g}</td><td>${r.gf}</td><td>${r.gs}</td><td>${r.gf-r.gs>0?"+":""}${r.gf-r.gs}</td>
         <td class="same">${realPt[r.team]}</td><td><b>${r.pt}</b>${dpt? ` <span class="${dpt>0?"up":"down"}">${dpt>0?"+":""}${dpt}</span>`:""}</td><td>${arrow}</td></tr>`;
     }).join("") + "</tbody>";
 
@@ -810,7 +810,8 @@ document.addEventListener("click", e => {
 });
 
 function showView(v){
-  ["a","cup","eu","sc"].forEach(x => $("view-"+x).hidden = x!==v);
+  ["a","cup","eu","sc","sch"].forEach(x => $("view-"+x).hidden = x!==v);
+  if (v === "sch" && window.SD_schedineRender) SD_schedineRender();
   currentView = v;
   publish3D();
   document.querySelectorAll("#tabs button").forEach(b => b.setAttribute("aria-pressed", b.dataset.view===v));
@@ -824,7 +825,7 @@ setSeason(CURRENT);
   const up = $("updated");
   if (up && lastPlayed) up.textContent = `Serie A aggiornata alle partite del ${fmtDate(lastPlayed)}`;
 }
-showView({ "#coppa":"cup", "#europa":"eu", "#marcatori":"sc" }[location.hash] || "a");
+showView({ "#coppa":"cup", "#europa":"eu", "#marcatori":"sc", "#schedine":"sch" }[location.hash] || "a");
 
 // ---- Risultati in tempo reale (ESPN, senza chiave) ----
 // Durante le partite il punteggio della stagione in corso si aggiorna da solo: classifica, lista e Sliding Doors si ricalcolano.
@@ -916,10 +917,22 @@ showView({ "#coppa":"cup", "#europa":"eu", "#marcatori":"sc" }[location.hash] ||
   function annunciaGol(chi){
     flash.innerHTML = `⚽ GOL!<small>${chi.map(x => x.testo).join("<br>")}</small>`;
     flash.hidden = false; clearTimeout(flashTimer); flashTimer = setTimeout(() => flash.hidden = true, 7000);
+    const squadre = chi.flatMap(x => x.squadre || []);
+    // gol con annuncio speciale (grancassa, coro della curva e voce già insieme): parte subito, senza la tromba
+    const speciale = squadre.length === 1 && SPECIALI[squadre[0]];
+    if (speciale){
+      if (!suonoOn) return;
+      try { navigator.vibrate && navigator.vibrate([250, 120, 250, 120, 500]) } catch(e){}
+      new Audio(speciale).play().catch(() => {});
+      return;
+    }
     suonoGol();
-    // la voce parte dopo gli squilli di tromba
-    setTimeout(() => voce(chi.flatMap(x => x.squadre || [])), 1300);
+    // voce che dice la squadra: spenta finché non c'è una voce italiana vera (i file vanno in voci/<Squadra>.mp3)
+    if (VOCI_SQUADRE) setTimeout(() => voce(squadre), 1300);
   }
+  // annunci speciali: un solo file con musica e voce
+  const SPECIALI = { Roma: "voci/Roma-speciale.wav" };
+  const VOCI_SQUADRE = false;
   window.SD_provaGol = (t = "Roma") => annunciaGol([{ testo: `Prova: gol ${t}`, squadre: [t] }]);
   // pulsantino nella barra: finché il browser non ha avuto un tocco l'audio è bloccato, e lo si dice
   const pulsanteSuono = () => `<button class="snd" type="button" data-suono title="Suono e voce quando una squadra segna">${!suonoOn ? "🔕 Suono gol spento" : sbloccato ? "🔔 Suono gol attivo" : "🔊 Attiva l'audio"}</button>`;
@@ -1012,6 +1025,7 @@ showView({ "#coppa":"cup", "#europa":"eu", "#marcatori":"sc" }[location.hash] ||
       }
       if (changed){
         delete CACHE[CURRENT]; if (season === CURRENT) render();
+        if (currentView === "sch" && window.SD_schedineRender) SD_schedineRender();
         // la scritta "aggiornata alle partite del..." segue anche i risultati arrivati in diretta
         const ultima = rows.filter(m => m[3] !== null).map(m => m[0]).sort().pop();
         if (up && ultima) up.textContent = `Serie A aggiornata alle partite del ${fmtDate(ultima)}`;
@@ -1021,4 +1035,331 @@ showView({ "#coppa":"cup", "#europa":"eu", "#marcatori":"sc" }[location.hash] ||
   }
   live();
   document.addEventListener("visibilitychange", () => { if (!document.hidden) live() });
+}
+
+// ---------------- Finestra a comparsa (scheda squadra, immagine da condividere) ----------------
+const pop = (() => {
+  const st = document.createElement("style");
+  st.textContent = "#sdPop{position:fixed;inset:0;z-index:10050;background:rgba(2,6,14,.78);backdrop-filter:blur(4px);display:flex;align-items:flex-start;justify-content:center;overflow:auto;padding:24px 12px}" +
+    "#sdPop[hidden]{display:none}#sdPop .box{position:relative;width:min(560px,100%);background:var(--paper-solid);border:1px solid var(--line-hi);border-radius:18px;padding:20px 20px 22px;box-shadow:var(--glow)}" +
+    "#sdPop .x{position:absolute;top:10px;right:10px;width:36px;height:36px;border-radius:50%;border:1px solid var(--line);background:transparent;font-size:18px}" +
+    "#sdPop h2{font-family:var(--f-display);font-size:30px;letter-spacing:.02em;margin:0 40px 2px 0;display:flex;align-items:center;gap:10px;text-transform:uppercase}" +
+    "#sdPop h3{font-family:var(--f-display);font-size:17px;letter-spacing:.06em;text-transform:uppercase;color:var(--muted);margin:18px 0 8px}" +
+    "#sdPop .sub{color:var(--muted);margin:0}#sdPop .big{font-size:18px;margin:10px 0 0}" +
+    "#sdPop .form{display:flex;gap:6px;flex-wrap:wrap}#sdPop .f{width:34px;height:34px;border-radius:9px;display:grid;place-items:center;font-weight:700;color:#071018}" +
+    "#sdPop .f.V{background:var(--good)}#sdPop .f.N{background:#c9d3e6}#sdPop .f.P{background:var(--bad);color:#fff}" +
+    "#sdPop .rows{display:grid;gap:6px}#sdPop .r{display:flex;justify-content:space-between;gap:10px;padding:8px 10px;border-radius:10px;background:rgba(255,255,255,.04)}" +
+    "#sdPop .r small{color:var(--muted)}#sdPop img.story{display:block;width:100%;max-width:340px;margin:12px auto;border-radius:14px;border:1px solid var(--line)}" +
+    "#sdPop .acts{display:flex;gap:10px;justify-content:center;flex-wrap:wrap;margin-top:8px}" +
+    "#sdPop .acts button{border:0;border-radius:999px;padding:10px 18px;font-weight:700;background:var(--accent);color:#fff}" +
+    ".team-link{all:unset;cursor:pointer;display:inline-flex;align-items:center;gap:inherit}.team-link:hover{text-decoration:underline}.team-link:focus-visible{outline:2px solid var(--accent);outline-offset:2px}";
+  document.head.appendChild(st);
+  const el = document.createElement("div");
+  el.id = "sdPop"; el.hidden = true; el.setAttribute("role", "dialog"); el.setAttribute("aria-modal", "true");
+  document.body.appendChild(el);
+  const close = () => { el.hidden = true; el.innerHTML = "" };
+  el.addEventListener("click", e => { if (e.target === el || e.target.closest(".x")) close() });
+  addEventListener("keydown", e => { if (e.key === "Escape" && !el.hidden) close() });
+  return { open(html){ el.innerHTML = `<div class="box"><button class="x" type="button" aria-label="Chiudi">✕</button>${html}</div>`; el.hidden = false; el.scrollTop = 0; return el }, close };
+})();
+
+// ---------------- Scheda della squadra ----------------
+function schedaSquadra(t){
+  const ms = matches(), S = season.replace("-", "/");
+  const real = table(withScores(false)), pos = real.findIndex(r => r.team === t), r = real[pos];
+  const giocate = ms.filter(m => (m[2] === t || m[3] === t) && m[4] !== null).sort((a, b) => b[1].localeCompare(a[1]));
+  const esito = m => { const casa = m[2] === t, f = casa ? m[4] : m[5], s = casa ? m[5] : m[4]; return f > s ? "V" : f < s ? "P" : "N" };
+  const ultime = giocate.slice(0, 5);
+  const prossime = ms.filter(m => (m[2] === t || m[3] === t) && m[4] === null).sort((a, b) => a[1].localeCompare(b[1])).slice(0, 3);
+  const A = (window.MARCATORI_A || {})[season], marc = A ? (A.sc || []).filter(x => x[1] === t).slice(0, 5) : [];
+  const riga = m => `<div class="r"><span>${m[2] === t ? `<b>${m[2]}</b> – ${m[3]}` : `${m[2]} – <b>${m[3]}</b>`}</span><span class="num">${m[4] === null ? (m[7] ? `ore ${m[7]}` : "") : `${m[4]}-${m[5]}`} <small>${fmtDate(m[1])}</small></span></div>`;
+  pop.open(`<h2>${kit(t)}${t}</h2><p class="sub">Stagione ${S}</p>
+    ${r ? `<p class="big"><b>${pos + 1}º posto</b> · ${r.pt} punti · ${r.w} vinte, ${r.d} pari, ${r.l} perse · gol ${r.gf}-${r.gs}</p>` : ""}
+    ${ultime.length ? `<h3>Ultime ${ultime.length} partite</h3><div class="form">${ultime.slice().reverse().map(m => `<span class="f ${esito(m)}" title="${m[2]} ${m[4]}-${m[5]} ${m[3]}">${esito(m)}</span>`).join("")}</div>
+      <div class="rows" style="margin-top:8px">${ultime.map(riga).join("")}</div>` : ""}
+    ${prossime.length ? `<h3>Prossime partite</h3><div class="rows">${prossime.map(riga).join("")}</div>` : ""}
+    ${marc.length ? `<h3>Marcatori</h3><div class="rows">${marc.map(x => `<div class="r"><span>${x[0]}</span><span class="num"><b>${x[2]}</b> gol${x[3] ? ` <small>(${x[3]} rig.)</small>` : ""}</span></div>`).join("")}</div>` : ""}`);
+}
+$("table").addEventListener("click", e => { const b = e.target.closest("[data-team]"); if (b) schedaSquadra(b.dataset.team) });
+
+// ---------------- Le mie schedine e quelle degli amici ----------------
+// Ognuno prepara la schedina di una giornata intera (1, X, 2, anche doppie e triple) e la firma con il suo nome.
+// "Manda agli amici" crea un link che contiene la schedina: chi lo apre se la ritrova nella cartella "Schedine degli amici".
+// Tutto resta nel browser di chi usa l'app (nessun account, nessun server); a partite giocate l'app controlla e fa la classifica.
+{
+  const KEY = "sd-schedine", KEY_FIRMA = "sd-firma";
+  const AVATAR = ["⚽", "🦁", "🔥", "👑", "🐺", "🦅", "🐉", "🍀", "😎", "🤖", "👻", "🎯", "🍕", "🚀", "🐐", "🧢"];
+  const leggi = () => { try { return JSON.parse(localStorage.getItem(KEY)) || [] } catch(e){ return [] } };
+  const scrivi = l => { try { localStorage.setItem(KEY, JSON.stringify(l)); return true } catch(e){ return false } };
+  const firma = () => { try { return JSON.parse(localStorage.getItem(KEY_FIRMA)) || { nome: "", avatar: "⚽" } } catch(e){ return { nome: "", avatar: "⚽" } } };
+  const salvaFirma = f => { try { localStorage.setItem(KEY_FIRMA, JSON.stringify(f)) } catch(e){} };
+  const esc = t => String(t).replace(/[&<>"']/g, c => ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;", "'": "&#39;" }[c]));
+  const st = document.createElement("style");
+  st.textContent = ".sch-row{display:grid;grid-template-columns:1fr auto;gap:8px 12px;align-items:center;padding:10px 12px;border-radius:12px;background:rgba(255,255,255,.04);border:1px solid var(--line)}" +
+    ".sch-row .who{font-weight:600}.sch-row .when{color:var(--muted);font-size:13px}.sch-row .pick{display:flex;gap:6px}" +
+    ".sch-row .pick button{width:40px;height:36px;border-radius:9px;border:1px solid var(--line-hi);background:transparent;font-weight:700}" +
+    ".sch-row .pick button[aria-pressed=true]{background:var(--accent);border-color:var(--accent);color:#fff}" +
+    ".sch-save{margin-top:14px;width:100%;border:0;border-radius:999px;padding:12px 18px;font-weight:700;background:var(--accent);color:#fff}.sch-save:disabled{opacity:.45;cursor:default}" +
+    ".sch-firma{display:grid;gap:8px;margin-bottom:14px;padding:12px;border-radius:14px;border:1px solid var(--line-hi);background:rgba(255,255,255,.03)}" +
+    ".sch-firma label{color:var(--muted);font-size:13px}.sch-firma input{width:100%;padding:9px 12px;border-radius:10px;border:1px solid var(--line-hi);background:var(--bg2);color:var(--ink);font:inherit}" +
+    ".sch-firma input.no{border-color:var(--bad)}.sch-av{display:flex;flex-wrap:wrap;gap:6px}" +
+    ".sch-av button{width:38px;height:38px;border-radius:10px;border:1px solid var(--line);background:transparent;font-size:20px}.sch-av button[aria-pressed=true]{border-color:var(--gold);background:rgba(255,207,74,.18)}" +
+    ".sch-card{border:1px solid var(--line-hi);border-radius:16px;padding:14px;margin-bottom:14px;background:rgba(255,255,255,.03)}" +
+    ".sch-card header{display:flex;justify-content:space-between;align-items:flex-start;gap:10px;margin-bottom:10px}" +
+    ".sch-card h3{margin:0;font-family:var(--f-display);font-size:22px;letter-spacing:.03em;text-transform:uppercase}" +
+    ".sch-card .punti{font-family:var(--f-display);font-size:26px;color:var(--gold);white-space:nowrap}.sch-card .meta{color:var(--muted);font-size:13px}" +
+    ".sch-card .r{display:grid;grid-template-columns:auto 1fr auto auto;gap:10px;align-items:center;padding:7px 4px;border-top:1px solid var(--line);font-size:14px}" +
+    ".sch-card .r .mio{font-weight:700;min-width:46px;text-align:center;border-radius:8px;padding:2px 6px;background:rgba(255,255,255,.07)}" +
+    ".sch-card .r .vero{font-family:var(--f-mono);color:var(--muted)}" +
+    ".sch-btn{border:1px solid var(--line-hi);background:transparent;border-radius:999px;padding:5px 12px;font-size:13px;color:var(--muted)}" +
+    ".sch-btn.send{border:0;background:#25d366;color:#05210f;font-weight:700}.sch-acts{display:flex;gap:6px;justify-content:flex-end;flex-wrap:wrap;margin-top:6px}" +
+    ".sch-rank{display:grid;gap:6px;margin:6px 0 10px}.sch-rank .p{display:grid;grid-template-columns:28px 1fr auto;align-items:center;gap:8px;padding:8px 10px;border-radius:12px;background:rgba(255,255,255,.05)}" +
+    ".sch-rank .p.me{outline:1px solid var(--gold)}.sch-rank .av{font-size:22px}.sch-rank .pt{font-family:var(--f-display);font-size:22px;color:var(--gold)}" +
+    ".sch-card details{border-top:1px solid var(--line);padding-top:6px;margin-top:6px}.sch-card summary{cursor:pointer;padding:6px 2px;font-weight:600}" +
+    ".sch-share{display:grid;grid-template-columns:1fr 1fr;gap:10px;margin-top:14px}.sch-share button{border:1px solid var(--line-hi);background:rgba(255,255,255,.05);border-radius:14px;padding:14px 10px;font-weight:700;font-size:17px;display:grid;gap:2px}" +
+    ".sch-share button small{font-weight:400;font-size:12px;color:var(--muted)}.sch-share .wa{background:#25d366;color:#05210f;border:0}.sch-share .wa small{color:#0b3d20}" +
+    ".sch-share .ig{background:linear-gradient(45deg,#f58529,#dd2a7b,#8134af);color:#fff;border:0}.sch-share .ig small{color:#ffe}" +
+    "#schToast{position:fixed;left:50%;bottom:24px;transform:translateX(-50%);z-index:10060;background:#22e08b;color:#04150c;font-weight:700;padding:12px 18px;border-radius:999px;box-shadow:0 10px 30px rgba(0,0,0,.5)}#schToast[hidden]{display:none}";
+  document.head.appendChild(st);
+  const toast = document.createElement("div"); toast.id = "schToast"; toast.hidden = true; document.body.appendChild(toast);
+  let toastT = null;
+  const avvisa = t => { toast.textContent = t; toast.hidden = false; clearTimeout(toastT); toastT = setTimeout(() => toast.hidden = true, 4000) };
+
+  const righe = () => SERIE_A[CURRENT] || [];
+  const segno = (a, b) => a > b ? "1" : a < b ? "2" : "X";
+  const MAX_TRIPLE = 1, MAX_DOPPIE = 2;   // regola della schedina
+  let bozza = {};   // pronostici della schedina che si sta preparando: "Casa|Ospite" -> {s}
+
+  // la schedina è sempre una giornata intera: si possono scegliere solo le giornate con tutte le partite ancora da giocare
+  function giornateAperte(){
+    const tutte = [...new Set(righe().filter(m => m[5]).map(m => m[5]))];
+    return tutte.filter(r => righe().filter(m => m[5] === r).every(m => m[3] === null)).sort((a, b) => a - b);
+  }
+  const partiteGiornata = (r, stag = CURRENT) => (SERIE_A[stag] || []).filter(m => m[5] === r);
+  // ordine fisso delle partite di una giornata, uguale su tutti i telefoni: serve per scrivere la schedina nel link
+  const ordine = (r, stag) => partiteGiornata(r, stag).map(m => m[1] + "|" + m[2]).sort();
+
+  // ---- firma: il nome ----
+  function disegnaFirma(){
+    const f = firma();
+    $("schFirma").innerHTML = `<label for="schNome">La tua firma: il nome che vedranno i tuoi amici</label>
+      <input id="schNome" maxlength="20" placeholder="Il tuo nome (es. Giovanni)" value="${esc(f.nome)}" autocomplete="nickname">`;
+  }
+  $("schFirma").addEventListener("input", e => { if (e.target.id === "schNome"){ salvaFirma({ ...firma(), nome: e.target.value.trim() }); e.target.classList.remove("no") } });
+
+  // ---- nuova schedina ----
+  function disegnaNuova(){
+    const sel = $("schRound"), aperte = giornateAperte();
+    if (!aperte.length){ sel.innerHTML = ""; $("schNew").innerHTML = `<p class="empty">Non ci sono partite da giocare in questa stagione.</p>`; $("schSave").disabled = true; return }
+    const scelta = aperte.includes(+sel.value) ? +sel.value : aperte[0];
+    sel.innerHTML = aperte.map(r => `<option value="${r}" ${r === scelta ? "selected" : ""}>${r}ª giornata</option>`).join("");
+    const ms = partiteGiornata(scelta).sort((a, b) => (a[0] + (a[6] || "")).localeCompare(b[0] + (b[6] || "")));
+    $("schNew").innerHTML = ms.map(m => {
+      const k = m[1] + "|" + m[2], p = bozza[k] || {};
+      return `<div class="sch-row" data-k="${k}"><div><div class="who">${kit(m[1])}${m[1]} – ${kit(m[2])}${m[2]}</div><div class="when">${fmtDate(m[0])}${m[6] ? ` · ore ${m[6]}` : ""}</div></div>
+        <div class="pick" role="group" aria-label="Pronostico">${["1", "X", "2"].map(s => `<button type="button" data-s="${s}" aria-pressed="${!!(p.s && p.s.includes(s))}">${s}</button>`).join("")}</div></div>`;
+    }).join("");
+    aggiornaSalva();
+  }
+  const colonneTesto = (vs, sep) => { const d = vs.filter(s => s.length === 2).length, t = vs.filter(s => s.length === 3).length;
+    return d || t ? `${sep}${[d && `${d} doppi${d === 1 ? "a" : "e"}`, t && `${t} tripl${t === 1 ? "a" : "e"}`].filter(Boolean).join(", ")} · ${2 ** d * 3 ** t} colonne` : "" };
+  function aggiornaSalva(){
+    const tot = partiteGiornata(+$("schRound").value).length, ps = Object.values(bozza).filter(p => p.s).map(p => p.s), manca = tot - ps.length;
+    $("schSave").disabled = manca > 0;
+    const extra = colonneTesto(ps, " · ");
+    $("schSave").textContent = manca > 0 ? `${manca === 1 ? "Manca 1 pronostico" : `Mancano ${manca} pronostici`} su ${tot}${extra}` : `💾 Salva schedina (${tot} partite${extra})`;
+  }
+  $("schRound").addEventListener("change", () => { bozza = {}; disegnaNuova() });
+  $("schNew").addEventListener("click", e => {
+    const b = e.target.closest("[data-s]"); if (!b) return;
+    const p = bozza[b.closest("[data-k]").dataset.k] ||= {};
+    // ogni casella si accende e si spegne da sola: una = fisso, due = doppia, tre = tripla
+    const segnate = new Set(p.s || ""); segnate.has(b.dataset.s) ? segnate.delete(b.dataset.s) : segnate.add(b.dataset.s);
+    const nuovo = ["1", "X", "2"].filter(x => segnate.has(x)).join("") || null;
+    // regola della schedina: al massimo 1 tripla e 2 doppie, tutte le altre partite con un segno solo
+    const altre = Object.values(bozza).filter(q => q !== p && q.s).map(q => q.s.length);
+    const doppie = altre.filter(n => n === 2).length + (nuovo && nuovo.length === 2 ? 1 : 0), triple = altre.filter(n => n === 3).length + (nuovo && nuovo.length === 3 ? 1 : 0);
+    if (triple > MAX_TRIPLE || doppie > MAX_DOPPIE){ avvisa(`Puoi giocare al massimo ${MAX_TRIPLE} tripla e ${MAX_DOPPIE} doppie: le altre partite con un segno solo`); return }
+    p.s = nuovo;
+    b.parentNode.querySelectorAll("button").forEach(x => x.setAttribute("aria-pressed", !!(p.s && p.s.includes(x.dataset.s))));
+    aggiornaSalva();
+  });
+  $("schSave").addEventListener("click", () => {
+    const f = firma();
+    if (!f.nome){ const n = $("schNome"); n.classList.add("no"); n.focus(); n.scrollIntoView({ block: "center" }); avvisa("Scrivi prima il tuo nome per firmare la schedina"); return }
+    const r = +$("schRound").value, pron = Object.fromEntries(Object.entries(bozza).filter(([, p]) => p.s).map(([k, p]) => [k, { s: p.s }]));
+    if (Object.keys(pron).length < partiteGiornata(r).length) return;
+    const l = leggi();
+    l.unshift({ id: Date.now().toString(36) + Math.random().toString(36).slice(2, 6), mia: true, nome: f.nome, avatar: f.avatar, creata: new Date().toISOString(), stagione: CURRENT, giornata: r, pron });
+    if (!scrivi(l)){ alert("Non riesco a salvare: questo browser non permette di salvare dati (forse sei in navigazione in incognito)."); return }
+    bozza = {}; disegnaNuova(); disegnaElenchi();
+    avvisa("Schedina salvata. Ora mandala agli amici!");
+    $("schList").scrollIntoView({ behavior: "smooth", block: "start" });
+  });
+
+  // ---- link per gli amici: tutta la schedina in un indirizzo ----
+  const b64 = t => btoa(unescape(encodeURIComponent(t))).replace(/\+/g, "-").replace(/\//g, "_").replace(/=+$/, "");
+  const deb64 = t => decodeURIComponent(escape(atob(t.replace(/-/g, "+").replace(/_/g, "/"))));
+  const BASE = "https://c1962-2012.github.io/sliding-doors/";   // il link porta sempre all'app vera
+  function linkSchedina(sc){
+    const segni = ordine(sc.giornata, sc.stagione).map(k => (sc.pron[k] || {}).s || "-").join(",");
+    return BASE + "#s=" + b64(["1", sc.stagione, sc.giornata, sc.nome, sc.avatar, sc.creata.slice(0, 16), sc.id, segni].join("~"));
+  }
+  function importa(cod){
+    try {
+      const [v, stagione, g, nome, avatar, creata, id, segni] = deb64(cod).split("~"), giornata = +g;
+      if (v !== "1" || !SERIE_A[stagione]) return "Link della schedina non valido";
+      const chiavi = ordine(giornata, stagione), lista = segni.split(",");
+      if (chiavi.length !== lista.length || !lista.every(x => /^(1|X|2|1X|X2|12|1X2)$/.test(x))) return "Link della schedina non valido";
+      const l = leggi();
+      const gia = l.find(s => s.id === id);
+      if (gia) return gia.mia !== false ? "Questa è una tua schedina" : `La schedina di ${nome} c'è già`;
+      l.push({ id, mia: false, nome: nome.slice(0, 20), avatar: [...avatar][0] || "⚽", creata: creata + ":00Z", stagione, giornata, pron: Object.fromEntries(chiavi.map((k, i) => [k, { s: lista[i] }])) });
+      scrivi(l);
+      return `✅ Aggiunta la schedina di ${nome.slice(0, 20)} (${giornata}ª giornata)`;
+    } catch(e){ return "Link della schedina non valido" }
+  }
+  const copia = async t => { try { await navigator.clipboard.writeText(t); return true } catch(e){
+    const x = document.createElement("textarea"); x.value = t; x.style.position = "fixed"; x.style.opacity = "0"; document.body.appendChild(x); x.select();
+    let ok = false; try { ok = document.execCommand("copy") } catch(err){} x.remove(); return ok } };
+  // ---- la schedina disegnata come immagine (come quella del Totocalcio), da mandare agli amici ----
+  async function immagineSchedina(sc){
+    const ms = partiteGiornata(sc.giornata, sc.stagione).slice().sort((a, b) => (a[0] + (a[6] || "")).localeCompare(b[0] + (b[6] || "")));
+    const W = 1080, top = 330, riga = 112, H = top + ms.length * riga + 260;
+    const c = document.createElement("canvas"); c.width = W; c.height = H;
+    const g = c.getContext("2d"), D = '"Big Shoulders Display", Impact, sans-serif', B = '"IBM Plex Sans", "Segoe UI", sans-serif';
+    try { await Promise.all([document.fonts.load('800 80px "Big Shoulders Display"'), document.fonts.load('600 40px "IBM Plex Sans"')]) } catch(e){}
+    const bg = g.createLinearGradient(0, 0, 0, H); bg.addColorStop(0, "#0b1424"); bg.addColorStop(1, "#050a14"); g.fillStyle = bg; g.fillRect(0, 0, W, H);
+    const luce = g.createRadialGradient(W * .9, 0, 10, W * .9, 0, 600); luce.addColorStop(0, "rgba(255,77,109,.35)"); luce.addColorStop(1, "rgba(255,77,109,0)"); g.fillStyle = luce; g.fillRect(0, 0, W, H);
+    // intestazione
+    g.textBaseline = "top"; g.font = `800 84px ${D}`; g.fillStyle = "#eef3ff"; g.fillText("SCHEDINA", 60, 50);
+    g.fillStyle = "#ff4d6d"; g.fillText(`${sc.giornata}ª GIORNATA`, 60 + g.measureText("SCHEDINA ").width, 50);
+    g.font = `600 40px ${B}`; g.fillStyle = "#ffcf4a"; g.fillText(sc.nome || "", 62, 158);
+    g.font = `500 30px ${B}`; g.fillStyle = "#93a4c3";
+    const vs = Object.values(sc.pron).map(p => p.s), d = vs.filter(x => x.length === 2).length, t = vs.filter(x => x.length === 3).length;
+    g.fillText(`Serie A ${sc.stagione.replace("-", "/")}${d || t ? ` · ${[d && `${d} doppi${d === 1 ? "a" : "e"}`, t && `${t} tripl${t === 1 ? "a" : "e"}`].filter(Boolean).join(", ")} · ${2 ** d * 3 ** t} colonne` : ""}`, 62, 214);
+    // intestazione colonne 1 X 2
+    const X0 = 760, step = 92;
+    g.font = `800 40px ${D}`; g.fillStyle = "#93a4c3"; g.textAlign = "center";
+    ["1", "X", "2"].forEach((x, i) => g.fillText(x, X0 + i * step + 36, top - 58));
+    g.textAlign = "left";
+    ms.forEach((m, i) => {
+      const y = top + i * riga, p = sc.pron[m[1] + "|" + m[2]] || {};
+      g.fillStyle = i % 2 ? "rgba(255,255,255,.03)" : "rgba(255,255,255,.06)"; g.beginPath(); g.roundRect(40, y, W - 80, riga - 12, 18); g.fill();
+      g.font = `800 30px ${D}`; g.fillStyle = "#5b6b88"; g.fillText(String(i + 1).padStart(2, "0"), 64, y + 34);
+      g.font = `600 36px ${B}`; g.fillStyle = "#eef3ff"; g.fillText(`${m[1]} – ${m[2]}`, 122, y + 16);
+      g.font = `500 24px ${B}`; g.fillStyle = "#93a4c3"; g.fillText(`${fmtDate(m[0])}${m[6] ? ` · ore ${m[6]}` : ""}`, 124, y + 62);
+      ["1", "X", "2"].forEach((x, j) => {
+        const bx = X0 + j * step, by = y + 16, on = (p.s || "").includes(x);
+        g.lineWidth = 3; g.strokeStyle = on ? "#ff4d6d" : "rgba(170,200,255,.35)"; g.fillStyle = on ? "#ff4d6d" : "transparent";
+        g.beginPath(); g.roundRect(bx, by, 72, 68, 14); if (on) g.fill(); g.stroke();
+        g.textAlign = "center"; g.font = `800 40px ${D}`; g.fillStyle = on ? "#ffffff" : "rgba(170,200,255,.45)"; g.fillText(x, bx + 36, by + 12); g.textAlign = "left";
+      });
+    });
+    // piede: invito e firma
+    const fy = top + ms.length * riga + 40;
+    g.textAlign = "center"; g.font = `600 34px ${B}`; g.fillStyle = "#eef3ff"; g.fillText("Sfidami su Sliding Doors Serie A", W / 2, fy);
+    g.font = `600 32px ${B}`; g.fillStyle = "#ff4d6d"; g.fillText("c1962-2012.github.io/sliding-doors", W / 2, fy + 56);
+    g.font = `500 26px ${B}`; g.fillStyle = "#93a4c3"; g.fillText("un'app di ciuffa62", W / 2, fy + 112); g.textAlign = "left";
+    return new Promise(res => c.toBlob(res, "image/png"));
+  }
+  window.SD_immagineSchedina = async id => { const sc = leggi().find(x => x.id === id); return sc ? immagineSchedina(sc) : null };
+  async function manda(sc){
+    const url = linkSchedina(sc), testo = `La mia schedina della ${sc.giornata}ª giornata. Aggiungila e sfidami su Sliding Doors Serie A: ${url}`;
+    const blob = await immagineSchedina(sc), img = URL.createObjectURL(blob), nomeFile = `schedina-${sc.giornata}-giornata-${(sc.nome || "").replace(/[^\w]+/g, "-")}.png`;
+    const file = new File([blob], nomeFile, { type: "image/png" });
+    const conFile = !!(navigator.canShare && navigator.canShare({ files: [file] }));
+    const box = pop.open(`<h2>Manda la schedina</h2><p class="sub">L'immagine arriva agli amici insieme al link: toccandolo, la tua schedina entra nel loro gruppo.</p>
+      <img class="story" src="${img}" alt="La tua schedina">
+      <div class="sch-share">
+        <button type="button" data-via="wa" class="wa">WhatsApp<small>immagine + link</small></button>
+        <button type="button" data-via="ig" class="ig">Instagram<small>immagine + link</small></button>
+        ${conFile ? `<button type="button" data-via="altre">Altre app<small>Telegram, SMS, email…</small></button>` : ""}
+        <button type="button" data-via="copia">Copia link<small>solo il link</small></button>
+      </div><p class="sub" id="schShareMsg" style="margin-top:10px"></p>`);
+    const msg = m => box.querySelector("#schShareMsg").textContent = m;
+    const copiaImmagine = async () => { try { await navigator.clipboard.write([new ClipboardItem({ "image/png": blob })]); return true } catch(e){ return false } };
+        box.querySelector(".sch-share").addEventListener("click", async e => {
+      const t = e.target.closest("[data-via]"); if (!t) return;
+      if (t.dataset.via === "copia"){ const ok = await copia(testo); msg(ok ? "Link copiato: incollalo dove vuoi." : "Non riesco a copiare in automatico."); return }
+      // telefono: si condividono insieme immagine e testo con il link, e si sceglie WhatsApp o Instagram dal menu
+      // telefono e PC: la finestra Condividi del sistema manda immagine e link direttamente all'app scelta (WhatsApp, Instagram…)
+      if (conFile){ try { await navigator.share({ files: [file], text: testo, title: "La mia schedina" }) } catch(err){} return }
+      // PC: l'immagine va negli appunti, il link nel messaggio già scritto; nella chat basta incollare l'immagine
+      const ok = await copiaImmagine();
+      if (t.dataset.via === "wa"){ location.href = "whatsapp://send?text=" + encodeURIComponent(testo); setTimeout(() => { if (document.hasFocus()) window.open("https://web.whatsapp.com/send?text=" + encodeURIComponent(testo), "_blank", "noopener") }, 1500); msg(ok ? "Si apre WhatsApp con il link già scritto: scegli la chat, premi Ctrl+V per aggiungere l'immagine e invia." : "Si apre WhatsApp con il link: per l'immagine usa Salva immagine e allegala.") }
+      else { window.open("https://www.instagram.com/direct/inbox/", "_blank", "noopener"); msg(ok ? "Si apre Instagram: apri la chat, premi Ctrl+V per mettere l'immagine della schedina e invia. Per il link usa poi Copia link." : "Su Instagram apri la chat e allega l'immagine; per il link usa Copia link.") }
+    });
+  }
+
+
+  // ---- elenchi: le mie schedine e il gruppo (classifica per giornata) ----
+  function controlla(sc){
+    const rs = SERIE_A[sc.stagione] || [];
+    let ok = 0, ko = 0, attesa = 0;
+    const rows = Object.entries(sc.pron).map(([k, p]) => {
+      const [h, a] = k.split("|"), m = rs.find(x => x[1] === h && x[2] === a), giocata = m && m[3] !== null;
+      let stato = "⏳";
+      if (giocata){ const giusto = p.s.includes(segno(m[3], m[4])); giusto ? ok++ : ko++; stato = giusto ? "✅" : "❌" } else attesa++;
+      return { h, a, m, giocata, stato, s: p.s };
+    }).sort((x, y) => x.m && y.m ? (x.m[0] + (x.m[6] || "")).localeCompare(y.m[0] + (y.m[6] || "")) : 0);
+    return { ok, ko, attesa, rows };
+  }
+  const righeHtml = rows => rows.map(r => `<div class="r"><span>${r.stato}</span><span>${r.h} – ${r.a}${r.m && !r.giocata ? ` <span class="meta">· ${fmtDate(r.m[0])}${r.m[6] ? ` ore ${r.m[6]}` : ""}</span>` : ""}</span><span class="mio">${r.s}</span><span class="vero">${r.giocata ? `${r.m[3]}-${r.m[4]}` : ""}</span></div>`).join("");
+  const quando = sc => new Date(sc.creata).toLocaleString("it-IT", { day: "numeric", month: "short", hour: "2-digit", minute: "2-digit" });
+
+  function disegnaElenchi(){
+    const l = leggi(), mie = l.filter(s => s.mia !== false);
+    $("schList").innerHTML = mie.length ? mie.map(sc => {
+      const c = controlla(sc), tot = c.ok + c.ko;
+      return `<article class="sch-card"><header><div><h3>${sc.giornata}ª giornata ${sc.stagione.replace("-", "/")}</h3>
+        <div class="meta">${sc.nome ? `Firmata ${esc(sc.nome)} · ` : ""}fatta il ${quando(sc)}${colonneTesto(Object.values(sc.pron).map(p => p.s), " · ")}${c.attesa ? ` · ${c.attesa} da giocare` : " · completata"}</div></div>
+        <div class="punti">${tot ? `${c.ok}/${tot}` : "–"}</div></header>
+        <div class="sch-acts">${sc.nome ? `<button class="sch-btn send" type="button" data-send="${sc.id}">📤 Manda agli amici</button>` : ""}<button class="sch-btn" type="button" data-del="${sc.id}">Elimina</button></div>${righeHtml(c.rows)}</article>`;
+    }).join("") : `<p class="empty">Non hai ancora schedine. Preparane una qui accanto.</p>`;
+
+    // il gruppo: per ogni giornata con schedine degli amici, classifica di tutti (tu compreso) e le loro schedine
+    const giornate = [...new Set(l.filter(s => s.mia === false).map(s => s.stagione + "|" + s.giornata))]
+      .sort((a, b) => b.localeCompare(a, undefined, { numeric: true }));
+    $("schGroup").innerHTML = giornate.length ? giornate.map(gk => {
+      const [stag, g] = gk.split("|"), tutte = l.filter(s => s.stagione === stag && s.giornata === +g && (s.mia === false || s.nome));
+      const cl = tutte.map(sc => ({ sc, c: controlla(sc) })).sort((x, y) => y.c.ok - x.c.ok || x.c.ko - y.c.ko || x.sc.nome.localeCompare(y.sc.nome));
+      const medaglia = i => ["🥇", "🥈", "🥉"][i] || `${i + 1}º`;
+      const finita = cl.every(x => !x.c.attesa), giocate = cl[0] ? cl[0].c.ok + cl[0].c.ko : 0;
+      return `<article class="sch-card"><header><div><h3>${g}ª giornata ${stag.replace("-", "/")}</h3>
+        <div class="meta">${cl.length} schedin${cl.length === 1 ? "a" : "e"} · ${finita ? "classifica finale" : giocate ? `${giocate} partite giocate su ${ordine(+g, stag).length}` : "non ancora iniziata"}</div></div></header>
+        <div class="sch-rank">${cl.map((x, i) => `<div class="p ${x.sc.mia !== false ? "me" : ""}"><span>${giocate ? medaglia(i) : "·"}</span><span>${esc(x.sc.nome)}${x.sc.mia !== false ? " (tu)" : ""}</span><span class="pt">${x.c.ok + x.c.ko ? `${x.c.ok}/${x.c.ok + x.c.ko}` : "–"}</span></div>`).join("")}</div>
+        ${cl.filter(x => x.sc.mia === false).map(x => `<details><summary>${esc(x.sc.nome)} · fatta il ${quando(x.sc)}${colonneTesto(Object.values(x.sc.pron).map(p => p.s), " · ")}</summary>${righeHtml(x.c.rows)}
+          <div class="sch-acts"><button class="sch-btn" type="button" data-del="${x.sc.id}">Togli dal gruppo</button></div></details>`).join("")}</article>`;
+    }).join("") : `<p class="empty">Qui arrivano le schedine dei tuoi amici: quando ti mandano il link, toccalo e la loro schedina compare qui, con la classifica del gruppo.</p>`;
+  }
+  const azioni = e => {
+    const s = e.target.closest("[data-send]"); if (s){ const sc = leggi().find(x => x.id === s.dataset.send); if (sc) manda(sc); return }
+    const d = e.target.closest("[data-del]"); if (!d) return;
+    if (!confirm("Vuoi eliminare questa schedina? Non si può recuperare.")) return;
+    scrivi(leggi().filter(x => x.id !== d.dataset.del)); disegnaElenchi();
+  };
+  $("schList").addEventListener("click", azioni);
+  $("schGroup").addEventListener("click", azioni);
+
+  window.SD_schedineRender = () => { disegnaFirma(); disegnaNuova(); disegnaElenchi() };
+  // arrivo da un link di un amico: si aggiunge la schedina e si apre la cartella
+  const daLink = () => {
+    const m = location.hash.match(/^#s=([\w-]+)/); if (!m) return false;
+    const esito = importa(m[1]);
+    history.replaceState(null, "", location.pathname + location.search + "#schedine");
+    showView("sch"); avvisa(esito);
+    setTimeout(() => $("schGroup").scrollIntoView({ behavior: "smooth", block: "start" }), 300);
+    return true;
+  };
+  // solo nell'anteprima sul computer: #prova-schedina crea una schedina di esempio "tua", per provare l'invio
+  if (/^localhost$|^127./.test(location.hostname) && location.hash === "#prova-schedina"){
+    const ms = partiteGiornata(giornateAperte()[0]), giri = ["1", "X", "2", "1X", "1", "2", "X2", "1", "2", "1X2"];
+    const l = leggi().filter(x => x.id !== "prova-mia");
+    l.unshift({ id: "prova-mia", mia: true, nome: firma().nome || "Giovanni", avatar: "", creata: new Date().toISOString(), stagione: CURRENT, giornata: giornateAperte()[0], pron: Object.fromEntries(ms.map((m, i) => [m[1] + "|" + m[2], { s: giri[i % giri.length] }])) });
+    scrivi(l); history.replaceState(null, "", location.pathname + location.search + "#schedine"); showView("sch");
+    setTimeout(() => $("schList").scrollIntoView({ block: "start" }), 300);
+  }
+  addEventListener("hashchange", daLink);
+  if (!daLink() && currentView === "sch") SD_schedineRender();
 }

@@ -24,6 +24,7 @@
     <button data-view="cup" aria-pressed="false">Coppa Italia</button>
     <button data-view="eu" aria-pressed="false">Italiane in Europa</button>
     <button data-view="sc" aria-pressed="false">Marcatori e rigori</button>
+    <button data-view="sch" aria-pressed="false">📝 Le mie schedine</button>
   </nav>
 
   <section class="stage" aria-label="Podio dei due universi">
@@ -156,6 +157,33 @@
       <p class="sub">Somma di tutte le stagioni disponibili. Un giocatore compare una volta per ogni squadra con cui ha segnato.</p>
       <div class="sc-grid" id="scAll"></div>
     </section>
+  </div>
+
+  <div id="view-sch" class="view" hidden>
+    <div class="grid">
+      <div class="col">
+        <section class="panel">
+          <h2>Nuova schedina</h2>
+          <p class="sub">Una schedina è la giornata intera: metti 1, X o 2 su tutte le partite e salva. Puoi giocare al massimo 1 tripla e 2 doppie. Si possono fare solo sulle giornate non ancora iniziate.</p>
+          <div class="sch-firma" id="schFirma"></div>
+          <div class="filters"><select id="schRound" aria-label="Giornata della schedina"></select></div>
+          <div class="list" id="schNew"></div>
+          <button class="sch-save" type="button" id="schSave">💾 Salva schedina</button>
+        </section>
+      </div>
+      <div class="col">
+        <section class="panel">
+          <h2>👥 Il gruppo</h2>
+          <p class="sub">Le schedine che ti mandano gli amici, con la classifica di chi indovina di più.</p>
+          <div id="schGroup"></div>
+        </section>
+        <section class="panel">
+          <h2>Le mie schedine</h2>
+          <p class="sub">Salvate su questo telefono o computer. Premi "Manda agli amici" e incolla il link nel gruppo WhatsApp.</p>
+          <div id="schList"></div>
+        </section>
+      </div>
+    </div>
   </div>
 
   <footer>Serie A dal 2000/01 al 2025/26: football-data.co.uk; marcatori di Serie A e risultati in diretta: ESPN. Coppa Italia e coppe europee: RSSSF (Rec.Sport.Soccer Statistics Foundation); coppe europee dal 2025/26, stagione in corso compresa: Wikipedia. Le classifiche contano solo i risultati del campo: penalizzazioni e titoli revocati non sono inclusi. Spareggi su punti, scontri diretti, differenza reti, gol fatti. Prototipo non ufficiale, nessun legame con Lega Serie A o i club.<br>Ideata e realizzata da <span class="owner">ciuffa62</span> · © 2026 ciuffa62, tutti i diritti riservati.</footer>
