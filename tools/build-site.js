@@ -53,6 +53,24 @@ const tail = `<script>if ("serviceWorker" in navigator) {
     setInterval(check, 300000);
   }));
 }</script>
+<!-- contatore delle visite (GoatCounter, statistiche private, senza cookie).
+     Conta ogni apertura dell'app e, una volta sola per telefono o computer, il "nuovo visitatore". -->
+<script>(function () {
+  window.goatcounter = { no_onload: true };
+  var s = document.createElement("script");
+  s.async = true; s.src = "https://gc.zgo.at/count.js";
+  s.setAttribute("data-goatcounter", "https://slidingdoors.goatcounter.com/count");
+  s.onload = function () {
+    try {
+      window.goatcounter.count({ path: /mobile/.test(location.pathname) ? "/app-telefono" : "/app-pc", title: "Apertura dell'app" });
+      if (!localStorage.getItem("sd-visitatore")) {
+        window.goatcounter.count({ path: "nuovo-visitatore", title: "Nuovo visitatore", event: true });
+        localStorage.setItem("sd-visitatore", String(Date.now()));
+      }
+    } catch (e) {}
+  };
+  document.head.appendChild(s);
+})();</script>
 </body>
 </html>
 `;
