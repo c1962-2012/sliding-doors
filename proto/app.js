@@ -924,6 +924,7 @@ showView({ "#coppa":"cup", "#europa":"eu", "#marcatori":"sc", "#schedine":"sch" 
       if (!suonoOn) return;
       try { navigator.vibrate && navigator.vibrate([250, 120, 250, 120, 500]) } catch(e){}
       new Audio(speciale).play().catch(() => {});
+      if (VOCI_SQUADRE) setTimeout(() => voce(squadre), 900);   // la voce sopra grancassa e coro
       return;
     }
     suonoGol();
@@ -932,7 +933,7 @@ showView({ "#coppa":"cup", "#europa":"eu", "#marcatori":"sc", "#schedine":"sch" 
   }
   // annunci speciali: un solo file con musica e voce
   const SPECIALI = { Roma: "voci/Roma-speciale.wav" };
-  const VOCI_SQUADRE = false;
+  const VOCI_SQUADRE = true;   // voci/<Squadra>.mp3: "Goooooal! Goal della Roma!"
   window.SD_provaGol = (t = "Roma") => annunciaGol([{ testo: `Prova: gol ${t}`, squadre: [t] }]);
   // pulsantino nella barra: finché il browser non ha avuto un tocco l'audio è bloccato, e lo si dice
   const pulsanteSuono = () => `<button class="snd" type="button" data-suono title="Suono e voce quando una squadra segna">${!suonoOn ? "🔕 Suono gol spento" : sbloccato ? "🔔 Suono gol attivo" : "🔊 Attiva l'audio"}</button>`;
