@@ -810,7 +810,8 @@ document.addEventListener("click", e => {
 });
 
 function showView(v){
-  ["a","cup","eu","sc","sch"].forEach(x => $("view-"+x).hidden = x!==v);
+  ["a","cup","eu","sc","sch","form"].forEach(x => $("view-"+x).hidden = x!==v);
+  if (v === "form" && window.SD_formRender) SD_formRender();
   if (v === "sch" && window.SD_schedineRender) SD_schedineRender();
   currentView = v;
   publish3D();
@@ -825,7 +826,7 @@ setSeason(CURRENT);
   const up = $("updated");
   if (up && lastPlayed) up.textContent = `Serie A aggiornata alle partite del ${fmtDate(lastPlayed)}`;
 }
-showView({ "#coppa":"cup", "#europa":"eu", "#marcatori":"sc", "#schedine":"sch" }[location.hash] || "a");
+showView({ "#coppa":"cup", "#europa":"eu", "#marcatori":"sc", "#schedine":"sch", "#formazione":"form" }[location.hash] || "a");
 
 // ---- Risultati in tempo reale (ESPN, senza chiave) ----
 // Durante le partite il punteggio della stagione in corso si aggiorna da solo: classifica, lista e Sliding Doors si ricalcolano.
@@ -1267,11 +1268,16 @@ $("table").addEventListener("click", e => { const b = e.target.closest("[data-te
   window.SD_immagineSchedina = async id => { const sc = leggi().find(x => x.id === id); return sc ? immagineSchedina(sc) : null };
   async function manda(sc){
     const url = linkSchedina(sc), testo = `La mia schedina della ${sc.giornata}ª giornata. Aggiungila e sfidami su Sliding Doors Serie A: ${url}`;
-    const blob = await immagineSchedina(sc), img = URL.createObjectURL(blob), nomeFile = `schedina-${sc.giornata}-giornata-${(sc.nome || "").replace(/[^\w]+/g, "-")}.png`;
+    const blob = await immagineSchedina(sc), nomeFile = `schedina-${sc.giornata}-giornata-${(sc.nome || "").replace(/[^\w]+/g, "-")}.png`;
+    condividi({ blob, testo, nomeFile, titolo: "La mia schedina", h2: "Manda la schedina", sub: "L'immagine arriva agli amici insieme al link: toccandolo, la tua schedina entra nel loro gruppo." });
+  }
+  // finestra "Manda agli amici" (WhatsApp, Instagram, altre app, copia link): la usano schedine e formazioni
+  function condividi({ blob, testo, nomeFile, titolo, h2, sub }){
+    const img = URL.createObjectURL(blob);
     const file = new File([blob], nomeFile, { type: "image/png" });
     const conFile = !!(navigator.canShare && navigator.canShare({ files: [file] }));
-    const box = pop.open(`<h2>Manda la schedina</h2><p class="sub">L'immagine arriva agli amici insieme al link: toccandolo, la tua schedina entra nel loro gruppo.</p>
-      <img class="story" src="${img}" alt="La tua schedina">
+    const box = pop.open(`<h2>${h2}</h2><p class="sub">${sub}</p>
+      <img class="story" src="${img}" alt="${titolo}">
       <div class="sch-share">
         <button type="button" data-via="wa" class="wa">WhatsApp<small>immagine + link</small></button>
         <button type="button" data-via="ig" class="ig">Instagram<small>immagine + link</small></button>
@@ -1285,13 +1291,15 @@ $("table").addEventListener("click", e => { const b = e.target.closest("[data-te
       if (t.dataset.via === "copia"){ const ok = await copia(testo); msg(ok ? "Link copiato: incollalo dove vuoi." : "Non riesco a copiare in automatico."); return }
       // telefono: si condividono insieme immagine e testo con il link, e si sceglie WhatsApp o Instagram dal menu
       // telefono e PC: la finestra Condividi del sistema manda immagine e link direttamente all'app scelta (WhatsApp, Instagram…)
-      if (conFile){ try { await navigator.share({ files: [file], text: testo, title: "La mia schedina" }) } catch(err){} return }
+      if (conFile){ try { await navigator.share({ files: [file], text: testo, title: titolo }) } catch(err){} return }
       // PC: l'immagine va negli appunti, il link nel messaggio già scritto; nella chat basta incollare l'immagine
       const ok = await copiaImmagine();
       if (t.dataset.via === "wa"){ location.href = "whatsapp://send?text=" + encodeURIComponent(testo); setTimeout(() => { if (document.hasFocus()) window.open("https://web.whatsapp.com/send?text=" + encodeURIComponent(testo), "_blank", "noopener") }, 1500); msg(ok ? "Si apre WhatsApp con il link già scritto: scegli la chat, premi Ctrl+V per aggiungere l'immagine e invia." : "Si apre WhatsApp con il link: per l'immagine usa Salva immagine e allegala.") }
-      else { window.open("https://www.instagram.com/direct/inbox/", "_blank", "noopener"); msg(ok ? "Si apre Instagram: apri la chat, premi Ctrl+V per mettere l'immagine della schedina e invia. Per il link usa poi Copia link." : "Su Instagram apri la chat e allega l'immagine; per il link usa Copia link.") }
+      else { window.open("https://www.instagram.com/direct/inbox/", "_blank", "noopener"); msg(ok ? "Si apre Instagram: apri la chat, premi Ctrl+V per mettere l'immagine e invia. Per il link usa poi Copia link." : "Su Instagram apri la chat e allega l'immagine; per il link usa Copia link.") }
     });
   }
+  // strumenti in comune con "La mia formazione"
+  window.SD_comune = { condividi, avvisa, esc, firma, salvaFirma, b64, deb64, BASE };
 
 
   // ---- elenchi: le mie schedine e il gruppo (classifica per giornata) ----
@@ -1363,4 +1371,281 @@ $("table").addEventListener("click", e => { const b = e.target.closest("[data-te
   }
   addEventListener("hashchange", daLink);
   if (!daLink() && currentView === "sch") SD_schedineRender();
+}
+
+// ---------------- La mia formazione ----------------
+// Prima delle formazioni ufficiali ognuno sceglie modulo e 11 titolari di una squadra per una partita.
+// Le rose e gli squalificati (dai cartellini) arrivano da rose-a.js; gli infortunati li segna chi usa l'app.
+// Quando ESPN pubblica le ufficiali (circa un'ora prima) l'app conta quanti titolari sono stati indovinati.
+// Come le schedine, si mandano agli amici con un link e un'immagine; il gruppo ha la sua classifica.
+{
+  const C = window.SD_comune, R = window.ROSE_A || { squadre: {} };
+  const KEY = "sd-formazioni", KEY_INF = "sd-infortunati", KEY_UFF = "sd-ufficiali";
+  const leggiK = (k, d) => { try { return JSON.parse(localStorage.getItem(k)) || d } catch(e){ return d } };
+  const scriviK = (k, v) => { try { localStorage.setItem(k, JSON.stringify(v)); return true } catch(e){ return false } };
+  const leggi = () => leggiK(KEY, []), scrivi = l => scriviK(KEY, l);
+  const MODULI = ["4-3-3", "4-2-3-1", "4-3-2-1", "4-4-2", "4-3-1-2", "3-5-2", "3-4-2-1", "3-4-3"];   // i più usati in Serie A
+  const NOME_RUOLO = { P: "Portiere", D: "Difensore", C: "Centrocampista", A: "Attaccante" };
+  const cognome = n => { const p = String(n).split(" "); return p.length > 1 ? p.slice(1).join(" ") : n };
+  const st = document.createElement("style");
+  st.textContent = ".frm-team{display:grid;grid-template-columns:repeat(auto-fill,minmax(112px,1fr));gap:6px;margin:0 0 10px}.frm-team button{border:1px solid var(--line-hi);background:transparent;border-radius:10px;padding:8px 6px;font-weight:700;font-size:13px;display:flex;align-items:center;gap:6px;text-align:left}" +
+    ".frm-team button[aria-pressed=true]{background:var(--accent);border-color:var(--accent);color:#fff}" +
+    ".frm-lab{color:var(--muted);font-size:13px;margin:4px 0 6px}.frm-mod{display:grid;grid-template-columns:repeat(auto-fill,minmax(72px,1fr));gap:6px;margin-bottom:4px}" +
+    ".frm-mod button{border:1px solid var(--line-hi);background:transparent;border-radius:10px;padding:8px 4px;font-weight:700;font-family:var(--f-mono)}.frm-mod button[aria-pressed=true]{background:var(--gold);border-color:var(--gold);color:#071018}" +
+    ".frm-pitch{position:relative;aspect-ratio:3/4;border-radius:16px;margin:12px 0;overflow:hidden;border:2px solid rgba(255,255,255,.25);" +
+    "background:repeating-linear-gradient(180deg,#1f7a3d 0 10%,#23863f 10% 20%)}" +
+    ".frm-pitch:before{content:'';position:absolute;left:50%;top:0;width:36%;height:14%;transform:translateX(-50%);border:2px solid rgba(255,255,255,.35);border-top:0}" +
+    ".frm-pitch:after{content:'';position:absolute;left:50%;bottom:0;width:36%;height:14%;transform:translateX(-50%);border:2px solid rgba(255,255,255,.35);border-bottom:0}" +
+    ".frm-pitch .mid{position:absolute;left:0;right:0;top:50%;border-top:2px solid rgba(255,255,255,.35)}.frm-pitch .cc{position:absolute;left:50%;top:50%;width:24%;aspect-ratio:1;border:2px solid rgba(255,255,255,.35);border-radius:50%;transform:translate(-50%,-50%)}" +
+    ".frm-slot{all:unset;cursor:pointer;position:absolute;transform:translate(-50%,-50%);display:grid;justify-items:center;gap:3px;width:22%;z-index:1}" +
+    ".frm-slot .m{width:42px;height:42px;border-radius:50%;display:grid;place-items:center;font-weight:800;font-size:15px;color:#fff;background:var(--k1,#3a4a66);border:3px solid var(--k2,#fff);box-shadow:0 4px 10px rgba(0,0,0,.4)}" +
+    ".frm-slot.vuoto .m{background:rgba(0,0,0,.25);border:2px dashed rgba(255,255,255,.7);font-size:20px}" +
+    ".frm-slot .n{font-size:12px;font-weight:700;color:#fff;text-shadow:0 1px 3px #000;text-align:center;line-height:1.1;max-width:100%;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}" +
+    ".frm-slot:focus-visible .m{outline:3px solid var(--gold)}" +
+    ".frm-info{display:grid;gap:4px;font-size:13px;color:var(--muted);margin-bottom:6px}.frm-info b{color:var(--ink)}" +
+    ".frm-pick{display:grid;gap:4px}.frm-pick .g{font-family:var(--f-display);text-transform:uppercase;letter-spacing:.05em;color:var(--muted);margin:12px 0 4px}" +
+    ".frm-pick .p{display:grid;grid-template-columns:1fr auto;gap:6px;align-items:center}" +
+    ".frm-pick .p>button:first-child{all:unset;cursor:pointer;display:flex;gap:10px;align-items:center;padding:9px 10px;border-radius:10px;background:rgba(255,255,255,.05)}" +
+    ".frm-pick .p>button:first-child:hover{background:rgba(255,255,255,.1)}.frm-pick .p>button[disabled]{opacity:.45;cursor:not-allowed}" +
+    ".frm-pick .num{font-family:var(--f-mono);color:var(--muted);min-width:22px;text-align:right}.frm-pick .tag{font-size:12px;color:var(--muted)}" +
+    ".frm-pick .inf{border:1px solid var(--line);background:transparent;border-radius:10px;padding:7px 9px;font-size:16px;opacity:.55}.frm-pick .inf[aria-pressed=true]{opacity:1;border-color:var(--bad);background:rgba(255,77,109,.15)}" +
+    ".frm-xi{display:grid;grid-template-columns:1fr 1fr;gap:2px 12px;font-size:14px;margin-top:6px}.frm-xi span{padding:3px 0;border-top:1px solid var(--line)}";
+  document.head.appendChild(st);
+
+  // ---- partite e squadre ----
+  const righe = () => SERIE_A[CURRENT] || [];
+  // ora d'inizio in ora italiana -> istante (gestisce ora legale e solare)
+  const offRoma = d => { const u = new Date(d + "T12:00:00Z"); return Math.round((new Date(u.toLocaleString("en-US", { timeZone: "Europe/Rome" })) - new Date(u.toLocaleString("en-US", { timeZone: "UTC" }))) / 36e5) };
+  const inizio = m => Date.parse(`${m[0]}T${m[6] || "15:00"}:00+0${offRoma(m[0])}:00`);
+  const chiave = m => m[1] + "|" + m[2];
+  const trova = (stag, k) => (SERIE_A[stag] || []).find(m => chiave(m) === k);
+  const aperte = () => righe().filter(m => m[3] === null && inizio(m) > Date.now()).sort((a, b) => inizio(a) - inizio(b)).slice(0, 30);
+  const rosa = t => (R.squadre[t] || {}).rosa || [];
+  const squal = t => new Map(((R.squadre[t] || {}).squal || []).map(x => [x[0], x[1]]));
+  const diff = t => new Map(((R.squadre[t] || {}).diff || []).map(x => [x[0], x[1]]));
+  const infortunati = t => new Set([...((R.squadre[t] || {}).inf || []), ...(leggiK(KEY_INF, {})[t] || [])]);
+  const segnaInf = (t, n) => { const all = leggiK(KEY_INF, {}), s = new Set(all[t] || []); s.has(n) ? s.delete(n) : s.add(n); all[t] = [...s]; scriviK(KEY_INF, all) };
+  // posizioni sul campo: portiere in basso, poi le linee del modulo verso l'attacco
+  function posti(modulo){
+    const linee = modulo.split("-").map(Number), out = [{ x: 50, y: 90, r: "P" }];
+    linee.forEach((n, i) => {
+      const y = 72 - i * (60 / Math.max(linee.length - 1, 1)), r = i === 0 ? "D" : i === linee.length - 1 ? "A" : "C";
+      for (let j = 0; j < n; j++) out.push({ x: n === 1 ? 50 : 12 + j * (76 / (n - 1)), y, r });
+    });
+    return out;
+  }
+
+  let bozza = { t: null, k: null, modulo: "4-3-3", xi: Array(11).fill(null) };
+  const squadraBozza = () => bozza.t;
+  const squadre = () => [...new Set(righe().flatMap(m => [m[1], m[2]]))].sort();
+  const partiteDi = t => aperte().filter(m => m[1] === t || m[2] === t).slice(0, 5);
+
+  function disegnaFirma(){
+    const f = C.firma();
+    $("formFirma").innerHTML = `<label for="formNome">La tua firma: il nome che vedranno i tuoi amici</label>
+      <input id="formNome" maxlength="20" placeholder="Il tuo nome (es. Giovanni)" value="${C.esc(f.nome)}" autocomplete="nickname">`;
+  }
+  $("formFirma").addEventListener("input", e => { if (e.target.id === "formNome"){ C.salvaFirma({ ...C.firma(), nome: e.target.value.trim() }); e.target.classList.remove("no") } });
+
+  function disegnaNuova(){
+    const sel = $("formMatch"), tutte = squadre().filter(t => partiteDi(t).length);
+    if (!tutte.length){ sel.innerHTML = ""; $("formTeam").innerHTML = ""; $("formPitch").innerHTML = ""; $("formInfo").innerHTML = `<p class="empty">Non ci sono partite da giocare.</p>`; $("formSave").disabled = true; return }
+    if (!tutte.includes(bozza.t)) bozza = { ...bozza, t: tutte[0], k: null, xi: Array(11).fill(null) };
+    const ms = partiteDi(bozza.t);
+    if (!ms.some(m => chiave(m) === bozza.k)) bozza.k = chiave(ms[0]);
+    $("formTeam").innerHTML = tutte.map(t => `<button type="button" data-t="${t}" aria-pressed="${bozza.t === t}">${kit(t)}${t}</button>`).join("");
+    sel.innerHTML = ms.map(m => `<option value="${chiave(m)}" ${chiave(m) === bozza.k ? "selected" : ""}>${m[1] === bozza.t ? `in casa contro ${m[2]}` : `in trasferta contro ${m[1]}`} · ${fmtDate(m[0])}${m[6] ? ` ore ${m[6]}` : ""}</option>`).join("");
+    $("formModulo").innerHTML = MODULI.map(x => `<button type="button" data-mod="${x}" aria-pressed="${x === bozza.modulo}">${x}</button>`).join("");
+    disegnaCampo();
+  }
+  function disegnaCampo(){
+    const t = squadraBozza(), [k1, k2] = clubPalette(t), num = new Map(rosa(t).map(p => [p[0], p[2]]));
+    $("formPitch").innerHTML = `<div class="mid"></div><div class="cc"></div>` + posti(bozza.modulo).map((p, i) => {
+      const n = bozza.xi[i];
+      return `<button type="button" class="frm-slot ${n ? "" : "vuoto"}" data-i="${i}" style="left:${p.x}%;top:${p.y}%;--k1:${k1};--k2:${k2}" aria-label="${n ? C.esc(n) : "Scegli " + NOME_RUOLO[p.r].toLowerCase()}">
+        <span class="m">${n ? (num.get(n) ?? "•") : "+"}</span><span class="n">${n ? C.esc(cognome(n)) : p.r}</span></button>`;
+    }).join("");
+    const sq = squal(t), df = diff(t), inf = infortunati(t);
+    const elenco = (titolo, xs) => xs.length ? `<div>${titolo}: <b>${xs.map(C.esc).join(", ")}</b></div>` : "";
+    $("formInfo").innerHTML = rosa(t).length ? `<div class="frm-info">${elenco("🟥 Squalificati", [...sq.keys()]) || "<div>🟥 Nessuno squalificato</div>"}${elenco("🟨 Diffidati", [...df.keys()])}${elenco("🚑 Infortunati (segnati da te)", [...inf])}
+      <div>Tocca un cerchio sul campo per scegliere il giocatore. Nella lista puoi segnare gli infortunati con 🚑.</div></div>` : `<p class="empty">La rosa di ${t} non è disponibile.</p>`;
+    const manca = bozza.xi.filter(x => !x).length;
+    $("formSave").disabled = manca > 0;
+    $("formSave").textContent = manca ? `Mancano ${manca} giocator${manca === 1 ? "e" : "i"} su 11` : `💾 Salva formazione (${bozza.modulo})`;
+  }
+  $("formMatch").addEventListener("change", e => { bozza.k = e.target.value; disegnaNuova() });   // stessa squadra: i giocatori scelti restano
+  $("formTeam").addEventListener("click", e => { const b = e.target.closest("[data-t]"); if (!b || b.dataset.t === bozza.t) return; bozza = { ...bozza, t: b.dataset.t, k: null, xi: Array(11).fill(null) }; disegnaNuova() });
+  $("formModulo").addEventListener("click", e => { const b = e.target.closest("[data-mod]"); if (!b) return; bozza.modulo = b.dataset.mod; $("formModulo").querySelectorAll("button").forEach(x => x.setAttribute("aria-pressed", x === b)); disegnaCampo() });
+  $("formPitch").addEventListener("click", e => { const s = e.target.closest("[data-i]"); if (s) scegli(+s.dataset.i) });
+
+  // ---- scelta del giocatore per un posto ----
+  function scegli(i){
+    const t = squadraBozza(), ruolo = posti(bozza.modulo)[i].r;
+    const disegna = () => {
+      const sq = squal(t), df = diff(t), inf = infortunati(t);
+      const riga = p => {
+        const [n, , num] = p, no = sq.has(n) || inf.has(n), dove = bozza.xi.indexOf(n);
+        const tag = [sq.has(n) && `🟥 squalificato (${sq.get(n)})`, inf.has(n) && "🚑 infortunato", df.has(n) && `🟨 diffidato (${df.get(n)} gialli)`, dove >= 0 && dove !== i && "già in campo"].filter(Boolean).join(" · ");
+        return `<div class="p"><button type="button" data-n="${C.esc(n)}" ${no ? "disabled" : ""}><span class="num">${num ?? ""}</span><span>${C.esc(n)}${tag ? `<br><span class="tag">${tag}</span>` : ""}</span></button>
+          <button type="button" class="inf" data-inf="${C.esc(n)}" aria-pressed="${inf.has(n)}" title="Segna o togli infortunato">🚑</button></div>`;
+      };
+      const gruppi = ["P", "D", "C", "A"].sort((a, b) => (b === ruolo) - (a === ruolo));
+      return `<h2>${kit(t)}${NOME_RUOLO[ruolo]}</h2><p class="sub">Scegli chi gioca in questo posto. 🚑 segna un infortunato: non si potrà schierare.</p>
+        ${bozza.xi[i] ? `<div class="sch-acts" style="justify-content:flex-start"><button type="button" class="sch-btn" data-togli="1">Lascia vuoto questo posto</button></div>` : ""}
+        <div class="frm-pick">${gruppi.map(g => { const ps = rosa(t).filter(p => p[1] === g); return ps.length ? `<div class="g">${({ P: "Portieri", D: "Difensori", C: "Centrocampisti", A: "Attaccanti" })[g]}</div>${ps.map(riga).join("")}` : "" }).join("")}</div>`;
+    };
+    const box = pop.open(disegna());
+    const ridisegna = () => { box.querySelector(".box").innerHTML = `<button class="x" type="button" aria-label="Chiudi">✕</button>` + disegna() };
+    box.querySelector(".box").addEventListener("click", e => {
+      const inf = e.target.closest("[data-inf]");
+      if (inf){ segnaInf(t, inf.dataset.inf); const j = bozza.xi.indexOf(inf.dataset.inf); if (j >= 0 && infortunati(t).has(inf.dataset.inf)) bozza.xi[j] = null; ridisegna(); disegnaCampo(); return }
+      if (e.target.closest("[data-togli]")){ bozza.xi[i] = null; pop.close(); disegnaCampo(); return }
+      const b = e.target.closest("[data-n]"); if (!b || b.disabled) return;
+      const n = b.dataset.n, prima = bozza.xi.indexOf(n);
+      if (prima >= 0) bozza.xi[prima] = bozza.xi[i];   // se era già in campo, i due si scambiano il posto
+      bozza.xi[i] = n; pop.close(); disegnaCampo();
+    });
+  }
+
+  $("formSave").addEventListener("click", () => {
+    const f = C.firma();
+    if (!f.nome){ const n = $("formNome"); n.classList.add("no"); n.focus(); n.scrollIntoView({ block: "center" }); C.avvisa("Scrivi prima il tuo nome per firmare la formazione"); return }
+    if (bozza.xi.some(x => !x)) return;
+    const m = trova(CURRENT, bozza.k);
+    if (!m || inizio(m) <= Date.now()){ C.avvisa("La partita è già iniziata"); return }
+    const l = leggi();
+    l.unshift({ id: Date.now().toString(36) + Math.random().toString(36).slice(2, 6), mia: true, nome: f.nome, creata: new Date().toISOString(), stagione: CURRENT, k: bozza.k, lato: m[1] === bozza.t ? "h" : "a", modulo: bozza.modulo, xi: bozza.xi.slice() });
+    if (!scrivi(l)){ alert("Non riesco a salvare: questo browser non permette di salvare dati (forse sei in navigazione in incognito)."); return }
+    bozza = { ...bozza, xi: Array(11).fill(null) }; disegnaCampo(); disegnaElenchi();
+    C.avvisa("Formazione salvata. Ora mandala agli amici!");
+    $("formList").scrollIntoView({ behavior: "smooth", block: "start" });
+  });
+
+  // ---- formazioni ufficiali da ESPN (si cercano da un'ora e mezza prima dell'inizio) ----
+  const norm = s => s.normalize("NFD").replace(/[̀-ͯ]/g, "").toLowerCase().replace(/[^a-z]/g, "");
+  const NOMI = { "AC Milan": "Milan", "Internazionale": "Inter", "AS Roma": "Roma", "Hellas Verona": "Verona" };
+  const uguale = (espn, t) => { const a = norm(NOMI[espn] || espn), b = norm(t); return a === b || a.includes(b) || b.includes(a) };
+  let cercando = false;
+  async function cercaUfficiali(){
+    if (cercando) return; cercando = true;
+    try {
+      const uff = leggiK(KEY_UFF, {}), l = leggi();
+      const daCercare = [...new Set(l.map(f => f.stagione + "§" + f.k))].filter(x => !uff[x]).map(x => { const [s, k] = x.split("§"); return [x, trova(s, k)] })
+        .filter(([, m]) => m && Date.now() > inizio(m) - 90 * 60e3 && Date.now() < inizio(m) + 4 * 864e5);
+      let nuove = 0;
+      for (const [x, m] of daCercare) {
+        const j = await fetch("https://site.api.espn.com/apis/site/v2/sports/soccer/ita.1/scoreboard?dates=" + m[0].replace(/-/g, ""), { cache: "no-store" }).then(r => r.json()).catch(() => null);
+        const ev = j && (j.events || []).find(e => { const c = e.competitions[0].competitors, H = c.find(z => z.homeAway === "home"), A = c.find(z => z.homeAway === "away"); return H && A && uguale(H.team.displayName, m[1]) && uguale(A.team.displayName, m[2]) });
+        if (!ev) continue;
+        const s = await fetch("https://site.api.espn.com/apis/site/v2/sports/soccer/ita.1/summary?event=" + ev.id, { cache: "no-store" }).then(r => r.json()).catch(() => null);
+        const rs = (s && s.rosters) || [], dati = {};
+        for (const r of rs) { const xi = (r.roster || []).filter(p => p.starter).map(p => p.athlete.displayName); if (xi.length === 11) dati[r.homeAway === "home" ? "h" : "a"] = { modulo: r.formation || "", xi } }
+        if (dati.h && dati.a){ uff[x] = dati; nuove++ }
+      }
+      if (nuove){ scriviK(KEY_UFF, uff); disegnaElenchi() }
+    } finally { cercando = false }
+  }
+  setInterval(() => { if (currentView === "form") cercaUfficiali() }, 5 * 60e3);
+
+  function controlla(f){
+    const u = (leggiK(KEY_UFF, {})[f.stagione + "§" + f.k] || {})[f.lato];
+    if (!u) return { u: null, ok: 0 };
+    const vere = new Set(u.xi.map(norm));
+    return { u, ok: f.xi.filter(n => vere.has(norm(n))).length };
+  }
+  const titoloF = f => { const m = trova(f.stagione, f.k), [h, a] = f.k.split("|"), t = f.lato === "h" ? h : a; return { m, t, contro: f.lato === "h" ? a : h, quando: m ? `${fmtDate(m[0])}${m[6] ? ` ore ${m[6]}` : ""}` : "" } };
+  const xiHtml = (f, c) => `<div class="frm-xi">${f.xi.map(n => `<span>${c.u ? (new Set(c.u.xi.map(norm)).has(norm(n)) ? "✅ " : "❌ ") : ""}${C.esc(n)}</span>`).join("")}</div>
+    ${c.u ? `<details><summary>Formazione ufficiale ${C.esc(c.u.modulo)}</summary><div class="frm-xi">${c.u.xi.map(n => `<span>${f.xi.map(norm).includes(norm(n)) ? "✅ " : "➕ "}${C.esc(n)}</span>`).join("")}</div></details>` : ""}`;
+  const quandoF = f => new Date(f.creata).toLocaleString("it-IT", { day: "numeric", month: "short", hour: "2-digit", minute: "2-digit" });
+
+  function disegnaElenchi(){
+    const l = leggi(), mie = l.filter(f => f.mia !== false);
+    $("formList").innerHTML = mie.length ? mie.map(f => {
+      const c = controlla(f), T = titoloF(f);
+      return `<article class="sch-card"><header><div><h3>${kit(T.t)}${T.t}</h3>
+        <div class="meta">contro ${T.contro} · ${T.quando} · ${f.modulo} · fatta il ${quandoF(f)}</div></div>
+        <div class="punti">${c.u ? `${c.ok}/11` : "–"}</div></header>
+        <div class="meta">${c.u ? `Hai indovinato ${c.ok} titolari su 11` : "In attesa della formazione ufficiale (esce circa un'ora prima)"}</div>
+        <div class="sch-acts"><button class="sch-btn send" type="button" data-send="${f.id}">📤 Manda agli amici</button><button class="sch-btn" type="button" data-del="${f.id}">Elimina</button></div>${xiHtml(f, c)}</article>`;
+    }).join("") : `<p class="empty">Non hai ancora formazioni. Preparane una qui accanto.</p>`;
+
+    const gruppi = [...new Set(l.filter(f => f.mia === false).map(f => f.stagione + "§" + f.k + "§" + f.lato))];
+    $("formGroup").innerHTML = gruppi.length ? gruppi.map(g => {
+      const [s, k, lato] = g.split("§"), tutte = l.filter(f => f.stagione === s && f.k === k && f.lato === lato);
+      const cl = tutte.map(f => ({ f, c: controlla(f) })).sort((x, y) => y.c.ok - x.c.ok || x.f.nome.localeCompare(y.f.nome));
+      const T = titoloF(tutte[0]), pronta = cl[0] && cl[0].c.u, med = i => ["🥇", "🥈", "🥉"][i] || `${i + 1}º`;
+      return `<article class="sch-card"><header><div><h3>${kit(T.t)}${T.t}</h3><div class="meta">contro ${T.contro} · ${T.quando} · ${cl.length} formazion${cl.length === 1 ? "e" : "i"} · ${pronta ? "ufficiali uscite" : "ufficiali non ancora uscite"}</div></div></header>
+        <div class="sch-rank">${cl.map((x, i) => `<div class="p ${x.f.mia !== false ? "me" : ""}"><span>${pronta ? med(i) : "·"}</span><span>${C.esc(x.f.nome)}${x.f.mia !== false ? " (tu)" : ""} <span class="meta">${x.f.modulo}</span></span><span class="pt">${pronta ? `${x.c.ok}/11` : "–"}</span></div>`).join("")}</div>
+        ${cl.filter(x => x.f.mia === false).map(x => `<details><summary>${C.esc(x.f.nome)} · ${x.f.modulo} · fatta il ${quandoF(x.f)}</summary>${xiHtml(x.f, x.c)}
+          <div class="sch-acts"><button class="sch-btn" type="button" data-del="${x.f.id}">Togli dal gruppo</button></div></details>`).join("")}</article>`;
+    }).join("") : `<p class="empty">Qui arrivano le formazioni dei tuoi amici: quando ti mandano il link, toccalo e la loro formazione compare qui, con la classifica di chi indovina più titolari.</p>`;
+  }
+
+  // ---- immagine del campo da mandare agli amici ----
+  async function immagine(f){
+    const T = titoloF(f), W = 1080, H = 1500, c = document.createElement("canvas"); c.width = W; c.height = H;
+    const g = c.getContext("2d"), D = '"Big Shoulders Display", Impact, sans-serif', B = '"IBM Plex Sans", "Segoe UI", sans-serif';
+    try { await Promise.all([document.fonts.load('800 80px "Big Shoulders Display"'), document.fonts.load('600 40px "IBM Plex Sans"')]) } catch(e){}
+    const bg = g.createLinearGradient(0, 0, 0, H); bg.addColorStop(0, "#0b1424"); bg.addColorStop(1, "#050a14"); g.fillStyle = bg; g.fillRect(0, 0, W, H);
+    g.textBaseline = "top"; g.font = `800 76px ${D}`; g.fillStyle = "#eef3ff"; g.fillText("LA MIA FORMAZIONE", 60, 44);
+    g.font = `800 60px ${D}`; g.fillStyle = "#ff4d6d"; g.fillText(`${T.t.toUpperCase()}  ${f.modulo}`, 60, 130);
+    g.font = `500 30px ${B}`; g.fillStyle = "#93a4c3"; g.fillText(`contro ${T.contro} · ${T.quando}`, 62, 206);
+    g.font = `600 36px ${B}`; g.fillStyle = "#ffcf4a"; g.fillText(f.nome || "", 62, 252);
+    // campo
+    const X = 60, Y = 320, PW = W - 120, PH = 980;
+    for (let i = 0; i < 10; i++){ g.fillStyle = i % 2 ? "#23863f" : "#1f7a3d"; g.fillRect(X, Y + i * PH / 10, PW, PH / 10) }
+    g.strokeStyle = "rgba(255,255,255,.45)"; g.lineWidth = 4; g.strokeRect(X, Y, PW, PH);
+    g.beginPath(); g.moveTo(X, Y + PH / 2); g.lineTo(X + PW, Y + PH / 2); g.stroke();
+    g.beginPath(); g.arc(X + PW / 2, Y + PH / 2, 110, 0, Math.PI * 2); g.stroke();
+    g.strokeRect(X + PW * .32, Y, PW * .36, PH * .14); g.strokeRect(X + PW * .32, Y + PH * .86, PW * .36, PH * .14);
+    const [k1, k2] = clubPalette(T.t), num = new Map(rosa(T.t).map(p => [p[0], p[2]]));
+    posti(f.modulo).forEach((p, i) => {
+      const cx = X + PW * p.x / 100, cy = Y + PH * p.y / 100, n = f.xi[i];
+      g.beginPath(); g.arc(cx, cy, 44, 0, Math.PI * 2); g.fillStyle = k1; g.fill(); g.lineWidth = 7; g.strokeStyle = k2; g.stroke();
+      g.textAlign = "center"; g.textBaseline = "middle"; g.font = `800 38px ${D}`; g.fillStyle = "#fff"; g.fillText(String(num.get(n) ?? ""), cx, cy + 2);
+      g.textBaseline = "top"; g.font = `700 28px ${B}`; g.lineWidth = 6; g.strokeStyle = "rgba(0,0,0,.6)";
+      const nome = cognome(n || ""); g.strokeText(nome, cx, cy + 52); g.fillStyle = "#fff"; g.fillText(nome, cx, cy + 52); g.textAlign = "left";
+    });
+    g.textAlign = "center"; g.textBaseline = "top";
+    g.font = `600 34px ${B}`; g.fillStyle = "#eef3ff"; g.fillText("Sfidami su Sliding Doors Serie A", W / 2, H - 160);
+    g.font = `600 32px ${B}`; g.fillStyle = "#ff4d6d"; g.fillText("c1962-2012.github.io/sliding-doors", W / 2, H - 106);
+    g.font = `500 26px ${B}`; g.fillStyle = "#93a4c3"; g.fillText("un'app di ciuffa62", W / 2, H - 56);
+    return new Promise(res => c.toBlob(res, "image/png"));
+  }
+  const link = f => C.BASE + "#f=" + C.b64(["1", f.stagione, f.k, f.lato, f.modulo, f.nome, f.creata.slice(0, 16), f.id, f.xi.join("|")].join("~"));
+  async function manda(f){
+    const T = titoloF(f), testo = `La mia formazione del ${T.t} contro ${T.contro} (${f.modulo}). Aggiungila e sfidami su Sliding Doors Serie A: ${link(f)}`;
+    C.condividi({ blob: await immagine(f), testo, nomeFile: `formazione-${T.t}-${(f.nome || "").replace(/[^\w]+/g, "-")}.png`, titolo: "La mia formazione", h2: "Manda la formazione", sub: "L'immagine arriva agli amici insieme al link: toccandolo, la tua formazione entra nel loro gruppo." });
+  }
+  function importa(cod){
+    try {
+      const [v, stagione, k, lato, modulo, nome, creata, id, xi] = C.deb64(cod).split("~"), lista = (xi || "").split("|");
+      if (v !== "1" || !trova(stagione, k) || !/^[ha]$/.test(lato) || lista.length !== 11 || !MODULI.includes(modulo)) return "Link della formazione non valido";
+      const l = leggi(), gia = l.find(f => f.id === id);
+      if (gia) return gia.mia !== false ? "Questa è una tua formazione" : `La formazione di ${nome} c'è già`;
+      l.push({ id, mia: false, nome: nome.slice(0, 20), creata: creata + ":00Z", stagione, k, lato, modulo, xi: lista.map(x => x.slice(0, 60)) });
+      scrivi(l);
+      return `✅ Aggiunta la formazione di ${nome.slice(0, 20)}`;
+    } catch(e){ return "Link della formazione non valido" }
+  }
+  const azioni = e => {
+    const s = e.target.closest("[data-send]"); if (s){ const f = leggi().find(x => x.id === s.dataset.send); if (f) manda(f); return }
+    const d = e.target.closest("[data-del]"); if (!d) return;
+    if (!confirm("Vuoi eliminare questa formazione? Non si può recuperare.")) return;
+    scrivi(leggi().filter(x => x.id !== d.dataset.del)); disegnaElenchi();
+  };
+  $("formList").addEventListener("click", azioni);
+  $("formGroup").addEventListener("click", azioni);
+
+  window.SD_formRender = () => { disegnaFirma(); disegnaNuova(); disegnaElenchi(); cercaUfficiali() };
+  const daLink = () => {
+    const m = location.hash.match(/^#f=([\w-]+)/); if (!m) return false;
+    const esito = importa(m[1]);
+    history.replaceState(null, "", location.pathname + location.search + "#formazione");
+    showView("form"); C.avvisa(esito);
+    setTimeout(() => $("formGroup").scrollIntoView({ behavior: "smooth", block: "start" }), 300);
+    return true;
+  };
+  addEventListener("hashchange", daLink);
+  if (!daLink() && currentView === "form") SD_formRender();
 }

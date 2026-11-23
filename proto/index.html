@@ -25,6 +25,7 @@
     <button data-view="eu" aria-pressed="false">Italiane in Europa</button>
     <button data-view="sc" aria-pressed="false">Marcatori e rigori</button>
     <button data-view="sch" aria-pressed="false">📝 Le mie schedine</button>
+    <button data-view="form" aria-pressed="false">👕 La mia formazione</button>
   </nav>
 
   <section class="stage" aria-label="Podio dei due universi">
@@ -186,6 +187,39 @@
     </div>
   </div>
 
+  <div id="view-form" class="view" hidden>
+    <div class="grid">
+      <div class="col">
+        <section class="panel">
+          <h2>La mia formazione</h2>
+          <p class="sub">Prima che escano le ufficiali, scegli il modulo e gli 11 titolari. Gli squalificati li segna l'app dai cartellini; gli infortunati li segni tu. Quando escono le ufficiali (circa un'ora prima) l'app ti dice quanti ne hai indovinati.</p>
+          <div class="sch-firma" id="formFirma"></div>
+          <div class="frm-lab">1. La squadra</div>
+          <div class="frm-team" id="formTeam" role="group" aria-label="Squadra"></div>
+          <div class="frm-lab">2. La partita</div>
+          <div class="filters"><select id="formMatch" aria-label="Partita"></select></div>
+          <div class="frm-lab">3. Il modulo</div>
+          <div class="frm-mod" id="formModulo" role="group" aria-label="Modulo"></div>
+          <div class="frm-pitch" id="formPitch"></div>
+          <div id="formInfo"></div>
+          <button class="sch-save" type="button" id="formSave">💾 Salva formazione</button>
+        </section>
+      </div>
+      <div class="col">
+        <section class="panel">
+          <h2>👥 Il gruppo</h2>
+          <p class="sub">Le formazioni che ti mandano gli amici, con la classifica di chi indovina più titolari.</p>
+          <div id="formGroup"></div>
+        </section>
+        <section class="panel">
+          <h2>Le mie formazioni</h2>
+          <p class="sub">Salvate su questo telefono o computer. Premi "Manda agli amici" per mandarla su WhatsApp o Instagram.</p>
+          <div id="formList"></div>
+        </section>
+      </div>
+    </div>
+  </div>
+
   <footer>Serie A dal 2000/01 al 2025/26: football-data.co.uk; marcatori di Serie A e risultati in diretta: ESPN. Coppa Italia e coppe europee: RSSSF (Rec.Sport.Soccer Statistics Foundation); coppe europee dal 2025/26, stagione in corso compresa: Wikipedia. Le classifiche contano solo i risultati del campo: penalizzazioni e titoli revocati non sono inclusi. Spareggi su punti, scontri diretti, differenza reti, gol fatti. Prototipo non ufficiale, nessun legame con Lega Serie A o i club.<br>Ideata e realizzata da <span class="owner">ciuffa62</span> · © 2026 ciuffa62, tutti i diritti riservati.</footer>
 </div>
 
@@ -193,5 +227,6 @@
 <script src="data.js"></script>
 <script src="cups.js"></script>
 <script src="marcatori-a.js"></script>
+<script src="rose-a.js"></script>
 <script src="app.js"></script>
 <script src="stage3d.js"></script>

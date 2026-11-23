@@ -7,7 +7,7 @@ const assets = path.join(__dirname, "site-assets");
 fs.rmSync(out, { recursive: true, force: true });
 fs.mkdirSync(out, { recursive: true });
 
-const files = ["app.js", "app.css", "stage3d.js", "data.js", "cups.js", "marcatori-a.js"];
+const files = ["app.js", "app.css", "stage3d.js", "data.js", "cups.js", "marcatori-a.js", "rose-a.js"];
 for (const f of files) fs.copyFileSync(path.join(proto, f), path.join(out, f));
 for (const f of fs.readdirSync(assets)) fs.copyFileSync(path.join(assets, f), path.join(out, f));
 // gli annunci vocali del gol, uno per squadra

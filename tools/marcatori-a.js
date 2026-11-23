@@ -54,7 +54,12 @@ async function scaricaStagione(stagione, righe) {
       const p = (d.athletesInvolved || [])[0];
       return [p ? p.displayName : null, d.team && d.team.id === H.team.id ? "h" : "a", d.penaltyKick ? 1 : 0, d.ownGoal ? 1 : 0];
     });
-    partite.push([e.id, e.date.slice(0, 10), H.team.displayName, A.team.displayName, +H.score, +A.score, finita ? 1 : 0, gol]);
+    // cartellini (servono per squalificati e diffidati): [id giocatore, nome, "h"|"a", "G"|"R"]
+    const cart = (e.competitions[0].details || []).filter(d => d.yellowCard || d.redCard).map(d => {
+      const p = (d.athletesInvolved || [])[0] || {};
+      return [p.id || null, p.displayName || null, d.team && d.team.id === H.team.id ? "h" : "a", d.redCard ? "R" : "G"];
+    });
+    partite.push([e.id, e.date, H.team.displayName, A.team.displayName, +H.score, +A.score, finita ? 1 : 0, gol, cart]);
   }
   return partite;
 }
@@ -111,7 +116,7 @@ async function aggiorna(SERIE_A, forza = []) {
   if (cambiato) fs.writeFileSync(out, testo);
   return { cambiato, esito, stagioni: Object.keys(tutte).length };
 }
-module.exports = { aggiorna };
+module.exports = { aggiorna, nomeApp };
 
 if (require.main === module) {
   global.window = {};
