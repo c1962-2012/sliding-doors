@@ -330,7 +330,7 @@ function renderList(){
           <span class="step"><button data-d="1,1" aria-label="Gol in più ${m[3]}">▲</button><button data-d="1,-1" aria-label="Gol in meno ${m[3]}">▼</button></span>
         </span><span class="a">${m[3]}</span></div>
       <div class="x12">${["1","X","2"].map(x=>`<button data-x="${x}" class="${res===x?"on":""}" aria-label="Segno ${x}">${x}</button>`).join("")}</div>
-      <div class="minfo"><span>${m[6] ? `${m[6]}ª giornata · ` : ""}${fmtDate(m[1])}${m[4] === null && m[7] ? ` · <b>ore ${m[7]}</b>` : ""}${big[i] ? ` <span class="badge">${big[i]}</span>` : ""}</span><span class="orig">${note}</span></div>
+      <div class="minfo"><span>${m[6] ? `${m[6]}ª giornata · ` : ""}${fmtDate(m[1])}${m[4] === null && m[7] ? ` · <b>ore ${m[7]}</b>` : ""}${big[i] ? ` <span class="badge">${big[i]}</span>` : ""}</span><span class="orig">${note} <button type="button" class="prec-btn" data-prec="${m[2]}|${m[3]}">⚔ Precedenti</button></span></div>
       ${m[4] !== null && ytLinks(m[2], m[3], m[4], m[5], m[1]) ? `<div class="ytrow">${ytLinks(m[2], m[3], m[4], m[5], m[1])}</div>` : ""}
     </div>`;
   }).join("") || `<p class="empty">Nessuna partita con questi filtri.</p>`;
@@ -1116,11 +1116,57 @@ function schedaSquadra(t){
     ${r ? `<p class="big"><b>${pos + 1}º posto</b> · ${r.pt} punti · ${r.w} vinte, ${r.d} pari, ${r.l} perse · gol ${r.gf}-${r.gs}</p>` : ""}
     ${ultime.length ? `<h3>Ultime ${ultime.length} partite</h3><div class="form">${ultime.slice().reverse().map(m => `<span class="f ${esito(m)}" title="${m[2]} ${m[4]}-${m[5]} ${m[3]}">${esito(m)}</span>`).join("")}</div>
       <div class="rows" style="margin-top:8px">${ultime.map(riga).join("")}</div>` : ""}
-    ${prossime.length ? `<h3>Prossime partite</h3><div class="rows">${prossime.map(riga).join("")}</div>` : ""}
+    ${prossime.length ? `<h3>Prossime partite</h3><div class="rows">${prossime.map(m => riga(m).replace(/<\/div>$/, ` <button type="button" class="prec-btn" data-prec="${m[2]}|${m[3]}">⚔ Precedenti</button></div>`)).join("")}</div>` : ""}
     ${(() => { const cp = season === CURRENT ? (window.COPPE_GIOCATE || []).filter(p => p[4] === t || p[5] === t).slice(-5).reverse() : []; return cp.length ? `<h3>Coppe</h3><div class="vid-list">${cp.map(rigaCoppa).join("")}</div>` : "" })()}
     ${marc.length ? `<h3>Marcatori</h3><div class="rows">${marc.map(x => `<div class="r"><span>${x[0]}</span><span class="num"><b>${x[2]}</b> gol${x[3] ? ` <small>(${x[3]} rig.)</small>` : ""}</span></div>`).join("")}</div>` : ""}`);
 }
 $("table").addEventListener("click", e => { const b = e.target.closest("[data-team]"); if (b) schedaSquadra(b.dataset.team) });
+
+// ---------------- Precedenti tra due squadre (tutte le partite di Serie A dal 2000-01, risultati reali) ----------------
+(function () {
+  const st = document.createElement("style");
+  st.textContent = ".prec-btn{border:1px solid var(--line-hi);background:rgba(255,255,255,.05);border-radius:999px;padding:3px 10px;font-size:12px;font-weight:600;color:var(--ink);white-space:nowrap}" +
+    ".prec-btn:hover{border-color:var(--gold)}" +
+    "#sdPop .h2h{display:grid;grid-template-columns:1fr 1fr 1fr;gap:8px;text-align:center;margin-top:12px}" +
+    "#sdPop .h2h div{border-radius:12px;padding:10px 4px;background:rgba(255,255,255,.05)}#sdPop .h2h b{display:block;font-family:var(--f-display);font-size:34px;line-height:1.1}" +
+    "#sdPop .h2h .c b{color:#4d9bff}#sdPop .h2h .o b{color:#ff8c4a}#sdPop .h2h small{color:var(--muted);font-size:12px}" +
+    "#sdPop .h2bar{display:flex;height:10px;border-radius:6px;overflow:hidden;margin-top:10px}#sdPop .h2bar span:nth-child(1){background:#4d9bff}#sdPop .h2bar span:nth-child(2){background:#6b7385}#sdPop .h2bar span:nth-child(3){background:#ff8c4a}" +
+    "#sdPop .r.vc{border-left:3px solid #4d9bff}#sdPop .r.vo{border-left:3px solid #ff8c4a}#sdPop .r.pa{border-left:3px solid #6b7385}";
+  document.head.appendChild(st);
+})();
+function precedenti(h, a){
+  const tutte = [];
+  for (const s of Object.keys(SERIE_A).sort()) for (const m of SERIE_A[s])
+    if (m[3] !== null && m[3] !== undefined && ((m[1] === h && m[2] === a) || (m[1] === a && m[2] === h))) tutte.push({ s, d: m[0], c: m[1], o: m[2], gc: m[3], go: m[4] });
+  tutte.sort((x, y) => y.d.localeCompare(x.d));
+  const stag = s => s.replace("-", "/");
+  if (!tutte.length){ pop.open(`<h2>Precedenti</h2><p class="big">${kit(h)}${h} – ${kit(a)}${a}</p><p class="sub" style="margin-top:12px">Dal 2000 a oggi non si sono mai incontrate in Serie A.</p>`); return }
+  // dal punto di vista di h
+  const gH = p => p.c === h ? p.gc : p.go, gA = p => p.c === h ? p.go : p.gc;
+  const vh = tutte.filter(p => gH(p) > gA(p)), va = tutte.filter(p => gH(p) < gA(p)), px = tutte.filter(p => gH(p) === gA(p));
+  const golH = tutte.reduce((t, p) => t + gH(p), 0), golA = tutte.reduce((t, p) => t + gA(p), 0);
+  const inCasa = tutte.filter(p => p.c === h), icV = inCasa.filter(p => p.gc > p.go).length, icN = inCasa.filter(p => p.gc === p.go).length, icP = inCasa.length - icV - icN;
+  const larga = arr => arr.slice().sort((x, y) => Math.abs(y.gc - y.go) - Math.abs(x.gc - x.go) || (y.gc + y.go) - (x.gc + x.go))[0];
+  const ris = p => `${p.c} <b class="num">${p.gc}-${p.go}</b> ${p.o}`;
+  const riga = p => `<div class="r ${gH(p) > gA(p) ? "vc" : gH(p) < gA(p) ? "vo" : "pa"}"><span>${ris(p)}</span><span class="num"><small>${fmtDate(p.d)} · ${stag(p.s)}</small></span></div>`;
+  const n = tutte.length, pc = x => x / n * 100;
+  const fH = vh[0], fA = va[0], lH = vh.length && larga(vh), lA = va.length && larga(va);
+  const serie = (() => { let k = 0; const e0 = Math.sign(gH(tutte[0]) - gA(tutte[0])); for (const p of tutte){ if (Math.sign(gH(p) - gA(p)) !== e0) break; k++ } return k >= 3 ? (e0 > 0 ? `${h} ha vinto le ultime ${k}` : e0 < 0 ? `${a} ha vinto le ultime ${k}` : `le ultime ${k} sono finite in pareggio`) : "" })();
+  pop.open(`<h2>Precedenti</h2><p class="big">${kit(h)}<b>${h}</b> – ${kit(a)}<b>${a}</b></p>
+    <p class="sub">${n} partite in Serie A dal 2000 a oggi · gol ${golH}-${golA}</p>
+    <div class="h2h"><div class="c"><b>${vh.length}</b><small>vittorie ${h}</small></div><div><b>${px.length}</b><small>pareggi</small></div><div class="o"><b>${va.length}</b><small>vittorie ${a}</small></div></div>
+    <div class="h2bar"><span style="flex:${pc(vh.length)}"></span><span style="flex:${pc(px.length)}"></span><span style="flex:${pc(va.length)}"></span></div>
+    ${serie ? `<p class="big" style="font-size:15px">🔥 ${serie}</p>` : ""}
+    ${inCasa.length ? `<h3>Quando gioca in casa ${h}</h3><p class="sub" style="color:var(--ink)">${inCasa.length} partite: <b>${icV}</b> vittorie ${h}, <b>${icN}</b> pareggi, <b>${icP}</b> vittorie ${a}</p>` : ""}
+    <h3>Ultime ${Math.min(5, n)} sfide</h3><div class="rows">${tutte.slice(0, 5).map(riga).join("")}</div>
+    <h3>Da ricordare</h3><div class="rows">
+      ${lH ? `<div class="r vc"><span>Vittoria più larga ${h}: ${ris(lH)}</span><span class="num"><small>${stag(lH.s)}</small></span></div>` : ""}
+      ${lA ? `<div class="r vo"><span>Vittoria più larga ${a}: ${ris(lA)}</span><span class="num"><small>${stag(lA.s)}</small></span></div>` : ""}
+      ${fH ? `<div class="r"><span>Ultima vittoria ${h}</span><span class="num"><small>${fmtDate(fH.d)}</small></span></div>` : `<div class="r"><span>${h} non l'ha mai battuta</span></div>`}
+      ${fA ? `<div class="r"><span>Ultima vittoria ${a}</span><span class="num"><small>${fmtDate(fA.d)}</small></span></div>` : `<div class="r"><span>${a} non l'ha mai battuta</span></div>`}
+    </div>`);
+}
+document.addEventListener("click", e => { const b = e.target.closest("[data-prec]"); if (!b) return; e.stopPropagation(); const [h, a] = b.dataset.prec.split("|"); precedenti(h, a) }, true);
 
 // ---------------- Le mie schedine e quelle degli amici ----------------
 // Ognuno prepara la schedina di una giornata intera (1, X, 2, anche doppie e triple) e la firma con il suo nome.
@@ -1196,7 +1242,7 @@ $("table").addEventListener("click", e => { const b = e.target.closest("[data-te
     const ms = partiteGiornata(scelta).sort((a, b) => (a[0] + (a[6] || "")).localeCompare(b[0] + (b[6] || "")));
     $("schNew").innerHTML = ms.map(m => {
       const k = m[1] + "|" + m[2], p = bozza[k] || {};
-      return `<div class="sch-row" data-k="${k}"><div><div class="who">${kit(m[1])}${m[1]} – ${kit(m[2])}${m[2]}</div><div class="when">${fmtDate(m[0])}${m[6] ? ` · ore ${m[6]}` : ""}</div></div>
+      return `<div class="sch-row" data-k="${k}"><div><div class="who">${kit(m[1])}${m[1]} – ${kit(m[2])}${m[2]}</div><div class="when">${fmtDate(m[0])}${m[6] ? ` · ore ${m[6]}` : ""} <button type="button" class="prec-btn" data-prec="${m[1]}|${m[2]}">⚔ Precedenti</button></div></div>
         <div class="pick" role="group" aria-label="Pronostico">${["1", "X", "2"].map(s => `<button type="button" data-s="${s}" aria-pressed="${!!(p.s && p.s.includes(s))}">${s}</button>`).join("")}</div></div>`;
     }).join("");
     aggiornaSalva();
