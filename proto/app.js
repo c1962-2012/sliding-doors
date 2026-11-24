@@ -403,6 +403,7 @@ function setSeason(s){
 }
 
 function setScore(i, g){
+  contaUso("cambio-risultato");
   const m = matches()[i];
   g = g.map(v => Math.max(0, Math.min(9, v)));
   if (g[0]===m[4] && g[1]===m[5]) delete overrides[i]; else overrides[i] = g;
@@ -839,13 +840,16 @@ $("compPick").addEventListener("click", e => { const b = e.target.closest("[data
 $("euTeam").addEventListener("change", renderEu);
 
 document.addEventListener("click", e => {
-  const b = e.target.closest("[data-flip]"); if (!b) return;
+  const b = e.target.closest("[data-flip]"); if (!b) return; contaUso("ribalta");
   const k = b.dataset.flip;
   if (flips[k]) delete flips[k]; else flips[k] = true;
   renderCups();
 });
 
+// conteggio anonimo delle funzioni usate (nessun dato personale): serve a capire cosa interessa agli utenti
+const contaUso = nome => { try { window.goatcounter && window.goatcounter.count && window.goatcounter.count({ path: "uso/" + nome, title: "Uso: " + nome, event: true }) } catch (e) {} };
 function showView(v){
+  contaUso("scheda-" + v);
   ["a","cup","eu","sc","sch","form"].forEach(x => $("view-"+x).hidden = x!==v);
   if (v === "form" && window.SD_formRender) SD_formRender();
   if (v === "cup" || v === "eu") renderVideoCoppe();
@@ -1104,6 +1108,7 @@ const pop = (() => {
 
 // ---------------- Scheda della squadra ----------------
 function schedaSquadra(t){
+  contaUso("scheda-squadra");
   const ms = matches(), S = season.replace("-", "/");
   const real = table(withScores(false)), pos = real.findIndex(r => r.team === t), r = real[pos];
   const giocate = ms.filter(m => (m[2] === t || m[3] === t) && m[4] !== null).sort((a, b) => b[1].localeCompare(a[1]));
@@ -1202,7 +1207,7 @@ document.addEventListener("click", e => {
   // i precedenti si aprono sotto la partita, e si richiudono toccando di nuovo il pulsante
   const riga = b.closest(".match, .sch-row, .r") || b.parentElement, dopo = riga.nextElementSibling;
   if (dopo && dopo.classList.contains("prec-box")){ dopo.remove(); b.setAttribute("aria-expanded", "false"); b.textContent = "⚔ Precedenti"; return }
-  const [h, a] = b.dataset.prec.split("|");
+  contaUso("precedenti"); const [h, a] = b.dataset.prec.split("|");
   riga.insertAdjacentHTML("afterend", precedenti(h, a));
   b.setAttribute("aria-expanded", "true"); b.textContent = "✕ Chiudi precedenti";
 }, true);
@@ -1961,7 +1966,7 @@ document.addEventListener("click", e => {
     } catch (e) {}
   }
   btn.addEventListener("click", () => {
-    scrivi(K_ON, on() ? "0" : "1");
+    scrivi(K_ON, on() ? "0" : "1"); contaUso(on() ? "avviso-roma-on" : "avviso-roma-off");
     if (on() && window.Notification && Notification.permission === "default") { try { Notification.requestPermission() } catch (e) {} }
     disegna(); ultimo = 0; controlla();
     if (!on()) popup.hidden = true;
