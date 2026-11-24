@@ -169,7 +169,7 @@ body.recording .rbox:has(.stage)>:not(.rvid){visibility:hidden}
 </div>
 <div class="grid">
 <div style="min-width:0"><div class="video">
-<div class="live" id="live" hidden><b>LIVE</b><span id="chname"></span> · ascolto da <span id="dur">0 min</span></div>
+<div class="live" id="live" hidden><b id="livebadge">LIVE</b><span id="chname"></span> · ascolto da <span id="dur">0 min</span></div>
 <div id="pl" hidden style="position:absolute;inset:0"></div>
 <div class="ph" id="ph"><div style="font-size:42px">▶</div><div>Qui ci sarebbe il video della diretta.</div><div id="lnk"></div></div>
 <div id="pan" hidden>
@@ -256,7 +256,8 @@ async function findVodFree(){
    fetch("https://decapi.me/twitch/vod_replay/"+encodeURIComponent(c)+"?minutes=0").then(r=>r.text()),
    fetch("https://decapi.me/twitch/uptime/"+encodeURIComponent(c)).then(r=>r.text())]);
   if(c!==ch)return;
-  if(!/\d+\s*(second|minute|hour|day)/.test(u)){$("rph").textContent=c+" non è in diretta adesso: qui non si può rivedere.";return}
+  if(!/\d+\s*(second|minute|hour|day)/.test(u)){$("rph").textContent=c+" non è in diretta adesso: qui non si può rivedere.";$("livebadge").textContent="OFFLINE";$("livebadge").style.background="#555";$("st").textContent=c+" non è in diretta adesso. Quando va in diretta, ricarica la pagina.";return}
+  $("livebadge").textContent="LIVE";$("livebadge").style.background="";
   const m=v.match(/videos\/(\d+)\?t=(?:(\d+)h)?(?:(\d+)m)?(?:(\d+)s)?/);
   if(!m){$("rph").textContent=c+" non salva le registrazioni o le riserva agli abbonati: qui non si può rivedere.";return}
   const pos=(+(m[2]||0))*3600+(+(m[3]||0))*60+(+(m[4]||0));
@@ -275,7 +276,7 @@ function connect(){
  ws.onopen=()=>{ws.send("CAP REQ :twitch.tv/tags");ws.send("PASS SCHMOOPIIE");ws.send("NICK justinfan"+Math.floor(10000+Math.random()*80000));ws.send("JOIN #"+ch)};
  ws.onmessage=e=>e.data.split("\r\n").forEach(line);
  ws.onclose=()=>{$("st").textContent="Disconnesso."};
- vod=null;$("keybar").hidden=true;findVodFree();viewers=null;uid=null;findVod();$("rtoggle").hidden=false;$("open").hidden=false;$("mute").hidden=false;$("live").hidden=false;playLive();
+ vod=null;$("keybar").hidden=true;$("livebadge").textContent="LIVE";$("livebadge").style.background="";findVodFree();viewers=null;uid=null;findVod();$("rtoggle").hidden=false;$("open").hidden=false;$("mute").hidden=false;$("live").hidden=false;playLive();
  $("chname").textContent=ch;$("rtoggle").hidden=false;$("live").hidden=false;$("open").hidden=false;
  $("lnk").innerHTML='<a href="https://www.twitch.tv/'+esc(ch)+'" target="_blank" rel="noopener">Apri la diretta di '+esc(ch)+' su Twitch</a>';
 }
@@ -620,7 +621,7 @@ if(qp.get("ch")){$("ch").value=qp.get("ch");setTimeout(()=>{connect();if(qp.get(
 function line(l){
  if(!l)return;
  if(l.startsWith("PING")){ws.send("PONG :tmi.twitch.tv");return}
- if(l.includes(" 366 ")){$("st").textContent="Collegato a "+ch+". Puoi già tornare indietro con il telecomando sotto il video.";return}
+ if(l.includes(" 366 ")){if($("livebadge").textContent==="OFFLINE")return;$("st").textContent="Collegato a "+ch+". Puoi già tornare indietro con il telecomando sotto il video.";return}
  const m=l.match(/^(?:@(\S+) )?:(\w+)!\S+ PRIVMSG #\w+ :(.*)$/);if(!m)return;
  const tags={};(m[1]||"").split(";").forEach(p=>{const i=p.indexOf("=");tags[p.slice(0,i)]=p.slice(i+1)});
  const user=tags["display-name"]||m[2],text=m[3],t=Date.now(),col=tags.color||"#bf94ff";
