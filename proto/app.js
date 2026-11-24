@@ -1901,3 +1901,75 @@ document.addEventListener("click", e => {
   addEventListener("hashchange", daLink);
   if (!daLink() && currentView === "form"){ SD_formRender(); if (location.hash === "#formazione") [400, 1500, 3000].forEach(ms => setTimeout(() => { if (scrollY < 4000) document.querySelector(".frm-scegli").scrollIntoView({ block: "start" }) }, ms)) }
 }
+
+// ---------------- AS Roma in diretta (conferenze stampa ed eventi sul canale YouTube ufficiale) ----------------
+// Un controllo automatico ogni 5 minuti scrive su GitHub se il canale è in diretta. Qui l'utente sceglie se ricevere l'avviso
+// (spento finché non lo attiva) e, quando arriva, se guardare la diretta o no. L'avviso arriva solo con l'app aperta.
+(function () {
+  const STATO = "https://raw.githubusercontent.com/c1962-2012/sliding-doors/stato/live-roma.json";
+  const CANALE = "https://www.youtube.com/@asroma", K_ON = "sd-roma-avviso", K_VISTO = "sd-roma-visto";
+  const leggi = k => { try { return localStorage.getItem(k) } catch (e) { return null } };
+  const scrivi = (k, v) => { try { localStorage.setItem(k, v) } catch (e) {} };
+  const st = document.createElement("style");
+  st.textContent = ".roma-tv{display:flex;flex-wrap:wrap;gap:8px;margin:8px 0}.roma-tv a,.roma-tv button{font:inherit;font-size:13px;font-weight:600;color:var(--ink);text-decoration:none;background:rgba(255,255,255,.05);border:1px solid var(--line-hi);border-radius:999px;padding:6px 12px;cursor:pointer}" +
+    ".roma-tv button[aria-pressed=true]{border-color:var(--gold);color:var(--gold)}.roma-tv small{flex-basis:100%;color:var(--muted);font-size:12px}" +
+    "#romaLive{position:fixed;left:50%;bottom:18px;transform:translateX(-50%);z-index:10001;width:min(440px,calc(100% - 24px));background:#4a0f1a;color:#fff;border:2px solid #f0bc42;border-radius:18px;padding:16px;box-shadow:0 10px 40px rgba(0,0,0,.65)}" +
+    "#romaLive[hidden]{display:none}#romaLive b{color:#f0bc42;display:block;font-size:13px;letter-spacing:.06em;text-transform:uppercase}#romaLive p{margin:6px 0 12px;font-size:16px}" +
+    "#romaLive .a{display:flex;gap:10px;flex-wrap:wrap}#romaLive .a a,#romaLive .a button{flex:1;text-align:center;text-decoration:none;font:inherit;font-weight:700;border-radius:999px;padding:10px 14px;border:1px solid #fff5;background:transparent;color:#fff;cursor:pointer}#romaLive .a a{background:#f0bc42;border-color:#f0bc42;color:#2a0a10}";
+  document.head.appendChild(st);
+
+  const box = document.createElement("div");
+  box.className = "roma-tv";
+  box.innerHTML = `<a href="${CANALE}" target="_blank" rel="noopener">📺 Canale ufficiale AS Roma</a><button type="button" id="romaAvviso" aria-pressed="false"></button><small id="romaNota"></small>`;
+  const ref = document.getElementById("updated");
+  if (ref && ref.parentNode) ref.parentNode.insertBefore(box, ref.nextSibling);
+  const btn = box.querySelector("#romaAvviso"), nota = box.querySelector("#romaNota");
+  const on = () => leggi(K_ON) === "1";
+  const disegna = () => {
+    btn.setAttribute("aria-pressed", on());
+    btn.textContent = on() ? "🔔 Avviso conferenza Roma attivo" : "🔕 Avvisami quando inizia la conferenza della Roma";
+    nota.textContent = on() ? "Ti chiederò se vuoi guardare la diretta quando la Roma fa una conferenza stampa. L'avviso arriva solo con l'app aperta; tocca di nuovo per spegnerlo." : "";
+  };
+  const popup = document.createElement("div");
+  popup.id = "romaLive"; popup.hidden = true; popup.setAttribute("role", "alertdialog");
+  document.body.appendChild(popup);
+
+  function mostra(s, prova) {
+    const url = "https://www.youtube.com/watch?v=" + s.videoId;
+    popup.innerHTML = `<b>📺 AS Roma in diretta ora</b><p>${String(s.titolo || "Diretta sul canale ufficiale").replace(/[&<>"]/g, c => ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;" }[c]))}</p><div class="a"><a href="${url}" target="_blank" rel="noopener" data-sv="guarda">▶ Guarda ora</a><button type="button" data-sv="no">No, grazie</button></div>`;
+    popup.hidden = false;
+    if (!prova && window.Notification && Notification.permission === "granted" && document.hidden) {
+      try { const n = new Notification("AS Roma in diretta", { body: s.titolo || "Diretta sul canale ufficiale", icon: "icon-192.png" }); n.onclick = () => { window.open(url, "_blank"); n.close() } } catch (e) {}
+    }
+  }
+  popup.addEventListener("click", e => {
+    const b = e.target.closest("[data-sv]"); if (!b) return;
+    popup.hidden = true;   // sia "Guarda ora" (si apre YouTube) sia "No, grazie": per questa diretta non si chiede più
+    if (popup.dataset.id) scrivi(K_VISTO, popup.dataset.id);
+  });
+
+  let ultimo = 0;
+  async function controlla() {
+    if (!on() || document.hidden || Date.now() - ultimo < 60000) return;
+    ultimo = Date.now();
+    try {
+      const r = await fetch(STATO + "?t=" + Date.now(), { cache: "no-store" });
+      if (!r.ok) return;
+      const s = await r.json();
+      if (s.live && s.conferenza && s.videoId && s.videoId !== leggi(K_VISTO) && Date.now() - new Date(s.checked).getTime() < 20 * 60000) { popup.dataset.id = s.videoId; mostra(s) }
+      else if (!s.live) popup.hidden = true;
+    } catch (e) {}
+  }
+  btn.addEventListener("click", () => {
+    scrivi(K_ON, on() ? "0" : "1");
+    if (on() && window.Notification && Notification.permission === "default") { try { Notification.requestPermission() } catch (e) {} }
+    disegna(); ultimo = 0; controlla();
+    if (!on()) popup.hidden = true;
+  });
+  disegna();
+  setInterval(controlla, 180000);
+  document.addEventListener("visibilitychange", () => { if (!document.hidden) controlla() });
+  controlla();
+  // solo nell'anteprima sul computer: #prova-roma mostra l'avviso con una diretta finta
+  if (/^localhost$|^127./.test(location.hostname) && location.hash === "#prova-roma") { popup.dataset.id = "prova"; mostra({ videoId: "dQw4w9WgXcQ", titolo: "Conferenza stampa di vigilia (prova)" }, true) }
+})();
