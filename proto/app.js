@@ -847,7 +847,29 @@ document.addEventListener("click", e => {
 });
 
 // conteggio anonimo delle funzioni usate (nessun dato personale): serve a capire cosa interessa agli utenti
-const contaUso = nome => { try { window.goatcounter && window.goatcounter.count && window.goatcounter.count({ path: "uso/" + nome, title: "Uso: " + nome, event: true }) } catch (e) {} };
+const contaUso = nome => {
+  try { window.goatcounter && window.goatcounter.count && window.goatcounter.count({ path: "uso/" + nome, title: "Uso: " + nome, event: true }) } catch (e) {}
+  // percorso anonimo della visita: quali funzioni sono state toccate (la scheda iniziale Serie A non conta). Si invia una sola volta, quando l'utente lascia o nasconde la pagina.
+  const f = { "scheda-cup": "coppa-italia", "scheda-eu": "europa", "scheda-sc": "marcatori", "scheda-sch": "schedine", "scheda-form": "formazione", "scheda-squadra": "scheda-squadra", "precedenti": "precedenti", "cambio-risultato": "cambio-risultato", "ribalta": "ribalta", "avviso-roma-on": "avviso-roma", "guida": "guida" }[nome];
+  if (f) visita.add(f);
+};
+const visita = new Set();
+(function () {
+  let inviata = false;
+  const invia = () => {
+    if (inviata) return; inviata = true;
+    try {
+      if (!(window.goatcounter && window.goatcounter.count)) return;
+      const lista = [...visita].sort(), base = "https://slidingdoors.goatcounter.com/count";
+      const manda = (p, t) => fetch(base + "?p=" + encodeURIComponent(p) + "&t=" + encodeURIComponent(t) + "&e=true&rnd=" + Math.random().toString(36).slice(2, 7), { keepalive: true, mode: "no-cors" }).catch(() => {});
+      manda("visita/" + (lista.length ? lista.join("+") : "solo-serie-a"), "Percorso della visita");
+      manda("visita/n-funzioni-" + Math.min(lista.length, 6), "Funzioni usate nella visita");
+    } catch (e) {}
+  };
+  document.addEventListener("visibilitychange", () => { if (document.hidden) invia() });
+  addEventListener("pagehide", invia);
+  window.SD_visitaProva = () => { const r = [...visita]; return r };
+})();
 function showView(v){
   contaUso("scheda-" + v);
   ["a","cup","eu","sc","sch","form"].forEach(x => $("view-"+x).hidden = x!==v);
