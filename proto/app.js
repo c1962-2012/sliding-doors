@@ -1928,7 +1928,7 @@ document.addEventListener("click", e => {
   const disegna = () => {
     btn.setAttribute("aria-pressed", on());
     btn.textContent = on() ? "🔔 Avviso conferenza Roma attivo" : "🔕 Avvisami quando inizia la conferenza della Roma";
-    nota.textContent = on() ? "Ti chiederò se vuoi guardare la diretta quando la Roma fa una conferenza stampa. L'avviso arriva solo con l'app aperta; tocca di nuovo per spegnerlo." : "";
+    nota.textContent = on() ? "Ti chiederò se vuoi guardare la diretta quando la Roma fa una conferenza stampa. L'avviso arriva solo con l'app aperta; tocca di nuovo per spegnerlo." : "Attivalo e ti chiedo se vuoi guardare la diretta quando la Roma inizia una conferenza stampa sul canale ufficiale. Funziona solo con l'app aperta.";
   };
   const popup = document.createElement("div");
   popup.id = "romaLive"; popup.hidden = true; popup.setAttribute("role", "alertdialog");
