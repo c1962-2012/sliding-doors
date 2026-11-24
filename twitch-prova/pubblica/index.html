@@ -1,0 +1,702 @@
+<!doctype html>
+<html lang="it">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Rivedi</title>
+<meta name="description" content="Rivedi qualsiasi momento della tua diretta Twitch mentre è ancora in corso, taglia il pezzo e registralo.">
+<style>
+:root{--bg:#0e0e10;--card:#18181b;--card2:#1f1f23;--line:#2f2f35;--fg:#efeff1;--mut:#adadb8;--acc:#9147ff;--acc2:#bf94ff;--hot:#ff6b4a}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--fg);font:14px/1.5 system-ui,Segoe UI,Arial,sans-serif;padding:16px}
+h1{font-size:18px;margin:0 0 4px}
+.sub{color:var(--mut);font-size:13px;margin:0 0 14px}
+.bar{display:flex;gap:8px;flex-wrap:wrap;margin-bottom:14px}
+input{background:var(--card);border:1px solid var(--line);color:var(--fg);border-radius:6px;padding:9px 11px;font-size:14px;min-width:220px}
+button{background:var(--acc);color:#fff;border:none;border-radius:6px;padding:9px 14px;font-size:14px;font-weight:600;cursor:pointer}
+button:hover{background:#772ce8}
+button.ghost{background:transparent;border:1px solid var(--line);color:var(--fg)}
+.grid{display:grid;grid-template-columns:minmax(0,1fr) 340px;gap:12px}
+@media(max-width:800px){.grid{grid-template-columns:1fr}}
+.video{position:relative;aspect-ratio:16/9;max-width:calc((100vh - 230px) * 16 / 9);margin:0 auto;background:var(--card);border-radius:8px;min-height:0;overflow:hidden}
+.ph{position:absolute;inset:0;display:flex;flex-direction:column;align-items:center;justify-content:center;color:#5c5c66;gap:6px;text-align:center;padding:20px}
+.ph a{color:var(--acc2)}
+.live{z-index:2;background:rgba(0,0,0,.6);padding:2px 6px;border-radius:4px;position:absolute;top:10px;left:10px;font-size:12px;color:var(--mut)}
+.live b{background:#eb0400;color:#fff;padding:1px 6px;border-radius:4px;margin-right:6px;font-size:11px}
+
+#pan{z-index:4;position:absolute;top:12px;right:12px;bottom:12px;width:min(360px,calc(100% - 24px));background:var(--card2);border:1px solid #3a3a44;border-radius:8px;padding:14px;overflow:auto}
+.ph2{display:flex;justify-content:space-between;align-items:center}
+.x{background:none;color:var(--mut);font-size:20px;padding:0 4px}
+.x:hover{background:none;color:var(--fg)}
+.sec{margin-top:14px}
+.sec h3{font-size:12px;text-transform:uppercase;letter-spacing:.06em;color:var(--mut);margin:0 0 6px}
+.it{display:flex;gap:10px;padding:8px 0;border-top:1px solid var(--line)}
+.tm{color:var(--hot);min-width:48px;font-size:12px;font-weight:600}
+.q{color:var(--mut);font-style:italic}
+.rv{border:none;cursor:pointer;display:inline-block;margin-top:5px;background:var(--acc);color:#fff;text-decoration:none;border-radius:5px;padding:3px 9px;font-size:12px;font-weight:600}
+.rv:hover{background:#772ce8}
+.remote{background:var(--card);border-radius:8px;padding:10px 12px;margin-top:8px}
+.rtop{display:flex;justify-content:space-between;gap:8px;flex-wrap:wrap;margin-bottom:6px}
+.rs{font-weight:700;font-size:13px}.rs.live{color:#ff4040}.rs.vod{color:var(--acc2)}
+.ri{color:var(--mut);font-size:12px}
+.track{position:relative;padding:6px 0}
+#seek{width:100%;accent-color:var(--acc);margin:0}
+#mtr{margin-top:22px}
+#mseg{position:absolute;top:1px;height:18px;min-width:12px;background:rgba(245,197,24,.6);border-top:2px solid #f5c518;border-bottom:2px solid #f5c518;pointer-events:auto;cursor:grab;display:none;z-index:4;touch-action:none;box-sizing:border-box}
+#mseg:active{cursor:grabbing}
+#mgrip{position:absolute;top:24px;width:34px;height:18px;margin-left:-17px;border-radius:9px;background:#f5c518;color:#1b1700;font-weight:700;font-size:13px;line-height:18px;text-align:center;cursor:grab;z-index:6;display:none;touch-action:none;user-select:none;box-shadow:0 0 0 1px #000}
+#mtr{margin-bottom:22px}
+.hnd{position:absolute;top:-2px;width:4px;height:24px;border-radius:2px;cursor:ew-resize;z-index:5;display:none;touch-action:none}
+.hnd::before{content:"";position:absolute;left:-12px;right:-12px;top:-14px;bottom:-6px}
+.hnd::after{content:"";position:absolute;left:50%;top:-9px;width:12px;height:12px;margin-left:-6px;border-radius:50%;background:inherit;border:2px solid #fff;box-sizing:border-box}
+#hin{background:#2ecc71}
+#hout{background:#ff5a4a}
+.htip{position:absolute;bottom:36px;left:50%;transform:translateX(-50%);white-space:nowrap;font-size:11px;font-weight:600;padding:1px 5px;border-radius:4px;background:#0e0e10;border:1px solid #555;pointer-events:none}
+#hin .htip{color:#2ecc71;left:auto;right:0;transform:none}#hout .htip{color:#ff5a4a;left:0;transform:none}
+#hout.edge .htip{left:auto;right:0;bottom:58px}
+.mtrack{height:34px;padding:0;background:#2a2a30;border-radius:5px;margin-top:6px}
+#cnow{position:absolute;top:0;bottom:0;width:2px;background:#bf94ff;z-index:2;pointer-events:none}
+.crow button.zon{background:#f5c518;color:#1b1700}
+.mtrack #seek{position:absolute;left:0;right:0;top:10px;width:100%}
+.mtrack input.cut{position:absolute;left:0;right:0;top:4px;width:100%;margin:0;pointer-events:none;background:none;-webkit-appearance:none;appearance:none;height:26px;z-index:4}
+.mtrack input.cut::-webkit-slider-runnable-track{background:transparent;height:26px}
+.mtrack input.cut::-webkit-slider-thumb{-webkit-appearance:none;pointer-events:auto;width:16px;height:30px;margin-top:-2px;border-radius:4px;border:2px solid #fff;cursor:ew-resize;box-shadow:0 0 0 1px #000}
+.mtrack #cin::-webkit-slider-thumb{background:#2ecc71}
+.mtrack #cout::-webkit-slider-thumb{background:#ff5a4a}
+.mtrack #cout{z-index:5}.mtrack #cin{z-index:6}
+.mtrack #csel{position:absolute;top:8px;height:14px;background:rgba(245,197,24,.55);border-top:2px solid #f5c518;border-bottom:2px solid #f5c518;pointer-events:none;z-index:3}
+.cutbox{margin-top:8px;padding:8px;border:1px solid #f5c518;border-radius:8px;background:#1b1700}
+.crow{display:flex;gap:5px;align-items:center;flex-wrap:wrap;margin-top:5px;font-size:12px}
+.crow button{background:#3a2f00;border:1px solid #6b5600;color:#f5c518;padding:4px 7px;font-size:12px}
+.crow .cl{min-width:150px}
+#csel{position:absolute;top:10px;height:6px;background:#f5c518;border-radius:3px;pointer-events:none;z-index:1}
+.cutbox .ttrack #cout{z-index:2}.cutbox .ttrack #cin{z-index:3}
+#cin::-webkit-slider-runnable-track{background:transparent}
+#dots{position:absolute;left:0;right:0;top:0;height:8px;pointer-events:none}
+#dots i{position:absolute;top:0;width:10px;height:10px;margin-left:-5px;border-radius:50%;background:var(--hot);pointer-events:auto;cursor:pointer;border:2px solid var(--card)}
+.rbtn{display:flex;gap:6px;flex-wrap:wrap;margin-top:6px}
+.rbtn button{background:var(--card2);border:1px solid var(--line);padding:7px 11px;font-size:13px}
+.rbtn button:hover{background:#2f2f35}
+.rbtn button.red{background:#eb0400;border-color:#eb0400}
+.strip{display:flex;gap:8px;flex-wrap:wrap;margin-top:8px;justify-content:center}
+.strip #open{position:static}
+.recrow{display:flex;flex-wrap:wrap;gap:6px;align-items:center;margin-top:8px;padding-top:8px;border-top:1px solid var(--line);font-size:12px}
+#trim{flex-basis:100%;margin-top:4px}
+.ttrack{position:relative;height:26px}
+.ttrack input{position:absolute;left:0;right:0;top:4px;width:100%;margin:0;pointer-events:none;background:none;-webkit-appearance:none;appearance:none;height:18px}
+.ttrack input::-webkit-slider-runnable-track{height:6px;background:#3a3a44;border-radius:3px}
+.ttrack input::-webkit-slider-thumb{-webkit-appearance:none;pointer-events:auto;width:14px;height:22px;margin-top:-8px;border-radius:3px;background:#f5c518;border:2px solid #0e0e10;cursor:ew-resize}
+#tin::-webkit-slider-runnable-track{background:transparent}
+#tsel{position:absolute;top:10px;height:6px;background:#f5c518;border-radius:3px;pointer-events:none;z-index:1}
+.ttrack #tout{z-index:2}.ttrack #tin{z-index:3}
+.trow{display:flex;gap:6px;align-items:center;flex-wrap:wrap;margin-top:4px}
+.recrow select{background:var(--card2);color:var(--fg);border:1px solid var(--line);border-radius:5px;padding:4px}
+.recrow button{background:var(--card2);border:1px solid var(--line);padding:6px 9px;font-size:12px}
+.recrow .recb{background:#eb0400;border-color:#eb0400}
+.recrow #savebtn{background:#0a8f3c;border-color:#0a8f3c}
+.recrow #sharebtn{background:#9147ff;border-color:#9147ff}
+.rbox.big{width:min(1100px,calc(100vw - 48px))!important}
+.stage{--sh:min(calc(100vh - 56px),calc(100vw * 9 / 16),var(--rech,1080px));top:calc((100vh - 56px - var(--sh)) / 2)!important;position:fixed!important;left:calc((100vw - var(--sh) * 16 / 9) / 2)!important;right:auto!important;bottom:auto!important;width:calc(var(--sh) * 16 / 9)!important;height:var(--sh)!important;z-index:1000!important;border-radius:0!important;aspect-ratio:auto!important;max-width:none!important;margin:0!important;background:#000}
+body.recording::after{content:"";position:fixed;inset:0;background:#000;z-index:999}
+body.recording .rbox:has(.stage){z-index:1001;background:transparent;border-color:transparent;box-shadow:none}
+body.recording .rbox:has(.stage)>:not(.rvid){visibility:hidden}
+#recbar{position:fixed;bottom:8px;left:50%;transform:translateX(-50%);z-index:2000;display:flex;gap:10px;align-items:center;background:rgba(14,14,16,.92);border:1px solid #eb0400;border-radius:8px;padding:6px 10px;font-weight:600}
+#recbar button{background:#eb0400}
+.cutind{display:flex;gap:14px;flex-wrap:wrap;align-items:center;margin-top:6px;padding:6px 10px;border:1px solid #f5c518;border-radius:6px;background:#1b1700;font-size:14px}
+.cutind b{font-variant-numeric:tabular-nums;color:#fff;font-size:15px}
+.cutind i{font-style:normal}
+.mobrow{display:none}
+@media (max-width:800px){
+ body{padding:8px}
+ h1{font-size:16px}.sub{display:none}
+ .bar input{min-width:0;flex:1}
+ .video{max-width:none!important}
+ .strip button{flex:1;padding:10px 8px}
+ .chat{height:45vh!important;min-height:260px}
+ .rbox{left:0!important;right:0!important;bottom:0!important;top:auto!important;width:auto!important;max-height:88vh;overflow:auto;border-radius:14px 14px 0 0!important;padding:10px}
+ #rdrag{cursor:default}
+ #rdrag .ri{display:none}
+ .rbtn button,.crow button{padding:9px 10px;font-size:13px}
+ .hnd::before{left:-18px;right:-18px;top:-18px;bottom:-10px}
+ .hnd::after{width:18px;height:18px;margin-left:-9px;top:-14px}
+ #mgrip{width:44px;height:24px;margin-left:-22px;line-height:24px;font-size:16px;top:24px}
+ body.mobile .recrow{display:none}
+ body.mobile .mobrow{display:flex;flex-wrap:wrap;gap:8px;margin-top:10px}
+ .mobrow button{flex:1;padding:11px;font-size:14px;background:#9147ff}
+ .mobrow #mhow{background:var(--card2);border:1px solid var(--line)}
+ #mhowtxt{flex-basis:100%;font-size:13px;line-height:1.5;background:var(--card2);padding:8px;border-radius:8px}
+ .live{font-size:11px}
+}
+.why{color:var(--mut);font-size:12px}
+.mood{font-size:14px}
+.chips span{display:inline-block;background:#2a2140;color:var(--acc2);border-radius:999px;padding:2px 9px;margin:0 4px 4px 0;font-size:12px}
+.stats{display:flex;gap:8px}
+.stats div{flex:1;background:var(--card);border-radius:6px;padding:8px;text-align:center}
+.stats b{display:block;font-size:18px}
+.stats small{color:var(--mut);font-size:11px}
+.side{display:flex;flex-direction:column;gap:8px;min-width:0}
+.rbox{position:fixed;left:24px;bottom:24px;width:min(600px,calc(100vw - 48px));z-index:50;background:var(--card);border:1px solid #3a3a44;border-radius:10px;padding:8px;box-shadow:0 10px 30px rgba(0,0,0,.6)}
+#rdrag{cursor:move;user-select:none;gap:8px}
+#rdrag .ri{flex:1}
+.rhead{display:flex;justify-content:space-between;align-items:baseline;margin-bottom:6px;font-size:14px}
+.rvid{position:relative;aspect-ratio:16/9;background:#000;border-radius:6px;overflow:hidden}
+#rp{position:absolute;inset:0;isolation:isolate}
+#pl{isolation:isolate}
+.rph{position:absolute;inset:0;display:flex;align-items:center;justify-content:center;text-align:center;color:var(--mut);font-size:13px;padding:12px}
+.rbox .remote{margin-top:6px;padding:4px 2px;background:none}
+.rbox .rbtn button{padding:6px 8px;font-size:12px}
+.chat{background:var(--card);border-radius:8px;display:flex;flex-direction:column;height:calc(100vh - 190px);min-height:360px}
+.chat h2{font-size:13px;color:var(--mut);margin:0;padding:10px 12px;border-bottom:1px solid var(--line)}
+#msgs{flex:1;overflow:auto;padding:8px 12px;font-size:13px}
+#msgs p{margin:0 0 5px;word-wrap:break-word}
+.note{color:var(--mut);font-size:12px;margin-top:10px}
+[hidden]{display:none!important}
+</style>
+</head>
+<body>
+<h1>⏪ Rivedi</h1>
+<p class="sub">Scrivi il nome del tuo canale Twitch (o incolla il link della diretta) e premi Collegati. L'app se lo ricorda per la prossima volta.</p>
+<div class="bar">
+<input id="ch" placeholder="nome del canale, es. ilmasseo" autocomplete="off">
+<button id="go">Collegati</button>
+<span id="st" style="align-self:center;color:var(--mut);font-size:13px"></span>
+</div>
+<div class="bar" id="keybar" hidden style="background:var(--card);border-radius:8px;padding:10px;align-items:center">
+<span style="color:var(--mut);font-size:13px">Per <b style="color:var(--fg)">riavvolgere il video</b>:</span>
+<input id="cid" placeholder="Client ID della tua app Twitch" autocomplete="off" style="min-width:260px">
+<button id="login" class="ghost">Accedi con Twitch</button>
+<span id="kst" style="color:var(--mut);font-size:13px"></span>
+</div>
+<div class="grid">
+<div style="min-width:0"><div class="video">
+<div class="live" id="live" hidden><b>LIVE</b><span id="chname"></span> · ascolto da <span id="dur">0 min</span></div>
+<div id="pl" hidden style="position:absolute;inset:0"></div>
+<div class="ph" id="ph"><div style="font-size:42px">▶</div><div>Qui ci sarebbe il video della diretta.</div><div id="lnk"></div></div>
+<div id="pan" hidden>
+<div class="ph2"><b style="font-size:15px" id="ptitle">Ecco cosa è successo</b><button class="x" id="close" aria-label="Chiudi">×</button></div>
+<div style="color:var(--mut);font-size:12px" id="pupd"></div>
+<div class="sec"><div class="stats"><div><b id="s1">0</b><small>messaggi</small></div><div><b id="s2">0</b><small>hanno scritto</small></div><div><b id="s3">0</b><small>messaggi al minuto</small></div><div id="s4w" hidden><b id="s4">0</b><small>spettatori</small></div></div></div>
+<div class="sec"><h3>Andamento della chat</h3><canvas id="cv" height="70" style="width:100%;display:block"></canvas><div style="color:var(--mut);font-size:11px;margin-top:3px">Ogni barra è un minuto. <span style="color:var(--hot)">Arancione</span> = momento caldo. La linea è il ritmo normale della chat.</div></div>
+<div class="sec"><h3>Momenti caldi</h3><div id="hot"></div></div>
+<div class="sec"><h3>Di cosa si parla</h3><div class="chips" id="words"></div></div>
+<div class="sec"><h3>Le frasi più ripetute</h3><div id="reps"></div></div>
+<div class="sec"><h3>Chi scrive di più</h3><div class="chips" id="top"></div></div>
+<p class="note">Prova: il riassunto parte da quando hai aperto questa pagina e si basa solo sulla chat. Riavvolgi porta il video 30 secondi prima del momento caldo, dentro questa pagina.</p>
+</div>
+ </div>
+<div class="strip">
+<button id="rtoggle" hidden>⏪ Rivedi</button>
+<button id="mute" class="ghost" hidden>🔇 Audio diretta: spento</button>
+<button id="open" class="ghost" hidden>⟲ Cosa mi sono perso?</button>
+</div>
+</div>
+<div class="chat"><h2>Chat della diretta (vera)</h2><div id="msgs"><p style="color:var(--mut)">Collegati a un canale per vedere la chat.</p></div></div>
+</div>
+<div id="recbar" hidden><span id="recbart">● REC 0:00</span><button id="recstop">⏹ Ferma registrazione</button></div>
+<div class="rbox" id="rbox" hidden>
+<div class="rhead" id="rdrag"><b>⏪ Rivedi</b><span class="ri">trascinami da qui · la diretta continua</span><button class="x" id="rclose" aria-label="Chiudi">×</button></div>
+<div class="rvid"><div id="rp" style="visibility:hidden"></div><div id="rph" class="rph">Carico il video di 5 minuti fa…</div></div>
+<div id="remote" class="remote">
+<div class="rtop"><span id="rstate" class="rs live">Pronto</span><span id="rinfo" class="ri"></span></div>
+<div class="track" id="mtr"><div id="mseg"></div><input type="range" id="seek" min="0" max="1000" value="1000" step="1" aria-label="Barra del tempo"><div id="dots"></div><div id="mgrip" title="Sposta inizio e fine insieme">⇔</div><div id="hin" class="hnd" title="Inizio del pezzo"><span class="htip"></span></div><div id="hout" class="hnd" title="Fine del pezzo"><span class="htip"></span></div></div>
+<div style="display:flex;justify-content:space-between;align-items:center;gap:6px;font-size:11px;color:var(--mut);margin-top:-18px"><span id="zl"></span><button id="zout" hidden style="background:#3a2f00;border:1px solid #f5c518;color:#f5c518;padding:2px 8px;font-size:11px">🔍 tutta la diretta</button><span id="zr"></span></div>
+<div id="cutind" class="cutind" hidden><span><i style="color:#2ecc71">▶</i> Inizio <b id="ci_a">–</b></span><span><i style="color:#ff5a4a">■</i> Fine <b id="ci_b">–</b></span><span>⏱ Durata <b id="ci_d">–</b></span></div>
+<div id="mlab" class="ri" style="margin-top:2px"></div>
+<div class="rbtn">
+<button id="fromstart">⏮ Dall’inizio</button><button data-b="3600">⏪ 1 ora</button><button data-b="600">⏪ 10 min</button><button data-b="300">⏪ 5 min</button><button data-b="30">⏪ 30 s</button>
+<button id="pp">⏸ Pausa</button><button id="rmute">🔇 Audio rivedi: spento</button>
+<button data-b="-30">30 s ⏩</button>
+<button id="golive" class="red">✕ Chiudi</button>
+</div>
+<div id="rmsg" class="ri"></div>
+<div class="mobrow" id="mobrow">
+<button id="mplay" style="flex-basis:100%;background:#2ecc71;color:#06210f">▶ Guarda il pezzo (dalla verde alla rossa)</button>
+<button id="mshare">📤 Condividi questo pezzo</button>
+<button id="mhow">📱 Come registrarlo</button>
+<div id="mhowtxt" class="ri" hidden></div>
+</div>
+<div class="recrow">
+<b>⏺ Registra</b>
+<label style="color:#f5c518;display:inline-flex;gap:4px;align-items:center"><input type="checkbox" id="usecut" checked style="margin:0">solo il pezzo scelto ✂</label>
+<label>cosa <select id="rsrc"><option value="rp">la finestrella Rivedi</option><option value="pl">la diretta</option></select></label>
+<label>qualità <select id="rq"><option value="480">480p</option><option value="720">720p</option><option value="1080" selected>1080p Full HD</option></select></label>
+<button id="recbtn" class="recb">⏺ Registra</button>
+<button id="savebtn" class="recb" hidden>💾 Salva</button>
+<button id="sharebtn" class="recb" hidden>📤 Salva e condividi</button>
+<span id="pcshare" hidden style="flex-basis:100%;display:flex;gap:6px;align-items:center;flex-wrap:wrap">
+<a id="wabtn" href="whatsapp://" style="background:#25d366;color:#fff;text-decoration:none;border-radius:5px;padding:6px 9px;font-weight:600">🟢 Apri WhatsApp</a>
+<span id="dragclip" draggable="true" style="cursor:grab;background:var(--card2);border:1px dashed var(--acc2);border-radius:5px;padding:6px 9px">🎬 Trascinami nella chat</span>
+<span class="ri">computer: apri WhatsApp, entra nella chat e trascinaci il video</span>
+</span>
+<button id="bigbtn">⛶ Ingrandisci</button>
+<span id="rectime" class="ri"></span>
+<span class="ri" style="flex-basis:100%">Pubblica solo clip del tuo canale o con il permesso dello streamer.</span>
+<video id="recprev" hidden controls muted style="width:100%;max-height:220px;background:#000;border-radius:6px;margin-top:4px"></video>
+<div id="trim" hidden>
+<div class="ttrack"><div id="tsel"></div><input type="range" id="tin" min="0" max="1000" value="0" step="1" aria-label="Inizio del taglio"><input type="range" id="tout" min="0" max="1000" value="1000" step="1" aria-label="Fine del taglio"></div>
+<div class="trow"><span id="tlab" class="ri"></span><button id="tplay">▶ Anteprima taglio</button><button id="tcut" class="recb">✂ Taglia</button><button id="tundo" hidden>↩ Annulla taglio</button></div>
+</div>
+</div>
+</div>
+</div>
+<script src="https://player.twitch.tv/js/embed/v1.js"></script>
+<script>
+const STOP=new Set("che chi non per con una uno gli le la il lo di da del della dei delle nel nella sul sulla alla allo agli alle sono sei era hai ha ho abbiamo avete hanno questo questa quello quella come cosa ma se poi anche più piu già gia solo tutto tutti tra fra mai ancora qui qua là lì oggi ora però pero quindi tipo boh raga ragazzi comunque vero fa fai fare sta stai stare va vai dai dice detto proprio molto tanto troppo bene così cosi sempre mio mia tuo tua suo sua noi voi loro lui lei the and you that this for are was with but not have just what all can its it's get got lol omg chat stream".split(" "));
+let vod=null,tok=null,cidv="",viewers=null,uid=null;
+let ws,ch,start,msgs=[],users={},byMin={},phrases={},words={},emotes={};
+const $=id=>document.getElementById(id);
+function esc(s){return s.replace(/[&<>"']/g,c=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#39;"}[c]))}
+function mm(t){const m=Math.floor((t-start)/60000);return m<60?m+" min":Math.floor(m/60)+" h "+(m%60)+" min"}
+
+let vodLoading=null;
+async function findVodFree(){
+ const c=ch;let done;vodLoading=new Promise(r=>done=r);
+ try{
+  const [v,u]=await Promise.all([
+   fetch("https://decapi.me/twitch/vod_replay/"+encodeURIComponent(c)+"?minutes=0").then(r=>r.text()),
+   fetch("https://decapi.me/twitch/uptime/"+encodeURIComponent(c)).then(r=>r.text())]);
+  if(c!==ch)return;
+  if(!/\d+\s*(second|minute|hour|day)/.test(u)){$("rph").textContent=c+" non è in diretta adesso: qui non si può rivedere.";return}
+  const m=v.match(/videos\/(\d+)\?t=(?:(\d+)h)?(?:(\d+)m)?(?:(\d+)s)?/);
+  if(!m){$("rph").textContent=c+" non salva le registrazioni o le riserva agli abbonati: qui non si può rivedere.";return}
+  const pos=(+(m[2]||0))*3600+(+(m[3]||0))*60+(+(m[4]||0));
+  vod={id:m[1],t0:Date.now()-pos*1000};
+  upd();if(!$("pan").hidden)render();
+ }catch(e){$("rph").textContent="Non riesco a trovare la registrazione di "+c+"."}
+ finally{done();vodLoading=null}
+}
+function connect(){
+ const name=$("ch").value.trim().toLowerCase().replace(/^#|.*twitch\.tv\//,"").split(/[/?]/)[0];
+ if(!name){$("st").textContent="Scrivi prima il nome di un canale.";return}
+ if(ws)ws.close();
+ ch=name;start=Date.now();try{localStorage.setItem("rivedi_ch",name)}catch(e){}msgs=[];users={};byMin={};phrases={};words={};emotes={};
+ $("msgs").innerHTML="";$("st").textContent="Mi collego…";
+ ws=new WebSocket("wss://irc-ws.chat.twitch.tv:443");
+ ws.onopen=()=>{ws.send("CAP REQ :twitch.tv/tags");ws.send("PASS SCHMOOPIIE");ws.send("NICK justinfan"+Math.floor(10000+Math.random()*80000));ws.send("JOIN #"+ch)};
+ ws.onmessage=e=>e.data.split("\r\n").forEach(line);
+ ws.onclose=()=>{$("st").textContent="Disconnesso."};
+ vod=null;$("keybar").hidden=true;findVodFree();viewers=null;uid=null;findVod();$("rtoggle").hidden=false;$("open").hidden=false;$("mute").hidden=false;$("live").hidden=false;playLive();
+ $("chname").textContent=ch;$("rtoggle").hidden=false;$("live").hidden=false;$("open").hidden=false;
+ $("lnk").innerHTML='<a href="https://www.twitch.tv/'+esc(ch)+'" target="_blank" rel="noopener">Apri la diretta di '+esc(ch)+' su Twitch</a>';
+}
+
+const RU=location.origin+location.pathname;
+function ls(k,v){try{if(v===undefined)return localStorage.getItem(k);if(v===null)localStorage.removeItem(k);else localStorage.setItem(k,v)}catch(e){return null}}
+(function(){const h=new URLSearchParams(location.hash.slice(1));if(h.get("access_token")){ls("tw_tok",h.get("access_token"));history.replaceState(null,"",RU)}
+ tok=ls("tw_tok");cidv=ls("tw_cid")||"";$("cid").value=cidv;showKey()})();
+function showKey(){if(tok&&cidv){$("kst").textContent="Collegato a Twitch: puoi riavvolgere il video.";$("login").textContent="Esci";}else{$("kst").textContent="Senza accesso vedi la diretta ma non puoi riavvolgerla.";$("login").textContent="Accedi con Twitch"}}
+$("login").onclick=()=>{
+ if(tok){ls("tw_tok",null);tok=null;showKey();return}
+ cidv=$("cid").value.trim();if(!cidv){$("kst").textContent="Incolla prima il Client ID.";return}
+ ls("tw_cid",cidv);
+ location.href="https://id.twitch.tv/oauth2/authorize?response_type=token&client_id="+encodeURIComponent(cidv)+"&redirect_uri="+encodeURIComponent(RU)+"&scope=";
+};
+async function helix(path){const r=await fetch("https://api.twitch.tv/helix/"+path,{headers:{"Client-ID":cidv,"Authorization":"Bearer "+tok}});if(r.status===401){ls("tw_tok",null);tok=null;showKey();throw new Error("accesso scaduto")}return r.json()}
+async function findVod(){
+ if(!tok||!cidv)return;
+ try{
+  const u=(await helix("users?login="+encodeURIComponent(ch))).data[0];if(!u)return;
+  uid=u.id;
+  const st=(await helix("streams?user_id="+u.id)).data[0];
+  viewers=st?st.viewer_count:null;
+  const v=(await helix("videos?user_id="+u.id+"&type=archive&first=1")).data[0];
+  if(!v){$("kst").textContent=ch+" non salva le registrazioni: non si può riavvolgere questo canale.";return}
+  if(st&&Math.abs(new Date(v.created_at)-new Date(st.started_at))>15*60000){$("kst").textContent="La registrazione di oggi non è ancora disponibile.";return}
+  vod={id:v.id,t0:new Date(v.created_at).getTime()};
+  $("kst").textContent="Registrazione trovata: puoi riavvolgere il video.";
+  if(!$("pan").hidden)render();
+ }catch(e){$("kst").textContent="Non riesco a leggere la registrazione ("+e.message+")."}
+}
+const PARENT=location.hostname||"localhost";
+let resumes=[];
+let player=null,rp=null,mode="live",seekTarget=0,liveWasMuted=true;
+const LAG=90;
+const qp=new URLSearchParams(location.search);
+function fmt(sec){sec=Math.max(0,Math.round(sec));const h=Math.floor(sec/3600),m=Math.floor(sec%3600/60),x=sec%60;return (h?h+":"+String(m).padStart(2,"0"):m)+":"+String(x).padStart(2,"0")}
+function clock(t){const d=new Date(t);return d.toLocaleTimeString("it-IT",{hour:"2-digit",minute:"2-digit",second:"2-digit"})}
+function loadTwitch(cb){
+ if(window.Twitch&&Twitch.Player)return cb();
+ $("st").textContent="Carico il lettore video di Twitch…";
+ const sc=document.createElement("script");sc.src="https://player.twitch.tv/js/embed/v1.js?r="+Date.now();
+ sc.onload=()=>{$("st").textContent="Collegato a "+ch+". Puoi già tornare indietro con ⏪ Rivedi.";cb()};
+ sc.onerror=()=>{$("st").textContent="Il lettore video di Twitch non si carica: controlla la connessione e premi di nuovo Collegati."};
+ document.head.appendChild(sc);
+}
+function playLive(){
+ if(!(window.Twitch&&Twitch.Player))return loadTwitch(playLive);
+ closeReplay();
+ if(!player){player=new Twitch.Player("pl",{width:"100%",height:"100%",channel:ch,parent:[PARENT],muted:false,autoplay:true});
+  ["PAUSE","PLAY","PLAYING"].forEach(k=>player.addEventListener(Twitch.Player[k],()=>{if(dWatch)dlog({ev:"live-"+k,live:pst(player)})}));
+  player.addEventListener(Twitch.Player.PAUSE,()=>{if(mode!=="vod"||(rec&&rec.state==="recording"))return;const n=Date.now();resumes=resumes.filter(t=>n-t<15000);if(resumes.length>=4){$("rmsg").textContent="Twitch ferma la diretta mentre rivedi: premi play sulla diretta per farla ripartire.";return}resumes.push(n);setTimeout(()=>{try{player.play()}catch(e){}},400)});}
+ else player.setChannel(ch);
+ $("pl").hidden=false;$("ph").hidden=true;upd();
+}
+function closeReplay(){
+ if(rp){try{rp.pause()}catch(e){}}
+ $("rp").style.visibility="hidden";$("rph").hidden=false;
+ if(mode==="vod"&&player){try{player.play()}catch(e){}}
+ mode="live";$("pp").textContent="⏸ Pausa";upd();
+}
+function vodReady(cb){
+ if(!vod&&vodLoading){$("rph").textContent="Cerco la registrazione…";vodLoading.then(()=>vodReady(cb));return}
+ if(!vod){$("rmsg").textContent="";$("rph").textContent="Questo canale non è in diretta, non salva le registrazioni oppure le riserva agli abbonati: qui non si può rivedere.";return}
+ cb();
+}
+function nowAbs(){
+ if(mode==="vod"&&rp&&vod&&vod.t0){const ct=rp.getCurrentTime();return ct>1?vod.t0+ct*1000:seekTarget}
+ return Date.now();
+}
+function maxPos(){return (Date.now()-vod.t0)/1000-LAG}
+function seekAbs(abs){
+ if(!(window.Twitch&&Twitch.Player))return loadTwitch(()=>seekAbs(abs));
+ vodReady(()=>{
+  let pos=(abs-vod.t0)/1000;
+  if(pos>maxPos()){pos=maxPos();$("rmsg").textContent="Gli ultimi 90 secondi non sono ancora registrati: ti porto al punto più vicino."}else $("rmsg").textContent="";
+  pos=Math.max(0,pos);seekTarget=vod.t0+pos*1000;
+  if(!rp){rp=new Twitch.Player("rp",{width:"100%",height:"100%",video:"v"+vod.id,time:Math.floor(pos/3600)+"h"+Math.floor(pos%3600/60)+"m"+Math.floor(pos%60)+"s",parent:[PARENT],autoplay:true,muted:true});["PAUSE","PLAY","PLAYING","ENDED","OFFLINE","ONLINE"].forEach(k=>{if(Twitch.Player[k])rp.addEventListener(Twitch.Player[k],()=>{if(rec&&rec.state==="recording"||dWatch)dlog({ev:"rp-"+k,rp:pst(rp)})})})}
+  else if(mode==="vod"&&rp.getVideo&&rp.getVideo()===vod.id){rp.seek(pos);rp.play()}
+  else{rp.setVideo("v"+vod.id,pos);rp.play()}
+  showBox(true);mode="vod";$("rp").style.visibility="visible";setTimeout(()=>{try{player&&player.play()}catch(e){}},1500);$("rph").hidden=true;$("pp").textContent="⏸ Pausa";
+  $("pan").hidden=true;$("open").hidden=false;upd();
+ });
+}
+function back(sec){seekAbs(nowAbs()-sec*1000)}
+function togglePause(){
+ if(mode!=="vod"||!rp){$("rmsg").textContent="Prima torna indietro con ⏪ o con la barra.";return}
+ if($("pp").textContent.includes("Pausa")){rp.pause();$("pp").textContent="▶ Riprendi"}else{rp.play();$("pp").textContent="⏸ Pausa"}
+ upd();
+}
+function hotKeys(){
+ const counts=Object.entries(byMin).map(([k,v])=>[+k,v.length]);
+ const so=counts.map(c=>c[1]).sort((a,b)=>a-b),med=so[Math.floor(so.length/2)]||0;
+ return counts.filter(c=>c[1]>=Math.max(5,med*1.6)).map(c=>c[0]);
+}
+function upd(){
+ if(!ch)return;
+ const live=mode!=="vod";
+ $("rstate").className="rs "+(live?"live":"vod");
+ if(live){$("rstate").textContent=vod?"Pronto a riavvolgere":"";$("rinfo").textContent="";}
+ else{const a=nowAbs(),diff=(Date.now()-a)/1000;$("rstate").textContent=$("pp").textContent.includes("Riprendi")?"⏸ IN PAUSA":"⏪ STAI RIVEDENDO";$("rinfo").textContent="ore "+clock(a)+" · "+fmt(diff)+" fa";}
+ const D=$("dots");D.innerHTML="";
+ if(vod&&vod.t0){
+  const [w0,w1]=vwin(),tot=w1-w0;
+  if(!$("seek").matches(":active"))$("seek").value=live?1000:Math.round(Math.max(0,Math.min(1,(nowAbs()-w0)/tot))*1000);
+  hotKeys().forEach(k=>{const t=start+k*60000;const f=(t-w0)/tot;if(f<0||f>1)return;const i=document.createElement("i");i.style.left=(f*100)+"%";i.title="Momento caldo delle "+hhmm(k);i.onclick=()=>seekAbs(t-30000);D.appendChild(i)});
+ }else $("seek").value=1000;
+}
+function rivedi(k){
+ if(!vod)return '<br><span class="why">⏪ Per questo canale la registrazione non è disponibile</span>';
+ return '<br><button class="rv" data-abs="'+(start+k*60000-30000)+'">⏪ Rivedi questo momento</button>';
+}
+document.addEventListener("click",e=>{const b=e.target.closest(".rv[data-abs]");if(b)seekAbs(+b.dataset.abs);const r=e.target.closest("[data-b]");if(r){if(!ch)return;const v=+r.dataset.b;if(v<0){if(mode==="vod")seekAbs(nowAbs()-v*1000)}else vodReady(()=>back(v))}});
+
+function showBox(v){$("rbox").hidden=!v;$("rtoggle").textContent=v?"⏪ Nascondi Rivedi":"⏪ Rivedi"}
+$("rtoggle").onclick=()=>{if($("rbox").hidden){showBox(true);if(mode!=="vod")vodReady(()=>back(300))}else showBox(false)};
+$("rclose").onclick=()=>{closeReplay();showBox(false)};
+(function(){const box=$("rbox"),h=$("rdrag");let dx,dy,drag=false;
+ h.addEventListener("pointerdown",e=>{if(e.target.closest("button")||document.body.classList.contains("mobile"))return;drag=true;const r=box.getBoundingClientRect();dx=e.clientX-r.left;dy=e.clientY-r.top;h.setPointerCapture(e.pointerId)});
+ h.addEventListener("pointermove",e=>{if(!drag)return;const x=Math.max(0,Math.min(innerWidth-box.offsetWidth,e.clientX-dx)),y=Math.max(0,Math.min(innerHeight-box.offsetHeight,e.clientY-dy));box.style.left=x+"px";box.style.top=y+"px";box.style.bottom="auto"});
+ h.addEventListener("pointerup",()=>drag=false);})();
+
+function muteLabel(){if(!player)return;let m=true;try{m=player.getMuted()}catch(e){}$("mute").textContent=m?"🔇 Audio diretta: spento":"🔊 Audio diretta: acceso"}
+$("mute").onclick=()=>{if(!player)return;try{player.setMuted(!player.getMuted())}catch(e){}muteLabel()};
+function rmuteLabel(){if(!rp)return;let m=true;try{m=rp.getMuted()}catch(e){}$("rmute").textContent=m?"🔇 Audio rivedi: spento":"🔊 Audio rivedi: acceso"}
+$("rmute").onclick=()=>{if(!rp)return;try{rp.setMuted(!rp.getMuted())}catch(e){}rmuteLabel()};
+setInterval(rmuteLabel,1000);
+setInterval(muteLabel,1000);
+
+const DIAG=new URLSearchParams(location.search).has("diag");
+let recDur=0,recOrig=null,trimming=false;
+let recEl=null,recWatch=null,recOther=null,dWatch=null,recMain=null,recMainMuted=false;
+function dlog(o){if(!DIAG)return;try{fetch("/log",{method:"POST",body:JSON.stringify(o)}).catch(()=>{})}catch(e){}}
+function pst(p){if(!p)return "-";try{return p.getCurrentTime().toFixed(1)+(p.isPaused()?"P":"")+" q="+p.getQuality()+(p.getMuted()?" M":"")}catch(e){return "err"}}
+function dstart(tag){dlog({ev:tag,rp:pst(rp),live:pst(player),mode,ua:navigator.userAgent.slice(0,60),w:innerWidth,h:innerHeight,dpr:devicePixelRatio});clearInterval(dWatch);let n=0;dWatch=setInterval(()=>{dlog({ev:"tick",rec:rec&&rec.state,rp:pst(rp),live:pst(player),vis:document.visibilityState,focus:document.hasFocus()});if(++n>80)clearInterval(dWatch)},500)}
+function setQ(p,h){
+ if(!p)return;
+ try{
+  if(h<0){p.setQuality("auto");return}
+  const qs=(p.getQualities()||[]).filter(x=>x&&x.group);
+  if(!qs.length)return;
+  const hh=x=>parseInt(String(x.name||x.group).match(/(\d{3,4})p/)?.[1]||(x.group==="chunked"?"1080":"0"));
+  let pick;
+  if(h===0)pick=qs.slice().sort((a,b)=>hh(a)-hh(b))[0];
+  else{const ok=qs.filter(x=>hh(x)<=h).sort((a,b)=>hh(b)-hh(a));const top=ok.length?hh(ok[0]):0;const same=ok.filter(x=>hh(x)===top);pick=same.find(x=>!/60/.test(String(x.name)))||same[0]||qs.find(x=>x.group==="chunked")}
+  if(pick)p.setQuality(pick.group);
+ }catch(e){}
+}
+let rec=null,recChunks=[],recStream=null,recStart=0,recBlob=null,recMime="";
+function recMsg(t){$("rectime").textContent=t}
+async function startRec(){
+ const q=+$("rq").value,which=$("rsrc").value,el=which==="rp"?$("rp").parentElement:$("pl").parentElement;
+ if(which==="rp"&&mode!=="vod"){recMsg("Prima apri un momento da rivedere.");return}
+ const main=which==="rp"?rp:player,other=which==="rp"?player:rp;
+ try{other&&other.pause()}catch(e){}
+ try{recMainMuted=main.getMuted();recMain=main;main.setMuted(false);main.setVolume&&main.setVolume(Math.max(0.5,main.getVolume?main.getVolume():1));main.play()}catch(e){}
+ if(!navigator.mediaDevices||!navigator.mediaDevices.getDisplayMedia){recMsg("Questo browser non può registrare: usa Chrome.");return}
+ dstart("click-registra q="+q+" src="+which);
+ let st;
+ try{st=await navigator.mediaDevices.getDisplayMedia({video:{width:{ideal:Math.round(q*16/9)},height:{ideal:q},frameRate:{ideal:30,max:30}},audio:true,preferCurrentTab:true,selfBrowserSurface:"include",surfaceSwitching:"exclude",systemAudio:"include"})}
+ catch(e){recMsg("Registrazione annullata.");return}
+ const tr=st.getVideoTracks()[0];
+ dlog({ev:"capture-ok",set:tr.getSettings(),rp:pst(rp)});
+ el.style.setProperty("--rech",q+"px");el.classList.add("stage");document.body.classList.add("recording");recEl=el;setQ(main,q);recOther=other;
+ await new Promise(r=>setTimeout(r,700));
+ let ok=false;
+ if(window.CropTarget&&tr.cropTo){try{await tr.cropTo(await CropTarget.fromElement(el));ok=true}catch(e){}}
+ if(!ok){try{other&&other.play()}catch(e){}el.classList.remove("stage");document.body.classList.remove("recording");setQ(main,-1);setQ(other,-1);st.getTracks().forEach(t=>t.stop());recMsg("Non riesco a ritagliare solo la finestrella: nella finestra di Chrome scegli «Questa scheda» e riprova.");return}
+ recMsg("Preparo la registrazione in "+q+"p…");
+ const useMarks=which==="rp"&&markIn!=null&&markOut!=null&&vod&&vod.t0&&$("usecut").checked;
+ if(useMarks){
+  const lo=Math.min(markIn,markOut),hi=Math.max(markIn,markOut);markIn=lo;markOut=hi;
+  const posIn=(markIn-vod.t0)/1000,pre=Math.max(0,posIn-3);
+  recMsg("Mi porto all'inizio del pezzo…");clearTimeout(pvQ);
+  await new Promise(r=>setTimeout(r,600));
+  try{main.seek(pre);seekTarget=vod.t0+pre*1000;main.play()}catch(e){}
+  let ok2=false,lastSeek=Date.now(),tries=0,back2=0,prev=0;for(let i=0;i<300;i++){await new Promise(r=>setTimeout(r,50));const ct=main.getCurrentTime();if(ct>=posIn-0.08&&ct<posIn+0.35&&ct>=prev){ok2=true;break}
+   if(ct>=posIn+0.35&&Date.now()-lastSeek>2500&&tries<3){tries++;lastSeek=Date.now();back2+=4;try{main.seek(Math.max(0,posIn-3-back2));main.play()}catch(e){}dlog({ev:"reseek",ct,back2})}
+   else if(ct>=posIn+0.35&&tries>=3&&ct<posIn+2){ok2=true;break}
+   else if(i%20==19){try{if(main.isPaused())main.play()}catch(e){}}
+   prev=ct;}
+  dlog({ev:"preroll",ok:ok2,ct:main.getCurrentTime(),posIn});
+  if(!ok2){try{main.pause()}catch(e){}el.classList.remove("stage");document.body.classList.remove("recording");try{other&&other.play()}catch(e){}try{main.setMuted(recMainMuted)}catch(e){}st.getTracks().forEach(t=>t.stop());recMsg("Il video non è arrivato all'inizio del pezzo in tempo (Twitch lento). Premi di nuovo ⏺ Registra.");return}
+ }else{
+  try{main.play()}catch(e){}
+  for(let i=0,t0=main.getCurrentTime();i<25;i++){await new Promise(r=>setTimeout(r,200));if(main.getCurrentTime()-t0>0.5)break;if(i%5==4){try{main.play()}catch(e){}}}
+ }
+ recMime=(qp.get("fmt")==="webm"?[]:["video/mp4;codecs=avc1.640028,mp4a.40.2","video/mp4;codecs=avc1,mp4a","video/mp4"]).concat(["video/webm;codecs=vp8,opus","video/webm"]).find(m=>window.MediaRecorder&&MediaRecorder.isTypeSupported(m))||"";
+ rec=new MediaRecorder(st,{mimeType:recMime,videoBitsPerSecond:{480:2500000,720:5000000,1080:10000000}[q]||10000000});
+ recChunks=[];recStream=st;recBlob=null;$("savebtn").hidden=true;$("sharebtn").hidden=true;$("trim").hidden=true;$("pcshare").hidden=true;
+ rec.ondataavailable=e=>{if(e.data&&e.data.size)recChunks.push(e.data)};
+ rec.onstop=()=>{recDur=(Date.now()-recStart)/1000;recOrig=null;$("tundo").hidden=true;dlog({ev:"rec-stop",rp:pst(rp),chunks:recChunks.length,size:recChunks.reduce((a,b)=>a+b.size,0)});$("rbox").style.outline="";$("recbar").hidden=true;if(recEl)recEl.classList.remove("stage");try{recOther&&recOther.play()}catch(e){}recOther=null;try{if(recMain){recMain.pause();recMain.setMuted(recMainMuted)}}catch(e){}if(recMain===rp)$("pp").textContent="▶ Riprendi";recMain=null;document.body.classList.remove("recording");setQ(rp,-1);setQ(player,-1);recBlob=new Blob(recChunks,{type:recMime||"video/webm"});recStream.getTracks().forEach(t=>t.stop());$("recbtn").textContent="⏺ Registra";$("savebtn").hidden=false;$("sharebtn").hidden=false;$("pcshare").hidden=!!navigator.userAgentData?.mobile||/Android|iPhone|iPad/i.test(navigator.userAgent);$("sharebtn").textContent="📤 Salva e condividi";shareReady=false;const pv=$("recprev");pv.src=URL.createObjectURL(recBlob);pv.hidden=false;trimReset();recMsg("Ecco cosa hai registrato, qui sotto ("+fmt((Date.now()-recStart)/1000)+", "+(recBlob.size/1048576).toFixed(1).replace(".",",")+" MB). Se va bene premi 💾 Salva e scegli dove.")};
+ tr.onended=()=>{if(rec&&rec.state==="recording")rec.stop()};
+ rec.start(1000);recStart=Date.now();dlog({ev:"rec-start",set:tr.getSettings(),mime:recMime,rp:pst(rp)});$("recprev").hidden=true;
+ let stuck=0;const kick=()=>{try{if(main&&main.isPaused()){stuck++;if(stuck%3===0){main.seek(main.getCurrentTime()+0.1)}main.play();dlog({ev:"kick",n:stuck,rp:pst(main)})}else stuck=0}catch(e){}};kick();recWatch=setInterval(()=>{if(rec&&rec.state==="recording"){if(useMarks&&main.getCurrentTime()>=(markOut-vod.t0)/1000-0.05){stopRec();recMsg("Pezzo registrato fino alla fine scelta.");return}kick()}else clearInterval(recWatch)},100);$("recbtn").textContent="⏹ Ferma";$("recbar").hidden=false;
+}
+function stopRec(){clearInterval(recWatch);if(rec&&rec.state==="recording")rec.stop()}
+function recName(){const ext=recMime.includes("mp4")?"mp4":"webm",d=new Date();return "twitch-"+ch+"-"+d.toISOString().slice(0,16).replace(/[-:T]/g,"")+"-"+$("rq").value+"p."+ext}
+async function saveRec(){
+ if(!recBlob)return false;
+ const name=recName(),ext=name.split(".").pop();
+ if(window.showSaveFilePicker){
+  try{const h=await showSaveFilePicker({suggestedName:name,types:[{description:"Video",accept:{[ext==="mp4"?"video/mp4":"video/webm"]:["."+ext]}}]});const w=await h.createWritable();await w.write(recBlob);await w.close();recMsg("Salvato: "+h.name);return true}
+  catch(e){if(e.name==="AbortError"){recMsg("Salvataggio annullato.");return false}}
+ }
+ const a=document.createElement("a");a.href=URL.createObjectURL(recBlob);a.download=name;a.click();recMsg("Salvato nella cartella Download.");return true;
+}
+let shareReady=false;
+async function shareRec(){
+ const name=recName(),file=new File([recBlob],name,{type:name.endsWith(".mp4")?"video/mp4":"video/webm"});
+ const data={files:[file],title:"Clip da "+ch,text:"Clip dalla diretta di "+ch+" su Twitch"};
+ dlog({ev:"share-try",canShare:!!(navigator.canShare&&navigator.canShare({files:[file]})),type:file.type,size:file.size,focus:document.hasFocus(),act:navigator.userActivation&&navigator.userActivation.isActive});
+ if(!navigator.canShare||!navigator.canShare({files:[file]})){recMsg("Questo dispositivo non permette di condividere video da qui: il file è salvato, condividilo dalla cartella.");return}
+ try{await navigator.share(data);recMsg("Condiviso.");$("sharebtn").textContent="📤 Salva e condividi";shareReady=false}
+ catch(e){
+  dlog({ev:"share-err",name:e.name,msg:String(e.message).slice(0,200)});
+  if(e.name==="AbortError"){recMsg("Condivisione annullata. Il video resta salvato.");return}
+  if(e.name==="NotAllowedError"){shareReady=true;$("sharebtn").textContent="📤 Condividi ora";recMsg("Salvato. Premi «📤 Condividi ora» per scegliere il social.");return}
+  recMsg("Condivisione non riuscita: il file è salvato, condividilo dalla cartella.");
+ }
+}
+$("recbtn").onclick=()=>{if(rec&&rec.state==="recording")stopRec();else startRec()};
+
+function tdur(){const v=$("recprev");return isFinite(v.duration)&&v.duration>0?v.duration:recDur}
+function tvals(){const d=tdur();let a=+$("tin").value/1000*d,b=+$("tout").value/1000*d;return[a,b]}
+function tpaint(){let a=+$("tin").value,b=+$("tout").value;if(a>b-10){if(document.activeElement===$("tin")){a=b-10;$("tin").value=a}else{b=a+10;$("tout").value=b}}
+ $("tsel").style.left=(a/10)+"%";$("tsel").style.width=((b-a)/10)+"%";const[x,y]=tvals();$("tlab").textContent="✂ dal "+fmt(x)+" al "+fmt(y)+" ("+Math.round(y-x)+" s)"}
+function trimReset(){$("tin").value=0;$("tout").value=1000;$("trim").hidden=false;tpaint()}
+$("tin").oninput=()=>{tpaint();const v=$("recprev");v.currentTime=tvals()[0]};
+$("tout").oninput=()=>{tpaint();const v=$("recprev");v.currentTime=tvals()[1]};
+$("tplay").onclick=()=>{const v=$("recprev"),[a,b]=tvals();v.currentTime=a;v.play();const stop=()=>{if(v.currentTime>=b){v.pause();v.removeEventListener("timeupdate",stop)}};v.addEventListener("timeupdate",stop)};
+$("tundo").onclick=()=>{if(!recOrig)return;recBlob=recOrig;recOrig=null;$("recprev").src=URL.createObjectURL(recBlob);$("tundo").hidden=true;trimReset();recMsg("Taglio annullato: torni al video intero.")};
+$("tcut").onclick=async()=>{
+ if(trimming||!recBlob)return;const[a,b]=tvals();if(b-a<1){recMsg("Scegli un pezzo di almeno 1 secondo.");return}
+ trimming=true;$("tcut").textContent="✂ Taglio…";
+ const v=document.createElement("video");v.src=URL.createObjectURL(recBlob);v.playsInline=true;v.style.cssText="position:fixed;left:-9999px;width:320px";document.body.appendChild(v);
+ await new Promise(r=>v.onloadedmetadata=r);
+ const ac=new AudioContext(),src=ac.createMediaElementSource(v),dst=ac.createMediaStreamDestination();src.connect(dst);
+ v.currentTime=a;await new Promise(r=>v.onseeked=r);
+ const vs=v.captureStream(),out=new MediaStream([...vs.getVideoTracks(),...dst.stream.getAudioTracks()]);
+ const q=+$("rq").value,r=new MediaRecorder(out,{mimeType:recMime,videoBitsPerSecond:{480:1500000,720:3000000,1080:6000000}[q]||6000000});const parts=[];r.ondataavailable=e=>{if(e.data.size)parts.push(e.data)};
+ r.start(500);await v.play();
+ await new Promise(res=>{const t=setInterval(()=>{recMsg("✂ Taglio in corso… "+Math.max(0,Math.round(v.currentTime-a))+" / "+Math.round(b-a)+" s");if(v.currentTime>=b||v.ended){clearInterval(t);res()}},100)});
+ v.pause();r.stop();await new Promise(res=>r.onstop=res);ac.close();v.remove();
+ recOrig=recOrig||recBlob;recBlob=new Blob(parts,{type:recMime||"video/webm"});recDur=b-a;
+ $("recprev").src=URL.createObjectURL(recBlob);$("tundo").hidden=false;trimming=false;$("tcut").textContent="✂ Taglia";trimReset();
+ recMsg("Fatto: video tagliato di "+Math.round(b-a)+" s ("+(recBlob.size/1048576).toFixed(1).replace(".",",")+" MB). Ora 💾 Salva o 📤 Salva e condividi.");dlog({ev:"trim",a,b,size:recBlob.size});
+};
+$("recprev").addEventListener("loadedmetadata",tpaint);
+
+let markIn=null,markOut=null,hdrag=null,vZoom=null;
+function vwin(){if(!vod||!vod.t0)return[0,1];const mx=Date.now();if(vZoom){return[Math.max(vod.t0,vZoom[0]),Math.min(mx,vZoom[1])]}return[vod.t0,mx]}
+function zoomAround(a,b){const pad=Math.max(120000,(b-a)*0.6);vZoom=[a-pad,b+pad];$("zout").hidden=false;hPaint();upd()}
+function zoomAll(){vZoom=null;$("zout").hidden=true;hPaint();upd()}
+function cmax(){return vod&&vod.t0?Date.now()-LAG*1000:Date.now()}
+let pvLast=0,pvTimer=null;
+function previewAt(t){
+ if(!vod||!vod.t0)return;
+ if(!rp||mode!=="vod"){seekAbs(t);return}
+ try{const pos=Math.max(0,(t-vod.t0)/1000);seekTarget=vod.t0+pos*1000;rp.seek(pos);rp.play();$("pp").textContent="⏸ Pausa";upd()}catch(e){}
+}
+function previewThrottled(t){const n=Date.now();clearTimeout(pvTimer);if(n-pvLast>350){pvLast=n;previewAt(t)}else pvTimer=setTimeout(()=>{pvLast=Date.now();previewAt(t)},350)}
+let pvQ=null;
+function showAt(t){clearTimeout(pvTimer);clearTimeout(pvQ);
+ if(rp&&mode==="vod"){try{setQ(rp,360)}catch(e){}pvQ=setTimeout(()=>{try{setQ(rp,-1)}catch(e){}},2500)}
+ previewAt(t)}
+function mkDefaults(){if(!vod||!vod.t0)return false;if(markIn==null||markOut==null){const mx=cmax(),c=Math.min(mx,mode==="vod"?nowAbs():mx);markOut=Math.min(mx,c+15000);markIn=markOut-30000}return true}
+function hPaint(){
+ const ok=mkDefaults();["hin","hout","mgrip"].forEach(id=>$(id).style.display=ok?"block":"none");$("mseg").style.display=ok?"block":"none";
+ if(!ok){$("mlab").textContent="";$("cutind").hidden=true;return}
+ const mx=cmax();markIn=Math.max(vod.t0,Math.min(markIn,mx));markOut=Math.max(vod.t0,Math.min(markOut,mx));
+ const [w0,w1]=vwin(),tot=w1-w0,c=x=>Math.max(0,Math.min(1,x)),gi=c((markIn-w0)/tot),go=c((markOut-w0)/tot),fi=Math.min(gi,go),fo=Math.max(gi,go);
+ $("zl").textContent=fmt((w0-vod.t0)/1000);$("zr").textContent=vZoom?fmt((w1-vod.t0)/1000):"adesso";
+ $("hin").style.left=(gi*100)+"%";$("hout").style.left=(go*100)+"%";
+ $("mseg").style.left=(fi*100)+"%";$("mseg").style.width=Math.max(0,(fo-fi)*100)+"%";$("mgrip").style.left=((fi+fo)/2*100)+"%";
+  const vp=t=>fmt((t-vod.t0)/1000),lo=Math.min(markIn,markOut),hi=Math.max(markIn,markOut);
+ $("hin").firstChild.textContent=vp(markIn);
+ $("cutind").hidden=false;$("ci_a").textContent=vp(lo);$("ci_b").textContent=vp(hi);$("ci_d").textContent=fmt((hi-lo)/1000);$("hout").classList.toggle("edge",go>0.85);$("hout").firstChild.textContent=vp(markOut);
+ $("mlab").textContent=(vZoom?"Barra ingrandita: muovi la verde e la rossa, o sposta tutto con ⇔":"Porta il pezzo nella zona con ⇔, poi la barra si ingrandisce");
+}
+function hpx(){const r=$("mtr").getBoundingClientRect(),[w0,w1]=vwin();return Math.abs(markOut-markIn)/(w1-w0)*r.width}
+["hin","hout"].forEach(id=>{
+ $(id).addEventListener("pointerdown",e=>{if(!mkDefaults())return;e.preventDefault();e.stopPropagation();try{$(id).setPointerCapture(e.pointerId)}catch(x){}hdrag={id,auto:hpx()<18,x:e.clientX,t:e.timeStamp,el:$(id)}});
+});
+["mseg","mgrip"].forEach(gid=>$(gid).addEventListener("pointerdown",e=>{if(!mkDefaults())return;e.preventDefault();e.stopPropagation();try{$(gid).setPointerCapture(e.pointerId)}catch(x){}hdrag={id:"seg",x:e.clientX,t:e.timeStamp,wasZoom:!!vZoom}}));
+window.addEventListener("pointermove",e=>{
+ if(!hdrag)return;
+ if(hdrag.id==="seg"){const dx=e.clientX-hdrag.x;if(!dx)return;const w=$("mtr").getBoundingClientRect().width,mx=cmax(),lo=Math.min(markIn,markOut),hi=Math.max(markIn,markOut),[w0,w1]=vwin();let d=dx*(w1-w0)/w;
+  if(lo+d<vod.t0)d=vod.t0-lo;if(hi+d>mx)d=mx-hi;markIn+=d;markOut+=d;
+  if(vZoom){const nlo=lo+d,nhi=hi+d;if(nlo<vZoom[0]){const sh=vZoom[0]-nlo;vZoom=[vZoom[0]-sh,vZoom[1]-sh]}else if(nhi>vZoom[1]){const sh=nhi-vZoom[1];vZoom=[vZoom[0]+sh,vZoom[1]+sh]}upd()}hdrag.x=e.clientX;hPaint();return}
+ const dx=e.clientX-hdrag.x,dt=Math.max(1,e.timeStamp-hdrag.t);if(!dx)return;
+ if(hdrag.auto){hdrag.id=dx<0?"hin":"hout";hdrag.auto=false}
+ const v=Math.abs(dx)/dt,w=$("mtr").getBoundingClientRect().width,[w0,w1]=vwin(),tot=w1-w0;
+ const d=dx*(vZoom?tot/w:(v>1.2?tot/w:v>0.5?5000:500));
+ if(hdrag.id==="hin")markIn+=d;else markOut+=d;
+ hdrag.x=e.clientX;hdrag.t=e.timeStamp;hPaint();
+});
+const hend=()=>{if(!hdrag)return;const id=hdrag.id;hdrag=null;if(id==="seg"&&!vZoom)zoomAround(Math.min(markIn,markOut),Math.max(markIn,markOut));hPaint();showAt(id==="hout"?markOut:markIn)};
+window.addEventListener("pointerup",hend);window.addEventListener("pointercancel",hend);
+setInterval(()=>{if(!hdrag)hPaint()},1000);
+$("savebtn").onclick=saveRec;
+$("dragclip").addEventListener("dragstart",e=>{
+ if(!recBlob){e.preventDefault();return}
+ const name=recName(),type=name.endsWith(".mp4")?"video/mp4":"video/webm",file=new File([recBlob],name,{type});
+ try{e.dataTransfer.items.add(file)}catch(x){}
+ try{e.dataTransfer.setData("DownloadURL",type+":"+name+":"+URL.createObjectURL(file))}catch(x){}
+ e.dataTransfer.effectAllowed="copy";dlog({ev:"drag",n:e.dataTransfer.items.length});
+});
+$("sharebtn").onclick=async()=>{if(!recBlob)return;if(shareReady)return shareRec();if(await saveRec())shareRec()};
+$("bigbtn").onclick=()=>{const b=$("rbox").classList.toggle("big");$("bigbtn").textContent=b?"⛶ Rimpicciolisci":"⛶ Ingrandisci"};
+setInterval(()=>{if(rec&&rec.state==="recording"){const t="● REC "+fmt((Date.now()-recStart)/1000);recMsg(t);$("recbart").textContent=t}},500);
+$("recstop").onclick=stopRec;
+document.addEventListener("keydown",e=>{if(e.key==="Escape")stopRec()});
+$("zout").onclick=zoomAll;
+
+const isMobile=(/Android|iPhone|iPad|iPod/i.test(navigator.userAgent))||(matchMedia("(pointer:coarse)").matches&&!(navigator.mediaDevices&&navigator.mediaDevices.getDisplayMedia));
+if(isMobile)document.body.classList.add("mobile");
+$("mhow").onclick=()=>{const t=$("mhowtxt");if(!t.hidden){t.hidden=true;return}
+ const ios=/iPhone|iPad|iPod/i.test(navigator.userAgent);
+ t.innerHTML=ios?"<b>iPhone</b>: premi ▶ Guarda il pezzo, poi scorri dall'angolo <b>in alto a destra</b> verso il basso e premi il tasto <b>⏺</b>. Per fermare tocca il pallino rosso in alto. Il video va nel <b>Rullino</b>, pronto da pubblicare.<br><small>Se il tasto ⏺ non c'è: Impostazioni → Centro di Controllo → aggiungi «Registrazione schermo».</small>"
+  :"<b>Android</b>: premi ▶ Guarda il pezzo, poi scorri dall'alto verso il basso e premi <b>Registrazione schermo</b> (a volte si chiama «Registra schermo»). Per fermare tocca la notifica. Il video va nella <b>Galleria</b>, pronto da pubblicare.";
+ t.hidden=false};
+$("mplay").onclick=()=>{if(!mkDefaults())return;const lo=Math.min(markIn,markOut),hi=Math.max(markIn,markOut);seekAbs(lo);const w=setInterval(()=>{if(mode!=="vod"){clearInterval(w);return}if(nowAbs()>=hi){clearInterval(w);try{rp.pause();$("pp").textContent="▶ Riprendi"}catch(e){}}},250)};
+$("mshare").onclick=async()=>{
+ if(!vod||!vod.t0||!mkDefaults()){$("rmsg").textContent="Prima scegli un pezzo da rivedere.";return}
+ const lo=Math.min(markIn,markOut),pos=Math.max(0,Math.round((lo-vod.t0)/1000)),h=Math.floor(pos/3600),m=Math.floor(pos%3600/60),x=pos%60;
+ const url="https://www.twitch.tv/videos/"+vod.id+"?t="+h+"h"+m+"m"+x+"s";
+ const text="Guarda questo momento della diretta di "+ch+" ("+fmt(Math.abs(markOut-markIn)/1000)+")";
+ try{if(navigator.share){await navigator.share({title:"Momento da "+ch,text,url});return}}catch(e){if(e.name==="AbortError")return}
+ try{await navigator.clipboard.writeText(text+" "+url);$("rmsg").textContent="Link copiato: incollalo dove vuoi."}catch(e){$("rmsg").textContent=url}
+};
+$("pp").onclick=togglePause;
+$("fromstart").onclick=()=>{if(ch)vodReady(()=>seekAbs(vod.t0))};
+$("golive").onclick=()=>{if(ch)closeReplay()};
+$("seek").onchange=()=>vodReady(()=>{const [w0,w1]=vwin();seekAbs(w0+(w1-w0)*$("seek").value/1000)});
+setInterval(upd,1000);
+
+
+{const saved=(()=>{try{return localStorage.getItem("rivedi_ch")}catch(e){return null}})();if(!qp.get("ch")&&saved){$("ch").value=saved;setTimeout(connect,300)}}
+if(qp.get("ch")){$("ch").value=qp.get("ch");setTimeout(()=>{connect();if(qp.get("rivedi"))setTimeout(()=>$("rtoggle").click(),2500)},300)}
+
+function line(l){
+ if(!l)return;
+ if(l.startsWith("PING")){ws.send("PONG :tmi.twitch.tv");return}
+ if(l.includes(" 366 ")){$("st").textContent="Collegato a "+ch+". Puoi già tornare indietro con il telecomando sotto il video.";return}
+ const m=l.match(/^(?:@(\S+) )?:(\w+)!\S+ PRIVMSG #\w+ :(.*)$/);if(!m)return;
+ const tags={};(m[1]||"").split(";").forEach(p=>{const i=p.indexOf("=");tags[p.slice(0,i)]=p.slice(i+1)});
+ const user=tags["display-name"]||m[2],text=m[3],t=Date.now(),col=tags.color||"#bf94ff";
+ msgs.push({t,user,text});if(msgs.length>20000)msgs.shift();
+ users[user]=(users[user]||0)+1;
+ const k=Math.floor((t-start)/60000);(byMin[k]=byMin[k]||[]).push(text);
+ const norm=text.toLowerCase().replace(/\s+/g," ").trim();if(norm.length>1&&norm.length<60)phrases[norm]=(phrases[norm]||0)+1;
+ if(tags.emotes){tags.emotes.split("/").forEach(e=>{const[,pos]=e.split(":");if(!pos)return;const[a,b]=pos.split(",")[0].split("-").map(Number);const n=text.slice(a,b+1);emotes[n]=(emotes[n]||0)+pos.split(",").length})}
+ text.toLowerCase().split(/[^\p{L}\p{N}']+/u).forEach(w=>{if(w.length>=3&&!STOP.has(w)&&!/^\d+$/.test(w))words[w]=(words[w]||0)+1});
+ const box=$("msgs"),p=document.createElement("p"),u=document.createElement("b");
+ u.style.color=col;u.textContent=user+": ";p.appendChild(u);p.appendChild(document.createTextNode(text));box.appendChild(p);
+ while(box.children.length>200)box.firstChild.remove();
+ box.scrollTop=box.scrollHeight;
+ if(!$("pan").hidden)render();
+}
+function topN(obj,n,min=1){return Object.entries(obj).filter(x=>x[1]>=min).sort((a,b)=>b[1]-a[1]).slice(0,n)}
+
+const MOODS=[
+ {k:"risate",t:"La chat è esplosa a ridere",e:"😂",re:/^(lul|lulw|kekw|kekl|omegalul|lmao|lmfao|lol|xd|xdd|icant|pepelaugh|ahah\w*|hahah?\w*|ahahah\w*|ajaj\w*|rotfl|😂|🤣)$/i},
+ {k:"stupore",t:"La chat è rimasta a bocca aperta",e:"😮",re:/^(pog|poggers|pogchamp|pogu|wo+w|woa+h|whoa|wtf|omg|monkas|monkaw|cosa|madonna|oddio|no\s?way|nowaying|holy|insane|😮|😱|🤯)$/i},
+ {k:"applausi",t:"La chat applaude",e:"👏",re:/^(gg|ggs|ggwp|clap|ez|bravo|grande|grandissimo|goat|w|dub|letsgo|lets|👏|🔥)$/i},
+ {k:"delusione",t:"La chat è delusa",e:"😢",re:/^(f|rip|sadge|noo+|l|peccato|biblethump|bibblethump|pain|nooo+|😭|😢|💀)$/i},
+ {k:"disgusto",t:"La chat è disgustata",e:"🤢",re:/^(e+w+|yuck|bleah|bleh|schifo|disgusting|gross|🤢|🤮)$/i},
+ {k:"tifo",t:"La chat fa il tifo",e:"📣",re:/^(forza|daje|dai+|vai+|go+|come\s?on|let'?s\s?go)$/i}
+];
+function moodOf(list){
+ const c={};let q=0;
+ list.forEach(t=>{if(t.includes("?"))q++;const seen=new Set();t.split(/\s+/).forEach(x=>{const y=x.replace(/[!.,]+$/,"");MOODS.forEach(m=>{if(!seen.has(m.k)&&m.re.test(y)){c[m.k]=(c[m.k]||0)+1;seen.add(m.k)}})})});
+ let best=null;MOODS.forEach(m=>{if((c[m.k]||0)>(best?c[best.k]:0))best=m});
+ const share=best?c[best.k]/list.length:0;
+ if(q/list.length>.3&&q>share*list.length)return{t:"Tutti fanno domande",e:"❓",pct:Math.round(q/list.length*100)};
+ if(!best||share<.12)return null;
+ return{t:best.t,e:best.e,pct:Math.round(share*100)};
+}
+function hhmm(k){const d=new Date(start+k*60000);return String(d.getHours()).padStart(2,"0")+":"+String(d.getMinutes()).padStart(2,"0")}
+function chart(counts,med,hotSet){
+ const cv=$("cv"),W=cv.clientWidth||300,H=70,dpr=window.devicePixelRatio||1;cv.width=W*dpr;cv.height=H*dpr;const g=cv.getContext("2d");g.scale(dpr,dpr);g.clearRect(0,0,W,H);
+ const last=Math.max(0,...counts.map(c=>c[0])),n=last+1,max=Math.max(1,...counts.map(c=>c[1].length)),bw=W/n;
+ for(let i=0;i<n;i++){const v=(byMin[i]||[]).length,h=v/max*(H-4);g.fillStyle=hotSet.has(i)?"#ff6b4a":"#5c4a8a";g.fillRect(i*bw+1,H-h,Math.max(1,bw-2),h)}
+ const y=H-med/max*(H-4);g.strokeStyle="#adadb8";g.setLineDash([4,3]);g.beginPath();g.moveTo(0,y);g.lineTo(W,y);g.stroke();
+}
+function render(){
+ const now=Date.now(),mins=Math.max(1,(now-start)/60000);
+ $("ptitle").textContent="Ti sei perso "+mm(now)+" di chat";
+ $("pupd").textContent="Si aggiorna da solo · canale "+ch;
+ if(viewers!=null){$("s4").textContent=viewers.toLocaleString("it-IT");$("s4w").hidden=false}else $("s4w").hidden=true;
+ $("s1").textContent=msgs.length;$("s2").textContent=Object.keys(users).length;$("s3").textContent=Math.round(msgs.length/mins);
+ const counts=Object.entries(byMin).map(([k,v])=>[+k,v]);
+ const sorted=counts.map(c=>c[1].length).sort((a,b)=>a-b),med=sorted[Math.floor(sorted.length/2)]||0;
+ let hot=counts.filter(c=>c[1].length>=Math.max(5,med*1.6)).sort((a,b)=>b[1].length-a[1].length).slice(0,4).sort((a,b)=>a[0]-b[0]);
+ const H=$("hot");H.innerHTML="";
+ let calm=false;
+ if(!hot.length&&counts.length>=2){const b=counts.slice().sort((a,b)=>b[1].length-a[1].length)[0];hot=[b];calm=true}
+ if(!hot.length){H.innerHTML='<div class="q">Aspetta un paio di minuti: sto ancora ascoltando la chat.</div>'}
+ else if(calm){H.innerHTML='<div class="q" style="margin-bottom:4px">Nessun picco vero: la chat va a ritmo costante. Ecco il minuto più movimentato.</div>'}
+ chart(counts,med,new Set(hot.map(h=>h[0])));
+ hot.forEach(([k,list])=>{
+  const w={},ph={};list.forEach(t=>{t.toLowerCase().split(/[^\p{L}\p{N}']+/u).forEach(x=>{if(x.length>=3&&!STOP.has(x))w[x]=(w[x]||0)+1});const n=t.toLowerCase().trim();ph[n]=(ph[n]||0)+1});
+  const kw=topN(w,3,2).map(x=>x[0]),rep=topN(ph,1)[0],md=moodOf(list),x=med?Math.round(list.length/med*10)/10:null;
+  const d=document.createElement("div");d.className="it";
+  d.innerHTML='<span class="tm">'+hhmm(k)+'</span><span>'
+   +(md?'<span class="mood">'+md.e+' <b>'+esc(md.t)+'</b></span> <span class="why">('+md.pct+'% dei messaggi)</span><br>':'<b>'+(calm?'Il minuto più vivace':'La chat si è accesa')+'</b><br>')
+   +'<span class="why">'+(calm?'Perché questo minuto: ':'Perché è caldo: ')+list.length+' messaggi in un minuto'+(x?', '+String(x).replace(".",",")+' volte più del solito (di solito '+Math.round(med)+')':'')+'</span>'
+   +(kw.length?'<br>Si parlava di <b>'+esc(kw.join(", "))+'</b>':'')
+   +(rep&&rep[1]>1?'<br><span class="q">“'+esc(rep[0].slice(0,80))+'” ×'+rep[1]+'</span>':'')
+   +rivedi(k)+'</span>';
+  H.appendChild(d)});
+ $("words").innerHTML=topN(words,12,2).map(x=>"<span>"+esc(x[0])+" · "+x[1]+"</span>").join("")||'<span>in attesa…</span>';
+ $("reps").innerHTML=topN(phrases,4,3).map(x=>'<div class="it"><span class="tm">×'+x[1]+'</span><span class="q">“'+esc(x[0])+'”</span></div>').join("")||'<div class="q">Nessuna frase ripetuta, per ora.</div>';
+ $("top").innerHTML=topN(users,6).map(x=>"<span>"+esc(x[0])+" · "+x[1]+"</span>").join("");
+}
+$("go").onclick=connect;$("ch").onkeydown=e=>{if(e.key==="Enter")connect()};
+$("open").onclick=()=>{render();$("pan").hidden=false;$("open").hidden=true};
+$("close").onclick=()=>{$("pan").hidden=true;$("open").hidden=false};
+setInterval(()=>{if(start)$("dur").textContent=mm(Date.now())},10000);
+setInterval(async()=>{if(!tok||!cidv||!uid)return;try{const st=(await helix("streams?user_id="+uid)).data[0];viewers=st?st.viewer_count:null;if(!$("pan").hidden)render()}catch(e){}},60000);
+</script>
+</body>
+</html>

@@ -120,4 +120,7 @@ self.addEventListener("fetch", e => {
   })));
 });
 `);
+// Rivedi (app separata per le dirette Twitch): pubblicata in /rivedi/
+const rivedi = path.join(__dirname, "..", "twitch-prova", "pubblica", "index.html");
+if (fs.existsSync(rivedi)) { fs.mkdirSync(path.join(out, "rivedi"), { recursive: true }); fs.copyFileSync(rivedi, path.join(out, "rivedi", "index.html")); }
 console.log("sito pronto in", out, "versione", version);
