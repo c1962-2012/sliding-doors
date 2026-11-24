@@ -10,6 +10,9 @@ fs.mkdirSync(out, { recursive: true });
 const files = ["app.js", "app.css", "stage3d.js", "data.js", "cups.js", "marcatori-a.js", "rose-a.js", "minuti-a.js", "video-a.js"];
 for (const f of files) fs.copyFileSync(path.join(proto, f), path.join(out, f));
 for (const f of fs.readdirSync(assets)) fs.copyFileSync(path.join(assets, f), path.join(out, f));
+// la guida: pagina, immagini e PDF
+for (const f of ["guida.html", "Sliding Doors - guida completa.pdf"]) fs.copyFileSync(path.join(proto, f), path.join(out, f));
+fs.cpSync(path.join(proto, "guida-img"), path.join(out, "guida-img"), { recursive: true });
 // gli annunci vocali del gol, uno per squadra
 fs.cpSync(path.join(proto, "voci"), path.join(out, "voci"), { recursive: true });
 
@@ -95,7 +98,7 @@ fs.writeFileSync(path.join(out, "manifest.webmanifest"), JSON.stringify({
 // Service worker: tutto ciò che sta sul sito (pagine, codice, dati) si prende prima dalla rete, così con la connessione
 // si vede sempre l'ultima versione, e dalla cache quando la rete manca. Librerie e font esterni, che non cambiano, dalla cache.
 const version = new Date().toISOString();
-const shell = ["./", "index.html", "mobile.html", "manifest.webmanifest", ...files, ...fs.readdirSync(assets)];
+const shell = ["./", "index.html", "mobile.html", "guida.html", "manifest.webmanifest", ...files, ...fs.readdirSync(assets)];
 fs.writeFileSync(path.join(out, "sw.js"), `const VERSION = ${JSON.stringify(version)}, CACHE = "sd-" + VERSION;
 const SHELL = ${JSON.stringify(shell)};
 // cache: "reload" scavalca la cache HTTP del browser, che altrimenti potrebbe restituire i file della versione precedente
